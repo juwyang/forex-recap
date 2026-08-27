@@ -5,17 +5,20 @@
   "edition_title": "Daily Recap",
   "window_label": "full trading day",
   "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
   "start_utc": "2026-08-26T17:00:00+00:00",
   "end_utc": "2026-08-27T17:00:00+00:00",
   "start_local": "2026-08-26T19:00:00+02:00",
   "end_local": "2026-08-27T19:00:00+02:00",
   "fwd_start_utc": "2026-08-27T17:00:00+00:00",
   "fwd_end_utc": "2026-08-28T17:00:00+00:00",
-  "generated_utc": "2026-08-27T18:54:12.199360+00:00",
+  "generated_utc": "2026-08-27T19:35:12.454508+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
   "instruments_failed": [],
+  "fx_coverage": 1.0,
   "m5_loaded": 36,
   "m5_failed": [],
   "reaction_interval": "M5",
@@ -1450,199 +1453,213 @@
   ]
  },
  "analysis": {
-  "session_summary": "The session was a pro-risk rotation: AUD led with +0.295% vs majors while USD lagged at -0.156%; SPX rose +0.958% and VIX fell -3.039%. Major FX ranges were narrow, with no leg owning its move; the only measured event reaction, US Unemployment Claims (203K vs 208K), was muted at 0.009% basket impulse. Commodity FX and gold outperformed while USD/CHF and USD/CAD slid -17.4 and -21.0 pips respectively. The tape is quiet and technically driven, leaving the coming Jackson Hole/Warsh window as the key catalyst.",
+  "session_summary": "The session was a mild risk-on, USD-soft tape: SPX +73.4, VIX -52.3, BTC +2389.9 and gold +233.2 while DXY lost -4.7 points. Commodity FX led via AUD/USD +28.5 pips and NZD/USD +12.5 pips, while EUR/USD +2.4 and GBP/USD +3.1 lagged. No leg had a clear news catalyst; the only measured event reaction, Unemployment Claims (203K vs 208K), was muted at 0.009% and failed to lift the dollar. Price action was range-bound with risk-on outperformance despite negative geopolitical headlines.",
   "themes": [
    {
-    "theme": "Pro-risk rotation",
-    "evidence": "AUD +0.295%, NZD +0.085%, SPX +0.958%, VIX -3.039%, BTC +3.064%",
+    "theme": "Risk-on / commodity FX outperformance",
+    "evidence": "SPX +73.4 at 1.0 close-in-range, VIX -52.3 at 0.0 close-in-range, BTC +2389.9, Gold +233.2, AUD/USD +28.5 and AUD/NZD +22.1.",
     "currencies": [
      "AUD",
      "NZD",
-     "JPY",
+     "CHF",
      "USD"
     ]
    },
    {
-    "theme": "Broad USD softness",
-    "evidence": "USD -0.156% vs majors, DXY -0.047%, USD/CHF -17.4 pips, USD/CAD -21.0 pips",
-    "currencies": [
-     "USD",
-     "CHF",
-     "CAD"
-    ]
-   },
-   {
-    "theme": "No clear macro catalyst",
-    "evidence": "Most zigzag legs carry confidence none; US Unemployment Claims 203K vs 208K produced only 0.009% USD basket impulse",
+    "theme": "Broad USD softness but euro/sterling lag",
+    "evidence": "DXY -4.7 points, USD/CHF -17.4 pips, USD/CAD -21.0 pips, USD/JPY -12.4 pips; EUR/USD +2.4 and GBP/USD +3.1 failed to extend.",
     "currencies": [
      "USD",
      "EUR",
-     "JPY",
-     "GBP"
+     "GBP",
+     "CHF",
+     "CAD",
+     "JPY"
     ]
    },
    {
-    "theme": "Commodity FX and gold outperformance",
-    "evidence": "Gold/USD +233.2 pips (+0.508%), AUD/USD +28.5 pips, NZD/USD +12.5 pips",
+    "theme": "Geopolitical headlines failed to leave a lasting footprint",
+    "evidence": "Hormuz tanker strike at 03:15, North Korea at 07:15, Kyiv explosion at 10:00 with no clear leg catalyst; SPX, BTC and gold still rallied.",
     "currencies": [
+     "USD",
+     "CHF",
+     "JPY",
      "AUD",
-     "NZD",
-     "USD"
+     "NZD"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD alternated five legs (up 7.6, down -18.8, up 19.3, down -13.8, up 7.5) within a 23.2-pip day range, finishing only 2.4 pips higher with no leg owning its move.",
-   "USD/JPY": "USD/JPY ran three legs (down -27.2, up 34.5, down -19.2) inside a 40.2-pip range, closing 12.4 pips lower as the BOJ Himino headlines failed to own any leg.",
-   "GBP/USD": "GBP/USD chopped through five legs (up 6.4, down -10.0, up 8.1, down -20.9, up 19.1) in a 31.6-pip range, ending 3.1 pips higher with no clear driver.",
-   "USD/CHF": "USD/CHF printed four legs (down -8.4, up 14.5, down -27.1, up 5.0) and closed 17.4 pips lower, with the largest leg owning no macro trigger.",
-   "AUD/USD": "AUD/USD built higher in three legs (up 15.9, down -10.2, up 21.6) to finish 28.5 pips up at the top of a 33.9-pip range.",
-   "USD/CAD": "USD/CAD swung from -5.3 to +18.7 to -35.8 to +1.9 over four legs, closing 21.0 pips lower near the low of a 38.1-pip range.",
-   "NZD/USD": "NZD/USD posted four legs (up 14.3, down -17.2, up 17.4, down -3.4) and closed 12.5 pips higher, with no leg owning the move.",
-   "EUR/CHF": "EUR/CHF slid 18.3 pips on the day after three legs (down -6.6, up 16.0, down -26.6), with the final leg lacking a clear catalyst.",
-   "CHF/JPY": "CHF/JPY climbed 27.5 pips in a wide 87.3-pip range across five legs, with only one leg partially driven by BOJ Himino (+4.9, 20% share).",
-   "AUD/NZD": "AUD/NZD rebounded from an early 22.6-pip drop with two up legs (30.0, 30.5) to close 22.1 pips higher near the top of a 52.5-pip range.",
-   "EUR/GBP": "EUR/GBP was confined to a 12.0-pip range, closing just 0.1 pips higher after seven small alternating legs.",
-   "AUD/CHF": "AUD/CHF rose 10.2 pips on the day after an up leg of 24.8 pips was partly unwound by a -6.4-pip drift, with no clear trigger.",
-   "NZD/CHF": "NZD/CHF finished just 0.3 pips lower in a 20.9-pip range, with five legs alternating and no leg owning the move.",
-   "USD/ZAR": "USD/ZAR ran a 893.4-pip range in three legs (down -399.3, up 842.9, down -291.6), closing 28.1 pips higher with no clear catalyst.",
-   "USD/MXN": "USD/MXN traded a 595.1-pip range in three legs (down -195.1, up 502.7, down -208.5), ending 65.4 pips higher with no leg owning the move.",
-   "Gold/USD": "Gold/USD experienced three large legs (up 458.8, down -679.4, up 422.0) within a 765.8-pip range, closing 233.2 pips higher at 0.63 of range.",
-   "BTC/USD": "BTC/USD rallied 2,389.9 pips on the day as three legs (up 2,362.1, down -1,244.5, up 1,146.6) left price at 0.86 of a 2,791.3-pip range.",
-   "Brent/USD": "Brent/USD was confined to a 274.8-pip range with four alternating legs (down -203.0, up 238.3, down -100.5, up 75.2), closing just -1.5 pips lower."
+   "EUR/USD": "EUR/USD chopped through five legs from -18.8 to +19.3 with no clear catalyst, closing only +2.4 pips at 1.16521.",
+   "GBP/USD": "GBP/USD's meaningful -20.9 decline from 09:00 to 14:45 had no clear catalyst, but a late +19.1 bounce left it +3.1 pips.",
+   "AUD/USD": "AUD/USD built a +15.9 up leg, absorbed a -10.2 dip, then added +21.6 into the close, ending +28.5 pips at 0.71972 and 0.99 close-in-range.",
+   "NZD/USD": "NZD/USD whipsawed 14.3 up, -17.2 down and 17.4 up with no clear drivers, finishing +12.5 pips.",
+   "USD/JPY": "USD/JPY declined -27.2, recovered +34.5, then faded -19.2 without clear catalysts, closing -12.4 pips at 159.292.",
+   "USD/CHF": "USD/CHF's largest move was a -27.1 drop from 10:15 to 15:15 with no clear catalyst, leaving it -17.4 pips.",
+   "USD/CAD": "USD/CAD had a sharp -35.8 leg from 09:15 to 15:15, but no clear catalyst; it closed -21.0 pips at 1.38566.",
+   "EUR/CHF": "EUR/CHF faded from a +16.0 up leg into a -26.6 decline with no clear catalyst, ending -18.3 pips.",
+   "CHF/JPY": "CHF/JPY had the only measurable leg driver: BOJ Himino added 4.9 pips, 20% of one up leg, yet no full catalyst; it closed +27.5 pips.",
+   "AUD/NZD": "AUD/NZD saw a -22.6 start, a +30.0 bounce, a -14.5 dip and a +30.5 grind, closing +22.1 pips near the high at 0.95 close-in-range.",
+   "EUR/GBP": "EUR/GBP traded eight tiny no-news legs to finish just +0.1 pip at 0.8572.",
+   "AUD/CHF": "AUD/CHF rallied +24.8 from 23:15 to 10:15 with no clear trigger, then faded a bit to +10.2 pips.",
+   "NZD/CHF": "NZD/CHF alternated no-catalyst moves and closed almost flat at -0.3 pips.",
+   "USD/ZAR": "USD/ZAR whipsawed -399.3, +842.9, -291.6 with no clear catalyst, finishing only +28.1 pips.",
+   "USD/MXN": "USD/MXN had -195.1, +502.7, -208.5 no-news legs and closed +65.4 pips.",
+   "Gold/USD": "Gold/USD rallied +458.8, fell -679.4, then bounced +422.0 with no clear news, closing +233.2 pips.",
+   "BTC/USD": "BTC/USD extended +2362.1, corrected -1244.5, then reclaimed +1146.6, closing +2389.9 pips as the strongest risk bid.",
+   "Brent/USD": "Brent/USD had a -203.0 decline and +238.3 bounce without clear catalysts, closing -1.5 pips."
   },
   "polarity_reads": [
    {
     "event": "Unemployment Claims",
-    "read": "Muted 0.009% USD basket impulse on a 203K vs 208K beat signals the market has already priced labor-market resilience; positioning is not short-dollar sensitive to second-tier data."
+    "read": "Actual 203K beat 208K forecast, but the own-currency impulse was only 0.009% with top mover GBP/USD at -0.027%; this muted response says the USD was already positioned soft and the data did not alter Jackson Hole/payrolls focus."
+   },
+   {
+    "event": "BOJ Deputy Governor Himino: Weak Yen Drives Inflation Higher",
+    "read": "Not a full event reaction; only measurable contribution was +4.9 pips in CHF/JPY, 20% of that leg, suggesting the market discounted BOJ jawboning as a yen catalyst."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-on extension with Jackson Hole neutral",
-    "probability": 0.45,
-    "thesis": "Risk appetite holds after SPX +0.958% and VIX -3.039%, commodity FX leadership extends, and Warsh/Jackson Hole fail to produce hawkish repricing.",
+    "name": "Risk-on continuation",
+    "probability": 0.35,
+    "thesis": "Despite negative geopolitics, risk assets closed strong; AUD/USD close_in_range 0.99, SPX close_in_range 1.0, VIX close 0.0. If Warsh is not hawkish and the payroll benchmark stays deeply negative, commodity/risk longs extend.",
     "triggers": [
-     "Jackson Hole delivers no hawkish surprise",
-     "AUD and NZD hold strength",
-     "US data stays in line"
+     "Tokyo Core CPI y/y prints below 1.8%",
+     "Fed Chairman Warsh sounds balanced or dovish",
+     "Prelim Benchmark Payrolls Revision remains near -911K or worse",
+     "AUD/USD holds above 0.71972"
     ],
-    "invalidation": "USD rebounds if Warsh leans hawkish or benchmark payroll revision improves materially from -911K.",
+    "invalidation": "DXY recovers above 99.039 and AUD/USD loses 0.71972 on a hawkish USD catalyst.",
     "pair_paths": [
      {
       "instrument": "AUD/USD",
       "direction": "up",
       "magnitude_pips": 33.9,
-      "rationale": "AUD +0.295% strongest; pair closed at 0.99 of its 33.9-pip range, extension plausible."
+      "rationale": "Today's range; close near high supports extension."
      },
      {
-      "instrument": "EUR/USD",
+      "instrument": "NZD/USD",
       "direction": "up",
-      "magnitude_pips": 23.2,
-      "rationale": "USD weak -0.156%; EUR/USD closed 2.4 pips higher at 0.67 of its 23.2-pip range."
+      "magnitude_pips": 19.8,
+      "rationale": "Positive close_in_range at 0.73 with commodity strength."
      },
      {
-      "instrument": "USD/JPY",
+      "instrument": "USD/CAD",
       "direction": "down",
-      "magnitude_pips": 40.2,
-      "rationale": "USD soft vs JPY; pair closed -12.4 within 40.2-pip range."
+      "magnitude_pips": 38.1,
+      "rationale": "Risk-on and CAD strength with Canada GDP ahead."
+     },
+     {
+      "instrument": "Gold/USD",
+      "direction": "up",
+      "magnitude_pips": 765.8,
+      "rationale": "Gold already rebounded +422.0 into the close."
      }
     ]
    },
    {
-    "name": "Hawkish Warsh / healthy US data repricing",
-    "probability": 0.35,
-    "thesis": "Warsh leans hawkish and payroll benchmark revision surprises higher than -911K, triggering a USD rebound.",
+    "name": "USD hawkish repricing",
+    "probability": 0.4,
+    "thesis": "USD is the weakest currency at -0.156% and DXY closed -4.7 points; Fed Warsh and the payroll benchmark can trigger a short squeeze, especially if Warsh pushes back on easing or the benchmark is less negative than -911K.",
     "triggers": [
-     "Warsh sounds hawkish",
-     "Prelim Benchmark Payrolls Revision higher than -911K",
-     "Revised UoM holds at 51.0 or higher"
+     "Fed's Warsh highlights upside inflation risks",
+     "Prelim Benchmark Payrolls Revision prints less negative than -911K",
+     "Revised UoM Inflation Expectations remains at 4.3% or higher",
+     "USD/JPY breaks above 159.292"
     ],
-    "invalidation": "USD fails to hold gains if Jackson Hole is perceived dovish or risk-on sentiment persists.",
+    "invalidation": "AUD/USD holds above 0.71972 and DXY stays below 99.039 while Warsh avoids hawkish signals.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 23.2,
-      "rationale": "EUR/USD range is 23.2 pips; hawkish USD impulse can test the lower bound."
+      "rationale": "Today's range; pair vulnerable if USD reprices."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 40.2,
+      "rationale": "USD short squeeze; JPY only modestly stronger."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 31.6,
+      "rationale": "CHF strength reverses in a USD catch-up."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 33.9,
+      "rationale": "High-beta commodity long unwinds on USD squeeze."
+     }
+    ]
+   },
+   {
+    "name": "Range/chop awaiting Jackson Hole",
+    "probability": 0.25,
+    "thesis": "Market may stay in today's ranges with no hard catalyst before Jackson Hole; EUR/GBP was nearly flat at +0.1 pip and EUR/USD only +2.4 pips.",
+    "triggers": [
+     "No surprise from Tokyo CPI",
+     "Warsh message falls in line with current pricing",
+     "Benchmark revision close to -911K",
+     "EUR/USD stays within its 23.2-pip range"
+    ],
+    "invalidation": "A break of EUR/USD 23.2-pip range or USD/JPY 40.2-pip range on a calendar surprise.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 23.2,
+      "rationale": "Today's range; close_in_range 0.67 suggests balance."
      },
      {
       "instrument": "GBP/USD",
-      "direction": "down",
+      "direction": "range",
       "magnitude_pips": 31.6,
-      "rationale": "GBP/USD range is 31.6 pips; pair closed 3.1 pips higher, exposed to USD repricing."
+      "rationale": "Likely inside day after +3.1 pip session."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "up",
+      "direction": "range",
       "magnitude_pips": 40.2,
-      "rationale": "USD/JPY range is 40.2 pips and closed -12.4; hawkish repricing can retrace higher."
-     }
-    ]
-   },
-   {
-    "name": "Risk-off / hawkish shock or geopolitical flare",
-    "probability": 0.2,
-    "thesis": "Jackson Hole/Warsh deliver a hawkish shock or geopolitics (Strait of Hormuz, North Korea) re-emerge, driving safe-haven CHF/JPY and selling high-beta FX.",
-    "triggers": [
-     "Hawkish shock from Warsh/Jackson Hole",
-     "Geopolitical headlines from Strait of Hormuz or North Korea",
-     "SPX reversal despite +0.958% gain"
-    ],
-    "invalidation": "Risk sentiment stays buoyant with SPX holding +0.958% and VIX near 16.684.",
-    "pair_paths": [
-     {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 31.6,
-      "rationale": "USD/CHF closed -17.4 at 0.28 of its 31.6-pip range; safe-haven CHF demand can extend decline."
-     },
-     {
-      "instrument": "EUR/CHF",
-      "direction": "down",
-      "magnitude_pips": 34.5,
-      "rationale": "EUR/CHF slid -18.3 and closed at 0.21 of its 34.5-pip range; CHF strength can push lower."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 40.2,
-      "rationale": "Risk-off usually strengthens JPY; USD/JPY closed -12.4 with 40.2-pip range."
+      "rationale": "close_in_range 0.44 shows two-sided risk."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Jackson Hole Symposium / Fed Chairman Warsh headline risk",
-    "why_it_matters": "A hawkish or dovish signal can repricing USD rates and break the current no-catalyst chop.",
-    "watch": "Warsh at 16:00, Jackson Hole at 18:15, DXY close 99.039"
+    "risk": "Geopolitical escalation in Hormuz, Korea, or Ukraine",
+    "why_it_matters": "These headlines were ignored today; VIX closed at 0.0 of range and SPX at 1.0 of range, so a genuine escalation would hit from a complacent base.",
+    "watch": "Brent/USD, VIX, USD/CHF, CHF/JPY, Gold/USD"
    },
    {
-    "risk": "Tokyo Core CPI y/y",
-    "why_it_matters": "Could shift BOJ expectations with JPY already weak -0.068%.",
-    "watch": "USD/JPY 40.2-pip range and CHF/JPY 87.3-pip range"
+    "risk": "Hawkish Fed Warsh / less negative payroll benchmark",
+    "why_it_matters": "USD is the weakest currency at -0.156% and DXY closed -4.7 points; a Warsh hawkish surprise or benchmark better than -911K could force a USD short squeeze.",
+    "watch": "DXY 99.039, USD/JPY 40.2-pip range, EUR/USD 23.2-pip range"
    },
    {
-    "risk": "Canadian GDP and US benchmark payroll revision",
-    "why_it_matters": "Both can drive CAD and broad USD; USD/CAD already at 0.1 of its 38.1-pip range.",
-    "watch": "CAD GDP 0.2% vs 0.3% prior, payroll revision prior -911K"
+    "risk": "Canada GDP miss",
+    "why_it_matters": "CAD strength is priced after USD/CAD fell -21.0 pips; GDP forecast 0.2% vs previous 0.3% could unwind CAD and lift USD/CAD.",
+    "watch": "USD/CAD close 1.38566, range 38.1 pips"
    }
   ],
-  "calendar_ahead_note": "The coming window is heavy: Tokyo Core CPI at 01:30, Canadian GDP at 14:30, Fed Chairman Warsh and Prelim Benchmark Payrolls Revision at 16:00, Revised UoM at 16:00, and Jackson Hole Symposium at 18:15 can break the current no-catalyst chop and define USD direction.",
+  "calendar_ahead_note": "Tokyo Core CPI y/y (01:30) forecast 1.8% vs 1.9% previous is the first JPY test; Canada GDP m/m (14:30) is 0.2% vs 0.3%; then Fed Chairman Warsh Speaks, Prelim Benchmark Payrolls Revision (previous -911K), Revised UoM Consumer Sentiment 51.0, Revised UoM Inflation Expectations 4.3%, and Jackson Hole Symposium at 18:15. The main repricing risk is a hawkish Warsh or a less negative payroll benchmark; otherwise the risk-on commodity bid likely holds into Jackson Hole.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 12698,
-   "completion_tokens": 13382,
-   "total_tokens": 26080,
+   "completion_tokens": 12666,
+   "total_tokens": 25364,
    "prompt_tokens_details": {
-    "cached_tokens": 0
+    "cached_tokens": 12672
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 10498
+    "reasoning_tokens": 9671
    },
-   "prompt_cache_hit_tokens": 0,
-   "prompt_cache_miss_tokens": 12698
+   "prompt_cache_hit_tokens": 12672,
+   "prompt_cache_miss_tokens": 26
   }
  }
 }

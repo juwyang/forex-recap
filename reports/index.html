@@ -1,24 +1,73 @@
-<title>FX Recap</title>
-<style>
-:root{--bg:#fbfbfa;--panel:#fff;--fg:#1c1c1a;--dim:#6b6b66;--line:#e3e2de;--accent:#2b5cd9}
-@media(prefers-color-scheme:dark){:root{--bg:#131315;--panel:#1a1a1d;--fg:#e9e8e4;
---dim:#96958f;--line:#2c2c30;--accent:#7aa2ff}}
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FX Recap</title><style>
+:root{--bg:#fbfbfa;--panel:#fff;--fg:#1c1c1a;--dim:#6b6b66;--line:#e3e2de;
+--flat:#eceae6;--accent:#2b5cd9;--am:#c07d10;--pm:#2b5cd9;--warn:#c0392b;
+--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){
+--bg:#131315;--panel:#1a1a1d;--fg:#e9e8e4;--dim:#96958f;--line:#2c2c30;
+--flat:#242427;--accent:#7aa2ff;--am:#e0a83c;--pm:#7aa2ff;--warn:#f0705f}}
+:root[data-theme=dark]{--bg:#131315;--panel:#1a1a1d;--fg:#e9e8e4;--dim:#96958f;
+--line:#2c2c30;--flat:#242427;--accent:#7aa2ff;--am:#e0a83c;--pm:#7aa2ff;--warn:#f0705f}
+*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);
-font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-.wrap{max-width:640px;margin:0 auto;padding:44px 20px}
-h1{font-size:24px;margin:0 0 4px}.sub{color:var(--dim);font-size:13.5px;margin-bottom:24px}
-ul{list-style:none;margin:0;padding:0}
-li a{display:flex;align-items:center;gap:12px;padding:11px 14px;margin-bottom:6px;
-background:var(--panel);border:1px solid var(--line);border-radius:9px;
-color:var(--fg);text-decoration:none}
-li a:hover{border-color:var(--accent)}
-.d{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:600}
-.e{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
-padding:2px 7px;border-radius:4px;background:var(--line);color:var(--dim)}
-.e.evening{background:rgba(43,92,217,.15);color:var(--accent)}
-</style>
-<div class="wrap"><h1>FX Recap</h1>
-<div class="sub">Twice daily from ForexFactory data &mdash; 07:00 overnight look-back,
-19:00 full trading day. Europe/Zurich.</div>
-<ul><li><a href="2026-08/2026-08-27-evening.html"><span class="d">2026-08-27</span><span class="e evening">evening</span></a></li>
-<li><a href="2026-08/2026-08-26-evening.html"><span class="d">2026-08-26</span><span class="e evening">evening</span></a></li></ul></div>
+font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,sans-serif;
+-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:25px;margin:0 0 5px;letter-spacing:-.02em}
+.sub{color:var(--dim);font-size:13.5px;margin-bottom:26px}
+a{color:inherit;text-decoration:none}
+
+.latest{display:block;background:var(--panel);border:1px solid var(--line);
+border-radius:12px;padding:16px 18px;margin-bottom:30px}
+.latest:hover{border-color:var(--accent)}
+.lat-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.lat-k{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+color:var(--dim);background:var(--flat);padding:3px 7px;border-radius:4px}
+.lat-h b{font-size:15.5px}
+.gist{margin:10px 0 0;font-size:13.5px;color:var(--dim);line-height:1.6}
+
+.month{margin-bottom:32px}
+h2{font-size:14px;margin:0 0 10px;font-weight:650;display:flex;
+align-items:baseline;gap:9px}
+.cnt{font-size:11px;color:var(--dim);font-weight:400;font-family:var(--mono)}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.dow{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em;
+text-align:center;padding-bottom:3px}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+min-height:62px;padding:5px 6px 6px;display:flex;flex-direction:column;gap:4px}
+.day.out{background:transparent;border:none;min-height:0}
+.day.weekend{background:transparent}
+.day.empty{opacity:.55}
+.day.today{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.dnum{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.chips{display:flex;gap:3px;flex-wrap:wrap}
+.chip{font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 5px;
+border-radius:4px;font-family:var(--mono);display:inline-flex;align-items:center;gap:2px}
+a.chip:hover{filter:brightness(1.18)}
+.chip.morning{background:rgba(192,125,16,.16);color:var(--am)}
+.chip.evening{background:rgba(43,92,217,.16);color:var(--pm)}
+.chip.none{background:transparent;width:0;padding:0}
+.flag{font-style:normal;font-size:9px;opacity:.75}
+.flag.warn{color:var(--warn);font-weight:900}
+
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--dim);font-size:12px;
+border-top:1px solid var(--line);padding-top:14px;margin-top:8px}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+@media(max-width:520px){.wrap{padding:24px 12px 60px}
+.day{min-height:54px}.chip{font-size:9px;padding:2px 4px}}
+</style></head><body>
+<div class="wrap">
+<h1>FX Recap</h1>
+<div class="sub">Twice daily from ForexFactory data &mdash; 07:00 overnight
+look-back, 19:00 full trading day, Europe/Zurich. 2 reports.</div>
+<a class="latest" href="2026-08/2026-08-27-evening.html"><div class="lat-h"><span class="lat-k">Latest</span><b>Thursday 27 August 2026</b><a class="chip evening" href="2026-08/2026-08-27-evening.html" title="Daily recap (19:00)  —  AUD +0.29%, USD -0.16%">PM</a></div><p class="gist">The session was a mild risk-on, USD-soft tape: SPX +73.4, VIX -52.3, BTC +2389.9 and gold +233.2 while DXY lost -4.7 points. Commodity FX led via AUD/USD +28.5 pips and NZD/USD +12.5 pips, while EUR/USD +2.4 and GBP/USD +3.1 lagged. No leg had a clear news catalyst; the only measured event reaction, Unemployment Claims (203K vs 208K), was muted at 0.009% and failed to lift the dollar. Price action was range-bound with risk-on outperformance despite negative geopolitical headlines.</p></a>
+<section class="month"><h2>August 2026<span class="cnt">2 reports</span></h2><div class="grid"><div class="dow">Mo</div><div class="dow">Tu</div><div class="dow">We</div><div class="dow">Th</div><div class="dow">Fr</div><div class="dow">Sa</div><div class="dow">Su</div><div class="day out"></div><div class="day out"></div><div class="day out"></div><div class="day out"></div><div class="day out"></div><div class="day weekend empty"><span class="dnum">1</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">2</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">3</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">4</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">5</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">6</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">7</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">8</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">9</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">10</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">11</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">12</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">13</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">14</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">15</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">16</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">17</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">18</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">19</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">20</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">21</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">22</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">23</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">24</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">25</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day"><span class="dnum">26</span><div class="chips"><span class="chip none"></span><a class="chip evening" href="2026-08/2026-08-26-evening.html" title="Daily recap (19:00)  —  AUD +0.45%, NZD -0.35%">PM</a></div></div><div class="day today"><span class="dnum">27</span><div class="chips"><span class="chip none"></span><a class="chip evening" href="2026-08/2026-08-27-evening.html" title="Daily recap (19:00)  —  AUD +0.29%, USD -0.16%">PM</a></div></div><div class="day empty"><span class="dnum">28</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">29</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day weekend empty"><span class="dnum">30</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day empty"><span class="dnum">31</span><div class="chips"><span class="chip none"></span><span class="chip none"></span></div></div><div class="day out"></div><div class="day out"></div><div class="day out"></div><div class="day out"></div><div class="day out"></div><div class="day out"></div></div></section>
+<div class="legend">
+<span><b class="chip morning">AM</b> overnight, 19:00&rarr;07:00</span>
+<span><b class="chip evening">PM</b> full day, 19:00&rarr;19:00</span>
+<span><i class="flag">·</i> partial window</span>
+<span><i class="flag warn">!</i> calendar degraded</span>
+</div>
+</div></body></html>
