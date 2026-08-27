@@ -4,7 +4,8 @@ from __future__ import annotations
 import datetime as dt
 import re
 
-from .config import DEFAULT_EDITION, EDITIONS, REPORT_TZ, tick_for
+from .config import (DEFAULT_EDITION, EDITIONS, REPORT_TZ, TRADING_WEEKDAYS,
+                     tick_for)
 
 try:  # py3.9+
     from zoneinfo import ZoneInfo
@@ -48,25 +49,57 @@ def cutoff(report_date, edition=None, offset_days=0):
     return _localize(naive, REPORT_TZ).astimezone(UTC)
 
 
+def is_trading_day(day):
+    return day.weekday() in TRADING_WEEKDAYS
+
+
+def _prev_trading_day(day):
+    while not is_trading_day(day):
+        day -= dt.timedelta(days=1)
+    return day
+
+
+def _next_trading_day(day):
+    while not is_trading_day(day):
+        day += dt.timedelta(days=1)
+    return day
+
+
 def session_window(report_date, edition=None):
     """(start, end) UTC for the window this edition recaps.
 
     Both ends are localised from naive wall-clock times, so a DST switch inside
     the window produces a 23h or 25h span -- which is what actually happened --
     instead of silently sliding the cutoff off 19:00 local.
+
+    A start that falls in the closed weekend is pulled back to the same clock
+    time on the previous trading day, so every edition covers exactly the span
+    since the previous edition of its own kind: Monday 07:00 runs from Friday
+    07:00, Monday 19:00 from Friday 19:00. Without that, both Monday editions
+    would open on a Sunday evening with no market in them.
     """
     spec = edition_spec(edition)
     end_naive = dt.datetime.combine(report_date, dt.time(spec["hour"], 0))
     start_naive = end_naive - dt.timedelta(hours=spec["lookback_h"])
+    if not is_trading_day(start_naive.date()):
+        bridged = _prev_trading_day(start_naive.date())
+        start_naive = dt.datetime.combine(bridged, dt.time(spec["hour"], 0))
     return (_localize(start_naive, REPORT_TZ).astimezone(UTC),
             _localize(end_naive, REPORT_TZ).astimezone(UTC))
 
 
 def forward_window(report_date, edition=None):
-    """(start, end) UTC for the calendar horizon this edition projects."""
+    """(start, end) UTC for the calendar horizon this edition projects.
+
+    A horizon ending in the weekend is pushed to the next trading day, so the
+    Friday evening edition previews Monday rather than an empty Saturday.
+    """
     spec = edition_spec(edition)
     start_naive = dt.datetime.combine(report_date, dt.time(spec["hour"], 0))
     end_naive = start_naive + dt.timedelta(hours=spec["forward_h"])
+    if not is_trading_day(end_naive.date()):
+        bridged = _next_trading_day(end_naive.date())
+        end_naive = dt.datetime.combine(bridged, end_naive.time())
     return (_localize(start_naive, REPORT_TZ).astimezone(UTC),
             _localize(end_naive, REPORT_TZ).astimezone(UTC))
 

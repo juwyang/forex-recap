@@ -11,6 +11,14 @@ Two editions, both anchored to **Europe/Zurich**:
 | `morning` | 07:00 | previous 19:00 → 07:00 (overnight, Asia) | 07:00 → 19:00 |
 | `evening` | 19:00 | previous 19:00 → 19:00 (full trading day) | 19:00 → next 19:00 |
 
+Nothing is published on Saturday or Sunday. Rather than leave the weekend
+uncovered, **each edition spans everything since the previous edition of its own
+kind**: Monday 07:00 runs from Friday 07:00 and Monday 19:00 from Friday 19:00,
+both 72-hour windows carrying the Friday session, the weekend, and the Asia
+reopen. Neither series double-counts and neither has a gap. The look-ahead
+bridges the other way, so Friday evening previews Monday's calendar instead of
+an empty Saturday.
+
 Windows are localised at both ends, so a DST changeover produces a 23h or 25h
 day rather than silently sliding the cutoff off 19:00 local.
 
@@ -65,6 +73,12 @@ A release whose currency moves *against* its own surprise is labelled
 **Reactions are normalised.** Ranking pairs by raw percent move just ranks them
 by volatility and puts BTC on top every time. Movers are ranked by move ÷ that
 instrument's own volatility over the window, reported in σ.
+
+**A dead market is not a session.** An edition is skipped when the majors
+traded for less than a quarter of its window. Testing "did any instrument
+return bars" is not the same question and answers yes on a closed Sunday,
+because BTC trades all weekend — a market map with one instrument in it and a
+currency-strength spread of 0.000%.
 
 **Simultaneous releases are one event.** CPI m/m, CPI y/y and the trimmed mean
 print on one timestamp and trade as one block; scoring them separately would

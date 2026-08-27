@@ -13,6 +13,12 @@ REPORT_TZ = "Europe/Zurich"
 # switch stretches or shrinks the window rather than sliding the cutoff.
 #   evening 19:00 -> the full trading day just finished (prev 19:00 -> 19:00)
 #   morning 07:00 -> the overnight look-back (prev 19:00 -> 07:00, Asia session)
+# Each edition covers everything since the previous edition of the same kind.
+# On Tuesday to Friday that is just the nominal lookback, but on Monday the
+# nominal start lands in the dead weekend, so it is pulled back to the same
+# clock time on Friday: Monday 07:00 covers Friday 07:00 onwards, Monday 19:00
+# covers Friday 19:00 onwards. Neither series double-counts and neither has a
+# gap. Look-ahead bridges the other way, so Friday evening previews Monday.
 EDITIONS = {
     "evening": {
         "hour": 19, "lookback_h": 24, "forward_h": 24,
@@ -26,6 +32,10 @@ EDITIONS = {
     },
 }
 DEFAULT_EDITION = "evening"
+
+# FX trades Sunday night to Friday night; editions are only published on days
+# the market is open for a full session.
+TRADING_WEEKDAYS = {0, 1, 2, 3, 4}  # Monday..Friday
 
 # The eight majors. Column order in the market map is by measured strength;
 # this list only fixes tie-breaks and iteration order.

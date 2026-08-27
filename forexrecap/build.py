@@ -12,7 +12,8 @@ from .config import (CONTEXT_INSTRUMENTS, CURRENCIES, DETAIL_PAIRS,
                      tick_for)
 from .market import load_all, market_map
 from .reaction import build_reaction_functions
-from .util import edition_spec, forward_window, hhmm, session_window, to_local
+from .util import (edition_spec, forward_window, hhmm, is_trading_day,
+                   session_window, to_local)
 from .zigzag import enrich, segment
 
 UNIVERSE = MAJOR_PAIRS + EXTRA_INSTRUMENTS + CONTEXT_INSTRUMENTS
@@ -26,6 +27,14 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
     # A run that fires early -- or a backfill of the current day -- covers a
     # window that has not finished yet. Say so rather than presenting a partial
     # session as a closed one.
+    hours = (end - start).total_seconds() / 3600.0
+    # Monday's morning edition spans the whole weekend, so the standing
+    # "overnight" labels would be wrong by three days.
+    bridged = hours > spec["lookback_h"] + 1
+    window_label = ("since Friday's %02d:00" % spec["hour"]) if bridged else spec["window_label"]
+    sessions = ("Friday close -> weekend -> Asia reopen" if bridged
+                else spec["sessions"])
+
     now = dt.datetime.now(dt.timezone.utc)
     partial = now < end
     if partial:
@@ -38,6 +47,13 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
     # --- prices -----------------------------------------------------------
     frames, snaps, failed = load_all(UNIVERSE, start, end, ttl=ttl)
     cells, strength, missing_cells = market_map(snaps)
+
+    # How much of the window the FX market was actually open for. Measured on
+    # the major complex alone: BTC trades all weekend, so "did any instrument
+    # return bars" is not the same question and answers yes on a dead Sunday.
+    expected = max((end - start).total_seconds() / 60.0 / 15.0, 1.0)
+    covers = sorted(len(frames[p]) / expected for p in MAJOR_PAIRS if p in frames)
+    fx_coverage = covers[len(covers) // 2] if covers else 0.0
 
     # --- news & calendar ---------------------------------------------------
     try:
@@ -91,8 +107,10 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
             "date": report_date.isoformat(),
             "edition": edition,
             "edition_title": spec["title"],
-            "window_label": spec["window_label"],
-            "sessions": spec["sessions"],
+            "window_label": window_label,
+            "sessions": sessions,
+            "weekend_bridged": bridged,
+            "hours": round(hours, 1),
             "start_utc": start, "end_utc": end,
             "start_local": to_local(start), "end_local": to_local(end),
             "fwd_start_utc": fwd_start, "fwd_end_utc": fwd_end,
@@ -100,6 +118,7 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
             "partial": partial,
             "coverage_min": int((min(now, end) - start).total_seconds() // 60),
             "instruments_loaded": len(snaps), "instruments_failed": failed,
+            "fx_coverage": round(fx_coverage, 3),
             "m5_loaded": len(fine_snaps), "m5_failed": fine_failed,
             "reaction_interval": "M5",
             "missing_map_cells": missing_cells,

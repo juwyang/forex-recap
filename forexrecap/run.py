@@ -17,7 +17,13 @@ from .index import render as render_index
 from .config import DEFAULT_EDITION, EDITIONS
 from .llm import analyse
 from .page import build_html, build_markdown
-from .util import report_tz
+from .util import is_trading_day, report_tz
+
+
+# Below this share of the window actually trading, an edition is a weekend
+# artefact: a Sunday recap has nothing but crypto in it, and a Saturday evening
+# one only repeats the sliver of Friday that Saturday morning already covered.
+MIN_FX_COVERAGE = 0.25
 
 
 def _today_local():
@@ -32,12 +38,24 @@ def _json_default(o):
     return str(o)
 
 
-def build_one(day, edition, args):
-    """Build and write one edition. Returns True if anything was written."""
-    report = build(day, edition, ttl=args.ttl)
-    if report["meta"]["instruments_loaded"] == 0:
-        print("[skip] %s %s -- no quotes in the window (market closed)"
+def build_one(day, edition, args, seen=None):
+    """Build and write one edition.
+
+    Returns True if anything was written. `seen`, if given, receives the meta
+    dict so the caller can act on it -- --strict needs it and the writing lives
+    here, not in main.
+    """
+    if not is_trading_day(day):
+        print("[skip] %s %s -- market closed all weekend, no edition published"
               % (day, edition))
+        return False
+    report = build(day, edition, ttl=args.ttl)
+    if seen is not None:
+        seen.append(report["meta"])
+    cov = report["meta"]["fx_coverage"]
+    if cov < MIN_FX_COVERAGE:
+        print("[skip] %s %s -- FX traded for only %.0f%% of the window"
+              % (day, edition, 100 * cov))
         return False
     frames = report.pop("_frames")
 
@@ -70,12 +88,11 @@ def build_one(day, edition, args):
 def backfill(end_day, args):
     """Rebuild history so the calendar is not empty on day one.
 
-    Weekend editions are attempted rather than assumed away: a Monday morning
-    edition covers Sunday evening, when the market has already reopened, so the
-    honest test is whether quotes came back -- `build_one` skips only when they
-    did not.
+Weekend days are skipped outright; Monday's morning edition bridges back
+    to Friday, so nothing is lost by not publishing on Saturday or Sunday.
     """
     days = [end_day - dt.timedelta(days=i) for i in range(args.backfill, -1, -1)]
+    days = [d for d in days if is_trading_day(d)]
     written = 0
     for day in days:
         for edition in sorted(EDITIONS):
@@ -106,46 +123,15 @@ def main(argv=None):
     if args.backfill:
         return backfill(day, args)
 
-    report = build(day, args.edition, ttl=args.ttl)
-    frames = report.pop("_frames")
-
-    analysis = None
-    if not args.no_llm:
-        print("[llm] requesting structured analysis...")
-        analysis = analyse(report["facts"])
-        if analysis.get("error"):
-            print("[llm] %s" % analysis["error"])
-        else:
-            print("[llm] ok via %s (%s tokens)"
-                  % (analysis.get("_model"),
-                     (analysis.get("_usage") or {}).get("total_tokens", "?")))
-
-    stem = "%s-%s" % (day.isoformat(), args.edition)
-    outdir = os.path.join(args.out, day.strftime("%Y-%m"))
-    os.makedirs(outdir, exist_ok=True)
-
-    html_path = os.path.join(outdir, stem + ".html")
-    md_path = os.path.join(outdir, stem + ".md")
-    json_path = os.path.join(outdir, stem + ".json")
-
-    with open(html_path, "w", encoding="utf-8") as fh:
-        fh.write(build_html(report, analysis, frames))
-    with open(md_path, "w", encoding="utf-8") as fh:
-        fh.write(build_markdown(report, analysis))
-    with open(json_path, "w", encoding="utf-8") as fh:
-        json.dump({"meta": report["meta"], "facts": report["facts"],
-                   "analysis": analysis}, fh, ensure_ascii=False, indent=1,
-                  default=_json_default)
-
-    print("[out] %s" % html_path)
-    print("[out] %s" % md_path)
-    print("[out] %s" % json_path)
+    metas = []
+    if not build_one(day, args.edition, args, seen=metas):
+        return 0
 
     n = render_index(args.out)
     print("[out] %s/index.html (%d reports)" % (args.out, n))
 
     if args.strict:
-        meta = report["meta"]
+        meta = metas[-1]
         problems = []
         if (meta.get("calendar") or {}).get("degraded"):
             problems.append("calendar degraded (no actuals)")
