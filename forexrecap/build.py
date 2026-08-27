@@ -5,7 +5,8 @@ import datetime as dt
 
 from . import ff
 from .attribution import attribute_legs
-from .calendar_ff import group_releases, in_window, load_events
+from .calendar_ff import (group_releases, in_window, load_events,
+                          weeks_covering)
 from .config import (CONTEXT_INSTRUMENTS, CURRENCIES, DETAIL_PAIRS,
                      EXTRA_INSTRUMENTS, MAJOR_PAIRS, REACTION_WINDOWS_MIN,
                      tick_for)
@@ -45,7 +46,11 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
         print("[build] news unavailable: %s" % exc)
         headlines = []
 
-    all_events, cal_meta = load_events(ttl=ttl * 2)
+    # Ask for the weeks the window actually spans. Defaulting to "this week"
+    # silently gives a backfilled day an unrelated calendar, and drops the
+    # look-ahead whenever a window crosses into the next week.
+    all_events, cal_meta = load_events(
+        ttl=ttl * 2, weeks=weeks_covering(start.date(), fwd_end.date()))
     events = in_window(all_events, start, end)
     ahead = in_window(all_events, fwd_start, fwd_end)
     ahead_notable = [e for e in ahead if e["impact"] in ("High", "Medium")]

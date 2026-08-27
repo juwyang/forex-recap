@@ -107,6 +107,25 @@ def _from_page_event(e):
     }
 
 
+def weeks_covering(start, end):
+    """Week tokens spanning [start, end] inclusive, de-duplicated in order.
+
+    A report window routinely straddles a week boundary -- a Friday evening
+    edition projects into Monday -- and backfilling any past day needs that
+    day's week, not the week the script happens to run in.
+    """
+    tokens, day = [], start
+    while day <= end:
+        t = week_token(day)
+        if t not in tokens:
+            tokens.append(t)
+        day += dt.timedelta(days=7)
+    last = week_token(end)
+    if last not in tokens:
+        tokens.append(last)
+    return tokens
+
+
 def load_events(days=None, ttl=1800, weeks=None):
     """Calendar rows covering `weeks` (defaults to the current week).
 
