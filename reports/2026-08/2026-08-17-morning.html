@@ -1,0 +1,584 @@
+<title>FX Overnight Recap 2026-08-17</title>
+<style>
+:root{
+  --bg:#fbfbfa; --panel:#fff; --fg:#1c1c1a; --dim:#6b6b66; --line:#e3e2de;
+  --flat:#eceae6; --up:#12783f; --down:#c0392b; --accent:#2b5cd9;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#131315; --panel:#1a1a1d; --fg:#e9e8e4; --dim:#96958f; --line:#2c2c30;
+  --flat:#262629; --up:#3ec27a; --down:#f0705f; --accent:#7aa2ff;
+}}
+:root[data-theme=dark]{
+  --bg:#131315; --panel:#1a1a1d; --fg:#e9e8e4; --dim:#96958f; --line:#2c2c30;
+  --flat:#262629; --up:#3ec27a; --down:#f0705f; --accent:#7aa2ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:17px;margin:44px 0 12px;letter-spacing:-.01em;
+  padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-size:14px;margin:22px 0 8px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.07em}
+p{margin:0 0 10px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.sub{color:var(--dim);font-size:13.5px;margin-bottom:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.dim{color:var(--dim)}
+.nowrap{white-space:nowrap}
+.up{color:var(--up)} .down{color:var(--down)}
+td.dir{text-align:center;font-size:11px;width:20px}
+.lede{font-size:16.5px;line-height:1.6;margin-bottom:18px}
+.empty,.warn{color:var(--dim);font-size:13.5px;background:var(--flat);
+  padding:10px 13px;border-radius:7px;border:1px solid var(--line)}
+
+/* header strip */
+.strip{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}
+.kv{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:8px 12px;min-width:96px}
+.kv .k{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em}
+.kv .v{font-family:var(--mono);font-size:15px;font-weight:600;margin-top:2px}
+
+/* market map */
+.mm-scroll{overflow-x:auto;padding-bottom:6px}
+.mm{display:flex;gap:5px;min-width:760px}
+.mm-col{flex:1 1 0;display:flex;flex-direction:column;gap:2px;min-width:96px}
+.mm-cell{height:32px;border-radius:4px;padding:0 8px;display:flex;
+  align-items:center;justify-content:space-between;font-size:11.5px}
+.mm-pair{font-weight:600;letter-spacing:-.01em}
+.mm-val{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.mm-head{height:38px;border-radius:4px;background:var(--panel);
+  border:1px solid var(--line);display:flex;align-items:center;
+  justify-content:space-between;padding:0 8px;margin:3px 0}
+.mm-head b{font-size:14px;letter-spacing:.02em}
+.mm-head span{font-family:var(--mono);font-size:11px;color:var(--dim)}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-weight:600;font-size:10.5px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.07em;padding:0 9px 7px;
+  border-bottom:1px solid var(--line)}
+th.num{text-align:right}
+td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+
+/* instrument blocks */
+.inst{background:var(--panel);border:1px solid var(--line);border-radius:11px;
+  padding:16px 18px;margin-bottom:14px}
+.inst-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.inst-h b{font-size:16px}
+.inst-h .px{font-family:var(--mono);color:var(--dim);font-size:13px}
+.inst-h .chg{font-family:var(--mono);font-size:14px;font-weight:600}
+.zz{width:100%;height:170px;display:block;margin:2px 0 6px}
+.zz-price{fill:none;stroke:var(--dim);stroke-width:1;opacity:.42}
+.zz-leg{stroke-width:2.1;stroke-linecap:round}
+.zz-leg.up{stroke:var(--up)} .zz-leg.down{stroke:var(--down)}
+.zz-lab{font:600 10.5px var(--mono);text-anchor:middle}
+.zz-lab.up{fill:var(--up)} .zz-lab.down{fill:var(--down)}
+.zz-dot{stroke:var(--panel);stroke-width:1.4}
+.zz-dot.conf-high{fill:var(--accent)} .zz-dot.conf-med{fill:#d68a1a}
+.zz-dot.conf-low{fill:var(--dim)} .zz-dot.conf-none{fill:var(--flat)}
+.contrib{color:var(--dim);font-size:12px;margin-top:3px;padding-left:11px;
+  border-left:2px solid var(--line)}
+.contrib em{font-style:normal;font-family:var(--mono)}
+
+/* badges */
+.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-right:6px;
+  vertical-align:1px}
+.conf-high{background:rgba(43,92,217,.16);color:var(--accent)}
+.conf-med{background:rgba(214,138,26,.18);color:#c07d10}
+.conf-low{background:var(--flat);color:var(--dim)}
+.conf-none{background:transparent;color:var(--dim);border:1px solid var(--line)}
+.pol-normal{background:rgba(18,120,63,.15);color:var(--up)}
+.pol-inverted{background:rgba(192,57,43,.16);color:var(--down)}
+.pol-muted{background:var(--flat);color:var(--dim)}
+.imp{display:inline-block;font-size:9.5px;font-weight:700;padding:2px 5px;
+  border-radius:3px;text-transform:uppercase;letter-spacing:.04em}
+.imp-high{background:rgba(192,57,43,.16);color:var(--down)}
+.imp-medium{background:rgba(214,138,26,.18);color:#c07d10}
+.imp-low{background:var(--flat);color:var(--dim)}
+.chip{display:inline-block;background:var(--flat);color:var(--dim);font-size:10px;
+  font-weight:700;padding:1px 5px;border-radius:3px;margin-left:5px}
+
+/* reactions */
+.react{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;margin-bottom:11px}
+.react-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.react-head .t{color:var(--dim);font-size:13px}
+.react-head .ccy{font-weight:700;font-size:13px}
+.react-head .rtitle{flex:1 1 240px;font-weight:600}
+.members{color:var(--dim);font-size:12px;margin-top:4px}
+.react-nums{font-family:var(--mono);font-size:12.5px;color:var(--dim);margin-top:7px}
+.react-note{font-size:13.5px;margin-top:5px}
+.mv-head{font-size:10.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.06em;margin:11px 0 5px}
+.movers{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.movers li{display:flex;gap:7px;align-items:baseline;background:var(--flat);
+  border-radius:6px;padding:4px 9px;font-size:12.5px}
+.mv-name{font-weight:600}
+.mv-sig{font-family:var(--mono);font-weight:700}
+.mv-pips{font-family:var(--mono);color:var(--dim);font-size:11.5px}
+
+/* analysis */
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:11px}
+.theme{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.theme-h{font-weight:650;margin-bottom:5px}
+.theme-b{font-size:13.5px;color:var(--dim)}
+.reads{margin:0;padding-left:19px} .reads li{margin-bottom:7px;font-size:13.5px}
+.scenarios{display:flex;flex-direction:column;gap:13px}
+.scen{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 17px}
+.scen-h{display:flex;align-items:baseline;gap:10px;margin-bottom:7px}
+.scen-p{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--accent)}
+.scen-h b{font-size:15.5px}
+.trig{margin:6px 0;padding-left:19px;font-size:13px;color:var(--dim)}
+.scen-inval{font-size:13px;color:var(--dim);margin:8px 0 4px}
+.paths{margin-top:9px}
+.risks{list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:11px}
+.risks li{background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--down);border-radius:9px;padding:12px 14px;font-size:13.5px}
+.risks li div{color:var(--dim);margin-top:4px}
+.watch{font-size:12.5px;font-family:var(--mono)}
+.heads{list-style:none;margin:0;padding:0}
+.heads li{display:flex;gap:9px;align-items:baseline;padding:6px 0;
+  border-bottom:1px solid var(--line);font-size:13.5px}
+.heads .t{color:var(--dim);font-size:12.5px}
+footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);
+  color:var(--dim);font-size:12.5px}
+@media(max-width:640px){.wrap{padding:20px 13px 60px}h1{font-size:21px}}
+</style>
+<div class="wrap">
+<h1>FX Overnight Recap &mdash; 2026-08-17</h1>
+<div class="sub">Fri 14 Aug 07:00 &rarr; Mon 17 Aug 07:00 CEST &middot; Friday close -&gt; weekend -&gt; Asia reopen</div>
+<div class="strip"><div class="kv"><div class="k">window</div><div class="v ">72h</div></div><div class="kv"><div class="k">strongest</div><div class="v ">NZD +0.42%</div></div><div class="kv"><div class="k">weakest</div><div class="v ">USD -0.41%</div></div><div class="kv"><div class="k">releases</div><div class="v ">22 timed</div></div><div class="kv"><div class="k">headlines</div><div class="v ">19</div></div><div class="kv"><div class="k">instruments</div><div class="v ">36</div></div></div>
+
+<h2>Where the money went</h2>
+<div class="warn">Structured analysis unavailable: not requested. Every measurement above is unaffected.</div>
+
+<h2>Currency market map</h2>
+<p class="sub">Every major against every other over the window. Columns ordered
+strongest to weakest by mean move against the other seven. Reciprocal cells are
+exact inverses, so USD/AUD is not simply the negative of AUD/USD.</p>
+<div class="mm-scroll"><div class="mm">
+<div class="mm-col">
+<div class="mm-pad" style="height:0px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 22%);color:#fff"><span class="mm-pair">NZD/USD</span><span class="mm-val">+0.73%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 27%);color:#fff"><span class="mm-pair">NZD/JPY</span><span class="mm-val">+0.58%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 30%);color:#fff"><span class="mm-pair">NZD/CHF</span><span class="mm-val">+0.48%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 34%);color:#fff"><span class="mm-pair">NZD/CAD</span><span class="mm-val">+0.33%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 34%);color:#fff"><span class="mm-pair">NZD/EUR</span><span class="mm-val">+0.33%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 34%);color:#fff"><span class="mm-pair">NZD/GBP</span><span class="mm-val">+0.33%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">NZD/AUD</span><span class="mm-val">+0.17%</span></div>
+<div class="mm-head"><b>NZD</b><span>+0.42%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:34px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 27%);color:#fff"><span class="mm-pair">AUD/USD</span><span class="mm-val">+0.56%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 32%);color:#fff"><span class="mm-pair">AUD/JPY</span><span class="mm-val">+0.41%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 35%);color:#fff"><span class="mm-pair">AUD/CHF</span><span class="mm-val">+0.31%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">AUD/CAD</span><span class="mm-val">+0.16%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">AUD/EUR</span><span class="mm-val">+0.16%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">AUD/GBP</span><span class="mm-val">+0.16%</span></div>
+<div class="mm-head"><b>AUD</b><span>+0.23%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">AUD/NZD</span><span class="mm-val">-0.17%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:68px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 32%);color:#fff"><span class="mm-pair">GBP/USD</span><span class="mm-val">+0.40%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 36%);color:#fff"><span class="mm-pair">GBP/JPY</span><span class="mm-val">+0.25%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">GBP/CHF</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">GBP/CAD</span><span class="mm-val">+0.00%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">GBP/EUR</span><span class="mm-val">+0.00%</span></div>
+<div class="mm-head"><b>GBP</b><span>+0.05%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">GBP/AUD</span><span class="mm-val">-0.16%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 34%);color:#fff"><span class="mm-pair">GBP/NZD</span><span class="mm-val">-0.33%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:102px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 32%);color:#fff"><span class="mm-pair">EUR/USD</span><span class="mm-val">+0.40%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 36%);color:#fff"><span class="mm-pair">EUR/JPY</span><span class="mm-val">+0.25%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">EUR/CHF</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">EUR/CAD</span><span class="mm-val">+0.00%</span></div>
+<div class="mm-head"><b>EUR</b><span>+0.04%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">EUR/GBP</span><span class="mm-val">-0.00%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">EUR/AUD</span><span class="mm-val">-0.16%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 34%);color:#fff"><span class="mm-pair">EUR/NZD</span><span class="mm-val">-0.33%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:136px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 32%);color:#fff"><span class="mm-pair">CAD/USD</span><span class="mm-val">+0.40%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 37%);color:#fff"><span class="mm-pair">CAD/JPY</span><span class="mm-val">+0.25%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">CAD/CHF</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-head"><b>CAD</b><span>+0.04%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">CAD/EUR</span><span class="mm-val">-0.00%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">CAD/GBP</span><span class="mm-val">-0.00%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">CAD/AUD</span><span class="mm-val">-0.16%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 34%);color:#fff"><span class="mm-pair">CAD/NZD</span><span class="mm-val">-0.33%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:170px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 37%);color:#fff"><span class="mm-pair">CHF/USD</span><span class="mm-val">+0.25%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">CHF/JPY</span><span class="mm-val">+0.10%</span></div>
+<div class="mm-head"><b>CHF</b><span>-0.13%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">CHF/CAD</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">CHF/EUR</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">CHF/GBP</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 35%);color:#fff"><span class="mm-pair">CHF/AUD</span><span class="mm-val">-0.31%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 30%);color:#fff"><span class="mm-pair">CHF/NZD</span><span class="mm-val">-0.48%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:204px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">JPY/USD</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-head"><b>JPY</b><span>-0.24%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">JPY/CHF</span><span class="mm-val">-0.10%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 37%);color:#fff"><span class="mm-pair">JPY/CAD</span><span class="mm-val">-0.25%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 36%);color:#fff"><span class="mm-pair">JPY/EUR</span><span class="mm-val">-0.25%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 36%);color:#fff"><span class="mm-pair">JPY/GBP</span><span class="mm-val">-0.25%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 32%);color:#fff"><span class="mm-pair">JPY/AUD</span><span class="mm-val">-0.41%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 27%);color:#fff"><span class="mm-pair">JPY/NZD</span><span class="mm-val">-0.58%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:238px"></div>
+<div class="mm-head"><b>USD</b><span>-0.41%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">USD/JPY</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 37%);color:#fff"><span class="mm-pair">USD/CHF</span><span class="mm-val">-0.25%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 32%);color:#fff"><span class="mm-pair">USD/CAD</span><span class="mm-val">-0.39%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 32%);color:#fff"><span class="mm-pair">USD/EUR</span><span class="mm-val">-0.40%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 32%);color:#fff"><span class="mm-pair">USD/GBP</span><span class="mm-val">-0.40%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 27%);color:#fff"><span class="mm-pair">USD/AUD</span><span class="mm-val">-0.55%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 22%);color:#fff"><span class="mm-pair">USD/NZD</span><span class="mm-val">-0.72%</span></div>
+</div>
+</div></div>
+
+<h2>Beyond the majors</h2>
+<table><thead><tr><th>instrument</th><th class="num">close</th>
+<th class="num">change</th><th class="num">%</th><th class="num">range</th>
+<th class="num">close in range</th></tr></thead><tbody><tr><td class="nowrap">USD/ZAR</td><td class="num mono">16.168</td><td class="num down">-241.8</td><td class="num down">-0.15%</td><td class="num dim">774.7</td><td class="num dim">40%</td></tr><tr><td class="nowrap">USD/MXN</td><td class="num mono">17.006</td><td class="num down">-221.7</td><td class="num down">-0.13%</td><td class="num dim">810.8</td><td class="num dim">48%</td></tr><tr><td class="nowrap">Gold/USD</td><td class="num mono">4,389.9</td><td class="num up">+638.5</td><td class="num up">+1.48%</td><td class="num dim">1054.4</td><td class="num dim">76%</td></tr><tr><td class="nowrap">BTC/USD</td><td class="num mono">63,469.8</td><td class="num up">+159.5</td><td class="num up">+0.25%</td><td class="num dim">1033.9</td><td class="num dim">96%</td></tr><tr><td class="nowrap">Brent/USD</td><td class="num mono">90.099</td><td class="num up">+172.2</td><td class="num up">+1.95%</td><td class="num dim">312.7</td><td class="num dim">74%</td></tr></tbody></table>
+
+<h3>Risk context</h3>
+<table><thead><tr><th>instrument</th><th class="num">close</th>
+<th class="num">change</th><th class="num">%</th><th class="num">range</th>
+<th class="num">close in range</th></tr></thead><tbody><tr><td class="nowrap">DXY/USD</td><td class="num mono">99.385</td><td class="num down">-36.1</td><td class="num down">-0.36%</td><td class="num dim">40.9</td><td class="num dim">11%</td></tr><tr><td class="nowrap">SPX/USD</td><td class="num mono">7,793.2</td><td class="num down">-9.0</td><td class="num down">-0.11%</td><td class="num dim">34.8</td><td class="num dim">50%</td></tr><tr><td class="nowrap">VIX/USD</td><td class="num mono">17.870</td><td class="num down">-6.4</td><td class="num down">-0.36%</td><td class="num dim">28.2</td><td class="num dim">22%</td></tr></tbody></table>
+
+<h2>Event reaction functions and polarity</h2>
+<p class="sub">Each release is measured from the last complete bar before it.
+Polarity asks whether the currency moved the way its surprise implies &mdash;
+an <b>inverted</b> read is the one worth acting on.</p>
+<div class="react"><div class="react-head"><span class="mono t">14:30</span><span class="ccy">USD</span><span class="imp imp-medium">Medium</span><span class="rtitle">Retail Sales m/m +1 more</span><span class="badge pol-inverted">INVERTED</span></div><div class="members">released together: Core Retail Sales m/m, Retail Sales m/m</div><div class="react-nums">actual <b>-0.6%</b> &middot; forecast 0.1% &middot; previous 0.2%</div><div class="react-note">miss surprise -&gt; USD stronger 0.064%  (opposite to the textbook sign)</div><div class="mv-head">strongest reactions, 5 min, normalised by each instrument’s own volatility</div><ul class="movers"><li><span class="mv-name">USD/JPY</span><span class="mv-sig down">-3.4σ</span><span class="mv-pips">-10.3</span></li><li><span class="mv-name">USD/CAD</span><span class="mv-sig up">+2.3σ</span><span class="mv-pips">+3.8</span></li><li><span class="mv-name">EUR/USD</span><span class="mv-sig up">+2.1σ</span><span class="mv-pips">+3.4</span></li><li><span class="mv-name">Brent/USD</span><span class="mv-sig down">-2.1σ</span><span class="mv-pips">-32.0</span></li><li><span class="mv-name">EUR/GBP</span><span class="mv-sig up">+2.0σ</span><span class="mv-pips">+2.1</span></li><li><span class="mv-name">USD/MXN</span><span class="mv-sig down">-1.8σ</span><span class="mv-pips">-74.6</span></li></ul></div>
+<div class="react"><div class="react-head"><span class="mono t">16:00</span><span class="ccy">USD</span><span class="imp imp-medium">Medium</span><span class="rtitle">Prelim UoM Consumer Sentiment +1 more</span><span class="badge pol-muted">no reaction</span></div><div class="members">released together: Prelim UoM Consumer Sentiment, Prelim UoM Inflation Expectations</div><div class="react-nums">actual <b>51.0</b> &middot; forecast 54.7 &middot; previous 54.4 &middot; revised 55.2</div><div class="react-note">basket moved 0.026%, inside the noise floor</div><div class="mv-head">strongest reactions, 5 min, normalised by each instrument’s own volatility</div><ul class="movers"><li><span class="mv-name">Gold/USD</span><span class="mv-sig up">+2.5σ</span><span class="mv-pips">+69.0</span></li><li><span class="mv-name">GBP/USD</span><span class="mv-sig up">+2.0σ</span><span class="mv-pips">+3.9</span></li><li><span class="mv-name">EUR/GBP</span><span class="mv-sig down">-1.4σ</span><span class="mv-pips">-1.5</span></li><li><span class="mv-name">AUD/USD</span><span class="mv-sig up">+1.0σ</span><span class="mv-pips">+1.3</span></li><li><span class="mv-name">Brent/USD</span><span class="mv-sig up">+1.0σ</span><span class="mv-pips">+15.5</span></li><li><span class="mv-name">USD/CAD</span><span class="mv-sig down">-0.8σ</span><span class="mv-pips">-1.3</span></li></ul></div>
+<div class="react"><div class="react-head"><span class="mono t">21:00</span><span class="ccy">USD</span><span class="imp imp-medium">Medium</span><span class="rtitle">President Trump Speaks</span><span class="badge pol-muted">no reaction</span></div><div class="react-nums">actual <b>-</b> &middot; forecast - &middot; previous -</div><div class="react-note">basket moved -0.007%, inside the noise floor</div><div class="mv-head">strongest reactions, 5 min, normalised by each instrument’s own volatility</div><ul class="movers"><li><span class="mv-name">BTC/USD</span><span class="mv-sig down">-1.9σ</span><span class="mv-pips">-54.5</span></li><li><span class="mv-name">USD/CAD</span><span class="mv-sig up">+1.2σ</span><span class="mv-pips">+1.9</span></li><li><span class="mv-name">USD/MXN</span><span class="mv-sig up">+0.6σ</span><span class="mv-pips">+26.6</span></li><li><span class="mv-name">AUD/NZD</span><span class="mv-sig down">-0.5σ</span><span class="mv-pips">-1.0</span></li><li><span class="mv-name">NZD/CHF</span><span class="mv-sig up">+0.5σ</span><span class="mv-pips">+0.7</span></li><li><span class="mv-name">CHF/JPY</span><span class="mv-sig down">-0.4σ</span><span class="mv-pips">-1.3</span></li></ul></div>
+
+<h2>Path and attribution</h2>
+<p class="sub">Legs are a zigzag over 15-minute closes, with the reversal
+threshold auto-tuned to the window&rsquo;s own range so the shape stays readable.
+A leg only gets a named cause when a release actually moved price the right way
+within it; otherwise it is marked as having no clear catalyst.</p>
+<div class="inst"><div class="inst-h"><b>EUR/USD</b><span class="px">1.15847</span><span class="chg up">+46.0 pips &middot; +0.40%</span><span class="px dim">range 49.6 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="EUR/USD intraday path">
+<polyline class="zz-price" points="8.0,147.7 17.3,144.5 26.6,145.1 35.9,142.9 45.2,144.3 54.5,148.0 63.8,140.8 73.1,136.0 82.4,133.6 91.7,131.7 101.1,125.6 110.4,118.6 119.7,110.4 129.0,113.3 138.3,109.0 147.6,105.6 156.9,108.2 166.2,110.6 175.5,115.2 184.8,108.5 194.1,109.3 203.4,112.2 212.7,107.7 222.0,106.1 231.3,97.8 240.6,86.9 249.9,70.3 259.2,79.7 268.5,82.9 277.9,68.2 287.2,78.1 296.5,78.1 305.8,85.8 315.1,75.1 324.4,37.8 333.7,40.2 343.0,42.8 352.3,31.6 361.6,34.3 370.9,39.1 380.2,38.6 389.5,38.3 398.8,36.9 408.1,40.4 417.4,49.5 426.7,52.4 436.0,56.4 445.3,64.7 454.7,75.4 464.0,80.5 473.3,84.2 482.6,81.8 491.9,85.3 501.2,77.3 510.5,79.7 519.8,79.7 529.1,75.4 538.4,72.7 547.7,77.3 557.0,71.9 566.3,72.7 575.6,70.1 584.9,74.3 594.2,70.3 603.5,84.5 612.8,86.3 622.1,87.7 631.5,86.9 640.8,76.7 650.1,69.3 659.4,63.4 668.7,54.6 678.0,54.6 687.3,55.9 696.6,54.6 705.9,57.5 715.2,41.8 724.5,42.0 733.8,43.1 743.1,40.2 752.4,42.0 761.7,35.9 771.0,34.8 780.3,31.9 789.6,32.7 798.9,29.5 808.3,37.5 817.6,41.2 826.9,43.1 836.2,41.5 845.5,41.5 854.8,31.3 864.1,22.0 873.4,23.1 882.7,23.3 892.0,28.1"/>
+<line class="zz-leg up" x1="8.0" y1="147.7" x2="352.3" y2="31.6"/>
+<text class="zz-lab up" x="180.1" y="82.7">+43</text>
+<circle class="zz-dot conf-none" cx="352.3" cy="31.6" r="3.2"/>
+<line class="zz-leg down" x1="352.3" y1="31.6" x2="622.1" y2="87.7"/>
+<text class="zz-lab down" x="487.2" y="74.6">-21</text>
+<circle class="zz-dot conf-none" cx="622.1" cy="87.7" r="3.2"/>
+<line class="zz-leg up" x1="622.1" y1="87.7" x2="892.0" y2="28.1"/>
+<text class="zz-lab up" x="757.1" y="50.9">+22</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="28.1" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;16:15</td><td class="dir up">▲</td><td class="num up">+43.5</td><td class="num up">+0.377%</td><td class="num dim">555′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">16:15&rarr;23:30</td><td class="dir down">▼</td><td class="num down">-21.0</td><td class="num down">-0.181%</td><td class="num dim">3315′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks moved price the other way.</td></tr><tr><td class="mono nowrap">23:30&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+22.3</td><td class="num up">+0.193%</td><td class="num dim">435′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item NZ selected price indexes: July 2026, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>USD/JPY</b><span class="px">159.12</span><span class="chg down">-23.3 pips &middot; -0.15%</span><span class="px dim">range 79.6 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="USD/JPY intraday path">
+<polyline class="zz-price" points="8.0,36.3 17.3,37.4 26.6,47.2 35.9,49.2 45.2,61.1 54.5,46.6 63.8,51.7 73.1,52.8 82.4,47.5 91.7,42.8 101.1,49.8 110.4,61.1 119.7,63.5 129.0,77.8 138.3,77.6 147.6,67.4 156.9,77.8 166.2,68.6 175.5,73.1 184.8,74.2 194.1,78.7 203.4,69.3 212.7,69.1 222.0,66.5 231.3,68.4 240.6,74.0 249.9,88.7 259.2,81.5 268.5,94.9 277.9,148.0 287.2,126.0 296.5,122.5 305.8,91.5 315.1,107.8 324.4,138.6 333.7,117.6 343.0,102.0 352.3,114.2 361.6,111.2 370.9,98.6 380.2,88.1 389.5,77.4 398.8,67.1 408.1,59.0 417.4,45.7 426.7,35.3 436.0,33.1 445.3,26.7 454.7,23.5 464.0,26.7 473.3,25.4 482.6,27.1 491.9,22.0 501.2,25.4 510.5,25.2 519.8,23.5 529.1,22.6 538.4,25.2 547.7,22.4 557.0,27.3 566.3,27.8 575.6,35.5 584.9,34.0 594.2,37.4 603.5,46.4 612.8,37.8 622.1,39.5 631.5,41.9 640.8,23.1 650.1,38.9 659.4,48.3 668.7,73.3 678.0,62.2 687.3,59.9 696.6,66.1 705.9,56.7 715.2,72.9 724.5,84.9 733.8,88.5 743.1,101.6 752.4,95.4 761.7,97.5 771.0,85.1 780.3,92.2 789.6,97.9 798.9,105.4 808.3,97.3 817.6,96.0 826.9,88.3 836.2,85.5 845.5,76.8 854.8,84.7 864.1,90.2 873.4,84.3 882.7,92.2 892.0,79.1"/>
+<line class="zz-leg down" x1="8.0" y1="36.3" x2="277.9" y2="148.0"/>
+<text class="zz-lab down" x="142.9" y="107.2">-52</text>
+<circle class="zz-dot conf-none" cx="277.9" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="277.9" y1="148.0" x2="491.9" y2="22.0"/>
+<text class="zz-lab up" x="384.9" y="78.0">+59</text>
+<circle class="zz-dot conf-med" cx="491.9" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="491.9" y1="22.0" x2="892.0" y2="79.1"/>
+<text class="zz-lab down" x="691.9" y="65.6">-27</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="79.1" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;14:15</td><td class="dir down">▼</td><td class="num down">-52.2</td><td class="num down">-0.328%</td><td class="num dim">435′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">14:15&rarr;20:00</td><td class="dir up">▲</td><td class="num up">+58.9</td><td class="num up">+0.371%</td><td class="num dim">345′</td><td><span class="badge conf-med">likely driver</span> USD Retail Sales m/m +1 more (actual -0.6% vs forecast 0.1%) -- +10.3 in the first 15 min, 17% of the leg<div class="contrib">in-leg: US retail sales down by 0.6% in July <em>+10.3 in 15 min, 17% of the leg</em></div></td></tr><tr><td class="mono nowrap">20:00&rarr;06:45</td><td class="dir down">▼</td><td class="num down">-26.7</td><td class="num down">-0.168%</td><td class="num dim">3525′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks moved price the other way.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>GBP/USD</b><span class="px">1.35510</span><span class="chg up">+54.0 pips &middot; +0.40%</span><span class="px dim">range 64.3 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="GBP/USD intraday path">
+<polyline class="zz-price" points="8.0,148.0 17.3,143.8 26.6,145.7 35.9,142.2 45.2,140.3 54.5,144.5 63.8,137.6 73.1,133.8 82.4,131.7 91.7,135.5 101.1,127.6 110.4,118.2 119.7,108.8 129.0,97.7 138.3,97.3 147.6,96.3 156.9,98.4 166.2,96.5 175.5,98.1 184.8,91.7 194.1,88.3 203.4,87.7 212.7,84.0 222.0,86.5 231.3,79.6 240.6,71.6 249.9,59.5 259.2,70.6 268.5,69.1 277.9,52.7 287.2,68.9 296.5,63.7 305.8,67.3 315.1,54.5 324.4,29.3 333.7,35.8 343.0,37.6 352.3,22.0 361.6,35.8 370.9,42.9 380.2,42.2 389.5,43.3 398.8,37.2 408.1,31.2 417.4,39.9 426.7,41.6 436.0,46.0 445.3,61.6 454.7,76.7 464.0,81.0 473.3,82.7 482.6,76.7 491.9,80.8 501.2,71.4 510.5,72.5 519.8,74.6 529.1,71.0 538.4,68.3 547.7,71.4 557.0,71.6 566.3,71.9 575.6,68.3 584.9,72.5 594.2,75.8 603.5,73.3 612.8,75.2 622.1,72.1 631.5,78.7 640.8,76.4 650.1,65.4 659.4,61.4 668.7,53.7 678.0,51.8 687.3,52.0 696.6,49.7 705.9,47.2 715.2,35.4 724.5,33.1 733.8,32.6 743.1,28.3 752.4,33.3 761.7,31.4 771.0,31.4 780.3,28.5 789.6,31.4 798.9,28.7 808.3,37.4 817.6,40.1 826.9,40.8 836.2,41.0 845.5,43.7 854.8,35.6 864.1,27.8 873.4,29.7 882.7,29.1 892.0,37.0"/>
+<line class="zz-leg up" x1="8.0" y1="148.0" x2="352.3" y2="22.0"/>
+<text class="zz-lab up" x="180.1" y="78.0">+60</text>
+<circle class="zz-dot conf-none" cx="352.3" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="352.3" y1="22.0" x2="473.3" y2="82.7"/>
+<text class="zz-lab down" x="412.8" y="67.4">-29</text>
+<circle class="zz-dot conf-none" cx="473.3" cy="82.7" r="3.2"/>
+<line class="zz-leg up" x1="473.3" y1="82.7" x2="892.0" y2="37.0"/>
+<text class="zz-lab up" x="682.6" y="52.9">+22</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="37.0" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;16:15</td><td class="dir up">▲</td><td class="num up">+60.4</td><td class="num up">+0.447%</td><td class="num dim">555′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">16:15&rarr;19:30</td><td class="dir down">▼</td><td class="num down">-29.1</td><td class="num down">-0.215%</td><td class="num dim">195′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Fed&#x27;s Goolsbee encouraged by CPI reports and needs more d…, too weak to own the move.</td></tr><tr><td class="mono nowrap">19:30&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+21.9</td><td class="num up">+0.162%</td><td class="num dim">3555′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>USD/CHF</b><span class="px">0.81156</span><span class="chg down">-20.1 pips &middot; -0.25%</span><span class="px dim">range 37.3 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="USD/CHF intraday path">
+<polyline class="zz-price" points="8.0,44.0 17.3,52.7 26.6,41.9 35.9,46.0 45.2,37.3 54.5,23.7 63.8,36.9 73.1,39.0 82.4,34.4 91.7,27.4 101.1,36.1 110.4,40.2 119.7,39.4 129.0,41.9 138.3,22.0 147.6,40.7 156.9,56.8 166.2,56.4 175.5,51.0 184.8,60.1 194.1,57.2 203.4,46.0 212.7,50.2 222.0,61.4 231.3,77.1 240.6,85.8 249.9,113.2 259.2,106.1 268.5,110.3 277.9,136.8 287.2,116.5 296.5,114.4 305.8,91.6 315.1,108.2 324.4,148.0 333.7,143.9 343.0,127.7 352.3,143.0 361.6,123.5 370.9,126.9 380.2,120.6 389.5,119.8 398.8,126.0 408.1,117.7 417.4,103.7 426.7,96.6 436.0,90.0 445.3,79.6 454.7,53.1 464.0,53.1 473.3,51.0 482.6,53.1 491.9,49.8 501.2,62.6 510.5,61.0 519.8,58.5 529.1,55.2 538.4,56.4 547.7,43.1 557.0,52.3 566.3,45.6 575.6,48.1 584.9,44.0 594.2,50.6 603.5,145.5 612.8,130.6 622.1,89.1 631.5,74.2 640.8,45.6 650.1,55.2 659.4,61.4 668.7,69.3 678.0,73.4 687.3,69.7 696.6,75.1 705.9,75.1 715.2,103.2 724.5,108.6 733.8,102.4 743.1,112.4 752.4,110.7 761.7,112.8 771.0,104.1 780.3,111.5 789.6,116.9 798.9,122.3 808.3,113.2 817.6,110.3 826.9,111.1 836.2,110.3 845.5,107.0 854.8,121.5 864.1,127.3 873.4,128.5 882.7,131.4 892.0,120.6"/>
+<line class="zz-leg up" x1="8.0" y1="44.0" x2="138.3" y2="22.0"/>
+<text class="zz-lab up" x="73.1" y="26.0">+5</text>
+<circle class="zz-dot conf-none" cx="138.3" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="138.3" y1="22.0" x2="277.9" y2="136.8"/>
+<text class="zz-lab down" x="208.1" y="94.4">-28</text>
+<circle class="zz-dot conf-none" cx="277.9" cy="136.8" r="3.2"/>
+<line class="zz-leg up" x1="277.9" y1="136.8" x2="547.7" y2="43.1"/>
+<text class="zz-lab up" x="412.8" y="83.0">+23</text>
+<circle class="zz-dot conf-med" cx="547.7" cy="43.1" r="3.2"/>
+<line class="zz-leg down" x1="547.7" y1="43.1" x2="603.5" y2="145.5"/>
+<text class="zz-lab down" x="575.6" y="109.3">-25</text>
+<circle class="zz-dot conf-none" cx="603.5" cy="145.5" r="3.2"/>
+<line class="zz-leg up" x1="603.5" y1="145.5" x2="640.8" y2="45.6"/>
+<text class="zz-lab up" x="622.1" y="88.6">+24</text>
+<circle class="zz-dot conf-none" cx="640.8" cy="45.6" r="3.2"/>
+<line class="zz-leg down" x1="640.8" y1="45.6" x2="892.0" y2="120.6"/>
+<text class="zz-lab down" x="766.4" y="98.1">-18</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="120.6" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;10:30</td><td class="dir up">▲</td><td class="num up">+5.3</td><td class="num up">+0.065%</td><td class="num dim">210′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of … moved price the other way.</td></tr><tr><td class="mono nowrap">10:30&rarr;14:15</td><td class="dir down">▼</td><td class="num down">-27.7</td><td class="num down">-0.340%</td><td class="num dim">225′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item IRGC Struck An Oil Tanker With A Drone After It Attempted…, too weak to own the move.</td></tr><tr><td class="mono nowrap">14:15&rarr;21:30</td><td class="dir up">▲</td><td class="num up">+22.6</td><td class="num up">+0.279%</td><td class="num dim">435′</td><td><span class="badge conf-med">likely driver</span> USD Retail Sales m/m +1 more (actual -0.6% vs forecast 0.1%) -- +4.9 in the first 15 min, 22% of the leg<div class="contrib">in-leg: US retail sales down by 0.6% in July <em>+4.9 in 15 min, 22% of the leg</em></div><div class="contrib">in-leg: US consumer confidence cools in August <em>+3.9 in 15 min, 17% of the leg</em></div></td></tr><tr><td class="mono nowrap">21:30&rarr;23:00</td><td class="dir down">▼</td><td class="num down">-24.7</td><td class="num down">-0.304%</td><td class="num dim">2970′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Trump: We&#x27;re making a fortune with tariffs, too weak to own the move.</td></tr><tr><td class="mono nowrap">23:00&rarr;00:00</td><td class="dir up">▲</td><td class="num up">+24.1</td><td class="num up">+0.297%</td><td class="num dim">60′</td><td><span class="badge conf-none">no clear catalyst</span> Nothing on the wire; flow or a technical level, not news.</td></tr><tr><td class="mono nowrap">00:00&rarr;06:45</td><td class="dir down">▼</td><td class="num down">-18.1</td><td class="num down">-0.223%</td><td class="num dim">405′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BusinessNZ Services Landscape, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>AUD/USD</b><span class="px">0.71015</span><span class="chg up">+39.2 pips &middot; +0.56%</span><span class="px dim">range 43.7 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="AUD/USD intraday path">
+<polyline class="zz-price" points="8.0,148.0 17.3,142.2 26.6,141.3 35.9,131.9 45.2,137.0 54.5,140.7 63.8,134.6 73.1,130.0 82.4,128.5 91.7,133.1 101.1,122.4 110.4,118.5 119.7,117.6 129.0,122.4 138.3,117.6 147.6,116.7 156.9,112.1 166.2,110.9 175.5,114.5 184.8,109.3 194.1,105.7 203.4,107.8 212.7,110.3 222.0,108.1 231.3,103.0 240.6,92.6 249.9,87.1 259.2,91.4 268.5,96.9 277.9,77.1 287.2,97.5 296.5,92.3 305.8,98.4 315.1,83.5 324.4,61.6 333.7,61.6 343.0,65.2 352.3,59.4 361.6,68.3 370.9,60.3 380.2,55.8 389.5,60.7 398.8,63.4 408.1,64.0 417.4,69.2 426.7,72.8 436.0,77.7 445.3,82.9 454.7,90.5 464.0,89.0 473.3,96.3 482.6,92.3 491.9,97.5 501.2,90.5 510.5,90.8 519.8,89.0 529.1,86.8 538.4,83.5 547.7,85.9 557.0,82.0 566.3,83.2 575.6,83.8 584.9,86.8 594.2,84.1 603.5,87.4 612.8,98.1 622.1,93.2 631.5,97.8 640.8,83.5 650.1,79.5 659.4,74.7 668.7,69.8 678.0,69.5 687.3,70.7 696.6,70.1 705.9,79.2 715.2,57.9 724.5,53.0 733.8,55.2 743.1,56.4 752.4,64.6 761.7,53.3 771.0,47.0 780.3,44.2 789.6,49.1 798.9,47.0 808.3,55.2 817.6,58.2 826.9,55.8 836.2,47.9 845.5,45.1 854.8,32.7 864.1,23.2 873.4,22.6 882.7,22.0 892.0,28.7"/>
+<line class="zz-leg up" x1="8.0" y1="148.0" x2="380.2" y2="55.8"/>
+<text class="zz-lab up" x="194.1" y="94.9">+30</text>
+<circle class="zz-dot conf-none" cx="380.2" cy="55.8" r="3.2"/>
+<line class="zz-leg down" x1="380.2" y1="55.8" x2="612.8" y2="98.1"/>
+<text class="zz-lab down" x="496.5" y="91.9">-14</text>
+<circle class="zz-dot conf-none" cx="612.8" cy="98.1" r="3.2"/>
+<line class="zz-leg up" x1="612.8" y1="98.1" x2="892.0" y2="28.7"/>
+<text class="zz-lab up" x="752.4" y="56.4">+23</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="28.7" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;17:00</td><td class="dir up">▲</td><td class="num up">+30.3</td><td class="num up">+0.429%</td><td class="num dim">600′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">17:00&rarr;23:15</td><td class="dir down">▼</td><td class="num down">-13.9</td><td class="num down">-0.196%</td><td class="num dim">3255′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks moved price the other way.</td></tr><tr><td class="mono nowrap">23:15&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+22.8</td><td class="num up">+0.322%</td><td class="num dim">450′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BusinessNZ Services Landscape, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>USD/CAD</b><span class="px">1.38640</span><span class="chg down">-54.9 pips &middot; -0.39%</span><span class="px dim">range 57.3 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="USD/CAD intraday path">
+<polyline class="zz-price" points="8.0,22.0 17.3,25.0 26.6,30.1 35.9,34.4 45.2,35.4 54.5,38.4 63.8,48.0 73.1,54.2 82.4,72.4 91.7,69.7 101.1,78.2 110.4,86.0 119.7,86.3 129.0,78.7 138.3,81.4 147.6,80.0 156.9,81.4 166.2,82.8 175.5,83.5 184.8,86.5 194.1,86.5 203.4,90.9 212.7,87.4 222.0,88.6 231.3,97.1 240.6,98.5 249.9,102.2 259.2,102.2 268.5,113.7 277.9,124.7 287.2,104.5 296.5,105.2 305.8,107.7 315.1,110.0 324.4,130.3 333.7,133.7 343.0,119.0 352.3,133.0 361.6,122.2 370.9,109.5 380.2,114.8 389.5,114.1 398.8,125.0 408.1,122.7 417.4,116.7 426.7,124.0 436.0,122.4 445.3,124.7 454.7,111.6 464.0,117.6 473.3,109.3 482.6,112.5 491.9,111.4 501.2,119.4 510.5,119.7 519.8,115.3 529.1,118.5 538.4,121.7 547.7,116.7 557.0,116.0 566.3,116.4 575.6,121.7 584.9,124.3 594.2,125.4 603.5,125.0 612.8,123.6 622.1,122.9 631.5,125.0 640.8,121.7 650.1,125.7 659.4,125.4 668.7,129.6 678.0,129.8 687.3,124.7 696.6,128.0 705.9,125.7 715.2,139.0 724.5,142.5 733.8,138.1 743.1,139.0 752.4,130.7 761.7,133.3 771.0,135.3 780.3,139.0 789.6,139.9 798.9,142.7 808.3,136.9 817.6,134.9 826.9,134.4 836.2,136.5 845.5,136.5 854.8,141.8 864.1,147.8 873.4,146.4 882.7,148.0 892.0,144.3"/>
+<line class="zz-leg down" x1="8.0" y1="22.0" x2="892.0" y2="144.3"/>
+<text class="zz-lab down" x="450.0" y="98.2">-53</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="144.3" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;06:45</td><td class="dir down">▼</td><td class="num down">-53.1</td><td class="num down">-0.382%</td><td class="num dim">4305′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>NZD/USD</b><span class="px">0.59089</span><span class="chg up">+42.8 pips &middot; +0.73%</span><span class="px dim">range 45.5 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="NZD/USD intraday path">
+<polyline class="zz-price" points="8.0,148.0 17.3,141.7 26.6,146.6 35.9,142.2 45.2,144.8 54.5,147.4 63.8,144.8 73.1,138.2 82.4,135.6 91.7,137.4 101.1,127.9 110.4,122.1 119.7,123.0 129.0,116.4 138.3,119.8 147.6,119.2 156.9,114.3 166.2,107.7 175.5,110.9 184.8,107.4 194.1,102.3 203.4,103.1 212.7,106.3 222.0,103.1 231.3,98.5 240.6,88.7 249.9,81.8 259.2,85.9 268.5,89.9 277.9,69.8 287.2,82.7 296.5,81.5 305.8,91.6 315.1,84.7 324.4,65.2 333.7,67.7 343.0,69.2 352.3,67.7 361.6,72.3 370.9,73.2 380.2,67.5 389.5,65.7 398.8,64.6 408.1,64.6 417.4,68.0 426.7,72.1 436.0,75.8 445.3,81.8 454.7,88.2 464.0,90.2 473.3,95.9 482.6,93.1 491.9,95.4 501.2,88.5 510.5,89.0 519.8,85.9 529.1,83.0 538.4,81.8 547.7,87.9 557.0,81.5 566.3,84.1 575.6,81.8 584.9,81.5 594.2,82.1 603.5,92.5 612.8,92.5 622.1,81.5 631.5,106.9 640.8,84.4 650.1,81.0 659.4,76.1 668.7,72.3 678.0,73.2 687.3,75.2 696.6,74.6 705.9,80.1 715.2,55.7 724.5,35.2 733.8,35.8 743.1,25.5 752.4,36.7 761.7,32.9 771.0,32.1 780.3,32.4 789.6,35.5 798.9,33.2 808.3,37.2 817.6,39.8 826.9,37.5 836.2,35.5 845.5,42.4 854.8,33.2 864.1,27.8 873.4,25.2 882.7,22.0 892.0,25.2"/>
+<line class="zz-leg up" x1="8.0" y1="148.0" x2="398.8" y2="64.6"/>
+<text class="zz-lab up" x="203.4" y="99.3">+29</text>
+<circle class="zz-dot conf-none" cx="398.8" cy="64.6" r="3.2"/>
+<line class="zz-leg down" x1="398.8" y1="64.6" x2="631.5" y2="106.9"/>
+<text class="zz-lab down" x="515.1" y="100.7">-15</text>
+<circle class="zz-dot conf-none" cx="631.5" cy="106.9" r="3.2"/>
+<line class="zz-leg up" x1="631.5" y1="106.9" x2="892.0" y2="25.2"/>
+<text class="zz-lab up" x="761.7" y="59.0">+28</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="25.2" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;17:30</td><td class="dir up">▲</td><td class="num up">+29.0</td><td class="num up">+0.494%</td><td class="num dim">630′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">17:30&rarr;23:45</td><td class="dir down">▼</td><td class="num down">-14.7</td><td class="num down">-0.249%</td><td class="num dim">3255′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks moved price the other way.</td></tr><tr><td class="mono nowrap">23:45&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+28.4</td><td class="num up">+0.483%</td><td class="num dim">420′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BusinessNZ Services Index, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>EUR/CHF</b><span class="px">0.94015</span><span class="chg up">+14.0 pips &middot; +0.15%</span><span class="px dim">range 42.0 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="EUR/CHF intraday path">
+<polyline class="zz-price" points="8.0,120.1 17.3,125.7 26.6,114.1 35.9,115.9 45.2,106.9 54.5,96.1 63.8,102.1 73.1,98.3 82.4,90.1 91.7,79.0 101.1,81.1 110.4,77.7 119.7,65.3 129.0,70.9 138.3,42.1 147.6,60.1 156.9,83.3 166.2,85.0 175.5,85.4 184.8,87.1 194.1,85.0 203.4,75.1 212.7,74.7 222.0,86.3 231.3,93.1 240.6,90.6 249.9,100.9 259.2,105.1 268.5,113.7 277.9,127.0 287.2,113.7 296.5,112.0 305.8,95.7 315.1,100.9 324.4,100.0 333.7,98.3 343.0,82.4 352.3,86.3 361.6,66.6 370.9,76.9 380.2,68.3 389.5,67.0 398.8,72.6 408.1,67.4 417.4,62.3 426.7,58.0 436.0,55.4 445.3,53.3 454.7,35.3 464.0,42.6 473.3,44.7 482.6,44.3 491.9,44.3 501.2,50.7 510.5,51.1 519.8,47.7 529.1,37.9 538.4,36.1 547.7,26.7 557.0,30.6 566.3,23.7 575.6,22.9 584.9,24.1 594.2,22.0 603.5,148.0 612.8,134.3 622.1,76.0 631.5,64.4 640.8,27.1 650.1,29.7 659.4,29.7 668.7,27.6 678.0,33.1 687.3,30.6 696.6,35.3 705.9,38.7 715.2,52.4 724.5,58.0 733.8,52.0 743.1,59.7 752.4,61.0 761.7,54.6 771.0,43.9 780.3,48.6 789.6,56.3 798.9,58.9 808.3,57.6 817.6,58.9 826.9,63.1 836.2,59.3 845.5,56.3 854.8,60.6 864.1,54.6 873.4,57.1 882.7,61.0 892.0,55.4"/>
+<line class="zz-leg up" x1="8.0" y1="120.1" x2="138.3" y2="42.1"/>
+<text class="zz-lab up" x="73.1" y="74.1">+18</text>
+<circle class="zz-dot conf-none" cx="138.3" cy="42.1" r="3.2"/>
+<line class="zz-leg down" x1="138.3" y1="42.1" x2="277.9" y2="127.0"/>
+<text class="zz-lab down" x="208.1" y="99.6">-20</text>
+<circle class="zz-dot conf-none" cx="277.9" cy="127.0" r="3.2"/>
+<line class="zz-leg up" x1="277.9" y1="127.0" x2="594.2" y2="22.0"/>
+<text class="zz-lab up" x="436.0" y="67.5">+25</text>
+<circle class="zz-dot conf-none" cx="594.2" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="594.2" y1="22.0" x2="892.0" y2="55.4"/>
+<text class="zz-lab down" x="743.1" y="53.7">-8</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="55.4" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;10:30</td><td class="dir up">▲</td><td class="num up">+18.2</td><td class="num up">+0.194%</td><td class="num dim">210′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of … moved price the other way.</td></tr><tr><td class="mono nowrap">10:30&rarr;14:15</td><td class="dir down">▼</td><td class="num down">-19.8</td><td class="num down">-0.211%</td><td class="num dim">225′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Trade Balance +2 more, too weak to own the move.</td></tr><tr><td class="mono nowrap">14:15&rarr;22:45</td><td class="dir up">▲</td><td class="num up">+24.5</td><td class="num up">+0.261%</td><td class="num dim">510′</td><td><span class="badge conf-none">no clear catalyst</span> No single trigger started this leg, but US consumer confidence cools in August pushed it along (+3.7 in 15 min, 15% of the move).<div class="contrib">in-leg: US consumer confidence cools in August <em>+3.7 in 15 min, 15% of the leg</em></div></td></tr><tr><td class="mono nowrap">22:45&rarr;06:45</td><td class="dir down">▼</td><td class="num down">-7.8</td><td class="num down">-0.083%</td><td class="num dim">3360′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Quarterly Estimates of Japan GDP for April - June 2026 (F…, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>CHF/JPY</b><span class="px">196.06</span><span class="chg up">+19.5 pips &middot; +0.10%</span><span class="px dim">range 76.4 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="CHF/JPY intraday path">
+<polyline class="zz-price" points="8.0,79.3 17.3,71.8 26.6,93.7 35.9,91.1 45.2,113.3 54.5,112.9 63.8,103.9 73.1,102.6 82.4,102.1 91.7,104.7 101.1,102.8 110.4,110.5 119.7,113.7 129.0,126.7 138.3,148.0 147.6,116.8 156.9,110.3 166.2,101.7 175.5,111.0 184.8,102.8 194.1,110.9 203.4,112.5 212.7,108.2 222.0,92.9 231.3,78.2 240.6,74.5 249.9,61.0 259.2,60.5 268.5,70.9 277.9,100.0 287.2,98.0 296.5,95.5 305.8,87.1 315.1,87.0 324.4,77.8 333.7,59.0 343.0,59.1 352.3,55.8 361.6,74.3 370.9,56.9 380.2,52.1 389.5,42.2 398.8,23.9 408.1,23.9 417.4,25.2 426.7,22.0 436.0,26.3 445.3,31.1 454.7,56.3 464.0,59.5 473.3,60.3 482.6,60.1 491.9,58.0 501.2,47.6 510.5,49.6 519.8,50.4 529.1,53.0 538.4,54.5 547.7,65.5 557.0,61.2 566.3,68.9 575.6,74.5 584.9,79.7 594.2,82.1 603.5,61.0 612.8,60.3 622.1,76.9 631.5,87.7 640.8,66.6 650.1,73.0 659.4,76.3 668.7,93.1 678.0,76.9 687.3,77.8 696.6,78.4 705.9,69.0 715.2,54.7 724.5,62.9 733.8,73.0 743.1,76.7 752.4,71.5 761.7,71.7 771.0,67.2 780.3,66.8 789.6,67.0 798.9,69.4 808.3,70.9 817.6,73.3 826.9,63.1 836.2,61.4 845.5,54.7 854.8,48.3 864.1,47.9 873.4,40.5 882.7,45.5 892.0,42.5"/>
+<line class="zz-leg down" x1="8.0" y1="79.3" x2="138.3" y2="148.0"/>
+<text class="zz-lab down" x="73.1" y="128.7">-37</text>
+<circle class="zz-dot conf-none" cx="138.3" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="138.3" y1="148.0" x2="426.7" y2="22.0"/>
+<text class="zz-lab up" x="282.5" y="78.0">+67</text>
+<circle class="zz-dot conf-none" cx="426.7" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="426.7" y1="22.0" x2="668.7" y2="93.1"/>
+<text class="zz-lab down" x="547.7" y="72.6">-38</text>
+<circle class="zz-dot conf-none" cx="668.7" cy="93.1" r="3.2"/>
+<line class="zz-leg up" x1="668.7" y1="93.1" x2="892.0" y2="42.5"/>
+<text class="zz-lab up" x="780.3" y="60.8">+27</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="42.5" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;10:30</td><td class="dir down">▼</td><td class="num down">-36.8</td><td class="num down">-0.188%</td><td class="num dim">210′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of … moved price the other way.</td></tr><tr><td class="mono nowrap">10:30&rarr;18:15</td><td class="dir up">▲</td><td class="num up">+67.5</td><td class="num up">+0.345%</td><td class="num dim">465′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item US retail sales down by 0.6% in July, too weak to own the move.</td></tr><tr><td class="mono nowrap">18:15&rarr;00:45</td><td class="dir down">▼</td><td class="num down">-38.1</td><td class="num down">-0.194%</td><td class="num dim">3270′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Fed&#x27;s Goolsbee encouraged by CPI reports and needs more d…, too weak to own the move.</td></tr><tr><td class="mono nowrap">00:45&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+27.1</td><td class="num up">+0.138%</td><td class="num dim">360′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Prelim GDP q/q +1 more, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>AUD/NZD</b><span class="px">1.20176</span><span class="chg down">-20.6 pips &middot; -0.17%</span><span class="px dim">range 44.0 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="AUD/NZD intraday path">
+<polyline class="zz-price" points="8.0,38.4 17.3,41.1 26.6,30.2 35.9,23.8 45.2,25.9 54.5,26.6 63.8,22.0 73.1,28.7 82.4,31.7 91.7,35.1 101.1,38.1 110.4,43.3 119.7,39.6 129.0,63.9 138.3,47.2 147.6,46.3 156.9,49.9 166.2,62.4 175.5,61.8 184.8,59.0 194.1,66.6 203.4,67.2 212.7,63.3 222.0,67.2 231.3,69.7 240.6,71.8 249.9,78.2 259.2,76.3 268.5,76.7 277.9,87.6 287.2,92.7 296.5,87.0 305.8,75.4 315.1,65.4 324.4,71.5 333.7,65.4 343.0,67.8 352.3,61.5 361.6,66.0 370.9,50.5 380.2,56.0 389.5,67.5 398.8,74.2 408.1,76.0 417.4,77.6 426.7,74.5 436.0,75.1 445.3,70.9 454.7,70.0 464.0,62.7 473.3,63.0 482.6,62.7 491.9,65.7 501.2,68.8 510.5,68.8 519.8,71.5 529.1,73.9 538.4,72.1 547.7,62.7 557.0,69.1 566.3,65.4 575.6,73.3 584.9,81.2 594.2,83.9 603.5,107.0 612.8,118.2 622.1,121.6 631.5,87.3 640.8,69.1 650.1,68.5 659.4,70.6 668.7,69.4 678.0,66.0 687.3,64.8 696.6,65.7 705.9,68.1 715.2,84.8 724.5,120.1 733.8,122.2 743.1,148.0 752.4,136.2 761.7,125.5 771.0,117.9 780.3,111.3 789.6,113.1 798.9,114.6 808.3,119.8 817.6,119.5 826.9,119.8 836.2,111.0 845.5,91.8 854.8,90.9 864.1,86.7 873.4,90.0 882.7,96.4 892.0,100.0"/>
+<line class="zz-leg down" x1="8.0" y1="38.4" x2="287.2" y2="92.7"/>
+<text class="zz-lab down" x="147.6" y="80.6">-18</text>
+<circle class="zz-dot conf-none" cx="287.2" cy="92.7" r="3.2"/>
+<line class="zz-leg up" x1="287.2" y1="92.7" x2="370.9" y2="50.5"/>
+<text class="zz-lab up" x="329.0" y="64.6">+14</text>
+<circle class="zz-dot conf-none" cx="370.9" cy="50.5" r="3.2"/>
+<line class="zz-leg down" x1="370.9" y1="50.5" x2="622.1" y2="121.6"/>
+<text class="zz-lab down" x="496.5" y="101.1">-23</text>
+<circle class="zz-dot conf-none" cx="622.1" cy="121.6" r="3.2"/>
+<line class="zz-leg up" x1="622.1" y1="121.6" x2="687.3" y2="64.8"/>
+<text class="zz-lab up" x="654.7" y="86.2">+19</text>
+<circle class="zz-dot conf-none" cx="687.3" cy="64.8" r="3.2"/>
+<line class="zz-leg down" x1="687.3" y1="64.8" x2="743.1" y2="148.0"/>
+<text class="zz-lab down" x="715.2" y="121.4">-27</text>
+<circle class="zz-dot conf-none" cx="743.1" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="743.1" y1="148.0" x2="892.0" y2="100.0"/>
+<text class="zz-lab up" x="817.6" y="117.0">+16</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="100.0" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;14:30</td><td class="dir down">▼</td><td class="num down">-17.9</td><td class="num down">-0.149%</td><td class="num dim">450′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of … moved price the other way.</td></tr><tr><td class="mono nowrap">14:30&rarr;16:45</td><td class="dir up">▲</td><td class="num up">+13.9</td><td class="num up">+0.116%</td><td class="num dim">135′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item US retail sales down by 0.6% in July moved price the other way.</td></tr><tr><td class="mono nowrap">16:45&rarr;23:30</td><td class="dir down">▼</td><td class="num down">-23.4</td><td class="num down">-0.194%</td><td class="num dim">3285′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks, too weak to own the move.</td></tr><tr><td class="mono nowrap">23:30&rarr;01:15</td><td class="dir up">▲</td><td class="num up">+18.7</td><td class="num up">+0.156%</td><td class="num dim">105′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item FPI m/m, too weak to own the move.</td></tr><tr><td class="mono nowrap">01:15&rarr;02:45</td><td class="dir down">▼</td><td class="num down">-27.4</td><td class="num down">-0.228%</td><td class="num dim">90′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Quarterly Estimates of Japan GDP for April - June 2026 (F…, too weak to own the move.</td></tr><tr><td class="mono nowrap">02:45&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+15.8</td><td class="num up">+0.132%</td><td class="num dim">240′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Japan: Indices of Tertiary Industry Activity (ITA) for Ju… moved price the other way.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>EUR/GBP</b><span class="px">0.85487</span><span class="chg down">-0.1 pips &middot; -0.00%</span><span class="px dim">range 17.3 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="EUR/GBP intraday path">
+<polyline class="zz-price" points="8.0,28.7 17.3,31.6 26.6,28.7 35.9,32.6 45.2,40.3 54.5,38.4 63.8,39.3 73.1,37.4 82.4,38.4 91.7,22.0 101.1,28.7 110.4,37.4 119.7,43.2 129.0,82.6 138.3,72.0 147.6,67.2 156.9,68.2 166.2,78.7 175.5,86.4 184.8,88.4 194.1,98.9 203.4,107.6 212.7,107.6 222.0,97.0 231.3,94.1 240.6,88.4 249.9,77.8 259.2,72.0 268.5,85.5 277.9,93.2 287.2,72.0 296.5,86.4 305.8,98.0 315.1,105.7 324.4,80.7 333.7,70.1 343.0,69.1 352.3,85.5 361.6,54.7 370.9,45.1 380.2,45.1 389.5,41.2 398.8,54.7 408.1,82.6 417.4,80.7 426.7,83.6 436.0,80.7 445.3,58.5 454.7,41.2 464.0,44.1 473.3,48.0 482.6,60.5 491.9,56.6 501.2,63.4 510.5,66.2 519.8,59.5 529.1,59.5 538.4,61.4 547.7,62.4 557.0,50.9 566.3,49.9 575.6,53.7 584.9,56.6 594.2,42.2 603.5,128.8 612.8,148.0 622.1,119.1 631.5,117.2 640.8,48.0 650.1,60.5 659.4,56.6 668.7,56.6 678.0,60.5 687.3,62.4 696.6,66.2 705.9,81.6 715.2,74.9 724.5,81.6 733.8,84.5 743.1,90.3 752.4,79.7 761.7,70.1 771.0,67.2 780.3,68.2 789.6,61.4 798.9,61.4 808.3,58.5 817.6,60.5 826.9,62.4 836.2,57.6 845.5,50.9 854.8,46.0 864.1,43.2 873.4,41.2 882.7,43.2 892.0,32.6"/>
+<line class="zz-leg down" x1="8.0" y1="28.7" x2="203.4" y2="107.6"/>
+<text class="zz-lab down" x="105.7" y="83.2">-8</text>
+<circle class="zz-dot conf-none" cx="203.4" cy="107.6" r="3.2"/>
+<line class="zz-leg up" x1="203.4" y1="107.6" x2="389.5" y2="41.2"/>
+<text class="zz-lab up" x="296.5" y="67.4">+7</text>
+<circle class="zz-dot conf-none" cx="389.5" cy="41.2" r="3.2"/>
+<line class="zz-leg down" x1="389.5" y1="41.2" x2="426.7" y2="83.6"/>
+<text class="zz-lab down" x="408.1" y="77.4">-4</text>
+<circle class="zz-dot conf-none" cx="426.7" cy="83.6" r="3.2"/>
+<line class="zz-leg up" x1="426.7" y1="83.6" x2="454.7" y2="41.2"/>
+<text class="zz-lab up" x="440.7" y="55.4">+4</text>
+<circle class="zz-dot conf-none" cx="454.7" cy="41.2" r="3.2"/>
+<line class="zz-leg down" x1="454.7" y1="41.2" x2="612.8" y2="148.0"/>
+<text class="zz-lab down" x="533.7" y="109.6">-11</text>
+<circle class="zz-dot conf-none" cx="612.8" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="612.8" y1="148.0" x2="640.8" y2="48.0"/>
+<text class="zz-lab up" x="626.8" y="91.0">+10</text>
+<circle class="zz-dot conf-none" cx="640.8" cy="48.0" r="3.2"/>
+<line class="zz-leg down" x1="640.8" y1="48.0" x2="743.1" y2="90.3"/>
+<text class="zz-lab down" x="691.9" y="84.1">-4</text>
+<circle class="zz-dot conf-none" cx="743.1" cy="90.3" r="3.2"/>
+<line class="zz-leg up" x1="743.1" y1="90.3" x2="892.0" y2="32.6"/>
+<text class="zz-lab up" x="817.6" y="54.4">+6</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="32.6" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;12:15</td><td class="dir down">▼</td><td class="num down">-8.2</td><td class="num down">-0.096%</td><td class="num dim">315′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">12:15&rarr;17:15</td><td class="dir up">▲</td><td class="num up">+6.9</td><td class="num up">+0.081%</td><td class="num dim">300′</td><td><span class="badge conf-none">no clear catalyst</span> No single trigger started this leg, but Retail Sales m/m +1 more pushed it along (+2.2 in 15 min, 32% of the move).<div class="contrib">in-leg: Retail Sales m/m +1 more <em>+2.2 in 15 min, 32% of the leg</em></div></td></tr><tr><td class="mono nowrap">17:15&rarr;18:15</td><td class="dir down">▼</td><td class="num down">-4.4</td><td class="num down">-0.051%</td><td class="num dim">60′</td><td><span class="badge conf-none">no clear catalyst</span> Nothing on the wire; flow or a technical level, not news.</td></tr><tr><td class="mono nowrap">18:15&rarr;19:00</td><td class="dir up">▲</td><td class="num up">+4.4</td><td class="num up">+0.052%</td><td class="num dim">45′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Fed&#x27;s Goolsbee encouraged by CPI reports and needs more d…, too weak to own the move.</td></tr><tr><td class="mono nowrap">19:00&rarr;23:15</td><td class="dir down">▼</td><td class="num down">-11.1</td><td class="num down">-0.130%</td><td class="num dim">3135′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Trump: We&#x27;re winning big with Iran, too weak to own the move.</td></tr><tr><td class="mono nowrap">23:15&rarr;00:00</td><td class="dir up">▲</td><td class="num up">+10.4</td><td class="num up">+0.122%</td><td class="num dim">45′</td><td><span class="badge conf-none">no clear catalyst</span> Nothing on the wire; flow or a technical level, not news.</td></tr><tr><td class="mono nowrap">00:00&rarr;02:45</td><td class="dir down">▼</td><td class="num down">-4.4</td><td class="num down">-0.051%</td><td class="num dim">165′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Rightmove HPI m/m, too weak to own the move.</td></tr><tr><td class="mono nowrap">02:45&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+6.0</td><td class="num up">+0.070%</td><td class="num dim">240′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Japan: Indices of Tertiary Industry Activity (ITA) for Ju… moved price the other way.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>AUD/CHF</b><span class="px">0.57632</span><span class="chg up">+17.9 pips &middot; +0.31%</span><span class="px dim">range 25.4 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="AUD/CHF intraday path">
+<polyline class="zz-price" points="8.0,140.6 17.3,140.0 26.6,127.6 35.9,116.5 45.2,115.9 54.5,107.2 63.8,111.6 73.1,106.6 82.4,99.2 91.7,98.6 101.1,89.9 110.4,88.1 119.7,85.6 129.0,95.5 138.3,67.1 147.6,84.4 156.9,95.5 166.2,91.8 175.5,92.4 184.8,93.0 194.1,83.8 203.4,76.4 212.7,84.4 222.0,93.0 231.3,101.7 240.6,94.3 249.9,113.4 259.2,112.8 268.5,125.1 277.9,120.2 287.2,132.6 296.5,122.7 305.8,108.5 315.1,101.7 324.4,107.9 333.7,103.5 343.0,92.4 352.3,98.6 361.6,93.0 370.9,83.1 380.2,69.6 389.5,75.7 398.8,86.9 408.1,80.1 417.4,73.3 426.7,72.0 436.0,73.3 445.3,70.2 454.7,54.7 464.0,52.9 473.3,61.5 482.6,58.4 491.9,62.8 501.2,65.9 510.5,64.0 519.8,58.4 529.1,50.4 538.4,47.3 547.7,37.4 557.0,40.5 566.3,35.0 575.6,38.7 584.9,39.3 594.2,40.5 603.5,142.4 612.8,148.0 622.1,98.0 631.5,93.6 640.8,35.0 650.1,38.7 659.4,36.8 668.7,36.8 678.0,41.1 687.3,40.5 696.6,45.5 705.9,59.7 715.2,54.7 724.5,51.6 733.8,48.6 743.1,61.5 752.4,72.6 761.7,56.6 771.0,37.4 780.3,39.9 789.6,54.1 798.9,56.6 808.3,60.3 817.6,61.5 826.9,58.4 836.2,44.9 845.5,37.4 854.8,32.5 864.1,22.6 873.4,22.0 882.7,25.1 892.0,23.9"/>
+<line class="zz-leg up" x1="8.0" y1="140.6" x2="138.3" y2="67.1"/>
+<text class="zz-lab up" x="73.1" y="96.8">+12</text>
+<circle class="zz-dot conf-none" cx="138.3" cy="67.1" r="3.2"/>
+<line class="zz-leg down" x1="138.3" y1="67.1" x2="287.2" y2="132.6"/>
+<text class="zz-lab down" x="212.7" y="114.8">-11</text>
+<circle class="zz-dot conf-none" cx="287.2" cy="132.6" r="3.2"/>
+<line class="zz-leg up" x1="287.2" y1="132.6" x2="566.3" y2="35.0"/>
+<text class="zz-lab up" x="426.7" y="76.8">+16</text>
+<circle class="zz-dot conf-none" cx="566.3" cy="35.0" r="3.2"/>
+<line class="zz-leg down" x1="566.3" y1="35.0" x2="612.8" y2="148.0"/>
+<text class="zz-lab down" x="589.6" y="106.5">-18</text>
+<circle class="zz-dot conf-none" cx="612.8" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="612.8" y1="148.0" x2="640.8" y2="35.0"/>
+<text class="zz-lab up" x="626.8" y="84.5">+18</text>
+<circle class="zz-dot conf-none" cx="640.8" cy="35.0" r="3.2"/>
+<line class="zz-leg down" x1="640.8" y1="35.0" x2="752.4" y2="72.6"/>
+<text class="zz-lab down" x="696.6" y="68.8">-6</text>
+<circle class="zz-dot conf-none" cx="752.4" cy="72.6" r="3.2"/>
+<line class="zz-leg up" x1="752.4" y1="72.6" x2="892.0" y2="23.9"/>
+<text class="zz-lab up" x="822.2" y="41.2">+8</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="23.9" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;10:30</td><td class="dir up">▲</td><td class="num up">+11.9</td><td class="num up">+0.207%</td><td class="num dim">210′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">10:30&rarr;14:30</td><td class="dir down">▼</td><td class="num down">-10.6</td><td class="num down">-0.184%</td><td class="num dim">240′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item IRGC Struck An Oil Tanker With A Drone After It Attempted…, too weak to own the move.</td></tr><tr><td class="mono nowrap">14:30&rarr;22:00</td><td class="dir up">▲</td><td class="num up">+15.8</td><td class="num up">+0.275%</td><td class="num dim">450′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item US retail sales down by 0.6% in July moved price the other way.</td></tr><tr><td class="mono nowrap">22:00&rarr;23:15</td><td class="dir down">▼</td><td class="num down">-18.3</td><td class="num down">-0.318%</td><td class="num dim">2955′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Trump: We&#x27;re winning big with Iran, too weak to own the move.</td></tr><tr><td class="mono nowrap">23:15&rarr;00:00</td><td class="dir up">▲</td><td class="num up">+18.3</td><td class="num up">+0.319%</td><td class="num dim">45′</td><td><span class="badge conf-none">no clear catalyst</span> Nothing on the wire; flow or a technical level, not news.</td></tr><tr><td class="mono nowrap">00:00&rarr;03:00</td><td class="dir down">▼</td><td class="num down">-6.1</td><td class="num down">-0.106%</td><td class="num dim">180′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Quarterly Estimates of Japan GDP for April - June 2026 (F…, too weak to own the move.</td></tr><tr><td class="mono nowrap">03:00&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+7.9</td><td class="num up">+0.137%</td><td class="num dim">225′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Japan: Indices of Tertiary Industry Activity (ITA) for Ju… moved price the other way.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>NZD/CHF</b><span class="px">0.47953</span><span class="chg up">+22.9 pips &middot; +0.48%</span><span class="px dim">range 26.2 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="NZD/CHF intraday path">
+<polyline class="zz-price" points="8.0,148.0 17.3,145.5 26.6,145.0 35.9,140.9 45.2,139.4 54.5,133.3 63.8,139.4 73.1,131.8 82.4,124.2 91.7,121.7 101.1,114.1 110.4,109.5 119.7,110.0 129.0,101.4 138.3,92.8 147.6,105.0 156.9,110.0 166.2,99.9 175.5,99.9 184.8,102.5 194.1,91.8 203.4,85.8 212.7,92.8 222.0,97.4 231.3,101.4 240.6,94.4 249.9,103.5 259.2,103.5 268.5,112.6 277.9,104.0 287.2,107.5 296.5,104.0 305.8,102.5 315.1,103.5 324.4,105.0 333.7,105.5 343.0,95.4 352.3,104.5 361.6,97.4 370.9,101.4 380.2,88.8 389.5,85.3 398.8,87.8 408.1,81.7 417.4,76.7 426.7,77.7 436.0,78.7 445.3,79.2 454.7,69.1 464.0,73.1 473.3,78.2 482.6,75.6 491.9,77.2 501.2,78.2 510.5,76.7 519.8,70.6 529.1,64.5 538.4,63.0 547.7,62.5 557.0,60.0 566.3,57.9 575.6,56.4 584.9,52.9 594.2,58.4 603.5,129.3 612.8,128.3 622.1,86.8 631.5,116.1 640.8,59.4 650.1,60.5 659.4,57.9 668.7,57.9 678.0,62.0 687.3,63.0 696.6,65.5 705.9,73.6 715.2,58.9 724.5,33.6 733.8,30.1 743.1,22.0 752.4,37.2 761.7,33.6 771.0,26.0 780.3,31.1 789.6,40.7 798.9,40.7 808.3,40.2 817.6,40.7 826.9,38.7 836.2,35.2 845.5,42.7 854.8,39.7 864.1,36.7 873.4,33.1 882.7,31.6 892.0,28.1"/>
+<line class="zz-leg up" x1="8.0" y1="148.0" x2="892.0" y2="28.1"/>
+<text class="zz-lab up" x="450.0" y="81.0">+24</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="28.1" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+23.7</td><td class="num up">+0.497%</td><td class="num dim">4305′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>USD/ZAR</b><span class="px">16.168</span><span class="chg down">-241.8 pips &middot; -0.15%</span><span class="px dim">range 774.7 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="USD/ZAR intraday path">
+<polyline class="zz-price" points="8.0,55.9 17.3,68.1 26.6,53.5 35.9,74.8 45.2,63.5 54.5,39.3 63.8,58.7 73.1,69.0 82.4,57.1 91.7,56.1 101.1,72.7 110.4,91.7 119.7,86.3 129.0,95.7 138.3,109.3 147.6,104.9 156.9,110.5 166.2,103.8 175.5,109.0 184.8,117.1 194.1,117.2 203.4,99.7 212.7,98.5 222.0,95.2 231.3,88.2 240.6,112.4 249.9,135.5 259.2,110.6 268.5,102.8 277.9,123.7 287.2,84.1 296.5,81.6 305.8,67.6 315.1,81.2 324.4,91.4 333.7,80.7 343.0,77.8 352.3,106.7 361.6,94.6 370.9,82.3 380.2,89.7 389.5,77.5 398.8,75.2 408.1,73.1 417.4,59.7 426.7,56.2 436.0,53.8 445.3,41.3 454.7,28.2 464.0,27.1 473.3,24.2 482.6,28.2 491.9,22.0 501.2,33.6 510.5,29.6 519.8,41.1 529.1,43.8 538.4,44.6 547.7,50.2 557.0,52.7 566.3,50.0 575.6,52.6 584.9,44.8 594.2,64.9 603.5,148.0 612.8,146.2 622.1,138.3 631.5,144.6 640.8,73.7 650.1,78.0 659.4,99.1 668.7,91.3 678.0,85.5 687.3,70.9 696.6,67.6 705.9,65.6 715.2,91.9 724.5,95.5 733.8,84.2 743.1,100.8 752.4,95.4 761.7,105.5 771.0,106.1 780.3,103.6 789.6,98.2 798.9,104.7 808.3,101.5 817.6,89.8 826.9,91.2 836.2,95.8 845.5,96.1 854.8,117.4 864.1,123.7 873.4,116.3 882.7,116.0 892.0,103.3"/>
+<line class="zz-leg down" x1="8.0" y1="55.9" x2="249.9" y2="135.5"/>
+<text class="zz-lab down" x="129.0" y="110.7">-428</text>
+<circle class="zz-dot conf-none" cx="249.9" cy="135.5" r="3.2"/>
+<line class="zz-leg up" x1="249.9" y1="135.5" x2="305.8" y2="67.6"/>
+<text class="zz-lab up" x="277.9" y="94.5">+365</text>
+<circle class="zz-dot conf-none" cx="305.8" cy="67.6" r="3.2"/>
+<line class="zz-leg down" x1="305.8" y1="67.6" x2="352.3" y2="106.7"/>
+<text class="zz-lab down" x="329.0" y="102.1">-210</text>
+<circle class="zz-dot conf-none" cx="352.3" cy="106.7" r="3.2"/>
+<line class="zz-leg up" x1="352.3" y1="106.7" x2="491.9" y2="22.0"/>
+<text class="zz-lab up" x="422.1" y="57.3">+455</text>
+<circle class="zz-dot conf-none" cx="491.9" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="491.9" y1="22.0" x2="603.5" y2="148.0"/>
+<text class="zz-lab down" x="547.7" y="100.0">-677</text>
+<circle class="zz-dot conf-none" cx="603.5" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="603.5" y1="148.0" x2="705.9" y2="65.6"/>
+<text class="zz-lab up" x="654.7" y="99.8">+443</text>
+<circle class="zz-dot conf-none" cx="705.9" cy="65.6" r="3.2"/>
+<line class="zz-leg down" x1="705.9" y1="65.6" x2="892.0" y2="103.3"/>
+<text class="zz-lab down" x="798.9" y="99.4">-203</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="103.3" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;13:30</td><td class="dir down">▼</td><td class="num down">-427.7</td><td class="num down">-0.264%</td><td class="num dim">390′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">13:30&rarr;15:00</td><td class="dir up">▲</td><td class="num up">+365.0</td><td class="num up">+0.226%</td><td class="num dim">90′</td><td><span class="badge conf-none">no clear catalyst</span> No single trigger started this leg, but US retail sales down by 0.6% in July pushed it along (+212.9 in 15 min, 58% of the move).<div class="contrib">in-leg: US retail sales down by 0.6% in July <em>+212.9 in 15 min, 58% of the leg</em></div></td></tr><tr><td class="mono nowrap">15:00&rarr;16:15</td><td class="dir down">▼</td><td class="num down">-210.0</td><td class="num down">-0.130%</td><td class="num dim">75′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item US consumer confidence cools in August moved price the other way.</td></tr><tr><td class="mono nowrap">16:15&rarr;20:00</td><td class="dir up">▲</td><td class="num up">+455.1</td><td class="num up">+0.282%</td><td class="num dim">225′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Fed&#x27;s Goolsbee encouraged by CPI reports and needs more d…, too weak to own the move.</td></tr><tr><td class="mono nowrap">20:00&rarr;23:00</td><td class="dir down">▼</td><td class="num down">-677.3</td><td class="num down">-0.418%</td><td class="num dim">3060′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks, too weak to own the move.</td></tr><tr><td class="mono nowrap">23:00&rarr;01:45</td><td class="dir up">▲</td><td class="num up">+443.2</td><td class="num up">+0.275%</td><td class="num dim">165′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item NZ selected price indexes: July 2026, too weak to own the move.</td></tr><tr><td class="mono nowrap">01:45&rarr;06:45</td><td class="dir down">▼</td><td class="num down">-203.1</td><td class="num down">-0.125%</td><td class="num dim">300′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Prelim GDP q/q +1 more, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>USD/MXN</b><span class="px">17.006</span><span class="chg down">-221.7 pips &middot; -0.13%</span><span class="px dim">range 810.8 pips</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="USD/MXN intraday path">
+<polyline class="zz-price" points="8.0,49.5 17.3,52.5 26.6,50.8 35.9,54.9 45.2,50.8 54.5,46.3 63.8,56.1 73.1,62.8 82.4,60.3 91.7,57.4 101.1,67.2 110.4,73.0 119.7,58.6 129.0,63.2 138.3,72.3 147.6,74.3 156.9,78.2 166.2,81.8 175.5,82.5 184.8,86.6 194.1,86.8 203.4,90.0 212.7,88.9 222.0,93.2 231.3,94.0 240.6,103.6 249.9,111.4 259.2,107.6 268.5,97.4 277.9,110.8 287.2,97.2 296.5,105.6 305.8,99.8 315.1,110.7 324.4,130.4 333.7,133.6 343.0,123.1 352.3,136.7 361.6,114.5 370.9,104.1 380.2,100.7 389.5,85.3 398.8,76.8 408.1,75.8 417.4,51.2 426.7,55.9 436.0,43.0 445.3,45.9 454.7,35.1 464.0,22.0 473.3,32.2 482.6,36.4 491.9,27.4 501.2,39.5 510.5,43.2 519.8,44.4 529.1,46.5 538.4,55.2 547.7,50.6 557.0,52.1 566.3,52.7 575.6,53.0 584.9,61.4 594.2,67.1 603.5,147.8 612.8,148.0 622.1,143.7 631.5,145.3 640.8,115.7 650.1,103.3 659.4,112.1 668.7,101.2 678.0,88.3 687.3,68.2 696.6,71.3 705.9,67.3 715.2,85.6 724.5,85.1 733.8,85.7 743.1,91.6 752.4,87.1 761.7,90.8 771.0,94.2 780.3,94.4 789.6,91.3 798.9,94.4 808.3,92.1 817.6,89.5 826.9,88.6 836.2,91.1 845.5,94.5 854.8,103.5 864.1,105.2 873.4,99.6 882.7,99.0 892.0,92.1"/>
+<line class="zz-leg down" x1="8.0" y1="49.5" x2="352.3" y2="136.7"/>
+<text class="zz-lab down" x="180.1" y="108.1">-504</text>
+<circle class="zz-dot conf-none" cx="352.3" cy="136.7" r="3.2"/>
+<line class="zz-leg up" x1="352.3" y1="136.7" x2="464.0" y2="22.0"/>
+<text class="zz-lab up" x="408.1" y="72.4">+663</text>
+<circle class="zz-dot conf-none" cx="464.0" cy="22.0" r="3.2"/>
+<line class="zz-leg down" x1="464.0" y1="22.0" x2="612.8" y2="148.0"/>
+<text class="zz-lab down" x="538.4" y="100.0">-728</text>
+<circle class="zz-dot conf-none" cx="612.8" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="612.8" y1="148.0" x2="705.9" y2="67.3"/>
+<text class="zz-lab up" x="659.4" y="100.7">+466</text>
+<circle class="zz-dot conf-none" cx="705.9" cy="67.3" r="3.2"/>
+<line class="zz-leg down" x1="705.9" y1="67.3" x2="892.0" y2="92.1"/>
+<text class="zz-lab down" x="798.9" y="94.7">-143</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="92.1" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;16:15</td><td class="dir down">▼</td><td class="num down">-503.7</td><td class="num down">-0.296%</td><td class="num dim">555′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">16:15&rarr;19:15</td><td class="dir up">▲</td><td class="num up">+662.8</td><td class="num up">+0.390%</td><td class="num dim">180′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Fed&#x27;s Goolsbee encouraged by CPI reports and needs more d…, too weak to own the move.</td></tr><tr><td class="mono nowrap">19:15&rarr;23:15</td><td class="dir down">▼</td><td class="num down">-727.8</td><td class="num down">-0.427%</td><td class="num dim">3120′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks, too weak to own the move.</td></tr><tr><td class="mono nowrap">23:15&rarr;01:45</td><td class="dir up">▲</td><td class="num up">+466.0</td><td class="num up">+0.275%</td><td class="num dim">150′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item NZ selected price indexes: July 2026, too weak to own the move.</td></tr><tr><td class="mono nowrap">01:45&rarr;06:45</td><td class="dir down">▼</td><td class="num down">-143.0</td><td class="num down">-0.084%</td><td class="num dim">300′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Prelim GDP q/q +1 more, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>Gold/USD</b><span class="px">4,389.9</span><span class="chg up">+638.5 pips ($0.10) &middot; +1.48%</span><span class="px dim">range 1054.4 pips ($0.10)</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="Gold/USD intraday path">
+<polyline class="zz-price" points="8.0,144.5 17.7,147.1 27.4,148.0 37.1,126.2 46.9,127.6 56.6,132.2 66.3,126.9 76.0,123.4 85.7,129.5 95.4,128.4 105.1,117.8 114.9,112.3 124.6,106.7 134.3,109.4 144.0,112.2 153.7,105.5 163.4,102.5 173.1,101.1 182.9,98.8 192.6,93.7 202.3,97.5 212.0,101.7 221.7,100.9 231.4,104.5 241.1,102.7 250.9,94.3 260.6,86.5 270.3,77.2 280.0,73.7 289.7,62.3 299.4,72.3 309.1,71.1 318.9,69.0 328.6,56.2 338.3,43.3 348.0,56.1 357.7,47.8 367.4,47.6 377.1,56.4 386.9,60.4 396.6,45.6 406.3,55.6 416.0,49.2 425.7,46.4 435.4,48.9 445.1,51.9 454.9,54.3 464.6,54.2 474.3,59.1 484.0,63.0 493.7,65.4 503.4,64.4 513.1,66.1 522.9,63.2 532.6,67.2 542.3,71.2 552.0,67.9 561.7,66.0 571.4,68.4 581.1,67.7 590.9,72.3 600.6,69.6 610.3,68.4 620.0,68.0 629.7,68.3 639.4,69.9 649.1,65.4 658.9,54.2 668.6,62.6 678.3,69.6 688.0,78.4 697.7,75.7 707.4,63.9 717.1,48.8 726.9,40.6 736.6,33.7 746.3,22.0 756.0,25.0 765.7,29.9 775.4,40.8 785.1,42.6 794.9,41.1 804.6,44.5 814.3,44.1 824.0,48.1 833.7,44.5 843.4,41.5 853.1,38.9 862.9,37.1 872.6,47.2 882.3,40.6 892.0,47.5"/>
+<line class="zz-leg up" x1="8.0" y1="144.5" x2="338.3" y2="43.3"/>
+<text class="zz-lab up" x="173.1" y="86.9">+736</text>
+<circle class="zz-dot conf-none" cx="338.3" cy="43.3" r="3.2"/>
+<line class="zz-leg down" x1="338.3" y1="43.3" x2="688.0" y2="78.4"/>
+<text class="zz-lab down" x="513.1" y="75.8">-255</text>
+<circle class="zz-dot conf-none" cx="688.0" cy="78.4" r="3.2"/>
+<line class="zz-leg up" x1="688.0" y1="78.4" x2="892.0" y2="47.5"/>
+<text class="zz-lab up" x="790.0" y="56.0">+224</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="47.5" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips ($0.10)</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;15:30</td><td class="dir up">▲</td><td class="num up">+736.1</td><td class="num up">+1.704%</td><td class="num dim">510′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">15:30&rarr;01:30</td><td class="dir down">▼</td><td class="num down">-255.3</td><td class="num down">-0.581%</td><td class="num dim">3480′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks moved price the other way.</td></tr><tr><td class="mono nowrap">01:30&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+224.4</td><td class="num up">+0.514%</td><td class="num dim">315′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Quarterly Estimates of Japan GDP for April - June 2026 (F…, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>BTC/USD</b><span class="px">63,469.8</span><span class="chg up">+159.5 pips ($1) &middot; +0.25%</span><span class="px dim">range 1033.9 pips ($1)</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="BTC/USD intraday path">
+<polyline class="zz-price" points="8.0,48.8 11.1,50.4 14.2,46.8 17.2,42.8 20.3,54.3 23.4,69.4 26.5,69.7 29.6,97.4 32.6,84.0 35.7,80.5 38.8,90.5 41.9,104.4 45.0,106.1 48.0,123.8 51.1,116.1 54.2,102.6 57.3,110.8 60.4,122.0 63.4,125.9 66.5,122.4 69.6,113.4 72.7,109.7 75.8,111.6 78.8,119.1 81.9,113.9 85.0,107.9 88.1,109.0 91.2,112.1 94.2,118.6 97.3,109.2 100.4,126.3 103.5,129.0 106.6,136.7 109.6,124.5 112.7,134.0 115.8,141.4 118.9,148.0 122.0,139.3 125.0,129.4 128.1,146.6 131.2,134.2 134.3,116.1 137.4,94.8 140.4,95.7 143.5,89.4 146.6,79.7 149.7,67.0 152.8,76.5 155.8,70.8 158.9,67.6 162.0,81.0 165.1,93.3 168.2,94.5 171.2,89.8 174.3,98.5 177.4,104.8 180.5,114.0 183.6,104.4 186.6,97.4 189.7,99.4 192.8,97.5 195.9,101.1 199.0,106.7 202.0,107.1 205.1,106.9 208.2,108.5 211.3,109.3 214.4,103.7 217.4,115.4 220.5,117.8 223.6,109.5 226.7,109.1 229.8,103.3 232.9,101.0 235.9,92.6 239.0,88.0 242.1,91.9 245.2,92.6 248.3,91.0 251.3,91.4 254.4,91.9 257.5,88.9 260.6,89.9 263.7,88.8 266.7,86.7 269.8,80.3 272.9,78.0 276.0,76.0 279.1,74.4 282.1,81.9 285.2,85.3 288.3,86.9 291.4,80.7 294.5,77.1 297.5,74.0 300.6,78.0 303.7,74.0 306.8,77.9 309.9,84.2 312.9,83.2 316.0,88.6 319.1,89.1 322.2,84.9 325.3,79.2 328.3,77.1 331.4,83.7 334.5,83.9 337.6,84.6 340.7,86.8 343.7,87.6 346.8,92.0 349.9,103.1 353.0,100.5 356.1,97.8 359.1,91.8 362.2,90.7 365.3,92.0 368.4,92.4 371.5,90.1 374.5,88.7 377.6,91.2 380.7,90.5 383.8,88.7 386.9,92.2 389.9,96.6 393.0,96.3 396.1,99.8 399.2,87.5 402.3,85.2 405.3,89.8 408.4,90.6 411.5,87.2 414.6,87.9 417.7,89.5 420.7,89.2 423.8,89.2 426.9,89.1 430.0,85.0 433.1,79.3 436.1,80.9 439.2,84.0 442.3,78.5 445.4,82.7 448.5,82.1 451.5,81.8 454.6,85.5 457.7,85.6 460.8,85.3 463.9,82.3 466.9,88.7 470.0,88.4 473.1,87.6 476.2,83.4 479.3,81.5 482.3,80.3 485.4,78.6 488.5,84.3 491.6,84.5 494.7,83.9 497.7,81.0 500.8,80.6 503.9,74.9 507.0,72.9 510.1,73.7 513.1,74.5 516.2,74.8 519.3,74.0 522.4,77.0 525.5,76.6 528.5,79.4 531.6,80.7 534.7,82.8 537.8,84.9 540.9,85.0 543.9,85.1 547.0,83.6 550.1,87.6 553.2,87.2 556.3,85.1 559.3,83.5 562.4,91.2 565.5,79.0 568.6,74.0 571.7,77.9 574.7,78.2 577.8,78.5 580.9,78.3 584.0,77.3 587.1,76.8 590.1,74.2 593.2,78.4 596.3,83.1 599.4,81.7 602.5,85.3 605.5,87.0 608.6,85.6 611.7,88.5 614.8,85.1 617.9,86.0 620.9,85.8 624.0,87.5 627.1,86.4 630.2,86.8 633.3,86.5 636.3,86.7 639.4,85.5 642.5,85.8 645.6,85.1 648.7,85.9 651.7,86.3 654.8,95.0 657.9,96.5 661.0,96.9 664.1,93.6 667.1,94.6 670.2,94.6 673.3,94.4 676.4,96.7 679.5,95.8 682.6,93.5 685.6,92.6 688.7,92.5 691.8,95.3 694.9,92.9 698.0,86.0 701.0,86.0 704.1,86.0 707.2,86.3 710.3,86.2 713.4,84.2 716.4,81.3 719.5,81.1 722.6,79.9 725.7,79.7 728.8,79.2 731.8,75.3 734.9,66.7 738.0,51.3 741.1,55.7 744.2,60.1 747.2,65.1 750.3,69.1 753.4,77.8 756.5,73.4 759.6,76.2 762.6,73.5 765.7,75.9 768.8,75.9 771.9,71.0 775.0,65.0 778.0,72.9 781.1,80.0 784.2,76.4 787.3,81.9 790.4,85.1 793.4,85.5 796.5,86.5 799.6,89.9 802.7,102.7 805.8,103.7 808.8,104.3 811.9,114.7 815.0,122.2 818.1,105.7 821.2,114.8 824.2,114.8 827.3,108.0 830.4,107.4 833.5,106.7 836.6,112.4 839.6,101.6 842.7,105.7 845.8,87.6 848.9,78.6 852.0,66.0 855.0,79.8 858.1,84.1 861.2,70.0 864.3,60.0 867.4,40.4 870.4,39.6 873.5,47.0 876.6,48.3 879.7,37.4 882.8,29.1 885.8,25.5 888.9,27.5 892.0,22.0"/>
+<line class="zz-leg down" x1="8.0" y1="48.8" x2="118.9" y2="148.0"/>
+<text class="zz-lab down" x="63.4" y="113.4">-736</text>
+<circle class="zz-dot conf-none" cx="118.9" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="118.9" y1="148.0" x2="149.7" y2="67.0"/>
+<text class="zz-lab up" x="134.3" y="100.5">+601</text>
+<circle class="zz-dot conf-none" cx="149.7" cy="67.0" r="3.2"/>
+<line class="zz-leg down" x1="149.7" y1="67.0" x2="220.5" y2="117.8"/>
+<text class="zz-lab down" x="185.1" y="107.4">-377</text>
+<circle class="zz-dot conf-none" cx="220.5" cy="117.8" r="3.2"/>
+<line class="zz-leg up" x1="220.5" y1="117.8" x2="738.0" y2="51.3"/>
+<text class="zz-lab up" x="479.3" y="77.5">+493</text>
+<circle class="zz-dot conf-none" cx="738.0" cy="51.3" r="3.2"/>
+<line class="zz-leg down" x1="738.0" y1="51.3" x2="815.0" y2="122.2"/>
+<text class="zz-lab down" x="776.5" y="101.7">-526</text>
+<circle class="zz-dot conf-none" cx="815.0" cy="122.2" r="3.2"/>
+<line class="zz-leg up" x1="815.0" y1="122.2" x2="892.0" y2="22.0"/>
+<text class="zz-lab up" x="853.5" y="65.1">+743</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="22.0" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips ($1)</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;16:00</td><td class="dir down">▼</td><td class="num down">-736.1</td><td class="num down">-1.163%</td><td class="num dim">540′</td><td><span class="badge conf-none">no clear catalyst</span> No single trigger started this leg, but Retail Sales m/m +1 more pushed it along (-126.9 in 15 min, 17% of the move).<div class="contrib">in-leg: Retail Sales m/m +1 more <em>-126.9 in 15 min, 17% of the leg</em></div><div class="contrib">in-leg: US retail sales down by 0.6% in July <em>-126.9 in 15 min, 17% of the leg</em></div></td></tr><tr><td class="mono nowrap">16:00&rarr;18:30</td><td class="dir up">▲</td><td class="num up">+600.6</td><td class="num up">+0.960%</td><td class="num dim">150′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item US consumer confidence cools in August moved price the other way.</td></tr><tr><td class="mono nowrap">18:30&rarr;00:15</td><td class="dir down">▼</td><td class="num down">-376.6</td><td class="num down">-0.596%</td><td class="num dim">345′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks, too weak to own the move.</td></tr><tr><td class="mono nowrap">00:15&rarr;18:15</td><td class="dir up">▲</td><td class="num up">+493.2</td><td class="num up">+0.786%</td><td class="num dim">2520′</td><td><span class="badge conf-none">no clear catalyst</span> Nothing on the wire; flow or a technical level, not news.</td></tr><tr><td class="mono nowrap">18:15&rarr;00:30</td><td class="dir down">▼</td><td class="num down">-525.5</td><td class="num down">-0.831%</td><td class="num dim">375′</td><td><span class="badge conf-none">no clear catalyst</span> Nothing on the wire; flow or a technical level, not news.</td></tr><tr><td class="mono nowrap">00:30&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+742.8</td><td class="num up">+1.184%</td><td class="num dim">375′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item NZ selected price indexes: July 2026, too weak to own the move.</td></tr></tbody></table></div>
+<div class="inst"><div class="inst-h"><b>Brent/USD</b><span class="px">90.099</span><span class="chg up">+172.2 pips ($0.01) &middot; +1.95%</span><span class="px dim">range 312.7 pips ($0.01)</span></div><svg class="zz" viewBox="0 0 900 170" role="img" aria-label="Brent/USD intraday path">
+<polyline class="zz-price" points="8.0,132.5 18.7,128.1 29.3,117.9 40.0,101.5 50.6,105.4 61.3,91.7 71.9,96.1 82.6,94.5 93.2,65.5 103.9,73.6 114.5,72.1 125.2,65.9 135.8,65.9 146.5,87.3 157.1,94.8 167.8,93.4 178.4,99.3 189.1,110.5 199.7,107.4 210.4,117.4 221.0,126.4 231.7,122.9 242.3,127.3 253.0,138.4 263.6,126.8 274.3,126.6 284.9,132.5 295.6,129.5 306.2,115.7 316.9,117.9 327.5,131.4 338.2,140.6 348.8,135.3 359.5,136.4 370.1,148.0 380.8,132.1 391.4,123.6 402.1,113.7 412.7,100.2 423.4,99.3 434.0,96.9 444.7,96.7 455.3,101.1 466.0,101.1 476.6,97.4 487.3,89.5 497.9,88.6 508.6,92.6 519.2,80.6 529.9,81.7 540.5,75.6 551.2,76.9 561.8,81.9 572.5,70.1 583.1,60.7 593.8,67.7 604.4,68.1 615.1,69.4 625.7,70.5 636.4,68.1 647.0,65.3 657.7,74.0 668.3,71.0 679.0,113.3 689.6,59.3 700.3,54.5 710.9,55.8 721.6,70.0 732.2,58.7 742.9,47.5 753.5,31.4 764.2,37.5 774.8,22.0 785.5,27.7 796.1,40.1 806.8,42.3 817.4,47.7 828.1,43.4 838.7,37.3 849.4,53.0 860.0,55.0 870.7,47.5 881.3,51.5 892.0,54.7"/>
+<line class="zz-leg up" x1="8.0" y1="132.5" x2="93.2" y2="65.5"/>
+<text class="zz-lab up" x="50.6" y="92.0">+154</text>
+<circle class="zz-dot conf-none" cx="93.2" cy="65.5" r="3.2"/>
+<line class="zz-leg down" x1="93.2" y1="65.5" x2="370.1" y2="148.0"/>
+<text class="zz-lab down" x="231.7" y="121.8">-189</text>
+<circle class="zz-dot conf-none" cx="370.1" cy="148.0" r="3.2"/>
+<line class="zz-leg up" x1="370.1" y1="148.0" x2="583.1" y2="60.7"/>
+<text class="zz-lab up" x="476.6" y="97.4">+200</text>
+<circle class="zz-dot conf-none" cx="583.1" cy="60.7" r="3.2"/>
+<line class="zz-leg down" x1="583.1" y1="60.7" x2="679.0" y2="113.3"/>
+<text class="zz-lab down" x="631.1" y="102.0">-120</text>
+<circle class="zz-dot conf-none" cx="679.0" cy="113.3" r="3.2"/>
+<line class="zz-leg up" x1="679.0" y1="113.3" x2="892.0" y2="54.7"/>
+<text class="zz-lab up" x="785.5" y="77.0">+134</text>
+<circle class="zz-dot conf-none" cx="892.0" cy="54.7" r="3.2"/>
+</svg><table class="legs"><thead><tr><th>window</th><th></th><th class="num">pips ($0.01)</th><th class="num">return</th><th class="num">dur</th><th>attribution</th></tr></thead><tbody><tr><td class="mono nowrap">07:00&rarr;09:00</td><td class="dir up">▲</td><td class="num up">+153.5</td><td class="num up">+1.738%</td><td class="num dim">120′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item BOJ could raise rates in September, weigh faster pace of …, too weak to own the move.</td></tr><tr><td class="mono nowrap">09:00&rarr;15:30</td><td class="dir down">▼</td><td class="num down">-189.0</td><td class="num down">-2.103%</td><td class="num dim">390′</td><td><span class="badge conf-none">no clear catalyst</span> No single trigger started this leg, but US retail sales down by 0.6% in July pushed it along (-31.0 in 15 min, 16% of the move).<div class="contrib">in-leg: US retail sales down by 0.6% in July <em>-31.0 in 15 min, 16% of the leg</em></div></td></tr><tr><td class="mono nowrap">15:30&rarr;20:30</td><td class="dir up">▲</td><td class="num up">+200.0</td><td class="num up">+2.274%</td><td class="num dim">300′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item US consumer confidence cools in August, too weak to own the move.</td></tr><tr><td class="mono nowrap">20:30&rarr;22:45</td><td class="dir down">▼</td><td class="num down">-120.4</td><td class="num down">-1.338%</td><td class="num dim">135′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item President Trump Speaks, too weak to own the move.</td></tr><tr><td class="mono nowrap">22:45&rarr;06:45</td><td class="dir up">▲</td><td class="num up">+134.1</td><td class="num up">+1.511%</td><td class="num dim">3360′</td><td><span class="badge conf-none">no clear catalyst</span> Nearest item Prelim GDP q/q +1 more, too weak to own the move.</td></tr></tbody></table></div>
+
+<h2>Scenarios for the window ahead</h2>
+
+
+<h2>Risks</h2>
+
+
+<h2>Calendar ahead &mdash; Mon 07:00 to Mon 19:00 CEST</h2>
+<table class="ahead"><thead><tr><th>time</th><th>ccy</th><th>impact</th><th>event</th><th class="num">forecast</th><th class="num">previous</th></tr></thead><tbody><tr><td class="mono nowrap">14:30</td><td>CAD</td><td><span class="imp imp-high">High</span></td><td>CPI m/m</td><td class="num dim">0.4%</td><td class="num dim">-0.4%</td></tr><tr><td class="mono nowrap">14:30</td><td>CAD</td><td><span class="imp imp-high">High</span></td><td>Median CPI y/y</td><td class="num dim">2.0%</td><td class="num dim">1.9%</td></tr><tr><td class="mono nowrap">14:30</td><td>CAD</td><td><span class="imp imp-high">High</span></td><td>Trimmed CPI y/y</td><td class="num dim">1.8%</td><td class="num dim">1.8%</td></tr><tr><td class="mono nowrap">14:30</td><td>CAD</td><td><span class="imp imp-medium">Medium</span></td><td>Common CPI y/y</td><td class="num dim">2.5%</td><td class="num dim">2.6%</td></tr></tbody></table>
+
+<h2>Headlines in the window</h2>
+<ul class="heads"><li><span class="mono t">07:45</span><span class="imp imp-high">high</span><a href="https://www.forexfactory.com/news/1413351" rel="noreferrer">BOJ could raise rates in September, weigh faster pace of hikes thereafter, sources say</a></li><li><span class="mono t">14:30</span><span class="imp imp-high">high</span><a href="https://www.forexfactory.com/news/1413392" rel="noreferrer">US retail sales down by 0.6% in July</a></li><li><span class="mono t">16:00</span><span class="imp imp-medium">medium</span><a href="https://www.forexfactory.com/news/1413429" rel="noreferrer">US consumer confidence cools in August</a></li><li><span class="mono t">08:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413352" rel="noreferrer">German wholesale prices in July 2026: +5.3% compared to July 2025</a></li><li><span class="mono t">08:45</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413353" rel="noreferrer">In July 2026, French consumer prices increased by 2.1% year-on-year</a></li><li><span class="mono t">10:45</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413359" rel="noreferrer">IRGC Struck An Oil Tanker With A Drone After It Attempted To Pass Through The Strait Of Hormuz Without Iran&#x27;s Authorization</a></li><li><span class="mono t">11:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413360" rel="noreferrer">Euro area international trade in goods surplus EUR8.6 bn</a></li><li><span class="mono t">11:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413361" rel="noreferrer">GDP up by 0.4% and employment up by 0.1% in the euro area</a></li><li><span class="mono t">14:30</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413388" rel="noreferrer">Canada Monthly Survey of Manufacturing, June 2026</a></li><li><span class="mono t">14:30</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413389" rel="noreferrer">Canada wholesale trade, June 2026</a></li><li><span class="mono t">16:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413430" rel="noreferrer">US business inventories stable in June</a></li><li><span class="mono t">18:30</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413445" rel="noreferrer">Fed&#x27;s Goolsbee encouraged by CPI reports and needs more data</a></li><li><span class="mono t">21:45</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413485" rel="noreferrer">Trump: We&#x27;re making a fortune with tariffs</a></li><li><span class="mono t">22:15</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1413489" rel="noreferrer">Trump: We&#x27;re winning big with Iran</a></li></ul>
+
+<footer>Prices and headlines: ForexFactory Market Data Service (mds-api.forexfactory.com), 15-minute bars; reactions measured on 5-minute bars. Calendar with actuals: ForexFactory week page (safari17_0 profile). Analysis: not run.<br>Generated 2026-08-27 19:27 UTC.</footer>
+</div>
