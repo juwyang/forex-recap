@@ -1,0 +1,134 @@
+name: FX recap
+
+# Two editions a day, both anchored to 19:00 / 07:00 Europe/Zurich.
+# GitHub cron is UTC only and has no DST awareness, so each edition is
+# scheduled at both its winter and summer UTC hour and the job itself checks
+# the local clock and skips the run that is an hour off.
+on:
+  schedule:
+    - cron: "0 5 * * 1-5"    # 07:00 CEST (summer)
+    - cron: "0 6 * * 1-5"    # 07:00 CET  (winter)
+    - cron: "0 17 * * 1-5"   # 19:00 CEST (summer)
+    - cron: "0 18 * * 1-5"   # 19:00 CET  (winter)
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "Which edition to build"
+        type: choice
+        options: [auto, morning, evening]
+        default: auto
+      date:
+        description: "Report date YYYY-MM-DD (blank = today, Zurich)"
+        type: string
+        default: ""
+
+concurrency:
+  group: fx-recap
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      built: ${{ steps.decide.outputs.built }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decide which edition this run is
+        id: decide
+        env:
+          IN_EDITION: ${{ inputs.edition }}
+          IN_DATE: ${{ inputs.date }}
+        run: |
+          set -euo pipefail
+          HOUR=$(TZ=Europe/Zurich date +%H)
+          TODAY=$(TZ=Europe/Zurich date +%F)
+          EDITION="${IN_EDITION:-auto}"
+
+          if [ "$EDITION" = "auto" ] || [ -z "$EDITION" ]; then
+            case "$HOUR" in
+              07) EDITION=morning ;;
+              19) EDITION=evening ;;
+              *)  echo "Local hour is $HOUR in Zurich - this cron is the DST twin, skipping."
+                  echo "built=false" >> "$GITHUB_OUTPUT"; exit 0 ;;
+            esac
+          fi
+
+          echo "edition=$EDITION"       >> "$GITHUB_OUTPUT"
+          echo "date=${IN_DATE:-$TODAY}" >> "$GITHUB_OUTPUT"
+          echo "built=true"             >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-python@v5
+        if: steps.decide.outputs.built == 'true'
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        if: steps.decide.outputs.built == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Build report
+        if: steps.decide.outputs.built == 'true'
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python -m forexrecap.run \
+            --date "${{ steps.decide.outputs.date }}" \
+            --edition "${{ steps.decide.outputs.edition }}" \
+            --out reports
+
+      - name: Summarise
+        if: steps.decide.outputs.built == 'true'
+        run: |
+          STEM="${{ steps.decide.outputs.date }}-${{ steps.decide.outputs.edition }}"
+          MONTH=$(echo "${{ steps.decide.outputs.date }}" | cut -c1-7)
+          python - "$MONTH/$STEM.json" <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, sys
+          d = json.load(open("reports/" + sys.argv[1], encoding="utf-8"))
+          m, a = d["meta"], d.get("analysis") or {}
+          print("## %s %s\n" % (m["edition_title"], m["date"]))
+          print("- instruments: %d loaded, %d failed" %
+                (m["instruments_loaded"], len(m["instruments_failed"])))
+          cal = m.get("calendar") or {}
+          print("- calendar: %s (%d actuals)" %
+                ("DEGRADED - no actuals" if cal.get("degraded") else "ok via %s" % cal.get("profile"),
+                 cal.get("with_actual", 0)))
+          print("- analysis: %s" % (a.get("error") or a.get("_model", "not run")))
+          if a.get("session_summary"):
+              print("\n%s" % a["session_summary"])
+          PY
+
+      - name: Commit
+        if: steps.decide.outputs.built == 'true'
+        run: |
+          git config user.name  "fx-recap bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "recap ${{ steps.decide.outputs.date }} ${{ steps.decide.outputs.edition }}"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.decide.outputs.built == 'true'
+        with:
+          path: reports
+
+  publish:
+    needs: build
+    if: needs.build.outputs.built == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
