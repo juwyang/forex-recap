@@ -26,14 +26,18 @@ concurrency:
   group: fx-recap
   cancel-in-progress: false
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+# Declared per job, not once at the top: a workflow-level block does not
+# reliably reach the job that needs OIDC, and deploy-pages then fails with
+# 'Ensure GITHUB_TOKEN has permission "id-token: write"'.
+permissions: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write        # commit the report back into the repo
+      pages: write           # upload the Pages artifact
+      id-token: write
     outputs:
       built: ${{ steps.decide.outputs.built }}
     steps:
@@ -126,6 +130,9 @@ jobs:
     needs: build
     if: needs.build.outputs.built == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write           # deploy the uploaded artifact
+      id-token: write        # OIDC token deploy-pages exchanges for it
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

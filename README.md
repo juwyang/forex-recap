@@ -16,6 +16,11 @@ day rather than silently sliding the cutoff off 19:00 local.
 
 ## What it produces
 
+`reports/index.html` is a month calendar: every day cell links its AM and PM
+editions, with the session's strongest and weakest currency in the tooltip.
+It is rebuilt by scanning the report files on every run, so a deleted or
+rebuilt report can never leave it stale.
+
 For each edition, into `reports/YYYY-MM/YYYY-MM-DD-<edition>.{html,md,json}`:
 
 - **Currency market map** — every major against every other, laid out like
@@ -106,6 +111,13 @@ python -m forexrecap.run --edition evening
 python -m forexrecap.run --date 2026-08-26 --edition morning --no-llm
 ```
 
+`--backfill N` rebuilds the N days before `--date`, both editions, so the
+calendar index has history from day one:
+
+```bash
+python -m forexrecap.run --backfill 13 --no-llm
+```
+
 `--strict` exits non-zero if the calendar degraded or instruments went missing,
 for use in CI when you would rather fail than publish a thin report.
 
@@ -126,13 +138,13 @@ Set the `DEEPSEEK_API_KEY` repository secret and enable Pages (source: GitHub
 Actions). Without the key the report still builds — every measurement is
 independent of the model — and the analysis section says it is unavailable.
 
-**One caveat worth knowing before you trust the schedule:** the Cloudflare
-bypass has been verified from a residential IP. Datacenter ranges, which is what
-GitHub's runners are, are challenged harder, so the calendar step may degrade to
-the actuals-free feed in CI. The run reports this in the job summary and on the
-page itself instead of failing quietly. If it does degrade persistently, the
-fix is to route that one request through a residential proxy, or to restore the
-`cf_clearance` cookie approach with the cookie in a secret.
+The Safari-fingerprint Cloudflare bypass was a question mark for CI, since
+datacenter ranges get challenged harder than residential ones. It has now been
+verified on a GitHub-hosted runner: `calendar: ok via safari17_0 (38 actuals)`,
+36/36 instruments. If it ever does start degrading, the run says so in the job
+summary and on the page rather than quietly publishing a report with no event
+polarity; the fix would be to route that one request through a residential
+proxy, or to restore the `cf_clearance` cookie with the cookie in a secret.
 
 ## Layout
 
@@ -143,6 +155,7 @@ forexrecap/
   net.py           http with disk cache, per-host throttle, 429 backoff
   ff.py            ForexFactory MDS client (bars, news, instrument list)
   calendar_ff.py   FF calendar week page w/ actuals, release-block grouping
+  index.py         the month-calendar landing page
   market.py        session snapshots, currency strength, the 8x8 map
   zigzag.py        leg segmentation with an auto-tuned threshold
   attribution.py   leg -> cause, with the impulse test that lets it say no
