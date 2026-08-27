@@ -21,21 +21,31 @@ FALLBACK_MODEL = "deepseek-v4-flash"
 MAX_TOKENS = int(os.environ.get("DEEPSEEK_MAX_TOKENS", "16000"))
 
 
-def load_key(path=None):
-    """DEEPSEEK_API_KEY wins; otherwise read the local cred file.
+def _clean_key(raw):
+    """Accept either a bare key or a whole `API-key: sk-...` line.
 
-    The file is `API-key: sk-...`, so everything up to the first colon is
-    stripped. In CI only the environment variable exists.
+    Pasting the full cred-file line into a CI secret is the obvious mistake and
+    it fails silently -- the report still builds, the analysis section just says
+    unavailable forever. Cheaper to tolerate it than to debug it.
     """
-    env = os.environ.get("DEEPSEEK_API_KEY")
+    if not raw:
+        return None
+    key = raw.strip().strip('"').strip("'")
+    if ":" in key and not key.startswith("sk-"):
+        key = key.split(":", 1)[1].strip()
+    return key or None
+
+
+def load_key(path=None):
+    """DEEPSEEK_API_KEY wins; otherwise read the local cred file."""
+    env = _clean_key(os.environ.get("DEEPSEEK_API_KEY"))
     if env:
-        return env.strip()
+        return env
     for cand in ([path] if path else []) + [
             os.path.join(os.getcwd(), "cred_deepseek.txt"),
             os.path.join(os.path.dirname(os.getcwd()), "cred_deepseek.txt")]:
         if cand and os.path.exists(cand):
-            raw = open(cand, encoding="utf-8").read().strip()
-            return raw.split(":", 1)[1].strip() if ":" in raw else raw
+            return _clean_key(open(cand, encoding="utf-8").read())
     return None
 
 
