@@ -111,6 +111,16 @@ jobs:
             --edition "${{ steps.decide.outputs.edition }}" \
             --out reports
 
+      - name: Fill in anything the scheduler dropped
+        if: steps.decide.outputs.built == 'true'
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        # GitHub's scheduler is best-effort and has dropped slots outright, so
+        # the archive is repaired from whichever trigger does fire rather than
+        # relying on each one arriving. Only windows that have already closed
+        # are built.
+        run: python -m forexrecap.run --catchup --out reports
+
       - name: Summarise
         if: steps.decide.outputs.built == 'true'
         run: |

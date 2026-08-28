@@ -132,6 +132,13 @@ calendar index has history from day one:
 python -m forexrecap.run --backfill 13 --no-llm
 ```
 
+`--catchup` builds every edition whose cutoff has already passed and which is
+not on disk, and does nothing otherwise:
+
+```bash
+python -m forexrecap.run --catchup
+```
+
 `--strict` exits non-zero if the calendar degraded or instruments went missing,
 for use in CI when you would rather fail than publish a thin report.
 
@@ -156,6 +163,15 @@ publishes nothing. Lateness is otherwise harmless here: the window is derived
 from the report date and the cutoff hour, so a late run simply has more
 complete data. `tests/decide_matrix.sh` exercises all eight cron/DST
 combinations plus a 90-minute-late delivery.
+
+**GitHub's scheduler is best-effort, and it has dropped every slot for this
+repository so far** — workflow state `active`, valid cron, public repo, Actions
+operational, and still zero `schedule` events over two days, while
+`workflow_dispatch` works every time. Nothing in the run reports an error,
+because the run never happens. So the workflow does not assume each trigger
+arrives: every run ends with a `--catchup` pass that builds whatever closed
+window is missing from `reports/`. One trigger a day, whenever it lands, is
+enough to keep the archive whole; a manual dispatch repairs it immediately.
 
 Set the `DEEPSEEK_API_KEY` repository secret and enable Pages (source: GitHub
 Actions). Without the key the report still builds — every measurement is

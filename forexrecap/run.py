@@ -17,7 +17,8 @@ from .index import render as render_index
 from .config import DEFAULT_EDITION, EDITIONS
 from .llm import analyse
 from .page import build_html, build_markdown
-from .util import is_trading_day, report_tz
+from .index import scan as scan_reports
+from .util import cutoff, is_trading_day, report_tz
 
 
 # Below this share of the window actually trading, an edition is a weekend
@@ -105,6 +106,46 @@ Weekend days are skipped outright; Monday's morning edition bridges back
     return 0
 
 
+def catchup(today, args, max_days=10):
+    """Build every edition whose cutoff has passed but which is not on disk.
+
+    GitHub's scheduler is not a guarantee -- it has dropped every slot for this
+    repository so far -- so the archive repairs itself from whatever trigger
+    does fire instead of depending on each one arriving. Only editions whose
+    cutoff is already in the past are built, so a run never publishes a window
+    that has not finished.
+    """
+    have = scan_reports(args.out)
+    now = dt.datetime.now(dt.timezone.utc)
+    missing = []
+    for back in range(max_days, -1, -1):
+        day = today - dt.timedelta(days=back)
+        if not is_trading_day(day):
+            continue
+        for edition in sorted(EDITIONS):
+            if edition in (have.get(day) or {}):
+                continue
+            if cutoff(day, edition) > now:
+                continue          # this window has not closed yet
+            missing.append((day, edition))
+
+    if not missing:
+        print("[catchup] nothing missing in the last %d days" % max_days)
+        return 0
+
+    print("[catchup] %d edition(s) missing: %s"
+          % (len(missing), ", ".join("%s %s" % (d, e) for d, e in missing)))
+    written = 0
+    for day, edition in missing:
+        try:
+            written += bool(build_one(day, edition, args))
+        except Exception as exc:  # noqa: BLE001 - one bad day must not stop the rest
+            print("[catchup] %s %s failed: %s" % (day, edition, exc))
+    n = render_index(args.out)
+    print("[catchup] wrote %d; index now lists %d" % (written, n))
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="ForexFactory-sourced FX recap")
     ap.add_argument("--date", help="report date YYYY-MM-DD (default: today, local)")
@@ -116,12 +157,17 @@ def main(argv=None):
                     help="exit non-zero if the calendar degraded or instruments are missing")
     ap.add_argument("--backfill", type=int, metavar="N",
                     help="also build the N days before --date, both editions")
+    ap.add_argument("--catchup", action="store_true",
+                    help="build every edition whose cutoff has passed and that "
+                         "is not already on disk")
     args = ap.parse_args(argv)
 
     day = dt.date.fromisoformat(args.date) if args.date else _today_local()
 
     if args.backfill:
         return backfill(day, args)
+    if args.catchup:
+        return catchup(day, args)
 
     metas = []
     if not build_one(day, args.edition, args, seen=metas):
