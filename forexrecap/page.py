@@ -227,8 +227,12 @@ def build_html(report, analysis, frames):
     resc_note = ('<div class="warn">Scenario probabilities summed to %s and were '
                  'rescaled to 1.</div>' % resc) if resc else ""
 
-    return """<title>FX %s %s</title>
-<style>%s</style>
+    return """<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>FX %s %s</title>
+<style>%s</style></head><body>
 <div class="wrap">
 <h1>%s</h1>
 <div class="sub">%s &middot; %s</div>
@@ -279,7 +283,7 @@ within it; otherwise it is marked as having no clear catalyst.</p>
 %s
 
 <footer>%s<br>Generated %s UTC.</footer>
-</div>""" % (
+</div></body></html>""" % (
         _esc(m["edition_title"]), _esc(m["date"]), CSS,
         title, window, _esc(m["sessions"]), strip,
         analysis_html(analysis),
@@ -321,7 +325,7 @@ def build_markdown(report, analysis):
 
     L.append("## Beyond the majors")
     L.append("")
-    L.append("| instrument | close | change | %% | range |")
+    L.append("| instrument | close | change | % | range |")
     L.append("|---|---|---|---|---|")
     for k in EXTRA_INSTRUMENTS:
         s = report["snapshots"].get(k)

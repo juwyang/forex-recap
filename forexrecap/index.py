@@ -204,6 +204,7 @@ def render(root, today=None):
     page = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>FX Recap</title><style>%s</style></head><body>
 <div class="wrap">
 <h1>FX Recap</h1>

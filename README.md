@@ -161,6 +161,21 @@ Set the `DEEPSEEK_API_KEY` repository secret and enable Pages (source: GitHub
 Actions). Without the key the report still builds — every measurement is
 independent of the model — and the analysis section says it is unavailable.
 
+**On a private repository.** Actions runs normally; at roughly 4 minutes a run,
+twice a day on weekdays, this uses about 180 of the plan's monthly minutes.
+Pages from a private repo needs GitHub Pro or above — on Free, flipping the repo
+to private unpublishes the site. Changing visibility also resets the Pages
+configuration either way, so re-select "GitHub Actions" as the source and
+re-run the workflow afterwards.
+
+A private repo does **not** make the published site private: the Pages URL stays
+reachable to anyone who has it. Only Enterprise Cloud can put access control in
+front of it. Both page templates therefore carry
+`<meta name="robots" content="noindex,nofollow">` so the reports stay out of
+search results. A `robots.txt` would not help — for a project page served from
+a subpath, crawlers only honour the one at the domain root, which belongs to
+the user site, not this repo.
+
 The Safari-fingerprint Cloudflare bypass was a question mark for CI, since
 datacenter ranges get challenged harder than residential ones. It has now been
 verified on a GitHub-hosted runner: `calendar: ok via safari17_0 (38 actuals)`,
