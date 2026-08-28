@@ -13,7 +13,7 @@
   "end_local": "2026-08-28T19:00:00+02:00",
   "fwd_start_utc": "2026-08-28T17:00:00+00:00",
   "fwd_end_utc": "2026-08-31T17:00:00+00:00",
-  "generated_utc": "2026-08-28T17:58:58.840995+00:00",
+  "generated_utc": "2026-08-28T18:08:13.267999+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 56
+   "with_actual": 54
   }
  },
  "facts": {
@@ -1560,5 +1560,267 @@
    }
   ]
  },
- "analysis": null
+ "analysis": {
+  "session_summary": "The window was dominated by broad USD strength: DXY rose 55.2 points (+0.557%) to 99.591, and USD was the strongest major at +0.541% on the currency strength map. EUR/USD closed -65.3 pips at 1.15868, USD/JPY +90.2 pips at 160.194, and USD/CHF +54.7 pips at 0.80931, with most pairs closing near their range extremes. The 16:00 Fed Chairman Warsh Speaks cluster moved USD +0.232% on a no-forecast event, while risk assets leaned soft: SPX -0.32%, VIX +0.997%, Gold -2.935%, BTC -3.215%. Scored events were muted: Canada GDP beat 0.3% vs 0.2% but CAD basket moved 0.000%, and Tokyo Core CPI in line at 1.8% moved JPY 0.002%.",
+  "themes": [
+   {
+    "theme": "Broad USD strength",
+    "evidence": "USD strength map +0.541% highest; DXY +55.2 points to 99.591; EUR/USD -65.3 pips; USD/JPY +90.2 pips; USD/CHF +54.7 pips; USD/CAD +45.2 pips.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "JPY",
+     "CHF",
+     "CAD",
+     "GBP",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Late-session Fed-driven repricing",
+    "evidence": "Fed Chairman Warsh Speaks +3 more at 16:00 produced USD own-currency impulse +0.232%; top movers EUR/USD -0.157%, USD/ZAR +0.293%, USD/CHF +0.155%.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "CHF",
+     "ZAR",
+     "MXN",
+     "CAD",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "Risk-off/commodity deleveraging",
+    "evidence": "SPX -24.8 points (-0.32%), VIX +16.6 points (+0.997%), Gold -1354.4 (-2.935%), BTC -2584.3 (-3.215%), USD/ZAR +1715.9 pips (+1.073%).",
+    "currencies": [
+     "USD",
+     "ZAR",
+     "MXN"
+    ]
+   }
+  ],
+  "leg_notes": {
+   "EUR/USD": "An early 3.5-pip Asia lift was erased by a -67.4-pip slide into 18:45, with the late leg driven about 40% by the US employment benchmark/Warsh/consumer-confidence cluster and no single starting trigger.",
+   "GBP/USD": "A 5.7-pip early uptick was followed by a -60.7-pip decline; the US data/Fed cluster contributed 31% of the down leg.",
+   "USD/JPY": "A single 87.2-pip up leg stretched from 19:00 to 18:45, with Fed Chairman Warsh Speaks +3 more and related items contributing 24% of the move.",
+   "USD/CHF": "Three legs netted +54.7 pips, but the largest was the +60.4-pip 12:45-18:45 up leg, where US data/Warsh contributed 45% of the move after an earlier -20.3-pip pullback.",
+   "AUD/USD": "An early -6.8-pip dip, then +15.0-pip bounce, then -44.1-pip decline; the final down leg had the US data cluster contributing 41%.",
+   "NZD/USD": "An early +13.5-pip rise gave way to a -55.9-pip slide, with the US data cluster contributing 37% of the final leg.",
+   "USD/CAD": "An early -14.2-pip dip was reversed by a +56.6-pip late surge; Fed Chairman Warsh Speaks +3 more and related items contributed 45% of the up leg."
+  },
+  "polarity_reads": [
+   {
+    "event": "Fed Chairman Warsh Speaks +3 more",
+    "read": "No forecast was available to score the surprise, but USD strengthened by 0.232% with broad top movers; the tape suggests the Fed communication was read as USD-supportive and squeezed short-dollar positions."
+   },
+   {
+    "event": "GDP m/m",
+    "read": "CAD data beat forecast (0.3% vs 0.2%), but own-ccy impulse was 0.000%; the muted reaction implies CAD longs were already positioned or the beat was too small to change BoC pricing."
+   },
+   {
+    "event": "Tokyo Core CPI y/y",
+    "read": "In-line 1.8% vs 1.8% forecast produced a 0.002% JPY impulse; the muted print left JPY driven by USD flows rather than Japan data."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Dollar continuation at extremes",
+    "probability": 0.45,
+    "thesis": "Measured closes are at or near range extremes and DXY posted +55.2 points; no scored catalyst triggered a reversal, so the path of least resistance is further USD gains against the weakest G10 (CHF, NZD, AUD).",
+    "triggers": [
+     "Jackson Hole speakers echo the hawkish/Warsh tone",
+     "US data surprises are not overtly dovish",
+     "VIX stays elevated but dollar supported"
+    ],
+    "invalidation": "EUR/USD closes back above 1.15868 or DXY gives up all of its +55.2 point gain",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 72.7,
+      "rationale": "EUR/USD closed near the bottom of its 72.7-pip range and EUR was -0.101% on strength map."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 68.6,
+      "rationale": "GBP/USD closed at 0.11 of its 68.6-pip range, leaving room for continued downside."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 51.7,
+      "rationale": "AUD/USD closed at 0.09 of its 51.7-pip range and AUD was -0.045% on strength map."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 60.7,
+      "rationale": "NZD was the weakest major at -0.281%; NZD/USD closed at 0.07 of its 60.7-pip range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 93.3,
+      "rationale": "USD/JPY closed at 0.99 of its 93.3-pip range, supporting further upside."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 70.6,
+      "rationale": "USD/CHF closed at 0.94 of its 70.6-pip range and CHF was weak at -0.234%."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 64.5,
+      "rationale": "USD/CAD closed at 0.90 of its 64.5-pip range; CAD momentum was positive but USD strength dominates."
+     }
+    ]
+   },
+   {
+    "name": "Mean reversion / profit-taking",
+    "probability": 0.35,
+    "thesis": "After a one-way USD move that left DXY at 0.97 of range and EUR/USD at 0.03 of range, some pullback is likely; Jackson Hole event risk argues for trimming USD longs into the close.",
+    "triggers": [
+     "Jackson Hole symposium headline sounds less hawkish than the Warsh tape",
+     "Equities stabilize and VIX pulls back from +0.997%",
+     "EUR/USD reclaims 1.15868 on position squaring"
+    ],
+    "invalidation": "DXY extends above 99.591 and USD/JPY holds above its 160.194 close",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 72.7,
+      "rationale": "EUR/USD closed at 0.03 of its 72.7-pip range, leaving room for mean reversion."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 68.6,
+      "rationale": "GBP/USD closed at 0.11 of its 68.6-pip range; profit-taking can lift it back."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 51.7,
+      "rationale": "AUD/USD closed at 0.09 of its 51.7-pip range and can rebound from oversold levels."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 60.7,
+      "rationale": "NZD/USD closed at 0.07 of its 60.7-pip range after heavy selling."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 93.3,
+      "rationale": "USD/JPY closed at 0.99 of its 93.3-pip range, so any USD pullback hits this pair hard."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 70.6,
+      "rationale": "USD/CHF closed at 0.94 of its 70.6-pip range and USD longs may unwind."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 64.5,
+      "rationale": "USD/CAD closed at 0.90 of its 64.5-pip range; profit-taking can push it lower."
+     }
+    ]
+   },
+   {
+    "name": "Dovish Fed surprise / USD unwinds",
+    "probability": 0.2,
+    "thesis": "If Jackson Hole or subsequent Fed speak pushes back on the hawkish Warsh interpretation, the large USD gains (DXY +55.2 points, USD/JPY +90.2 pips) could reverse sharply; long-dollar positions are vulnerable.",
+    "triggers": [
+     "Jackson Hole speakers signal faster cuts or data dependency",
+     "US consumer confidence drop becomes a theme",
+     "Gold/BTC stabilize while dollar drops"
+    ],
+    "invalidation": "USD/JPY closes above 160.194 and EUR/USD closes below 1.15868",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 72.7,
+      "rationale": "EUR/USD downside was late-session Fed-driven; dovish surprise would unwind that leg within the 72.7-pip range."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 68.6,
+      "rationale": "GBP/USD's decline was Fed-driven; a dovish reversal could retrace the 68.6-pip range."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 51.7,
+      "rationale": "AUD/USD sold off late; a USD unwind can lift it toward the 51.7-pip range top."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 60.7,
+      "rationale": "NZD was weakest; if USD drops, NZD/USD can sharply retrace its 60.7-pip range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 93.3,
+      "rationale": "USD/JPY's 90.2-pip gain was on Fed talk; a dovish pushback would target the 93.3-pip range low."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 70.6,
+      "rationale": "USD/CHF's late +60.4-pip leg was 45% US data/Fed; dovish surprise unwinds it."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 64.5,
+      "rationale": "USD/CAD's late surge was Fed-driven; dovish surprise can retrace the 64.5-pip range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Jackson Hole Symposium headline risk",
+    "why_it_matters": "The 18:15 medium-impact all-currency event can shift the just-printed USD strength; the Fed Chairman Warsh Speaks cluster was unscored but still moved USD +0.232%.",
+    "watch": "USD impulse versus EUR/USD 72.7-pip range and USD/JPY 93.3-pip range."
+   },
+   {
+    "risk": "Thin late-session liquidity",
+    "why_it_matters": "Several legs after 16:00 showed sharp moves; close-in-range extremes (DXY 0.97, USD/JPY 0.99, USD/CHF 0.94) mean late headlines can cause oversized moves.",
+    "watch": "Any headline during Jackson Hole that pushes USD/CHF beyond its 70.6-pip range."
+   },
+   {
+    "risk": "German CPI surprise",
+    "why_it_matters": "EUR was weak at -0.101%; German Prelim CPI m/m forecast 0.3% versus previous 0.8%. A downside miss could accelerate EUR/USD losses.",
+    "watch": "EUR/USD close 1.15868 and its 72.7-pip range."
+   }
+  ],
+  "calendar_ahead_note": "Jackson Hole Symposium at 18:15 (medium, all currencies) is the clear event risk after the Fed-driven dollar rally; German Prelim CPI m/m at 08:29 (forecast 0.3%, previous 0.8%) can alter EUR positioning before New York trade.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 13521,
+   "completion_tokens": 12527,
+   "total_tokens": 26048,
+   "prompt_tokens_details": {
+    "cached_tokens": 512
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9302
+   },
+   "prompt_cache_hit_tokens": 512,
+   "prompt_cache_miss_tokens": 13009
+  }
+ }
 }
