@@ -145,8 +145,17 @@ returns an empty string.
 
 `.github/workflows/recap.yml` runs both editions on a schedule and publishes to
 GitHub Pages. GitHub cron is UTC with no DST awareness, so each edition is
-scheduled at *both* its winter and summer UTC hour and the job checks the actual
-Zurich clock, skipping the twin that is an hour off.
+scheduled at *both* its winter and summer UTC hour and the job discards the
+twin that is an hour off.
+
+It works that out from **which cron fired** (`github.event.schedule`) and
+Zurich's current UTC offset — never from the wall clock at execution time.
+GitHub's scheduler routinely delivers a scheduled run 10–60 minutes late, and
+an hour-of-the-day check reads that delay as "wrong twin" and silently
+publishes nothing. Lateness is otherwise harmless here: the window is derived
+from the report date and the cutoff hour, so a late run simply has more
+complete data. `tests/decide_matrix.sh` exercises all eight cron/DST
+combinations plus a 90-minute-late delivery.
 
 Set the `DEEPSEEK_API_KEY` repository secret and enable Pages (source: GitHub
 Actions). Without the key the report still builds — every measurement is

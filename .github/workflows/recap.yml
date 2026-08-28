@@ -1,15 +1,20 @@
 name: FX recap
 
-# Two editions a day, both anchored to 19:00 / 07:00 Europe/Zurich.
-# GitHub cron is UTC only and has no DST awareness, so each edition is
-# scheduled at both its winter and summer UTC hour and the job itself checks
-# the local clock and skips the run that is an hour off.
+# Two editions a day, both anchored to 07:00 / 19:00 Europe/Zurich. GitHub
+# cron is UTC and has no DST awareness, so each edition is scheduled at both
+# its summer and winter UTC hour and the job discards the twin that is an
+# hour off -- by reading which cron fired and what Zurich's offset is now,
+# never by looking at the wall clock, because a scheduled run routinely
+# arrives late enough to have crossed into the next hour.
+#
+# Minute 8 rather than 0: the top of the hour is the most congested slot on
+# GitHub's scheduler and the worst place to queue.
 on:
   schedule:
-    - cron: "0 5 * * 1-5"    # 07:00 CEST (summer)
-    - cron: "0 6 * * 1-5"    # 07:00 CET  (winter)
-    - cron: "0 17 * * 1-5"   # 19:00 CEST (summer)
-    - cron: "0 18 * * 1-5"   # 19:00 CET  (winter)
+    - cron: "8 5 * * 1-5"    # 07:08 CEST (summer)
+    - cron: "8 6 * * 1-5"    # 07:08 CET  (winter)
+    - cron: "8 17 * * 1-5"   # 19:08 CEST (summer)
+    - cron: "8 18 * * 1-5"   # 19:08 CET  (winter)
   workflow_dispatch:
     inputs:
       edition:
@@ -48,24 +53,43 @@ jobs:
         env:
           IN_EDITION: ${{ inputs.edition }}
           IN_DATE: ${{ inputs.date }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
-          HOUR=$(TZ=Europe/Zurich date +%H)
+          OFFSET=$(TZ=Europe/Zurich date +%z)   # +0200 summer, +0100 winter
           TODAY=$(TZ=Europe/Zurich date +%F)
           EDITION="${IN_EDITION:-auto}"
+          skip() { echo "$1"; echo "built=false" >> "$GITHUB_OUTPUT"; exit 0; }
 
-          if [ "$EDITION" = "auto" ] || [ -z "$EDITION" ]; then
+          if [ -n "$SCHEDULE" ]; then
+            # Scheduled: the cron that fired names the edition, and Zurich's
+            # current offset says whether this is the live twin or the spare.
+            # Neither depends on when the runner actually got round to us.
+            # The ":00" forms are the previous schedule, kept so a run already
+            # queued under it is honoured rather than silently discarded.
+            case "$SCHEDULE" in
+              "8 5 * * 1-5"|"0 5 * * 1-5")   EDITION=morning; WANT="+0200" ;;
+              "8 6 * * 1-5"|"0 6 * * 1-5")   EDITION=morning; WANT="+0100" ;;
+              "8 17 * * 1-5"|"0 17 * * 1-5") EDITION=evening; WANT="+0200" ;;
+              "8 18 * * 1-5"|"0 18 * * 1-5") EDITION=evening; WANT="+0100" ;;
+              *) skip "Unrecognised schedule '$SCHEDULE' - the cron list changed under a queued run." ;;
+            esac
+            [ "$OFFSET" = "$WANT" ] ||               skip "Zurich is at $OFFSET; '$SCHEDULE' is the $WANT twin. Skipping."
+            echo "Schedule '$SCHEDULE' at offset $OFFSET -> $EDITION edition."
+          elif [ "$EDITION" = "auto" ] || [ -z "$EDITION" ]; then
+            # Manual run set to auto: no cron to read, so fall back to the
+            # clock with a wide band either side of each cutoff.
+            HOUR=$(TZ=Europe/Zurich date +%H)
             case "$HOUR" in
-              07) EDITION=morning ;;
-              19) EDITION=evening ;;
-              *)  echo "Local hour is $HOUR in Zurich - this cron is the DST twin, skipping."
-                  echo "built=false" >> "$GITHUB_OUTPUT"; exit 0 ;;
+              0[5-9]|1[0-1]) EDITION=morning ;;
+              1[7-9]|2[0-3]) EDITION=evening ;;
+              *) skip "Zurich local hour is $HOUR, not near either cutoff - pick an edition explicitly." ;;
             esac
           fi
 
-          echo "edition=$EDITION"       >> "$GITHUB_OUTPUT"
-          echo "date=${IN_DATE:-$TODAY}" >> "$GITHUB_OUTPUT"
-          echo "built=true"             >> "$GITHUB_OUTPUT"
+          echo "edition=$EDITION"        >> "$GITHUB_OUTPUT"
+          echo "date=${IN_DATE:-$TODAY}"  >> "$GITHUB_OUTPUT"
+          echo "built=true"              >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
         if: steps.decide.outputs.built == 'true'
