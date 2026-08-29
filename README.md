@@ -177,6 +177,16 @@ from the report date and the cutoff hour, so a late run simply has more
 complete data. `tests/decide_matrix.sh` exercises all eight cron/DST
 combinations plus a 90-minute-late delivery.
 
+The report *date* follows the same rule: it is the last day whose cutoff for
+that edition has passed, not the date the runner starts on. GitHub delivered
+Friday's 19:00 cron at 02:56 on Saturday, and reading the clock made the job
+build a Saturday edition — a day that is never published — so the file was
+missing, the summary step raised, and that failure skipped the commit and the
+Pages upload, discarding a build that had actually succeeded. The summary step
+is now `continue-on-error` and tolerates a missing file: a reporting step must
+never be able to throw away a good build. `tests/report_date.sh` covers the
+late deliveries.
+
 **GitHub's scheduler is best-effort, and it has dropped every slot for this
 repository so far** — workflow state `active`, valid cron, public repo, Actions
 operational, and still zero `schedule` events over two days, while

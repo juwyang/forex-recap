@@ -57,7 +57,6 @@ jobs:
         run: |
           set -euo pipefail
           OFFSET=$(TZ=Europe/Zurich date +%z)   # +0200 summer, +0100 winter
-          TODAY=$(TZ=Europe/Zurich date +%F)
           EDITION="${IN_EDITION:-auto}"
           skip() { echo "$1"; echo "built=false" >> "$GITHUB_OUTPUT"; exit 0; }
 
@@ -87,9 +86,23 @@ jobs:
             esac
           fi
 
-          echo "edition=$EDITION"        >> "$GITHUB_OUTPUT"
-          echo "date=${IN_DATE:-$TODAY}"  >> "$GITHUB_OUTPUT"
-          echo "built=true"              >> "$GITHUB_OUTPUT"
+          # The report date is the last day whose cutoff for this edition has
+          # passed -- not the date the runner happens to start on. A Friday
+          # 19:00 run delivered at 02:56 on Saturday still recaps Friday;
+          # reading the clock instead built "Saturday", which does not exist.
+          CUT=19; [ "$EDITION" = "morning" ] && CUT=7
+          NOW_H=$(TZ=Europe/Zurich date +%H)
+          if [ "$((10#$NOW_H))" -lt "$CUT" ]; then
+            DATE=$(TZ=Europe/Zurich date -d "yesterday" +%F)
+          else
+            DATE=$(TZ=Europe/Zurich date +%F)
+          fi
+          DATE="${IN_DATE:-$DATE}"
+          echo "Resolved to the $EDITION edition of $DATE (local hour $NOW_H)."
+
+          echo "edition=$EDITION" >> "$GITHUB_OUTPUT"
+          echo "date=$DATE"       >> "$GITHUB_OUTPUT"
+          echo "built=true"       >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
         if: steps.decide.outputs.built == 'true'
@@ -123,12 +136,19 @@ jobs:
 
       - name: Summarise
         if: steps.decide.outputs.built == 'true'
+        continue-on-error: true
         run: |
           STEM="${{ steps.decide.outputs.date }}-${{ steps.decide.outputs.edition }}"
           MONTH=$(echo "${{ steps.decide.outputs.date }}" | cut -c1-7)
           python - "$MONTH/$STEM.json" <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json, sys
-          d = json.load(open("reports/" + sys.argv[1], encoding="utf-8"))
+          import json, os, sys
+          path = "reports/" + sys.argv[1]
+          if not os.path.exists(path):
+              # A weekend date, or a window that has not closed: the build
+              # legitimately wrote nothing. Say so instead of raising.
+              print("No edition was published for %s." % sys.argv[1])
+              raise SystemExit(0)
+          d = json.load(open(path, encoding="utf-8"))
           m, a = d["meta"], d.get("analysis") or {}
           print("## %s %s\n" % (m["edition_title"], m["date"]))
           print("- instruments: %d loaded, %d failed" %
