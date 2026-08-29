@@ -54,7 +54,7 @@ MAJOR_PAIRS = [
 ]
 
 # Instruments outside the major complex, reported in their own table.
-EXTRA_INSTRUMENTS = ["USD/ZAR", "USD/MXN", "Gold/USD", "BTC/USD", "Brent/USD"]
+EXTRA_INSTRUMENTS = ["USD/SEK", "USD/NOK", "USD/ZAR", "USD/MXN", "Brent/USD"]
 
 # Quoted for context only -- they frame the session's risk tone but are not
 # part of the strength ranking.
@@ -64,11 +64,11 @@ CONTEXT_INSTRUMENTS = ["DXY/USD", "SPX/USD", "VIX/USD"]
 DETAIL_PAIRS = [
     "EUR/USD", "USD/JPY", "GBP/USD", "USD/CHF", "AUD/USD", "USD/CAD", "NZD/USD",
     "EUR/CHF", "CHF/JPY", "AUD/NZD", "EUR/GBP", "AUD/CHF", "NZD/CHF",
-    "USD/ZAR", "USD/MXN", "Gold/USD", "BTC/USD", "Brent/USD",
+    "USD/SEK", "USD/NOK", "USD/ZAR", "USD/MXN", "Brent/USD",
 ]
 
 # Risk-tone proxies quoted in the header line.
-RISK_PROXIES = ["Gold/USD", "BTC/USD", "Brent/USD", "SPX/USD", "VIX/USD", "AUD/JPY"]
+RISK_PROXIES = ["Brent/USD", "SPX/USD", "VIX/USD", "AUD/JPY"]
 
 # --- tick sizes ----------------------------------------------------------
 # Explicit so "pips" is never ambiguous on gold, oil or crypto. Anything not

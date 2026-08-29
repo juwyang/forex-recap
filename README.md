@@ -35,11 +35,11 @@ For each edition, into `reports/YYYY-MM/YYYY-MM-DD-<edition>.{html,md,json}`:
   barchart's, columns ordered strongest to weakest by mean move against the
   other seven. Reciprocal cells are exact inverses (`1/(1+r)-1`), so USD/AUD
   reads −0.13% when AUD/USD reads +0.12%, not −0.12%.
-- **Beyond the majors** — USD/ZAR, USD/MXN, Gold/USD, BTC/USD, Brent/USD, plus
+- **Beyond the majors** — USD/SEK, USD/NOK, USD/ZAR, USD/MXN, Brent/USD, plus
   DXY / SPX / VIX as risk context.
-- **Path and attribution** — a zigzag over 15-minute closes for each tracked
-  instrument, each leg carrying amplitude in pips *and* percent return, duration,
-  and an attributed cause.
+- **Timeline and price paths** — an event band over stacked per-instrument
+  lanes, all on one time axis, so a release lines up with what each pair did at
+  that moment. Each lane carries the zigzag with every leg's size in pips.
 - **Event reaction functions and polarity** — for every medium/high release, the
   measured move across 5/15/60-minute horizons on every tracked instrument,
   ranked by size relative to that instrument's own volatility.
@@ -47,6 +47,19 @@ For each edition, into `reports/YYYY-MM/YYYY-MM-DD-<edition>.{html,md,json}`:
   numbers only.
 
 ## The parts that required judgement
+
+**The timeline is keyed on time, not on bar index.** Alignment is the whole
+point of stacking the lanes, and instruments do not all print the same number
+of bars in a window — an index-based x slides the rows against each other by
+however many bars they differ. Every row maps timestamp to x through the same
+function, verified in the DOM: all eighteen lanes share identical guide
+positions. A market closure inside a window shows as a flat stretch rather than
+being squeezed out, which is what keeps the axis honest.
+
+**Attribution still runs, but off the page.** Each leg is still scored against
+the releases around it and the result still reaches the model; it is no longer
+printed per pair, because the timeline lets you make that comparison yourself.
+The rules below still govern what the model is told.
 
 **Attribution refuses by default.** Plenty of intraday legs are flow or
 positioning, and labelling them with whatever release happened to be nearby is

@@ -86,85 +86,6 @@ def market_map_html(report):
     return "\n".join(out)
 
 
-# --- zigzag chart ---------------------------------------------------------
-CONF_BADGE = {"high": "conf-high", "medium": "conf-med",
-              "low": "conf-low", "none": "conf-none"}
-CONF_TEXT = {"high": "clear driver", "medium": "likely driver",
-             "low": "weak link", "none": "no clear catalyst"}
-
-
-def zigzag_svg(entry, frames, width=900, height=170):
-    """The 15m close path with the committed legs drawn over it."""
-    name = entry["instrument"]
-    df = frames.get(name)
-    legs = entry["legs"]
-    if df is None or not len(df) or not legs:
-        return ""
-    ys = [float(v) for v in df["close"].values]
-    lo, hi = min(ys), max(ys)
-    span = (hi - lo) or 1e-9
-    pad_x, pad_y = 8, 22
-    n = len(ys)
-
-    def X(i):
-        return pad_x + (width - 2 * pad_x) * (i / max(n - 1, 1))
-
-    def Y(v):
-        return pad_y + (height - 2 * pad_y) * (1.0 - (v - lo) / span)
-
-    idx = {ts: i for i, ts in enumerate(df.index)}
-    line = " ".join("%.1f,%.1f" % (X(i), Y(v)) for i, v in enumerate(ys))
-
-    p = ['<svg class="zz" viewBox="0 0 %d %d" role="img" aria-label="%s intraday path">'
-         % (width, height, _esc(name))]
-    p.append('<polyline class="zz-price" points="%s"/>' % line)
-    for leg in legs:
-        a, b = idx.get(leg["start_ts"]), idx.get(leg["end_ts"])
-        if a is None or b is None:
-            continue
-        cls = leg["dir"]
-        p.append('<line class="zz-leg %s" x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f"/>'
-                 % (cls, X(a), Y(ys[a]), X(b), Y(ys[b])))
-        mx = (X(a) + X(b)) / 2
-        my = (Y(ys[a]) + Y(ys[b])) / 2
-        p.append('<text class="zz-lab %s" x="%.1f" y="%.1f">%s</text>'
-                 % (cls, mx, my - 7 if cls == "up" else my + 15,
-                    _esc("%s%.0f" % ("+" if leg["pips"] >= 0 else "", leg["pips"]))))
-        p.append('<circle class="zz-dot %s" cx="%.1f" cy="%.1f" r="3.2"/>'
-                 % (CONF_BADGE[leg["attribution"]["confidence"]], X(b), Y(ys[b])))
-    p.append('</svg>')
-    return "\n".join(p)
-
-
-def legs_table(entry):
-    rows = []
-    for leg in entry["legs"]:
-        a = leg["attribution"]
-        conf = a["confidence"]
-        extra = ""
-        for c in a.get("contributors", []):
-            extra += ('<div class="contrib">in-leg: %s <em>%s in %d min, '
-                      '%.0f%% of the leg</em></div>'
-                      % (_esc(_trim(c["title"], 70)), _pips(c["pips"]),
-                         c["minutes"], 100 * c["share_of_leg"]))
-        rows.append(
-            '<tr><td class="mono nowrap">%s&rarr;%s</td>'
-            '<td class="dir %s">%s</td>'
-            '<td class="num %s">%s</td><td class="num %s">%s</td>'
-            '<td class="num dim">%d′</td>'
-            '<td><span class="badge %s">%s</span> %s%s</td></tr>'
-            % (hhmm(leg["start_ts"]), hhmm(leg["end_ts"]),
-               leg["dir"], "▲" if leg["dir"] == "up" else "▼",
-               leg["dir"], _pips(leg["pips"]),
-               leg["dir"], _pct(leg["ret_pct"], 3), int(leg["minutes"]),
-               CONF_BADGE[conf], CONF_TEXT[conf], _esc(a["explanation"]), extra))
-    unit = entry["legs"][0]["unit"] if entry["legs"] else "pips"
-    return ('<table class="legs"><thead><tr><th>window</th><th></th>'
-            '<th class="num">%s</th><th class="num">return</th>'
-            '<th class="num">dur</th><th>attribution</th></tr></thead>'
-            '<tbody>%s</tbody></table>' % (_esc(unit), "".join(rows)))
-
-
 # --- reaction functions ---------------------------------------------------
 POLARITY_BADGE = {
     "normal": ("pol-normal", "textbook polarity"),
@@ -292,9 +213,9 @@ def scenarios_html(analysis):
             '<p>%s</p>'
             '%s'
             '<div class="scen-inval"><b>Invalidated if:</b> %s</div>'
-            '<table class="paths"><thead><tr><th>instrument</th><th></th>'
-            '<th class="num">expected</th><th>why</th></tr></thead>'
-            '<tbody>%s</tbody></table></div>'
+            '<div class="tw"><table class="paths"><thead><tr><th>instrument</th>'
+            '<th></th><th class="num">expected</th><th>why</th></tr></thead>'
+            '<tbody>%s</tbody></table></div></div>'
             % (pct, _esc(s.get("name")), _esc(s.get("thesis")),
                ('<ul class="trig">%s</ul>' % triggers) if triggers else "",
                _esc(s.get("invalidation")), paths))
@@ -327,9 +248,9 @@ def ahead_html(report):
            _esc(e["impact"]), _esc(e["title"]),
            _esc(e["forecast"] or "-"), _esc(e["previous"] or "-"))
         for e in rows)
-    return ('<table class="ahead"><thead><tr><th>time</th><th>ccy</th>'
-            '<th>impact</th><th>event</th><th class="num">forecast</th>'
-            '<th class="num">previous</th></tr></thead><tbody>%s</tbody></table>'
+    return ('<div class="tw"><table class="ahead"><thead><tr><th>time</th>'
+            '<th>ccy</th><th>impact</th><th>event</th><th class="num">forecast</th>'
+            '<th class="num">previous</th></tr></thead><tbody>%s</tbody></table></div>'
             % body)
 
 

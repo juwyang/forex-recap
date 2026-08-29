@@ -3,8 +3,9 @@ from __future__ import annotations
 
 from .config import EXTRA_INSTRUMENTS
 from .render import (_esc, _fmt_px, _pct, _pips, ahead_html, analysis_html,
-                     headlines_html, legs_table, market_map_html, reactions_html,
-                     risks_html, scenarios_html, snapshot_rows, zigzag_svg)
+                     headlines_html, market_map_html, reactions_html,
+                     risks_html, scenarios_html, snapshot_rows)
+from .timeline import timeline_html
 from .util import hhmm
 
 CSS = """
@@ -67,6 +68,8 @@ td.dir{text-align:center;font-size:11px;width:20px}
 .mm-head span{font-family:var(--mono);font-size:11px;color:var(--dim)}
 
 /* tables */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw table{min-width:430px}
 table{width:100%;border-collapse:collapse;font-size:13.5px}
 th{text-align:left;font-weight:600;font-size:10.5px;color:var(--dim);
   text-transform:uppercase;letter-spacing:.07em;padding:0 9px 7px;
@@ -75,34 +78,45 @@ th.num{text-align:right}
 td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
 tbody tr:last-child td{border-bottom:none}
 
-/* instrument blocks */
-.inst{background:var(--panel);border:1px solid var(--line);border-radius:11px;
-  padding:16px 18px;margin-bottom:14px}
-.inst-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
-.inst-h b{font-size:16px}
-.inst-h .px{font-family:var(--mono);color:var(--dim);font-size:13px}
-.inst-h .chg{font-family:var(--mono);font-size:14px;font-weight:600}
-.zz{width:100%;height:170px;display:block;margin:2px 0 6px}
-.zz-price{fill:none;stroke:var(--dim);stroke-width:1;opacity:.42}
-.zz-leg{stroke-width:2.1;stroke-linecap:round}
-.zz-leg.up{stroke:var(--up)} .zz-leg.down{stroke:var(--down)}
-.zz-lab{font:600 10.5px var(--mono);text-anchor:middle}
-.zz-lab.up{fill:var(--up)} .zz-lab.down{fill:var(--down)}
-.zz-dot{stroke:var(--panel);stroke-width:1.4}
-.zz-dot.conf-high{fill:var(--accent)} .zz-dot.conf-med{fill:#d68a1a}
-.zz-dot.conf-low{fill:var(--dim)} .zz-dot.conf-none{fill:var(--flat)}
-.contrib{color:var(--dim);font-size:12px;margin-top:3px;padding-left:11px;
-  border-left:2px solid var(--line)}
-.contrib em{font-style:normal;font-family:var(--mono)}
+/* timeline: event band + stacked lanes on one shared axis */
+.tl-scroll{overflow-x:auto;padding-bottom:4px}
+.tl{min-width:940px}
+.tl-events,.tl-axis,.tl-lane{display:block;width:100%;height:auto}
+.tl-events{margin-bottom:1px}
+.tl-axis{opacity:.85}
+.lanes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--panel);border-radius:8px;overflow:hidden;margin:2px 0}
+.lane + .lane{border-top:1px solid var(--line)}
+
+.ax-t{stroke:var(--line);stroke-width:1}
+.ax-l{font:9px var(--mono);fill:var(--dim);text-anchor:middle}
+
+.ev-stem{stroke:var(--line);stroke-width:1}
+.ev-stem.release{stroke:var(--dim);stroke-dasharray:2 2}
+.ev-lab{font:9px var(--mono);fill:var(--dim)}
+.ev-lab.release{font-weight:700;fill:var(--fg)}
+.ev-lab.imp-high{fill:var(--down)}
+.ev-lab.imp-medium{fill:#c07d10}
+.ev-dot{fill:var(--dim)}
+.ev-dot.release{fill:var(--accent)}
+.ev-dot.imp-high{fill:var(--down)}
+.ev-dot.imp-medium{fill:#c07d10}
+
+.ln-guide{stroke:var(--down);stroke-width:.8;stroke-dasharray:2 3;opacity:.35}
+.ln-base{stroke:var(--line);stroke-width:1}
+.ln-price{fill:none;stroke:var(--dim);stroke-width:.9;opacity:.4}
+.ln-leg{stroke-width:1.9;stroke-linecap:round}
+.ln-leg.up{stroke:var(--up)} .ln-leg.down{stroke:var(--down)}
+.ln-lab{font:600 8.5px var(--mono);text-anchor:middle}
+.ln-lab.up{fill:var(--up)} .ln-lab.down{fill:var(--down)}
+.ln-name{font:600 11px ui-sans-serif,system-ui,sans-serif;fill:var(--fg)}
+.ln-chg{font:9px var(--mono)}
+.ln-chg.up{fill:var(--up)} .ln-chg.down{fill:var(--down)}
 
 /* badges */
 .badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;
   text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-right:6px;
   vertical-align:1px}
-.conf-high{background:rgba(43,92,217,.16);color:var(--accent)}
-.conf-med{background:rgba(214,138,26,.18);color:#c07d10}
-.conf-low{background:var(--flat);color:var(--dim)}
-.conf-none{background:transparent;color:var(--dim);border:1px solid var(--line)}
 .pol-normal{background:rgba(18,120,63,.15);color:var(--up)}
 .pol-inverted{background:rgba(192,57,43,.16);color:var(--down)}
 .pol-muted{background:var(--flat);color:var(--dim)}
@@ -186,22 +200,6 @@ def build_html(report, analysis, frames):
         _kv("instruments", "%d" % m["instruments_loaded"]),
     ])
 
-    instruments = []
-    for entry in report["detail"]:
-        s = entry["snapshot"]
-        if not s:
-            continue
-        cls = "up" if s["chg_pct"] >= 0 else "down"
-        instruments.append(
-            '<div class="inst"><div class="inst-h">'
-            '<b>%s</b><span class="px">%s</span>'
-            '<span class="chg %s">%s %s &middot; %s</span>'
-            '<span class="px dim">range %s %s</span></div>%s%s</div>'
-            % (_esc(entry["instrument"]), _fmt_px(s["close"]), cls,
-               _pips(s["chg_pips"]), _esc(s["unit"]), _pct(s["chg_pct"]),
-               _pips(s["range_pips"]).lstrip("+"), _esc(s["unit"]),
-               zigzag_svg(entry, frames), legs_table(entry)))
-
     extras = [report["snapshots"][k] for k in EXTRA_INSTRUMENTS if k in report["snapshots"]]
 
     cal = m.get("calendar") or {}
@@ -248,14 +246,14 @@ exact inverses, so USD/AUD is not simply the negative of AUD/USD.</p>
 %s
 
 <h2>Beyond the majors</h2>
-<table><thead><tr><th>instrument</th><th class="num">close</th>
+<div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
 <th class="num">change</th><th class="num">%%</th><th class="num">range</th>
-<th class="num">close in range</th></tr></thead><tbody>%s</tbody></table>
+<th class="num">close in range</th></tr></thead><tbody>%s</tbody></table></div>
 
 <h3>Risk context</h3>
-<table><thead><tr><th>instrument</th><th class="num">close</th>
+<div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
 <th class="num">change</th><th class="num">%%</th><th class="num">range</th>
-<th class="num">close in range</th></tr></thead><tbody>%s</tbody></table>
+<th class="num">close in range</th></tr></thead><tbody>%s</tbody></table></div>
 
 <h2>Event reaction functions and polarity</h2>
 <p class="sub">Each release is measured from the last complete bar before it.
@@ -263,11 +261,12 @@ Polarity asks whether the currency moved the way its surprise implies &mdash;
 an <b>inverted</b> read is the one worth acting on.</p>
 %s
 
-<h2>Path and attribution</h2>
-<p class="sub">Legs are a zigzag over 15-minute closes, with the reversal
-threshold auto-tuned to the window&rsquo;s own range so the shape stays readable.
-A leg only gets a named cause when a release actually moved price the right way
-within it; otherwise it is marked as having no clear catalyst.</p>
+<h2>Timeline and price paths</h2>
+<p class="sub">Every row shares one time axis, mapped from the timestamp rather
+than the bar index, so a release lines up with what each pair did at that
+moment. Dotted guides mark high-impact events. Legs are a zigzag over
+15-minute closes with the reversal threshold auto-tuned to each instrument&rsquo;s
+own range; the number on a leg is its size in that instrument&rsquo;s pips.</p>
 %s
 
 <h2>Scenarios for the window ahead</h2>
@@ -291,7 +290,7 @@ within it; otherwise it is marked as having no clear catalyst.</p>
         snapshot_rows(extras),
         snapshot_rows(report["context"]),
         reactions_html(report),
-        "\n".join(instruments),
+        timeline_html(report, frames),
         resc_note, scenarios_html(analysis),
         risks_html(analysis),
         m["fwd_start_utc"].astimezone(m["start_local"].tzinfo).strftime("%a %H:%M"),

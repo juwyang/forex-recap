@@ -13,7 +13,7 @@
   "end_local": "2026-08-28T19:00:00+02:00",
   "fwd_start_utc": "2026-08-28T17:00:00+00:00",
   "fwd_end_utc": "2026-08-31T17:00:00+00:00",
-  "generated_utc": "2026-08-28T18:08:13.267999+00:00",
+  "generated_utc": "2026-08-29T13:45:18.097595+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 54
+   "with_actual": 56
   }
  },
  "facts": {
@@ -195,6 +195,24 @@
   ],
   "beyond_majors": [
    {
+    "instrument": "USD/SEK",
+    "close": 9.61088,
+    "chg_pips": 965.3,
+    "chg_pct": 1.015,
+    "range_pips": 1246.7,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.38035,
+    "chg_pips": 557.2,
+    "chg_pct": 0.598,
+    "range_pips": 930.4,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
     "instrument": "USD/ZAR",
     "close": 16.159,
     "chg_pips": 1715.9,
@@ -211,24 +229,6 @@
     "range_pips": 1198.0,
     "close_in_range": 0.86,
     "unit": "pips"
-   },
-   {
-    "instrument": "Gold/USD",
-    "close": 4478.65,
-    "chg_pips": -1354.4,
-    "chg_pct": -2.935,
-    "range_pips": 1657.4,
-    "close_in_range": 0.09,
-    "unit": "pips ($0.10)"
-   },
-   {
-    "instrument": "BTC/USD",
-    "close": 77792.8,
-    "chg_pips": -2584.3,
-    "chg_pct": -3.215,
-    "range_pips": 4495.2,
-    "close_in_range": 0.2,
-    "unit": "pips ($1)"
    },
    {
     "instrument": "Brent/USD",
@@ -1017,6 +1017,100 @@
     "in_leg_drivers": []
    },
    {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -116.0,
+    "ret_pct": -0.122,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Hammack: The job market is broadly in balance - Fox…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1060.8,
+    "ret_pct": 1.116,
+    "minutes": 1170,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Current US Employment Statistics Preliminary Benchmark (Nat… pushed it along (+451.2 in 15 min, 43% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Current US Employment Statistics Preliminary Benchmark (National) - March 2026",
+      "ccy": null,
+      "pips": 451.2,
+      "share_of_leg": 0.43
+     },
+     {
+      "title": "Warsh: In Our Time",
+      "ccy": null,
+      "pips": 451.2,
+      "share_of_leg": 0.43
+     },
+     {
+      "title": "US consumer confidence drops in August",
+      "ccy": null,
+      "pips": 451.2,
+      "share_of_leg": 0.43
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -229.8,
+    "ret_pct": -0.246,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Hammack: The job market is broadly in balance - Fox…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 772.1,
+    "ret_pct": 0.83,
+    "minutes": 1185,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Current US Employment Statistics Preliminary Benchmark (Nat… pushed it along (+378.8 in 15 min, 49% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Current US Employment Statistics Preliminary Benchmark (National) - March 2026",
+      "ccy": null,
+      "pips": 378.8,
+      "share_of_leg": 0.49
+     },
+     {
+      "title": "Warsh: In Our Time",
+      "ccy": null,
+      "pips": 378.8,
+      "share_of_leg": 0.49
+     },
+     {
+      "title": "US consumer confidence drops in August",
+      "ccy": null,
+      "pips": 378.8,
+      "share_of_leg": 0.49
+     }
+    ]
+   },
+   {
     "instrument": "USD/ZAR",
     "from": "19:00",
     "to": "09:00",
@@ -1107,114 +1201,6 @@
       "ccy": null,
       "pips": 487.0,
       "share_of_leg": 0.49
-     }
-    ]
-   },
-   {
-    "instrument": "Gold/USD",
-    "from": "19:00",
-    "to": "21:00",
-    "dir": "up",
-    "pips": 53.7,
-    "ret_pct": 0.117,
-    "minutes": 120,
-    "cause": null,
-    "cause_ccy": null,
-    "confidence": "none",
-    "note": "Nearest item Fed's Hammack: The job market is broadly in balance - Fox…, too weak to own the move.",
-    "in_leg_drivers": []
-   },
-   {
-    "instrument": "Gold/USD",
-    "from": "21:00",
-    "to": "18:45",
-    "dir": "down",
-    "pips": -1361.4,
-    "ret_pct": -2.95,
-    "minutes": 1305,
-    "cause": null,
-    "cause_ccy": null,
-    "confidence": "none",
-    "note": "No single trigger started this leg, but Current US Employment Statistics Preliminary Benchmark (Nat… pushed it along (-602.2 in 15 min, 44% of the move).",
-    "in_leg_drivers": [
-     {
-      "title": "Current US Employment Statistics Preliminary Benchmark (National) - March 2026",
-      "ccy": null,
-      "pips": -602.2,
-      "share_of_leg": 0.44
-     },
-     {
-      "title": "Warsh: In Our Time",
-      "ccy": null,
-      "pips": -602.2,
-      "share_of_leg": 0.44
-     },
-     {
-      "title": "US consumer confidence drops in August",
-      "ccy": null,
-      "pips": -602.2,
-      "share_of_leg": 0.44
-     }
-    ]
-   },
-   {
-    "instrument": "BTC/USD",
-    "from": "19:00",
-    "to": "20:15",
-    "dir": "down",
-    "pips": -711.8,
-    "ret_pct": -0.883,
-    "minutes": 75,
-    "cause": null,
-    "cause_ccy": null,
-    "confidence": "none",
-    "note": "Nearest item Fed's Hammack: The job market is broadly in balance - Fox…, too weak to own the move.",
-    "in_leg_drivers": []
-   },
-   {
-    "instrument": "BTC/USD",
-    "from": "20:15",
-    "to": "03:15",
-    "dir": "up",
-    "pips": 1223.6,
-    "ret_pct": 1.531,
-    "minutes": 420,
-    "cause": null,
-    "cause_ccy": null,
-    "confidence": "none",
-    "note": "Nearest item Venezuela Evaluates Leaving OPEC, People Familiar Say moved price the other way.",
-    "in_leg_drivers": []
-   },
-   {
-    "instrument": "BTC/USD",
-    "from": "03:15",
-    "to": "18:45",
-    "dir": "down",
-    "pips": -3340.8,
-    "ret_pct": -4.118,
-    "minutes": 930,
-    "cause": null,
-    "cause_ccy": null,
-    "confidence": "none",
-    "note": "No single trigger started this leg, but Current US Employment Statistics Preliminary Benchmark (Nat… pushed it along (-808.7 in 15 min, 24% of the move).",
-    "in_leg_drivers": [
-     {
-      "title": "Current US Employment Statistics Preliminary Benchmark (National) - March 2026",
-      "ccy": null,
-      "pips": -808.7,
-      "share_of_leg": 0.24
-     },
-     {
-      "title": "Warsh: In Our Time",
-      "ccy": null,
-      "pips": -808.7,
-      "share_of_leg": 0.24
-     },
-     {
-      "title": "US consumer confidence drops in August",
-      "ccy": null,
-      "pips": -808.7,
-      "share_of_leg": 0.24
      }
     ]
    },
@@ -1329,6 +1315,13 @@
       "sigma": -9.55
      },
      {
+      "instrument": "USD/SEK",
+      "pct": 0.298,
+      "pips": 284.2,
+      "unit": "pips",
+      "sigma": 9.32
+     },
+     {
       "instrument": "USD/ZAR",
       "pct": 0.293,
       "pips": 469.1,
@@ -1355,13 +1348,6 @@
       "pips": 226.0,
       "unit": "pips",
       "sigma": 6.85
-     },
-     {
-      "instrument": "USD/CAD",
-      "pct": 0.094,
-      "pips": 13.0,
-      "unit": "pips",
-      "sigma": 6.71
      }
     ]
    },
@@ -1385,11 +1371,11 @@
       "sigma": 3.41
      },
      {
-      "instrument": "Gold/USD",
-      "pct": -0.177,
-      "pips": -81.6,
-      "unit": "pips ($0.10)",
-      "sigma": -1.69
+      "instrument": "USD/NOK",
+      "pct": 0.062,
+      "pips": 57.9,
+      "unit": "pips",
+      "sigma": 2.04
      },
      {
       "instrument": "AUD/USD",
@@ -1434,18 +1420,11 @@
     "own_ccy_impulse_pct": 0.002,
     "top_movers": [
      {
-      "instrument": "BTC/USD",
-      "pct": -0.051,
-      "pips": -40.8,
-      "unit": "pips ($1)",
-      "sigma": -0.36
-     },
-     {
-      "instrument": "Gold/USD",
-      "pct": -0.034,
-      "pips": -15.8,
-      "unit": "pips ($0.10)",
-      "sigma": -0.33
+      "instrument": "USD/SEK",
+      "pct": 0.015,
+      "pips": 14.1,
+      "unit": "pips",
+      "sigma": 0.46
      },
      {
       "instrument": "USD/CAD",
@@ -1474,6 +1453,13 @@
       "pips": -0.3,
       "unit": "pips",
       "sigma": -0.25
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.007,
+      "pips": 6.7,
+      "unit": "pips",
+      "sigma": 0.24
      }
     ]
    }
@@ -1561,266 +1547,204 @@
   ]
  },
  "analysis": {
-  "session_summary": "The window was dominated by broad USD strength: DXY rose 55.2 points (+0.557%) to 99.591, and USD was the strongest major at +0.541% on the currency strength map. EUR/USD closed -65.3 pips at 1.15868, USD/JPY +90.2 pips at 160.194, and USD/CHF +54.7 pips at 0.80931, with most pairs closing near their range extremes. The 16:00 Fed Chairman Warsh Speaks cluster moved USD +0.232% on a no-forecast event, while risk assets leaned soft: SPX -0.32%, VIX +0.997%, Gold -2.935%, BTC -3.215%. Scored events were muted: Canada GDP beat 0.3% vs 0.2% but CAD basket moved 0.000%, and Tokyo Core CPI in line at 1.8% moved JPY 0.002%.",
+  "session_summary": "The dollar led all majors, gaining 0.541% against the basket, while VIX rose 0.997% and SPX fell 0.32%; EUR/USD lost 65.3 pips to 1.15868 and USD/JPY added 90.2 pips to 160.194. Most legs had no single identifiable catalyst, but the 16:00 Fed Warsh/Fed benchmark block accelerated the move, with Warsh's own USD impulse at 0.232% and EUR/USD dropping 18.3 pips. High-beta and European currencies underperformed: NZD -0.281%, CHF -0.234%, and USD/SEK +1.015%. The close left USD/JPY, USD/CHF, and USD/CAD within the top 0.90-0.99 of their daily ranges, signaling no mean reversion into the close.",
   "themes": [
    {
-    "theme": "Broad USD strength",
-    "evidence": "USD strength map +0.541% highest; DXY +55.2 points to 99.591; EUR/USD -65.3 pips; USD/JPY +90.2 pips; USD/CHF +54.7 pips; USD/CAD +45.2 pips.",
+    "theme": "Broad USD strength in a risk-off tape",
+    "evidence": "USD strength +0.541% vs majors; DXY +0.557% to 99.591; SPX -0.32% to 7714.3; VIX +0.997% to 16.85034; USD/JPY +90.2 pips to 160.194.",
     "currencies": [
      "USD",
-     "EUR",
      "JPY",
-     "CHF",
-     "CAD",
-     "GBP",
-     "AUD",
-     "NZD"
+     "CHF"
     ]
    },
    {
-    "theme": "Late-session Fed-driven repricing",
-    "evidence": "Fed Chairman Warsh Speaks +3 more at 16:00 produced USD own-currency impulse +0.232%; top movers EUR/USD -0.157%, USD/ZAR +0.293%, USD/CHF +0.155%.",
+    "theme": "Late-day Fed/Fed-benchmark momentum",
+    "evidence": "The 16:00 block 'Fed Chairman Warsh Speaks +3 more' recorded USD own impulse +0.232%; EUR/USD moved -18.3 pips, USD/SEK +284.2 pips, USD/ZAR +469.1 pips, USD/CHF +12.5 pips.",
     "currencies": [
      "USD",
      "EUR",
-     "CHF",
+     "SEK",
      "ZAR",
-     "MXN",
-     "CAD",
-     "JPY"
+     "CHF"
     ]
    },
    {
-    "theme": "Risk-off/commodity deleveraging",
-    "evidence": "SPX -24.8 points (-0.32%), VIX +16.6 points (+0.997%), Gold -1354.4 (-2.935%), BTC -2584.3 (-3.215%), USD/ZAR +1715.9 pips (+1.073%).",
+    "theme": "High-beta and European FX under pressure despite firm Brent",
+    "evidence": "NZD -0.281%, CHF -0.234%, EUR -0.101%; USD/SEK +1.015%, USD/ZAR +1.073%; Brent/USD +0.692%.",
     "currencies": [
-     "USD",
-     "ZAR",
-     "MXN"
+     "NZD",
+     "CHF",
+     "EUR",
+     "SEK",
+     "ZAR"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "An early 3.5-pip Asia lift was erased by a -67.4-pip slide into 18:45, with the late leg driven about 40% by the US employment benchmark/Warsh/consumer-confidence cluster and no single starting trigger.",
-   "GBP/USD": "A 5.7-pip early uptick was followed by a -60.7-pip decline; the US data/Fed cluster contributed 31% of the down leg.",
-   "USD/JPY": "A single 87.2-pip up leg stretched from 19:00 to 18:45, with Fed Chairman Warsh Speaks +3 more and related items contributing 24% of the move.",
-   "USD/CHF": "Three legs netted +54.7 pips, but the largest was the +60.4-pip 12:45-18:45 up leg, where US data/Warsh contributed 45% of the move after an earlier -20.3-pip pullback.",
-   "AUD/USD": "An early -6.8-pip dip, then +15.0-pip bounce, then -44.1-pip decline; the final down leg had the US data cluster contributing 41%.",
-   "NZD/USD": "An early +13.5-pip rise gave way to a -55.9-pip slide, with the US data cluster contributing 37% of the final leg.",
-   "USD/CAD": "An early -14.2-pip dip was reversed by a +56.6-pip late surge; Fed Chairman Warsh Speaks +3 more and related items contributed 45% of the up leg."
+   "EUR/USD": "After a small 3.5 pip rise into 01:00, it fell 67.4 pips to close at 1.15868 near the bottom of a 72.7 pip range.",
+   "GBP/USD": "Rose 5.7 pips into 01:00 then fell 60.7 pips to close at 1.3537 near lows.",
+   "AUD/USD": "Down 6.8 pips into 23:00, up 15.0 pips into 05:15, then fell 44.1 pips to close at 0.71604 near lows.",
+   "NZD/USD": "Up 13.5 pips into 05:15 then fell 55.9 pips to close at 0.59089 near lows.",
+   "USD/JPY": "Single up leg of 87.2 pips to close at 160.194 near highs of 93.3 pip range.",
+   "USD/CHF": "Up 12.9 pips into 09:15, down 20.3 pips into 12:45, then up 60.4 pips to close at 0.80931 near highs.",
+   "USD/CAD": "Down 14.2 pips into 12:45, then up 56.6 pips to close at 1.39018 near highs."
   },
   "polarity_reads": [
    {
     "event": "Fed Chairman Warsh Speaks +3 more",
-    "read": "No forecast was available to score the surprise, but USD strengthened by 0.232% with broad top movers; the tape suggests the Fed communication was read as USD-supportive and squeezed short-dollar positions."
+    "read": "No forecast to score, but USD strengthened 0.232% and EUR/USD dropped 18.3 pips; the market read the Fed block as hawkish, consistent with long-USD positioning and no imminent dovish pivot."
    },
    {
     "event": "GDP m/m",
-    "read": "CAD data beat forecast (0.3% vs 0.2%), but own-ccy impulse was 0.000%; the muted reaction implies CAD longs were already positioned or the beat was too small to change BoC pricing."
+    "read": "Actual 0.3% matched prior and was above 0.2% forecast, but CAD basket moved 0.000%; muted reaction shows CAD was already priced for this outcome or the market ignored it amid USD strength."
    },
    {
     "event": "Tokyo Core CPI y/y",
-    "read": "In-line 1.8% vs 1.8% forecast produced a 0.002% JPY impulse; the muted print left JPY driven by USD flows rather than Japan data."
+    "read": "Actual 1.8% matched forecast and slipped from 1.9% prior; JPY basket moved 0.002%, inside noise, so no new information for USD/JPY."
    }
   ],
   "scenarios": [
    {
-    "name": "Dollar continuation at extremes",
+    "name": "Hawkish Jackson Hole extends USD bid",
     "probability": 0.45,
-    "thesis": "Measured closes are at or near range extremes and DXY posted +55.2 points; no scored catalyst triggered a reversal, so the path of least resistance is further USD gains against the weakest G10 (CHF, NZD, AUD).",
+    "thesis": "Jackson Hole reinforces the existing hawkish USD/risk-off regime; high-beta and European FX stay offered, USD/JPY remains bid.",
     "triggers": [
-     "Jackson Hole speakers echo the hawkish/Warsh tone",
-     "US data surprises are not overtly dovish",
-     "VIX stays elevated but dollar supported"
+     "Jackson Hole Symposium at 18:15 produces no pushback against current Fed pricing",
+     "German Prelim CPI m/m at 08:29 prints at or below 0.3% forecast, softening EUR"
     ],
-    "invalidation": "EUR/USD closes back above 1.15868 or DXY gives up all of its +55.2 point gain",
+    "invalidation": "EUR/USD closes back above 1.15868 and USD/JPY below 160.194",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 72.7,
-      "rationale": "EUR/USD closed near the bottom of its 72.7-pip range and EUR was -0.101% on strength map."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "down",
-      "magnitude_pips": 68.6,
-      "rationale": "GBP/USD closed at 0.11 of its 68.6-pip range, leaving room for continued downside."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 51.7,
-      "rationale": "AUD/USD closed at 0.09 of its 51.7-pip range and AUD was -0.045% on strength map."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "down",
-      "magnitude_pips": 60.7,
-      "rationale": "NZD was the weakest major at -0.281%; NZD/USD closed at 0.07 of its 60.7-pip range."
+      "rationale": "Closed at 1.15868 near the bottom of the 72.7 pip daily range; hawkish USD can extend toward measured range low."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
       "magnitude_pips": 93.3,
-      "rationale": "USD/JPY closed at 0.99 of its 93.3-pip range, supporting further upside."
+      "rationale": "Closed at 160.194, top of a 93.3 pip range; hawkish USD can push through range high."
      },
      {
       "instrument": "USD/CHF",
       "direction": "up",
       "magnitude_pips": 70.6,
-      "rationale": "USD/CHF closed at 0.94 of its 70.6-pip range and CHF was weak at -0.234%."
+      "rationale": "Closed at 0.80931 near high of 70.6 pip range."
      },
      {
-      "instrument": "USD/CAD",
-      "direction": "up",
-      "magnitude_pips": 64.5,
-      "rationale": "USD/CAD closed at 0.90 of its 64.5-pip range; CAD momentum was positive but USD strength dominates."
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 60.7,
+      "rationale": "NZD weakest at -0.281%; day range 60.7 pips leaves room for continued underperformance."
      }
     ]
    },
    {
-    "name": "Mean reversion / profit-taking",
+    "name": "Dovish/neutral Jackson Hole triggers USD pullback",
     "probability": 0.35,
-    "thesis": "After a one-way USD move that left DXY at 0.97 of range and EUR/USD at 0.03 of range, some pullback is likely; Jackson Hole event risk argues for trimming USD longs into the close.",
+    "thesis": "Stretched long-USD positioning is challenged if Jackson Hole sounds patient; high-beta and commodity FX bounce while USD/JPY unwinds from 160.194.",
     "triggers": [
-     "Jackson Hole symposium headline sounds less hawkish than the Warsh tape",
-     "Equities stabilize and VIX pulls back from +0.997%",
-     "EUR/USD reclaims 1.15868 on position squaring"
+     "Jackson Hole Symposium signals patience or concern about growth",
+     "German Prelim CPI m/m prints above 0.3% forecast, lifting EUR"
     ],
-    "invalidation": "DXY extends above 99.591 and USD/JPY holds above its 160.194 close",
+    "invalidation": "EUR/USD fails to hold gains above 1.15868 and USD/JPY remains above 160.194",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 72.7,
-      "rationale": "EUR/USD closed at 0.03 of its 72.7-pip range, leaving room for mean reversion."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 68.6,
-      "rationale": "GBP/USD closed at 0.11 of its 68.6-pip range; profit-taking can lift it back."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 51.7,
-      "rationale": "AUD/USD closed at 0.09 of its 51.7-pip range and can rebound from oversold levels."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 60.7,
-      "rationale": "NZD/USD closed at 0.07 of its 60.7-pip range after heavy selling."
+      "rationale": "A reversal can retrace the 65.3 pip decline using the 72.7 pip daily range."
      },
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 93.3,
-      "rationale": "USD/JPY closed at 0.99 of its 93.3-pip range, so any USD pullback hits this pair hard."
+      "rationale": "From 160.194, a pullback can fill the 93.3 pip range lower."
      },
      {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 70.6,
-      "rationale": "USD/CHF closed at 0.94 of its 70.6-pip range and USD longs may unwind."
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 51.7,
+      "rationale": "AUD -0.045% can rebound within its 51.7 pip daily range."
      },
      {
-      "instrument": "USD/CAD",
-      "direction": "down",
-      "magnitude_pips": 64.5,
-      "rationale": "USD/CAD closed at 0.90 of its 64.5-pip range; profit-taking can push it lower."
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 60.7,
+      "rationale": "Oversold NZD -0.281% can retrace its 60.7 pip range."
      }
     ]
    },
    {
-    "name": "Dovish Fed surprise / USD unwinds",
+    "name": "Consolidation ahead of Jackson Hole/CPI",
     "probability": 0.2,
-    "thesis": "If Jackson Hole or subsequent Fed speak pushes back on the hawkish Warsh interpretation, the large USD gains (DXY +55.2 points, USD/JPY +90.2 pips) could reverse sharply; long-dollar positions are vulnerable.",
+    "thesis": "After the large USD run, markets digest gains within measured ranges; no new catalyst from Jackson Hole until German CPI/Asia, keeping major pairs range-bound.",
     "triggers": [
-     "Jackson Hole speakers signal faster cuts or data dependency",
-     "US consumer confidence drop becomes a theme",
-     "Gold/BTC stabilize while dollar drops"
+     "Jackson Hole Symposium offers no new policy signal",
+     "German Prelim CPI m/m prints in line at 0.3%"
     ],
-    "invalidation": "USD/JPY closes above 160.194 and EUR/USD closes below 1.15868",
+    "invalidation": "A decisive break of USD/JPY beyond 93.3 pip range or EUR/USD beyond 72.7 pip range",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "up",
+      "direction": "range",
       "magnitude_pips": 72.7,
-      "rationale": "EUR/USD downside was late-session Fed-driven; dovish surprise would unwind that leg within the 72.7-pip range."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 68.6,
-      "rationale": "GBP/USD's decline was Fed-driven; a dovish reversal could retrace the 68.6-pip range."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 51.7,
-      "rationale": "AUD/USD sold off late; a USD unwind can lift it toward the 51.7-pip range top."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 60.7,
-      "rationale": "NZD was weakest; if USD drops, NZD/USD can sharply retrace its 60.7-pip range."
+      "rationale": "72.7 pip daily range contains price while market awaits German CPI."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "down",
+      "direction": "range",
       "magnitude_pips": 93.3,
-      "rationale": "USD/JPY's 90.2-pip gain was on Fed talk; a dovish pushback would target the 93.3-pip range low."
+      "rationale": "93.3 pip daily range remains intact near 160.194."
      },
      {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 70.6,
-      "rationale": "USD/CHF's late +60.4-pip leg was 45% US data/Fed; dovish surprise unwinds it."
+      "instrument": "GBP/USD",
+      "direction": "range",
+      "magnitude_pips": 68.6,
+      "rationale": "68.6 pip daily range likely holds in consolidation."
      },
      {
       "instrument": "USD/CAD",
-      "direction": "down",
+      "direction": "range",
       "magnitude_pips": 64.5,
-      "rationale": "USD/CAD's late surge was Fed-driven; dovish surprise can retrace the 64.5-pip range."
+      "rationale": "64.5 pip daily range holds after 45.2 pip rise."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Jackson Hole Symposium headline risk",
-    "why_it_matters": "The 18:15 medium-impact all-currency event can shift the just-printed USD strength; the Fed Chairman Warsh Speaks cluster was unscored but still moved USD +0.232%.",
-    "watch": "USD impulse versus EUR/USD 72.7-pip range and USD/JPY 93.3-pip range."
+    "risk": "Jackson Hole hawkish surprise",
+    "why_it_matters": "The tape is already long USD; a hawkish surprise can extend USD/JPY above 160.194 and push EUR/USD below 1.15868.",
+    "watch": "Jackson Hole Symposium at 18:15, Fed Chairman Warsh Speaks follow-through"
    },
    {
-    "risk": "Thin late-session liquidity",
-    "why_it_matters": "Several legs after 16:00 showed sharp moves; close-in-range extremes (DXY 0.97, USD/JPY 0.99, USD/CHF 0.94) mean late headlines can cause oversized moves.",
-    "watch": "Any headline during Jackson Hole that pushes USD/CHF beyond its 70.6-pip range."
+    "risk": "German CPI deviation",
+    "why_it_matters": "EUR/USD closed at 1.15868 near its low; a strong German Prelim CPI m/m above 0.3% forecast could trigger a short-covering bounce.",
+    "watch": "German Prelim CPI m/m at 08:29, forecast 0.3% vs previous 0.8%"
    },
    {
-    "risk": "German CPI surprise",
-    "why_it_matters": "EUR was weak at -0.101%; German Prelim CPI m/m forecast 0.3% versus previous 0.8%. A downside miss could accelerate EUR/USD losses.",
-    "watch": "EUR/USD close 1.15868 and its 72.7-pip range."
+    "risk": "Risk sentiment whipsaw",
+    "why_it_matters": "SPX -0.32% and VIX +0.997% show fragile risk; any equity reversal can unwind USD/JPY and high-beta shorts abruptly.",
+    "watch": "SPX around 7714.3, VIX around 16.85034"
    }
   ],
-  "calendar_ahead_note": "Jackson Hole Symposium at 18:15 (medium, all currencies) is the clear event risk after the Fed-driven dollar rally; German Prelim CPI m/m at 08:29 (forecast 0.3%, previous 0.8%) can alter EUR positioning before New York trade.",
+  "calendar_ahead_note": "Jackson Hole Symposium at 18:15 (All, Medium) can reinforce or fade the hawkish USD move; German Prelim CPI m/m at 08:29 (EUR, forecast 0.3%, previous 0.8%) can shift EUR/USD after its 65.3 pip decline.",
   "_model": "deepseek-v4-pro",
   "_usage": {
-   "prompt_tokens": 13521,
-   "completion_tokens": 12527,
-   "total_tokens": 26048,
+   "prompt_tokens": 13384,
+   "completion_tokens": 8754,
+   "total_tokens": 22138,
    "prompt_tokens_details": {
     "cached_tokens": 512
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 9302
+    "reasoning_tokens": 6239
    },
    "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 13009
+   "prompt_cache_miss_tokens": 12872
   }
  }
 }
