@@ -161,6 +161,37 @@ and bills its reasoning to the same completion budget, so `DEEPSEEK_MAX_TOKENS`
 defaults to 16000 — at 4000 the entire allowance goes to reasoning and the API
 returns an empty string.
 
+## Running it on time
+
+GitHub's scheduler delivers this repository's cron **2.5 to 6.6 hours late** --
+measured over 13 scheduled runs, the morning edition lands a median 4.7h after
+its cutoff and the evening 2.9h, while the build itself takes about three
+minutes. An overnight recap that appears at 11:35 local has missed its purpose.
+Manual dispatches start instantly, so the queue for the `schedule` event is the
+entire problem and no amount of cron tuning touches it.
+
+So the schedule is not the primary trigger. Windows Task Scheduler runs the
+build locally at 07:05 and 19:05, five minutes past each cutoff so the final
+15-minute bar has settled:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\install_task.ps1
+```
+
+`scripts/run_local.ps1` pulls, runs `--catchup`, and pushes; `publish.yml` then
+deploys Pages on that push. End to end it takes under two minutes. The GitHub
+cron stays enabled as a backup: whenever it eventually runs, `--catchup` finds
+the archive already complete and does nothing, and on days this machine is off
+it is the thing that fills the gap. Neither trigger is required.
+
+**Weekends.** The task fires all seven days deliberately, and what to build is
+decided by the code rather than by the trigger. `--catchup` only builds
+editions whose cutoff has passed, that are missing, and whose date is a trading
+day, so a weekend run exits in seconds -- *except* when the machine slept
+through Friday evening, which is precisely the case the Saturday run repairs.
+Restricting the trigger to Mon-Fri would remove that and gain nothing.
+`tests/weekend_catchup.py` pins all four cases.
+
 ## Automation
 
 `.github/workflows/recap.yml` runs both editions on a schedule and publishes to
