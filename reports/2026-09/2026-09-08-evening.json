@@ -13,7 +13,7 @@
   "end_local": "2026-09-08T19:00:00+02:00",
   "fwd_start_utc": "2026-09-08T17:00:00+00:00",
   "fwd_end_utc": "2026-09-09T17:00:00+00:00",
-  "generated_utc": "2026-09-08T18:40:46.038974+00:00",
+  "generated_utc": "2026-09-08T19:52:10.726933+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 24
+   "with_actual": 21
   }
  },
  "facts": {
@@ -1657,175 +1657,152 @@
   "calendar_ahead": []
  },
  "analysis": {
-  "session_summary": "CAD led the G10 at +0.244% while NZD lagged sharply at -0.435%, leaving the DXY essentially unchanged at +0.02%. Brent firmed 0.402% to 99.263 as BoE speakers highlighted high energy prices, and equities slipped with SPX -0.238% and VIX +1.537%. USD/CAD fell 21.7 pips to 1.37883 despite Trump Bombardier headlines and Bessent's Canada trade-spat comments. No economic data release owned any major leg; most moves were headline- or flow-driven.",
+  "session_summary": "CAD led the majors with a mean vs majors of 0.244, while NZD lagged at -0.435; USD/CAD fell 21.7 pips and NZD/USD fell 25.7 pips. Brent/USD rose 0.402%, but the equity tape was cautious with SPX -0.238% and VIX +1.537%. Most zigzag legs had no clear catalyst and nearby headlines were too weak to own the moves. The only measured event reaction, the Monetary Policy Report Hearings, was muted at -0.023% own-currency impulse.",
   "themes": [
    {
-    "theme": "CAD strength and Canada trade-spat headlines",
-    "evidence": "CAD was strongest at +0.244%; USD/CAD fell 21.7 pips to 1.37883; Bessent said he thinks the US will get through the Canada trade spat.",
+    "theme": "CAD outperformance on energy strength",
+    "evidence": "CAD mean_vs_majors_pct 0.244; USD/CAD close 1.37883, -21.7 pips; Brent/USD chg_pct 0.402%.",
     "currencies": [
      "CAD",
      "USD"
     ]
    },
    {
-    "theme": "NZD underperformance",
-    "evidence": "NZD was weakest at -0.435%; NZD/USD fell 25.7 pips to 0.58534; AUD/NZD rose 50.3 pips to 1.23303.",
+    "theme": "NZD underperformance against AUD and CHF",
+    "evidence": "NZD mean_vs_majors_pct -0.435; NZD/USD close 0.58534, -25.7 pips; AUD/NZD close 1.23303, +50.3 pips; NZD/CHF close 0.47367, -19.4 pips.",
     "currencies": [
      "NZD",
-     "USD",
-     "AUD"
+     "AUD",
+     "CHF"
     ]
    },
    {
-    "theme": "Oil and BoE energy-inflation remarks",
-    "evidence": "Brent/USD rose 0.402% to 99.263; BoE's Bailey said the US-Iran war has led to high energy prices and they could be higher; Greene worried about second-round effects.",
+    "theme": "Soft risk tone without broad safe-haven bid",
+    "evidence": "SPX close 7685.1, -0.238%; VIX chg_pct 1.537%; USD/JPY close 154.276, -1.8 pips; USD/CHF close 0.80923, +2.0 pips.",
     "currencies": [
-     "GBP",
      "USD",
-     "CAD"
+     "JPY",
+     "CHF"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped through a 27.9-pip range to close barely changed at 1.16234 (-5.2 pips), with all seven zigzag legs lacking a clear catalyst and the close sitting mid-range at 0.56."
+   "EUR/USD": "EUR/USD chopped through seven legs with no clear catalyst, closing at 1.16234 with a net change of -5.2 pips inside a 27.9-pip range."
   },
   "polarity_reads": [
    {
     "event": "Monetary Policy Report Hearings",
-    "read": "The hearing was measured as muted with a -0.023% own-cy impulse, inside the noise floor; GBP did not break materially and the top movers were Brent/USD +0.206% and USD/MXN -0.034%, suggesting no fresh hawkish or dovish shock was priced from UK commentary."
+    "read": "The measured GBP basket move of -0.023% was inside the noise floor, suggesting the hearings delivered no incremental policy signal and positioning was already balanced."
    }
   ],
   "scenarios": [
    {
-    "name": "Commodity/geopolitical continuation",
+    "name": "Momentum continuation in CAD and NZD",
     "probability": 0.45,
-    "thesis": "CAD, NOK and oil stay bid while NZD lags; risk tone remains mixed but DXY flat.",
+    "thesis": "The existing CAD strength and NZD weakness persist with no calendar to disrupt the flows, while Brent/USD holds its 0.402% gain and equities remain soft.",
     "triggers": [
      "Brent/USD holds above 99.263",
-     "BoE/geopolitical headlines keep high energy prices in focus",
-     "USD/CAD stays below 1.37883"
+     "US-Canada trade headlines remain constructive for CAD per Bessent",
+     "SPX fails to recover 7685.1"
     ],
-    "invalidation": "USD/CAD reclaims 1.37883 and Brent/USD drops below 99.263.",
+    "invalidation": "NZD/USD recaptures 0.58534 and USD/CAD moves back above 1.37883.",
     "pair_paths": [
-     {
-      "instrument": "USD/CAD",
-      "direction": "down",
-      "magnitude_pips": 57.9,
-      "rationale": "Day range 57.9; CAD is strongest at +0.244%."
-     },
      {
       "instrument": "NZD/USD",
       "direction": "down",
       "magnitude_pips": 49.4,
-      "rationale": "Day range 49.4; NZD is weakest at -0.435%."
+      "rationale": "NZD mean_vs_majors_pct is -0.435 and NZD/USD already fell 25.7 pips; the measured daily range is 49.4 pips."
      },
      {
-      "instrument": "AUD/NZD",
-      "direction": "up",
-      "magnitude_pips": 98.6,
-      "rationale": "Day range 98.6; AUD/NZD already gained 50.3 pips to 1.23303."
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 57.9,
+      "rationale": "CAD mean_vs_majors_pct is 0.244 and USD/CAD fell 21.7 pips; oil strength supports CAD, with the measured daily range at 57.9 pips."
      }
     ]
    },
    {
-    "name": "Mean reversion/short squeeze",
-    "probability": 0.3,
-    "thesis": "Crowded commodity-FX and NZD underperformance unwind; USD/CAD bounces and NZD shorts are covered.",
+    "name": "Stretch reversal in CAD and NZD",
+    "probability": 0.35,
+    "thesis": "The CAD/NZD divergence becomes stretched and headline flow reverses, leading to a mean-reversion bounce in NZD/USD and a retracement higher in USD/CAD.",
     "triggers": [
-     "SPX bounces from 7685.1",
-     "Brent/USD fails to extend above 99.263",
-     "Bessent trade commentary is seen as CAD-positive but already priced"
+     "Brent/USD turns lower from 99.263",
+     "US Treasury Secretary Bessent trade comments disappoint CAD bulls",
+     "NZD/USD stabilizes above 0.58534"
     ],
-    "invalidation": "DXY extends its +0.02% drift and NZD/USD makes fresh lows under 0.58534.",
+    "invalidation": "NZD/USD closes back below 0.58534 and USD/CAD closes below 1.37883.",
     "pair_paths": [
      {
       "instrument": "NZD/USD",
       "direction": "up",
       "magnitude_pips": 49.4,
-      "rationale": "Day range 49.4; NZD/USD closed at 0.36 of range, leaving room to cover."
+      "rationale": "After a 25.7-pip drop and a mean of -0.435, a reversal could retrace the measured 49.4-pip range."
      },
      {
       "instrument": "USD/CAD",
       "direction": "up",
       "magnitude_pips": 57.9,
-      "rationale": "Day range 57.9; a bounce from 1.37883 unwinds CAD strength."
-     },
-     {
-      "instrument": "AUD/NZD",
-      "direction": "down",
-      "magnitude_pips": 98.6,
-      "rationale": "Day range 98.6; unwind of the 50.3-pip AUD/NZD advance."
+      "rationale": "USD/CAD could retrace from 1.37883 after CAD outperformance; the daily range is 57.9 pips."
      }
     ]
    },
    {
-    "name": "Muted range with empty calendar",
-    "probability": 0.25,
-    "thesis": "No scheduled high-impact items; DXY is flat at +0.02% and G10 meanders inside today's ranges.",
+    "name": "Rangebound drift with no fresh catalyst",
+    "probability": 0.2,
+    "thesis": "Empty calendar and balanced headline flow keep major pairs inside their recent ranges, with no decisive break in EUR/USD or USD/JPY.",
     "triggers": [
-     "No new headline shock",
-     "EUR/USD holds its 27.9-pip range",
-     "VIX consolidates after +1.537%"
+     "No scheduled calendar items",
+     "DXY/USD remains near 98.849",
+     "EUR/USD holds around 1.16234"
     ],
-    "invalidation": "Breakout in Brent/USD beyond its 448.9-pip daily range or a headline BoE/US-Iran surprise.",
+    "invalidation": "EUR/USD breaks 1.16234 by more than 27.9 pips or USD/JPY breaks 154.276 by more than 152.6 pips.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
       "magnitude_pips": 27.9,
-      "rationale": "Day range 27.9; close at 0.56 of range."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "range",
-      "magnitude_pips": 40.3,
-      "rationale": "Day range 40.3; no clear catalyst for a breakout."
+      "rationale": "EUR/USD closed at 1.16234 with a net change of -5.2 pips inside a 27.9-pip range."
      },
      {
       "instrument": "USD/JPY",
       "direction": "range",
       "magnitude_pips": 152.6,
-      "rationale": "Day range 152.6; close near top at 0.91 of range."
+      "rationale": "USD/JPY closed at 154.276 with a small -1.8-pip change despite a wide 152.6-pip daily range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Oil and geopolitical spillover",
-    "why_it_matters": "Bailey said the US-Iran war has led to high energy prices and they could be higher; Brent is up 0.402% to 99.263.",
-    "watch": "Brent/USD price action and VIX 16.485"
+    "risk": "Headline-driven gaps with no calendar",
+    "why_it_matters": "Most legs had no clear catalyst and the measured event reaction was only -0.023%, leaving the market vulnerable to abrupt headline moves.",
+    "watch": "Qatar mediation, US Treasury Secretary Bessent comments, Trump trade threats, and BoE commentary."
    },
    {
-    "risk": "Canada trade spat headline risk",
-    "why_it_matters": "Trump Bombardier comments and Bessent's get-through line feed two-way trade policy risk; CAD leads at +0.244% and USD/CAD is down 21.7 pips to 1.37883.",
-    "watch": "USD/CAD 1.37883 and headline flow"
+    "risk": "Energy price whipsaw",
+    "why_it_matters": "Brent/USD rose 0.402% but had a 448.9-pip range, and BoE speakers flagged second-round inflation effects from high oil prices.",
+    "watch": "Brent/USD close 99.263 and any US-Iran/Canada trade headline."
    },
    {
-    "risk": "NZD underperformance unwind",
-    "why_it_matters": "NZD is weakest at -0.435%; NZD/USD closed at 0.36 of range at 0.58534; AUD/NZD rose 50.3 pips to 1.23303.",
-    "watch": "NZD/USD 0.58534 and AUD/NZD 1.23303"
-   },
-   {
-    "risk": "Soft equity/VIX tone",
-    "why_it_matters": "SPX fell 0.238% and VIX rose 1.537%, a softer risk tone that can hurt high-beta currencies.",
-    "watch": "SPX 7685.1 and VIX 16.485"
+    "risk": "Stretched CAD/NZD divergence",
+    "why_it_matters": "CAD mean_vs_majors_pct 0.244 versus NZD -0.435 creates a crowded short-NZD/long-CAD profile that could reverse quickly.",
+    "watch": "USD/CAD 1.37883 and NZD/USD 0.58534."
    }
   ],
-  "calendar_ahead_note": "No calendar items are provided for the immediate window; price action will rely on headline flow around US-Iran/energy, BoE commentary, and US-Canada trade.",
+  "calendar_ahead_note": "The calendar_ahead array is empty, so no scheduled releases are on the horizon; the tape remains headline-driven from existing US-Iran mediation, Canada trade rhetoric, and energy price action.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14910,
-   "completion_tokens": 7608,
-   "total_tokens": 22518,
+   "completion_tokens": 7321,
+   "total_tokens": 22231,
    "prompt_tokens_details": {
-    "cached_tokens": 384
+    "cached_tokens": 14848
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5732
+    "reasoning_tokens": 5558
    },
-   "prompt_cache_hit_tokens": 384,
-   "prompt_cache_miss_tokens": 14526
+   "prompt_cache_hit_tokens": 14848,
+   "prompt_cache_miss_tokens": 62
   }
  }
 }
