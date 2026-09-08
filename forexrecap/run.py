@@ -160,6 +160,8 @@ def main(argv=None):
     ap.add_argument("--catchup", action="store_true",
                     help="build every edition whose cutoff has passed and that "
                          "is not already on disk")
+    ap.add_argument("--catchup-days", type=int, default=10, metavar="N",
+                    help="how far back --catchup looks (default 10)")
     args = ap.parse_args(argv)
 
     day = dt.date.fromisoformat(args.date) if args.date else _today_local()
@@ -167,7 +169,7 @@ def main(argv=None):
     if args.backfill:
         return backfill(day, args)
     if args.catchup:
-        return catchup(day, args)
+        return catchup(day, args, max_days=args.catchup_days)
 
     metas = []
     if not build_one(day, args.edition, args, seen=metas):

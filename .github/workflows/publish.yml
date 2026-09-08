@@ -1,0 +1,38 @@
+name: Publish pages
+
+# Deploy only. The local scheduled task builds on time and pushes; without
+# this, the repository would hold a fresh report while the site still showed
+# the old one, because recap.yml is the only thing that deploys and it only
+# runs on its own (badly delayed) schedule.
+#
+# A push made by recap.yml's GITHUB_TOKEN does not trigger other workflows, so
+# the bot's own commits deploy through recap.yml and never double-deploy here.
+on:
+  push:
+    branches: [main]
+    paths: ["reports/**"]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: pages-deploy      # shared with recap.yml so the two never race
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports
+      - id: deploy
+        uses: actions/deploy-pages@v4

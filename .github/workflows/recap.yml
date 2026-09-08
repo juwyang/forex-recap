@@ -184,6 +184,9 @@ jobs:
     needs: build
     if: needs.build.outputs.built == 'true'
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages-deploy    # shared with publish.yml so the two never race
+      cancel-in-progress: false
     permissions:
       pages: write           # deploy the uploaded artifact
       id-token: write        # OIDC token deploy-pages exchanges for it
