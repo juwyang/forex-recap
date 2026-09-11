@@ -13,7 +13,7 @@
   "end_local": "2026-09-11T19:00:00+02:00",
   "fwd_start_utc": "2026-09-11T17:00:00+00:00",
   "fwd_end_utc": "2026-09-14T17:00:00+00:00",
-  "generated_utc": "2026-09-11T17:05:10.547196+00:00",
+  "generated_utc": "2026-09-11T19:35:56.836355+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 65
+   "with_actual": 62
   }
  },
  "facts": {
@@ -1920,195 +1920,193 @@
   ]
  },
  "analysis": {
-  "session_summary": "The tape was low-conviction: JPY led (+0.462% vs majors) and CHF lagged (-0.501%), with USD/JPY down 56.3 pips and USD/CHF up 38.9 pips. US CPI and UoM surprises stayed inside the noise floor, while the UK GDP beat produced a normal GBP-positive 0.075% impulse. Equities rose (SPX +63.7 points) but VIX also rose to 18.335 (+3.286%) and Brent fell 1.602%, leaving risk tone split. No leg had a single dominant catalyst, so much of the move was flow and technicals.",
+  "session_summary": "The tape was dominated by JPY strength (USD/JPY -56.3 pips, CHF/JPY -159.5 pips) and CHF weakness (USD/CHF +38.9 pips, EUR/CHF +28.8 pips), while AUD and NZD firmed against USD (+9.1 and +11.6 pips). US CPI m/m (0.3% vs 0.2%) and UoM sentiment (47.8 vs 51.0) were measured muted at the basket level, with own-currency impulses of 0.008% and 0.029%, but high-beta USD pairs showed large z-score responses. Risk closed mixed: SPX +0.837% while VIX +3.286%; Brent fell 1.602%. USD/CAD rose 45.9 pips into upcoming Canadian CPI, keeping CAD weakest alongside CHF.",
   "themes": [
    {
-    "theme": "JPY strength",
-    "evidence": "JPY mean_vs_majors_pct was 0.462, the highest; USD/JPY closed down 56.3 pips and CHF/JPY down 159.5 pips.",
+    "theme": "JPY outperformance across the session",
+    "evidence": "JPY mean strength 0.462; USD/JPY -56.3 pips; CHF/JPY -159.5 pips (-0.84%).",
     "currencies": [
-     "JPY"
-    ]
-   },
-   {
-    "theme": "CHF underperformance",
-    "evidence": "CHF mean_vs_majors_pct was -0.501, the weakest; USD/CHF rose 38.9 pips, EUR/CHF rose 28.8 pips, AUD/CHF rose 35.3 pips, and NZD/CHF rose 31.9 pips.",
-    "currencies": [
+     "JPY",
+     "USD",
      "CHF"
     ]
    },
    {
-    "theme": "Muted US data impulse",
-    "evidence": "Core CPI m/m beat produced own_ccy_impulse_pct of 0.008 inside the noise floor; Prelim UoM miss produced 0.029 inside the noise floor.",
+    "theme": "CHF underperformance across the board",
+    "evidence": "CHF mean strength -0.501; USD/CHF +38.9 pips; EUR/CHF +28.8; AUD/CHF +35.3; NZD/CHF +31.9.",
     "currencies": [
-     "USD"
+     "CHF",
+     "USD",
+     "EUR",
+     "AUD",
+     "NZD"
     ]
    },
    {
-    "theme": "EM divergence",
-    "evidence": "USD/ZAR fell 563.3 pips while USD/MXN rose 70.6 pips; ZAR strengthened notably, MXN weakened modestly.",
+    "theme": "Commodity/risk FX firmer despite VIX rise",
+    "evidence": "AUD/USD +9.1 pips; NZD/USD +11.6; USD/ZAR -563.3; SPX +0.837%.",
     "currencies": [
+     "AUD",
+     "NZD",
      "ZAR",
-     "MXN"
+     "USD"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD's seven legs were all under 23 pips and none had a clear catalyst; US CPI and UoM only produced short-lived, inside-noise reactions.",
-   "GBP/USD": "GBP/USD's up leg got a normal UK GDP push (12.7 pips, 47% of the move) but later UoM/Lagarde reactions were muted; the pair closed nearly flat at -0.3 pips.",
-   "USD/JPY": "USD/JPY's long 1,035-minute down leg of -85.3 pips had Core CPI accounting for only 28% of the move, leaving the rest flow-driven.",
-   "USD/CHF": "USD/CHF alternated but closed +38.9 pips as a late up leg got 22% from US consumer confidence.",
-   "AUD/USD": "AUD/USD's 570-minute up leg of +33.0 pips had no clear catalyst and was followed by a -9.8 pip pullback.",
-   "NZD/USD": "NZD/USD rose on an early 495-minute up leg of +40.2 pips, with only small Iran/CPI/UoM contributions on the later down leg.",
-   "USD/CAD": "USD/CAD's almost all-day up leg of +66.3 pips had no clear catalyst; a -17.2 pip late pullback trimmed the gain."
+   "EUR/USD": "EUR/USD chopped around 1.1600: a -21.5 pip NY morning down leg from 08:00 to 13:45 was mostly retraced by a +22.7 pip up leg from 13:45 to 16:45, leaving only -19.8 pips on the day.",
+   "USD/JPY": "USD/JPY's 01:30-to-18:45 down leg of -85.3 pips dominated, with Core CPI contributing -24.1 pips (28% of the move); the pair closed -56.3 pips at 153.711.",
+   "GBP/USD": "GBP/USD traded in a 52.7-pip range and finished nearly flat (-0.3 pips), with a UK GDP-driven +27.0 pip up leg offset by a UoM-driven -8.8 pip late dip.",
+   "USD/CHF": "USD/CHF built +19.7, -15.0, +31.0, -15.7, +19.2 pips legs to close +38.9 pips, reflecting steady CHF weakness despite intraday pullbacks.",
+   "USD/CAD": "USD/CAD's 19:00-17:00 +66.3 pip grind up was only partly retraced by -17.2 pips into the close, leaving +45.9 pips at 1.38635.",
+   "AUD/USD": "AUD/USD had an initial -12.6 pip dip, then a 05:15-14:45 +33.0 pip up leg, but finished only +9.1 pips after a -9.8 pip late fade.",
+   "NZD/USD": "NZD/USD's 23:45-08:00 +40.2 pip surge set the tone, but the 08:00-18:45 -17.2 pip fade left it +11.6 pips at 0.58164."
   },
   "polarity_reads": [
    {
     "event": "Core CPI m/m +3 more",
-    "read": "The 0.3% vs 0.2% beat produced only a 0.008% USD basket impulse inside the noise floor; despite the surprise, no broad dollar rally, suggesting USD was already positioned for firm inflation or the data did not change the Fed path."
+    "read": "Measured muted at 0.008% basket impulse, but top movers showed USD strength (EUR/USD -14.3 pips, GBP/USD -19.1, USD/CHF +12.9); this implies limited broad USD impulse with high-beta pairs doing most of the adjustment."
    },
    {
     "event": "GDP m/m",
-    "read": "A 0.4% vs 0.0% UK GDP beat produced a normal 0.075% GBP strength impulse; GBP got the expected data bump but it did not dominate the day."
+    "read": "Normal polarity: 0.4% vs 0.0% beat gave GBP +0.075%, confirming expected GBP strength; top movers EUR/GBP -2.4 pips and GBP/USD +3.7 pips."
    },
    {
     "event": "ECB President Lagarde Speaks",
-    "read": "Lagarde produced a muted 0.018% EUR basket impulse, indicating no new policy signal."
+    "read": "Measured muted at 0.018% basket impulse; no EUR follow-through, with top movers concentrated in EM/USD rather than EUR crosses."
    },
    {
     "event": "Prelim UoM Consumer Sentiment +1 more",
-    "read": "A large miss (47.8 vs forecast 51.0) produced only a 0.029% USD basket impulse, implying the market did not translate the sentiment shock into a dollar repricing."
+    "read": "Measured muted at 0.029% basket impulse despite the 47.8 vs 51.0 miss; high-beta EM pairs like USD/MXN +122.0 pips and USD/ZAR +174.8 pips moved, indicating the USD response was concentrated in EM/commodity crosses rather than a broad dollar bid."
    },
    {
     "event": "SNB Chairman Schlegel Speaks",
-    "read": "Schlegel's remarks moved the CHF basket only -0.013%, inside noise; no new policy impulse."
+    "read": "Measured muted at -0.013% basket impulse; CHF/JPY -6.4 pips was the top mover, suggesting the day's CHF weakness was flow-driven rather than event-driven."
    }
   ],
   "scenarios": [
    {
-    "name": "Muted range extension",
+    "name": "JPY bid extends, CHF weakness continues",
     "probability": 0.45,
-    "thesis": "No high-conviction catalyst emerged; US CPI and UoM were inside noise, UK GDP normal but faded. Majors consolidate within today's ranges, with JPY bid and CHF heavy.",
+    "thesis": "The tape's strongest bias (JPY strength 0.462, CHF strength -0.501) carries into the next window; USD/JPY remains offered while USD/CHF stays bid.",
     "triggers": [
-     "EUR/USD holds its 53.6-pip range",
-     "USD/JPY fails to recover above 153.711",
-     "CAD CPI not yet on tape"
+     "USD/JPY holds below 153.711 close",
+     "CHF crosses extend above current levels"
     ],
-    "invalidation": "A close beyond today's EUR/USD 53.6-pip range or a clean US CPI follow-through breaks the range.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 53.6,
-      "rationale": "Choppy 20-50 pip legs with no clear catalyst; close 1.15996 is 0.56 of range."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 137.1,
-      "rationale": "Long down leg of -85.3 pips from 01:30 had no single trigger; risk of range before next data."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "range",
-      "magnitude_pips": 49.4,
-      "rationale": "CHF is the weakest major, but no new catalyst is likely to extend the move beyond today's 49.4-pip range."
-     }
-    ]
-   },
-   {
-    "name": "Risk-off carry unwind / JPY extends",
-    "probability": 0.3,
-    "thesis": "Equities rose but VIX also rose, and geopolitical headlines (Iran Supporting Houthis) remain unresolved; a sentiment turn fuels JPY and possibly CHF safe-haven demand, unwinding recent CHF weakness.",
-    "triggers": [
-     "VIX above 18.335",
-     "Brent/USD breaks below 106.774",
-     "USD/JPY below 153.711"
-    ],
-    "invalidation": "SPX closes above 7670.1 and VIX falls back below 18.335.",
+    "invalidation": "USD/JPY recovers back through 153.711 and USD/CHF gives up its 38.9-pip day gain.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 56.3,
-      "rationale": "Today's USD/JPY already fell 56.3 pips; a risk-off extension could repeat that magnitude."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 49.4,
-      "rationale": "If CHF safe-haven demand returns, it can erase today's 38.9-pip rise within the 49.4-pip range."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 37.2,
-      "rationale": "A risk-off unwind would pressure the high-beta AUD within its 37.2-pip range."
-     }
-    ]
-   },
-   {
-    "name": "USD stabilization on Canadian CPI",
-    "probability": 0.25,
-    "thesis": "A soft Canadian CPI headline (forecast -0.1% vs previous 0.5%) or any USD-supportive follow-through from today's muted CPI compresses USD shorts; USD/CAD extends its 45.9-pip up-move.",
-    "triggers": [
-     "CAD CPI m/m prints below -0.1%",
-     "USD/CAD closes above 1.38635",
-     "EUR/USD breaks below 1.15996"
-    ],
-    "invalidation": "CAD CPI at or above 0.0% and USD/CAD reverses below 1.38635.",
-    "pair_paths": [
-     {
-      "instrument": "USD/CAD",
-      "direction": "up",
-      "magnitude_pips": 45.9,
-      "rationale": "Today's USD/CAD rose 45.9 pips; a soft CPI could extend the move."
-     },
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 19.8,
-      "rationale": "EUR/USD's close showed -19.8 pips today; a USD bid on data would extend that drift."
+      "magnitude_pips": 85.3,
+      "rationale": "Matches the dominant 01:30-18:45 down leg."
      },
      {
       "instrument": "USD/CHF",
       "direction": "up",
       "magnitude_pips": 38.9,
-      "rationale": "USD/CHF already rose 38.9 pips; continued USD strength would support another leg higher."
+      "rationale": "Matches the measured session close gain."
+     },
+     {
+      "instrument": "CHF/JPY",
+      "direction": "down",
+      "magnitude_pips": 159.5,
+      "rationale": "Matches the measured cross decline."
+     }
+    ]
+   },
+   {
+    "name": "Mean reversion/profit-taking ahead of CAD CPI",
+    "probability": 0.35,
+    "thesis": "After USD/CAD's +66.3 pip up leg and stretched CHF crosses, profit-taking may dominate into the CAD CPI release, pulling USD/CAD back and stabilizing USD/JPY.",
+    "triggers": [
+     "USD/CAD fails above 1.38635",
+     "CAD CPI at 14:30 is not weaker than forecast"
+    ],
+    "invalidation": "USD/CAD breaks above 1.38635 and holds above the 19:00-17:00 +66.3 pip up leg.",
+    "pair_paths": [
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 17.2,
+      "rationale": "Matches the late 17:00-18:45 pullback."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 137.1,
+      "rationale": "Matches the session range."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 33.0,
+      "rationale": "Matches the 05:15-14:45 up leg."
+     }
+    ]
+   },
+   {
+    "name": "USD catches a fresh bid / CAD CPI weak",
+    "probability": 0.2,
+    "thesis": "A weak Canadian CPI or risk-off headline could lift USD against CAD and EUR, reversing part of the late USD/CAD pullback.",
+    "triggers": [
+     "CAD CPI m/m below -0.1% forecast",
+     "Median CPI y/y below 2.0% or trimmed below 1.9%"
+    ],
+    "invalidation": "USD/CAD unable to hold above 1.38635, EUR/USD reclaims 1.15996 close.",
+    "pair_paths": [
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 45.9,
+      "rationale": "Matches the session gain on CAD weakness."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 21.5,
+      "rationale": "Matches the 08:00-13:45 down leg."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 8.8,
+      "rationale": "Matches the 15:45-18:45 UoM leg."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Canadian CPI misses sharply",
-    "why_it_matters": "USD/CAD already gained 45.9 pips today and sits at 1.38635; the forecast -0.1% vs previous 0.5% invites dovish CAD repricing.",
-    "watch": "USD/CAD 70.5-pip range and close 1.38635."
+    "risk": "Canadian CPI surprise",
+    "why_it_matters": "USD/CAD has a 70.5-pip range and is already up 45.9 pips; a weak print could extend the move, while a firm print could unwind it.",
+    "watch": "CPI m/m forecast -0.1% vs previous 0.5%; median/trimmed at 2.0%/1.9%."
    },
    {
-    "risk": "Geopolitical escalation in Middle East",
-    "why_it_matters": "Brent/USD fell 1.602% to 106.774 but VIX rose 3.286% to 18.335; Iran headlines have not been cleanly priced.",
-    "watch": "Brent/USD 106.774 and VIX 18.335."
+    "risk": "VIX/SPX divergence",
+    "why_it_matters": "SPX +0.837% with VIX +3.286% hints at hedged risk demand; a sustained VIX rise could hit high-beta FX.",
+    "watch": "VIX close 18.335, SPX 7670.1."
    },
    {
-    "risk": "USD reaction function stays muted",
-    "why_it_matters": "Core CPI beat 0.3% vs 0.2% only moved the basket 0.008%; if the dollar cannot rally on firm inflation, USD-bull scenarios fail.",
-    "watch": "Next US inflation datum and DXY 98.801."
+    "risk": "CHF weakness overextension",
+    "why_it_matters": "CHF mean strength -0.501% and CHF/JPY -159.5 pips leave crosses vulnerable to squeeze; SNB Schlegel was measured muted.",
+    "watch": "USD/CHF 0.81607, CHF/JPY 188.347."
    }
   ],
-  "calendar_ahead_note": "ECB President Lagarde speaks at 10:00; today her remarks were a muted 0.018% impulse. The main event is the Canadian CPI block at 14:30: headline forecast -0.1% vs previous 0.5%, median 2.0, trimmed 1.9. A soft print can extend USD/CAD's 45.9-pip up day; a firm print can reverse it.",
+  "calendar_ahead_note": "Next window brings ECB President Lagarde at 10:00 EUR and a high-impact CAD CPI block at 14:30 (headline forecast -0.1% m/m vs previous 0.5%; median 2.0%, trimmed 1.9%). CAD and EUR crosses can reprice from this, especially after USD/CAD +45.9 pips today.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 16450,
-   "completion_tokens": 8251,
-   "total_tokens": 24701,
+   "completion_tokens": 11806,
+   "total_tokens": 28256,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 16384
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5784
+    "reasoning_tokens": 9270
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 15938
+   "prompt_cache_hit_tokens": 16384,
+   "prompt_cache_miss_tokens": 66
   }
  }
 }
