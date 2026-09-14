@@ -13,7 +13,7 @@
   "end_local": "2026-09-14T19:00:00+02:00",
   "fwd_start_utc": "2026-09-14T17:00:00+00:00",
   "fwd_end_utc": "2026-09-15T17:00:00+00:00",
-  "generated_utc": "2026-09-14T17:05:24.636085+00:00",
+  "generated_utc": "2026-09-14T20:53:56.278945+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 79
+   "with_actual": 75
   }
  },
  "facts": {
@@ -1418,234 +1418,186 @@
   ]
  },
  "analysis": {
-  "session_summary": "CHF and USD led the board while NZD, AUD and JPY lagged in a tape defined by Middle East supply headlines and a soft risk tone. Brent rallied 0.804%, the DXY rose 0.285%, the S&P fell 0.357% and VIX added 0.61%. Event reactions to Canada CPI and two Lagarde appearances were all muted, offering no new macro impulse. The main intraday catalyst was Trump's Iran-deal comment, which triggered partial reversals across dollar, oil and risk pairs late in the window.",
+  "session_summary": "CHF and USD led the board while SPX fell 0.357% and VIX rose 0.61%, leaving the tape risk-off. Brent gained 0.804% to 107.632 after the Saudi pipeline outage, and USD/MXN rose 1367.4 pips on EM stress. The late Trump comment that Iran wants a deal triggered sharp retracements in EUR/USD, USD/JPY, Brent and EM pairs, but the legs otherwise had no single clear catalyst. Event reactions for Canada CPI and ECB President Lagarde were muted, inside the noise floor.",
   "themes": [
    {
-    "theme": "Safe-haven CHF/USD bid",
-    "evidence": "CHF strength 0.361%, USD strength 0.285%, VIX +0.61, SPX -0.357",
+    "theme": "Safe-haven CHF and USD strength",
+    "evidence": "CHF +0.361% and USD +0.285% vs majors; EUR/CHF -38.4 pips, USD/CHF -5.5 pips despite Dollar strength; SPX -0.357%, VIX +0.61%.",
     "currencies": [
      "CHF",
-     "USD"
-    ]
-   },
-   {
-    "theme": "Oil supply shock",
-    "evidence": "Brent +0.804%; headline: Saudi oil pipeline hit in strikes will be mostly out of service for several weeks for repair",
-    "currencies": [
-     "CAD",
-     "NOK",
-     "MXN"
-    ]
-   },
-   {
-    "theme": "JPY weakness despite risk-off",
-    "evidence": "USD/JPY +0.396%, CHF/JPY +0.463%, JPY strength -0.166%",
-    "currencies": [
-     "JPY",
      "USD",
-     "CHF"
+     "EUR",
+     "JPY"
     ]
    },
    {
-    "theme": "Muted macro events",
-    "evidence": "Canada CPI own-currency impulse 0.008%; ECB Lagarde 17:15 impulse -0.008%; ECB Lagarde 10:00 impulse 0.0%",
+    "theme": "Oil supply shock from Saudi pipeline",
+    "evidence": "Brent +85.8 pips to 107.632; headline: Saudi oil pipeline hit and mostly out of service for weeks; USD/MXN +1367.4 pips, USD/ZAR +883.3 pips.",
     "currencies": [
-     "CAD",
-     "EUR"
+     "USD",
+     "MXN",
+     "ZAR",
+     "CAD"
+    ]
+   },
+   {
+    "theme": "Late Iran de-escalation headline reversal",
+    "evidence": "Trump: Iran wants to make a deal comment at 15:45; EUR/USD +35.0 pips, USD/JPY -59.7 pips, Brent -359.0 pips in the final leg.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "JPY",
+     "CHF"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "A steady overnight decline of -71.7 pips was partly retraced by a late 35.0-pip bounce on the Iran-deal headline, leaving the pair down 39.5 pips and mid-range at 0.48.",
-   "USD/JPY": "The big 154.2-pip up leg between 23:15 and 15:45 had no clear catalyst, then Trump's Iran comment erased 59.7 pips; net +60.8 pips.",
-   "GBP/USD": "Cable tracked EUR/USD lower before a late 37.7-pip rebound on the Iran-deal headline; net -17.8 pips.",
-   "USD/CHF": "Despite a 36.6-pip up leg early, the pair closed at 0.05 of its range as CHF strength dominated; net -5.5 pips.",
-   "AUD/USD": "Aussie fell for most of the window before a 34.2-pip late rebound; net -28.8 pips.",
-   "NZD/USD": "Kiwi was the weakest major, down 29.2 pips net, with only a late 27.3-pip bounce.",
-   "USD/CAD": "The pair gained 60.5 pips into 15:45 then gave back 22.2 pips late; net +39.3 pips and close 0.61 of range.",
-   "EUR/CHF": "CHF strength drove a 46.5-pip down leg and a close at 0.07 of range; net -38.4 pips.",
-   "CHF/JPY": "The cross surged 168.8 pips into 12:00, then Trump's comment reversed only 16.2 pips; net +87.2 pips.",
-   "AUD/NZD": "Choppy but net +12.5 pips with close 0.76 of range; no clear trend.",
-   "EUR/GBP": "EUR weakened against GBP in a 22.0-pip down leg, then a small 3.8-pip Lagarde-driven bounce; net -17.8 pips.",
-   "AUD/CHF": "CHF strength drove a 35.0-pip down leg, partly retraced late; net -27.5 pips.",
-   "NZD/CHF": "CHF strength dominated with a 41.3-pip down leg; net -26.8 pips."
+   "EUR/USD": "EUR/USD fell -71.7 pips over most of the window and retraced +35.0 pips on the Iran headline, closing -39.5 pips.",
+   "USD/JPY": "USD/JPY rallied +154.2 pips into 15:45 and gave back -59.7 pips on the Iran comment, still closing +60.8 pips.",
+   "GBP/USD": "GBP/USD dropped -51.9 pips then bounced +37.7 pips late, ending -17.8 pips.",
+   "USD/CHF": "USD/CHF chopped through multiple small legs and closed only -5.5 pips despite an earlier +36.6 pip rally, showing CHF resilience.",
+   "USD/CAD": "USD/CAD rose +60.5 pips through 15:45 and retraced -22.2 pips, still closing +39.3 pips.",
+   "AUD/USD": "AUD/USD fell -60.3 pips then recovered +34.2 pips, net -28.8 pips.",
+   "NZD/USD": "NZD/USD dropped -55.5 pips and retraced +27.3 pips, closing -29.2 pips."
   },
   "polarity_reads": [
    {
-    "event": "Canada CPI m/m",
-    "read": "Muted despite high impact; USD/CAD moved only 8.8 pips with no follow-through, suggesting CAD positioning was already balanced or the print fully priced."
+    "event": "Canada CPI m/m (Aug), 14:30",
+    "read": "Actual matched forecast at -0.1%; CAD basket moved only 0.008%, inside the noise floor. This says positioning was balanced and no CAD repricing signal came from the data."
    },
    {
-    "event": "ECB President Lagarde Speaks 17:15",
-    "read": "Muted; own-currency impulse -0.008% and top mover USD/CAD only 3.6 pips imply no new ECB policy signal."
+    "event": "ECB President Lagarde Speaks, 17:15",
+    "read": "EUR basket moved -0.008%, inside the noise floor; no new policy signal, so EUR positioning was not challenged."
    },
    {
-    "event": "ECB President Lagarde Speaks 10:00",
-    "read": "Muted with zero measurable impulse; the event was a non-event for EUR."
+    "event": "ECB President Lagarde Speaks, 10:00",
+    "read": "EUR basket moved 0.000%; the speech was a non-event for FX and implies no acute EUR sensitivity to Lagarde."
    }
   ],
   "scenarios": [
    {
-    "name": "Middle East risk premium persists",
+    "name": "De-escalation drift / risk recovery extends",
     "probability": 0.45,
-    "thesis": "CHF and USD stay bid while Brent remains elevated; risk-sensitive currencies lag.",
+    "thesis": "The late Trump Iran comment reduces the oil risk premium; last-leg reversals in EUR/USD, USD/JPY, Brent and EM pairs extend as no new escalation appears.",
     "triggers": [
-     "No de-escalation headlines",
-     "Brent holds above 107",
-     "VIX above 18"
+     "No new Saudi or Gulf escalation headlines",
+     "Brent holds below 107.632",
+     "Risk sentiment stabilizes after SPX -0.357%"
     ],
-    "invalidation": "Confirmed Iran deal or Ukraine energy ceasefire breaks risk-off.",
+    "invalidation": "New pipeline or Gulf escalation, or Brent closing back above 107.632",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 40,
-      "rationale": "CHF and USD outperformance vs EUR; EUR strength was -0.105%."
+      "direction": "up",
+      "magnitude_pips": 35.0,
+      "rationale": "Measured late bounce of +35.0 pips on the Iran headline"
      },
      {
       "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 50,
-      "rationale": "JPY was weakest major at -0.166%; USD bid."
-     },
-     {
-      "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 20,
-      "rationale": "CHF is strongest major at 0.361%; pair already closed at 0.05 of range."
+      "magnitude_pips": 59.7,
+      "rationale": "Late USD/JPY giveback was -59.7 pips on the same de-escalation headline"
      },
      {
-      "instrument": "Brent/USD",
+      "instrument": "GBP/USD",
       "direction": "up",
-      "magnitude_pips": 200,
-      "rationale": "Supply risk keeps oil elevated after Saudi pipeline headlines."
+      "magnitude_pips": 37.7,
+      "rationale": "Cable late bounce was +37.7 pips on risk recovery"
      }
     ]
    },
    {
-    "name": "De-escalation unwinds risk premium",
+    "name": "Risk-off persistence / CHF and USD strength continue",
     "probability": 0.35,
-    "thesis": "A confirmed Iran deal or Ukraine energy truce triggers oil pullback and a rebound in risk/commodity currencies.",
+    "thesis": "Despite late Iran comments, safe-haven demand remains intact: CHF and USD lead, high-beta and EM currencies stay offered.",
     "triggers": [
-     "Trump announces deal",
-     "Brent drops below 107",
-     "SPX recovers above 7640"
+     "SPX closes below 7642.7",
+     "VIX above 18.44682",
+     "Oil supply outage headlines continue to dominate"
     ],
-    "invalidation": "New attack or no deal keeps oil bid.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 50,
-      "rationale": "Risk relief weakens USD, EUR recovers from -0.105% strength."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 40,
-      "rationale": "AUD is heavily risk-sensitive and was down 28.8 pips."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 40,
-      "rationale": "NZD was weakest at -0.289%; short-covering bounce."
-     },
-     {
-      "instrument": "USD/CAD",
-      "direction": "range",
-      "magnitude_pips": 40,
-      "rationale": "Conflicting oil-negative and USD-positive signals for CAD."
-     },
-     {
-      "instrument": "Brent/USD",
-      "direction": "down",
-      "magnitude_pips": 150,
-      "rationale": "Supply fears fade, unwinding the risk premium."
-     }
-    ]
-   },
-   {
-    "name": "Supply shock intensifies, stagflation trade",
-    "probability": 0.2,
-    "thesis": "Further pipeline/supply outages push oil sharply higher; CHF and USD outperform while JPY weakens further; high-beta FX falls.",
-    "triggers": [
-     "New Saudi outage escalation",
-     "Brent above 108",
-     "VIX above 19"
-    ],
-    "invalidation": "Immediate ceasefire/deal headlines.",
+    "invalidation": "A confirmed Iran deal or sharp Brent reversal below 107.632",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 60,
-      "rationale": "USD strengthens further as risk-off deepens."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 80,
-      "rationale": "JPY weakness continues despite risk-off."
+      "magnitude_pips": 39.5,
+      "rationale": "Measured net EUR/USD decline of -39.5 pips from USD strength"
      },
      {
       "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 20,
-      "rationale": "CHF remains strongest safe haven."
+      "magnitude_pips": 5.5,
+      "rationale": "USD/CHF closed -5.5 pips, consistent with CHF outperforming even a strong USD"
      },
      {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 40,
-      "rationale": "AUD suffers from risk-off despite commodity tone."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "down",
-      "magnitude_pips": 40,
-      "rationale": "NZD underperforms as high-beta funding currency."
-     },
-     {
-      "instrument": "Brent/USD",
+      "instrument": "USD/MXN",
       "direction": "up",
-      "magnitude_pips": 250,
-      "rationale": "Supply outage escalates oil rally."
+      "magnitude_pips": 1367.4,
+      "rationale": "USD/MXN +1367.4 pips reflects EM stress under risk-off"
+     }
+    ]
+   },
+   {
+    "name": "UK data surprise strengthens GBP",
+    "probability": 0.2,
+    "thesis": "A positive UK Claimant Count or Average Earnings surprise triggers a GBP repricing, with cable extending late bounce and EUR/GBP lower.",
+    "triggers": [
+     "Claimant Count below 8.3K or Average Earnings above 3.9%",
+     "GBP strength vs USD and EUR"
+    ],
+    "invalidation": "In-line data or soft earnings; Claimant Count above forecast",
+    "pair_paths": [
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 37.7,
+      "rationale": "Late GBP/USD bounce of +37.7 pips can extend on strong data"
+     },
+     {
+      "instrument": "EUR/GBP",
+      "direction": "down",
+      "magnitude_pips": 17.8,
+      "rationale": "EUR/GBP net move was -17.8 pips; stronger GBP extends this"
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Middle East headlines remain two-sided",
-    "why_it_matters": "Oil/FX moves have been headline-driven.",
-    "watch": "Brent and VIX"
+    "risk": "Saudi pipeline outage keeps oil risk premium alive",
+    "why_it_matters": "Brent +0.804% and headline says pipeline repairs take several weeks; this pressures oil importers and supports USD/CHF and EM FX stress.",
+    "watch": "Brent 107.632 and further Gulf headlines"
    },
    {
-    "risk": "Muted event reactions may mask positioning squeeze",
-    "why_it_matters": "Canada CPI and Lagarde produced no signal, but later moves may come from positioning.",
-    "watch": "USD/CAD and EUR crosses"
+    "risk": "Trump Iran diplomacy headline can reverse quickly",
+    "why_it_matters": "The 15:45 comment drove EUR/USD +35.0, USD/JPY -59.7 and Brent -359.0; reversal risk is two-sided.",
+    "watch": "Confirmation or denial of Iran engagement"
    },
    {
-    "risk": "Calendar risk in GBP",
-    "why_it_matters": "Claimant Count and Average Earnings can shift GBP; GBP strength was 0.134% and cable down only 17.8 pips.",
-    "watch": "GBP/USD and EUR/GBP"
+    "risk": "Thin weekend/Asia-reopen liquidity amplifies moves",
+    "why_it_matters": "Large ranges such as CHF/JPY 175.3 pips and sharp reversals show headline sensitivity in illiquid conditions.",
+    "watch": "Opening gap risk in Asia and early Europe"
+   },
+   {
+    "risk": "UK labour market data",
+    "why_it_matters": "Claimant Count and Average Earnings at 08:00 are the only high-impact calendar items and can move GBP crosses.",
+    "watch": "Actual vs 8.3K and 3.9%"
    }
   ],
-  "calendar_ahead_note": "08:00 GMT UK labor data are the next high-impact releases; a strong Claimant Count or Average Earnings miss could reverse GBP strength and weigh on EUR/GBP, while the absence of major USD events keeps focus on oil and headlines.",
+  "calendar_ahead_note": "The only scheduled high-impact releases are UK Claimant Count at 08:00 (forecast 8.3K, previous -11.0K) and Average Earnings 3m/y (forecast 3.9%, previous 4.1%). A surprise there can shift GBP and risk tone; otherwise the tape stays headline-driven on Iran and oil.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 12693,
-   "completion_tokens": 8596,
-   "total_tokens": 21289,
+   "completion_tokens": 9129,
+   "total_tokens": 21822,
    "prompt_tokens_details": {
-    "cached_tokens": 384
+    "cached_tokens": 12672
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 6179
+    "reasoning_tokens": 6996
    },
-   "prompt_cache_hit_tokens": 384,
-   "prompt_cache_miss_tokens": 12309
+   "prompt_cache_hit_tokens": 12672,
+   "prompt_cache_miss_tokens": 21
   }
  }
 }
