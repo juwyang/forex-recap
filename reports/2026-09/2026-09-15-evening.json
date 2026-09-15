@@ -13,7 +13,7 @@
   "end_local": "2026-09-15T19:00:00+02:00",
   "fwd_start_utc": "2026-09-15T17:00:00+00:00",
   "fwd_end_utc": "2026-09-16T17:00:00+00:00",
-  "generated_utc": "2026-09-15T17:05:10.532401+00:00",
+  "generated_utc": "2026-09-15T20:10:45.214908+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 32
+   "with_actual": 30
   }
  },
  "facts": {
@@ -1673,175 +1673,176 @@
   ]
  },
  "analysis": {
-  "session_summary": "The tape was broadly USD-positive: USD was the strongest major at +0.271%, while JPY (-0.282%) and NZD (-0.236%) lagged. Most legs had no clear single catalyst, but the Saudi oil-cargo and East-West pipeline headline lifted Brent +2.752% and intermittently supported CAD/NOK before late NY flows took over. Treasury Secretary Bessent's remarks produced a measurable +0.044% USD impulse with high-sigma USD/CHF and USD/CAD reactions; UK jobs data was muted despite a large miss. Positioning looks long USD and short high-beta FX, with oil supply as the main cross-current.",
+  "session_summary": "USD led broad gains with DXY/USD +22.1 points, while JPY and NZD were the weakest majors. Risk tone was soft: SPX/USD fell -52.4 points, VIX/USD rose +8.2, and Brent/USD surged +2.75% on Middle East oil supply headlines. Most FX legs lacked a clear catalyst; the only reliably attributed USD-positive event was Treasury Sec Bessent Speaks at 16:00, with USD strengthening 0.044% but no forecast to score a surprise.",
   "themes": [
    {
-    "theme": "Broad USD strength with JPY and NZD weakest",
-    "evidence": "Currency strength map: USD +0.271%, JPY -0.282%, NZD -0.236%. USD/JPY closed +0.485% at 155.067, near the top of a 124.5-pip range.",
+    "theme": "Broad USD strength",
+    "evidence": "DXY/USD +22.1 points; USD/JPY +74.8 pips; USD/SEK +465.7 pips; USD/NOK +293.1 pips",
     "currencies": [
      "USD",
      "JPY",
-     "NZD"
-    ]
-   },
-   {
-    "theme": "Oil supply shock underpins CAD and NOK against the USD tape",
-    "evidence": "Brent/USD closed +2.752% at 110.594, near its high (close_in_range 0.99). The Saudi cargo-cancellation headline contributed to a USD/CAD 14:30-15:45 down leg of -17.2 pips and a USD/NOK 08:30-15:45 down leg of -200.6 pips.",
-    "currencies": [
-     "CAD",
+     "SEK",
      "NOK"
     ]
    },
    {
-    "theme": "Late USD bid from Bessent remarks",
-    "evidence": "Treasury Sec Bessent Speaks at 16:00 produced a +0.044% USD impulse; USD/CHF +5.0 pips at 3.35 sigma, EUR/USD -3.3 pips, GBP/USD -4.2 pips.",
+    "theme": "Oil supply shock from Middle East headlines",
+    "evidence": "Brent/USD +2.75% to 110.594; Saudi pipeline closure cancellation; IRGC tanker fire in Strait of Hormuz",
     "currencies": [
-     "USD",
-     "CHF",
-     "GBP",
-     "EUR"
+     "CAD",
+     "NOK",
+     "MXN",
+     "ZAR"
+    ]
+   },
+   {
+    "theme": "Soft risk tone with high-beta underperformance",
+    "evidence": "SPX/USD -52.4 points; VIX/USD +8.2; NZD mean -0.236%; JPY mean -0.282%",
+    "currencies": [
+     "NZD",
+     "JPY"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD's -30.0 pip Asia-London slide and +20.9 pip midday bounce had no clear catalyst, while the late -6.4 pip dip was tied to Treasury Secretary Bessent's USD-positive remarks."
+   "EUR/USD": "EUR/USD carved a down-up-down path with no clear catalyst: Asia fell -30.0 pips, London retraced +20.9 pips, then Bessent comments late in the day produced a -6.4 pip USD-positive fade."
   },
   "polarity_reads": [
    {
     "event": "Treasury Sec Bessent Speaks",
-    "read": "Unscored, but the +0.044% USD impulse and high-sigma USD/CHF (+3.35) and USD/CAD (+2.4) reactions suggest the market was positioned for USD-positive policy talk rather than trading a specific data surprise."
+    "read": "Unscored because no forecast existed; USD strengthened 0.044% on the event, implying the market leaned USD-positive but the lack of a consensus surprise makes it a directional rather than a data-scored reaction."
    },
    {
-    "event": "Claimant Count Change",
-    "read": "Muted despite a 27.8K vs 8.3K miss with GBP basket only -0.029%, inside the noise floor; implies the weak UK jobs print was already expected or the broad USD/oil tape dominated the UK data shock."
+    "event": "Claimant Count Change +1 more",
+    "read": "Actual 27.8K vs forecast 8.3K was a large miss, but GBP moved only -0.029% inside the noise floor; the muted reaction suggests the market did not treat it as a fresh negative for GBP or had already priced labor softness."
    }
   ],
   "scenarios": [
    {
-    "name": "US retail strength extends dollar bid",
-    "probability": 0.4,
-    "thesis": "Firm US retail sales validate today's USD strength, extending USD/JPY and USD/CHF gains while EUR/USD and GBP/USD fade late-session support.",
+    "name": "USD strength extends",
+    "probability": 0.45,
+    "thesis": "DXY +22.1 points and USD-positive Bessent comments anchor a bid; consensus US retail sales (0.8% m/m, core 0.5%) should sustain USD if met.",
     "triggers": [
-     "US Core Retail Sales m/m prints at or above 0.5%",
-     "US Retail Sales m/m prints at or above 0.8%",
-     "Bessent follow-through remains USD-positive and oil headlines do not trigger risk-off"
+     "US Retail Sales m/m >= 0.8%",
+     "US Core Retail Sales m/m >= 0.5%",
+     "Brent holds above 110.6"
     ],
-    "invalidation": "Weak US retail sales or UK CPI above 3.1% triggers a sharp GBP/USD reversal. A risk-off oil spike could also reverse USD/JPY.",
+    "invalidation": "US retail sales miss or risk sentiment rebounds",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 34.0,
-      "rationale": "EUR/USD range was 34.0 pips today; the Bessent reaction already produced -3.3 pips in 15 min, so an extension targets the lower end of that range."
+      "rationale": "today's EUR/USD range 34.0 pips with DXY +22.1 points points to another leg lower"
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 49.4,
+      "rationale": "today's GBP/USD range 49.4 pips; broad USD bid and soft risk tone weigh"
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 74.8,
-      "rationale": "USD/JPY closed up 74.8 pips on the day; JPY's -0.282% weakness and broad USD strength support a retest of the high."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "up",
-      "magnitude_pips": 44.5,
-      "rationale": "USD/CHF range was 44.5 pips; the Bessent reaction showed +5.0 pips in 15 min at 3.35 sigma, pointing to continued CHF underperformance."
+      "magnitude_pips": 124.5,
+      "rationale": "today's USD/JPY range 124.5 pips; JPY weakest at -0.282% leaves upside open"
      }
     ]
    },
    {
-    "name": "Oil supply shock keeps CAD supported and high-beta FX weak",
+    "name": "US data disappoints / risk reversal",
     "probability": 0.35,
-    "thesis": "Saudi cargo cancellations and Strait of Hormuz headlines keep Brent bid and CAD underpinned, while NZD and JPY remain laggards against a mixed USD.",
+    "thesis": "US retail sales rebound is optimistic after -0.6% prior; a miss would unwind the DXY bid and allow high-beta pairs to recover.",
     "triggers": [
-     "Further confirmation of Saudi cargo cancellations or East-West pipeline outage",
-     "Brent holds near 110.594, its close at 0.99 in range",
-     "US retail sales are not too strong"
+     "US Retail Sales m/m < 0.8%",
+     "US Core Retail Sales m/m < 0.5%",
+     "SPX reclaims 7590"
     ],
-    "invalidation": "De-escalation headlines, a sharp increase in US retail sales, or a strong USD bid from Bessent follow-through.",
+    "invalidation": "Strong US data or renewed oil escalation",
     "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 34.0,
+      "rationale": "today's EUR/USD range 34.0 pips; USD unwind would retrace the Bessent fade"
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 74.8,
+      "rationale": "today's +74.8 pip USD/JPY gain could be partially reversed on soft US data"
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 30.0,
+      "rationale": "today's AUD/USD range 30.0 pips; better risk tone lifts the high-beta AUD"
+     }
+    ]
+   },
+   {
+    "name": "Oil supply shock escalates",
+    "probability": 0.2,
+    "thesis": "Brent +2.75% after Saudi cancellations and tanker fire; further escalation would lift oil, hammer equities, and keep safe-haven USD bid while oil FX outperforms.",
+    "triggers": [
+     "Brent breaks above 110.6",
+     "New Strait of Hormuz escalation",
+     "SPX down more than 52.4 points"
+    ],
+    "invalidation": "Oman/US de-escalation or oil reversal",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 34.0,
+      "rationale": "USD safe-haven bid would extend pressure on EUR/USD within today's 34.0 pip range"
+     },
      {
       "instrument": "USD/CAD",
       "direction": "down",
       "magnitude_pips": 31.6,
-      "rationale": "USD/CAD range was 31.6 pips; the Saudi headline produced a -17.2 pip down leg with an in-leg driver of -6.6 pips, so oil support can retest the lows."
+      "rationale": "CAD oil beta should strengthen, pressuring USD/CAD inside today's 31.6 pip range"
      },
      {
-      "instrument": "NZD/USD",
+      "instrument": "USD/NOK",
       "direction": "down",
-      "magnitude_pips": 37.1,
-      "rationale": "NZD/USD range was 37.1 pips; NZD is -0.236% weak and oil-risk headlines pressure high-beta currencies."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 124.5,
-      "rationale": "USD/JPY traded a 124.5-pip range today; oil headlines create two-way flow, but the bias is not clear enough for a breakout."
-     }
-    ]
-   },
-   {
-    "name": "GBP CPI surprise lifts GBP and triggers USD pullback",
-    "probability": 0.25,
-    "thesis": "A strong UK CPI forces a repricing of GBP, pulling EUR/GBP lower and GBP/USD higher, while soft US retail sales adds to a USD unwind.",
-    "triggers": [
-     "UK CPI y/y prints above 3.1%",
-     "US Retail Sales m/m misses its 0.8% forecast",
-     "JPY reverses some of its -0.282% weakness"
-    ],
-    "invalidation": "CPI at or below 3.1% and strong US data support USD; risk-off oil headlines could also disrupt the GBP rebound.",
-    "pair_paths": [
-     {
-      "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 49.4,
-      "rationale": "GBP/USD range was 49.4 pips; GBP +0.064% strength today despite muted jobs data shows room to catch up on a strong CPI."
-     },
-     {
-      "instrument": "EUR/GBP",
-      "direction": "down",
-      "magnitude_pips": 15.0,
-      "rationale": "EUR/GBP range was 15.0 pips; a hot UK CPI likely pushes EUR/GBP toward the low end of that range."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 74.8,
-      "rationale": "USD/JPY closed up 74.8 pips on the day, but a USD unwind can retrace that move; JPY is the weakest major, but a risk-off reaction may reverse the late US bid."
+      "magnitude_pips": 438.5,
+      "rationale": "NOK oil beta and Brent spike support NOK; today's USD/NOK range 438.5 pips is the path"
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Strait of Hormuz / oil supply escalation",
-    "why_it_matters": "Brent/USD closed +2.752% near highs; further disruptions can spike oil and support CAD/NOK while pressuring high-beta FX.",
-    "watch": "Iranian military claims, Oman-US de-escalation talks, Saudi cargo cancellations"
+    "risk": "UK CPI y/y",
+    "why_it_matters": "High-impact GBP catalyst at 08:00; forecast 3.1% vs previous 2.9%. A hot print may price BoE tightening; a soft print may knock GBP.",
+    "watch": "GBP/USD, EUR/GBP"
    },
    {
-    "risk": "US data surprises",
-    "why_it_matters": "Core Retail Sales m/m forecast 0.5% vs previous -0.3% and Retail Sales m/m 0.8% vs -0.6%; firm prints would validate today's USD strength, weak prints unwind it.",
-    "watch": "US Core Retail Sales m/m and Retail Sales m/m at 14:30"
+    "risk": "US retail sales",
+    "why_it_matters": "Medium-impact USD catalysts at 14:30; forecast core 0.5% and headline 0.8% after negative prior. A miss could abruptly unwind DXY +22.1 points.",
+    "watch": "DXY, EUR/USD, USD/JPY"
    },
    {
-    "risk": "GBP CPI shock",
-    "why_it_matters": "GBP CPI y/y forecast 3.1% vs previous 2.9%; a hot print can lift GBP and pressure EUR/GBP, conflicting with the USD bid.",
-    "watch": "UK CPI y/y at 08:00 and any core/service detail"
+    "risk": "Middle East oil disruption",
+    "why_it_matters": "Brent already +2.75% on Saudi pipeline cancellation and tanker fire; further disruption will hit risk assets and high-beta FX.",
+    "watch": "Brent/USD, USD/CAD, USD/NOK, SPX/VIX"
    }
   ],
-  "calendar_ahead_note": "UK CPI y/y (forecast 3.1%, prev 2.9%) at 08:00 can lift GBP if hot, while US Core Retail Sales m/m (0.5% vs -0.3%) and Retail Sales m/m (0.8% vs -0.6%) at 14:30 will validate or break the day's USD strength.",
+  "calendar_ahead_note": "GBP CPI y/y at 08:00 (forecast 3.1%, previous 2.9%) is the first high-impact test for GBP; at 14:30 US retail sales (forecast 0.8% m/m, core 0.5% m/m) can extend or reverse the USD bid. A large CPI or retail miss would be the strongest catalyst to break the current USD strength.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 15031,
-   "completion_tokens": 7902,
-   "total_tokens": 22933,
+   "completion_tokens": 9001,
+   "total_tokens": 24032,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 14976
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5665
+    "reasoning_tokens": 7116
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 14519
+   "prompt_cache_hit_tokens": 14976,
+   "prompt_cache_miss_tokens": 55
   }
  }
 }
