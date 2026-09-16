@@ -13,7 +13,7 @@
   "end_local": "2026-09-16T19:00:00+02:00",
   "fwd_start_utc": "2026-09-16T17:00:00+00:00",
   "fwd_end_utc": "2026-09-17T17:00:00+00:00",
-  "generated_utc": "2026-09-16T17:05:14.995196+00:00",
+  "generated_utc": "2026-09-16T20:02:22.359336+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 53
+   "with_actual": 51
   }
  },
  "facts": {
@@ -2028,170 +2028,177 @@
   ]
  },
  "analysis": {
-  "session_summary": "The tape was dominated by a firm USD and weak GBP: USD's mean vs majors was +0.104% while GBP printed -0.202% and CAD -0.128%. The high-impact US retail sales beat (1.4% vs 0.6%) produced a muted basket impulse of -0.010%, and UK CPI in line at 3.1% still left GBP lower with an own-ccy impulse of -0.062%. Brent fell 2.783% despite the late Saudi pipeline headline, and SPX/VIX risk appetite improved (SPX +0.263%, VIX -0.702).",
+  "session_summary": "Full-day trade from Asia through London/NY morning ended with a slightly firmer dollar: DXY closed +0.10% at 99.403 while EUR/USD fell 8.2 pips to 1.15346 and GBP/USD dropped 36.3 pips to 1.34449. UK CPI printed in line (3.1% vs 3.1%) but the pound still weakened 0.062%, and a strong US retail sales beat (1.4% vs 0.6%) produced only a muted USD reaction. Brent slid 2.783% on supply headlines while equities firmed (SPX +0.263%, VIX -13 points), and commodity currencies underperformed (USD/CAD +28.3 pips, USD/NOK +117.1 pips).",
   "themes": [
    {
-    "theme": "USD firm but data reaction muted",
-    "evidence": "USD mean vs majors +0.104%; DXY +0.1%; Core Retail Sales actual 1.4% vs forecast 0.6% but basket impulse -0.010%.",
+    "theme": "Mild USD bid despite unconvincing data reaction",
+    "evidence": "DXY closed +0.10% at 99.403 and USD mean vs majors was +0.104%; USD/CAD rose 28.3 pips and USD/CHF rose 5.6 pips.",
     "currencies": [
-     "USD"
-    ]
-   },
-   {
-    "theme": "GBP underperformance despite inline CPI",
-    "evidence": "GBP mean -0.202%; GBP/USD -36.3 pips; UK CPI actual 3.1% vs forecast 3.1%, own-ccy impulse -0.062%.",
-    "currencies": [
-     "GBP"
-    ]
-   },
-   {
-    "theme": "Oil weakness and commodity FX pressure",
-    "evidence": "Brent/USD -2.783%; Saudis Seek To Resume Half Of Key Oil Pipeline Within Days; CAD mean -0.128% and USD/CAD +28.3 pips.",
-    "currencies": [
+     "USD",
      "CAD",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Sterling underperforms on inline CPI",
+    "evidence": "GBP mean vs majors was -0.202%; GBP/USD fell 36.3 pips and closed at 0.05 of range; EUR/GBP rose 16.8 pips; UK CPI printed 3.1% vs 3.1% forecast.",
+    "currencies": [
+     "GBP",
+     "EUR",
      "USD"
+    ]
+   },
+   {
+    "theme": "Oil slide weighs on petrocurrencies",
+    "evidence": "Brent/USD fell 307.8 pips or 2.783%; USD/NOK rose 117.1 pips and USD/CAD rose 28.3 pips.",
+    "currencies": [
+     "USD",
+     "NOK",
+     "CAD"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "The pair carved a 28.2-pip range and closed -8.2 pips lower, with multiple no-catalyst legs before the high-confidence 4.4-pip US retail sales leg settled it near the lows."
+   "EUR/USD": "The six legs chopped through a 28.2-pip range with no clear catalyst until the final 4.4-pip up move tied to US retail sales, leaving EUR/USD down 8.2 pips and closing at 0.23 of range."
   },
   "polarity_reads": [
    {
     "event": "CPI y/y",
-    "read": "An inline UK CPI (3.1% vs 3.1%) produced a -0.062% own-ccy impulse, suggesting the market was positioned for a stronger print or is fading GBP longs on the lack of upside surprise."
+    "read": "The inline 3.1% vs 3.1% print was met with a -0.062% GBP impulse, implying the market was positioned for a firmer UK inflation number and used the fact to take profit on GBP longs."
    },
    {
     "event": "Core Retail Sales m/m +1 more",
-    "read": "A strong 1.4% vs 0.6% US retail sales beat generated only a -0.010% basket impulse inside the noise floor, implying USD was already well-positioned ahead of FOMC or data strength is being faded."
+    "read": "A strong 1.4% vs 0.6% retail sales beat produced only a -0.010% USD basket move inside the noise floor, signaling that USD strength is already well owned and the bar for further dollar upside is high."
    }
   ],
   "scenarios": [
    {
-    "name": "FOMC hawkish / USD extends",
-    "probability": 0.4,
-    "thesis": "Fed delivers the expected 4.00% hike and a hawkish dot plot, reinforcing the already firm USD tone.",
+    "name": "FOMC hawkish hold lifts USD",
+    "probability": 0.45,
+    "thesis": "The Fed keeps rates at 4.00% while projections and statement signal a less dovish path, reinforcing the measured USD bid and pressuring low-yield and commodity currencies.",
     "triggers": [
-     "Federal Funds Rate prints 4.00% as forecast",
-     "FOMC Economic Projections show higher terminal rate",
-     "FOMC Press Conference signals further hikes"
+     "Federal Funds Rate",
+     "FOMC Economic Projections",
+     "FOMC Statement",
+     "FOMC Press Conference"
     ],
-    "invalidation": "FOMC holds at 3.75% or press conference pushes back against further hikes.",
+    "invalidation": "DXY closes back below 99.403 and USD/JPY fails to hold above 155.112.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 28.2,
-      "rationale": "FOMC hike and dot plot reinforce USD; EUR/USD tests the session's 28.2-pip range low."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "down",
-      "magnitude_pips": 52.3,
-      "rationale": "GBP already weak with mean -0.202% and GBP/USD -36.3 pips, extending the 52.3-pip range lower on USD strength."
+      "rationale": "Today's 28.2-pip range sets the likely extent; hawkish repricing would push the pair toward the low end."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
       "magnitude_pips": 60.1,
-      "rationale": "Higher US yields on a hawkish FOMC lift USD/JPY within its 60.1-pip range."
+      "rationale": "Today's 60.1-pip range; higher US yields would favor a retest of the upper part of that range."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 52.3,
+      "rationale": "GBP is already weak (-36.3 pips, close at 0.05 of range), and hawkish USD would extend the drop within today's 52.3-pip range."
      }
     ]
    },
    {
-    "name": "FOMC neutral-dovish / USD profit-taking",
+    "name": "FOMC neutral/dovish unwinds recent USD strength",
     "probability": 0.35,
-    "thesis": "FOMC signals less urgency or holds, triggering profit-taking on stretched USD longs after the muted retail sales reaction.",
+    "thesis": "The Fed validates market pricing for easing or delivers cautious guidance, leading to profit-taking on USD longs and a rebound in beaten-down currencies.",
     "triggers": [
-     "FOMC holds at 3.75% contrary to 4.00% forecast",
-     "FOMC Statement highlights downside risks",
-     "Press conference emphasizes patience"
+     "FOMC Statement",
+     "FOMC Press Conference",
+     "Unemployment Claims",
+     "Philly Fed Manufacturing Index"
     ],
-    "invalidation": "FOMC delivers 25bp hike with hawkish dot plot and USD/JPY breaks above its 60.1-pip range high.",
+    "invalidation": "DXY breaks above 99.403 and EUR/USD loses 1.15346.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 28.2,
-      "rationale": "Market fades the USD data beat after FOMC signals less urgency; EUR/USD reverses within its 28.2-pip range."
+      "rationale": "Today's 28.2-pip range; a dovish repricing would reverse the -8.2-pip daily drop toward the upper end."
      },
      {
       "instrument": "GBP/USD",
       "direction": "up",
       "magnitude_pips": 52.3,
-      "rationale": "A dovish FOMC or USD profit-taking unwinds GBP/USD's -36.3 pips toward the 52.3-pip range high."
+      "rationale": "GBP closed at 1.34449 after -36.3 pips; a short squeeze within the 52.3-pip range could be sharp."
      },
      {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 60.1,
-      "rationale": "Dovish FOMC pushes USD/JPY back down its 60.1-pip range."
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 16.6,
+      "rationale": "AUD/USD had a narrow 16.6-pip range; broad USD pullback would take it back toward the top of that range."
      }
     ]
    },
    {
-    "name": "FOMC neutral and risk-off / range",
-    "probability": 0.25,
-    "thesis": "Fed delivers expected 4.00% but no new hawkish signal, leaving markets in a risk-off holding pattern and majors range-bound.",
+    "name": "Geopolitical risk-off spike from Middle East",
+    "probability": 0.2,
+    "thesis": "A flare-up in Iran/Qeshm or Saudi pipeline disruption triggers safe-haven demand for CHF and JPY, while high-beta and commodity FX suffer despite today's benign risk tone.",
     "triggers": [
-     "FOMC delivers expected 4.00% but no new hawkish dots",
-     "Risk sentiment sours",
-     "Oil headline reaction reverses"
+     "Several Explosions Heard On Iran's Qeshm Island - IRNA Citing Local Sources As Saying",
+     "Saudis Seek To Resume Half Of Key Oil Pipeline Within Days",
+     "VIX/USD"
     ],
-    "invalidation": "A decisive FOMC hike or dovish BOE breaks EUR/USD out of its 28.2-pip range.",
+    "invalidation": "VIX/USD stays below 18.39837 and Brent/USD continues lower.",
     "pair_paths": [
      {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 28.2,
-      "rationale": "FOMC neutral and risk-off leaves EUR/USD trapped in its 28.2-pip range."
-     },
-     {
       "instrument": "USD/JPY",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 60.1,
-      "rationale": "Mixed FOMC/BOJ impulses keep USD/JPY inside its 60.1-pip range."
+      "rationale": "JPY safe-haven bid would push USD/JPY lower within its 60.1-pip range; today's close was 155.112."
      },
      {
-      "instrument": "USD/CAD",
-      "direction": "range",
-      "magnitude_pips": 33.3,
-      "rationale": "CAD weakness offset by oil uncertainty contains USD/CAD within its 33.3-pip range."
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 17.4,
+      "rationale": "CHF would strengthen relative to USD, with today's 17.4-pip USD/CHF range as the likely extent."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 29.3,
+      "rationale": "High-beta NZD would underperform; today's range was 29.3 pips."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "FOMC press conference reprices rate path",
-    "why_it_matters": "Calendar ahead shows Federal Funds Rate at 20:00 with forecast 4.00% vs previous 3.75%; any deviation from the expected hike or new dot plot will hit EUR/USD and USD/JPY ranges of 28.2 and 60.1 pips.",
-    "watch": "20:00 FOMC Statement and 20:30 FOMC Press Conference"
+    "risk": "FOMC outcome is asymmetric",
+    "why_it_matters": "The US retail sales beat failed to lift USD, so a hawkish surprise could force a sharp unwind of USD shorts while a dovish outcome may see muted follow-through.",
+    "watch": "Federal Funds Rate, FOMC Statement, FOMC Press Conference, DXY 99.403"
    },
    {
-    "risk": "Oil supply normalization accelerates",
-    "why_it_matters": "Brent already fell 2.783% and the Saudi pipeline headline appeared late; CAD is already weak with mean -0.128% and USD/CAD +28.3 pips, so additional oil downside can extend CAD losses.",
-    "watch": "Saudis Seek To Resume Half Of Key Oil Pipeline Within Days headline follow-through"
+    "risk": "BoE decision and vote split",
+    "why_it_matters": "GBP is already the weakest major (mean -0.202%, GBP/USD -36.3 pips), so any dovish vote shift could extend the fall, while a hawkish hold could trigger a squeeze.",
+    "watch": "MPC Official Bank Rate Votes, Official Bank Rate, EUR/GBP 0.85788"
    },
    {
-    "risk": "GBP BOE vote split surprises",
-    "why_it_matters": "GBP is weak with mean -0.202% and GBP/USD -36.3 pips; calendar ahead shows MPC Official Bank Rate Votes forecast 3-0-6 and Official Bank Rate 3.75% vs previous 3.75%, so a hawkish/dovish split can trigger sharp GBP reversal within the 52.3-pip GBP/USD range.",
-    "watch": "13:00 Monetary Policy Summary and MPC Official Bank Rate Votes"
+    "risk": "Oil supply headlines",
+    "why_it_matters": "Brent fell 2.783% on Saudi pipeline news; a reversal higher could hit CAD/NOK and shift risk sentiment.",
+    "watch": "Brent/USD 107.516, Saudi pipeline headlines, USD/NOK 9.34987, USD/CAD 1.39398"
    }
   ],
-  "calendar_ahead_note": "The next window is dominated by the 20:00 FOMC rate decision (forecast 4.00% vs previous 3.75%), projections, statement and 20:30 press conference, with NZD GDP at 00:45 and the BOE bank rate at 13:00; later US Philly Fed and Unemployment Claims add second-tier USD inputs.",
+  "calendar_ahead_note": "FOMC is the main event: Federal Funds Rate forecast 4.00% vs previous 3.75%, plus FOMC Economic Projections, FOMC Statement at 20:00, and FOMC Press Conference at 20:30. BoE at 13:00 with Official Bank Rate forecast 3.75% and vote split 3-0-6, and NZD GDP q/q at 00:45 forecast 0.1% can also reprice rate paths.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17867,
-   "completion_tokens": 7077,
-   "total_tokens": 24944,
+   "completion_tokens": 10721,
+   "total_tokens": 28588,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 17792
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5052
+    "reasoning_tokens": 8612
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 17355
+   "prompt_cache_hit_tokens": 17792,
+   "prompt_cache_miss_tokens": 75
   }
  }
 }
