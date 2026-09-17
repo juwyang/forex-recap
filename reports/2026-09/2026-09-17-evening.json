@@ -13,7 +13,7 @@
   "end_local": "2026-09-17T19:00:00+02:00",
   "fwd_start_utc": "2026-09-17T17:00:00+00:00",
   "fwd_end_utc": "2026-09-18T17:00:00+00:00",
-  "generated_utc": "2026-09-17T17:05:12.240555+00:00",
+  "generated_utc": "2026-09-17T20:13:15.913813+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 71
+   "with_actual": 67
   }
  },
  "facts": {
@@ -1967,239 +1967,198 @@
   ]
  },
  "analysis": {
-  "session_summary": "The session was dominated by the FOMC: rates printed 4.00% against a 4.00% forecast but the dollar still strengthened, leaving USD +0.516% against majors and DXY +0.553%. GBP was the weakest major at -0.308% after an inline 3-0-6 BoE vote failed to support it, while risk assets firmed (SPX +0.355%, VIX -2.297%) and oil fell (Brent -1.226%). Major USD pairs closed near session extremes: EUR/USD -58.5 pips, GBP/USD -96.3 pips, USD/JPY +94.3 pips. The tape points to hawkish FOMC re-pricing and stretched GBP longs into the BoE.",
+  "session_summary": "The window was a broad USD rally: DXY gained +0.553 and USD was the strongest major at +0.516%, while GBP lagged at -0.308%. The inline FOMC hike still produced a 0.294% USD impulse, and the BoE's inline vote still sent GBP/USD down -96.3 pips. USD/JPY added +94.3 pips to 156.055 despite SPX +0.355 and VIX -2.297; Brent slid -1.226%. The tape shows USD strength driven by Fed messaging and US data, with commodity and European FX under pressure.",
   "themes": [
    {
-    "theme": "US exceptionalism / hawkish FOMC reaction",
-    "evidence": "Federal Funds Rate printed 4.00% vs forecast 4.00%, yet USD gained 0.516% vs majors, DXY +0.553% and USD/CHF +0.704%; Warsh stressed inflation was 'too high for too long'.",
+    "theme": "Broad USD bid after Fed",
+    "evidence": "USD strongest major at +0.516%; DXY +0.553; EUR/USD -58.5 pips; USD/JPY +94.3 pips.",
     "currencies": [
      "USD",
-     "CHF",
      "EUR",
-     "GBP"
+     "JPY",
+     "GBP",
+     "CHF",
+     "CAD",
+     "AUD",
+     "NZD"
     ]
    },
    {
-    "theme": "GBP underperformance after BoE vote",
-    "evidence": "GBP was weakest at -0.308%; GBP/USD -96.3 pips and EUR/GBP +18.2 pips; MPC votes 3-0-6 printed inline but GBP weakened 0.289% in event reaction.",
+    "theme": "GBP underperformance despite BoE hold",
+    "evidence": "GBP weakest major at -0.308%; GBP/USD -96.3 pips; EUR/GBP +18.2 pips.",
     "currencies": [
      "GBP",
-     "EUR",
-     "USD"
+     "USD",
+     "EUR"
     ]
    },
    {
-    "theme": "Risk-on tone with commodity FX lagging",
-    "evidence": "SPX +0.355%, VIX -2.297%, but Brent -1.226%; AUD/USD -17.7 pips, NZD/USD -28.3 pips; USD/SEK +497.2 and USD/NOK +714.1.",
+    "theme": "Risk assets supported while oil retreats",
+    "evidence": "SPX +0.355%; VIX -2.297%; Brent/USD -1.226%.",
     "currencies": [
      "USD",
-     "AUD",
-     "NZD",
-     "SEK",
-     "NOK"
-    ]
-   },
-   {
-    "theme": "JPY two-way ahead of BOJ",
-    "evidence": "USD/JPY +94.3 pips but CHF/JPY -12.0 pips; USD/JPY had a 105.1-pip no-catalyst down leg before the Philly Fed up leg.",
-    "currencies": [
-     "JPY",
-     "USD",
-     "CHF"
+     "CAD",
+     "NOK",
+     "MXN"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "A 73.3-pip FOMC-led decline was followed by an 18.3-pip no-catalyst bounce, leaving the pair net -58.5 pips.",
-   "GBP/USD": "Down 69.4 pips on FOMC, up 33.5 pips without a clear catalyst, then down 55.4 pips on the BoE vote to close -96.3 pips.",
-   "USD/JPY": "Up 126.0 pips into the FOMC spillover, down 105.1 pips without a clear catalyst, then up 72.0 pips on Philly Fed to net +94.3 pips.",
-   "USD/CHF": "An FOMC-driven 70.8-pip rally was only partly offset by a 13.1-pip no-catalyst pullback, net +57.7 pips.",
-   "USD/CAD": "FOMC lifted it 57.2 pips, then a 25.0-pip no-catalyst pullback and a 11.3-pip drift left net +45.7 pips.",
-   "AUD/USD": "An FOMC-spillover 49.9-pip drop was followed by a 33.6-pip no-catalyst bounce, net -17.7 pips.",
-   "NZD/USD": "An FOMC-spillover 49.2-pip drop, a 43.7-pip rebound, then a 20.3-pip Philly-Fed drop left net -28.3 pips.",
-   "EUR/CHF": "Multiple small swings net +18.3 pips, with no leg clearly owned by a single catalyst.",
-   "CHF/JPY": "Four legs netted -12.0 pips; no single trigger owned the tape.",
-   "AUD/NZD": "Seven legs net +29.8 pips, with the NZ GDP-driven 19.9-pip down move the only medium-confidence leg.",
-   "EUR/GBP": "A 19.0-pip drop and then a 36.4-pip rise tied to the UK bank rate decision net +18.2 pips.",
-   "AUD/CHF": "Close +26.4 pips with no catalyst clearly owning the move.",
-   "NZD/CHF": "Multiple small legs net +9.9 pips; no single trigger dominated.",
-   "USD/SEK": "A huge 1089.9-pip FOMC rally was only partly retraced by a 794.8-pip no-catalyst decline, net +497.2 pips.",
-   "USD/NOK": "An 800.5-pip FOMC-driven rally and a 112.6-pip no-catalyst pullback still left USD/NOK +714.1 pips on the day.",
-   "USD/ZAR": "A 1293.2-pip up leg, a 1961.9-pip down leg, and a 605.4-pip Philly-Fed up leg left the pair nearly flat at -16.8 pips.",
-   "USD/MXN": "An FOMC-spillover 1266.5-pip rally was partly retraced by a 824.7-pip no-catalyst drop; close was +498.1 pips.",
-   "Brent/USD": "A no-catalyst 129.8-pip drop, a 137.5-pip bounce, a 437.0-pip decline, then a 296.5-pip rebound net -131.8 pips."
+   "EUR/USD": "EUR/USD fell -73.3 pips on the FOMC-driven USD bid into 04:45, then recovered only +18.3 pips into the close with no clear catalyst, leaving the pair at 1.14761."
   },
   "polarity_reads": [
    {
     "event": "Federal Funds Rate +2 more",
-    "read": "Inline 4.00% print but USD gained 0.294%; market was not positioned for the hawkish statement/projections and was short dollars."
-   },
-   {
-    "event": "FOMC Press Conference",
-    "read": "Unscored on no forecast, but USD strengthened 0.096%; Warsh's inflation tone extended the dollar bid."
+    "read": "Inline FOMC produced a 0.294% USD impulse; the market was positioned for a dovish surprise, so the in-line 25bp hike was enough to squeeze USD shorts."
    },
    {
     "event": "MPC Official Bank Rate Votes +2 more",
-    "read": "Inline 3-0-6 vote but GBP weakened 0.289%; positioning was long GBP and the vote offered no hawkish offset."
+    "read": "BoE vote printed in line but GBP still weakened 0.289%; GBP longs likely needed a hawkish shift, so the repeat 3-0-6 split triggered selling."
+   },
+   {
+    "event": "FOMC Press Conference",
+    "read": "Unscored press conference still added 0.096% USD; Warsh's inflation remarks were read as hawkish and reinforced the dollar bid."
    },
    {
     "event": "Philly Fed Manufacturing Index +1 more",
-    "read": "Beat surprise 37.8 vs 31.3 produced normal USD strength of 0.122%; the market remains responsive to US data beats."
+    "read": "A beat of 37.8 vs 31.3 gave USD a normal 0.122% impulse; the market is rewarding US data upside with USD strength."
    },
    {
     "event": "GDP q/q",
-    "read": "Beat surprise 0.2% vs 0.1% produced normal NZD strength of 0.118%; NZD shorts were squeezed but the move was limited."
+    "read": "NZD beat 0.2% vs 0.1% and initially gained 0.118%, but NZD/USD still closed -28.3 pips, showing the bid faded against broad USD strength."
    }
   ],
   "scenarios": [
    {
-    "name": "Hawkish USD extension / risk-on dollar bid",
-    "probability": 0.45,
-    "thesis": "FOMC-driven dollar demand continues unless BOJ is hawkish; strong Philly Fed beat (37.8 vs 31.3) and risk-on tape support another push to session highs.",
+    "name": "Post-FOMC USD consolidation",
+    "probability": 0.4,
+    "thesis": "USD gains are stretched after DXY +0.553 and several pairs are near session extremes, so profit-taking limits fresh extension before BOJ.",
     "triggers": [
-     "BOJ policy rate prints <1.25% as forecast",
-     "BOJ press conference sounds dovish",
-     "US data/headlines sustain the 0.516% USD strength"
+     "DXY fails to hold above 99.953",
+     "EUR/USD stabilizes above 1.14761",
+     "USD/JPY unable to extend through 156.055"
     ],
-    "invalidation": "BOJ delivers a hawkish surprise or USD/JPY breaks below the 105.1-pip down leg.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 58.5,
-      "rationale": "continuation of the FOMC 73.3-pip down leg with no clear euro catalyst."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 72.0,
-      "rationale": "repeat of the Philly-Fed-driven leg on USD strength."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "down",
-      "magnitude_pips": 55.4,
-      "rationale": "GBP weakest at -0.308% and BoE vote failed to support."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 17.7,
-      "rationale": "commodity FX lag in risk-on tape."
-     }
-    ]
-   },
-   {
-    "name": "BOJ hawkish surprise / JPY reversal",
-    "probability": 0.35,
-    "thesis": "BOJ policy rate or press conference surprises hawkish, triggering USD/JPY downside and a dollar pullback; GBP and EUR can bounce from oversold levels.",
-    "triggers": [
-     "BOJ hikes above 1.25% or signals faster tightening",
-     "USD/JPY loses the 72.0-pip Philly Fed up leg",
-     "JPY crosses reverse and equity risk appetite falters"
-    ],
-    "invalidation": "BOJ holds at <1.25% and USD/JPY holds above the 105.1-pip down leg.",
-    "pair_paths": [
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 105.1,
-      "rationale": "repeats the earlier no-catalyst down leg if BOJ surprises hawkish."
-     },
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 18.3,
-      "rationale": "post-FOMC bounce extends if USD corrects."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 33.5,
-      "rationale": "GBP short squeeze from weakest -0.308% level."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 13.1,
-      "rationale": "dollar pullback repeats the no-catalyst dip."
-     }
-    ]
-   },
-   {
-    "name": "Range consolidation / event digestion",
-    "probability": 0.2,
-    "thesis": "After event-heavy tape, markets wait for Lagarde and UK retail sales; dollar keeps gains but pairs stay within measured ranges.",
-    "triggers": [
-     "BOJ decision matches forecast and press conference is neutral",
-     "ECB Lagarde avoids policy signals",
-     "UK retail sales prints near -0.2% forecast"
-    ],
-    "invalidation": "Break of the session ranges on a data surprise or BOJ shock.",
+    "invalidation": "EUR/USD closes below 1.14761 and USD/JPY closes above 156.055.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
       "magnitude_pips": 91.5,
-      "rationale": "use full daily range as consolidation envelope."
+      "rationale": "Holding inside the 91.5 pip session range near 1.14761 as the USD bid stalls."
      },
      {
       "instrument": "USD/JPY",
       "direction": "range",
       "magnitude_pips": 157.2,
-      "rationale": "use full daily range as consolidation envelope."
+      "rationale": "The 157.2 pip range allows pause near 156.055 before the BOJ decision."
      },
      {
       "instrument": "GBP/USD",
       "direction": "range",
       "magnitude_pips": 122.7,
-      "rationale": "use full daily range as consolidation envelope."
+      "rationale": "After -96.3 pips, the 122.7 pip range provides room for consolidation."
+     }
+    ]
+   },
+   {
+    "name": "Dollar strength extends",
+    "probability": 0.35,
+    "thesis": "Hawkish Fed/Warsh messaging and strong US data keep the USD bid alive, extending the post-FOMC move.",
+    "triggers": [
+     "USD/JPY clears 156.055",
+     "DXY holds above 99.953",
+     "EUR/USD loses 1.14761"
+    ],
+    "invalidation": "USD/JPY falls back below 156.055 and EUR/USD reclaims 1.14761.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 91.5,
+      "rationale": "A break of 1.14761 targets the low end of the 91.5 pip daily range."
      },
      {
-      "instrument": "USD/CAD",
-      "direction": "range",
-      "magnitude_pips": 69.7,
-      "rationale": "use full daily range as consolidation envelope."
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 157.2,
+      "rationale": "Extension from 156.055 can test the upper end of the 157.2 pip range."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 122.7,
+      "rationale": "GBP is the weakest major at -0.308%, so a retest of 1.33486 may open the 122.7 pip range."
+     }
+    ]
+   },
+   {
+    "name": "BOJ hawkish surprise / USD pullback",
+    "probability": 0.25,
+    "thesis": "A BOJ rate surprise or hawkish press conference triggers JPY strength and a broader USD long squeeze.",
+    "triggers": [
+     "BOJ Policy Rate reads above the <1.25% forecast",
+     "BOJ press conference signals tightening",
+     "USD/JPY drops through 156.055"
+    ],
+    "invalidation": "BOJ holds <1.25% with a dovish tone and USD/JPY stays above 156.055.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 157.2,
+      "rationale": "BOJ hawkish surprise can drive the 157.2 pip range lower from 156.055."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 91.5,
+      "rationale": "If USD bids unwind, EUR/USD has 91.5 pips of range to recover toward the highs."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 122.7,
+      "rationale": "Oversold GBP after -96.3 pips can rebound within the 122.7 pip range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "BOJ hawkish surprise",
-    "why_it_matters": "USD/JPY is +94.3 pips on the day and JPY is -0.187%; a hawkish BOJ would force sharp reversal.",
-    "watch": "BOJ Policy Rate (04:30), Monetary Policy Statement, BOJ Press Conference (07:30)"
+    "risk": "BOJ policy surprise",
+    "why_it_matters": "USD/JPY closed +94.3 pips at 156.055; BOJ is the next high-impact catalyst for JPY crosses.",
+    "watch": "BOJ Policy Rate forecast <1.25% at 04:30 and BOJ Press Conference at 07:30."
    },
    {
-    "risk": "ECB Lagarde pushes back on euro weakness",
-    "why_it_matters": "EUR/USD already -58.5 pips and EUR -0.066%; any hawkish ECB tone could trigger a short squeeze.",
-    "watch": "ECB President Lagarde Speaks at 12:30"
+    "risk": "GBP retail sales",
+    "why_it_matters": "GBP is the weakest major at -0.308% and GBP/USD is -96.3 pips, so a soft print can extend losses.",
+    "watch": "GBP Retail Sales m/m forecast -0.2% vs previous -0.5% at 08:00."
    },
    {
-    "risk": "UK retail sales disappoints",
-    "why_it_matters": "GBP weakest at -0.308% and GBP/USD -96.3 pips; a miss extends the BoE-driven selloff.",
-    "watch": "GBP Retail Sales m/m forecast -0.2% vs previous -0.5%"
+    "risk": "ECB Lagarde comments",
+    "why_it_matters": "EUR/USD is -58.5 pips and EUR is -0.066%, so Lagarde can either reinforce or blunt the USD-driven pressure on EUR.",
+    "watch": "ECB President Lagarde Speaks at 12:30."
    },
    {
-    "risk": "RBA Bullock shifts AUD sentiment",
-    "why_it_matters": "AUD/USD -17.7 pips but AUD +0.228% strength; RBA comments could alter commodity FX flows.",
-    "watch": "RBA Gov Bullock Speaks at 01:30"
+    "risk": "Oil weakness",
+    "why_it_matters": "Brent/USD -1.226% and USD/NOK +714.1 show oil FX sensitivity to further crude decline.",
+    "watch": "Further Brent/USD move below 106.198."
    }
   ],
-  "calendar_ahead_note": "BOJ is the main event (Policy Rate, Statement, Press Conference from 04:30-07:30) with potential to validate or reverse USD/JPY's +94.3-pip move; GBP Retail Sales and ECB Lagarde later can fine-tune GBP/EUR.",
+  "calendar_ahead_note": "BOJ decision at 04:30 and press conference at 07:30 are the main swing factor for USD/JPY after its +94.3 pip day; GBP retail sales at 08:00 can move GBP/USD from 1.33486, and Lagarde at 12:30 can affect EUR/USD near 1.14761.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17111,
-   "completion_tokens": 12915,
-   "total_tokens": 30026,
+   "completion_tokens": 9108,
+   "total_tokens": 26219,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 17024
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 9826
+    "reasoning_tokens": 6987
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 16599
+   "prompt_cache_hit_tokens": 17024,
+   "prompt_cache_miss_tokens": 87
   }
  }
 }
