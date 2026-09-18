@@ -13,7 +13,7 @@
   "end_local": "2026-09-18T07:00:00+02:00",
   "fwd_start_utc": "2026-09-18T05:00:00+00:00",
   "fwd_end_utc": "2026-09-18T17:00:00+00:00",
-  "generated_utc": "2026-09-18T05:05:12.720728+00:00",
+  "generated_utc": "2026-09-18T09:40:05.048577+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 36,
@@ -1314,20 +1314,20 @@
   ],
   "calendar_ahead": [
    {
-    "time": "07:30",
-    "ccy": "JPY",
-    "impact": "High",
-    "event": "BOJ Press Conference",
-    "forecast": null,
-    "previous": null
-   },
-   {
     "time": "08:00",
     "ccy": "GBP",
     "impact": "Medium",
     "event": "Retail Sales m/m",
     "forecast": "-0.2%",
     "previous": "-0.5%"
+   },
+   {
+    "time": "08:30",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Press Conference",
+    "forecast": null,
+    "previous": null
    },
    {
     "time": "12:30",
@@ -1340,175 +1340,232 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was JPY-weak and risk-on: JPY lost 0.778% against majors while AUD gained 0.265%, SPX added 17.4 points (+0.228%), and VIX fell 16.5 points (-0.917%). USD/JPY rose 107.8 pips to 157.133 (+0.691%) despite an inline BOJ Policy Rate, and CHF/JPY gained 163.8 pips (+0.866%). EUR/USD's three legs (up 3.9 pips, down 5.3 pips, up 12.7 pips) had no clean catalyst; the final leg's 4.0-pip BOJ contribution was only 31% of the move. The tape points to flow/positioning rather than fresh macro surprises.",
+  "session_summary": "Overnight tape was dominated by a sharp yen sell-off after an in-line BOJ Policy Rate +1 more; JPY fell 0.778% against majors, driving USD/JPY +107.8 pips to 157.133 and CHF/JPY +163.8 pips. Risk appetite stayed firm with SPX +17.4 and VIX -16.5, while high-beta FX gained and USD was flat. Commodity-linked AUD and CHF led, while NZD lagged. Most individual legs lacked clear catalysts, except the BOJ statement and RBA remarks contributing to late moves.",
   "themes": [
    {
-    "theme": "JPY underperformance / carry unwind",
-    "evidence": "JPY -0.778% vs majors; USD/JPY +107.8 pips (+0.691%); CHF/JPY +163.8 pips (+0.866%); USD/JPY close_in_range 0.99.",
+    "theme": "JPY sell-off dominates",
+    "evidence": "JPY -0.778% vs majors; USD/JPY +107.8 pips to 157.133; CHF/JPY +163.8 pips",
     "currencies": [
-     "JPY",
-     "USD",
-     "CHF"
+     "JPY"
     ]
    },
    {
-    "theme": "Risk-on high-beta FX with equities firm",
-    "evidence": "SPX +17.4 points (+0.228%); VIX -16.5 points (-0.917%); AUD +0.265% vs majors; USD/ZAR -358.1 pips; USD/MXN -471.0 pips.",
+    "theme": "Risk-on but USD flat",
+    "evidence": "SPX +17.4, VIX -16.5; USD +0.005% vs majors; USD/MXN -471.0",
+    "currencies": [
+     "USD",
+     "AUD",
+     "CHF",
+     "GBP"
+    ]
+   },
+   {
+    "theme": "High-beta and commodity FX supported",
+    "evidence": "AUD +0.265%, CHF +0.204%, GBP +0.180%; AUD/USD +16.1 pips, GBP/USD +20.3 pips",
     "currencies": [
      "AUD",
-     "ZAR",
-     "MXN"
-    ]
-   },
-   {
-    "theme": "Catalyst-light tape; flow/positioning dominates",
-    "evidence": "Most zigzag legs have cause null / confidence none; BOJ Policy Rate inline but own-ccy impulse -0.193%.",
-    "currencies": [
-     "JPY",
-     "EUR",
-     "USD"
+     "CHF",
+     "GBP"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD made three legs (up 3.9 pips, down 5.3 pips, up 12.7 pips); the middle down leg had no news and the final up leg was only 31% explained by BOJ Policy Rate +1 more contributing 4.0 pips, so the bounce was mostly non-catalyst flow."
+   "EUR/USD": "Opened with a small 3.9-pip up leg, gave back 5.3 pips, then rallied 12.7 pips into the close with BOJ Policy Rate contributing +4.0 in 15 min (31% of that leg), netting +10.6 pips.",
+   "USD/JPY": "Initial 19.8-pip down leg was reversed by a 125.6-pip up leg that was 39% BOJ-statement-driven in the first 15 min (+48.9), leaving the pair near its highs at +107.8 pips.",
+   "GBP/USD": "Two up legs flanked a small 6.4-pip pullback, with the final 17.5-pip up leg 29% BOJ-assisted, netting +20.3 pips.",
+   "USD/CHF": "CHF strength dominated through a net -14.2 pip move, with the largest down leg -22.1 pips near the BOJ statement and only minor bounces.",
+   "AUD/USD": "After a 5.2-pip dip, AUD/USD climbed 21.3 pips with RBA Bullock and BOJ Policy Rate contributions, closing +16.1 pips.",
+   "USD/CAD": "A 4.9-pip initial rise gave way to a 15.8-pip BOJ-assisted decline before a small bounce, netting -3.0 pips.",
+   "NZD/USD": "Five choppy legs left NZD/USD nearly flat at -0.3 pips, with a 23.9-pip up leg after BOJ statement largely faded.",
+   "EUR/CHF": "EUR/CHF netted -7.7 pips after two up legs were wiped out by a BOJ Policy Rate leg that moved the other way.",
+   "CHF/JPY": "One 178.6-pip up leg, with +58.8 in 15 min from the BOJ statement (33% of the leg), drove CHF/JPY +163.8 pips.",
+   "AUD/NZD": "A 63.4-pip up leg with BOJ Policy Rate help (+11.5, 18%) met a late 19.4-pip pullback, netting +29.2 pips.",
+   "EUR/GBP": "EUR/GBP traded in an 11.2-pip range; the only clear catalyst was a BOJ-statement down leg with -1.5 in the first 15 min (71% of the leg), closing -5.2 pips.",
+   "AUD/CHF": "A 21.5-pip up leg helped by RBA Bullock and BOJ was partly reversed by a 5.6-pip late dip, leaving AUD/CHF +3.1 pips.",
+   "NZD/CHF": "NZD/CHF alternated lower and higher in five legs with no dominant catalyst, netting -8.5 pips.",
+   "USD/SEK": "USD/SEK fell in two large down legs around an up leg, netting -183.7 pips with no single catalyst owning the move.",
+   "USD/NOK": "Three legs netted -115.2 pips, with the final down leg 54% BOJ-assisted (-56.5 in 15 min).",
+   "USD/ZAR": "A large 363.4-pip down leg after the BOJ rate news dominated, leaving USD/ZAR -358.1 pips.",
+   "USD/MXN": "USD/MXN fell 471.0 pips, with a 318.2-pip down leg 35% BOJ-assisted during the BOJ announcement window.",
+   "Brent/USD": "Brent was the weakest liquid asset at -97.4 pips despite a mid-session 54.1-pip bounce; lower highs prevailed with no clear FX catalyst."
   },
   "polarity_reads": [
    {
     "event": "BOJ Policy Rate +1 more",
-    "read": "Inline rate outcome with own-ccy impulse -0.193% shows the market sold JPY after the rate decision, implying the hike was already priced and long-JPY positioning was unwound into the release."
+    "read": "In-line, but JPY weakened 0.193%; the market was positioned for a hawkish surprise and instead sold JPY when none arrived, signalling yen downside was the path of least resistance."
    },
    {
     "event": "RBA Gov Bullock Speaks",
-    "read": "Unscored event with AUD own-ccy impulse +0.067% and no forecast to score; top movers were below 1 sigma, so the reaction offers no clean positioning signal."
+    "read": "Unscored, but AUD strengthened 0.067%; with no forecast to score, this flags positive AUD sensitivity to labor-market hawkish signals."
    }
   ],
   "scenarios": [
    {
-    "name": "Extended JPY weakness / risk-on continuation",
+    "name": "BOJ presser fuels further JPY downside",
     "probability": 0.45,
-    "thesis": "BOJ press conference at 07:30 adds no additional hawkish signal after an inline rate outcome; the existing JPY-weak, risk-on tape extends with USD/JPY and CHF/JPY remaining bid.",
+    "thesis": "Inline BOJ hike combined with risk-on equities leaves JPY vulnerable; BOJ press conference is likely to reinforce yen-negative stance unless explicit hawkish guidance.",
     "triggers": [
-     "07:30 BOJ Press Conference delivers no new tightening guidance",
-     "USD/JPY stays bid near 157.133",
-     "CHF/JPY holds above 190.874"
+     "BOJ press conference opens with dovish tone",
+     "USD/JPY holds above 157.133",
+     "SPX/VIX remain risk-on"
     ],
-    "invalidation": "BOJ Press Conference explicitly signals faster hikes or intervention risk; USD/JPY breaks back below 157.133.",
+    "invalidation": "A clear BOJ signal for additional tightening or a sudden risk-off move would invalidate.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "up",
       "magnitude_pips": 127.2,
-      "rationale": "USD/JPY's overnight range was 127.2 pips and close_in_range 0.99 leaves the path of least resistance up."
+      "rationale": "Measured overnight USD/JPY range is 127.2 pips; extension of yen weakness targets that full range."
      },
      {
       "instrument": "CHF/JPY",
       "direction": "up",
       "magnitude_pips": 197.3,
-      "rationale": "CHF/JPY's overnight range was 197.3 pips; if JPY funding stays under pressure the cross can extend."
+      "rationale": "Overnight CHF/JPY range was 197.3 pips; BOJ-driven yen weakness favors CHF/JPY upside."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 18.3,
+      "rationale": "Overnight EUR/USD range was 18.3 pips; risk-on EUR-positive could nudge it higher."
      },
      {
       "instrument": "AUD/USD",
       "direction": "up",
       "magnitude_pips": 28.7,
-      "rationale": "AUD/USD's overnight range was 28.7 pips and AUD strength was 0.265% vs majors; risk-on supports the commodity long."
+      "rationale": "Overnight AUD/USD range was 28.7 pips; AUD strength supports further upside."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 30.3,
+      "rationale": "Overnight GBP/USD range was 30.3 pips; GBP was firm and could extend with strong retail sales."
      }
     ]
    },
    {
-    "name": "BOJ pushback forces JPY correction",
+    "name": "Risk-on consolidation and USD drift",
     "probability": 0.35,
-    "thesis": "BOJ Press Conference at 07:30 suggests additional rate hikes or pushes back on the weaker yen, forcing a sharp reversal of the 107.8-pip USD/JPY gain.",
+    "thesis": "After large overnight moves, the session may see profit-taking and range chop, especially with only GBP data and central bank speeches left.",
     "triggers": [
-     "07:30 BOJ Press Conference hints at further tightening",
-     "USD/JPY rejects 157.133",
-     "JPY moves off -0.778% vs majors"
+     "BOJ press conference provides no new hawkish signal",
+     "GBP Retail Sales prints in line",
+     "SPX stays near 7654.7"
     ],
-    "invalidation": "BOJ Press Conference repeats no urgency and USD/JPY reclaims 157.133.",
+    "invalidation": "A BOJ hawkish surprise or weak GBP data could break ranges.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 127.2,
+      "rationale": "Uses the overnight USD/JPY range as the expected consolidation envelope."
+     },
+     {
+      "instrument": "CHF/JPY",
+      "direction": "range",
+      "magnitude_pips": 197.3,
+      "rationale": "Uses the overnight CHF/JPY range as the expected consolidation envelope."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 18.3,
+      "rationale": "Uses the overnight EUR/USD range as the expected consolidation envelope."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "range",
+      "magnitude_pips": 30.3,
+      "rationale": "Uses the overnight GBP/USD range as the expected consolidation envelope."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "range",
+      "magnitude_pips": 28.7,
+      "rationale": "Uses the overnight AUD/USD range as the expected consolidation envelope."
+     }
+    ]
+   },
+   {
+    "name": "JPY rebound on hawkish BOJ presser",
+    "probability": 0.2,
+    "thesis": "BOJ press conference may clarify inflationary risks and lift rate expectations, reversing the yen's 0.778% weakness.",
+    "triggers": [
+     "BOJ Governor signals additional hikes",
+     "USD/JPY loses 157.133",
+     "VIX jumps and risk-off deepens"
+    ],
+    "invalidation": "Dovish BOJ tone or continued risk-on would keep yen weak.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 127.2,
-      "rationale": "The overnight range was 127.2 pips; a hawkish BOJ comment can reverse that range."
+      "rationale": "Uses the overnight USD/JPY range as the measured reversal envelope."
      },
      {
       "instrument": "CHF/JPY",
       "direction": "down",
       "magnitude_pips": 197.3,
-      "rationale": "CHF/JPY's overnight range was 197.3 pips; JPY strength unwinds the carry cross."
+      "rationale": "Uses the overnight CHF/JPY range as the measured reversal envelope."
      },
      {
       "instrument": "EUR/USD",
-      "direction": "up",
+      "direction": "down",
       "magnitude_pips": 18.3,
-      "rationale": "EUR/USD's overnight range was 18.3 pips; if USD softens and EUR remains bid, the pair can retest the high end of range."
-     }
-    ]
-   },
-   {
-    "name": "GBP and EUR headline rotation",
-    "probability": 0.2,
-    "thesis": "GBP Retail Sales at 08:00 (forecast -0.2% vs prior -0.5%) helps GBP/USD extend its firm close, while 12:30 ECB President Lagarde Speaks supports EUR.",
-    "triggers": [
-     "08:00 GBP Retail Sales m/m prints -0.2% or stronger than prior -0.5%",
-     "12:30 ECB President Lagarde Speaks sounds balanced-to-hawkish",
-     "GBP/USD holds near 1.33689"
-    ],
-    "invalidation": "GBP Retail Sales misses the -0.2% forecast and Lagarde sounds dovish; GBP/USD loses 1.33689.",
-    "pair_paths": [
+      "rationale": "Uses the overnight EUR/USD range as the measured reversal envelope."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 28.7,
+      "rationale": "Uses the overnight AUD/USD range as the measured reversal envelope."
+     },
      {
       "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 30.3,
-      "rationale": "GBP/USD's overnight range was 30.3 pips and close_in_range 0.78; a firmer retail sales number can extend the move toward the top of that range."
-     },
-     {
-      "instrument": "EUR/GBP",
       "direction": "down",
-      "magnitude_pips": 11.2,
-      "rationale": "EUR/GBP's overnight range was 11.2 pips; stronger GBP vs EUR pushes the cross lower."
-     },
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 18.3,
-      "rationale": "EUR/USD's overnight range was 18.3 pips; a non-dovish Lagarde adds EUR support and USD is not the strongest major, up 0.005% only."
+      "magnitude_pips": 30.3,
+      "rationale": "Uses the overnight GBP/USD range as the measured reversal envelope."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "BOJ press conference creates a sharp yen repricing",
-    "why_it_matters": "BOJ Policy Rate was inline but own-ccy impulse was -0.193%; a hawkish turn would threaten USD/JPY's 107.8-pip advance.",
-    "watch": "USD/JPY 157.133, CHF/JPY 190.874"
+    "risk": "BOJ press conference turns hawkish",
+    "why_it_matters": "JPY is already 0.778% weaker vs majors; a hawkish shift could trigger a sharp JPY squeeze across USD/JPY and CHF/JPY.",
+    "watch": "BOJ Press Conference 08:30; USD/JPY close 157.133"
    },
    {
-    "risk": "GBP Retail Sales disappointment",
-    "why_it_matters": "GBP/USD closed near the top of a 30.3-pip range (close_in_range 0.78) and gained 20.3 pips; a miss can reverse that.",
-    "watch": "GBP/USD 1.33689, EUR/GBP 0.85918"
+    "risk": "GBP retail sales miss",
+    "why_it_matters": "GBP was firm at +0.180% vs majors; a negative retail print could unwind GBP/USD and EUR/GBP strength.",
+    "watch": "GBP Retail Sales m/m 08:00, forecast -0.2% previous -0.5%"
    },
    {
-    "risk": "ECB Lagarde comments shift EUR/USD",
-    "why_it_matters": "EUR is only +0.112% vs majors and EUR/USD range was 18.3 pips with a 10.6-pip gain, so a dovish line can erase it.",
-    "watch": "EUR/USD 1.14867, EUR/CHF 0.94587"
+    "risk": "ECB Lagarde hawkish/dovish surprise",
+    "why_it_matters": "EUR is modestly positive but lacks a clear catalyst; Lagarde could shift EUR/USD.",
+    "watch": "ECB President Lagarde Speaks 12:30"
+   },
+   {
+    "risk": "Oil and EM FX reversal",
+    "why_it_matters": "USD/MXN and USD/ZAR had large down moves; any risk sentiment wobble could reverse them.",
+    "watch": "Brent/USD, SPX, VIX"
    }
   ],
-  "calendar_ahead_note": "07:30 BOJ Press Conference is the key follow-up after the inline BOJ Policy Rate; 08:00 GBP Retail Sales m/m (forecast -0.2%, previous -0.5%) can alter GBP/USD's firm close, and 12:30 ECB President Lagarde Speaks can reposition EUR strength which is only +0.112% vs majors.",
+  "calendar_ahead_note": "GBP Retail Sales at 08:00, BOJ Press Conference at 08:30 and ECB President Lagarde at 12:30 are the upcoming catalysts. BOJ press conference is the largest event after the BOJ statement and can materially confirm or reverse the overnight yen sell-off.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 11683,
-   "completion_tokens": 11103,
-   "total_tokens": 22786,
+   "completion_tokens": 9440,
+   "total_tokens": 21123,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 3328
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 8927
+    "reasoning_tokens": 6465
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 11171
+   "prompt_cache_hit_tokens": 3328,
+   "prompt_cache_miss_tokens": 8355
   }
  }
 }
