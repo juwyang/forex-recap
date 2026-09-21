@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>FX Overnight Recap 2026-09-21</title>
+<style>
+:root{
+  --bg:#fbfbfa; --panel:#fff; --fg:#1c1c1a; --dim:#6b6b66; --line:#e3e2de;
+  --flat:#eceae6; --up:#12783f; --down:#c0392b; --accent:#2b5cd9;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#131315; --panel:#1a1a1d; --fg:#e9e8e4; --dim:#96958f; --line:#2c2c30;
+  --flat:#262629; --up:#3ec27a; --down:#f0705f; --accent:#7aa2ff;
+}}
+:root[data-theme=dark]{
+  --bg:#131315; --panel:#1a1a1d; --fg:#e9e8e4; --dim:#96958f; --line:#2c2c30;
+  --flat:#262629; --up:#3ec27a; --down:#f0705f; --accent:#7aa2ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:17px;margin:44px 0 12px;letter-spacing:-.01em;
+  padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-size:14px;margin:22px 0 8px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.07em}
+p{margin:0 0 10px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.sub{color:var(--dim);font-size:13.5px;margin-bottom:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.dim{color:var(--dim)}
+.nowrap{white-space:nowrap}
+.up{color:var(--up)} .down{color:var(--down)}
+td.dir{text-align:center;font-size:11px;width:20px}
+.lede{font-size:16.5px;line-height:1.6;margin-bottom:18px}
+.empty,.warn{color:var(--dim);font-size:13.5px;background:var(--flat);
+  padding:10px 13px;border-radius:7px;border:1px solid var(--line)}
+
+/* header strip */
+.strip{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}
+.kv{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:8px 12px;min-width:96px}
+.kv .k{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em}
+.kv .v{font-family:var(--mono);font-size:15px;font-weight:600;margin-top:2px}
+
+/* market map */
+.mm-scroll{overflow-x:auto;padding-bottom:6px}
+.mm{display:flex;gap:5px;min-width:760px}
+.mm-col{flex:1 1 0;display:flex;flex-direction:column;gap:2px;min-width:96px}
+.mm-cell{height:32px;border-radius:4px;padding:0 8px;display:flex;
+  align-items:center;justify-content:space-between;font-size:11.5px}
+.mm-pair{font-weight:600;letter-spacing:-.01em}
+.mm-val{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.mm-head{height:38px;border-radius:4px;background:var(--panel);
+  border:1px solid var(--line);display:flex;align-items:center;
+  justify-content:space-between;padding:0 8px;margin:3px 0}
+.mm-head b{font-size:14px;letter-spacing:.02em}
+.mm-head span{font-family:var(--mono);font-size:11px;color:var(--dim)}
+
+/* tables */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw table{min-width:430px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-weight:600;font-size:10.5px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.07em;padding:0 9px 7px;
+  border-bottom:1px solid var(--line)}
+th.num{text-align:right}
+td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+
+/* timeline: event band + stacked lanes on one shared axis */
+.tl-scroll{overflow-x:auto;padding-bottom:4px}
+.tl{min-width:940px}
+.tl-events,.tl-axis,.tl-lane{display:block;width:100%;height:auto}
+.tl-events{margin-bottom:1px}
+.tl-axis{opacity:.85}
+.lanes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--panel);border-radius:8px;overflow:hidden;margin:2px 0}
+.lane + .lane{border-top:1px solid var(--line)}
+
+.ax-t{stroke:var(--line);stroke-width:1}
+.ax-l{font:9px var(--mono);fill:var(--dim);text-anchor:middle}
+
+.ev-stem{stroke:var(--line);stroke-width:1}
+.ev-stem.release{stroke:var(--dim);stroke-dasharray:2 2}
+.ev-lab{font:9px var(--mono);fill:var(--dim)}
+.ev-lab.release{font-weight:700;fill:var(--fg)}
+.ev-lab.imp-high{fill:var(--down)}
+.ev-lab.imp-medium{fill:#c07d10}
+.ev-dot{fill:var(--dim)}
+.ev-dot.release{fill:var(--accent)}
+.ev-dot.imp-high{fill:var(--down)}
+.ev-dot.imp-medium{fill:#c07d10}
+
+.ln-guide{stroke:var(--down);stroke-width:.8;stroke-dasharray:2 3;opacity:.35}
+.ln-base{stroke:var(--line);stroke-width:1}
+.ln-price{fill:none;stroke:var(--dim);stroke-width:.9;opacity:.4}
+.ln-leg{stroke-width:1.9;stroke-linecap:round}
+.ln-leg.up{stroke:var(--up)} .ln-leg.down{stroke:var(--down)}
+.ln-lab{font:600 8.5px var(--mono);text-anchor:middle}
+.ln-lab.up{fill:var(--up)} .ln-lab.down{fill:var(--down)}
+.ln-name{font:600 11px ui-sans-serif,system-ui,sans-serif;fill:var(--fg)}
+.ln-chg{font:9px var(--mono)}
+.ln-chg.up{fill:var(--up)} .ln-chg.down{fill:var(--down)}
+
+/* badges */
+.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-right:6px;
+  vertical-align:1px}
+.pol-normal{background:rgba(18,120,63,.15);color:var(--up)}
+.pol-inverted{background:rgba(192,57,43,.16);color:var(--down)}
+.pol-muted{background:var(--flat);color:var(--dim)}
+.imp{display:inline-block;font-size:9.5px;font-weight:700;padding:2px 5px;
+  border-radius:3px;text-transform:uppercase;letter-spacing:.04em}
+.imp-high{background:rgba(192,57,43,.16);color:var(--down)}
+.imp-medium{background:rgba(214,138,26,.18);color:#c07d10}
+.imp-low{background:var(--flat);color:var(--dim)}
+.chip{display:inline-block;background:var(--flat);color:var(--dim);font-size:10px;
+  font-weight:700;padding:1px 5px;border-radius:3px;margin-left:5px}
+
+/* reactions */
+.react{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;margin-bottom:11px}
+.react-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.react-head .t{color:var(--dim);font-size:13px}
+.react-head .ccy{font-weight:700;font-size:13px}
+.react-head .rtitle{flex:1 1 240px;font-weight:600}
+.members{color:var(--dim);font-size:12px;margin-top:4px}
+.react-nums{font-family:var(--mono);font-size:12.5px;color:var(--dim);margin-top:7px}
+.react-note{font-size:13.5px;margin-top:5px}
+.mv-head{font-size:10.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.06em;margin:11px 0 5px}
+.movers{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.movers li{display:flex;gap:7px;align-items:baseline;background:var(--flat);
+  border-radius:6px;padding:4px 9px;font-size:12.5px}
+.mv-name{font-weight:600}
+.mv-sig{font-family:var(--mono);font-weight:700}
+.mv-pips{font-family:var(--mono);color:var(--dim);font-size:11.5px}
+
+/* analysis */
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:11px}
+.theme{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.theme-h{font-weight:650;margin-bottom:5px}
+.theme-b{font-size:13.5px;color:var(--dim)}
+.reads{margin:0;padding-left:19px} .reads li{margin-bottom:7px;font-size:13.5px}
+.scenarios{display:flex;flex-direction:column;gap:13px}
+.scen{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 17px}
+.scen-h{display:flex;align-items:baseline;gap:10px;margin-bottom:7px}
+.scen-p{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--accent)}
+.scen-h b{font-size:15.5px}
+.trig{margin:6px 0;padding-left:19px;font-size:13px;color:var(--dim)}
+.scen-inval{font-size:13px;color:var(--dim);margin:8px 0 4px}
+.paths{margin-top:9px}
+.risks{list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:11px}
+.risks li{background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--down);border-radius:9px;padding:12px 14px;font-size:13.5px}
+.risks li div{color:var(--dim);margin-top:4px}
+.watch{font-size:12.5px;font-family:var(--mono)}
+.heads{list-style:none;margin:0;padding:0}
+.heads li{display:flex;gap:9px;align-items:baseline;padding:6px 0;
+  border-bottom:1px solid var(--line);font-size:13.5px}
+.heads .t{color:var(--dim);font-size:12.5px}
+footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);
+  color:var(--dim);font-size:12.5px}
+@media(max-width:640px){.wrap{padding:20px 13px 60px}h1{font-size:21px}}
+</style></head><body>
+<div class="wrap">
+<h1>FX Overnight Recap &mdash; 2026-09-21</h1>
+<div class="sub">Fri 18 Sep 07:00 &rarr; Mon 21 Sep 07:00 CEST &middot; Friday close -&gt; weekend -&gt; Asia reopen</div>
+<div class="strip"><div class="kv"><div class="k">window</div><div class="v ">72h</div></div><div class="kv"><div class="k">strongest</div><div class="v ">JPY +0.12%</div></div><div class="kv"><div class="k">weakest</div><div class="v ">CAD -0.15%</div></div><div class="kv"><div class="k">releases</div><div class="v ">14 timed</div></div><div class="kv"><div class="k">headlines</div><div class="v ">29</div></div><div class="kv"><div class="k">instruments</div><div class="v ">36</div></div></div>
+
+<h2>Where the money went</h2>
+<p class="lede">The window from Friday 07:00 through Monday 07:00 was quiet for the USD but not for cross-currents: JPY led major strength at +0.116%, followed by GBP +0.108% and CHF +0.078%, while CAD lagged at -0.152%, NZD -0.094%, and EUR -0.09%. DXY closed +4.3 points, SPX +24.8 points, and VIX -9.4 points near the lows, but most FX legs had no clear catalyst. BOJ Ueda headlines and a normal UK retail-sales beat were the main measurable impulses; EUR/USD closed -11.9 pips and USD/JPY -11.5 pips.</p>
+<div class="themes">
+<div class="theme"><div class="theme-h">BOJ hawkish repricing<span class="chip">JPY</span><span class="chip">CHF</span></div><div class="theme-b">JPY mean strength +0.116%; BOJ Press Conference own-impulse +0.204% unscored; USD/JPY -11.5 pips and CHF/JPY -8.0 pips with Ueda headlines credited inside legs.</div></div>
+<div class="theme"><div class="theme-h">Commodity and rate-sensitive FX soft<span class="chip">CAD</span><span class="chip">NZD</span><span class="chip">EUR</span><span class="chip">SEK</span><span class="chip">MXN</span></div><div class="theme-b">CAD weakest at -0.152%, NZD -0.094%, EUR -0.09%; USD/CAD +22.2 pips to 1.40047; USD/SEK +282.7 pips and USD/MXN +750.9 pips.</div></div>
+<div class="theme"><div class="theme-h">Sparse event reaction and flow-driven tape<span class="chip">EUR</span><span class="chip">GBP</span></div><div class="theme-b">Most legs carry no clear catalyst; ECB Lagarde reaction muted at -0.038% inside noise floor, while UK Retail Sales was normal polarity with GBP stronger 0.042%.</div></div>
+</div>
+<h3>What the reactions imply</h3><ul class="reads">
+<li><b>BOJ Press Conference</b> &mdash; Unscored because no forecast, but JPY strengthened 0.204% on its own impulse, suggesting the market treated Ueda&#x27;s guidance as hawkish for JPY and is sensitive to BOJ carry-unwind communication.</li>
+<li><b>ECB President Lagarde Speaks</b> &mdash; Muted; the EUR basket moved only -0.038% inside the noise floor, implying no fresh hawkish impulse and no positioning squeeze around Lagarde.</li>
+<li><b>Retail Sales m/m</b> &mdash; Normal polarity; actual 0.5% versus -0.2% forecast produced GBP stronger 0.042%, confirming GBP data surprises are still traded conventionally rather than inverted.</li>
+</ul>
+
+<h2>Currency market map</h2>
+<p class="sub">Every major against every other over the window. Columns ordered
+strongest to weakest by mean move against the other seven. Reciprocal cells are
+exact inverses, so USD/AUD is not simply the negative of AUD/USD.</p>
+<div class="mm-scroll"><div class="mm">
+<div class="mm-col">
+<div class="mm-pad" style="height:0px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 37%);color:#fff"><span class="mm-pair">JPY/CAD</span><span class="mm-val">+0.24%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 38%);color:#fff"><span class="mm-pair">JPY/NZD</span><span class="mm-val">+0.18%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">JPY/EUR</span><span class="mm-val">+0.18%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">JPY/AUD</span><span class="mm-val">+0.09%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">JPY/USD</span><span class="mm-val">+0.07%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 43%);color:#fff"><span class="mm-pair">JPY/CHF</span><span class="mm-val">+0.04%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">JPY/GBP</span><span class="mm-val">+0.00%</span></div>
+<div class="mm-head"><b>JPY</b><span>+0.12%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:34px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 37%);color:#fff"><span class="mm-pair">GBP/CAD</span><span class="mm-val">+0.23%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">GBP/NZD</span><span class="mm-val">+0.17%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">GBP/EUR</span><span class="mm-val">+0.17%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">GBP/AUD</span><span class="mm-val">+0.09%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">GBP/USD</span><span class="mm-val">+0.07%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">GBP/CHF</span><span class="mm-val">+0.03%</span></div>
+<div class="mm-head"><b>GBP</b><span>+0.11%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">GBP/JPY</span><span class="mm-val">-0.00%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:68px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 38%);color:#fff"><span class="mm-pair">CHF/CAD</span><span class="mm-val">+0.20%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">CHF/NZD</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">CHF/EUR</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">CHF/AUD</span><span class="mm-val">+0.07%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 43%);color:#fff"><span class="mm-pair">CHF/USD</span><span class="mm-val">+0.04%</span></div>
+<div class="mm-head"><b>CHF</b><span>+0.08%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">CHF/GBP</span><span class="mm-val">-0.03%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 43%);color:#fff"><span class="mm-pair">CHF/JPY</span><span class="mm-val">-0.04%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:102px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">USD/CAD</span><span class="mm-val">+0.16%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">USD/NZD</span><span class="mm-val">+0.11%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">USD/EUR</span><span class="mm-val">+0.10%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">USD/AUD</span><span class="mm-val">+0.02%</span></div>
+<div class="mm-head"><b>USD</b><span>+0.03%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 43%);color:#fff"><span class="mm-pair">USD/CHF</span><span class="mm-val">-0.04%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">USD/GBP</span><span class="mm-val">-0.07%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">USD/JPY</span><span class="mm-val">-0.07%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:136px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">AUD/CAD</span><span class="mm-val">+0.14%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">AUD/NZD</span><span class="mm-val">+0.09%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">AUD/EUR</span><span class="mm-val">+0.08%</span></div>
+<div class="mm-head"><b>AUD</b><span>+0.01%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">AUD/USD</span><span class="mm-val">-0.02%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">AUD/CHF</span><span class="mm-val">-0.07%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">AUD/GBP</span><span class="mm-val">-0.09%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">AUD/JPY</span><span class="mm-val">-0.09%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:170px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">EUR/CAD</span><span class="mm-val">+0.05%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">EUR/NZD</span><span class="mm-val">+0.00%</span></div>
+<div class="mm-head"><b>EUR</b><span>-0.09%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">EUR/AUD</span><span class="mm-val">-0.08%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">EUR/USD</span><span class="mm-val">-0.10%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">EUR/CHF</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">EUR/GBP</span><span class="mm-val">-0.17%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">EUR/JPY</span><span class="mm-val">-0.18%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:204px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 43%);color:#fff"><span class="mm-pair">NZD/CAD</span><span class="mm-val">+0.05%</span></div>
+<div class="mm-head"><b>NZD</b><span>-0.09%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">NZD/EUR</span><span class="mm-val">-0.00%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">NZD/AUD</span><span class="mm-val">-0.09%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">NZD/USD</span><span class="mm-val">-0.11%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">NZD/CHF</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">NZD/GBP</span><span class="mm-val">-0.17%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 38%);color:#fff"><span class="mm-pair">NZD/JPY</span><span class="mm-val">-0.18%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:238px"></div>
+<div class="mm-head"><b>CAD</b><span>-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 43%);color:#fff"><span class="mm-pair">CAD/NZD</span><span class="mm-val">-0.05%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">CAD/EUR</span><span class="mm-val">-0.05%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">CAD/AUD</span><span class="mm-val">-0.14%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">CAD/USD</span><span class="mm-val">-0.16%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 38%);color:#fff"><span class="mm-pair">CAD/CHF</span><span class="mm-val">-0.20%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 37%);color:#fff"><span class="mm-pair">CAD/GBP</span><span class="mm-val">-0.23%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 37%);color:#fff"><span class="mm-pair">CAD/JPY</span><span class="mm-val">-0.24%</span></div>
+</div>
+</div></div>
+
+<h2>Beyond the majors</h2>
+<div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
+<th class="num">change</th><th class="num">%</th><th class="num">range</th>
+<th class="num">close in range</th></tr></thead><tbody><tr><td class="nowrap">USD/SEK</td><td class="num mono">9.83382</td><td class="num up">+282.7</td><td class="num up">+0.29%</td><td class="num dim">1904.4</td><td class="num dim">80%</td></tr><tr><td class="nowrap">USD/NOK</td><td class="num mono">9.42044</td><td class="num up">+106.8</td><td class="num up">+0.11%</td><td class="num dim">1133.6</td><td class="num dim">80%</td></tr><tr><td class="nowrap">USD/ZAR</td><td class="num mono">16.227</td><td class="num down">-26.7</td><td class="num down">-0.02%</td><td class="num dim">959.3</td><td class="num dim">11%</td></tr><tr><td class="nowrap">USD/MXN</td><td class="num mono">17.214</td><td class="num up">+750.9</td><td class="num up">+0.44%</td><td class="num dim">1249.4</td><td class="num dim">61%</td></tr><tr><td class="nowrap">Brent/USD</td><td class="num mono">104.12</td><td class="num down">-110.4</td><td class="num down">-1.05%</td><td class="num dim">377.7</td><td class="num dim">35%</td></tr></tbody></table></div>
+
+<h3>Risk context</h3>
+<div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
+<th class="num">change</th><th class="num">%</th><th class="num">range</th>
+<th class="num">close in range</th></tr></thead><tbody><tr><td class="nowrap">DXY/USD</td><td class="num mono">100.01</td><td class="num up">+4.3</td><td class="num up">+0.04%</td><td class="num dim">42.5</td><td class="num dim">35%</td></tr><tr><td class="nowrap">SPX/USD</td><td class="num mono">7,679.5</td><td class="num up">+24.8</td><td class="num up">+0.32%</td><td class="num dim">72.8</td><td class="num dim">97%</td></tr><tr><td class="nowrap">VIX/USD</td><td class="num mono">17.717</td><td class="num down">-9.4</td><td class="num down">-0.53%</td><td class="num dim">54.2</td><td class="num dim">5%</td></tr></tbody></table></div>
+
+<h2>Event reaction functions and polarity</h2>
+<p class="sub">Each release is measured from the last complete bar before it.
+Polarity asks whether the currency moved the way its surprise implies &mdash;
+an <b>inverted</b> read is the one worth acting on.</p>
+<div class="react"><div class="react-head"><span class="mono t">08:30</span><span class="ccy">JPY</span><span class="imp imp-high">High</span><span class="rtitle">BOJ Press Conference</span><span class="badge pol-muted">no forecast</span></div><div class="react-nums">actual <b>-</b> &middot; forecast - &middot; previous -</div><div class="react-note">JPY stronger by 0.204%, but no forecast to score the surprise against</div><div class="mv-head">strongest reactions, 5 min, normalised by each instrument’s own volatility</div><ul class="movers"><li><span class="mv-name">USD/NOK</span><span class="mv-sig up">+2.1σ</span><span class="mv-pips">+46.4</span></li><li><span class="mv-name">USD/CAD</span><span class="mv-sig up">+1.6σ</span><span class="mv-pips">+2.5</span></li><li><span class="mv-name">Brent/USD</span><span class="mv-sig down">-0.8σ</span><span class="mv-pips">-22.1</span></li><li><span class="mv-name">EUR/USD</span><span class="mv-sig down">-0.8σ</span><span class="mv-pips">-1.2</span></li><li><span class="mv-name">AUD/CHF</span><span class="mv-sig up">+0.7σ</span><span class="mv-pips">+1.0</span></li><li><span class="mv-name">NZD/CHF</span><span class="mv-sig up">+0.6σ</span><span class="mv-pips">+0.6</span></li></ul></div>
+<div class="react"><div class="react-head"><span class="mono t">12:30</span><span class="ccy">EUR</span><span class="imp imp-medium">Medium</span><span class="rtitle">ECB President Lagarde Speaks</span><span class="badge pol-muted">no reaction</span></div><div class="react-nums">actual <b>-</b> &middot; forecast - &middot; previous -</div><div class="react-note">basket moved -0.038%, inside the noise floor</div><div class="mv-head">strongest reactions, 5 min, normalised by each instrument’s own volatility</div><ul class="movers"><li><span class="mv-name">EUR/USD</span><span class="mv-sig down">-1.5σ</span><span class="mv-pips">-2.4</span></li><li><span class="mv-name">USD/NOK</span><span class="mv-sig up">+1.2σ</span><span class="mv-pips">+26.0</span></li><li><span class="mv-name">GBP/USD</span><span class="mv-sig down">-1.1σ</span><span class="mv-pips">-2.4</span></li><li><span class="mv-name">USD/ZAR</span><span class="mv-sig up">+1.0σ</span><span class="mv-pips">+43.4</span></li><li><span class="mv-name">USD/CAD</span><span class="mv-sig up">+1.0σ</span><span class="mv-pips">+1.5</span></li><li><span class="mv-name">USD/CHF</span><span class="mv-sig up">+0.8σ</span><span class="mv-pips">+1.4</span></li></ul></div>
+<div class="react"><div class="react-head"><span class="mono t">08:00</span><span class="ccy">GBP</span><span class="imp imp-medium">Medium</span><span class="rtitle">Retail Sales m/m</span><span class="badge pol-normal">textbook polarity</span></div><div class="react-nums">actual <b>0.5%</b> &middot; forecast -0.2% &middot; previous -0.5%</div><div class="react-note">beat surprise -&gt; GBP stronger 0.042%</div><div class="mv-head">strongest reactions, 5 min, normalised by each instrument’s own volatility</div><ul class="movers"><li><span class="mv-name">AUD/CHF</span><span class="mv-sig up">+1.3σ</span><span class="mv-pips">+1.8</span></li><li><span class="mv-name">EUR/GBP</span><span class="mv-sig down">-1.2σ</span><span class="mv-pips">-1.1</span></li><li><span class="mv-name">GBP/USD</span><span class="mv-sig up">+1.1σ</span><span class="mv-pips">+2.4</span></li><li><span class="mv-name">EUR/CHF</span><span class="mv-sig up">+1.1σ</span><span class="mv-pips">+1.8</span></li><li><span class="mv-name">USD/ZAR</span><span class="mv-sig up">+1.0σ</span><span class="mv-pips">+42.1</span></li><li><span class="mv-name">NZD/CHF</span><span class="mv-sig up">+0.9σ</span><span class="mv-pips">+0.9</span></li></ul></div>
+
+<h2>Timeline and price paths</h2>
+<p class="sub">Every row shares one time axis, mapped from the timestamp rather
+than the bar index, so a release lines up with what each pair did at that
+moment. Dotted guides mark high-impact events. Legs are a zigzag over
+15-minute closes with the reversal threshold auto-tuned to each instrument&rsquo;s
+own range; the number on a leg is its size in that instrument&rsquo;s pips.</p>
+<div class="tl-scroll"><div class="tl"><svg class="tl-events" viewBox="0 0 1000 224" role="img" aria-label="events in the window">
+<line class="ev-stem release" x1="104.4" y1="213.0" x2="104.4" y2="220"/>
+<text class="ev-lab release imp-medium" x="107.4" y="210.0" text-anchor="start">08:00 GBP Retail Sales m/m</text>
+<line class="ev-stem news" x1="104.4" y1="200.0" x2="104.4" y2="220"/>
+<text class="ev-lab news imp-low" x="107.4" y="197.0" text-anchor="start">08:00 Retail sales, Great Britain: August 2026</text>
+<line class="ev-stem news" x1="104.4" y1="187.0" x2="104.4" y2="220"/>
+<text class="ev-lab news imp-low" x="107.4" y="184.0" text-anchor="start">08:00 German producer prices in August 2026: …</text>
+<line class="ev-stem news" x1="107.5" y1="174.0" x2="107.5" y2="220"/>
+<text class="ev-lab news imp-low" x="110.5" y="171.0" text-anchor="start">08:15 Japan economy minister Kiuchi: It is up…</text>
+<line class="ev-stem release" x1="110.6" y1="161.0" x2="110.6" y2="220"/>
+<text class="ev-lab release imp-high" x="113.6" y="158.0" text-anchor="start">08:30 JPY BOJ Press Conference</text>
+<line class="ev-stem news" x1="110.6" y1="148.0" x2="110.6" y2="220"/>
+<text class="ev-lab news imp-high" x="113.6" y="145.0" text-anchor="start">08:30 BoJ&#x27;s Gov Ueda: To keep raising rate in…</text>
+<line class="ev-stem news" x1="113.7" y1="135.0" x2="113.7" y2="220"/>
+<text class="ev-lab news imp-low" x="116.7" y="132.0" text-anchor="start">08:45 BoJ&#x27;s Gov Ueda: Crude Oil Driven Price …</text>
+<line class="ev-stem news" x1="119.9" y1="122.0" x2="119.9" y2="220"/>
+<text class="ev-lab news imp-medium" x="122.9" y="119.0" text-anchor="start">09:15 BoJ Gov Ueda: Overseas rate hikes could…</text>
+<line class="ev-stem news" x1="119.9" y1="109.0" x2="119.9" y2="220"/>
+<text class="ev-lab news imp-low" x="122.9" y="106.0" text-anchor="start">09:15 UKMTO: Tanker Hit By Unknown Projectile…</text>
+<line class="ev-stem news" x1="123.0" y1="96.0" x2="123.0" y2="220"/>
+<text class="ev-lab news imp-low" x="126.0" y="93.0" text-anchor="start">09:30 German Fin. Min. Klingbeil: We support …</text>
+<line class="ev-stem news" x1="123.0" y1="83.0" x2="123.0" y2="220"/>
+<text class="ev-lab news imp-medium" x="126.0" y="80.0" text-anchor="start">09:30 BoJ&#x27;s Ueda Says It Will Take Time To De…</text>
+<line class="ev-stem news" x1="126.1" y1="70.0" x2="126.1" y2="220"/>
+<text class="ev-lab news imp-low" x="129.1" y="67.0" text-anchor="start">09:45 EU&#x27;s Economy Commissioner Dombrovskis: …</text>
+<line class="ev-stem news" x1="129.2" y1="57.0" x2="129.2" y2="220"/>
+<text class="ev-lab news imp-low" x="132.2" y="54.0" text-anchor="start">10:00 Euro area monthly balance of payments: …</text>
+<line class="ev-stem news" x1="129.2" y1="44.0" x2="129.2" y2="220"/>
+<text class="ev-lab news imp-low" x="132.2" y="41.0" text-anchor="start">10:00 ECB Consumer Expectations Survey result…</text>
+<line class="ev-stem release" x1="160.3" y1="31.0" x2="160.3" y2="220"/>
+<text class="ev-lab release imp-medium" x="163.3" y="28.0" text-anchor="start">12:30 EUR ECB President Lagarde Speaks</text>
+<line class="ev-stem news" x1="166.5" y1="18.0" x2="166.5" y2="220"/>
+<text class="ev-lab news imp-medium" x="169.5" y="15.0" text-anchor="start">13:00 Saudis tell Europe oil refiners they&#x27;ll…</text>
+<circle class="ev-dot release imp-medium" cx="104.4" cy="220" r="3.1"/>
+<circle class="ev-dot news imp-low" cx="104.4" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="104.4" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="107.5" cy="220" r="2.2"/>
+<circle class="ev-dot release imp-high" cx="110.6" cy="220" r="3.1"/>
+<circle class="ev-dot news imp-high" cx="110.6" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="113.7" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-medium" cx="119.9" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="119.9" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="123.0" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-medium" cx="123.0" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="126.1" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="129.2" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="129.2" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="132.4" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="135.5" cy="220" r="2.2"/>
+<circle class="ev-dot release imp-medium" cx="160.3" cy="220" r="3.1"/>
+<circle class="ev-dot news imp-low" cx="163.4" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-medium" cx="166.5" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="194.4" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="197.5" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="203.8" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="222.4" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="225.5" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="231.7" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="244.1" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="278.2" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="886.7" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="886.7" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="914.6" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="920.8" cy="220" r="2.2"/>
+<circle class="ev-dot news imp-low" cx="961.2" cy="220" r="2.2"/>
+</svg><svg class="tl-axis" viewBox="0 0 1000 20" aria-hidden="true">
+<line class="ax-t" x1="154.1" y1="0" x2="154.1" y2="4"/>
+<text class="ax-l" x="154.1" y="14">Fri 12:00</text>
+<line class="ax-t" x1="303.1" y1="0" x2="303.1" y2="4"/>
+<text class="ax-l" x="303.1" y="14">Sat 00:00</text>
+<line class="ax-t" x1="452.1" y1="0" x2="452.1" y2="4"/>
+<text class="ax-l" x="452.1" y="14">Sat 12:00</text>
+<line class="ax-t" x1="601.1" y1="0" x2="601.1" y2="4"/>
+<text class="ax-l" x="601.1" y="14">Sun 00:00</text>
+<line class="ax-t" x1="750.1" y1="0" x2="750.1" y2="4"/>
+<text class="ax-l" x="750.1" y="14">Sun 12:00</text>
+<line class="ax-t" x1="899.1" y1="0" x2="899.1" y2="4"/>
+<text class="ax-l" x="899.1" y="14">Mon 00:00</text>
+</svg><div class="lanes"><div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="EUR/USD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,11.5 95.1,14.3 98.2,14.0 101.3,17.4 104.4,14.9 107.5,13.7 110.6,13.1 113.7,12.7 116.8,17.0 119.9,17.0 123.0,11.2 126.1,10.8 129.2,7.0 132.4,13.4 135.5,16.4 138.6,13.7 141.7,15.0 144.8,14.2 147.9,10.7 151.0,12.8 154.1,12.9 157.2,13.2 160.3,23.6 163.4,22.5 166.5,24.4 169.6,31.8 172.7,38.1 175.8,35.7 178.9,36.5 182.0,39.0 185.1,32.6 188.2,28.0 191.3,31.3 194.4,29.6 197.5,32.6 200.6,37.6 203.8,32.3 206.9,34.9 210.0,32.8 213.1,34.6 216.2,31.4 219.3,29.0 222.4,31.6 225.5,32.6 228.6,27.5 231.7,24.7 234.8,22.3 237.9,22.6 241.0,13.3 244.1,12.4 247.2,14.3 250.3,15.5 253.4,13.9 256.5,14.8 259.6,15.0 262.7,13.1 265.8,10.8 268.9,8.3 272.0,9.6 275.1,9.8 278.2,8.6 281.4,8.4 284.5,10.5 287.6,10.7 886.7,14.4 889.8,17.3 892.9,16.6 896.0,17.3 899.1,12.7 902.2,14.1 905.3,14.2 908.4,15.9 911.5,15.9 914.6,15.8 917.7,17.7 920.8,17.7 923.9,16.1 927.0,14.6 930.1,12.0 933.2,15.5 936.3,13.4 939.4,11.9 942.5,11.1 945.6,13.1 948.8,14.6 951.9,14.5 955.0,15.3 958.1,19.2 961.2,20.2 964.3,20.5 967.4,20.1 970.5,21.1 973.6,20.0 976.7,21.1 979.8,20.2 982.9,21.4"/>
+<line class="ln-leg down" x1="92.0" y1="11.5" x2="101.3" y2="17.4"/>
+<text class="ln-lab down" x="96.7" y="24.5">-6</text>
+<line class="ln-leg up" x1="101.3" y1="17.4" x2="129.2" y2="7.0"/>
+<text class="ln-lab up" x="115.3" y="8.2">+10</text>
+<line class="ln-leg down" x1="129.2" y1="7.0" x2="182.0" y2="39.0"/>
+<text class="ln-lab down" x="155.6" y="33.0">-32</text>
+<line class="ln-leg up" x1="182.0" y1="39.0" x2="268.9" y2="8.3"/>
+<text class="ln-lab up" x="225.5" y="19.7">+31</text>
+<line class="ln-leg down" x1="268.9" y1="8.3" x2="982.9" y2="21.4"/>
+<text class="ln-lab down" x="625.9" y="24.9">-13</text>
+<text class="ln-name" x="4" y="22">EUR/USD</text>
+<text class="ln-chg down" x="4" y="34">-12  -0.10%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/JPY path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,24.7 95.1,23.3 98.2,27.1 101.3,26.0 104.4,26.6 107.5,27.7 110.6,35.7 113.7,33.4 116.8,29.6 119.9,24.0 123.0,19.0 126.1,19.0 129.2,15.1 132.4,11.6 135.5,10.7 138.6,11.9 141.7,13.8 144.8,9.3 147.9,7.0 151.0,8.1 154.1,9.8 157.2,9.0 160.3,7.5 163.4,12.7 166.5,13.2 169.6,12.5 172.7,10.3 175.8,11.0 178.9,9.5 182.0,9.1 185.1,10.1 188.2,13.9 191.3,13.2 194.4,11.6 197.5,11.9 200.6,10.1 203.8,11.5 206.9,9.8 210.0,12.3 213.1,20.1 216.2,28.7 219.3,31.4 222.4,32.4 225.5,33.3 228.6,34.2 231.7,37.4 234.8,36.5 237.9,35.2 241.0,39.0 244.1,37.1 247.2,37.4 250.3,38.0 253.4,37.3 256.5,37.3 259.6,35.6 262.7,37.9 265.8,38.4 268.9,37.8 272.0,36.2 275.1,36.7 278.2,36.1 281.4,35.9 284.5,33.9 287.6,33.5 886.7,35.4 889.8,35.4 892.9,34.9 896.0,35.1 899.1,33.8 902.2,32.5 905.3,30.8 908.4,28.8 911.5,32.6 914.6,31.0 917.7,29.1 920.8,30.6 923.9,32.4 927.0,32.8 930.1,35.7 933.2,33.5 936.3,36.5 939.4,38.7 942.5,38.3 945.6,37.0 948.8,35.2 951.9,34.4 955.0,35.0 958.1,33.0 961.2,32.4 964.3,32.1 967.4,32.2 970.5,31.6 973.6,29.3 976.7,30.4 979.8,30.7 982.9,30.0"/>
+<line class="ln-leg down" x1="92.0" y1="24.7" x2="110.6" y2="35.7"/>
+<text class="ln-lab down" x="101.3" y="40.2">-47</text>
+<line class="ln-leg up" x1="110.6" y1="35.7" x2="147.9" y2="7.0"/>
+<text class="ln-lab up" x="129.2" y="17.3">+122</text>
+<line class="ln-leg down" x1="147.9" y1="7.0" x2="241.0" y2="39.0"/>
+<text class="ln-lab down" x="194.4" y="33.0">-137</text>
+<line class="ln-leg up" x1="241.0" y1="39.0" x2="908.4" y2="28.8"/>
+<text class="ln-lab up" x="574.7" y="29.9">+44</text>
+<line class="ln-leg down" x1="908.4" y1="28.8" x2="939.4" y2="38.7"/>
+<text class="ln-lab down" x="923.9" y="43.8">-42</text>
+<line class="ln-leg up" x1="939.4" y1="38.7" x2="982.9" y2="30.0"/>
+<text class="ln-lab up" x="961.2" y="30.3">+37</text>
+<text class="ln-name" x="4" y="22">USD/JPY</text>
+<text class="ln-chg down" x="4" y="34">-12  -0.07%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="GBP/USD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,22.6 95.1,24.5 98.2,25.1 101.3,25.8 104.4,22.5 107.5,19.9 110.6,20.0 113.7,21.1 116.8,22.4 119.9,22.9 123.0,21.8 126.1,22.7 129.2,20.6 132.4,20.9 135.5,22.7 138.6,20.9 141.7,22.4 144.8,23.4 147.9,22.8 151.0,20.9 154.1,21.5 157.2,23.3 160.3,29.3 163.4,27.8 166.5,26.3 169.6,30.5 172.7,34.3 175.8,33.3 178.9,35.1 182.0,39.0 185.1,35.8 188.2,32.5 191.3,35.7 194.4,32.4 197.5,33.5 200.6,37.3 203.8,32.2 206.9,32.6 210.0,28.8 213.1,26.3 216.2,23.9 219.3,18.8 222.4,21.3 225.5,21.0 228.6,18.1 231.7,16.4 234.8,14.3 237.9,14.7 241.0,9.1 244.1,9.7 247.2,9.1 250.3,11.0 253.4,10.4 256.5,10.8 259.6,12.0 262.7,10.5 265.8,8.1 268.9,8.1 272.0,8.3 275.1,8.5 278.2,7.7 281.4,7.0 284.5,8.0 287.6,9.0 886.7,13.5 889.8,13.3 892.9,13.6 896.0,13.4 899.1,9.2 902.2,9.6 905.3,10.1 908.4,11.0 911.5,10.9 914.6,10.1 917.7,11.1 920.8,11.1 923.9,10.7 927.0,10.2 930.1,10.2 933.2,11.8 936.3,10.3 939.4,10.1 942.5,9.2 945.6,11.1 948.8,12.2 951.9,12.8 955.0,12.9 958.1,14.5 961.2,13.5 964.3,14.6 967.4,14.6 970.5,14.8 973.6,14.4 976.7,17.5 979.8,16.7 982.9,17.0"/>
+<line class="ln-leg down" x1="92.0" y1="22.6" x2="182.0" y2="39.0"/>
+<text class="ln-lab down" x="137.0" y="40.8">-31</text>
+<line class="ln-leg up" x1="182.0" y1="39.0" x2="281.4" y2="7.0"/>
+<text class="ln-lab up" x="231.7" y="19.0">+60</text>
+<line class="ln-leg down" x1="281.4" y1="7.0" x2="982.9" y2="17.0"/>
+<text class="ln-lab down" x="632.1" y="22.0">-19</text>
+<text class="ln-name" x="4" y="22">GBP/USD</text>
+<text class="ln-chg up" x="4" y="34">+9  +0.07%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/CHF path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,23.0 95.1,19.8 98.2,21.6 101.3,18.7 104.4,18.1 107.5,17.9 110.6,18.2 113.7,16.3 116.8,14.8 119.9,13.9 123.0,15.4 126.1,12.9 129.2,18.8 132.4,18.1 135.5,14.7 138.6,16.7 141.7,14.6 144.8,12.8 147.9,14.1 151.0,16.5 154.1,14.2 157.2,14.5 160.3,9.9 163.4,13.2 166.5,14.2 169.6,10.0 172.7,10.1 175.8,9.5 178.9,7.0 182.0,8.2 185.1,10.6 188.2,14.6 191.3,15.3 194.4,14.7 197.5,14.9 200.6,12.5 203.8,14.4 206.9,13.4 210.0,16.5 213.1,20.6 216.2,22.7 219.3,26.2 222.4,19.9 225.5,19.7 228.6,23.4 231.7,27.3 234.8,29.7 237.9,30.6 241.0,37.2 244.1,36.5 247.2,35.6 250.3,35.7 253.4,37.1 256.5,36.0 259.6,35.7 262.7,35.8 265.8,36.6 268.9,37.1 272.0,36.9 275.1,37.2 278.2,39.0 281.4,38.3 284.5,36.8 287.6,36.7 886.7,37.6 889.8,38.1 892.9,37.0 896.0,35.8 899.1,37.7 902.2,35.9 905.3,35.3 908.4,34.6 911.5,34.3 914.6,33.9 917.7,32.2 920.8,32.1 923.9,32.1 927.0,33.2 930.1,34.9 933.2,32.8 936.3,34.6 939.4,34.4 942.5,34.9 945.6,33.4 948.8,32.0 951.9,31.8 955.0,31.2 958.1,29.0 961.2,28.5 964.3,29.7 967.4,29.3 970.5,29.0 973.6,29.0 976.7,28.6 979.8,28.9 982.9,27.9"/>
+<line class="ln-leg up" x1="92.0" y1="23.0" x2="178.9" y2="7.0"/>
+<text class="ln-lab up" x="135.5" y="11.0">+21</text>
+<line class="ln-leg down" x1="178.9" y1="7.0" x2="278.2" y2="39.0"/>
+<text class="ln-lab down" x="228.6" y="33.0">-41</text>
+<line class="ln-leg up" x1="278.2" y1="39.0" x2="982.9" y2="27.9"/>
+<text class="ln-lab up" x="630.6" y="29.5">+14</text>
+<text class="ln-name" x="4" y="22">USD/CHF</text>
+<text class="ln-chg down" x="4" y="34">-4  -0.04%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="AUD/USD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,9.7 95.1,14.5 98.2,15.2 101.3,16.3 104.4,14.2 107.5,15.9 110.6,11.0 113.7,9.2 116.8,14.7 119.9,14.2 123.0,16.2 126.1,15.5 129.2,11.2 132.4,11.2 135.5,14.9 138.6,11.9 141.7,15.0 144.8,14.2 147.9,12.3 151.0,13.7 154.1,13.6 157.2,11.9 160.3,17.0 163.4,11.6 166.5,10.9 169.6,11.9 172.7,18.2 175.8,17.2 178.9,26.7 182.0,29.4 185.1,27.5 188.2,26.5 191.3,27.5 194.4,26.8 197.5,30.0 200.6,35.3 203.8,31.7 206.9,33.5 210.0,34.8 213.1,37.7 216.2,39.0 219.3,37.1 222.4,37.4 225.5,34.7 228.6,32.4 231.7,26.7 234.8,21.2 237.9,18.2 241.0,12.7 244.1,15.0 247.2,14.9 250.3,14.9 253.4,13.2 256.5,12.7 259.6,13.7 262.7,12.5 265.8,11.3 268.9,12.5 272.0,13.2 275.1,12.2 278.2,10.9 281.4,12.2 284.5,12.3 287.6,14.7 886.7,36.6 889.8,27.2 892.9,20.1 896.0,19.5 899.1,14.7 902.2,14.6 905.3,15.5 908.4,16.2 911.5,17.5 914.6,17.6 917.7,18.5 920.8,18.8 923.9,14.5 927.0,10.3 930.1,7.7 933.2,12.2 936.3,13.7 939.4,14.7 942.5,12.5 945.6,15.3 948.8,17.0 951.9,16.0 955.0,16.6 958.1,18.2 961.2,16.2 964.3,14.2 967.4,13.7 970.5,12.0 973.6,7.0 976.7,9.3 979.8,11.0 982.9,10.6"/>
+<line class="ln-leg down" x1="92.0" y1="9.7" x2="216.2" y2="39.0"/>
+<text class="ln-lab down" x="154.1" y="34.4">-20</text>
+<line class="ln-leg up" x1="216.2" y1="39.0" x2="278.2" y2="10.9"/>
+<text class="ln-lab up" x="247.2" y="20.9">+20</text>
+<line class="ln-leg down" x1="278.2" y1="10.9" x2="886.7" y2="36.6"/>
+<text class="ln-lab down" x="582.5" y="33.7">-18</text>
+<line class="ln-leg up" x1="886.7" y1="36.6" x2="930.1" y2="7.7"/>
+<text class="ln-lab up" x="908.4" y="18.1">+20</text>
+<line class="ln-leg down" x1="930.1" y1="7.7" x2="958.1" y2="18.2"/>
+<text class="ln-lab down" x="944.1" y="23.0">-7</text>
+<line class="ln-leg up" x1="958.1" y1="18.2" x2="982.9" y2="10.6"/>
+<text class="ln-lab up" x="970.5" y="10.4">+5</text>
+<text class="ln-name" x="4" y="22">AUD/USD</text>
+<text class="ln-chg down" x="4" y="34">-2  -0.02%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/CAD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,37.0 95.1,34.0 98.2,32.1 101.3,28.6 104.4,26.6 107.5,25.5 110.6,24.6 113.7,25.2 116.8,20.3 119.9,18.9 123.0,22.3 126.1,22.4 129.2,25.4 132.4,25.5 135.5,21.1 138.6,20.9 141.7,16.6 144.8,18.6 147.9,23.1 151.0,23.7 154.1,22.6 157.2,21.1 160.3,16.1 163.4,16.2 166.5,16.1 169.6,14.7 172.7,7.0 175.8,10.8 178.9,8.6 182.0,11.0 185.1,12.1 188.2,15.8 191.3,20.8 194.4,19.9 197.5,16.9 200.6,12.8 203.8,16.6 206.9,15.7 210.0,12.0 213.1,13.5 216.2,10.7 219.3,13.0 222.4,11.8 225.5,12.7 228.6,14.3 231.7,16.5 234.8,19.5 237.9,20.6 241.0,25.4 244.1,24.4 247.2,26.6 250.3,26.7 253.4,26.5 256.5,25.8 259.6,25.7 262.7,28.8 265.8,31.6 268.9,32.4 272.0,29.8 275.1,29.5 278.2,32.8 281.4,31.9 284.5,34.7 287.6,37.9 886.7,39.0 889.8,38.5 892.9,36.8 896.0,37.6 899.1,36.1 902.2,33.8 905.3,32.6 908.4,31.0 911.5,29.2 914.6,27.7 917.7,26.8 920.8,26.7 923.9,29.5 927.0,28.6 930.1,29.2 933.2,25.3 936.3,25.4 939.4,25.2 942.5,25.8 945.6,23.3 948.8,21.5 951.9,20.9 955.0,21.3 958.1,18.6 961.2,18.0 964.3,18.5 967.4,17.6 970.5,18.3 973.6,19.7 976.7,17.0 979.8,16.0 982.9,16.4"/>
+<line class="ln-leg up" x1="92.0" y1="37.0" x2="172.7" y2="7.0"/>
+<text class="ln-lab up" x="132.4" y="18.0">+30</text>
+<line class="ln-leg down" x1="172.7" y1="7.0" x2="191.3" y2="20.8"/>
+<text class="ln-lab down" x="182.0" y="23.9">-14</text>
+<line class="ln-leg up" x1="191.3" y1="20.8" x2="216.2" y2="10.7"/>
+<text class="ln-lab up" x="203.8" y="11.7">+10</text>
+<line class="ln-leg down" x1="216.2" y1="10.7" x2="886.7" y2="39.0"/>
+<text class="ln-lab down" x="551.4" y="34.8">-28</text>
+<line class="ln-leg up" x1="886.7" y1="39.0" x2="982.9" y2="16.4"/>
+<text class="ln-lab up" x="934.8" y="23.7">+23</text>
+<text class="ln-name" x="4" y="22">USD/CAD</text>
+<text class="ln-chg up" x="4" y="34">+22  +0.16%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="NZD/USD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,7.0 95.1,8.3 98.2,9.4 101.3,10.2 104.4,11.7 107.5,12.2 110.6,8.8 113.7,11.1 116.8,23.9 119.9,20.2 123.0,21.8 126.1,21.3 129.2,14.8 132.4,19.7 135.5,21.5 138.6,18.2 141.7,20.5 144.8,24.1 147.9,23.1 151.0,25.4 154.1,25.7 157.2,24.2 160.3,31.7 163.4,24.1 166.5,25.2 169.6,32.7 172.7,38.4 175.8,33.3 178.9,39.0 182.0,37.7 185.1,36.1 188.2,33.5 191.3,35.3 194.4,34.6 197.5,37.7 200.6,39.0 203.8,34.0 206.9,34.5 210.0,33.5 213.1,33.5 216.2,38.4 219.3,35.9 222.4,38.0 225.5,35.8 228.6,31.4 231.7,26.8 234.8,23.2 237.9,21.0 241.0,12.5 244.1,11.7 247.2,12.7 250.3,14.1 253.4,13.0 256.5,13.2 259.6,13.7 262.7,14.1 265.8,12.2 268.9,12.5 272.0,12.5 275.1,11.7 278.2,10.7 281.4,11.4 284.5,12.7 287.6,14.6 886.7,25.8 889.8,25.4 892.9,17.1 896.0,24.7 899.1,10.4 902.2,11.2 905.3,13.3 908.4,15.9 911.5,16.9 914.6,17.4 917.7,18.7 920.8,17.7 923.9,14.8 927.0,17.6 930.1,16.3 933.2,21.9 936.3,23.4 939.4,20.2 942.5,17.1 945.6,20.3 948.8,21.3 951.9,17.6 955.0,19.2 958.1,23.7 961.2,15.4 964.3,9.8 967.4,11.4 970.5,9.9 973.6,9.9 976.7,12.2 979.8,13.7 982.9,13.5"/>
+<line class="ln-leg down" x1="92.0" y1="7.0" x2="116.8" y2="23.9"/>
+<text class="ln-lab down" x="104.4" y="25.4">-10</text>
+<line class="ln-leg up" x1="116.8" y1="23.9" x2="129.2" y2="14.8"/>
+<text class="ln-lab up" x="123.0" y="15.3">+6</text>
+<line class="ln-leg down" x1="129.2" y1="14.8" x2="178.9" y2="39.0"/>
+<text class="ln-lab down" x="154.1" y="36.9">-15</text>
+<line class="ln-leg up" x1="178.9" y1="39.0" x2="278.2" y2="10.7"/>
+<text class="ln-lab up" x="228.6" y="20.9">+17</text>
+<line class="ln-leg down" x1="278.2" y1="10.7" x2="886.7" y2="25.8"/>
+<text class="ln-lab down" x="582.5" y="28.3">-9</text>
+<line class="ln-leg up" x1="886.7" y1="25.8" x2="899.1" y2="10.4"/>
+<text class="ln-lab up" x="892.9" y="14.1">+10</text>
+<line class="ln-leg down" x1="899.1" y1="10.4" x2="958.1" y2="23.7"/>
+<text class="ln-lab down" x="928.6" y="27.1">-8</text>
+<line class="ln-leg up" x1="958.1" y1="23.7" x2="982.9" y2="13.5"/>
+<text class="ln-lab up" x="970.5" y="14.6">+6</text>
+<text class="ln-name" x="4" y="22">NZD/USD</text>
+<text class="ln-chg down" x="4" y="34">-6  -0.11%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="EUR/CHF path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,19.3 95.1,17.3 98.2,19.5 101.3,18.1 104.4,15.8 107.5,14.8 110.6,14.6 113.7,12.1 116.8,13.3 119.9,12.3 123.0,10.3 126.1,7.0 129.2,11.5 132.4,14.7 135.5,12.9 138.6,13.2 141.7,11.8 144.8,9.1 147.9,8.4 151.0,12.5 154.1,9.9 157.2,10.3 160.3,11.8 163.4,15.0 166.5,17.3 169.6,17.3 172.7,21.3 175.8,19.3 178.9,16.8 182.0,19.8 185.1,18.6 188.2,20.1 191.3,23.2 194.4,21.4 197.5,23.6 200.6,24.0 203.8,22.8 206.9,23.2 210.0,25.5 213.1,31.5 216.2,31.8 219.3,34.4 222.4,28.8 225.5,29.0 228.6,30.2 231.7,33.0 234.8,34.1 237.9,35.4 241.0,37.1 244.1,35.7 247.2,35.9 250.3,36.8 253.4,37.4 256.5,36.9 259.6,36.5 262.7,35.2 265.8,34.8 268.9,33.8 272.0,34.4 275.1,35.0 278.2,36.1 281.4,35.2 284.5,34.9 287.6,34.7 886.7,36.4 889.8,39.0 892.9,37.6 896.0,36.8 899.1,37.4 902.2,36.1 905.3,35.5 908.4,35.7 911.5,35.3 914.6,34.6 917.7,34.1 920.8,34.0 923.9,33.0 927.0,33.3 930.1,33.7 933.2,33.5 936.3,34.0 939.4,33.0 942.5,33.0 945.6,32.5 948.8,31.9 951.9,31.4 955.0,31.4 958.1,31.4 961.2,31.4 964.3,33.0 967.4,32.4 970.5,32.6 973.6,32.0 976.7,32.2 979.8,32.0 982.9,31.6"/>
+<line class="ln-leg up" x1="92.0" y1="19.3" x2="126.1" y2="7.0"/>
+<text class="ln-lab up" x="109.1" y="9.1">+15</text>
+<line class="ln-leg down" x1="126.1" y1="7.0" x2="982.9" y2="31.6"/>
+<text class="ln-lab down" x="554.5" y="29.3">-31</text>
+<text class="ln-name" x="4" y="22">EUR/CHF</text>
+<text class="ln-chg down" x="4" y="34">-14  -0.15%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="CHF/JPY path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,22.5 95.1,23.1 98.2,26.3 101.3,27.1 104.4,28.1 107.5,29.7 110.6,39.0 113.7,37.6 116.8,34.0 119.9,27.9 123.0,20.8 126.1,22.5 129.2,13.9 132.4,10.1 135.5,11.4 138.6,11.4 141.7,15.2 144.8,11.0 147.9,7.3 151.0,7.0 154.1,10.6 157.2,9.4 160.3,10.8 163.4,14.7 166.5,14.8 169.6,16.7 172.7,14.1 175.8,15.4 178.9,15.2 182.0,13.8 185.1,13.5 188.2,15.3 191.3,14.0 194.4,12.4 197.5,12.7 200.6,12.1 203.8,12.5 206.9,11.2 210.0,12.0 213.1,18.6 216.2,27.6 219.3,28.3 222.4,33.9 225.5,35.1 228.6,33.7 231.7,34.8 234.8,32.0 237.9,29.9 241.0,29.9 244.1,28.1 247.2,29.1 250.3,29.7 253.4,27.9 256.5,28.7 259.6,26.8 262.7,29.5 265.8,29.6 268.9,28.5 272.0,26.7 275.1,27.2 278.2,25.2 281.4,25.4 284.5,24.3 287.6,24.5 886.7,33.9 889.8,32.5 892.9,32.0 896.0,34.3 899.1,24.1 902.2,23.5 905.3,22.0 908.4,20.1 911.5,24.9 914.6,23.2 917.7,22.1 920.8,24.1 923.9,26.1 927.0,25.7 930.1,28.2 933.2,26.9 936.3,29.3 939.4,32.1 942.5,31.2 945.6,30.7 948.8,29.5 951.9,28.8 955.0,29.7 958.1,29.0 961.2,28.6 964.3,27.4 967.4,27.7 970.5,27.2 973.6,24.4 976.7,26.0 979.8,26.3 982.9,26.0"/>
+<line class="ln-leg down" x1="92.0" y1="22.5" x2="110.6" y2="39.0"/>
+<text class="ln-lab down" x="101.3" y="40.7">-71</text>
+<line class="ln-leg up" x1="110.6" y1="39.0" x2="151.0" y2="7.0"/>
+<text class="ln-lab up" x="130.8" y="19.0">+138</text>
+<line class="ln-leg down" x1="151.0" y1="7.0" x2="225.5" y2="35.1"/>
+<text class="ln-lab down" x="188.2" y="31.1">-121</text>
+<line class="ln-leg up" x1="225.5" y1="35.1" x2="284.5" y2="24.3"/>
+<text class="ln-lab up" x="255.0" y="25.7">+47</text>
+<line class="ln-leg down" x1="284.5" y1="24.3" x2="896.0" y2="34.3"/>
+<text class="ln-lab down" x="590.2" y="39.3">-43</text>
+<line class="ln-leg up" x1="896.0" y1="34.3" x2="908.4" y2="20.1"/>
+<text class="ln-lab up" x="902.2" y="23.2">+61</text>
+<line class="ln-leg down" x1="908.4" y1="20.1" x2="982.9" y2="26.0"/>
+<text class="ln-lab down" x="945.6" y="33.1">-25</text>
+<text class="ln-name" x="4" y="22">CHF/JPY</text>
+<text class="ln-chg down" x="4" y="34">-8  -0.04%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="AUD/NZD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,24.9 95.1,27.1 98.2,26.6 101.3,26.8 104.4,24.1 107.5,25.1 110.6,24.4 113.7,21.4 116.8,15.6 119.9,18.1 123.0,18.3 126.1,17.9 129.2,19.8 132.4,16.2 135.5,17.4 138.6,17.7 141.7,18.3 144.8,15.0 147.9,14.6 151.0,13.7 154.1,13.4 157.2,13.5 160.3,11.3 163.4,13.2 166.5,12.0 169.6,7.0 172.7,7.1 175.8,10.2 178.9,12.3 182.0,15.1 185.1,15.1 188.2,16.4 191.3,15.8 194.4,15.7 197.5,15.7 200.6,18.2 203.8,19.4 206.9,20.4 210.0,22.0 213.1,24.0 216.2,21.2 219.3,21.7 222.4,20.5 225.5,20.2 228.6,21.9 231.7,21.4 234.8,20.4 237.9,20.1 241.0,22.6 244.1,24.7 247.2,24.0 250.3,22.9 253.4,22.7 256.5,22.1 259.6,22.6 262.7,21.5 265.8,22.1 268.9,22.2 272.0,22.9 275.1,22.9 278.2,22.9 281.4,23.2 284.5,22.9 287.6,24.4 886.7,39.0 889.8,34.5 892.9,30.1 896.0,25.3 899.1,26.3 902.2,25.4 905.3,24.4 908.4,23.0 911.5,22.9 914.6,22.6 917.7,22.5 920.8,23.2 923.9,22.4 927.0,17.4 930.1,16.6 933.2,15.5 936.3,15.3 939.4,18.4 942.5,19.3 945.6,18.7 948.8,19.0 951.9,21.1 955.0,20.4 958.1,18.2 961.2,23.0 964.3,25.9 967.4,24.4 970.5,24.4 973.6,21.0 976.7,20.7 979.8,21.0 982.9,20.6"/>
+<line class="ln-leg up" x1="92.0" y1="24.9" x2="169.6" y2="7.0"/>
+<text class="ln-lab up" x="130.8" y="12.0">+32</text>
+<line class="ln-leg down" x1="169.6" y1="7.0" x2="886.7" y2="39.0"/>
+<text class="ln-lab down" x="528.1" y="33.0">-58</text>
+<line class="ln-leg up" x1="886.7" y1="39.0" x2="936.3" y2="15.3"/>
+<text class="ln-lab up" x="911.5" y="23.2">+43</text>
+<line class="ln-leg down" x1="936.3" y1="15.3" x2="982.9" y2="20.6"/>
+<text class="ln-lab down" x="959.6" y="28.0">-9</text>
+<text class="ln-name" x="4" y="22">AUD/NZD</text>
+<text class="ln-chg up" x="4" y="34">+11  +0.09%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="EUR/GBP path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,8.7 95.1,8.4 98.2,7.0 101.3,9.9 104.4,12.8 107.5,16.1 110.6,15.3 113.7,12.7 116.8,15.3 119.9,14.2 123.0,9.8 126.1,7.6 129.2,7.3 132.4,14.1 135.5,14.1 138.6,14.2 141.7,13.3 144.8,10.2 147.9,7.2 151.0,13.2 154.1,12.2 157.2,9.3 160.3,9.9 163.4,11.8 166.5,16.7 169.6,17.0 172.7,17.2 175.8,16.2 178.9,14.1 182.0,9.5 185.1,8.2 188.2,9.2 191.3,7.0 194.4,11.0 197.5,12.4 200.6,11.2 203.8,14.5 206.9,16.7 210.0,21.5 213.1,27.9 216.2,29.0 219.3,35.5 222.4,34.1 225.5,35.6 228.6,35.3 231.7,35.0 234.8,36.4 237.9,36.1 241.0,35.6 244.1,33.6 247.2,37.2 250.3,34.8 253.4,34.1 256.5,34.4 259.6,32.5 262.7,32.7 265.8,34.8 268.9,32.1 272.0,33.2 275.1,33.0 278.2,33.0 281.4,34.2 284.5,35.3 287.6,34.5 886.7,36.2 889.8,39.0 892.9,38.2 896.0,37.2 899.1,35.5 902.2,35.6 905.3,35.2 908.4,35.3 911.5,35.5 914.6,36.8 917.7,37.3 920.8,37.2 923.9,36.1 927.0,35.2 930.1,32.4 933.2,33.5 936.3,33.6 939.4,32.5 942.5,33.0 945.6,31.9 948.8,31.8 951.9,30.5 955.0,31.3 958.1,32.5 961.2,35.5 964.3,34.1 967.4,33.6 970.5,34.4 973.6,33.6 976.7,29.5 979.8,29.8 982.9,30.7"/>
+<line class="ln-leg down" x1="92.0" y1="8.7" x2="172.7" y2="17.2"/>
+<text class="ln-lab down" x="132.4" y="22.9">-5</text>
+<line class="ln-leg up" x1="172.7" y1="17.2" x2="191.3" y2="7.0"/>
+<text class="ln-lab up" x="182.0" y="8.1">+7</text>
+<line class="ln-leg down" x1="191.3" y1="7.0" x2="889.8" y2="39.0"/>
+<text class="ln-lab down" x="540.6" y="33.0">-21</text>
+<line class="ln-leg up" x1="889.8" y1="39.0" x2="982.9" y2="30.7"/>
+<text class="ln-lab up" x="936.3" y="30.8">+5</text>
+<text class="ln-name" x="4" y="22">EUR/GBP</text>
+<text class="ln-chg down" x="4" y="34">-15  -0.17%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="AUD/CHF path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,16.1 95.1,15.9 98.2,17.8 101.3,15.8 104.4,14.2 107.5,15.1 110.6,13.0 113.7,10.5 116.8,11.9 119.9,11.1 123.0,13.2 126.1,10.9 129.2,13.4 132.4,12.9 135.5,11.9 138.6,12.2 141.7,12.0 144.8,10.2 147.9,10.3 151.0,13.0 154.1,11.1 157.2,10.5 160.3,9.3 163.4,9.4 166.5,9.7 169.6,7.0 172.7,9.9 175.8,9.1 178.9,11.7 182.0,14.1 185.1,15.1 188.2,17.7 191.3,18.7 194.4,17.9 197.5,19.6 200.6,20.4 203.8,20.1 206.9,20.2 210.0,23.3 213.1,28.0 216.2,30.3 219.3,32.3 222.4,27.3 225.5,25.8 228.6,27.5 231.7,27.8 234.8,27.1 237.9,26.3 241.0,28.8 244.1,29.4 247.2,28.6 250.3,28.6 253.4,28.9 256.5,27.9 259.6,28.0 262.7,27.5 265.8,27.6 268.9,28.6 272.0,28.6 275.1,28.5 278.2,29.3 281.4,29.3 284.5,28.2 287.6,29.3 886.7,39.0 889.8,37.0 892.9,32.2 896.0,31.9 899.1,30.3 902.2,28.6 905.3,28.7 908.4,28.4 911.5,28.7 914.6,28.5 917.7,27.8 920.8,27.8 923.9,25.7 927.0,24.5 930.1,24.5 933.2,25.0 936.3,27.3 939.4,27.7 942.5,26.8 945.6,27.1 948.8,26.8 951.9,26.1 955.0,26.1 958.1,25.1 961.2,23.7 964.3,23.6 967.4,23.1 970.5,21.9 973.6,19.6 976.7,20.5 979.8,21.3 982.9,20.5"/>
+<line class="ln-leg up" x1="92.0" y1="16.1" x2="169.6" y2="7.0"/>
+<text class="ln-lab up" x="130.8" y="7.5">+10</text>
+<line class="ln-leg down" x1="169.6" y1="7.0" x2="886.7" y2="39.0"/>
+<text class="ln-lab down" x="528.1" y="33.0">-37</text>
+<line class="ln-leg up" x1="886.7" y1="39.0" x2="982.9" y2="20.5"/>
+<text class="ln-lab up" x="934.8" y="25.7">+21</text>
+<text class="ln-name" x="4" y="22">AUD/CHF</text>
+<text class="ln-chg down" x="4" y="34">-4  -0.07%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="NZD/CHF path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,10.9 95.1,8.6 98.2,11.3 101.3,8.9 104.4,9.3 107.5,9.4 110.6,7.5 113.7,7.0 116.8,14.3 119.9,11.1 123.0,13.4 126.1,10.7 129.2,12.2 132.4,14.7 135.5,12.4 138.6,12.4 141.7,11.9 144.8,12.6 147.9,13.1 151.0,17.2 154.1,15.0 157.2,14.5 160.3,14.9 163.4,13.1 166.5,14.6 169.6,15.5 172.7,19.6 175.8,15.7 178.9,17.0 182.0,17.3 185.1,18.7 188.2,20.7 191.3,22.9 194.4,21.6 197.5,23.9 200.6,22.6 203.8,21.0 206.9,20.3 210.0,22.7 213.1,26.8 216.2,32.1 219.3,34.0 222.4,29.1 225.5,27.3 228.6,28.0 231.7,29.1 234.8,28.8 237.9,28.2 241.0,28.8 244.1,27.7 247.2,27.3 250.3,28.6 253.4,29.1 256.5,28.3 259.6,28.2 262.7,28.6 265.8,28.0 268.9,29.0 272.0,28.6 275.1,28.4 278.2,29.5 281.4,29.2 284.5,28.7 287.6,29.8 886.7,35.5 889.8,39.0 892.9,32.2 896.0,36.4 899.1,28.6 902.2,26.8 905.3,27.5 908.4,28.6 911.5,29.1 914.6,28.7 917.7,28.2 920.8,27.5 923.9,25.3 927.0,28.4 930.1,29.4 933.2,31.0 936.3,33.8 939.4,31.4 942.5,29.8 945.6,30.6 948.8,29.8 951.9,26.9 955.0,27.5 958.1,28.4 961.2,22.5 964.3,19.6 967.4,20.2 970.5,18.9 973.6,19.1 976.7,20.2 979.8,21.2 982.9,20.3"/>
+<line class="ln-leg down" x1="92.0" y1="10.9" x2="889.8" y2="39.0"/>
+<text class="ln-lab down" x="490.9" y="35.0">-21</text>
+<line class="ln-leg up" x1="889.8" y1="39.0" x2="982.9" y2="20.3"/>
+<text class="ln-lab up" x="936.3" y="25.6">+14</text>
+<text class="ln-name" x="4" y="22">NZD/CHF</text>
+<text class="ln-chg down" x="4" y="34">-7  -0.15%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/SEK path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,26.0 95.1,25.2 98.2,25.5 101.3,25.3 104.4,26.3 107.5,26.6 110.6,27.9 113.7,28.6 116.8,25.5 119.9,25.4 123.0,25.9 126.1,24.7 129.2,26.8 132.4,23.5 135.5,22.3 138.6,24.1 141.7,23.2 144.8,23.5 147.9,22.8 151.0,22.5 154.1,21.3 157.2,21.5 160.3,18.5 163.4,19.1 166.5,18.2 169.6,16.6 172.7,13.9 175.8,13.8 178.9,11.5 182.0,10.4 185.1,10.8 188.2,12.1 191.3,11.3 194.4,11.9 197.5,11.2 200.6,8.8 203.8,12.2 206.9,9.7 210.0,8.9 213.1,7.5 216.2,7.0 219.3,9.3 222.4,8.7 225.5,9.2 228.6,11.0 231.7,12.4 234.8,14.6 237.9,15.1 241.0,17.2 244.1,18.6 247.2,18.2 250.3,17.9 253.4,18.4 256.5,18.1 259.6,18.7 262.7,18.6 265.8,19.5 268.9,19.9 272.0,19.0 275.1,18.7 278.2,19.2 281.4,19.4 284.5,19.3 287.6,19.8 886.7,39.0 889.8,33.6 892.9,30.0 896.0,28.0 899.1,22.5 902.2,21.1 905.3,21.0 908.4,20.4 911.5,19.5 914.6,19.1 917.7,18.3 920.8,17.3 923.9,16.9 927.0,17.4 930.1,18.8 933.2,17.7 936.3,19.0 939.4,19.7 942.5,20.5 945.6,19.5 948.8,18.3 951.9,18.2 955.0,17.7 958.1,16.3 961.2,16.3 964.3,16.7 967.4,16.8 970.5,17.0 973.6,17.5 976.7,17.5 979.8,17.7 982.9,17.8"/>
+<line class="ln-leg up" x1="92.0" y1="26.0" x2="216.2" y2="7.0"/>
+<text class="ln-lab up" x="154.1" y="12.5">+608</text>
+<line class="ln-leg down" x1="216.2" y1="7.0" x2="886.7" y2="39.0"/>
+<text class="ln-lab down" x="551.4" y="33.0">-1023</text>
+<line class="ln-leg up" x1="886.7" y1="39.0" x2="982.9" y2="17.8"/>
+<text class="ln-lab up" x="934.8" y="24.4">+678</text>
+<text class="ln-name" x="4" y="22">USD/SEK</text>
+<text class="ln-chg up" x="4" y="34">+283  +0.29%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/NOK path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,26.1 95.1,24.0 98.2,24.2 101.3,21.8 104.4,23.8 107.5,21.9 110.6,18.3 113.7,15.5 116.8,9.9 119.9,7.7 123.0,7.0 126.1,9.3 129.2,13.0 132.4,10.2 135.5,8.0 138.6,13.2 141.7,11.7 144.8,13.4 147.9,14.8 151.0,21.8 154.1,20.3 157.2,19.1 160.3,14.5 163.4,17.3 166.5,18.0 169.6,18.3 172.7,12.9 175.8,15.9 178.9,10.8 182.0,9.1 185.1,12.2 188.2,14.6 191.3,14.7 194.4,16.5 197.5,14.6 200.6,11.2 203.8,16.0 206.9,13.0 210.0,11.4 213.1,10.1 216.2,12.6 219.3,17.1 222.4,13.4 225.5,16.5 228.6,17.7 231.7,17.6 234.8,18.9 237.9,21.2 241.0,26.0 244.1,27.0 247.2,25.5 250.3,26.5 253.4,28.0 256.5,27.9 259.6,28.1 262.7,27.9 265.8,29.7 268.9,30.7 272.0,30.1 275.1,28.0 278.2,29.8 281.4,30.3 284.5,29.5 287.6,29.9 886.7,39.0 889.8,35.5 892.9,35.8 896.0,34.5 899.1,37.0 902.2,33.7 905.3,33.1 908.4,30.8 911.5,29.6 914.6,29.3 917.7,28.3 920.8,27.5 923.9,26.6 927.0,23.6 930.1,24.5 933.2,21.8 936.3,21.5 939.4,21.7 942.5,24.5 945.6,22.0 948.8,20.9 951.9,21.5 955.0,19.9 958.1,17.4 961.2,17.8 964.3,18.5 967.4,18.5 970.5,20.0 973.6,20.1 976.7,20.3 979.8,20.4 982.9,19.7"/>
+<line class="ln-leg up" x1="92.0" y1="26.1" x2="123.0" y2="7.0"/>
+<text class="ln-lab up" x="107.5" y="12.5">+286</text>
+<line class="ln-leg down" x1="123.0" y1="7.0" x2="151.0" y2="21.8"/>
+<text class="ln-lab down" x="137.0" y="24.4">-222</text>
+<line class="ln-leg up" x1="151.0" y1="21.8" x2="182.0" y2="9.1"/>
+<text class="ln-lab up" x="166.5" y="11.5">+191</text>
+<line class="ln-leg down" x1="182.0" y1="9.1" x2="886.7" y2="39.0"/>
+<text class="ln-lab down" x="534.3" y="34.1">-449</text>
+<line class="ln-leg up" x1="886.7" y1="39.0" x2="982.9" y2="19.7"/>
+<text class="ln-lab up" x="934.8" y="25.4">+290</text>
+<text class="ln-name" x="4" y="22">USD/NOK</text>
+<text class="ln-chg up" x="4" y="34">+107  +0.11%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/ZAR path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,34.6 95.1,33.7 98.2,36.1 101.3,35.9 104.4,33.6 107.5,37.2 110.6,38.4 113.7,38.5 116.8,32.4 119.9,31.1 123.0,28.5 126.1,31.7 129.2,29.4 132.4,24.0 135.5,22.6 138.6,27.3 141.7,30.9 144.8,31.2 147.9,26.2 151.0,26.4 154.1,28.6 157.2,30.2 160.3,27.3 163.4,28.7 166.5,27.5 169.6,22.8 172.7,23.6 175.8,24.4 178.9,19.8 182.0,12.8 185.1,16.0 188.2,15.5 191.3,15.0 194.4,12.2 197.5,11.4 200.6,7.3 203.8,11.0 206.9,7.0 210.0,7.7 213.1,7.3 216.2,7.1 219.3,7.0 222.4,7.8 225.5,7.2 228.6,9.4 231.7,14.4 234.8,16.8 237.9,24.7 241.0,26.5 244.1,26.1 247.2,25.3 250.3,25.2 253.4,26.9 256.5,26.3 259.6,25.9 262.7,28.8 265.8,28.0 268.9,28.3 272.0,29.0 275.1,28.1 278.2,31.6 281.4,30.3 284.5,30.4 287.6,29.1 886.7,37.1 889.8,37.2 892.9,36.5 896.0,36.9 899.1,28.8 902.2,29.0 905.3,28.8 908.4,28.9 911.5,29.2 914.6,30.0 917.7,29.4 920.8,29.3 923.9,31.9 927.0,32.1 930.1,35.9 933.2,33.4 936.3,36.6 939.4,37.6 942.5,38.5 945.6,36.3 948.8,35.3 951.9,36.1 955.0,34.9 958.1,32.4 961.2,34.7 964.3,34.7 967.4,36.0 970.5,35.9 973.6,39.0 976.7,39.0 979.8,38.8 982.9,38.1"/>
+<line class="ln-leg up" x1="92.0" y1="34.6" x2="206.9" y2="7.0"/>
+<text class="ln-lab up" x="149.4" y="16.8">+655</text>
+<line class="ln-leg down" x1="206.9" y1="7.0" x2="982.9" y2="38.1"/>
+<text class="ln-lab down" x="594.9" y="32.6">-737</text>
+<text class="ln-name" x="4" y="22">USD/ZAR</text>
+<text class="ln-chg down" x="4" y="34">-27  -0.02%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="USD/MXN path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,39.0 95.1,37.8 98.2,38.5 101.3,37.9 104.4,37.1 107.5,38.0 110.6,37.4 113.7,38.1 116.8,37.3 119.9,37.5 123.0,37.2 126.1,37.8 129.2,38.0 132.4,36.6 135.5,36.8 138.6,37.1 141.7,38.7 144.8,38.7 147.9,36.7 151.0,35.4 154.1,34.3 157.2,34.1 160.3,32.7 163.4,33.7 166.5,33.7 169.6,31.9 172.7,31.2 175.8,29.3 178.9,28.3 182.0,25.0 185.1,26.8 188.2,28.5 191.3,26.1 194.4,25.9 197.5,25.3 200.6,22.8 203.8,23.4 206.9,20.0 210.0,15.7 213.1,13.5 216.2,9.4 219.3,7.0 222.4,10.8 225.5,9.7 228.6,13.9 231.7,14.4 234.8,14.1 237.9,14.6 241.0,16.9 244.1,15.9 247.2,14.5 250.3,13.4 253.4,13.4 256.5,14.2 259.6,14.1 262.7,15.6 265.8,15.9 268.9,17.0 272.0,14.9 275.1,13.9 278.2,16.5 281.4,16.7 284.5,15.0 287.6,16.2 886.7,30.0 889.8,29.0 892.9,22.0 896.0,22.0 899.1,15.1 902.2,15.6 905.3,16.2 908.4,16.4 911.5,15.6 914.6,16.0 917.7,15.8 920.8,15.8 923.9,16.0 927.0,16.3 930.1,18.4 933.2,16.8 936.3,18.3 939.4,19.1 942.5,19.9 945.6,19.2 948.8,18.7 951.9,18.6 955.0,17.6 958.1,17.5 961.2,18.7 964.3,19.7 967.4,20.2 970.5,19.7 973.6,20.0 976.7,19.9 979.8,19.4 982.9,19.3"/>
+<line class="ln-leg up" x1="92.0" y1="39.0" x2="219.3" y2="7.0"/>
+<text class="ln-lab up" x="155.6" y="19.0">+1212</text>
+<line class="ln-leg down" x1="219.3" y1="7.0" x2="886.7" y2="30.0"/>
+<text class="ln-lab down" x="553.0" y="28.5">-872</text>
+<line class="ln-leg up" x1="886.7" y1="30.0" x2="982.9" y2="19.3"/>
+<text class="ln-lab up" x="934.8" y="20.7">+406</text>
+<text class="ln-name" x="4" y="22">USD/MXN</text>
+<text class="ln-chg up" x="4" y="34">+751  +0.44%</text>
+</svg></div>
+<div class="lane"><svg class="tl-lane" viewBox="0 0 1000 46" role="img" aria-label="Brent/USD path">
+<line class="ln-guide" x1="104.4" y1="0" x2="104.4" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="110.6" y1="0" x2="110.6" y2="46"/>
+<line class="ln-guide" x1="160.3" y1="0" x2="160.3" y2="46"/>
+<line class="ln-base" x1="92" y1="46" x2="986" y2="46"/>
+<polyline class="ln-price" points="92.0,17.9 95.1,17.6 98.2,20.2 101.3,19.4 104.4,18.9 107.5,24.8 110.6,27.4 113.7,26.7 116.8,26.6 119.9,31.0 123.0,29.5 126.1,27.3 129.2,27.2 132.4,22.7 135.5,24.6 138.6,25.5 141.7,30.0 144.8,26.4 147.9,18.7 151.0,19.2 154.1,21.0 157.2,26.9 160.3,25.8 163.4,25.6 166.5,21.5 169.6,20.0 172.7,21.2 175.8,20.5 178.9,19.3 182.0,17.1 185.1,17.6 188.2,17.3 191.3,11.3 194.4,10.7 197.5,8.3 200.6,8.1 203.8,7.1 206.9,7.0 210.0,8.0 213.1,12.1 216.2,11.1 219.3,9.3 222.4,10.3 225.5,11.9 228.6,12.9 231.7,15.3 234.8,17.5 237.9,17.5 241.0,19.3 244.1,18.1 247.2,16.5 250.3,16.9 253.4,18.6 256.5,15.9 259.6,20.6 262.7,22.2 265.8,22.6 268.9,21.2 272.0,21.9 275.1,20.8 278.2,23.4 281.4,23.7 284.5,23.1 287.6,39.0 923.9,11.7 927.0,15.7 930.1,19.2 933.2,21.0 936.3,28.2 939.4,30.4 942.5,28.6 945.6,28.0 948.8,27.4 951.9,27.6 955.0,27.6 958.1,26.8 961.2,28.2 964.3,28.3 967.4,28.3 970.5,28.4 973.6,25.9 976.7,28.3 979.8,27.9 982.9,27.7"/>
+<line class="ln-leg down" x1="92.0" y1="17.9" x2="119.9" y2="31.0"/>
+<text class="ln-lab down" x="106.0" y="34.5">-151</text>
+<line class="ln-leg up" x1="119.9" y1="31.0" x2="206.9" y2="7.0"/>
+<text class="ln-lab up" x="163.4" y="15.0">+275</text>
+<line class="ln-leg down" x1="206.9" y1="7.0" x2="287.6" y2="39.0"/>
+<text class="ln-lab down" x="247.2" y="33.0">-367</text>
+<line class="ln-leg up" x1="287.6" y1="39.0" x2="982.9" y2="27.7"/>
+<text class="ln-lab up" x="635.2" y="29.3">+130</text>
+<text class="ln-name" x="4" y="22">Brent/USD</text>
+<text class="ln-chg down" x="4" y="34">-110  -1.05%</text>
+</svg></div></div><svg class="tl-axis" viewBox="0 0 1000 20" aria-hidden="true">
+<line class="ax-t" x1="154.1" y1="0" x2="154.1" y2="4"/>
+<text class="ax-l" x="154.1" y="14">Fri 12:00</text>
+<line class="ax-t" x1="303.1" y1="0" x2="303.1" y2="4"/>
+<text class="ax-l" x="303.1" y="14">Sat 00:00</text>
+<line class="ax-t" x1="452.1" y1="0" x2="452.1" y2="4"/>
+<text class="ax-l" x="452.1" y="14">Sat 12:00</text>
+<line class="ax-t" x1="601.1" y1="0" x2="601.1" y2="4"/>
+<text class="ax-l" x="601.1" y="14">Sun 00:00</text>
+<line class="ax-t" x1="750.1" y1="0" x2="750.1" y2="4"/>
+<text class="ax-l" x="750.1" y="14">Sun 12:00</text>
+<line class="ax-t" x1="899.1" y1="0" x2="899.1" y2="4"/>
+<text class="ax-l" x="899.1" y="14">Mon 00:00</text>
+</svg></div></div>
+
+<h2>Scenarios for the window ahead</h2>
+<div class="scenarios">
+<div class="scen"><div class="scen-h"><span class="scen-p">45%</span><b>BOJ hawkish extension / carry unwind</b></div><p>Measured JPY strength +0.116% and BOJ Press Conference own-impulse +0.204% dominate; if Ueda keeps signaling hikes, carry unwind forces more JPY/CHF demand and pressures EUR/CAD crossers.</p><ul class="trig"><li>BOJ Press Conference or new Ueda headlines after 07:00</li><li>USD/JPY holds below 157.018</li><li>VIX stays near 17.71725 or rises</li></ul><div class="scen-inval"><b>Invalidated if:</b> USD/JPY recaptures 157.018 and holds above the 153.8-pip range high; BOJ headlines stop.</div><div class="tw"><table class="paths"><thead><tr><th>instrument</th><th></th><th class="num">expected</th><th>why</th></tr></thead><tbody><tr><td class="nowrap">USD/JPY</td><td class="dir down">▼</td><td class="num down">+136.8</td><td>Matches this window&#x27;s largest USD/JPY down leg -136.8 pips when Ueda headlines were followed by no-catalyst selling.</td></tr><tr><td class="nowrap">EUR/USD</td><td class="dir down">▼</td><td class="num down">+31.9</td><td>Matches largest EUR/USD down leg -31.9 pips; weak EUR mean -0.09% and USD carry support lower.</td></tr><tr><td class="nowrap">CHF/JPY</td><td class="dir down">▼</td><td class="num down">+121.3</td><td>Matches largest CHF/JPY down leg -121.3 pips; JPY strength dominates the cross.</td></tr><tr><td class="nowrap">USD/CHF</td><td class="dir down">▼</td><td class="num down">+41.1</td><td>Matches largest USD/CHF down leg -41.1 pips; haven CHF bid extends.</td></tr></tbody></table></div></div>
+<div class="scen"><div class="scen-h"><span class="scen-p">35%</span><b>Risk-on USD softness and high-beta recovery</b></div><p>SPX +24.8 points and VIX -9.4 points at 17.71725 show risk appetite; if geopolitics stay quiet and oil slips, high-beta and commodity FX recover, with USD weakening against CAD, NZD, and GBP.</p><ul class="trig"><li>SPX holds gains from 7679.5</li><li>VIX stays near 17.71725 or lower</li><li>USD/CAD fails at 1.40047</li></ul><div class="scen-inval"><b>Invalidated if:</b> USD/CAD breaks above 1.40047 and holds; VIX rises; Trump-Iran or Saudi oil headline escalates.</div><div class="tw"><table class="paths"><thead><tr><th>instrument</th><th></th><th class="num">expected</th><th>why</th></tr></thead><tbody><tr><td class="nowrap">USD/CAD</td><td class="dir down">▼</td><td class="num down">+28.5</td><td>Matches largest USD/CAD down leg -28.5 pips; CAD recovery from -0.152% weakest vs majors.</td></tr><tr><td class="nowrap">GBP/USD</td><td class="dir up">▲</td><td class="num up">+60.4</td><td>Matches largest GBP/USD up leg +60.4 pips; GBP strength +0.108% supports.</td></tr><tr><td class="nowrap">AUD/USD</td><td class="dir up">▲</td><td class="num up">+20.1</td><td>Matches largest AUD/USD up leg +20.1 pips; risk-on high-beta recovery.</td></tr><tr><td class="nowrap">NZD/USD</td><td class="dir up">▲</td><td class="num up">+17.4</td><td>Matches largest NZD/USD up leg +17.4 pips; NZD base from -0.094% mean.</td></tr></tbody></table></div></div>
+<div class="scen"><div class="scen-h"><span class="scen-p">20%</span><b>Data-light range and chop</b></div><p>Calendar ahead has only Lagarde and Macklem at 17:00/17:05 medium impact; with most legs showing no clear catalyst, markets likely stay rangebound and event reactions muted.</p><ul class="trig"><li>EUR/USD holds 1.14748 close inside 35.6-pip range</li><li>USD/JPY 157.018 inside 153.8-pip range</li><li>ECB Lagarde and BOC Macklem deliver no new impulse</li></ul><div class="scen-inval"><b>Invalidated if:</b> A measured event reaction exceeds the noise floor or breaks the existing day range.</div><div class="tw"><table class="paths"><thead><tr><th>instrument</th><th></th><th class="num">expected</th><th>why</th></tr></thead><tbody><tr><td class="nowrap">EUR/USD</td><td class="dir range">▬</td><td class="num range">+35.6</td><td>Uses this window&#x27;s 35.6-pip EUR/USD range; no clear catalyst in most legs.</td></tr><tr><td class="nowrap">USD/JPY</td><td class="dir range">▬</td><td class="num range">+153.8</td><td>Uses this window&#x27;s 153.8-pip USD/JPY range; Ueda-driven whipsaw likely consolidates.</td></tr><tr><td class="nowrap">GBP/USD</td><td class="dir range">▬</td><td class="num range">+62.5</td><td>Uses this window&#x27;s 62.5-pip GBP/USD range; UK retail sales impulse already faded.</td></tr></tbody></table></div></div>
+</div>
+
+<h2>Risks</h2>
+<ul class="risks"><li><b>BOJ communication</b><div>BOJ Press Conference produced JPY own-impulse +0.204% despite no forecast, and Ueda headlines contributed to USD/JPY and CHF/JPY legs.</div><div class="watch">watch: BOJ speakers and any new Ueda headlines after 07:00.</div></li><li><b>Geopolitical oil and shipping headlines</b><div>Saudis tell Europe oil refiners they&#x27;ll get no crude next month and a tanker hit in Strait of Hormuz appeared; Brent/USD closed -1.049% but had large intraday swings.</div><div class="watch">watch: Brent/USD, USD/NOK, USD/SEK, Trump-Iran, and sanctions headlines.</div></li><li><b>Light calendar speaker risk</b><div>Ahead has only Lagarde and Macklem medium impact; the previous Lagarde response was -0.038% inside noise, but any deviation matters.</div><div class="watch">watch: ECB President Lagarde Speaks 17:00 and BOC Gov Macklem Speaks 17:05.</div></li><li><b>CAD weakness reversal</b><div>CAD was weakest at -0.152% and USD/CAD closed +22.2 pips at 1.40047, so a hawkish Macklem or oil move could force a sharp reversal.</div><div class="watch">watch: USD/CAD 1.40047 and BOC Macklem guidance.</div></li></ul>
+
+<h2>Calendar ahead &mdash; Mon 07:00 to Mon 19:00 CEST</h2>
+<div class="tw"><table class="ahead"><thead><tr><th>time</th><th>ccy</th><th>impact</th><th>event</th><th class="num">forecast</th><th class="num">previous</th></tr></thead><tbody><tr><td class="mono nowrap">17:00</td><td>EUR</td><td><span class="imp imp-medium">Medium</span></td><td>ECB President Lagarde Speaks</td><td class="num dim">-</td><td class="num dim">-</td></tr><tr><td class="mono nowrap">17:05</td><td>CAD</td><td><span class="imp imp-medium">Medium</span></td><td>BOC Gov Macklem Speaks</td><td class="num dim">-</td><td class="num dim">-</td></tr></tbody></table></div>
+
+<h2>Headlines in the window</h2>
+<ul class="heads"><li><span class="mono t">08:30</span><span class="imp imp-high">high</span><a href="https://www.forexfactory.com/news/1418836" rel="noreferrer">BoJ&#x27;s Gov Ueda: To keep raising rate in response to economy, prices</a></li><li><span class="mono t">09:15</span><span class="imp imp-medium">medium</span><a href="https://www.forexfactory.com/news/1418844" rel="noreferrer">BoJ Gov Ueda: Overseas rate hikes could impact Japan through various channels including Forex</a></li><li><span class="mono t">09:30</span><span class="imp imp-medium">medium</span><a href="https://www.forexfactory.com/news/1418851" rel="noreferrer">BoJ&#x27;s Ueda Says It Will Take Time To Determine If 2% Inflation Is Sustainable</a></li><li><span class="mono t">13:00</span><span class="imp imp-medium">medium</span><a href="https://www.forexfactory.com/news/1418885" rel="noreferrer">Saudis tell Europe oil refiners they&#x27;ll get no crude next month</a></li><li><span class="mono t">08:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418832" rel="noreferrer">Retail sales, Great Britain: August 2026</a></li><li><span class="mono t">08:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418834" rel="noreferrer">German producer prices in August 2026: +4.6% on August 2025</a></li><li><span class="mono t">08:15</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418835" rel="noreferrer">Japan economy minister Kiuchi: It is up to BOJ to decide details of monetary policy</a></li><li><span class="mono t">08:45</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418839" rel="noreferrer">BoJ&#x27;s Gov Ueda: Crude Oil Driven Price Gains Are Likely Spreading Broadly</a></li><li><span class="mono t">09:15</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418847" rel="noreferrer">UKMTO: Tanker Hit By Unknown Projectile In Strait Of Hormuz</a></li><li><span class="mono t">09:30</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418850" rel="noreferrer">German Fin. Min. Klingbeil: We support Canada being an associated EU member</a></li><li><span class="mono t">09:45</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418852" rel="noreferrer">EU&#x27;s Economy Commissioner Dombrovskis: Windfall tax will be touched upon</a></li><li><span class="mono t">10:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418853" rel="noreferrer">Euro area monthly balance of payments: July 2026</a></li><li><span class="mono t">10:00</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418854" rel="noreferrer">ECB Consumer Expectations Survey results - August 2026</a></li><li><span class="mono t">10:15</span><span class="imp imp-low">low</span><a href="https://www.forexfactory.com/news/1418855" rel="noreferrer">ECB President Lagarde: We&#x27;ll Decide On Rates Meeting By Meeting; Growth Is A Bit More Promising Than We Thought</a></li></ul>
+
+<footer>Prices and headlines: ForexFactory Market Data Service (mds-api.forexfactory.com), 15-minute bars; reactions measured on 5-minute bars. Calendar with actuals: ForexFactory week page (safari17_0 profile). Analysis: deepseek-v4-pro.<br>Generated 2026-09-21 05:18 UTC.</footer>
+</div></body></html>
