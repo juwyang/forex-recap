@@ -13,7 +13,7 @@
   "end_local": "2026-09-21T07:00:00+02:00",
   "fwd_start_utc": "2026-09-21T05:00:00+00:00",
   "fwd_end_utc": "2026-09-21T17:00:00+00:00",
-  "generated_utc": "2026-09-21T05:18:57.211644+00:00",
+  "generated_utc": "2026-09-21T10:38:06.763352+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 87
+   "with_actual": 85
   }
  },
  "facts": {
@@ -1716,208 +1716,189 @@
   ]
  },
  "analysis": {
-  "session_summary": "The window from Friday 07:00 through Monday 07:00 was quiet for the USD but not for cross-currents: JPY led major strength at +0.116%, followed by GBP +0.108% and CHF +0.078%, while CAD lagged at -0.152%, NZD -0.094%, and EUR -0.09%. DXY closed +4.3 points, SPX +24.8 points, and VIX -9.4 points near the lows, but most FX legs had no clear catalyst. BOJ Ueda headlines and a normal UK retail-sales beat were the main measurable impulses; EUR/USD closed -11.9 pips and USD/JPY -11.5 pips.",
+  "session_summary": "The window from Friday close through Asia reopen was quiet and headline-driven, leaving USD mixed, JPY strongest, and CAD weakest. BoJ communication was the main FX impulse, with JPY up 0.116% against majors; GBP also outperformed after UK retail sales beat. Most intraday legs lacked a clear catalyst, ECB Lagarde was muted, and Brent closed lower despite the Saudi supply headline. Risk tone was firm with SPX near its range high and VIX near its low, but currency reactions were not uniformly risk-on.",
   "themes": [
    {
-    "theme": "BOJ hawkish repricing",
-    "evidence": "JPY mean strength +0.116%; BOJ Press Conference own-impulse +0.204% unscored; USD/JPY -11.5 pips and CHF/JPY -8.0 pips with Ueda headlines credited inside legs.",
+    "theme": "JPY strength on BoJ communication",
+    "evidence": "BOJ Press Conference impulse strengthened JPY 0.204%; JPY currency strength +0.116%; USD/JPY closed down -11.5 pips despite broad USD +0.03%.",
     "currencies": [
-     "JPY",
-     "CHF"
+     "JPY"
     ]
    },
    {
-    "theme": "Commodity and rate-sensitive FX soft",
-    "evidence": "CAD weakest at -0.152%, NZD -0.094%, EUR -0.09%; USD/CAD +22.2 pips to 1.40047; USD/SEK +282.7 pips and USD/MXN +750.9 pips.",
+    "theme": "GBP outperformance after retail sales beat",
+    "evidence": "Retail Sales m/m actual 0.5% vs forecast -0.2%; own-currency impulse +0.042%; GBP strength +0.108%; GBP/USD closed +9.1 pips; EUR/GBP closed -14.8 pips.",
+    "currencies": [
+     "GBP"
+    ]
+   },
+   {
+    "theme": "CAD underperformance",
+    "evidence": "CAD currency strength -0.152%, weakest among majors; USD/CAD closed +22.2 pips and close_in_range 0.72.",
+    "currencies": [
+     "CAD"
+    ]
+   },
+   {
+    "theme": "Risk-positive but commodity FX lag",
+    "evidence": "SPX +0.324% with close_in_range 0.97; VIX -0.525% with close_in_range 0.05; AUD +0.005% and NZD -0.094% did not track risk.",
     "currencies": [
      "CAD",
      "NZD",
-     "EUR",
-     "SEK",
-     "MXN"
-    ]
-   },
-   {
-    "theme": "Sparse event reaction and flow-driven tape",
-    "evidence": "Most legs carry no clear catalyst; ECB Lagarde reaction muted at -0.038% inside noise floor, while UK Retail Sales was normal polarity with GBP stronger 0.042%.",
-    "currencies": [
-     "EUR",
-     "GBP"
+     "AUD"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD printed a 35.6-pip range and closed at 1.14748, down -11.9 pips; five legs alternated with no single catalyst, with UK Retail Sales +2.5 pips and Ueda +5.8 pips credited during a 10.4-pip up leg.",
-   "GBP/USD": "GBP/USD gained 9.1 pips to 1.3378 in a 62.5-pip range; an early down leg cited Lagarde -11.4 pips, followed by a 60.4-pip up leg with no clear catalyst and a late 18.8-pip fade.",
-   "USD/JPY": "USD/JPY closed -11.5 pips at 157.018 with a 153.8-pip range; whipsaw legs around Ueda headlines included a +122.5-pip up leg driven by Ueda items and a -136.8-pip down leg with no clear catalyst.",
-   "USD/CHF": "USD/CHF lost -3.6 pips to 0.8231 in a 49.6-pip range; an early +20.6-pip up leg cited Lagarde +5.9 pips, then a -41.1-pip down leg had no clear catalyst and a late 14.2-pip up leg moved against the Trump-Iran headline.",
-   "AUD/USD": "AUD/USD closed -1.6 pips at 0.71271 in a 26.1-pip range; six small legs mostly lacked catalysts, with Lagarde -3.6 pips in an early down leg and a late 5.3-pip up leg after NZ data.",
-   "NZD/USD": "NZD/USD fell -6.3 pips to 0.57232 in a 24.2-pip range; the largest leg was a -14.9-pip down leg citing Lagarde -4.6 pips, with the rest small and catalyst-light.",
-   "USD/CAD": "USD/CAD rose 22.2 pips to 1.40047 in a 34.6-pip range; legs alternated with no clear catalysts beyond Lagarde +5.0 pips in an early +30.2-pip up leg.",
-   "EUR/CHF": "EUR/CHF fell -13.9 pips to 0.94448 in a 54.4-pip range; an early +15.4-pip up leg had Retail Sales +2.8 and Ueda +2.6, then a long -30.9-pip down leg with no clear catalyst.",
-   "CHF/JPY": "CHF/JPY lost -8.0 pips to 190.794 in a wide 174.3-pip range; Ueda headlines drove a +137.9-pip up leg, then large flows without clear catalyst.",
-   "EUR/GBP": "EUR/GBP fell -14.8 pips to 0.8577 in a 24.6-pip range; a Saudis headline contributed -3.2 pips to an early down leg, followed by no-catalyst and a small late up leg.",
-   "AUD/NZD": "AUD/NZD rose 10.8 pips to 1.2452 in a 63.6-pip range; a Retail Sales item added +4.9 pips to an initial up leg, then a -57.5-pip down leg lacked clear catalyst, and a later +42.5-pip up leg moved against the Trump-Greenland headline.",
-   "AUD/CHF": "AUD/CHF fell -4.0 pips to 0.58661 in a 44.0-pip range; an early +10.5-pip up leg included BOJ Press Conference +2.5 and Retail Sales +1.8, then a -37.1-pip down leg with no clear catalyst, then a 21.5-pip up leg.",
-   "NZD/CHF": "NZD/CHF fell -7.2 pips to 0.47107 in a 26.3-pip range; an initial -20.7-pip down leg had no clear catalyst, then a +13.8-pip up leg after UK property headline."
+   "EUR/USD": "EUR/USD chopped through five legs with no clear catalyst; the largest down leg was -31.9 pips from 10:00 to 14:15 and a later 30.6-pip up move left EUR/USD down -11.9 pips near mid-range.",
+   "USD/JPY": "USD/JPY had a 122.5-pip up leg on Ueda headlines followed by a 136.8-pip down leg, leaving it down -11.5 pips despite a firm USD.",
+   "GBP/USD": "GBP/USD fell initially, then a 60.4-pip up leg after 14:15 more than reversed losses, leaving GBP/USD +9.1 pips in the upper part of its range.",
+   "USD/CAD": "USD/CAD posted up legs of 30.2, 10.2, and 22.7 pips against down legs of -13.9 and -28.5 pips, closing +22.2 pips with CAD weakest."
   },
   "polarity_reads": [
    {
     "event": "BOJ Press Conference",
-    "read": "Unscored because no forecast, but JPY strengthened 0.204% on its own impulse, suggesting the market treated Ueda's guidance as hawkish for JPY and is sensitive to BOJ carry-unwind communication."
+    "read": "JPY strengthened 0.204% with no forecast to score against, implying the market treated Ueda's tone as hawkish enough to bid yen even against a firm risk tape."
    },
    {
     "event": "ECB President Lagarde Speaks",
-    "read": "Muted; the EUR basket moved only -0.038% inside the noise floor, implying no fresh hawkish impulse and no positioning squeeze around Lagarde."
+    "read": "EUR basket moved -0.038%, inside the noise floor, suggesting Lagarde offered no hawkish surprise and failed to squeeze EUR short positioning."
    },
    {
     "event": "Retail Sales m/m",
-    "read": "Normal polarity; actual 0.5% versus -0.2% forecast produced GBP stronger 0.042%, confirming GBP data surprises are still traded conventionally rather than inverted."
+    "read": "GBP strengthened 0.042% on an actual 0.5% vs forecast -0.2%, a normal reaction showing sterling still responds to data beats."
    }
   ],
   "scenarios": [
    {
-    "name": "BOJ hawkish extension / carry unwind",
+    "name": "JPY hawkish continuation",
     "probability": 0.45,
-    "thesis": "Measured JPY strength +0.116% and BOJ Press Conference own-impulse +0.204% dominate; if Ueda keeps signaling hikes, carry unwind forces more JPY/CHF demand and pressures EUR/CAD crossers.",
+    "thesis": "BoJ communication kept JPY strongest; without pushback from Japanese officials, yen shorts remain under pressure while EUR and CAD stay weak.",
     "triggers": [
-     "BOJ Press Conference or new Ueda headlines after 07:00",
-     "USD/JPY holds below 157.018",
-     "VIX stays near 17.71725 or rises"
+     "BOJ Press Conference impulse +0.204%",
+     "JPY currency strength +0.116%"
     ],
-    "invalidation": "USD/JPY recaptures 157.018 and holds above the 153.8-pip range high; BOJ headlines stop.",
+    "invalidation": "USD/JPY breaks above close 157.018 and holds.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 136.8,
-      "rationale": "Matches this window's largest USD/JPY down leg -136.8 pips when Ueda headlines were followed by no-catalyst selling."
+      "magnitude_pips": 46.8,
+      "rationale": "A measured 46.8-pip down leg at 07:00-08:30 and yen strength support further downside."
      },
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 31.9,
-      "rationale": "Matches largest EUR/USD down leg -31.9 pips; weak EUR mean -0.09% and USD carry support lower."
-     },
-     {
-      "instrument": "CHF/JPY",
-      "direction": "down",
-      "magnitude_pips": 121.3,
-      "rationale": "Matches largest CHF/JPY down leg -121.3 pips; JPY strength dominates the cross."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 41.1,
-      "rationale": "Matches largest USD/CHF down leg -41.1 pips; haven CHF bid extends."
-     }
-    ]
-   },
-   {
-    "name": "Risk-on USD softness and high-beta recovery",
-    "probability": 0.35,
-    "thesis": "SPX +24.8 points and VIX -9.4 points at 17.71725 show risk appetite; if geopolitics stay quiet and oil slips, high-beta and commodity FX recover, with USD weakening against CAD, NZD, and GBP.",
-    "triggers": [
-     "SPX holds gains from 7679.5",
-     "VIX stays near 17.71725 or lower",
-     "USD/CAD fails at 1.40047"
-    ],
-    "invalidation": "USD/CAD breaks above 1.40047 and holds; VIX rises; Trump-Iran or Saudi oil headline escalates.",
-    "pair_paths": [
-     {
-      "instrument": "USD/CAD",
-      "direction": "down",
-      "magnitude_pips": 28.5,
-      "rationale": "Matches largest USD/CAD down leg -28.5 pips; CAD recovery from -0.152% weakest vs majors."
+      "rationale": "Largest EUR/USD down leg was 31.9 pips; EUR mean -0.09% and ECB muted."
      },
      {
       "instrument": "GBP/USD",
       "direction": "up",
       "magnitude_pips": 60.4,
-      "rationale": "Matches largest GBP/USD up leg +60.4 pips; GBP strength +0.108% supports."
+      "rationale": "GBP/USD measured up leg of 60.4 pips followed the retail sales beat, with GBP strength +0.108%."
      },
      {
-      "instrument": "AUD/USD",
+      "instrument": "USD/CAD",
       "direction": "up",
-      "magnitude_pips": 20.1,
-      "rationale": "Matches largest AUD/USD up leg +20.1 pips; risk-on high-beta recovery."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 17.4,
-      "rationale": "Matches largest NZD/USD up leg +17.4 pips; NZD base from -0.094% mean."
+      "magnitude_pips": 30.2,
+      "rationale": "CAD weakest at -0.152%; the measured 30.2-pip USD/CAD up leg aligns with CAD underperformance."
      }
     ]
    },
    {
-    "name": "Data-light range and chop",
-    "probability": 0.2,
-    "thesis": "Calendar ahead has only Lagarde and Macklem at 17:00/17:05 medium impact; with most legs showing no clear catalyst, markets likely stay rangebound and event reactions muted.",
+    "name": "USD/risk recovery",
+    "probability": 0.35,
+    "thesis": "Firm SPX and low VIX give USD a recovery path, with USD/JPY bouncing and EUR/CAD remaining heavy.",
     "triggers": [
-     "EUR/USD holds 1.14748 close inside 35.6-pip range",
-     "USD/JPY 157.018 inside 153.8-pip range",
-     "ECB Lagarde and BOC Macklem deliver no new impulse"
+     "SPX holds near 7679.5",
+     "VIX stays near 17.71725",
+     "DXY +0.043"
     ],
-    "invalidation": "A measured event reaction exceeds the noise floor or breaks the existing day range.",
+    "invalidation": "SPX closes below 7679.5 or VIX jumps above 17.71725.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 122.5,
+      "rationale": "USD/JPY had a 122.5-pip up leg on Ueda headlines; risk-positive SPX +0.324% supports a bounce."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 35.6,
+      "rationale": "EUR/USD range was 35.6 pips; EUR mean -0.09% against USD +0.03%."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 34.6,
+      "rationale": "USD/CAD range was 34.6 pips; CAD is the weakest major at -0.152%."
+     }
+    ]
+   },
+   {
+    "name": "Central bank short squeeze",
+    "probability": 0.2,
+    "thesis": "ECB Lagarde at 17:00 and BOC Macklem at 17:05 could spark short covering in EUR and CAD, while USD/JPY stays two-sided.",
+    "triggers": [
+     "ECB President Lagarde Speaks at 17:00",
+     "BOC Gov Macklem Speaks at 17:05"
+    ],
+    "invalidation": "Lagarde stays muted and Macklem repeats dovish guidance.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 35.6,
-      "rationale": "Uses this window's 35.6-pip EUR/USD range; no clear catalyst in most legs."
+      "direction": "up",
+      "magnitude_pips": 30.6,
+      "rationale": "EUR/USD had a measured 30.6-pip up leg; if Lagarde surprises hawkish, short covering can extend."
      },
      {
       "instrument": "USD/JPY",
       "direction": "range",
-      "magnitude_pips": 153.8,
-      "rationale": "Uses this window's 153.8-pip USD/JPY range; Ueda-driven whipsaw likely consolidates."
+      "magnitude_pips": 42.2,
+      "rationale": "Recent two-sided USD/JPY action included a 42.2-pip down leg; no fresh impulse likely."
      },
      {
-      "instrument": "GBP/USD",
-      "direction": "range",
-      "magnitude_pips": 62.5,
-      "rationale": "Uses this window's 62.5-pip GBP/USD range; UK retail sales impulse already faded."
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 28.5,
+      "rationale": "USD/CAD measured a 28.5-pip down leg; if Macklem sounds less dovish, CAD can retrace."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "BOJ communication",
-    "why_it_matters": "BOJ Press Conference produced JPY own-impulse +0.204% despite no forecast, and Ueda headlines contributed to USD/JPY and CHF/JPY legs.",
-    "watch": "BOJ speakers and any new Ueda headlines after 07:00."
+    "risk": "BOJ hawkish repricing",
+    "why_it_matters": "JPY is strongest despite risk-positive tone, so further hawkish headlines could accelerate yen gains.",
+    "watch": "USD/JPY close 157.018"
    },
    {
-    "risk": "Geopolitical oil and shipping headlines",
-    "why_it_matters": "Saudis tell Europe oil refiners they'll get no crude next month and a tanker hit in Strait of Hormuz appeared; Brent/USD closed -1.049% but had large intraday swings.",
-    "watch": "Brent/USD, USD/NOK, USD/SEK, Trump-Iran, and sanctions headlines."
+    "risk": "Oil/Strait of Hormuz headlines",
+    "why_it_matters": "Brent closed lower but Saudi supply headlines caused whipsaw; weekend escalation could gap risk assets and commodity FX.",
+    "watch": "Brent 104.12, SPX 7679.5"
    },
    {
-    "risk": "Light calendar speaker risk",
-    "why_it_matters": "Ahead has only Lagarde and Macklem medium impact; the previous Lagarde response was -0.038% inside noise, but any deviation matters.",
-    "watch": "ECB President Lagarde Speaks 17:00 and BOC Gov Macklem Speaks 17:05."
-   },
-   {
-    "risk": "CAD weakness reversal",
-    "why_it_matters": "CAD was weakest at -0.152% and USD/CAD closed +22.2 pips at 1.40047, so a hawkish Macklem or oil move could force a sharp reversal.",
-    "watch": "USD/CAD 1.40047 and BOC Macklem guidance."
+    "risk": "Central bank speeches",
+    "why_it_matters": "Lagarde and Macklem can reverse thin post-weekend positioning in EUR and CAD.",
+    "watch": "EUR/USD 1.14748, USD/CAD 1.40047"
    }
   ],
-  "calendar_ahead_note": "The coming window has only two medium-impact central bank speakers: ECB President Lagarde at 17:00 and BOC Governor Macklem at 17:05. The last Lagarde reaction was muted basket -0.038% inside the noise floor, so unless she deviates, the calendar may not break ranges, but Macklem can move CAD after USD/CAD +22.2 pips and CAD -0.152% weakness.",
+  "calendar_ahead_note": "Only ECB President Lagarde at 17:00 and BOC Gov Macklem at 17:05 are scheduled; with no tier-1 data afterward, these speeches can set the tone for EUR and CAD.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 15041,
-   "completion_tokens": 9925,
-   "total_tokens": 24966,
+   "completion_tokens": 7172,
+   "total_tokens": 22213,
    "prompt_tokens_details": {
-    "cached_tokens": 384
+    "cached_tokens": 14976
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 6681
+    "reasoning_tokens": 5067
    },
-   "prompt_cache_hit_tokens": 384,
-   "prompt_cache_miss_tokens": 14657
+   "prompt_cache_hit_tokens": 14976,
+   "prompt_cache_miss_tokens": 65
   }
  }
 }
