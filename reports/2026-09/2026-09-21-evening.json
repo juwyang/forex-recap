@@ -13,7 +13,7 @@
   "end_local": "2026-09-21T19:00:00+02:00",
   "fwd_start_utc": "2026-09-21T17:00:00+00:00",
   "fwd_end_utc": "2026-09-22T17:00:00+00:00",
-  "generated_utc": "2026-09-21T17:05:13.358122+00:00",
+  "generated_utc": "2026-09-21T20:59:37.392312+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 87
+   "with_actual": 83
   }
  },
  "facts": {
@@ -1717,174 +1717,154 @@
   ]
  },
  "analysis": {
-  "session_summary": "The Friday close-to-Monday evening window was dominated by a risk-on drift: SPX/USD gained 1.724% to 7755.2 and VIX/USD fell 1.334%, while Brent/USD dropped 3.323%. Currency strength was led by CHF (+0.303%) and short-JPY (-0.378%) as USD/JPY rose 62.2 pips to 157.415 and closed near its high (close_in_range 0.88). High-impact headlines were scarce; the only measured event reactions (BOC Macklem, ECB Lagarde) were muted. Most intraday legs lacked a clear catalyst, with the tape signaling flow and positioning rather than fresh macro information.",
+  "session_summary": "The window was mostly headline-chopping without a clean macro driver; measured BOC and ECB speaker reactions were muted with own-currency impulses of -0.022% and -0.004%. CHF led majors at +0.303% while JPY lagged at -0.378%, and risk-sensitive SPX gained 1.724% while VIX fell 24.2 points. USD/JPY closed at 157.415 (+62.2 pips) and CHF/JPY at 191.749 (+112.6 pips), consistent with yen-funded carry despite weak catalysts. Fed Goolsbee's comment that a hike is not taking back 2025 cuts left measurable USD-positive prints in several legs, including USD/CAD +5.6, USD/NOK +87.5 and NZD/USD -4.6. Brent fell 3.323%, pressuring CAD and NOK while CAD's mean vs majors was -0.179%.",
   "themes": [
    {
-    "theme": "Risk-on with JPY funding weakness",
-    "evidence": "SPX +1.724%, VIX -1.334%, USD/JPY +62.2 pips to 157.415 close near high (0.88), JPY mean -0.378%",
-    "currencies": [
-     "USD",
-     "JPY"
-    ]
-   },
-   {
-    "theme": "CHF outperformance independent of risk tone",
-    "evidence": "CHF mean +0.303%, USD/CHF -16.8 pips to 0.82108 (close_in_range 0.14), EUR/CHF -22.7 pips to 0.94173 (close_in_range 0.08)",
+    "theme": "Yen-funded risk appetite supports CHF/JPY and USD/JPY",
+    "evidence": "CHF +0.303% mean vs majors, JPY -0.378%; USD/JPY +62.2 pips to 157.415; CHF/JPY +112.6 pips to 191.749; SPX +1.724%.",
     "currencies": [
      "CHF",
-     "USD",
-     "EUR"
+     "JPY",
+     "USD"
     ]
    },
    {
-    "theme": "Most moves lack clear macro catalysts",
-    "evidence": "Leg notes repeatedly flag 'too weak to own the move' or 'Nothing on wire; flow or technical level'; only Fed Goolsbee attributed 24% of the GBP/USD down leg",
+    "theme": "Fed Goolsbee's hike comment favored USD",
+    "evidence": "Measured reactions show Goolsbee contributions of USD/CAD +5.6 pips (16% of leg), USD/NOK +87.5 pips (22%), USD/SEK +45.1 pips (21%), NZD/USD -4.6 pips (30%).",
     "currencies": [
-     "GBP",
      "USD",
-     "EUR",
-     "JPY"
+     "CAD",
+     "NOK",
+     "SEK",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Soft oil as supply/de-escalation tone",
+    "evidence": "Brent/USD -3.323% to 101.791; USD/NOK +235.2 pips; CAD mean -0.179% vs majors.",
+    "currencies": [
+     "CAD",
+     "NOK",
+     "USD"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped through six non-catalyst legs and closed -4.2 pips at 1.14694, near session lows (close_in_range 0.1), with the final 20.4-pip down leg lacking a clear driver."
+   "EUR/USD": "EUR/USD chopped within a 29.1-pip range, with alternating 5.0, 6.6 and 17.4-pip up legs and -9.4, -12.7 and -20.4-pip down legs and no single catalyst, leaving the close at 1.14694 near session lows."
   },
   "polarity_reads": [
    {
     "event": "BOC Gov Macklem Speaks",
-    "read": "Muted basket impulse of -0.022% was inside the noise floor, so the speech did not provide a new directional signal for CAD; it left CAD's existing weakness (-0.179% mean vs majors) intact."
+    "read": "Muted own-currency impulse of -0.022% is inside the noise floor; CAD positioning is not leaning on BOC guidance, so the later CAD weakness in USD/CAD reflects oil/USD flow more than Macklem."
    },
    {
     "event": "ECB President Lagarde Speaks",
-    "read": "Muted basket impulse of -0.004% suggests no fresh ECB information and no positioning reset in EUR."
+    "read": "Muted -0.004% own-currency impulse shows EUR is not sensitive to her comments, suggesting no new policy signal and balanced EUR positioning ahead of the next Lagarde appearance."
    }
   ],
   "scenarios": [
    {
-    "name": "JPY-funded carry extends",
-    "probability": 0.45,
-    "thesis": "Risk-on tape persists: SPX gained 1.724% to 7755.2, VIX fell 1.334%, and JPY was the weakest major at -0.378%. USD/JPY's +62.2 pip rise and close near the high (0.88) provide a base for extension.",
+    "name": "Yen carry extends",
+    "probability": 0.4,
+    "thesis": "With SPX up 1.724%, VIX down 24.2 points, and CHF/JPY at 0.88 of range, carry demand keeps CHF and USD bid against JPY while risk tone supports carry.",
     "triggers": [
-     "RBA Bullock does not trigger broad risk-off",
-     "USD/JPY holds above 157.415",
-     "S&P futures remain firm"
+     "USD/JPY holds above the 157.415 close",
+     "CHF/JPY takes out the 191.749 close with fresh risk-on headlines"
     ],
-    "invalidation": "USD/JPY loses the 77.0 pip 03:15-18:45 up leg or SPX reverses abruptly.",
+    "invalidation": "A slide in SPX or a reversal below USD/JPY 157.415 breaks the carry impulse.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 94.5,
-      "rationale": "Range_pips 94.5 and close_in_range 0.88 support extension toward measured range high."
+      "magnitude_pips": 77.0,
+      "rationale": "Measured 03:15-18:45 up leg was 77.0 pips and the close is at 0.88 of range."
      },
      {
       "instrument": "CHF/JPY",
       "direction": "up",
-      "magnitude_pips": 153.5,
-      "rationale": "CHF/JPY rose 112.6 pips and closed near high (0.88); CHF +0.303 and JPY -0.378 favor upside."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 33.4,
-      "rationale": "AUD +0.102% vs majors; AUD/USD range 33.4 pips; RBA Bullock could reinforce."
+      "magnitude_pips": 121.9,
+      "rationale": "CHF/JPY's largest up leg this window was 121.9 pips and CHF led majors."
      }
     ]
    },
    {
-    "name": "CHF strength / EUR-CHF squeeze persists",
+    "name": "USD/JPY mean-reversion",
     "probability": 0.35,
-    "thesis": "CHF was strongest major (+0.303%) and closed with EUR/CHF at 0.94173 and USD/CHF at 0.82108 both near session lows. The franc's strength is not tied to risk-off and may continue as a flow/positioning trade.",
+    "thesis": "USD/JPY closed at 0.88 of range after +62.2 pips, and Goolsbee-inspired USD strength is already reflected; without a new catalyst the yen can recover part of its -0.378% underperformance.",
     "triggers": [
-     "EUR/CHF remains below 0.94173",
-     "USD/CHF holds below 0.82108",
-     "No SNB or ECB pushback"
+     "USD/JPY turns lower from the 157.415 close"
     ],
-    "invalidation": "EUR/CHF reclaims 0.94173 or USD/CHF breaks back above 0.82108 with conviction.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/CHF",
-      "direction": "down",
-      "magnitude_pips": 39.0,
-      "rationale": "EUR/CHF fell 22.7 pips to 0.94173, close_in_range 0.08 suggests further downside."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 32.4,
-      "rationale": "USD/CHF -16.8 pips and close_in_range 0.14 support lower franc crosses."
-     }
-    ]
-   },
-   {
-    "name": "Headline-driven positioning unwind",
-    "probability": 0.2,
-    "thesis": "Many extremes are stretched: SPX close_in_range 0.97, USD/CAD 0.99, USD/JPY 0.88. Brent's 3.323% drop and geopolitical headlines (Iran) could trigger a sudden reversal, especially with weekend liquidity.",
-    "triggers": [
-     "Iran/Russia headline turns risk-off",
-     "USD/JPY fails at 157.415 area",
-     "VIX rises above 17.88629"
-    ],
-    "invalidation": "SPX closes above 7755.2 and USD/JPY makes fresh high through 157.415.",
+    "invalidation": "A break above the 94.5-pip range high or a fresh hawkish Fed headline.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 94.5,
-      "rationale": "Close near range high leaves long positioning vulnerable; range 94.5 pips."
+      "magnitude_pips": 42.2,
+      "rationale": "Earlier measured USD/JPY down leg was -42.2 pips in 150 minutes, offering a natural retracement size."
      },
+     {
+      "instrument": "CHF/JPY",
+      "direction": "down",
+      "magnitude_pips": 51.6,
+      "rationale": "CHF/JPY had a -51.6-pip down leg from 00:45 to 03:15, showing mean-reversion capacity."
+     }
+    ]
+   },
+   {
+    "name": "Event-driven range",
+    "probability": 0.25,
+    "thesis": "Most legs had no clear catalyst and central-bank reactions were muted; the market is likely to stay inside existing ranges until RBA Bullock or Lagarde provides a signal.",
+    "triggers": [
+     "RBA Gov Bullock Speaks or ECB President Lagarde Speaks produces a direction break"
+    ],
+    "invalidation": "A decisive break beyond the measured ranges forces a new trend.",
+    "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "up",
+      "direction": "range",
       "magnitude_pips": 29.1,
-      "rationale": "EUR/USD closed near low (0.1) and USD safe-haven unwinding could lift spot toward range high."
+      "rationale": "EUR/USD's total range was 29.1 pips with close at 0.10 of range, indicating two-way flow."
      },
      {
-      "instrument": "USD/CAD",
-      "direction": "down",
-      "magnitude_pips": 52.1,
-      "rationale": "USD/CAD close near high (0.99) and CAD weakness may snap back if risk sentiment improves."
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 94.5,
+      "rationale": "USD/JPY's range was 94.5 pips with a close at 0.88 of range, near the top but still within range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Crowded long USD/JPY positioning",
-    "why_it_matters": "USD/JPY rose 62.2 pips and closed near high (0.88); a pullback can be sharp.",
-    "watch": "USD/JPY 157.415 and DXY 100.093"
+    "risk": "RBA Gov Bullock Speaks at 05:10",
+    "why_it_matters": "AUD mean vs majors was +0.102%, so high-impact RBA communication can reset AUD/NZD and AUD/CHF after their up-legs.",
+    "watch": "AUD/USD 0.71236 close and AUD/NZD 1.24536 close."
    },
    {
-    "risk": "Geopolitical headline shock",
-    "why_it_matters": "Brent/USD already fell 3.323% but Iran headlines remain; any escalation can reverse risk-on.",
-    "watch": "Brent/USD, SPX, VIX"
+    "risk": "ECB President Lagarde Speaks at 13:00",
+    "why_it_matters": "Earlier Lagarde reaction was muted at -0.004%, so any overt policy signal could move EUR/CHF and EUR/GBP after EUR/CHF closed down 22.7 pips.",
+    "watch": "EUR/CHF 0.94173 close and EUR/GBP 0.85786 close."
    },
    {
-    "risk": "Calendar surprise from RBA/Lagarde",
-    "why_it_matters": "RBA Bullock and ECB Lagarde are ahead; while current reactions are muted, they can reset expectations.",
-    "watch": "AUD/USD for Bullock; EUR/CHF and EUR/USD for Lagarde"
-   },
-   {
-    "risk": "Weekend liquidity gaps",
-    "why_it_matters": "Window spans Friday close to Asia reopen; moves may not be durable.",
-    "watch": "opening gaps in USD/JPY and EUR/USD"
+    "risk": "Geopolitical oil headlines",
+    "why_it_matters": "Brent dropped 3.323% and oil-sensitive CAD was -0.179% against majors; renewed Iran/Russia headlines could whipsaw CAD, NOK and JPY.",
+    "watch": "Brent/USD 101.791 close and USD/CAD 1.40312 close."
    }
   ],
-  "calendar_ahead_note": "The next key risk is RBA Gov Bullock Speaks at 05:10 and ECB President Lagarde Speaks at 13:00. Bullock can move AUD crosses; Lagarde may shift EUR/CHF or EUR/USD if she deviates from the muted reaction seen at 17:00.",
+  "calendar_ahead_note": "The key ahead items are RBA Gov Bullock Speaks at 05:10 (High) and ECB President Lagarde Speaks at 13:00 (Medium). With measured reactions to Macklem and Lagarde earlier muted, these are the main chances to break the current range-bound, headline-driven tape.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 15203,
-   "completion_tokens": 8730,
-   "total_tokens": 23933,
+   "completion_tokens": 7562,
+   "total_tokens": 22765,
    "prompt_tokens_details": {
-    "cached_tokens": 384
+    "cached_tokens": 15104
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 6717
+    "reasoning_tokens": 5644
    },
-   "prompt_cache_hit_tokens": 384,
-   "prompt_cache_miss_tokens": 14819
+   "prompt_cache_hit_tokens": 15104,
+   "prompt_cache_miss_tokens": 99
   }
  }
 }
