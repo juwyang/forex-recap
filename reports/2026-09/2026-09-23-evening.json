@@ -13,7 +13,7 @@
   "end_local": "2026-09-23T19:00:00+02:00",
   "fwd_start_utc": "2026-09-23T17:00:00+00:00",
   "fwd_end_utc": "2026-09-24T17:00:00+00:00",
-  "generated_utc": "2026-09-23T17:05:18.013230+00:00",
+  "generated_utc": "2026-09-23T20:13:37.548432+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 21
+   "with_actual": 19
   }
  },
  "facts": {
@@ -38,6 +38,352 @@
    "from_local": "2026-09-22 19:00 CEST",
    "to_local": "2026-09-23 19:00 CEST"
   },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.58,
+    "intraday_peak": 0.58,
+    "intraday_trough": -0.09,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "German Flash Services PMI +1 more",
+     "instrument": "USD/JPY",
+     "sigma": 2.18
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 2,
+    "strength_pct": 0.34,
+    "intraday_peak": 0.34,
+    "intraday_trough": -0.048,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "French Flash Services PMI +1 more",
+     "instrument": "USD/CAD",
+     "sigma": -1.24
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 3,
+    "strength_pct": 0.078,
+    "intraday_peak": 0.108,
+    "intraday_trough": -0.004,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "German Flash Services PMI +1 more",
+     "instrument": "EUR/CHF",
+     "sigma": 1.97
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 4,
+    "strength_pct": 0.063,
+    "intraday_peak": 0.102,
+    "intraday_trough": -0.017,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "German Flash Services PMI +1 more",
+      "impact": "Medium",
+      "actual": "52.9",
+      "forecast": "49.9",
+      "polarity": "muted",
+      "note": "basket moved -0.007%, inside the noise floor"
+     },
+     {
+      "title": "French Flash Services PMI +1 more",
+      "impact": "Medium",
+      "actual": "51.4",
+      "forecast": "48.3",
+      "polarity": "muted",
+      "note": "basket moved 0.015%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "German Flash Services PMI +1 more",
+     "instrument": "EUR/GBP",
+     "sigma": 2.55
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 5,
+    "strength_pct": 0.01,
+    "intraday_peak": 0.039,
+    "intraday_trough": -0.074,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.07%, recovered 74%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "German Flash Services PMI +1 more",
+     "instrument": "USD/JPY",
+     "sigma": 2.18
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 6,
+    "strength_pct": -0.153,
+    "intraday_peak": 0.045,
+    "intraday_trough": -0.153,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Flash Manufacturing PMI +1 more",
+      "impact": "Medium",
+      "actual": "52.0",
+      "forecast": "51.5",
+      "polarity": "muted",
+      "note": "basket moved -0.021%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "German Flash Services PMI +1 more",
+     "instrument": "EUR/GBP",
+     "sigma": 2.55
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.406,
+    "intraday_peak": 0.093,
+    "intraday_trough": -0.406,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.09%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "French Flash Services PMI +1 more",
+     "instrument": "AUD/NZD",
+     "sigma": -1.23
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 8,
+    "strength_pct": -0.513,
+    "intraday_peak": 0.089,
+    "intraday_trough": -0.513,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.09%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "French Flash Services PMI +1 more",
+     "instrument": "AUD/NZD",
+     "sigma": -1.23
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.517,
+    "from_EUR": 0.063,
+    "from_USD": -0.58,
+    "base_share": 0.1
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.733,
+    "from_GBP": -0.153,
+    "from_USD": -0.58,
+    "base_share": 0.21
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -1.093,
+    "from_AUD": -0.513,
+    "from_USD": -0.58,
+    "base_share": 0.47
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.986,
+    "from_NZD": -0.406,
+    "from_USD": -0.58,
+    "base_share": 0.41
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.57,
+    "from_USD": 0.58,
+    "from_JPY": -0.01,
+    "base_share": 0.98
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.502,
+    "from_USD": 0.58,
+    "from_CHF": -0.078,
+    "base_share": 0.88
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.24,
+    "from_USD": 0.58,
+    "from_CAD": -0.34,
+    "base_share": 0.63
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.216,
+    "from_EUR": 0.063,
+    "from_GBP": 0.153,
+    "base_share": 0.29
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.053,
+    "from_EUR": 0.063,
+    "from_JPY": -0.01,
+    "base_share": 0.86
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.015,
+    "from_EUR": 0.063,
+    "from_CHF": -0.078,
+    "base_share": 0.45
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.576,
+    "from_EUR": 0.063,
+    "from_AUD": 0.513,
+    "base_share": 0.11
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.277,
+    "from_EUR": 0.063,
+    "from_CAD": -0.34,
+    "base_share": 0.16
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.469,
+    "from_EUR": 0.063,
+    "from_NZD": 0.406,
+    "base_share": 0.13
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.163,
+    "from_GBP": -0.153,
+    "from_JPY": -0.01,
+    "base_share": 0.94
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.231,
+    "from_GBP": -0.153,
+    "from_CHF": -0.078,
+    "base_share": 0.66
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.36,
+    "from_GBP": -0.153,
+    "from_AUD": 0.513,
+    "base_share": 0.23
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.493,
+    "from_GBP": -0.153,
+    "from_CAD": -0.34,
+    "base_share": 0.31
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.253,
+    "from_GBP": -0.153,
+    "from_NZD": 0.406,
+    "base_share": 0.27
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.523,
+    "from_AUD": -0.513,
+    "from_JPY": -0.01,
+    "base_share": 0.98
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.59,
+    "from_AUD": -0.513,
+    "from_CHF": -0.078,
+    "base_share": 0.87
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.853,
+    "from_AUD": -0.513,
+    "from_CAD": -0.34,
+    "base_share": 0.6
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.107,
+    "from_AUD": -0.513,
+    "from_NZD": 0.406,
+    "base_share": 0.56
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.416,
+    "from_NZD": -0.406,
+    "from_JPY": -0.01,
+    "base_share": 0.98
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.484,
+    "from_NZD": -0.406,
+    "from_CHF": -0.078,
+    "base_share": 0.84
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.746,
+    "from_NZD": -0.406,
+    "from_CAD": -0.34,
+    "base_share": 0.54
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.33,
+    "from_CAD": 0.34,
+    "from_JPY": -0.01,
+    "base_share": 0.97
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.262,
+    "from_CAD": 0.34,
+    "from_CHF": -0.078,
+    "base_share": 0.81
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.068,
+    "from_CHF": 0.078,
+    "from_JPY": -0.01,
+    "base_share": 0.88
+   }
+  ],
   "currency_strength_pct": [
    {
     "ccy": "USD",
@@ -1389,213 +1735,200 @@
   ]
  },
  "analysis": {
-  "session_summary": "The tape was a broad USD rally: DXY/USD closed up 53.6 points (+0.534%) at 100.866, near the top of its 73.6-point range, while SPX fell -61.7 and VIX rose +27.5 points to 17.66. The largest measured impulse came from the US business growth headline, but it only accounted for 16-25% of key USD legs. EUR/USD closed -58.9 pips at 1.13782, near the session low, and EUR/GBP rose 18.6 pips. European PMI beats were polarity-muted and did not offset the dollar/risk-off tone.",
+  "session_summary": "The dollar dominated a risk-off tape, closing at its best after US business growth surged to fastest for over five years and price pressures intensified. European PMI beats were muted, leaving EUR and CHF marginal gainers. AUD and NZD led early then gave back all, finishing as the weakest majors. USD/JPY rose 90.5 pips to 158.365, Brent rebounded 2.153% and VIX rose 1.582.",
   "themes": [
    {
-    "theme": "Broad USD strength / risk-off tone",
-    "evidence": "USD mean_vs_majors +0.666%; DXY/USD closed up 53.6 points at 100.866, near top of 73.6 range; SPX down -61.7 to 7705.3; VIX up +27.5 to 17.66.",
+    "theme": "USD exceptionalism on strong US data",
+    "evidence": "US business growth surges to fastest over five years; DXY +0.534%, USD strength +0.58%, USD/JPY +90.5 pips",
     "currencies": [
      "USD",
-     "AUD",
-     "NZD",
-     "JPY"
-    ]
-   },
-   {
-    "theme": "US data impulse only partial",
-    "evidence": "US business growth surge contributed -11.7 pips (16%) to EUR/USD down leg, +26.0 pips (25%) to USD/JPY up leg, and -11.8 pips (18%) to NZD/USD down leg.",
-    "currencies": [
-     "USD",
-     "EUR",
      "JPY",
+     "AUD",
      "NZD"
     ]
    },
    {
-    "theme": "European PMI beats are muted",
-    "evidence": "German Services actual 52.9 vs forecast 49.9; French Services actual 51.4 vs forecast 48.3; UK Manufacturing actual 52.0 vs forecast 51.5; all event polarities muted inside noise floor.",
+    "theme": "Commodity FX rejection",
+    "evidence": "AUD and NZD both led +0.09% then gave back 100%; AUD -0.513%, NZD -0.406%, AUD/USD -77.3 pips, NZD/USD -56.1 pips",
     "currencies": [
-     "EUR",
-     "GBP",
-     "CHF"
+     "AUD",
+     "NZD"
     ]
    },
    {
-    "theme": "Oil rebound / Iran headlines",
-    "evidence": "Brent/USD closed +2.153% at 104.664, recovering from a -329.3 leg with a +577.5 leg; Trump/Rubio/Iran official headlines.",
+    "theme": "Oil rebound despite geopolitical optimism",
+    "evidence": "Brent +2.153% to 104.664 despite Trump Iran deal comments; CAD closed at best +0.34%",
     "currencies": [
      "CAD",
-     "USD",
-     "CHF"
+     "USD"
     ]
    }
   ],
+  "currency_drivers": {
+   "USD": "Strong US business growth and price pressures lifted the dollar; no own releases.",
+   "EUR": "German and French services PMI beats were muted; basket moved inside noise.",
+   "JPY": "No domestic catalyst; early selling to -0.07% was rejected, leaving it flat.",
+   "GBP": "UK manufacturing PMI beat, but basket moved -0.021% inside noise; no clear driver.",
+   "AUD": "No domestic catalyst; initial +0.09% gain was fully retraced on broad USD strength.",
+   "CAD": "No own release; closed firm at +0.34% as Brent rebounded 2.153%.",
+   "CHF": "No own catalyst; held range despite higher VIX and risk-off flows.",
+   "NZD": "No domestic catalyst; initial +0.09% gain was fully retraced amid USD strength."
+  },
   "leg_notes": {
-   "EUR/USD": "An early 19.0-pip bid faded into a -74.2-pip slide that took the pair to 1.13782, near the bottom of the 78.9-pip daily range, with the US business-growth impulse contributing only -11.7 pips (16% of that leg)."
+   "EUR/USD": "An early 19-pip up-leg had no clear catalyst, then the dominant 74.2-pip down-leg was accelerated by the US business growth surge, closing near session lows."
   },
   "polarity_reads": [
    {
     "event": "German Flash Services PMI +1 more",
-    "read": "Actual 52.9 vs forecast 49.9, but the EUR basket moved only -0.007%, inside the noise floor; this muted reaction suggests the market is not positioned to reward European activity beats while the USD and risk-off tone dominate."
+    "read": "Beat 52.9 vs 49.9 but EUR basket -0.007%, inside noise; no short-EUR squeeze, data ignored."
    },
    {
     "event": "French Flash Services PMI +1 more",
-    "read": "Actual 51.4 vs forecast 48.3, with the own-currency basket impulse at +0.015%, inside the noise floor; the beat failed to lift EUR, indicating EUR upside is gated by USD/risk sentiment rather than European data."
+    "read": "Beat 51.4 vs 48.3 but EUR basket +0.015%, inside noise; no fresh bullish EUR conviction."
    },
    {
     "event": "Flash Manufacturing PMI +1 more",
-    "read": "Actual 52.0 vs forecast 51.5, but GBP basket moved only -0.021%, inside the noise floor; the small positive surprise produced no bid in GBP, consistent with GBP mean -0.174% on the day."
+    "read": "Beat 52.0 vs 51.5 but GBP basket -0.021%, inside noise; no short sterling cover."
    }
   ],
   "scenarios": [
    {
-    "name": "USD bid extends on US exceptionalism and risk-off",
-    "probability": 0.5,
-    "thesis": "DXY closed at 100.866 near the top of a 73.6-point range and VIX at 17.66 near its high, while US business growth impulse was only partial; continuation favors USD against high-beta and commodity FX.",
+    "name": "USD strength extends",
+    "probability": 0.55,
+    "thesis": "Strong US growth and price pressures keep the dollar bid into the close; risk-off and high VIX support USD against high-beta FX.",
     "triggers": [
-     "USD/JPY holds above 158.365",
-     "VIX holds near 17.66",
-     "SPX stays below 7705.3"
+     "US claims fall, reinforcing labour market strength",
+     "SNB stays on hold with no hawkish surprise",
+     "AUD employment disappoints"
     ],
-    "invalidation": "A reversal below EUR/USD 1.13782 with a break back above 1.14 stalls the USD bid.",
+    "invalidation": "DXY closes back below 100.866 or USD/JPY loses 158.365.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 74.2,
-      "rationale": "Repeat of the 21:30-18:45 down leg of -74.2 pips; close at 0.03 in range leaves little support."
+      "magnitude_pips": 78.9,
+      "rationale": "Closed near lows after 74.2-pip down-leg; USD strength persists"
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 102.1,
-      "rationale": "Matches the 21:30-18:45 up leg of +102.1 pips; close at 0.97 range high."
+      "magnitude_pips": 116.0,
+      "rationale": "USD strength from growth data; pair closed near high +90.5 pips"
      },
      {
       "instrument": "AUD/USD",
       "direction": "down",
-      "magnitude_pips": 91.3,
-      "rationale": "Matches the 21:30-18:45 down leg of -91.3 pips; AUD mean -0.584%."
+      "magnitude_pips": 92.8,
+      "rationale": "AUD led +0.09% then gave back all; broad USD strength"
      },
      {
-      "instrument": "USD/CHF",
-      "direction": "up",
-      "magnitude_pips": 58.6,
-      "rationale": "Matches the 21:30-18:45 up leg of +58.6 pips; close at 1.0 range high."
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 118.8,
+      "rationale": "GBP held range and fell on USD strength; UK PMI muted"
      }
     ]
    },
    {
-    "name": "Range / consolidation after one-way dollar day",
+    "name": "Consolidation / two-way range",
     "probability": 0.3,
-    "thesis": "DXY is near top but daily ranges are small in majors after a broad move; profit-taking may hold pairs in ranges before high-impact calendar events, with PMIs already muted.",
+    "thesis": "After a strong directional move, markets pause into SNB and US claims; pairs hold within today's ranges.",
     "triggers": [
-     "EUR/USD holds inside 78.9-pip range",
-     "USD/JPY settles below 116.0-pip range high",
-     "VIX stabilizes near 17.66"
+     "SNB decision and press conference",
+     "US unemployment claims in line",
+     "CAD retail sales mixed"
     ],
-    "invalidation": "A break above DXY 100.866 with volume, or USD/JPY through 158.365, ends consolidation.",
+    "invalidation": "A close outside today's measured ranges for EUR/USD, USD/JPY, AUD/USD.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
       "magnitude_pips": 78.9,
-      "rationale": "Current daily range is 78.9 pips; close at 0.03 suggests support near lows but no new catalyst."
+      "rationale": "Pair closed near lows; expected to stay within the 78.9-pip range."
      },
      {
       "instrument": "USD/JPY",
       "direction": "range",
       "magnitude_pips": 116.0,
-      "rationale": "Daily range of 116.0 pips leaves room for consolidation after a +90.5-pip day."
+      "rationale": "Pair closed near high; expected to stay within the 116.0-pip range."
      },
      {
-      "instrument": "GBP/USD",
+      "instrument": "AUD/USD",
       "direction": "range",
-      "magnitude_pips": 118.8,
-      "rationale": "Daily range 118.8 pips; GBP mean -0.174% but PMI muted provides no fresh impulse."
-     },
-     {
-      "instrument": "USD/CAD",
-      "direction": "range",
-      "magnitude_pips": 48.7,
-      "rationale": "Tight 48.7-pip range; CAD retail sales ahead."
+      "magnitude_pips": 92.8,
+      "rationale": "Pair closed near low; expected to stay within the 92.8-pip range."
      }
     ]
    },
    {
-    "name": "Risk recovery / USD pullback",
-    "probability": 0.2,
-    "thesis": "Positive Iran de-escalation or soft US data could unwind overextended dollar and VIX spike; high-beta currencies bounce against USD.",
+    "name": "Risk reversal / USD pullback",
+    "probability": 0.15,
+    "thesis": "Overbought USD and stretched risk-off positioning spark profit-taking; SNB may surprise, or AUD employment strong.",
     "triggers": [
-     "Iran positive headline",
-     "Brent/USD fails to hold above 104.664",
-     "US Unemployment Claims surprise above 201K"
+     "AUD employment beats 21.5K forecast",
+     "SNB delivers hawkish surprise",
+     "US claims rise above forecast"
     ],
-    "invalidation": "DXY extends above 100.866 and VIX above 17.66.",
+    "invalidation": "USD holds above DXY 100.866 and USD/JPY stays above 158.365.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 78.9,
-      "rationale": "Recovery back toward top of 78.9-pip range, undoing close at 0.03."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 118.8,
-      "rationale": "Range high recovery after -97.3-pip drop."
+      "rationale": "EUR held range; a USD pullback could retrace the down-leg"
      },
      {
       "instrument": "AUD/USD",
       "direction": "up",
       "magnitude_pips": 92.8,
-      "rationale": "AUD mean -0.584% extreme; range 92.8 pips supports snapback."
+      "rationale": "AUD oversold after gave back all; strong employment could spark rebound"
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 68.6,
+      "rationale": "NZD similar rejection; risk-on would lift it"
      },
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 116.0,
-      "rationale": "Retracement of 116.0-pip daily range from 0.97 close."
+      "rationale": "JPY selling rejected; risk-off unwind"
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "SNB Monetary Policy Assessment and Press Conference",
-    "why_it_matters": "CHF strength +0.09% and USD/CHF +41.3 pips near high; SNB tone can alter CHF safe-haven flow.",
-    "watch": "SNB Policy Rate forecast 0.00% and statement."
+    "risk": "SNB policy surprise",
+    "why_it_matters": "SNB rate decision and press conference can reset CHF and safe-haven flows; CHF held range today.",
+    "watch": "SNB Policy Rate forecast 0.00% and press conference language."
    },
    {
-    "risk": "Australia employment data",
-    "why_it_matters": "AUD mean -0.584%, weakest; Employment Change forecast 21.5K vs prior -15.8K could drive AUD/USD.",
-    "watch": "Actual vs 21.5K and unemployment rate 4.5%."
+    "risk": "AUD employment miss",
+    "why_it_matters": "AUD led then gave back all, vulnerable to weak labour data.",
+    "watch": "Employment Change forecast 21.5K and Unemployment Rate 4.5%."
    },
    {
-    "risk": "US Unemployment Claims and CAD Retail Sales",
-    "why_it_matters": "USD strength +0.666% is priced near session highs; a soft claims print or weak CAD sales could challenge it.",
-    "watch": "Unemployment Claims forecast 201K vs previous 196K; CAD retail forecasts -0.8%/-0.5%."
-   },
-   {
-    "risk": "Iran headline flow",
-    "why_it_matters": "Brent +2.153% and VIX +1.582%; de-escalation or escalation can reverse USD and oil.",
-    "watch": "Trump/Rubio/Iran statements, Brent/USD 104.664."
+    "risk": "Geopolitical Iran headlines",
+    "why_it_matters": "Oil and risk sentiment swung on Iran deal momentum; Brent +2.153%.",
+    "watch": "Senior Iranian official reviews US response and further US/Israel statements."
    }
   ],
-  "calendar_ahead_note": "High-impact SNB decision at 09:30 and AUD employment at 03:30 are the clearest event risks; US claims and CAD retail sales at 14:30 can challenge the dollar bid. A dovish/hawkish SNB or unexpectedly strong AUD labor can undo the AUD/CHF and USD/CHF closes near extremes.",
+  "calendar_ahead_note": "AUD employment at 03:30, SNB decision and press conference at 09:30-10:00, CAD retail sales and US claims at 14:30 can reset the USD, CHF, AUD and CAD paths.",
   "_model": "deepseek-v4-pro",
   "_usage": {
-   "prompt_tokens": 12447,
-   "completion_tokens": 8242,
-   "total_tokens": 20689,
+   "prompt_tokens": 15500,
+   "completion_tokens": 11374,
+   "total_tokens": 26874,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5788
+    "reasoning_tokens": 9424
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 11935
+   "prompt_cache_hit_tokens": 0,
+   "prompt_cache_miss_tokens": 15500
   }
  }
 }
