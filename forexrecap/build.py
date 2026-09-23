@@ -7,6 +7,7 @@ from . import ff
 from .attribution import attribute_legs
 from .calendar_ff import (group_releases, in_window, load_events,
                           weeks_covering)
+from .decompose import currency_facts, decompose_all, strength_path
 from .config import (CONTEXT_INSTRUMENTS, CURRENCIES, DETAIL_PAIRS,
                      EXTRA_INSTRUMENTS, MAJOR_PAIRS, REACTION_WINDOWS_MIN,
                      tick_for)
@@ -102,6 +103,12 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
     reactions = build_reaction_functions(blocks, react_frames, DETAIL_PAIRS,
                                          windows=REACTION_WINDOWS_MIN)
 
+    # A pair's move is the difference of two currency moves, exactly. Split it
+    # so the map can say which side actually did the work.
+    split = decompose_all(MAJOR_PAIRS, frames)
+    path, path_grid = strength_path(frames, start, end)
+    ccy_facts = currency_facts(frames, path, reactions)
+
     report = {
         "meta": {
             "date": report_date.isoformat(),
@@ -134,6 +141,10 @@ def build(report_date, edition="evening", ttl=900, want_llm=True):
         "headlines": headlines,
         "reactions": reactions,
         "release_blocks": blocks,
+        "split": split,
+        "path": path,
+        "path_grid": path_grid,
+        "ccy_facts": ccy_facts,
         "ahead": ahead,
         "ahead_notable": ahead_notable,
     }
@@ -200,6 +211,28 @@ def facts_for_llm(report):
                            for n, p, pp, u, sg in r["top_movers"]],
         })
 
+    # One driver line per currency is all the model needs to write: the pair
+    # reasons are composed from them, because the split proves a pair's move
+    # IS the difference of its two currencies.
+    drivers = []
+    for c, ff_ in sorted(report["ccy_facts"].items(), key=lambda t: t[1]["rank"]):
+        drivers.append({
+            "ccy": c, "rank": ff_["rank"],
+            "strength_pct": round(ff_["strength_pct"], 3),
+            "intraday_peak": round(ff_["peak"], 3) if ff_["peak"] is not None else None,
+            "intraday_trough": round(ff_["trough"], 3) if ff_["trough"] is not None else None,
+            "shape": ff_["verdict"], "shape_note": ff_["shape_note"],
+            "own_releases": ff_["own_releases"],
+            "most_sensitive_to": ff_["biggest_reaction"],
+        })
+
+    splits = []
+    for p_, d in report["split"].items():
+        splits.append({"pair": p_, "move_pct": round(d["total_pct"], 3),
+                       "from_%s" % d["base"]: round(d["base_contrib"], 3),
+                       "from_%s" % d["quote"]: round(d["quote_contrib"], 3),
+                       "base_share": round(d["base_share"], 2)})
+
     return {
         "window": {
             "edition": m["edition"], "covers": m["window_label"],
@@ -207,6 +240,8 @@ def facts_for_llm(report):
             "from_local": m["start_local"].strftime("%Y-%m-%d %H:%M %Z"),
             "to_local": m["end_local"].strftime("%Y-%m-%d %H:%M %Z"),
         },
+        "currency_drivers": drivers,
+        "pair_decomposition": splits,
         "currency_strength_pct": [
             {"ccy": c, "mean_vs_majors_pct": round(v, 3) if v is not None else None}
             for c, v in report["map"]["strength"]],

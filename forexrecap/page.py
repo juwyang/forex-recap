@@ -5,6 +5,8 @@ from .config import EXTRA_INSTRUMENTS
 from .render import (_esc, _fmt_px, _pct, _pips, ahead_html, analysis_html,
                      headlines_html, market_map_html, reactions_html,
                      risks_html, scenarios_html, snapshot_rows)
+from .attribution_map import (attribution_map_html, drivers_html,
+                              pair_reasons_html)
 from .timeline import timeline_html
 from .util import hhmm
 
@@ -77,6 +79,36 @@ th{text-align:left;font-weight:600;font-size:10.5px;color:var(--dim);
 th.num{text-align:right}
 td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
 tbody tr:last-child td{border-bottom:none}
+
+/* attribution map: same layout as the strength map, different payload */
+.am-scroll{overflow-x:auto;padding-bottom:6px}
+.am{display:flex;gap:5px;min-width:1000px}
+.am-col{flex:1 1 0;display:flex;flex-direction:column;gap:2px;min-width:120px}
+.am-head{height:34px;border-radius:4px;background:var(--panel);
+  border:1px solid var(--line);display:flex;align-items:center;
+  justify-content:space-between;padding:0 8px;margin-bottom:2px}
+.am-head b{font-size:13px} .am-head span{font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+.am-cell{background:var(--panel);border:1px solid var(--line);border-radius:5px;
+  padding:5px 7px 6px;display:flex;flex-direction:column;gap:2px;min-height:52px}
+.am-cell.empty{background:transparent;border:none;min-height:0}
+.am-pair{font-size:10.5px;font-weight:600}
+.am-val{font-family:var(--mono);font-size:12px;font-weight:700}
+.am-legs{font-family:var(--mono);font-size:9px;color:var(--dim)}
+.sb{display:flex;height:4px;border-radius:2px;overflow:hidden;background:var(--flat)}
+.sb i{display:block;height:100%}
+.sb i.up{background:var(--up)} .sb i.down{background:var(--down)}
+.sbcell{width:88px}
+
+.drivers{list-style:none;margin:0 0 4px;padding:0}
+.drivers li{display:flex;gap:10px;align-items:baseline;padding:7px 0;
+  border-bottom:1px solid var(--line);font-size:13.5px}
+.drivers li:last-child{border-bottom:none}
+.dr-ccy{font-weight:700;width:38px;flex:none}
+.dr-str{font-family:var(--mono);font-size:12px;width:56px;flex:none;text-align:right}
+.dr-txt{flex:1}
+.dr-note{display:block;font-style:normal;font-family:var(--mono);
+  font-size:11.5px;color:var(--dim);margin-top:2px}
+table.reasons td{font-size:13px}
 
 /* timeline: event band + stacked lanes on one shared axis */
 .tl-scroll{overflow-x:auto;padding-bottom:4px}
@@ -245,6 +277,20 @@ strongest to weakest by mean move against the other seven. Reciprocal cells are
 exact inverses, so USD/AUD is not simply the negative of AUD/USD.</p>
 %s
 
+<h2>What each move was made of</h2>
+<p class="sub">A pair does not move &mdash; two currencies move and the pair
+reports the difference. In log space that is an identity, so every cell below
+splits exactly into a base leg and a quote leg. The reasons are composed from
+the eight currency drivers rather than written per pair, because the split is
+what proves a pair&rsquo;s move <em>is</em> the difference of its two sides.</p>
+%s
+
+<h3>The eight drivers</h3>
+%s
+
+<h3>Pair by pair</h3>
+%s
+
 <h2>Beyond the majors</h2>
 <div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
 <th class="num">change</th><th class="num">%%</th><th class="num">range</th>
@@ -287,6 +333,9 @@ own range; the number on a leg is its size in that instrument&rsquo;s pips.</p>
         title, window, _esc(m["sessions"]), strip,
         analysis_html(analysis),
         market_map_html(report),
+        attribution_map_html(report, analysis),
+        drivers_html(analysis, report),
+        pair_reasons_html(report, analysis),
         snapshot_rows(extras),
         snapshot_rows(report["context"]),
         reactions_html(report),
@@ -321,6 +370,37 @@ def build_markdown(report, analysis):
     for c, v in report["map"]["strength"]:
         L.append("| %s | %s |" % (c, _pct(v)))
     L.append("")
+
+    drivers = (analysis or {}).get("currency_drivers") or {}
+    if drivers:
+        L.append("## The eight drivers")
+        L.append("")
+        for c, _v in report["map"]["strength"]:
+            f_ = (report.get("ccy_facts") or {}).get(c) or {}
+            if drivers.get(c):
+                L.append("- **%s** %s - %s%s" % (
+                    c, _pct(f_.get("strength_pct")), drivers[c],
+                    "  _(%s)_" % f_["shape_note"] if f_.get("shape_note") else ""))
+        L.append("")
+
+    split = report.get("split") or {}
+    if split:
+        L.append("## What each move was made of")
+        L.append("")
+        L.append("Base and quote legs add to the move exactly: a pair is the "
+                 "difference of two currency moves, not a thing that moves.")
+        L.append("")
+        L.append("| pair | move | base leg | quote leg | base share |")
+        L.append("|---|---|---|---|---|")
+        for d_ in report["detail"]:
+            p_ = d_["instrument"]
+            x = split.get(p_)
+            if not x:
+                continue
+            L.append("| %s | %s | %s %s | %s %s | %.0f%% |"
+                     % (p_, _pct(x["total_pct"]), x["base"], _pct(x["base_contrib"]),
+                        x["quote"], _pct(x["quote_contrib"]), 100 * x["base_share"]))
+        L.append("")
 
     L.append("## Beyond the majors")
     L.append("")

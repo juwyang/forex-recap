@@ -61,12 +61,14 @@ Rules:
 That is a finding; explain what it implies about positioning.
 - Scenario probabilities must sum to 1.0 across the scenarios you give.
 - Be specific and short. No hedging boilerplate, no "traders should monitor".
+- `currency_drivers` must cover all eight. Each is one clause, under 20 words. It is read as the building block of every pair explanation, so it must be about that currency alone -- never about a pair. Where a currency's move has no catalyst in the input, the honest driver is that it had none.
 Return only JSON matching the requested schema."""
 
 SCHEMA_HINT = """Return JSON with exactly these keys:
 {
  "session_summary": "3-4 sentences: what drove the window and what the tape says",
  "themes": [{"theme": "...", "evidence": "...", "currencies": ["USD","JPY"]}],
+ "currency_drivers": {"USD": "ONE short clause saying why this currency moved as it did today -- the driver, not a restatement of the number. If nothing explains it, say so plainly.", "EUR": "...", "JPY": "...", "GBP": "...", "AUD": "...", "CAD": "...", "CHF": "...", "NZD": "..."},
  "leg_notes": {"EUR/USD": "one sentence tying that instrument's legs together"},
  "polarity_reads": [{"event":"...","read":"what the measured reaction says about positioning"}],
  "scenarios": [{"name":"...","probability":0.45,"thesis":"...",
@@ -77,7 +79,7 @@ SCHEMA_HINT = """Return JSON with exactly these keys:
  "calendar_ahead_note": "what in the coming window can change the picture"
 }"""
 
-REQUIRED = ["session_summary", "themes", "scenarios", "risks"]
+REQUIRED = ["session_summary", "themes", "scenarios", "risks", "currency_drivers"]
 
 
 def _post(payload, key, timeout=180):

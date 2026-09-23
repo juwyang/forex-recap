@@ -13,7 +13,7 @@
   "end_local": "2026-09-15T19:00:00+02:00",
   "fwd_start_utc": "2026-09-15T17:00:00+00:00",
   "fwd_end_utc": "2026-09-16T17:00:00+00:00",
-  "generated_utc": "2026-09-15T20:10:45.214908+00:00",
+  "generated_utc": "2026-09-23T19:26:15.394714+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 30
+   "with_actual": 85
   }
  },
  "facts": {
@@ -38,6 +38,336 @@
    "from_local": "2026-09-14 19:00 CEST",
    "to_local": "2026-09-15 19:00 CEST"
   },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.236,
+    "intraday_peak": 0.285,
+    "intraday_trough": 0.01,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Treasury Sec Bessent Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "USD stronger by 0.044%, but no forecast to score the surprise against"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Treasury Sec Bessent Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 3.35
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 2,
+    "strength_pct": 0.174,
+    "intraday_peak": 0.251,
+    "intraday_trough": 0.029,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Treasury Sec Bessent Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 2.4
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 3,
+    "strength_pct": 0.086,
+    "intraday_peak": 0.138,
+    "intraday_trough": -0.051,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.05%, recovered 73%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Claimant Count Change +1 more",
+     "instrument": "EUR/GBP",
+     "sigma": 3.23
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 4,
+    "strength_pct": 0.056,
+    "intraday_peak": 0.136,
+    "intraday_trough": -0.016,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Claimant Count Change +1 more",
+      "impact": "High",
+      "actual": "27.8K",
+      "forecast": "8.3K",
+      "polarity": "muted",
+      "note": "basket moved -0.029%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Claimant Count Change +1 more",
+     "instrument": "EUR/GBP",
+     "sigma": 3.23
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 5,
+    "strength_pct": 0.035,
+    "intraday_peak": 0.035,
+    "intraday_trough": -0.141,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 6,
+    "strength_pct": -0.134,
+    "intraday_peak": 0.052,
+    "intraday_trough": -0.186,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.05%, gave back 78%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Treasury Sec Bessent Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 3.35
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.207,
+    "intraday_peak": -0.024,
+    "intraday_trough": -0.325,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Treasury Sec Bessent Speaks",
+     "instrument": "NZD/USD",
+     "sigma": -2.89
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.247,
+    "intraday_peak": 0.103,
+    "intraday_trough": -0.283,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.10%, gave back 91%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.15,
+    "from_EUR": 0.086,
+    "from_USD": -0.236,
+    "base_share": 0.27
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.18,
+    "from_GBP": 0.056,
+    "from_USD": -0.236,
+    "base_share": 0.19
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.201,
+    "from_AUD": 0.035,
+    "from_USD": -0.236,
+    "base_share": 0.13
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.443,
+    "from_NZD": -0.207,
+    "from_USD": -0.236,
+    "base_share": 0.47
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.483,
+    "from_USD": 0.236,
+    "from_JPY": 0.247,
+    "base_share": 0.49
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.37,
+    "from_USD": 0.236,
+    "from_CHF": 0.134,
+    "base_share": 0.64
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.063,
+    "from_USD": 0.236,
+    "from_CAD": -0.174,
+    "base_share": 0.58
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.031,
+    "from_EUR": 0.086,
+    "from_GBP": -0.056,
+    "base_share": 0.61
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.333,
+    "from_EUR": 0.086,
+    "from_JPY": 0.247,
+    "base_share": 0.26
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.221,
+    "from_EUR": 0.086,
+    "from_CHF": 0.134,
+    "base_share": 0.39
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.051,
+    "from_EUR": 0.086,
+    "from_AUD": -0.035,
+    "base_share": 0.71
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.087,
+    "from_EUR": 0.086,
+    "from_CAD": -0.174,
+    "base_share": 0.33
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.294,
+    "from_EUR": 0.086,
+    "from_NZD": 0.207,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.303,
+    "from_GBP": 0.056,
+    "from_JPY": 0.247,
+    "base_share": 0.18
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.19,
+    "from_GBP": 0.056,
+    "from_CHF": 0.134,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.021,
+    "from_GBP": 0.056,
+    "from_AUD": -0.035,
+    "base_share": 0.61
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.118,
+    "from_GBP": 0.056,
+    "from_CAD": -0.174,
+    "base_share": 0.24
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.263,
+    "from_GBP": 0.056,
+    "from_NZD": 0.207,
+    "base_share": 0.21
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.282,
+    "from_AUD": 0.035,
+    "from_JPY": 0.247,
+    "base_share": 0.13
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.17,
+    "from_AUD": 0.035,
+    "from_CHF": 0.134,
+    "base_share": 0.21
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.138,
+    "from_AUD": 0.035,
+    "from_CAD": -0.174,
+    "base_share": 0.17
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.243,
+    "from_AUD": 0.035,
+    "from_NZD": 0.207,
+    "base_share": 0.15
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.04,
+    "from_NZD": -0.207,
+    "from_JPY": 0.247,
+    "base_share": 0.46
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.073,
+    "from_NZD": -0.207,
+    "from_CHF": 0.134,
+    "base_share": 0.61
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.381,
+    "from_NZD": -0.207,
+    "from_CAD": -0.174,
+    "base_share": 0.54
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.42,
+    "from_CAD": 0.174,
+    "from_JPY": 0.247,
+    "base_share": 0.41
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.308,
+    "from_CAD": 0.174,
+    "from_CHF": 0.134,
+    "base_share": 0.56
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.113,
+    "from_CHF": -0.134,
+    "from_JPY": 0.247,
+    "base_share": 0.35
+   }
+  ],
   "currency_strength_pct": [
    {
     "ccy": "USD",
@@ -1659,7 +1989,7 @@
     "ccy": "USD",
     "impact": "Medium",
     "event": "Core Retail Sales m/m",
-    "forecast": "0.5%",
+    "forecast": "0.6%",
     "previous": "-0.3%"
    },
    {
@@ -1672,177 +2002,5 @@
    }
   ]
  },
- "analysis": {
-  "session_summary": "USD led broad gains with DXY/USD +22.1 points, while JPY and NZD were the weakest majors. Risk tone was soft: SPX/USD fell -52.4 points, VIX/USD rose +8.2, and Brent/USD surged +2.75% on Middle East oil supply headlines. Most FX legs lacked a clear catalyst; the only reliably attributed USD-positive event was Treasury Sec Bessent Speaks at 16:00, with USD strengthening 0.044% but no forecast to score a surprise.",
-  "themes": [
-   {
-    "theme": "Broad USD strength",
-    "evidence": "DXY/USD +22.1 points; USD/JPY +74.8 pips; USD/SEK +465.7 pips; USD/NOK +293.1 pips",
-    "currencies": [
-     "USD",
-     "JPY",
-     "SEK",
-     "NOK"
-    ]
-   },
-   {
-    "theme": "Oil supply shock from Middle East headlines",
-    "evidence": "Brent/USD +2.75% to 110.594; Saudi pipeline closure cancellation; IRGC tanker fire in Strait of Hormuz",
-    "currencies": [
-     "CAD",
-     "NOK",
-     "MXN",
-     "ZAR"
-    ]
-   },
-   {
-    "theme": "Soft risk tone with high-beta underperformance",
-    "evidence": "SPX/USD -52.4 points; VIX/USD +8.2; NZD mean -0.236%; JPY mean -0.282%",
-    "currencies": [
-     "NZD",
-     "JPY"
-    ]
-   }
-  ],
-  "leg_notes": {
-   "EUR/USD": "EUR/USD carved a down-up-down path with no clear catalyst: Asia fell -30.0 pips, London retraced +20.9 pips, then Bessent comments late in the day produced a -6.4 pip USD-positive fade."
-  },
-  "polarity_reads": [
-   {
-    "event": "Treasury Sec Bessent Speaks",
-    "read": "Unscored because no forecast existed; USD strengthened 0.044% on the event, implying the market leaned USD-positive but the lack of a consensus surprise makes it a directional rather than a data-scored reaction."
-   },
-   {
-    "event": "Claimant Count Change +1 more",
-    "read": "Actual 27.8K vs forecast 8.3K was a large miss, but GBP moved only -0.029% inside the noise floor; the muted reaction suggests the market did not treat it as a fresh negative for GBP or had already priced labor softness."
-   }
-  ],
-  "scenarios": [
-   {
-    "name": "USD strength extends",
-    "probability": 0.45,
-    "thesis": "DXY +22.1 points and USD-positive Bessent comments anchor a bid; consensus US retail sales (0.8% m/m, core 0.5%) should sustain USD if met.",
-    "triggers": [
-     "US Retail Sales m/m >= 0.8%",
-     "US Core Retail Sales m/m >= 0.5%",
-     "Brent holds above 110.6"
-    ],
-    "invalidation": "US retail sales miss or risk sentiment rebounds",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 34.0,
-      "rationale": "today's EUR/USD range 34.0 pips with DXY +22.1 points points to another leg lower"
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "down",
-      "magnitude_pips": 49.4,
-      "rationale": "today's GBP/USD range 49.4 pips; broad USD bid and soft risk tone weigh"
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 124.5,
-      "rationale": "today's USD/JPY range 124.5 pips; JPY weakest at -0.282% leaves upside open"
-     }
-    ]
-   },
-   {
-    "name": "US data disappoints / risk reversal",
-    "probability": 0.35,
-    "thesis": "US retail sales rebound is optimistic after -0.6% prior; a miss would unwind the DXY bid and allow high-beta pairs to recover.",
-    "triggers": [
-     "US Retail Sales m/m < 0.8%",
-     "US Core Retail Sales m/m < 0.5%",
-     "SPX reclaims 7590"
-    ],
-    "invalidation": "Strong US data or renewed oil escalation",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 34.0,
-      "rationale": "today's EUR/USD range 34.0 pips; USD unwind would retrace the Bessent fade"
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 74.8,
-      "rationale": "today's +74.8 pip USD/JPY gain could be partially reversed on soft US data"
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 30.0,
-      "rationale": "today's AUD/USD range 30.0 pips; better risk tone lifts the high-beta AUD"
-     }
-    ]
-   },
-   {
-    "name": "Oil supply shock escalates",
-    "probability": 0.2,
-    "thesis": "Brent +2.75% after Saudi cancellations and tanker fire; further escalation would lift oil, hammer equities, and keep safe-haven USD bid while oil FX outperforms.",
-    "triggers": [
-     "Brent breaks above 110.6",
-     "New Strait of Hormuz escalation",
-     "SPX down more than 52.4 points"
-    ],
-    "invalidation": "Oman/US de-escalation or oil reversal",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 34.0,
-      "rationale": "USD safe-haven bid would extend pressure on EUR/USD within today's 34.0 pip range"
-     },
-     {
-      "instrument": "USD/CAD",
-      "direction": "down",
-      "magnitude_pips": 31.6,
-      "rationale": "CAD oil beta should strengthen, pressuring USD/CAD inside today's 31.6 pip range"
-     },
-     {
-      "instrument": "USD/NOK",
-      "direction": "down",
-      "magnitude_pips": 438.5,
-      "rationale": "NOK oil beta and Brent spike support NOK; today's USD/NOK range 438.5 pips is the path"
-     }
-    ]
-   }
-  ],
-  "risks": [
-   {
-    "risk": "UK CPI y/y",
-    "why_it_matters": "High-impact GBP catalyst at 08:00; forecast 3.1% vs previous 2.9%. A hot print may price BoE tightening; a soft print may knock GBP.",
-    "watch": "GBP/USD, EUR/GBP"
-   },
-   {
-    "risk": "US retail sales",
-    "why_it_matters": "Medium-impact USD catalysts at 14:30; forecast core 0.5% and headline 0.8% after negative prior. A miss could abruptly unwind DXY +22.1 points.",
-    "watch": "DXY, EUR/USD, USD/JPY"
-   },
-   {
-    "risk": "Middle East oil disruption",
-    "why_it_matters": "Brent already +2.75% on Saudi pipeline cancellation and tanker fire; further disruption will hit risk assets and high-beta FX.",
-    "watch": "Brent/USD, USD/CAD, USD/NOK, SPX/VIX"
-   }
-  ],
-  "calendar_ahead_note": "GBP CPI y/y at 08:00 (forecast 3.1%, previous 2.9%) is the first high-impact test for GBP; at 14:30 US retail sales (forecast 0.8% m/m, core 0.5% m/m) can extend or reverse the USD bid. A large CPI or retail miss would be the strongest catalyst to break the current USD strength.",
-  "_model": "deepseek-v4-pro",
-  "_usage": {
-   "prompt_tokens": 15031,
-   "completion_tokens": 9001,
-   "total_tokens": 24032,
-   "prompt_tokens_details": {
-    "cached_tokens": 14976
-   },
-   "completion_tokens_details": {
-    "reasoning_tokens": 7116
-   },
-   "prompt_cache_hit_tokens": 14976,
-   "prompt_cache_miss_tokens": 55
-  }
- }
+ "analysis": null
 }
