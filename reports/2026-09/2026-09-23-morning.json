@@ -13,7 +13,7 @@
   "end_local": "2026-09-23T07:00:00+02:00",
   "fwd_start_utc": "2026-09-23T05:00:00+00:00",
   "fwd_end_utc": "2026-09-23T17:00:00+00:00",
-  "generated_utc": "2026-09-23T05:05:09.747512+00:00",
+  "generated_utc": "2026-09-23T09:55:04.090847+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 9
+   "with_actual": 16
   }
  },
  "facts": {
@@ -1158,165 +1158,190 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was risk-positive on its face (SPX +7.6 points, VIX -5.8 points) and oil lower (Brent -1.971%), but the FX map shows CHF (+0.107%) and USD (+0.105%) leading while NZD lagged (-0.254%). Most EUR/USD and USD/JPY legs had no clear catalyst; nearby Trump/Iran headlines were too weak to own the moves or moved price the other way. EUR/USD closed at 1.14267, -10.4 pips after an initial 19.0-pip up leg was fully retraced by a 25.7-pip down leg. USD/JPY remained bid, up 13.4 pips to 157.594.",
+  "session_summary": "The overnight NY afternoon-to-Asia window was two-way with no clean catalyst for most major legs. Measured currency strength put CHF (+0.107%) and USD (+0.105%) at the top and NZD (-0.254%) at the bottom; EUR/USD closed -10.4 pips near its low and GBP/USD -14.8 pips near its low. Brent/USD dropped -1.971% while SPX rose +7.6 and VIX fell -5.8, consistent with soft risk-on; Trump Iran-diplomacy headlines briefly sold USD against SEK, ZAR, and MXN before fading. Most major legs carried no confident headline driver.",
   "themes": [
    {
-    "theme": "USD/CHF strength",
-    "evidence": "USD mean +0.105% and CHF mean +0.107% vs majors; DXY/USD +7.9 points; USD/JPY +13.4 pips; USD/CAD +12.7 pips.",
+    "theme": "Defensive USD/CHF outperform, NZD laggard as oil drops",
+    "evidence": "CHF +0.107%, USD +0.105% vs majors; NZD -0.254%; NZD/USD -17.9 pips; Brent/USD -1.971%.",
     "currencies": [
+     "CHF",
      "USD",
-     "CHF"
-    ]
-   },
-   {
-    "theme": "NZD underperformance",
-    "evidence": "NZD mean -0.254% vs majors; NZD/USD -17.9 pips; AUD/NZD +33.5 pips; NZD/CHF -14.9 pips.",
-    "currencies": [
      "NZD"
     ]
    },
    {
-    "theme": "Headline-driven two-way chop without clear catalysts",
-    "evidence": "High-impact Trump/Iran headlines at 19:45 and 21:30 appear in leg notes, but the measured EUR/USD and USD/JPY legs show no causal driver; several legs moved the other way.",
+    "theme": "Iran-deal headlines trigger brief high-beta FX rally against USD",
+    "evidence": "Trump headline 'A Lot Of Momentum For Iran To Make A Deal...' caused USD/SEK -121.7 pips, USD/ZAR -127.2, USD/MXN -90.3 in 15 min; moves were 18-32% of their legs.",
     "currencies": [
-     "EUR",
+     "USD",
+     "SEK",
+     "ZAR",
+     "MXN"
+    ]
+   },
+   {
+    "theme": "Flow-driven chop, no confident headline ownership",
+    "evidence": "Legs show confidence none; USD/JPY closed +13.4 pips at 0.82 of range after five unowned legs; EUR/USD and GBP/USD closed near lows with no catalyst.",
+    "currencies": [
      "USD",
      "JPY",
-     "GBP",
-     "CHF"
+     "EUR",
+     "GBP"
     ]
    }
   ],
   "leg_notes": {
-   "EUR/USD": "The tape opened with a 19.0-pip up leg into 21:30, then reversed with a 25.7-pip down leg into 06:45 to close -10.4 pips at 1.14267; neither leg had a clear catalyst."
+   "EUR/USD": "EUR/USD rose 19.0 pips to 21:30 then fell -25.7 pips into 1.14267, closing at 0.04 of range.",
+   "GBP/USD": "GBP/USD rose 19.6 pips then fell -30.5 pips to 1.33159, closing at 0.02 of range.",
+   "AUD/USD": "AUD/USD rose 15.0 pips then fell -17.2 pips to 0.71027, closing at 0.20 of range.",
+   "NZD/USD": "NZD/USD rose 12.9 pips then fell -29.0 pips to 0.57025, closing at 0.07 of range.",
+   "USD/JPY": "USD/JPY chopped through five legs (-14.9, +12.9, -15.2, +32.7, -7.7) to close +13.4 pips at 157.594, 0.82 of range.",
+   "USD/CHF": "USD/CHF swung -19.9 then +7.2, -7.1, +17.0 to close nearly flat at 0.82152, 0.77 of range.",
+   "USD/CAD": "USD/CAD fell -18.9 pips then rose +25.4 pips to 1.40833, closing at 0.92 of range.",
+   "EUR/CHF": "EUR/CHF whipsawed through seven legs (-5.5, +5.4, -7.2, +4.5, -6.3, +10.8, -10.5) to close -8.8 pips at 0.93872.",
+   "CHF/JPY": "CHF/JPY rose 25.5 pips, fell -30.0, rose +34.5, fell -16.1 to close +14.7 pips at 191.823.",
+   "AUD/NZD": "AUD/NZD fell -21.3 pips then rose +52.7 pips to close +33.5 pips at 1.24546, 0.95 of range.",
+   "EUR/GBP": "EUR/GBP rose 1.4, fell -4.3, rose 6.7, fell -1.9 to close +1.6 pips at 0.85809.",
+   "AUD/CHF": "AUD/CHF fell -9.0, rose +11.5, fell -6.2 to close -2.8 pips at 0.58349.",
+   "NZD/CHF": "NZD/CHF fell -14.9 pips from 19:00 to 06:45 to close 0.46845, down 0.317%.",
+   "USD/SEK": "USD/SEK fell -402.1 pips then rose +286.8 to close -96.3 pips at 9.84975.",
+   "USD/NOK": "USD/NOK fell -223.8 pips then rose +373.8 to close +185.4 pips at 9.46462.",
+   "USD/ZAR": "USD/ZAR fell -723.8 pips then rose +329.8 to close -308.3 pips at 16.18933.",
+   "USD/MXN": "USD/MXN fell -284.1 pips then rose +468.2 to close +249.4 pips at 17.3241.",
+   "Brent/USD": "Brent/USD carved seven legs (down -143.5, up +109.0, down -164.0, up +79.3, down -58.8, up +111.8, down -108.1) to close -201.9 pips at 100.439."
   },
-  "polarity_reads": [],
+  "polarity_reads": [
+   {
+    "event": "Trump: A Lot Of Momentum For Iran To Make A Deal; Expects Iran To Do Something Good",
+    "read": "Measured in-leg reactions: USD/SEK -121.7 pips (30% of leg), USD/ZAR -127.2 (18%), USD/MXN -90.3 (32%) in 15 min; this is a risk-on USD sell against high-beta FX, but it faded and no formal event_reaction was recorded."
+   }
+  ],
   "scenarios": [
    {
-    "name": "USD/CHF resilience extends",
-    "probability": 0.45,
-    "thesis": "CHF and USD remain at the top of the strength table while EUR/GBP PMI risk keeps European FX capped and NZD weak.",
+    "name": "EZ PMI disappointment extends EUR/USD lower",
+    "probability": 0.35,
+    "thesis": "EUR/USD closed near the low at 1.14267 (-10.4 pips, 0.04 of range) and EUR strength is -0.001%; French services forecast 48.3 and German services 49.9 leave downside risk. A miss can push EUR/USD through the 29.3-pip range low and drag GBP/USD via UK PMIs.",
     "triggers": [
-     "French/German PMIs miss or merely meet forecasts",
-     "GBP services PMI slips below 52.0 forecast",
-     "Risk appetite stays supported but not strong enough to hurt USD"
+     "French Flash Services PMI < 48.3",
+     "German Flash Services PMI < 49.9",
+     "EUR/USD breaks below 1.14267"
     ],
-    "invalidation": "German services PMI beats 49.9 strongly and EUR/USD recovers back through its 29.3-pip overnight range.",
+    "invalidation": "EUR/USD holds above 1.14267 and EZ services print at or above forecast.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 29.3,
-      "rationale": "Close at 1.14267 sits near the low of a 29.3-pip range with USD strength leading."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 43.7,
-      "rationale": "USD strength and a high close in range (0.82) argue for a retest of the overnight USD/JPY range."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "down",
-      "magnitude_pips": 32.2,
-      "rationale": "NZD is weakest at -0.254% and NZD/USD closed near its range low (0.07 close_in_range)."
-     }
-    ]
-   },
-   {
-    "name": "PMI-driven EUR/GBP bounce",
-    "probability": 0.3,
-    "thesis": "Upside EUR PMIs, especially German services, lift EUR against GBP because the UK services PMI is forecast to soften.",
-    "triggers": [
-     "German Flash Services PMI above 49.9",
-     "French Flash Services PMI above 48.3",
-     "GBP services PMI below 52.0"
-    ],
-    "invalidation": "EUR PMIs miss and EUR/GBP stays capped within its 7.5-pip range.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/GBP",
-      "direction": "up",
-      "magnitude_pips": 7.5,
-      "rationale": "EUR/GBP range was only 7.5 pips; a positive EUR PMI surprise can finally expand it."
-     },
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 29.3,
-      "rationale": "EUR/USD is near the bottom of its 29.3-pip range; EUR strength can trigger a rebound."
+      "rationale": "Overnight range is 29.3 pips and close is 0.04 of range; weak services PMIs favor extension lower."
      },
      {
       "instrument": "GBP/USD",
       "direction": "down",
       "magnitude_pips": 34.0,
-      "rationale": "GBP was -0.022% vs majors; softer UK services PMI would reinforce GBP underperformance."
+      "rationale": "UK services forecast 52.0 vs prior 52.8; GBP/USD range 34.0 and close 0.02 of range."
+     },
+     {
+      "instrument": "EUR/GBP",
+      "direction": "range",
+      "magnitude_pips": 7.5,
+      "rationale": "EUR/GBP range is 7.5 pips; both EUR and GBP face soft PMI risk, likely range."
      }
     ]
    },
    {
-    "name": "Risk-off / PMI miss liquidation",
-    "probability": 0.25,
-    "thesis": "A PMI miss or renewed oil/geopolitical concern sends flows into USD/CHF and extends NZD losses.",
+    "name": "Base case: PMIs near forecast, dollar stays bid",
+    "probability": 0.45,
+    "thesis": "With no strong catalyst, measured CHF +0.107% and USD +0.105% strength, NZD -0.254%, and DXY +7.9 near high support USD; majors consolidate near overnight closes.",
     "triggers": [
-     "French/German/GBP PMIs all miss forecasts",
-     "SPX turns negative after overnight +0.098%",
-     "Brent/USD stays weak and drags CAD/NOK/MXN"
+     "French/German/UK PMIs print in line with forecast",
+     "USD/JPY holds above 157.594",
+     "NZD/USD stays below 0.57025"
     ],
-    "invalidation": "Strong services PMIs and a positive risk close in SPX.",
+    "invalidation": "EUR/USD breaks above 1.14267 and USD/JPY falls below 157.594.",
     "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 29.3,
+      "rationale": "Closed at 0.04 of range after no catalyst; PMI near forecast keeps range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 43.7,
+      "rationale": "Closed +13.4 pips at 0.82 of range; USD support but no fresh driver."
+     },
      {
       "instrument": "NZD/USD",
       "direction": "down",
       "magnitude_pips": 32.2,
-      "rationale": "NZD weakness is already the dominant theme; risk-off would accelerate toward the bottom of its range."
-     },
+      "rationale": "NZD -0.254% weakest; NZD/USD range 32.2, close 0.07; soft risk keeps downside pressure."
+     }
+    ]
+   },
+   {
+    "name": "Iran-deal follow-through lifts high-beta FX",
+    "probability": 0.2,
+    "thesis": "Trump Iran-diplomacy headline caused USD/SEK -121.7, USD/ZAR -127.2, USD/MXN -90.3 in 15 min; extended follow-through would unwind USD strength and support high-beta and oil importers as Brent -1.971% drops.",
+    "triggers": [
+     "Further Iran-deal headlines",
+     "Brent/USD extends below 100.439",
+     "USD/MXN breaks below 17.3241"
+    ],
+    "invalidation": "Brent/USD recovers above 100.439 and USD/MXN stays above 17.3241.",
+    "pair_paths": [
      {
-      "instrument": "USD/CHF",
+      "instrument": "USD/MXN",
       "direction": "down",
-      "magnitude_pips": 24.4,
-      "rationale": "CHF strength leads in the map; risk-off would push USD/CHF toward its 24.4-pip range low."
+      "magnitude_pips": 569.2,
+      "rationale": "USD/MXN overnight range 569.2; prior 15-min reaction was -90.3 pips on Iran headline."
      },
      {
-      "instrument": "USD/CAD",
+      "instrument": "USD/ZAR",
+      "direction": "down",
+      "magnitude_pips": 819.4,
+      "rationale": "USD/ZAR overnight range 819.4; prior 15-min reaction was -127.2 pips."
+     },
+     {
+      "instrument": "AUD/USD",
       "direction": "up",
-      "magnitude_pips": 28.2,
-      "rationale": "Oil weakness and risk-off support USD/CAD; overnight range is 28.2 pips."
+      "magnitude_pips": 22.5,
+      "rationale": "AUD strength +0.053%; AUD/USD range 22.5 pips; risk-on supports AUD/USD."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Trump/Iran headline fade risk",
-    "why_it_matters": "High-impact headlines at 19:45 and 21:30 did not cleanly own the EUR/USD moves; several legs moved the other way, so chasing headlines can get trapped by two-way flow.",
-    "watch": "Brent/USD and high-beta USD/SEK, USD/ZAR, USD/MXN legs that had large share moves on the Iran item."
+    "risk": "Brent reversal on Iran headlines",
+    "why_it_matters": "Brent/USD fell -1.971% to 100.439; a snap back can reverse USD/ZAR, USD/MXN, USD/SEK moves.",
+    "watch": "Brent/USD 100.439 and Trump Iran comments."
    },
    {
-    "risk": "European PMI volatility",
-    "why_it_matters": "The coming window has French, German, and UK flash PMIs; EUR/GBP range is only 7.5 pips and EUR/USD range is 29.3 pips, so a surprise can quickly move both.",
-    "watch": "German Services PMI vs 49.9 forecast, GBP Services PMI vs 52.0, EUR/GBP 0.85809 close."
+    "risk": "NZD capitulation extends",
+    "why_it_matters": "NZD -0.254% vs majors, NZD/USD -17.9 pips at 0.07 of range; thin liquidity can overshoot.",
+    "watch": "NZD/USD 0.57025 and NZD/CHF -14.9 pips."
    },
    {
-    "risk": "NZD downside momentum",
-    "why_it_matters": "NZD was -0.254% vs majors and NZD/USD closed at 0.57025, close to its range low (0.07 within range), leaving it exposed to further liquidation.",
-    "watch": "NZD/USD 0.57025, AUD/NZD 1.24546, NZD/CHF 0.46845."
+    "risk": "PMI surprises high impact",
+    "why_it_matters": "EUR/USD and GBP/USD closed near lows with no catalyst; stronger EZ/UK PMIs could force short covering.",
+    "watch": "French/German/UK flash PMIs at 09:15/09:30/10:30."
    }
   ],
-  "calendar_ahead_note": "French, German and UK flash PMIs from 09:15 to 10:30 are the main window ahead; EUR and GBP sit near flat-to-weak, so an upside services PMI can lift EUR/GBP while a miss reinforces USD/CHF. No US calendar event, so oil and risk mood will be the bridge from the overnight session.",
+  "calendar_ahead_note": "French flash manufacturing (50.9 forecast, 51.5 prior) and services (48.3, 48.4 prior) at 09:15, German manufacturing (54.1, 54.1) and services (49.9, 48.5 prior) at 09:30, then UK manufacturing (51.5, 51.5) and services (52.0, 52.8 prior) at 10:30 can shift EUR/USD, GBP/USD, and EUR/GBP.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 10501,
-   "completion_tokens": 7800,
-   "total_tokens": 18301,
+   "completion_tokens": 12121,
+   "total_tokens": 22622,
    "prompt_tokens_details": {
-    "cached_tokens": 512
+    "cached_tokens": 10496
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5882
+    "reasoning_tokens": 9190
    },
-   "prompt_cache_hit_tokens": 512,
-   "prompt_cache_miss_tokens": 9989
+   "prompt_cache_hit_tokens": 10496,
+   "prompt_cache_miss_tokens": 5
   }
  }
 }
