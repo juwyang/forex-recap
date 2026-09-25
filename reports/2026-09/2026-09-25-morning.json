@@ -13,7 +13,7 @@
   "end_local": "2026-09-25T07:00:00+02:00",
   "fwd_start_utc": "2026-09-25T05:00:00+00:00",
   "fwd_end_utc": "2026-09-25T17:00:00+00:00",
-  "generated_utc": "2026-09-25T05:47:44.538108+00:00",
+  "generated_utc": "2026-09-25T10:08:59.067832+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 38
+   "with_actual": 39
   }
  },
  "facts": {
@@ -1595,163 +1595,182 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight trading was dominated by JPY strength after Japan FinMin Katayama said Trump voiced worries over a weak yen. USD/JPY fell 37.7 pips to 158.416, while USD was otherwise firm but lacked a catalyst as President Trump's speech was muted. High-beta FX underperformed with NZD down 0.186% and AUD down 0.075%, and risk indicators showed mild risk-off with SPX -0.206% and VIX +1.252% to 17.874. The tape was mostly flow/technical; only the Japan headline produced a clear reaction.",
+  "session_summary": "Overnight tape was dominated by a JPY bid after Japanese FinMin Katayama said Trump voiced worries over a weak yen during the summit, sending USD/JPY -37.7 pips to 158.416 and CHF/JPY -81.0 pips to 191.039. USD was mildly firmer with DXY +5.5 points at 101.001 despite a muted Trump speech (basket -0.011%). Risk tone stayed cautious: VIX +1.252% to 17.874, SPX -0.206% to 7698.5, and high-beta NZD was weakest at -0.186%. Most major legs had no clear catalyst.",
   "themes": [
    {
-    "theme": "JPY strength dominates",
-    "evidence": "USD/JPY fell 37.7 pips to 158.416; Japan FinMin Katayama said Trump voiced worries over weak yen, contributing -18.3 pips in 15 min (35% of the leg).",
+    "theme": "Yen verbal intervention bid",
+    "evidence": "Japan FinMin Katayama headline 'Trump voiced worries over weak yen' at 04:00; USD/JPY -37.7 pips, CHF/JPY -81.0 pips, NZD/JPY -0.511%.",
     "currencies": [
-     "JPY",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "USD resilience with no event impulse",
+    "evidence": "DXY +5.5 points to 101.001; USD strength +0.085%; Trump speech basket moved -0.011%, inside noise floor.",
+    "currencies": [
      "USD"
     ]
    },
    {
-    "theme": "Muted USD reaction and risk-off undertone",
-    "evidence": "President Trump Speaks was muted (-0.011% basket); DXY up only 5.5 points; SPX -15.9 points and VIX +1.252% to 17.874.",
+    "theme": "High-beta FX and CHF soft",
+    "evidence": "NZD -0.186%, CHF -0.097%, AUD -0.075%; VIX +1.252% to 17.874 and SPX -0.206%.",
     "currencies": [
-     "USD",
+     "NZD",
      "CHF",
-     "AUD",
-     "NZD"
-    ]
-   },
-   {
-    "theme": "Flow/technical tape, not news",
-    "evidence": "Multiple legs marked no clear catalyst; EUR/USD had three catalyst-less legs, and GBP/USD showed flow-only moves.",
-    "currencies": [
-     "EUR",
-     "GBP",
-     "AUD",
-     "CAD"
+     "AUD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Trump's speech was muted and inside the noise floor, leaving no clear own driver.",
-   "JPY": "FinMin Katayama said Trump voiced worries over weak yen, driving broad yen strength.",
-   "EUR": "No own releases; +0.06% attempt was rejected and gave back 78%.",
-   "GBP": "No own releases; no clear catalyst beyond broad USD and crossfire.",
-   "AUD": "No own releases; fell with risk before getting a Trump-speech bounce.",
-   "CAD": "No own releases; +0.07% attempt was rejected, giving back 94%.",
-   "CHF": "No own releases; rejected +0.08% attempt and closed lower despite risk-off.",
-   "NZD": "No own releases; weakest currency, no clear catalyst, fell across the board."
+   "USD": "No clean catalyst; own Trump speech was muted, basket moved -0.011%.",
+   "EUR": "No clear catalyst; led +0.06% early then gave back 78%.",
+   "JPY": "Katayama said Trump voiced worries over weak yen, driving JPY bid.",
+   "GBP": "No clear catalyst; closed softer with no UK-specific driver explaining it.",
+   "AUD": "No own release or clear catalyst; soft risk tone accompanied the -0.075%.",
+   "CAD": "No clear catalyst; early +0.07% faded without Canadian data.",
+   "CHF": "No clear catalyst; early +0.08% was fully retraced.",
+   "NZD": "Weakest major with no own releases or clear catalyst."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped through three catalyst-less legs—down 13.0 pips, up 12.3, down 9.6—to close at 1.13703, -8.3 pips."
+   "EUR/USD": "EUR/USD chopped in three legs of -13.0, +12.3, then -9.6 pips, with no leg attributed to a clear catalyst and closing -8.3 pips."
   },
   "polarity_reads": [
    {
     "event": "President Trump Speaks",
-    "read": "Basket reaction was -0.011% inside the noise floor; even the largest move, GBP/USD -3.9 pips at -1.97σ, is too small to infer a positioning shift."
+    "read": "Muted basket impulse of -0.011% implies the speech carried no tradeable USD information; top mover GBP/USD was -3.9 pips and within noise, so no clear shift in USD positioning."
    }
   ],
   "scenarios": [
    {
-    "name": "Yen strength extends",
+    "name": "Yen verbal bid extends",
     "probability": 0.45,
-    "thesis": "Japan FinMin comments keep USD/JPY offered; high-beta remains heavy and VIX up supports JPY.",
+    "thesis": "After Katayama/Trump weak-yen remarks, markets stay sensitive to further official jawboning; JPY strength persists and risk FX stays soft.",
     "triggers": [
-     "Japan FinMin/Trump yen comments continue",
-     "USD/JPY breaks below overnight low",
-     "SPX extends lower"
+     "Another official yen comment",
+     "Sustained VIX bid",
+     "USD/JPY close below 158.416"
     ],
-    "invalidation": "USD/JPY fails to hold below 158.416 or Trump retracts yen worry.",
+    "invalidation": "Risk stabilizes and USD/JPY reclaims 158.416; silence on yen intervention.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 74.1,
-      "rationale": "Broad yen strength from FinMin Katayama headline can fill the overnight 74.1-pip range."
-     }
-    ]
-   },
-   {
-    "name": "Consolidation / two-way chop",
-    "probability": 0.35,
-    "thesis": "Overnight move lacked broad catalyst; expect range-trading near current closes as Tokyo/London absorb.",
-    "triggers": [
-     "No new Japan jawboning",
-     "SPX stabilizes",
-     "US yields hold"
-    ],
-    "invalidation": "Break of EUR/USD 24.3-pip range or USD/JPY 74.1-pip range.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 24.3,
-      "rationale": "No catalyst; expect chop within the 24.3-pip overnight range."
+      "rationale": "Observed range allows extension after the -37.7 pip decline."
      },
      {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 74.1,
-      "rationale": "Yen strength may consolidate within the 74.1-pip range as headlines fade."
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 24.6,
+      "rationale": "AUD is soft and risk-off amplifies downside."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 21.8,
+      "rationale": "NZD is weakest major and risk-off amplifies downside."
      }
     ]
    },
    {
-    "name": "Dollar rebound/risk recovery",
-    "probability": 0.2,
-    "thesis": "Muted Trump and stretched JPY positioning spark USD rebound; commodity FX bounces from lows.",
+    "name": "USD stabilization on UoM",
+    "probability": 0.35,
+    "thesis": "Muted Trump speech and DXY +5.5 points leave USD stable; revised UoM supports mild USD recovery while yen bids fade.",
     "triggers": [
-     "USD/JPY reclaims 158.416",
-     "SPX recovers 7698.5",
-     "VIX drops below 17.874"
+     "UoM sentiment reaches 47.4 or higher",
+     "BOE Bailey does not sound hawkish",
+     "VIX retreats from 17.874"
     ],
-    "invalidation": "USD/JPY makes new lows or VIX prints above 17.874.",
+    "invalidation": "Another weak-yen headline or risk-off flare pushes USD/JPY back below 158.416.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "up",
       "magnitude_pips": 74.1,
-      "rationale": "Dollar rebound can retrace the 74.1-pip overnight range if Trump/yen worries fade."
+      "rationale": "Room within 74.1-pip overnight range to retrace the -37.7 pip decline."
      },
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 24.3,
-      "rationale": "USD recovery would pressure EUR/USD within its 24.3-pip range."
+      "rationale": "USD strength plus no EUR catalyst supports retest of overnight -8.3 pip decline."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 23.4,
+      "rationale": "CHF weakness already gave back early gains; USD recovery can extend."
+     }
+    ]
+   },
+   {
+    "name": "Rangebound repair",
+    "probability": 0.2,
+    "thesis": "Markets consolidate after the JPY spike and risk tone stabilizes; USD/JPY retraces part of its drop but stays inside ranges.",
+    "triggers": [
+     "No fresh yen headlines",
+     "SPX holds above 7698.5",
+     "BOE Bailey offers no surprise"
+    ],
+    "invalidation": "Any weak-yen official comment or U.S. data shock resumes directional break.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 74.1,
+      "rationale": "Room within observed 74.1-pip range to retrace part of the -37.7 pip decline."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 24.3,
+      "rationale": "EUR/USD range was 24.3 pips; no clear catalyst keeps it rangebound."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 21.8,
+      "rationale": "Oversold NZD bounces within 21.8-pip range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Further Japan/Trump yen comments",
-    "why_it_matters": "JPY is the top mover after FinMin Katayama's headline; more jawboning can extend USD/JPY lower.",
-    "watch": "USD/JPY 158.416, Japan FinMin/Trump headlines"
-   },
-   {
     "risk": "BOE Gov Bailey Speaks at 11:15",
-    "why_it_matters": "GBP has no own catalyst; hawkish or dovish tone can shift GBP/USD from 1.32128.",
-    "watch": "GBP/USD 1.32128, BOE comments"
+    "why_it_matters": "GBP/USD had no clear catalyst and closed -16.2 pips; Bailey can reset sterling expectations.",
+    "watch": "GBP/USD range 31.2 pips; EUR/GBP range 9.8 pips"
    },
    {
-    "risk": "Revised UoM Consumer Sentiment and Inflation Expectations at 16:00",
-    "why_it_matters": "Medium-impact USD releases can alter Fed pricing in an otherwise quiet tape.",
-    "watch": "USD/JPY 158.416, EUR/USD 1.13703, SPX 7698.5"
+    "risk": "Revised UoM consumer sentiment and inflation expectations",
+    "why_it_matters": "USD has no clear event impulse from Trump speech; data can shift USD positioning.",
+    "watch": "DXY range 21.5 points; USD/JPY range 74.1 pips"
    },
    {
-    "risk": "Risk-off acceleration",
-    "why_it_matters": "SPX down 0.206% and VIX up 1.252% to 17.874; continued risk aversion favors JPY and pressures high-beta FX.",
-    "watch": "VIX 17.874, AUD/USD 0.70139, NZD/USD 0.56527"
+    "risk": "Further yen verbal intervention headlines",
+    "why_it_matters": "USD/JPY -37.7 pips and CHF/JPY -81.0 pips show sensitivity to official comments.",
+    "watch": "USD/JPY close 158.416; CHF/JPY close 191.039"
+   },
+   {
+    "risk": "Sticky VIX/risk tone",
+    "why_it_matters": "VIX +22.1 points (+1.252%) while SPX -15.9 points; high-beta currencies like NZD remain vulnerable.",
+    "watch": "NZD/USD close 0.56527; AUD/USD close 0.70139"
    }
   ],
-  "calendar_ahead_note": "BOE Gov Bailey at 11:15 and Revised UoM sentiment/inflation expectations at 16:00 can change the USD and GBP picture after a quiet overnight tape.",
+  "calendar_ahead_note": "BOE Gov Bailey Speaks at 11:15 can dominate GBP and spill to USD; Revised UoM Consumer Sentiment (47.4 expected vs 47.8 prior) and inflation expectations at 16:00 can adjust USD tone. If Bailey is hawkish or UoM surprises, current no-catalyst drift may resolve.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14041,
-   "completion_tokens": 8826,
-   "total_tokens": 22867,
+   "completion_tokens": 11505,
+   "total_tokens": 25546,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 13952
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7111
+    "reasoning_tokens": 9529
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 13401
+   "prompt_cache_hit_tokens": 13952,
+   "prompt_cache_miss_tokens": 89
   }
  }
 }
