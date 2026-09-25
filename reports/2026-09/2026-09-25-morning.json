@@ -1,0 +1,1757 @@
+{
+ "meta": {
+  "date": "2026-09-25",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-09-24T17:00:00+00:00",
+  "end_utc": "2026-09-25T05:00:00+00:00",
+  "start_local": "2026-09-24T19:00:00+02:00",
+  "end_local": "2026-09-25T07:00:00+02:00",
+  "fwd_start_utc": "2026-09-25T05:00:00+00:00",
+  "fwd_end_utc": "2026-09-25T17:00:00+00:00",
+  "generated_utc": "2026-09-25T05:47:44.538108+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 36,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 36,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 38
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-09-24 19:00 CEST",
+   "to_local": "2026-09-25 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "JPY",
+    "rank": 1,
+    "strength_pct": 0.325,
+    "intraday_peak": 0.37,
+    "intraday_trough": 0.006,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 2,
+    "strength_pct": 0.085,
+    "intraday_peak": 0.108,
+    "intraday_trough": -0.013,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "President Trump Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.011%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "GBP/USD",
+     "sigma": -1.97
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 3,
+    "strength_pct": 0.013,
+    "intraday_peak": 0.06,
+    "intraday_trough": 0.0,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.06%, gave back 78%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "EUR/USD",
+     "sigma": -1.59
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 4,
+    "strength_pct": -0.028,
+    "intraday_peak": 0.073,
+    "intraday_trough": -0.034,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 94%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 1.63
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 5,
+    "strength_pct": -0.036,
+    "intraday_peak": -0.004,
+    "intraday_trough": -0.077,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "GBP/USD",
+     "sigma": -1.97
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 6,
+    "strength_pct": -0.075,
+    "intraday_peak": -0.01,
+    "intraday_trough": -0.168,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "AUD/USD",
+     "sigma": -1.89
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 7,
+    "strength_pct": -0.097,
+    "intraday_peak": 0.08,
+    "intraday_trough": -0.097,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.08%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 1.45
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 8,
+    "strength_pct": -0.186,
+    "intraday_peak": 0.01,
+    "intraday_trough": -0.211,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.072,
+    "from_EUR": 0.013,
+    "from_USD": -0.085,
+    "base_share": 0.13
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.122,
+    "from_GBP": -0.036,
+    "from_USD": -0.085,
+    "base_share": 0.3
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.161,
+    "from_AUD": -0.075,
+    "from_USD": -0.085,
+    "base_share": 0.47
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.271,
+    "from_NZD": -0.186,
+    "from_USD": -0.085,
+    "base_share": 0.69
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.239,
+    "from_USD": 0.085,
+    "from_JPY": -0.325,
+    "base_share": 0.21
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.182,
+    "from_USD": 0.085,
+    "from_CHF": 0.097,
+    "base_share": 0.47
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.113,
+    "from_USD": 0.085,
+    "from_CAD": 0.028,
+    "base_share": 0.76
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.05,
+    "from_EUR": 0.013,
+    "from_GBP": 0.036,
+    "base_share": 0.27
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.311,
+    "from_EUR": 0.013,
+    "from_JPY": -0.325,
+    "base_share": 0.04
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.11,
+    "from_EUR": 0.013,
+    "from_CHF": 0.097,
+    "base_share": 0.12
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.089,
+    "from_EUR": 0.013,
+    "from_AUD": 0.075,
+    "base_share": 0.15
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.041,
+    "from_EUR": 0.013,
+    "from_CAD": 0.028,
+    "base_share": 0.32
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.2,
+    "from_EUR": 0.013,
+    "from_NZD": 0.186,
+    "base_share": 0.07
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.361,
+    "from_GBP": -0.036,
+    "from_JPY": -0.325,
+    "base_share": 0.1
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.061,
+    "from_GBP": -0.036,
+    "from_CHF": 0.097,
+    "base_share": 0.27
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.039,
+    "from_GBP": -0.036,
+    "from_AUD": 0.075,
+    "base_share": 0.33
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.009,
+    "from_GBP": -0.036,
+    "from_CAD": 0.028,
+    "base_share": 0.57
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.15,
+    "from_GBP": -0.036,
+    "from_NZD": 0.186,
+    "base_share": 0.16
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.4,
+    "from_AUD": -0.075,
+    "from_JPY": -0.325,
+    "base_share": 0.19
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.022,
+    "from_AUD": -0.075,
+    "from_CHF": 0.097,
+    "base_share": 0.44
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.048,
+    "from_AUD": -0.075,
+    "from_CAD": 0.028,
+    "base_share": 0.73
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.111,
+    "from_AUD": -0.075,
+    "from_NZD": 0.186,
+    "base_share": 0.29
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.511,
+    "from_NZD": -0.186,
+    "from_JPY": -0.325,
+    "base_share": 0.36
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.089,
+    "from_NZD": -0.186,
+    "from_CHF": 0.097,
+    "base_share": 0.66
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.159,
+    "from_NZD": -0.186,
+    "from_CAD": 0.028,
+    "base_share": 0.87
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.352,
+    "from_CAD": -0.028,
+    "from_JPY": -0.325,
+    "base_share": 0.08
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.07,
+    "from_CAD": -0.028,
+    "from_CHF": 0.097,
+    "base_share": 0.22
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.422,
+    "from_CHF": -0.097,
+    "from_JPY": -0.325,
+    "base_share": 0.23
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.372
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.097
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.015
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.031
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.041
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.086
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.111
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.213
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.13703,
+    "chg_pips": -8.3,
+    "chg_pct": -0.073,
+    "range_pips": 24.3,
+    "close_in_range": 0.44,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32128,
+    "chg_pips": -16.2,
+    "chg_pct": -0.122,
+    "range_pips": 31.2,
+    "close_in_range": 0.28,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.70139,
+    "chg_pips": -11.3,
+    "chg_pct": -0.161,
+    "range_pips": 24.6,
+    "close_in_range": 0.4,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56527,
+    "chg_pips": -15.4,
+    "chg_pct": -0.272,
+    "range_pips": 21.8,
+    "close_in_range": 0.11,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.416,
+    "chg_pips": -37.7,
+    "chg_pct": -0.237,
+    "range_pips": 74.1,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82919,
+    "chg_pips": 15.3,
+    "chg_pct": 0.185,
+    "range_pips": 23.4,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.4149,
+    "chg_pips": 14.9,
+    "chg_pct": 0.105,
+    "range_pips": 20.0,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.94281,
+    "chg_pips": 10.4,
+    "chg_pct": 0.11,
+    "range_pips": 18.1,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 191.039,
+    "chg_pips": -81.0,
+    "chg_pct": -0.422,
+    "range_pips": 100.7,
+    "close_in_range": 0.12,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24072,
+    "chg_pips": 13.7,
+    "chg_pct": 0.111,
+    "range_pips": 44.9,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.86053,
+    "chg_pips": 4.3,
+    "chg_pct": 0.05,
+    "range_pips": 9.8,
+    "close_in_range": 0.51,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58157,
+    "chg_pips": 1.3,
+    "chg_pct": 0.022,
+    "range_pips": 20.2,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.4687,
+    "chg_pips": -4.3,
+    "chg_pct": -0.092,
+    "range_pips": 14.4,
+    "close_in_range": 0.64,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.92645,
+    "chg_pips": 124.5,
+    "chg_pct": 0.126,
+    "range_pips": 375.5,
+    "close_in_range": 0.56,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.52445,
+    "chg_pips": 208.5,
+    "chg_pct": 0.219,
+    "range_pips": 392.9,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.42261,
+    "chg_pips": 129.7,
+    "chg_pct": 0.079,
+    "range_pips": 798.5,
+    "close_in_range": 0.47,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 17.7309,
+    "chg_pips": 837.8,
+    "chg_pct": 0.475,
+    "range_pips": 1364.8,
+    "close_in_range": 0.74,
+    "unit": "pips"
+   },
+   {
+    "instrument": "Brent/USD",
+    "close": 107.853,
+    "chg_pips": -10.8,
+    "chg_pct": -0.1,
+    "range_pips": 258.0,
+    "close_in_range": 0.18,
+    "unit": "pips ($0.01)"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.001,
+    "chg_pips": 5.5,
+    "chg_pct": 0.054,
+    "range_pips": 21.5,
+    "close_in_range": 0.49,
+    "unit": "points"
+   },
+   {
+    "instrument": "SPX/USD",
+    "close": 7698.5,
+    "chg_pips": -15.9,
+    "chg_pct": -0.206,
+    "range_pips": 31.8,
+    "close_in_range": 0.38,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.874,
+    "chg_pips": 22.1,
+    "chg_pct": 1.252,
+    "range_pips": 35.0,
+    "close_in_range": 0.68,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "down",
+    "pips": -13.0,
+    "ret_pct": -0.114,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "19:45",
+    "to": "22:45",
+    "dir": "up",
+    "pips": 12.3,
+    "ret_pct": 0.108,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "22:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -9.6,
+    "ret_pct": -0.084,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 17.8,
+    "ret_pct": 0.112,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "21:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -52.6,
+    "ret_pct": -0.331,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Japan FinMin Katayama: Trump voiced worries over weak yen d… pushed it along (-18.3 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Japan FinMin Katayama: Trump voiced worries over weak yen during summit",
+      "ccy": null,
+      "pips": -18.3,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -18.7,
+    "ret_pct": -0.141,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "21:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.068,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "21:45",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -11.4,
+    "ret_pct": -0.086,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item GfK Consumer Confidence, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 13.7,
+    "ret_pct": 0.104,
+    "minutes": 75,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD President Trump Speaks -- +1.5 in the first 15 min, 11% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -10.0,
+    "ret_pct": -0.076,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 10.9,
+    "ret_pct": 0.132,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "21:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -13.0,
+    "ret_pct": -0.157,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 18.8,
+    "ret_pct": 0.227,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -21.3,
+    "ret_pct": -0.303,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pezeshkian: We have economic issues but will endure hards…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 9.7,
+    "ret_pct": 0.138,
+    "minutes": 300,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD President Trump Speaks -- +2.6 in the first 15 min, 27% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 10.7,
+    "ret_pct": 0.076,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "20:30",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -12.0,
+    "ret_pct": -0.085,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 16.4,
+    "ret_pct": 0.116,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK GfK Consumer Confidence Sept: -13 (est -16; prev -14), too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -7.2,
+    "ret_pct": -0.051,
+    "minutes": 75,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD President Trump Speaks -- -1.4 in the first 15 min, 19% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 8.9,
+    "ret_pct": 0.063,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "down",
+    "pips": -13.9,
+    "ret_pct": -0.245,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "22:15",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 6.2,
+    "ret_pct": 0.11,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:15",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -6.4,
+    "ret_pct": -0.113,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pezeshkian: We have economic issues but will endure hards…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 12.3,
+    "ret_pct": 0.217,
+    "minutes": 75,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD President Trump Speaks -- +3.8 in the first 15 min, 31% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -14.9,
+    "ret_pct": -0.263,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 4.6,
+    "ret_pct": 0.049,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "21:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -11.0,
+    "ret_pct": -0.117,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 16.9,
+    "ret_pct": 0.18,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK GfK Consumer Confidence Sept: -13 (est -16; prev -14), too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 5.6,
+    "ret_pct": 0.029,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "21:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -86.2,
+    "ret_pct": -0.449,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "up",
+    "pips": 6.5,
+    "ret_pct": 0.052,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:45",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -31.3,
+    "ret_pct": -0.252,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 41.1,
+    "ret_pct": 0.332,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 8.2,
+    "ret_pct": 0.095,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -4.7,
+    "ret_pct": -0.055,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -14.5,
+    "ret_pct": -0.249,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:15",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 7.5,
+    "ret_pct": 0.129,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.095,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pezeshkian: We have economic issues but will endure hards…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 14.7,
+    "ret_pct": 0.253,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -12.1,
+    "ret_pct": -0.258,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:30",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 8.4,
+    "ret_pct": 0.18,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "00:15",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -4.2,
+    "ret_pct": -0.09,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pezeshkian: We have economic issues but will endure hards…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 7.7,
+    "ret_pct": 0.164,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "03:00",
+    "to": "04:45",
+    "dir": "down",
+    "pips": -8.2,
+    "ret_pct": -0.175,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 3.8,
+    "ret_pct": 0.081,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 166.5,
+    "ret_pct": 0.168,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "21:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -202.2,
+    "ret_pct": -0.204,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 221.1,
+    "ret_pct": 0.223,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pezeshkian: We have economic issues but will endure hards…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -155.8,
+    "ret_pct": -0.157,
+    "minutes": 75,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD President Trump Speaks -- -19.9 in the first 15 min, 13% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 136.6,
+    "ret_pct": 0.138,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 139.1,
+    "ret_pct": 0.146,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "20:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -209.7,
+    "ret_pct": -0.22,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 328.7,
+    "ret_pct": 0.346,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 639.7,
+    "ret_pct": 0.39,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "22:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -671.7,
+    "ret_pct": -0.408,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:15",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 424.5,
+    "ret_pct": 0.259,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pezeshkian: We have economic issues but will endure hards…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -168.4,
+    "ret_pct": -0.102,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 1154.7,
+    "ret_pct": 0.654,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "22:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -507.1,
+    "ret_pct": -0.286,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:15",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 433.0,
+    "ret_pct": 0.244,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -233.0,
+    "ret_pct": -0.131,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan FinMin Katayama: Trump voiced worries over weak yen… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 193.0,
+    "ret_pct": 1.789,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Asks Major Refiners To Reduce Diesel Exports Voluntari…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "22:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -197.3,
+    "ret_pct": -1.796,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "01:55",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "President Trump Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.011%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.011,
+    "top_movers": [
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.03,
+      "pips": -3.9,
+      "unit": "pips",
+      "sigma": -1.97
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.039,
+      "pips": -2.7,
+      "unit": "pips",
+      "sigma": -1.89
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.016,
+      "pips": 2.3,
+      "unit": "pips",
+      "sigma": 1.63
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.024,
+      "pips": -2.7,
+      "unit": "pips",
+      "sigma": -1.59
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.028,
+      "pips": 2.3,
+      "unit": "pips",
+      "sigma": 1.45
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.008,
+      "pips": 0.7,
+      "unit": "pips",
+      "sigma": 1.41
+     }
+    ]
+   }
+  ],
+  "headline_count": 5,
+  "top_headlines": [
+   {
+    "time": "04:00",
+    "impact": "high",
+    "title": "Japan FinMin Katayama: Trump voiced worries over weak yen during summit"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "US Asks Major Refiners To Reduce Diesel Exports Voluntarily"
+   },
+   {
+    "time": "00:30",
+    "impact": "low",
+    "title": "Pezeshkian: We have economic issues but will endure hardships"
+   },
+   {
+    "time": "01:00",
+    "impact": "low",
+    "title": "UK GfK Consumer Confidence Sept: -13 (est -16; prev -14)"
+   },
+   {
+    "time": "02:00",
+    "impact": "low",
+    "title": "China's President Xi: Reached broad agreement on numerous issues"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "11:15",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Revised UoM Consumer Sentiment",
+    "forecast": "47.4",
+    "previous": "47.8"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Revised UoM Inflation Expectations",
+    "forecast": null,
+    "previous": "4.6%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Overnight trading was dominated by JPY strength after Japan FinMin Katayama said Trump voiced worries over a weak yen. USD/JPY fell 37.7 pips to 158.416, while USD was otherwise firm but lacked a catalyst as President Trump's speech was muted. High-beta FX underperformed with NZD down 0.186% and AUD down 0.075%, and risk indicators showed mild risk-off with SPX -0.206% and VIX +1.252% to 17.874. The tape was mostly flow/technical; only the Japan headline produced a clear reaction.",
+  "themes": [
+   {
+    "theme": "JPY strength dominates",
+    "evidence": "USD/JPY fell 37.7 pips to 158.416; Japan FinMin Katayama said Trump voiced worries over weak yen, contributing -18.3 pips in 15 min (35% of the leg).",
+    "currencies": [
+     "JPY",
+     "USD"
+    ]
+   },
+   {
+    "theme": "Muted USD reaction and risk-off undertone",
+    "evidence": "President Trump Speaks was muted (-0.011% basket); DXY up only 5.5 points; SPX -15.9 points and VIX +1.252% to 17.874.",
+    "currencies": [
+     "USD",
+     "CHF",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Flow/technical tape, not news",
+    "evidence": "Multiple legs marked no clear catalyst; EUR/USD had three catalyst-less legs, and GBP/USD showed flow-only moves.",
+    "currencies": [
+     "EUR",
+     "GBP",
+     "AUD",
+     "CAD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Trump's speech was muted and inside the noise floor, leaving no clear own driver.",
+   "JPY": "FinMin Katayama said Trump voiced worries over weak yen, driving broad yen strength.",
+   "EUR": "No own releases; +0.06% attempt was rejected and gave back 78%.",
+   "GBP": "No own releases; no clear catalyst beyond broad USD and crossfire.",
+   "AUD": "No own releases; fell with risk before getting a Trump-speech bounce.",
+   "CAD": "No own releases; +0.07% attempt was rejected, giving back 94%.",
+   "CHF": "No own releases; rejected +0.08% attempt and closed lower despite risk-off.",
+   "NZD": "No own releases; weakest currency, no clear catalyst, fell across the board."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD chopped through three catalyst-less legs—down 13.0 pips, up 12.3, down 9.6—to close at 1.13703, -8.3 pips."
+  },
+  "polarity_reads": [
+   {
+    "event": "President Trump Speaks",
+    "read": "Basket reaction was -0.011% inside the noise floor; even the largest move, GBP/USD -3.9 pips at -1.97σ, is too small to infer a positioning shift."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Yen strength extends",
+    "probability": 0.45,
+    "thesis": "Japan FinMin comments keep USD/JPY offered; high-beta remains heavy and VIX up supports JPY.",
+    "triggers": [
+     "Japan FinMin/Trump yen comments continue",
+     "USD/JPY breaks below overnight low",
+     "SPX extends lower"
+    ],
+    "invalidation": "USD/JPY fails to hold below 158.416 or Trump retracts yen worry.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 74.1,
+      "rationale": "Broad yen strength from FinMin Katayama headline can fill the overnight 74.1-pip range."
+     }
+    ]
+   },
+   {
+    "name": "Consolidation / two-way chop",
+    "probability": 0.35,
+    "thesis": "Overnight move lacked broad catalyst; expect range-trading near current closes as Tokyo/London absorb.",
+    "triggers": [
+     "No new Japan jawboning",
+     "SPX stabilizes",
+     "US yields hold"
+    ],
+    "invalidation": "Break of EUR/USD 24.3-pip range or USD/JPY 74.1-pip range.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 24.3,
+      "rationale": "No catalyst; expect chop within the 24.3-pip overnight range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 74.1,
+      "rationale": "Yen strength may consolidate within the 74.1-pip range as headlines fade."
+     }
+    ]
+   },
+   {
+    "name": "Dollar rebound/risk recovery",
+    "probability": 0.2,
+    "thesis": "Muted Trump and stretched JPY positioning spark USD rebound; commodity FX bounces from lows.",
+    "triggers": [
+     "USD/JPY reclaims 158.416",
+     "SPX recovers 7698.5",
+     "VIX drops below 17.874"
+    ],
+    "invalidation": "USD/JPY makes new lows or VIX prints above 17.874.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 74.1,
+      "rationale": "Dollar rebound can retrace the 74.1-pip overnight range if Trump/yen worries fade."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 24.3,
+      "rationale": "USD recovery would pressure EUR/USD within its 24.3-pip range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Further Japan/Trump yen comments",
+    "why_it_matters": "JPY is the top mover after FinMin Katayama's headline; more jawboning can extend USD/JPY lower.",
+    "watch": "USD/JPY 158.416, Japan FinMin/Trump headlines"
+   },
+   {
+    "risk": "BOE Gov Bailey Speaks at 11:15",
+    "why_it_matters": "GBP has no own catalyst; hawkish or dovish tone can shift GBP/USD from 1.32128.",
+    "watch": "GBP/USD 1.32128, BOE comments"
+   },
+   {
+    "risk": "Revised UoM Consumer Sentiment and Inflation Expectations at 16:00",
+    "why_it_matters": "Medium-impact USD releases can alter Fed pricing in an otherwise quiet tape.",
+    "watch": "USD/JPY 158.416, EUR/USD 1.13703, SPX 7698.5"
+   },
+   {
+    "risk": "Risk-off acceleration",
+    "why_it_matters": "SPX down 0.206% and VIX up 1.252% to 17.874; continued risk aversion favors JPY and pressures high-beta FX.",
+    "watch": "VIX 17.874, AUD/USD 0.70139, NZD/USD 0.56527"
+   }
+  ],
+  "calendar_ahead_note": "BOE Gov Bailey at 11:15 and Revised UoM sentiment/inflation expectations at 16:00 can change the USD and GBP picture after a quiet overnight tape.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 14041,
+   "completion_tokens": 8826,
+   "total_tokens": 22867,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7111
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 13401
+  }
+ }
+}
