@@ -1,0 +1,2190 @@
+{
+ "meta": {
+  "date": "2026-09-28",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "since Friday's 19:00",
+  "sessions": "Friday close -> weekend -> Asia reopen",
+  "weekend_bridged": true,
+  "hours": 72.0,
+  "start_utc": "2026-09-25T17:00:00+00:00",
+  "end_utc": "2026-09-28T17:00:00+00:00",
+  "start_local": "2026-09-25T19:00:00+02:00",
+  "end_local": "2026-09-28T19:00:00+02:00",
+  "fwd_start_utc": "2026-09-28T17:00:00+00:00",
+  "fwd_end_utc": "2026-09-29T17:00:00+00:00",
+  "generated_utc": "2026-09-28T17:05:12.220379+00:00",
+  "partial": false,
+  "coverage_min": 4320,
+  "instruments_loaded": 36,
+  "instruments_failed": [],
+  "fx_coverage": 0.333,
+  "m5_loaded": 36,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 46
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "since Friday's 19:00",
+   "sessions": "Friday close -> weekend -> Asia reopen",
+   "from_local": "2026-09-25 19:00 CEST",
+   "to_local": "2026-09-28 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "GBP",
+    "rank": 1,
+    "strength_pct": 0.234,
+    "intraday_peak": 0.253,
+    "intraday_trough": -0.055,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "EUR/GBP",
+     "sigma": -4.99
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 2,
+    "strength_pct": 0.23,
+    "intraday_peak": 0.23,
+    "intraday_trough": -0.091,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "NZD/CHF",
+     "sigma": 1.87
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 3,
+    "strength_pct": 0.067,
+    "intraday_peak": 0.145,
+    "intraday_trough": -0.044,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "EUR/USD",
+     "sigma": -3.52
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 4,
+    "strength_pct": -0.001,
+    "intraday_peak": 0.305,
+    "intraday_trough": -0.3,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "CHF/JPY",
+     "sigma": -1.74
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 5,
+    "strength_pct": -0.011,
+    "intraday_peak": 0.016,
+    "intraday_trough": -0.234,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.23%, recovered 89%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 6,
+    "strength_pct": -0.063,
+    "intraday_peak": 0.124,
+    "intraday_trough": -0.071,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.12%, gave back 96%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 2.63
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 7,
+    "strength_pct": -0.115,
+    "intraday_peak": 0.054,
+    "intraday_trough": -0.176,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.05%, gave back 73%",
+    "own_releases": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.028%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "EUR/GBP",
+     "sigma": -4.99
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 8,
+    "strength_pct": -0.342,
+    "intraday_peak": 0.127,
+    "intraday_trough": -0.384,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.13%, gave back 92%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 2.16
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.182,
+    "from_EUR": -0.115,
+    "from_USD": -0.067,
+    "base_share": 0.63
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.167,
+    "from_GBP": 0.234,
+    "from_USD": -0.067,
+    "base_share": 0.78
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.078,
+    "from_AUD": -0.011,
+    "from_USD": -0.067,
+    "base_share": 0.14
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.163,
+    "from_NZD": 0.23,
+    "from_USD": -0.067,
+    "base_share": 0.77
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.069,
+    "from_USD": 0.067,
+    "from_JPY": 0.001,
+    "base_share": 0.98
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.41,
+    "from_USD": 0.067,
+    "from_CHF": 0.342,
+    "base_share": 0.16
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.13,
+    "from_USD": 0.067,
+    "from_CAD": 0.063,
+    "base_share": 0.52
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.349,
+    "from_EUR": -0.115,
+    "from_GBP": -0.234,
+    "base_share": 0.33
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.113,
+    "from_EUR": -0.115,
+    "from_JPY": 0.001,
+    "base_share": 0.99
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.228,
+    "from_EUR": -0.115,
+    "from_CHF": 0.342,
+    "base_share": 0.25
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.104,
+    "from_EUR": -0.115,
+    "from_AUD": 0.011,
+    "base_share": 0.92
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.052,
+    "from_EUR": -0.115,
+    "from_CAD": 0.063,
+    "base_share": 0.65
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.345,
+    "from_EUR": -0.115,
+    "from_NZD": -0.23,
+    "base_share": 0.33
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.235,
+    "from_GBP": 0.234,
+    "from_JPY": 0.001,
+    "base_share": 0.99
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.576,
+    "from_GBP": 0.234,
+    "from_CHF": 0.342,
+    "base_share": 0.41
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.245,
+    "from_GBP": 0.234,
+    "from_AUD": 0.011,
+    "base_share": 0.96
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.297,
+    "from_GBP": 0.234,
+    "from_CAD": 0.063,
+    "base_share": 0.79
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.004,
+    "from_GBP": 0.234,
+    "from_NZD": -0.23,
+    "base_share": 0.5
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.009,
+    "from_AUD": -0.011,
+    "from_JPY": 0.001,
+    "base_share": 0.88
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.332,
+    "from_AUD": -0.011,
+    "from_CHF": 0.342,
+    "base_share": 0.03
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.052,
+    "from_AUD": -0.011,
+    "from_CAD": 0.063,
+    "base_share": 0.14
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.241,
+    "from_AUD": -0.011,
+    "from_NZD": -0.23,
+    "base_share": 0.04
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.232,
+    "from_NZD": 0.23,
+    "from_JPY": 0.001,
+    "base_share": 0.99
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.573,
+    "from_NZD": 0.23,
+    "from_CHF": 0.342,
+    "base_share": 0.4
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.293,
+    "from_NZD": 0.23,
+    "from_CAD": 0.063,
+    "base_share": 0.79
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.061,
+    "from_CAD": -0.063,
+    "from_JPY": 0.001,
+    "base_share": 0.98
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.28,
+    "from_CAD": -0.063,
+    "from_CHF": 0.342,
+    "base_share": 0.15
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.341,
+    "from_CHF": -0.342,
+    "from_JPY": 0.001,
+    "base_share": 1.0
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.268
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.264
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.077
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.001
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.012
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.071
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.131
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.39
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.13717,
+    "chg_pips": -20.7,
+    "chg_pct": -0.182,
+    "range_pips": 47.6,
+    "close_in_range": 0.39,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32645,
+    "chg_pips": 22.3,
+    "chg_pct": 0.168,
+    "range_pips": 60.1,
+    "close_in_range": 0.75,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.70245,
+    "chg_pips": -5.4,
+    "chg_pct": -0.077,
+    "range_pips": 32.5,
+    "close_in_range": 0.55,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56737,
+    "chg_pips": 9.2,
+    "chg_pct": 0.162,
+    "range_pips": 38.1,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 157.308,
+    "chg_pips": 10.8,
+    "chg_pct": 0.069,
+    "range_pips": 134.1,
+    "close_in_range": 0.59,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83174,
+    "chg_pips": 34.1,
+    "chg_pct": 0.412,
+    "range_pips": 53.8,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.41693,
+    "chg_pips": 18.5,
+    "chg_pct": 0.131,
+    "range_pips": 40.7,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.94583,
+    "chg_pips": 21.6,
+    "chg_pct": 0.229,
+    "range_pips": 51.1,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.124,
+    "chg_pips": -64.6,
+    "chg_pct": -0.34,
+    "range_pips": 181.4,
+    "close_in_range": 0.36,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23795,
+    "chg_pips": -29.8,
+    "chg_pct": -0.24,
+    "range_pips": 46.4,
+    "close_in_range": 0.33,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.85729,
+    "chg_pips": -29.9,
+    "chg_pct": -0.348,
+    "range_pips": 39.1,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58424,
+    "chg_pips": 19.4,
+    "chg_pct": 0.333,
+    "range_pips": 49.1,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.4719,
+    "chg_pips": 27.0,
+    "chg_pct": 0.575,
+    "range_pips": 45.6,
+    "close_in_range": 0.91,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.95198,
+    "chg_pips": 423.3,
+    "chg_pct": 0.427,
+    "range_pips": 1273.0,
+    "close_in_range": 0.71,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.53169,
+    "chg_pips": 313.0,
+    "chg_pct": 0.329,
+    "range_pips": 439.3,
+    "close_in_range": 0.99,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.4102,
+    "chg_pips": 1022.0,
+    "chg_pct": 0.627,
+    "range_pips": 2095.7,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 17.859,
+    "chg_pips": 1540.2,
+    "chg_pct": 0.87,
+    "range_pips": 2349.4,
+    "close_in_range": 0.89,
+    "unit": "pips"
+   },
+   {
+    "instrument": "Brent/USD",
+    "close": 107.654,
+    "chg_pips": 187.1,
+    "chg_pct": 1.769,
+    "range_pips": 802.6,
+    "close_in_range": 0.6,
+    "unit": "pips ($0.01)"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 100.868,
+    "chg_pips": 13.3,
+    "chg_pct": 0.132,
+    "range_pips": 35.5,
+    "close_in_range": 0.57,
+    "unit": "points"
+   },
+   {
+    "instrument": "SPX/USD",
+    "close": 7703.0,
+    "chg_pips": -31.6,
+    "chg_pct": -0.409,
+    "range_pips": 86.7,
+    "close_in_range": 0.41,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.61861,
+    "chg_pips": -0.3,
+    "chg_pct": -0.019,
+    "range_pips": 66.1,
+    "close_in_range": 0.37,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 10.2,
+    "ret_pct": 0.09,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "21:00",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -24.2,
+    "ret_pct": -0.212,
+    "minutes": 3150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "01:30",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 14.5,
+    "ret_pct": 0.127,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ: Minutes of the Monetary Policy Meeting on July 30 an…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "05:00",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -33.2,
+    "ret_pct": -0.291,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 14.5,
+    "ret_pct": 0.128,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -18.4,
+    "ret_pct": -0.117,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "21:00",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 68.7,
+    "ret_pct": 0.437,
+    "minutes": 3270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Daylight Saving Time Shift, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:30",
+    "to": "10:00",
+    "dir": "down",
+    "pips": -111.7,
+    "ret_pct": -0.708,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "10:00",
+    "to": "16:45",
+    "dir": "up",
+    "pips": 84.9,
+    "ret_pct": 0.542,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Mediators expected to hold separate talks with the US and…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -23.8,
+    "ret_pct": -0.151,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 11.3,
+    "ret_pct": 0.085,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "21:00",
+    "to": "00:45",
+    "dir": "down",
+    "pips": -27.4,
+    "ret_pct": -0.207,
+    "minutes": 3105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "00:45",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 43.7,
+    "ret_pct": 0.33,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Japan's Top Currency Diplomat Mimura: Japanese Prime Minist… pushed it along (+8.4 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Japan's Top Currency Diplomat Mimura: Japanese Prime Minister, Finance Minister, US have sent clear message on yen",
+      "ccy": null,
+      "pips": 8.4,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "10:30",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -20.9,
+    "ret_pct": -0.158,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MPC Member Ramsden Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "15:00",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 19.9,
+    "ret_pct": 0.15,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but ECB President Lagarde Speaks pushed it along (+8.4 in 15 min, 42% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "ccy": "EUR",
+      "pips": 8.4,
+      "share_of_leg": 0.42
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:00",
+    "to": "17:00",
+    "dir": "down",
+    "pips": -19.2,
+    "ret_pct": -0.145,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "17:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 14.9,
+    "ret_pct": 0.112,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -12.4,
+    "ret_pct": -0.15,
+    "minutes": 3135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump opposes Iran ceasefire, anticipates renewed strikes a… pushed it along (-7.1 in 15 min, 57% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump opposes Iran ceasefire, anticipates renewed strikes after midterms, WSJ reports",
+      "ccy": null,
+      "pips": -7.1,
+      "share_of_leg": 0.57
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:15",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 49.5,
+    "ret_pct": 0.598,
+    "minutes": 1035,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China, US to form bilateral trade and investment councils… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -6.5,
+    "ret_pct": -0.078,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -20.1,
+    "ret_pct": -0.286,
+    "minutes": 3120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "23:00",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 19.5,
+    "ret_pct": 0.278,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "06:30",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -16.2,
+    "ret_pct": -0.231,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "09:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 11.2,
+    "ret_pct": 0.16,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -13.4,
+    "ret_pct": -0.191,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MPC Member Ramsden Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "12:15",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 16.5,
+    "ret_pct": 0.235,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Mediators expected to hold separate talks with the US and…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "15:45",
+    "to": "18:00",
+    "dir": "down",
+    "pips": -8.8,
+    "ret_pct": -0.125,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran's Araqchi will meet with mediators in New York today… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "18:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 7.4,
+    "ret_pct": 0.105,
+    "minutes": 45,
+    "cause": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "US Official: We continue a positive discussion with Iran through intermediaries… -- +18.8 in the first 15 min, 254% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -12.7,
+    "ret_pct": -0.09,
+    "minutes": 3135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:15",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 21.7,
+    "ret_pct": 0.153,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SPPI y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "02:30",
+    "to": "06:30",
+    "dir": "down",
+    "pips": -11.6,
+    "ret_pct": -0.082,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China, US to form bilateral trade and investment councils…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "06:30",
+    "to": "13:30",
+    "dir": "up",
+    "pips": 21.8,
+    "ret_pct": 0.154,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:30",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -12.9,
+    "ret_pct": -0.091,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Bowman Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "16:15",
+    "to": "18:00",
+    "dir": "up",
+    "pips": 16.3,
+    "ret_pct": 0.115,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "18:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -4.2,
+    "ret_pct": -0.03,
+    "minutes": 45,
+    "cause": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "US Official: We continue a positive discussion with Iran through intermediaries… -- -13.3 in the first 15 min, 317% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -14.3,
+    "ret_pct": -0.252,
+    "minutes": 3285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump opposes Iran ceasefire, anticipates renewed strikes a… pushed it along (-8.5 in 15 min, 59% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump opposes Iran ceasefire, anticipates renewed strikes after midterms, WSJ reports",
+      "ccy": null,
+      "pips": -8.5,
+      "share_of_leg": 0.59
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:45",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 23.4,
+    "ret_pct": 0.414,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SPPI y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "06:30",
+    "to": "12:00",
+    "dir": "down",
+    "pips": -18.6,
+    "ret_pct": -0.328,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "12:00",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 16.0,
+    "ret_pct": 0.283,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Mediators expected to hold separate talks with the US and I… pushed it along (+4.1 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Mediators expected to hold separate talks with the US and Iran on Monday or Tuesday, with Iran's Araghchi and Qatari mediators remaining in the US",
+      "ccy": null,
+      "pips": 4.1,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "14:45",
+    "to": "16:45",
+    "dir": "down",
+    "pips": -10.1,
+    "ret_pct": -0.178,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lagarde: Hearing of the Committee on Economic and Monetar… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 13.1,
+    "ret_pct": 0.231,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -15.9,
+    "ret_pct": -0.168,
+    "minutes": 3120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:00",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 42.0,
+    "ret_pct": 0.446,
+    "minutes": 900,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -6.4,
+    "ret_pct": -0.068,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Lagarde: Hearing of the Committee on Economic and Monetary … pushed it along (-3.2 in 15 min, 50% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
+      "ccy": null,
+      "pips": -3.2,
+      "share_of_leg": 0.5
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 42.9,
+    "ret_pct": 0.226,
+    "minutes": 3480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "05:00",
+    "to": "13:15",
+    "dir": "down",
+    "pips": -164.5,
+    "ret_pct": -0.865,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "13:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 51.6,
+    "ret_pct": 0.274,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Mediators expected to hold separate talks with the US and… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -30.1,
+    "ret_pct": -0.243,
+    "minutes": 3120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 32.2,
+    "ret_pct": 0.26,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:00",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -24.7,
+    "ret_pct": -0.199,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China, US to form bilateral trade and investment councils…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "03:30",
+    "to": "12:00",
+    "dir": "up",
+    "pips": 10.0,
+    "ret_pct": 0.081,
+    "minutes": 510,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "12:00",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -11.0,
+    "ret_pct": -0.089,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Mediators expected to hold separate talks with the US and I… pushed it along (-1.7 in 15 min, 15% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Mediators expected to hold separate talks with the US and Iran on Monday or Tuesday, with Iran's Araghchi and Qatari mediators remaining in the US",
+      "ccy": null,
+      "pips": -1.7,
+      "share_of_leg": 0.15
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "15:30",
+    "to": "16:45",
+    "dir": "up",
+    "pips": 15.1,
+    "ret_pct": 0.122,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran's Araqchi will meet with mediators in New York today…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -19.6,
+    "ret_pct": -0.158,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -35.2,
+    "ret_pct": -0.409,
+    "minutes": 4140,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 7.0,
+    "ret_pct": 0.082,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran officials pessimistic about deal with US before midt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -23.6,
+    "ret_pct": -0.405,
+    "minutes": 3120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 41.7,
+    "ret_pct": 0.719,
+    "minutes": 1185,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Official: We continue a positive discussion with Iran th… pushed it along (+6.8 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue",
+      "ccy": null,
+      "pips": 6.8,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -15.3,
+    "ret_pct": -0.326,
+    "minutes": 3150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump opposes Iran ceasefire, anticipates renewed strikes a… pushed it along (-11.6 in 15 min, 76% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump opposes Iran ceasefire, anticipates renewed strikes after midterms, WSJ reports",
+      "ccy": null,
+      "pips": -11.6,
+      "share_of_leg": 0.76
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 40.7,
+    "ret_pct": 0.87,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Official: We continue a positive discussion with Iran th… pushed it along (+7.9 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue",
+      "ccy": null,
+      "pips": 7.9,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -209.3,
+    "ret_pct": -0.211,
+    "minutes": 3135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump opposes Iran ceasefire, anticipates renewed strikes a… pushed it along (-188.0 in 15 min, 90% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump opposes Iran ceasefire, anticipates renewed strikes after midterms, WSJ reports",
+      "ccy": null,
+      "pips": -188.0,
+      "share_of_leg": 0.9
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 872.5,
+    "ret_pct": 0.882,
+    "minutes": 1035,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China, US to form bilateral trade and investment councils…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -270.7,
+    "ret_pct": -0.271,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: We continue a positive discussion with Iran …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -92.0,
+    "ret_pct": -0.097,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "21:00",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 277.8,
+    "ret_pct": 0.293,
+    "minutes": 3240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "03:00",
+    "to": "06:00",
+    "dir": "down",
+    "pips": -131.2,
+    "ret_pct": -0.138,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China, US to form bilateral trade and investment councils… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "06:00",
+    "to": "08:45",
+    "dir": "up",
+    "pips": 144.1,
+    "ret_pct": 0.152,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "08:45",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -297.2,
+    "ret_pct": -0.312,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Top Currency Diplomat Mimura: Japanese Prime Mini…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "12:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 388.0,
+    "ret_pct": 0.409,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Mediators expected to hold separate talks with the US and…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -587.3,
+    "ret_pct": -0.36,
+    "minutes": 3150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump opposes Iran ceasefire, anticipates renewed strikes a… pushed it along (-496.0 in 15 min, 84% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump opposes Iran ceasefire, anticipates renewed strikes after midterms, WSJ reports",
+      "ccy": null,
+      "pips": -496.0,
+      "share_of_leg": 0.84
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:30",
+    "to": "12:00",
+    "dir": "up",
+    "pips": 2011.0,
+    "ret_pct": 1.238,
+    "minutes": 750,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China, US to form bilateral trade and investment councils… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "12:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -409.0,
+    "ret_pct": -0.249,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Lagarde: Hearing of the Committee on Economic and Monetary … pushed it along (-217.0 in 15 min, 53% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
+      "ccy": null,
+      "pips": -217.0,
+      "share_of_leg": 0.53
+     },
+     {
+      "title": "ECB President Lagarde Speaks",
+      "ccy": "EUR",
+      "pips": -217.0,
+      "share_of_leg": 0.53
+     },
+     {
+      "title": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue",
+      "ccy": null,
+      "pips": -681.2,
+      "share_of_leg": 1.67
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -597.2,
+    "ret_pct": -0.337,
+    "minutes": 3165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 2062.2,
+    "ret_pct": 1.168,
+    "minutes": 1140,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iran officials pessimistic about deal with US before midter… pushed it along (+428.0 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iran officials pessimistic about deal with US before midterms",
+      "ccy": null,
+      "pips": 428.0,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -272.7,
+    "ret_pct": -2.583,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Official: US Is In A Strong Position And Controls Horm…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "22:45",
+    "to": "12:30",
+    "dir": "up",
+    "pips": 778.3,
+    "ret_pct": 7.566,
+    "minutes": 3705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump opposes Iran ceasefire, anticipates renewed strikes…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "12:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -299.5,
+    "ret_pct": -2.707,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Official: We continue a positive discussion with Iran th… pushed it along (-218.1 in 15 min, 73% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue",
+      "ccy": null,
+      "pips": -218.1,
+      "share_of_leg": 0.73
+     }
+    ]
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "15:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.028%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.028,
+    "top_movers": [
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.066,
+      "pips": -5.7,
+      "unit": "pips",
+      "sigma": -4.99
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.07,
+      "pips": -7.9,
+      "unit": "pips",
+      "sigma": -3.52
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.034,
+      "pips": 4.8,
+      "unit": "pips",
+      "sigma": 2.63
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.057,
+      "pips": 4.7,
+      "unit": "pips",
+      "sigma": 2.16
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.051,
+      "pips": 2.4,
+      "unit": "pips",
+      "sigma": 1.87
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.062,
+      "pips": -11.8,
+      "unit": "pips",
+      "sigma": -1.74
+     }
+    ]
+   }
+  ],
+  "headline_count": 27,
+  "top_headlines": [
+   {
+    "time": "23:00",
+    "impact": "high",
+    "title": "Trump opposes Iran ceasefire, anticipates renewed strikes after midterms, WSJ reports"
+   },
+   {
+    "time": "09:45",
+    "impact": "high",
+    "title": "Japan's Top Currency Diplomat Mimura: Japanese Prime Minister, Finance Minister, US have sent clear message on yen"
+   },
+   {
+    "time": "18:15",
+    "impact": "high",
+    "title": "US Official: We continue a positive discussion with Iran through intermediaries; there will be no agreement without addressing nuclear issue"
+   },
+   {
+    "time": "18:30",
+    "impact": "high",
+    "title": "Iran officials pessimistic about deal with US before midterms"
+   },
+   {
+    "time": "03:00",
+    "impact": "medium",
+    "title": "China, US to form bilateral trade and investment councils, agree on $30B reciprocal tariff cut"
+   },
+   {
+    "time": "14:00",
+    "impact": "medium",
+    "title": "Mediators expected to hold separate talks with the US and Iran on Monday or Tuesday, with Iran's Araghchi and Qatari mediators remaining in the US"
+   },
+   {
+    "time": "15:30",
+    "impact": "medium",
+    "title": "Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament"
+   },
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "US Official: US Is In A Strong Position And Controls Hormuz Strait, Not In A Hurry To Reach An Agreement With Iran"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "Trump on China meeting: Much has been, and will be, accomplished. I look forward to our next meeting!"
+   },
+   {
+    "time": "19:45",
+    "impact": "low",
+    "title": "Contacts are underway to provide guarantees and coordinate steps between America and Iran, a high-ranking source told Al Arabiya"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "Fed's Hammack: The biggest risk with inflation is the formation of an inflationary mindset"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "Fars News: Axios and Al Jazeera's claims about Iran-US talks are false"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "06:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "Cash Rate",
+    "forecast": "4.60%",
+    "previous": "4.35%"
+   },
+   {
+    "time": "06:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "RBA Rate Statement",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "07:30",
+    "ccy": "AUD",
+    "impact": "Medium",
+    "event": "RBA Press Conference",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "13:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "GDP m/m",
+    "forecast": "0.1%",
+    "previous": "0.3%"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "CB Consumer Confidence",
+    "forecast": "90.1",
+    "previous": "89.4"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "JOLTS Job Openings",
+    "forecast": "7.23M",
+    "previous": "7.27M"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "From Friday's close through Asia reopen, risk sentiment was the main swing factor: Trump/Iran headlines drove sharp two-way moves, while DXY closed +0.132% and SPX -0.409%. GBP and NZD led with strength +0.234% and +0.230%, while EUR and CHF lagged at -0.115% and -0.342%; USD/CHF rose 34.1 pips. ECB President Lagarde's remarks were muted (basket -0.028% inside noise floor), so no policy impulse from EUR. The tape is one of geopolitical risk-on/off impulses and no clean macro catalyst for most G10 pairs ahead of RBA and US data.",
+  "themes": [
+   {
+    "theme": "Geopolitical headline risk drove oil, havens, and high-beta FX",
+    "evidence": "Trump opposed Iran ceasefire at 23:00; later a US Official said positive discussion ongoing; Brent +1.769%, USD/CHF +0.412%, USD/MXN +0.87%, SPX -0.409%.",
+    "currencies": [
+     "USD",
+     "CHF",
+     "MXN",
+     "ZAR"
+    ]
+   },
+   {
+    "theme": "GBP and NZD strength, EUR and CHF weakness defined G10 cross tape",
+    "evidence": "GBP strength 0.234% and NZD 0.230%; EUR -0.115% and CHF -0.342%; GBP/CHF +0.576%, NZD/CHF +0.575%, EUR/USD -20.7 pips.",
+    "currencies": [
+     "GBP",
+     "NZD",
+     "EUR",
+     "CHF",
+     "USD"
+    ]
+   },
+   {
+    "theme": "Central bank and verbal intervention had no durable impact",
+    "evidence": "ECB Lagarde basket -0.028% inside noise floor; BOJ minutes and Japan's Mimura headlines failed to own any leg; FOMC speakers not tied to moves.",
+    "currencies": [
+     "EUR",
+     "JPY",
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No US catalyst; dollar held its range and gained modestly on geopolitical safety flows.",
+   "EUR": "Own Lagarde event was muted; EUR lagged, giving back an early +0.05% attempt.",
+   "JPY": "No clear catalyst; yen held its range despite verbal intervention headlines and large swings.",
+   "GBP": "No GBP catalyst; sterling led on broad demand and closed at its best.",
+   "AUD": "No domestic catalyst; early selling was rejected and recovered 89% into RBA risk.",
+   "CAD": "No Canadian catalyst; early +0.12% attempt was rejected and gave back 96%.",
+   "CHF": "No Swiss catalyst; franc was weakest, with early +0.13% attempt rejected and gave back 92%.",
+   "NZD": "No domestic catalyst; kiwi rallied from early -0.091% trough to close at its best."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD printed five two-way legs with the down legs (-24.2 and -33.2 pips) dominating three up legs (+10.2, +14.5, +14.5 pips), leaving it lower."
+  },
+  "polarity_reads": [
+   {
+    "event": "ECB President Lagarde Speaks",
+    "read": "Muted with basket -0.028% inside noise floor; no clean surprise, so EUR/GBP -4.99 sigma and EUR/USD -3.52 sigma are positioning noise rather than a policy signal."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "RBA hikes as expected but signals caution; US data misses soften USD",
+    "probability": 0.4,
+    "thesis": "RBA delivers 25bp to 4.60% but statement is less hawkish than feared; weak JOLTS/confidence pull USD lower and let AUD/NZD recover.",
+    "triggers": [
+     "RBA cash rate 4.60% as forecast",
+     "RBA statement data-dependent, no aggressive hawkish signal",
+     "US JOLTS below 7.23M or confidence below 90.1"
+    ],
+    "invalidation": "RBA holds or signals aggressive tightening; US data beats.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 25,
+      "rationale": "USD softens on weak US data while EUR lacks own catalyst."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 30,
+      "rationale": "RBA hike delivered, short AUD squeeze after Friday's selling rejection."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 20,
+      "rationale": "Tracks AUD risk recovery; NZD closed at best and extends."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 40,
+      "rationale": "US yields fall on soft data; yen benefits."
+     }
+    ]
+   },
+   {
+    "name": "RBA disappoints and geopolitical risk premium returns; USD/CHF bid",
+    "probability": 0.35,
+    "thesis": "RBA either holds or delivers a dovish hike, triggering AUD downside; renewed Iran headlines lift oil and havens while strong US data supports dollar.",
+    "triggers": [
+     "RBA cash rate below 4.60% or dovish statement",
+     "Trump/Iran negative headline",
+     "US JOLTS and confidence beat expectations"
+    ],
+    "invalidation": "RBA hawkish, Iran de-escalation, US data weak.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "RBA disappointment hits AUD; risk-off adds pressure."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 20,
+      "rationale": "High-beta NZD follows AUD lower."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 25,
+      "rationale": "Haven demand and USD bid."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 50,
+      "rationale": "Higher US yields and risk-off demand for USD."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "USD strength plus EUR softness."
+     }
+    ]
+   },
+   {
+    "name": "Iran de-escalation and broad risk-on unwind safe havens",
+    "probability": 0.25,
+    "thesis": "Positive Iran headlines and stable oil encourage carry demand; AUD/NZD and high-beta outperform while USD/CHF and USD/JPY fall.",
+    "triggers": [
+     "US Official confirms positive discussion",
+     "Iran officials signal deal",
+     "Oil retreats from Brent +1.769%"
+    ],
+    "invalidation": "Iran talks break down or US data very strong.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 35,
+      "rationale": "Risk-on and RBA hike supports AUD."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 30,
+      "rationale": "NZD closed at best and benefits from risk appetite."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "CHF safe-haven demand unwinds."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 20,
+      "rationale": "Broad USD fall; EUR recovers modestly."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "Yen strengthens as risk sentiment improves."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "RBA policy surprise",
+    "why_it_matters": "AUD has concentrated event risk; cash rate forecast 4.60% vs 4.35% may be fully priced, so any deviation can sharply reprice AUD/NZD.",
+    "watch": "RBA Rate Statement and press conference at 06:30/07:30."
+   },
+   {
+    "risk": "US-Iran geopolitical escalation or de-escalation",
+    "why_it_matters": "The tape was driven by these headlines; oil and haven CHF/JPY can reverse quickly.",
+    "watch": "US/Iran mediator headlines and Brent."
+   },
+   {
+    "risk": "US JOLTS/consumer confidence surprise at 16:00",
+    "why_it_matters": "USD rate expectations are sensitive; data may extend or reverse DXY +0.132%.",
+    "watch": "CB Consumer Confidence 90.1 forecast and JOLTS 7.23M."
+   },
+   {
+    "risk": "Thin Asia liquidity after weekend",
+    "why_it_matters": "Legs were large with no clear catalyst; early week flows can produce outsized moves.",
+    "watch": "AUD/JPY and NZD/USD around RBA."
+   }
+  ],
+  "calendar_ahead_note": "RBA cash rate decision at 06:30 (4.60% forecast vs 4.35% prior) is the main event; Lagarde speaks again at 13:00, CAD GDP at 14:30, and US consumer confidence/JOLTS at 16:00 can shift USD and risk.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 17729,
+   "completion_tokens": 11851,
+   "total_tokens": 29580,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9592
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 17089
+  }
+ }
+}
