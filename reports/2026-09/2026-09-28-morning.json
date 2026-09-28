@@ -13,7 +13,7 @@
   "end_local": "2026-09-28T07:00:00+02:00",
   "fwd_start_utc": "2026-09-28T05:00:00+00:00",
   "fwd_end_utc": "2026-09-28T17:00:00+00:00",
-  "generated_utc": "2026-09-28T05:05:10.131628+00:00",
+  "generated_utc": "2026-09-28T11:38:31.661273+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 46
+   "with_actual": 44
   }
  },
  "facts": {
@@ -2388,161 +2388,187 @@
   ]
  },
  "analysis": {
-  "session_summary": "Japan verbal intervention signals from PM Takaichi and FinMin Katayama drove early JPY strength, but the attempt was rejected with JPY giving back 62% of its peak gain. USD closed weaker even though Revised UoM Consumer Sentiment beat forecasts and produced a brief 0.047% USD lift. NZD closed at its best while CHF was the weakest major, and Iran/US headlines whipsawed risk across the window.",
+  "session_summary": "The window was dominated by yen verbal intervention and geopolitics. JPY led early, +0.66% intraday, before fading 62% to close +0.258%; USD/JPY fell 65.6 pips. A U.S. sentiment beat lifted USD only briefly. Risk currencies (NZD, AUD, GBP) outperformed a soft USD while CHF lagged -0.207%.",
   "themes": [
    {
-    "theme": "Japanese official verbal intervention",
-    "evidence": "Top headlines: PM Takaichi and FinMin Katayama on weak yen; JPY strength_pct 0.258 but intraday peak 0.656, gave back 62%.",
+    "theme": "Japan verbal intervention drives yen swings",
+    "evidence": "Katayama 'won't hesitate to take bold action' and Takaichi/Trump yen comments pushed USD/JPY down; JPY intraday peak +0.656%, closed +0.258%",
     "currencies": [
-     "JPY"
+     "JPY",
+     "USD"
     ]
    },
    {
-    "theme": "Data and central bank signals failed to anchor USD/GBP",
-    "evidence": "Revised UoM beat actual 48.1 vs forecast 47.4 produced USD stronger 0.047%; Bailey speech muted basket -0.014%.",
+    "theme": "U.S. data beat but USD stays soft; risk-on favors high beta",
+    "evidence": "Revised UoM beat 48.1 vs 47.4 produced a normal 0.047% USD lift; NZD +0.19%, AUD +0.028%, GBP +0.071% while USD -0.158%",
     "currencies": [
      "USD",
+     "NZD",
+     "AUD",
      "GBP"
     ]
    },
    {
-    "theme": "Geopolitical risk whipsaw",
-    "evidence": "Iran-US talks, Trump opposing ceasefire, and Senior Iranian Official headlines whipsawed risk; Brent/USD closed +0.877% and CHF strength_pct -0.207.",
+    "theme": "Iran ceasefire headlines whip commodity FX and oil",
+    "evidence": "Iran-US talks and Trump ceasefire opposition swung USD/SEK, USD/ZAR and Brent; Brent fell then rebounded 5.768%",
     "currencies": [
-     "CHF",
-     "USD"
+     "USD",
+     "SEK",
+     "NOK",
+     "ZAR",
+     "MXN"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "UoM beat caused brief USD strength but broad softening dominated the full window.",
-   "EUR": "No euro-area catalyst; held range with slight drift lower and no clear driver.",
-   "JPY": "Japan verbal intervention signals sparked leading strength before fading; no data releases.",
-   "GBP": "Bailey speech was muted; no clear domestic catalyst, GBP held its range.",
-   "AUD": "No domestic catalyst; early selling rejected and recovered, likely risk appetite support.",
-   "CAD": "No Canadian catalyst; softened with USD and oil price swings.",
-   "CHF": "No Swiss catalyst; weakest major, likely used as funding in risk-on rotation.",
-   "NZD": "No NZ-specific catalyst; closed at best on broad USD softness and risk appetite."
+   "USD": "UoM beat gave a 0.047% lift, but broad USD remained soft at -0.158% as risk appetite favored high beta.",
+   "EUR": "No own releases; EUR held range, flat at -0.017%.",
+   "JPY": "Verbal intervention and Japan-US yen warnings drove early strength, but faded 62% to +0.258%.",
+   "GBP": "Bailey was muted (basket -0.014%); GBP held range with modest +0.071% from USD softness.",
+   "AUD": "No own releases; initial selling to -0.22% was rejected, recovering 87% to +0.028%.",
+   "CAD": "No own releases; CAD drifted -0.164% in a held range, largely tracking USD.",
+   "CHF": "No own releases; CHF was weakest at -0.207% without a clear catalyst.",
+   "NZD": "No own releases; NZD closed at its best +0.19%, supported by risk appetite."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD's five legs (up 34.5, down 18.3, up 10.6, down 24.2, up 10.4) netted +16 pips with no leg owning a single catalyst."
+   "EUR/USD": "EUR/USD chopped through five legs—up 34.5, down 18.3, up 10.6, down 24.2, up 10.4—with no single catalyst; Katayama and Iran headlines only nudged parts."
   },
   "polarity_reads": [
    {
     "event": "Revised UoM Consumer Sentiment +1 more",
-    "read": "Normal reaction: USD strengthened on the beat, implying no contrarian positioning against positive US data surprises despite broad USD softness."
+    "read": "Normal polarity: beat surprise strengthened USD by 0.047%, with USD/MXN +0.196% and AUD/USD -0.084%; no inverted positioning."
    },
    {
     "event": "BOE Gov Bailey Speaks",
-    "read": "Muted reaction inside noise floor implies markets assigned no directional impulse to Bailey's remarks."
+    "read": "Muted polarity: GBP basket moved -0.014% inside noise; event ignored, no positioning signal."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-on consolidation",
+    "name": "Yen rhetoric persists, intervention risk stays high",
     "probability": 0.45,
-    "thesis": "US-China trade goodwill and Iran talks hold, keeping USD soft and commodity FX supported; Japan verbal intervention fades.",
+    "thesis": "Verbal intervention from Japan (Katayama/Takaichi) and Bessent's strong-yen call keep JPY supported; any actual MoF action drives sharp JPY gains.",
     "triggers": [
-     "China-US trade and investment councils headline holds",
-     "No new escalation in Iran/US",
-     "SPX/USD holds gains"
+     "Further Japan MoF/BoJ verbal warnings or actual intervention",
+     "U.S. yields stay soft",
+     "Risk sentiment deteriorates"
     ],
-    "invalidation": "Trump or Iranian officials escalate rhetoric.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 16,
-      "rationale": "EUR/USD closed +16 pips; sustained USD softness extends modest gain."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 19.6,
-      "rationale": "NZD/USD closed +19.6 pips and at best; risk appetite supports further upside."
-     }
-    ]
-   },
-   {
-    "name": "Yen rebound resumes",
-    "probability": 0.35,
-    "thesis": "Japanese officials reiterate intervention warnings; USD/JPY retests lower toward range low.",
-    "triggers": [
-     "Japanese FinMin/PM repeat strong yen language",
-     "USD/JPY fails to hold above 157.76"
-    ],
-    "invalidation": "No further yen commentary and US yields climb.",
+    "invalidation": "BoJ/MoF clearly reject intervention, U.S. yields spike higher",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 65.6,
-      "rationale": "USD/JPY closed down 65.6 pips; intervention fear could extend the drop."
+      "rationale": "Today's verbal intervention drove USD/JPY down 65.6 pips; follow-through could match that."
      },
      {
       "instrument": "CHF/JPY",
       "direction": "down",
       "magnitude_pips": 88.7,
-      "rationale": "CHF/JPY fell 88.7 pips; yen strength dominates if intervention theme returns."
+      "rationale": "CHF/JPY fell 88.7 pips as JPY strength and CHF weakness combined."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 16.0,
+      "rationale": "USD softness persists, EUR/USD gained 16.0 pips with no EUR catalyst."
      }
     ]
    },
    {
-    "name": "Geopolitical risk repricing",
-    "probability": 0.2,
-    "thesis": "Iran/US tensions reassert, oil spikes, safe-haven CHF/JPY bid, commodity currencies weaken.",
+    "name": "Risk-on de-escalation",
+    "probability": 0.35,
+    "thesis": "Iran-US ceasefire talks progress, oil falls, equities stabilize; high-beta FX (NZD, AUD) and GBP outperform, JPY weakens.",
     "triggers": [
-     "Senior Iranian Official rejects concessions",
-     "Trump opposes ceasefire headlines return"
+     "Confirmed Iran ceasefire or technical talks progress",
+     "Brent crude extends decline",
+     "China-US trade détente headlines"
     ],
-    "invalidation": "Iran-US technical talks deliver de-escalation.",
+    "invalidation": "Trump renews strikes, geopolitical risk flares",
     "pair_paths": [
      {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 19.7,
-      "rationale": "USD/CHF had a down leg of 19.7 pips; safe-haven CHF appreciation drives USD/CHF lower."
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 19.6,
+      "rationale": "NZD/USD already rose 19.6 pips on risk appetite; de-escalation adds."
      },
      {
       "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 13.1,
+      "rationale": "AUD/USD rose 13.1 pips today with risk recovery."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 42.8,
+      "rationale": "The UoM beat produced a 42.8-pip USD/JPY bounce; risk-on unwinds JPY haven."
+     }
+    ]
+   },
+   {
+    "name": "USD recovery on rates/Fed speak",
+    "probability": 0.2,
+    "thesis": "USD stabilizes as U.S. data continues positive and Lagarde sounds dovish; EUR/USD gives back, USD/JPY rebounds from verbal intervention fade.",
+    "triggers": [
+     "Strong U.S. data or hawkish Fed comments",
+     "Lagarde emphasizes easing",
+     "U.S. yields rebound"
+    ],
+    "invalidation": "Weak U.S. data, JPY intervention escalates",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 30.4,
-      "rationale": "AUD/USD down leg of 30.4 pips in prior risk-off reflects commodity FX weakness."
+      "magnitude_pips": 18.3,
+      "rationale": "EUR/USD had a 18.3-pip down leg; renewed USD strength could repeat."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 42.8,
+      "rationale": "USD/JPY bounced 42.8 pips on UoM beat; continuation if yields rise."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 7.8,
+      "rationale": "GBP/USD fell 7.8 pips on UoM beat; USD recovery pressures cable."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Yen intervention follow-through",
-    "why_it_matters": "JPY strength peaked at +0.656% but gave back 62%; renewed comments could cause sharp yen moves.",
-    "watch": "Katayama/Bessent yen statements, USD/JPY close 157.76."
+    "risk": "Japan MOF/BoJ actual intervention risk",
+    "why_it_matters": "JPY is already +0.258% on verbal warnings; actual intervention could overshoot",
+    "watch": "Further Katayama remarks, MoF rate checks, sudden USD/JPY drops"
    },
    {
-    "risk": "USD data divergence",
-    "why_it_matters": "UoM beat caused only 0.047% USD lift; if soft USD persists, data may not support dollar.",
-    "watch": "Next US data and equities."
+    "risk": "Iran ceasefire headline whipsaw",
+    "why_it_matters": "Brent and high-beta EM swung sharply; can dominate short-term tape",
+    "watch": "Updates on Iran-US technical talks, Trump statements"
    },
    {
-    "risk": "Oil/geopolitical headline risk",
-    "why_it_matters": "Brent/USD closed +0.877% with Iran/US headlines; an escalation can reverse risk trades quickly.",
-    "watch": "Iran-US talks, Trump statements."
+    "risk": "Lagarde speech at 15:30 CEST",
+    "why_it_matters": "Only scheduled high-impact event; could shift EUR",
+    "watch": "Policy guidance, growth/policy hints"
    }
   ],
-  "calendar_ahead_note": "ECB President Lagarde Speaks at 15:30 can change EUR; otherwise the window has no other scheduled high-impact releases.",
+  "calendar_ahead_note": "Coming window has only ECB President Lagarde Speaks at 15:30 CEST; before that no high-impact data, so JPY/geopolitical headlines can drive.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 21551,
-   "completion_tokens": 7032,
-   "total_tokens": 28583,
+   "completion_tokens": 8136,
+   "total_tokens": 29687,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 21504
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5450
+    "reasoning_tokens": 6202
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 20911
+   "prompt_cache_hit_tokens": 21504,
+   "prompt_cache_miss_tokens": 47
   }
  }
 }
