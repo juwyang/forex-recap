@@ -13,7 +13,7 @@
   "end_local": "2026-09-29T07:00:00+02:00",
   "fwd_start_utc": "2026-09-29T05:00:00+00:00",
   "fwd_end_utc": "2026-09-29T17:00:00+00:00",
-  "generated_utc": "2026-09-29T05:05:10.736637+00:00",
+  "generated_utc": "2026-09-29T11:19:27.747303+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 4
+   "with_actual": 10
   }
  },
  "facts": {
@@ -1629,193 +1629,157 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight the tape was dominated by broad USD strength: DXY closed +0.151% while SPX fell -0.456% as Iran headlines churned. AUD firmed after an in-line RBA decision, closing at its best, while NZD was the clear laggard, closing at its lows. EUR/USD and GBP/USD closed near session lows, with most dollar-base pairs higher. Many legs lacked clean catalysts; the Iran headlines and RBA were the main impulses.",
+  "session_summary": "USD closed at its best (+0.159%) while NZD lagged at -0.179%; EUR/USD lost 12.1 pips and USD/JPY gained 22.6 pips. Risk assets were soft: SPX fell 0.456%, VIX rose 1.127%, and Brent gained 1.525%. Iran-deal headlines and the inline RBA cash rate were the main catalysts, with the tape showing clear dollar demand.",
   "themes": [
    {
-    "theme": "Broad USD strength on risk-off Iran headlines",
-    "evidence": "DXY +0.151%; SPX -0.456%; USD closed at best; EUR/USD -0.106%",
+    "theme": "Dollar strength on risk-off",
+    "evidence": "USD strength +0.159%, SPX -0.456%, VIX +1.127%, Brent +1.525%, USD/JPY +22.6 pips, USD/CHF +16.7 pips",
     "currencies": [
-     "USD",
-     "EUR",
-     "GBP"
+     "USD"
     ]
    },
    {
-    "theme": "AUD resilience after in-line RBA",
-    "evidence": "Cash Rate printed 4.60% inline; AUD own impulse +0.142%; AUD/NZD +0.216%",
+    "theme": "AUD resilience after RBA",
+    "evidence": "RBA cash rate inline at 4.60%; AUD own impulse +0.142%; AUD/NZD +26.7 pips",
     "currencies": [
      "AUD",
      "NZD"
     ]
-   },
-   {
-    "theme": "NZD underperformance and early bid rejection",
-    "evidence": "NZD strength -0.179%; NZD/USD -0.335%; AUD/NZD +0.216%",
-    "currencies": [
-     "NZD",
-     "AUD"
-    ]
-   },
-   {
-    "theme": "Geopolitical headline churn around Iran",
-    "evidence": "Iran suspend enrichment headline; US source gaps wide; Trump denial",
-    "currencies": [
-     "USD",
-     "CHF",
-     "JPY"
-    ]
    }
   ],
   "currency_drivers": {
-   "USD": "USD strengthened with no US releases as Iran headlines and lower SPX supported the dollar.",
-   "EUR": "EUR had no catalyst; it closed slightly better against most majors but lost to USD.",
-   "JPY": "JPY had no catalyst; early strength faded, leaving it barely firmer.",
-   "GBP": "GBP had no catalyst and stayed soft, second-worst among G10 after NZD.",
-   "AUD": "AUD firmed despite an in-line RBA rate decision and statement, closing at its best.",
-   "CAD": "CAD had no catalyst; early selling was rejected, leaving it slightly firmer.",
-   "CHF": "CHF had no catalyst; an early safe-haven bid fully reversed, leaving it lower.",
-   "NZD": "NZD had no catalyst; early bid reversed completely and it closed at its lows."
+   "USD": "No US data; dollar strengthened as stocks fell and oil jumped, consistent with haven demand.",
+   "EUR": "No euro-area data; euro firmed modestly to close at its best with no clear catalyst.",
+   "JPY": "No Japanese data; brief yen bid faded, leaving little net change.",
+   "GBP": "No UK releases; pound held its range, closing soft with no clear catalyst.",
+   "AUD": "RBA cash rate printed inline at 4.60%; AUD still strengthened 0.142%.",
+   "CAD": "No Canadian data; early selling was rejected, leaving a marginal bid.",
+   "CHF": "No Swiss data; early haven bid fully reversed to close weak.",
+   "NZD": "No New Zealand data; it led then gave back 100% to weakest major."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD's three legs netted -12.1 pips: a -16.6-pip drop on Iran headlines, a +6.7-pip bounce, then a -13.9-pip drift to a 0.02 close-in-range."
+   "EUR/USD": "EUR/USD’s early -16.6-pip slide on the Iran-source headline set the tone; a shallow +6.7-pip bounce and final -13.9-pip drift left it near the low."
   },
   "polarity_reads": [
    {
     "event": "Cash Rate +1 more",
-    "read": "The in-line RBA outcome produced a +0.142% AUD impulse, implying the market was short AUD or positioned for a dovish surprise and had to cover."
+    "read": "Inline rate outcome still produced a +0.142% AUD impulse, implying positioning was skewed for a more dovish outcome."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-off USD bid extends",
+    "name": "Dollar bid extends",
     "probability": 0.45,
-    "thesis": "Iran negotiation uncertainty and weak equity tone keep the dollar bid; high-beta and commodity FX stay pressured.",
+    "thesis": "Risk-off persists and USD remains the strongest major.",
     "triggers": [
-     "DXY holds above 101.02",
-     "SPX trades below 7667.9",
-     "Iran gap headlines continue"
+     "US-source Iran gap headlines escalate",
+     "SPX fails to recover",
+     "VIX holds gains"
     ],
-    "invalidation": "EUR/USD recovers above 1.13596 and DXY falls below 101.02.",
+    "invalidation": "DXY loses 101.02 and SPX reclaims 7667.9.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 16.6,
-      "rationale": "Matches the initial Iran-headline down leg and the path of least resistance while USD stays bid."
+      "rationale": "Repeats the overnight initial US-source Iran headline slide."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
       "magnitude_pips": 35.4,
-      "rationale": "Matches the initial risk-off/USD-strength up leg from the same Iran headline."
+      "rationale": "Matches the 19:00–21:00 headline-driven leg."
      },
      {
-      "instrument": "NZD/USD",
-      "direction": "down",
-      "magnitude_pips": 19.0,
-      "rationale": "Current close fell 19.0 pips; downside extends if risk-off persists."
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 15.4,
+      "rationale": "Follows the opening haven bid."
      }
     ]
    },
    {
-    "name": "Rangebound consolidation",
+    "name": "Two-way range",
     "probability": 0.35,
-    "thesis": "After a one-way overnight move, markets pause ahead of US data and the RBA press conference, holding within overnight ranges.",
+    "thesis": "No fresh catalyst; Asia consolidates before Europe and the RBA presser.",
     "triggers": [
-     "DXY stays near 101.02 without new high",
-     "SPX stabilizes around 7667.9",
-     "RBA press conference offers no new hawkish signal"
+     "RBA presser sounds balanced",
+     "No new Iran headline",
+     "Liquidity thins"
     ],
-    "invalidation": "Break of the overnight extremes in EUR/USD below 1.13596 or USD/JPY above 157.534.",
+    "invalidation": "Break of EUR/USD 24.5-pip overnight range.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
-      "magnitude_pips": 12.1,
-      "rationale": "Consolidation around the -12.1 pip daily change; no fresh catalyst to extend."
+      "magnitude_pips": 24.5,
+      "rationale": "Overnight range was 24.5 pips; no catalyst to break it."
      },
      {
       "instrument": "USD/JPY",
       "direction": "range",
-      "magnitude_pips": 22.6,
-      "rationale": "Current close is +22.6 pips; large overnight range may compress."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "range",
-      "magnitude_pips": 8.7,
-      "rationale": "AUD/USD closed -8.7 pips; rangebound after RBA with Australia data done."
+      "magnitude_pips": 51.0,
+      "rationale": "Overnight range was 51.0 pips; pair likely holds."
      }
     ]
    },
    {
-    "name": "Risk-on reversal / Iran deal confirmation",
+    "name": "Risk-on reversal",
     "probability": 0.2,
-    "thesis": "If Iran de-escalation is confirmed and risk appetite rebounds, the dollar gives back overnight gains and NZD/AUD bounce.",
+    "thesis": "Iran deal optimism returns or RBA presser hawkish, reducing dollar demand.",
     "triggers": [
-     "Clear Iran sanctions relief confirmation",
-     "SPX rebounds from 7667.9",
-     "Brent retraces from 109.296"
+     "RBA presser signals further tightening",
+     "Trump walks back gaps-wide scepticism",
+     "SPX recovers"
     ],
-    "invalidation": "DXY posts a fresh high above 101.02 and SPX fails to recover.",
+    "invalidation": "USD/JPY takes out 157.534 close.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 6.7,
-      "rationale": "Matches the bounce leg from 21:45; a recovering risk tone supports EUR/USD."
+      "rationale": "Matches the 21:45–00:00 bounce leg."
      },
      {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 19.8,
-      "rationale": "Matches the NZD/USD bounce leg from 02:15; high-beta rebound is sharp when risk turns."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 8.9,
-      "rationale": "Matches the AUD/USD up leg after the overnight low; RBA resilience supports a bounce."
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 17.3,
+      "rationale": "Matches the 21:00–05:15 correction leg."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Iran headline reversal or Trump denial escalates",
-    "why_it_matters": "It can flip the overnight dollar bid and risk tone quickly.",
-    "watch": "Fresh Iran statements and WTI/Brent reaction."
+    "risk": "Iran negotiations headline volatility",
+    "why_it_matters": "US-source gaps-wide headline moved EUR/USD -7.6 pips and USD/JPY +15.0 pips in 15 minutes.",
+    "watch": "Further Iran statements and Trump clarifications."
    },
    {
-    "risk": "RBA press conference hawkish/dovish surprise",
-    "why_it_matters": "AUD is closing at its best after an inline decision; any signal can extend or unwind strength.",
-    "watch": "RBA Press Conference at 07:30."
+    "risk": "Early illiquid technical flows",
+    "why_it_matters": "Several legs had no news catalyst, such as USD/CHF -9.6 pips and USD/CAD -10.0 pips.",
+    "watch": "Price action around New York/Asia handover."
    },
    {
-    "risk": "US data disappoints or beats in NY",
-    "why_it_matters": "CB Consumer Confidence and JOLTS can reset Fed expectations and dollar strength.",
-    "watch": "CB Consumer Confidence and JOLTS at 16:00."
-   },
-   {
-    "risk": "Thin Asia liquidity amplifies reversals",
-    "why_it_matters": "Several overnight legs had no clear catalyst and sharp rejections, signaling fragile positioning.",
-    "watch": "Early European liquidity and break of overnight ranges."
+    "risk": "RBA press conference extension",
+    "why_it_matters": "AUD firmed +0.142% on inline rate; presser can extend or unwind AUD/NZD 26.7-pip move.",
+    "watch": "RBA Press Conference 07:30."
    }
   ],
-  "calendar_ahead_note": "Focus turns to the 07:30 RBA press conference for AUD, then ECB President Lagarde at 13:00 for EUR, CAD GDP at 14:30, and US CB Consumer Confidence and JOLTS at 16:00; these medium-impact events can reset the dollar, risk tone, and AUD/EUR paths.",
+  "calendar_ahead_note": "RBA Press Conference at 07:30 can extend AUD; ECB President Lagarde at 13:00, CAD GDP at 14:30, then US CB Consumer Confidence and JOLTS at 16:00 set the next USD/CAD and EUR/USD moves.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14528,
-   "completion_tokens": 7389,
-   "total_tokens": 21917,
+   "completion_tokens": 6476,
+   "total_tokens": 21004,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 14464
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5469
+    "reasoning_tokens": 4951
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 13888
+   "prompt_cache_hit_tokens": 14464,
+   "prompt_cache_miss_tokens": 64
   }
  }
 }
