@@ -13,7 +13,7 @@
   "end_local": "2026-09-30T07:00:00+02:00",
   "fwd_start_utc": "2026-09-30T05:00:00+00:00",
   "fwd_end_utc": "2026-09-30T17:00:00+00:00",
-  "generated_utc": "2026-09-30T05:05:11.023273+00:00",
+  "generated_utc": "2026-09-30T11:07:33.653586+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 29
+   "with_actual": 39
   }
  },
  "facts": {
@@ -1692,173 +1692,202 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight tape was driven by the Australian CPI miss: trimmed mean m/m printed 0.2% vs 0.3% forecast, knocking AUD 0.480% and sending AUD/NZD -21.4 pips while NZD and JPY led. The dollar failed to benefit from Fed Williams' late-2026 hike warning; DXY fell 14.2 points and USD/JPY closed -31.9 pips, with risk assets firm (SPX +31.5, VIX -26.0). EUR/USD added 17.4 pips on broad USD softness but had no single catalyst. The tape leaves the market short AUD and wary of US data, with NZD and JPY the strongest majors.",
+  "session_summary": "Overnight trade was anchored by an Australian CPI miss: trimmed mean CPI printed 0.2% versus 0.3% forecast, triggering a 0.48% own-currency markdown in AUD. The kiwi led the G10 with a 0.094% strength score while USD and CAD lagged at -0.110% and -0.111%. Equities firmed (SPX +0.411%) and the dollar index fell -0.14%, so the tape had a risk-on, USD-soft tone rather than a haven bid. Fed's Williams floated a late-2026 hike but the dollar still failed to gain.",
   "themes": [
    {
-    "theme": "AUD CPI miss drives antipodean divergence",
-    "evidence": "Trimmed mean CPI m/m printed 0.2% vs 0.3%; AUD weakened 0.480%; AUD/NZD -21.4 pips; NZD +0.094% strongest.",
+    "theme": "AUD CPI miss drives G10 cross flows",
+    "evidence": "Australia's Trimmed Mean CPI m/m came in at 0.2% vs 0.3% forecast; AUD own impulse was -0.48%, with AUD/NZD down -0.173% and AUD/CHF down -0.098%.",
     "currencies": [
      "AUD",
      "NZD",
-     "CHF"
+     "CHF",
+     "JPY",
+     "USD"
     ]
    },
    {
-    "theme": "USD soft despite hawkish Fed Williams",
-    "evidence": "DXY/USD -14.2 points; GBP/USD and NZD/USD rose on Williams; USD/JPY -31.9 pips; SPX +31.5, VIX -26.0.",
+    "theme": "USD soft with risk-on",
+    "evidence": "DXY/USD closed -0.14%; SPX/USD rose +0.411%; VIX/USD fell -1.466%.",
     "currencies": [
      "USD",
      "GBP",
+     "EUR",
      "NZD",
-     "JPY"
+     "CAD"
+    ]
+   },
+   {
+    "theme": "No-news strength attempts faded",
+    "evidence": "JPY led +0.41% but gave back 64%; CHF led +0.12% but gave back 70%.",
+    "currencies": [
+     "JPY",
+     "CHF"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No US releases; failed to benefit from Fed Williams hike warning, DXY fell.",
-   "EUR": "No euro-area catalyst; moved with broad dollar softness and cross-winds from AUD CPI.",
-   "JPY": "No domestic catalyst; attempt rejected after +0.41% spike, gave back 64%.",
-   "GBP": "No UK catalyst; closed at best, supported by broad USD softness.",
-   "AUD": "AUD trimmed mean CPI miss (0.2% vs 0.3%) drove 0.480% own-currency drop.",
-   "CAD": "No Canada catalyst; weakest major, tracked risk-on and oil.",
-   "CHF": "No Swiss catalyst; early bid rejected, gave back 70%.",
-   "NZD": "No NZ catalyst; strongest major as AUD weakness and risk-on lifted it."
+   "USD": "No US releases; despite Fed's Williams hike talk, broad USD softness persisted.",
+   "EUR": "No euro-area data; held its range and closed with modest gains.",
+   "JPY": "No Japanese data; early strength of +0.41% faded 64% into the close.",
+   "GBP": "No UK data; closed at its best, supported by broad USD weakness.",
+   "AUD": "Own CPI miss at 0.2% vs 0.3% forecast drove a 0.48% markdown.",
+   "CAD": "No Canadian data; weakest major, with no clear catalyst.",
+   "CHF": "No Swiss data; early +0.12% attempt rejected, giving back 70%.",
+   "NZD": "No domestic data; top performer, aided by AUD weakness after CPI miss."
   },
   "leg_notes": {
-   "EUR/USD": "Initial 25.8-pip up leg and subsequent -10.8-pip pullback both lacked a clear catalyst; net +17.4 pips reflects broad USD softness rather than euro-specific flow."
+   "EUR/USD": "EUR/USD staged a 25.8-pip rise into 23:45 with no clear catalyst, then gave back 10.8 pips into 06:45, leaving it up 17.4 pips at 1.13319."
   },
   "polarity_reads": [
    {
     "event": "Trimmed Mean CPI m/m +2 more",
-    "read": "Normal polarity: AUD miss weakened it 0.480%; -9.26σ AUD/NZD and -9.47σ AUD/CHF reactions imply crowded long-AUD positions were forced out."
+    "read": "Normal downside surprise produced a clean 0.48% AUD markdown, suggesting the market was positioned for firm/hawkish Australian inflation and had to liquidate AUD longs."
    }
   ],
   "scenarios": [
    {
-    "name": "USD softness extends after soft US data",
+    "name": "USD softness persists / risk-on extends",
     "probability": 0.35,
-    "thesis": "Soft ADP/PCE or hawkish fail keeps dollar on back foot; high-beta and JPY stay bid.",
+    "thesis": "Soft US data (Core PCE around 0.3% or lower) and steady equities keep the dollar on the back foot; carry and pro-cyclical currencies outperform.",
     "triggers": [
-     "ADP below 73K",
-     "Core PCE m/m below 0.3%",
-     "SPX holds gains"
+     "Core PCE Price Index m/m prints at or below 0.3%",
+     "SPX/USD holds above 7692.3",
+     "VIX/USD stays below 17.475"
     ],
-    "invalidation": "Core PCE surprises hot or hawkish Fed commentary",
+    "invalidation": "US Core PCE beats 0.4% or Final GDP is revised up sharply.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 30.9,
-      "rationale": "EUR/USD range_pips 30.9; broad USD softness pushes it to top of range"
+      "magnitude_pips": 35,
+      "rationale": "EUR held its range and closes near highs; soft US data extends USD weakness."
      },
      {
       "instrument": "GBP/USD",
       "direction": "up",
-      "magnitude_pips": 29.6,
-      "rationale": "GBP/USD range_pips 29.6; GBP closed at best and extends"
+      "magnitude_pips": 30,
+      "rationale": "GBP closed at its best and benefits from risk-on/soft USD."
      },
      {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 31.9,
-      "rationale": "USD/JPY chg_pips -31.9; yen remains bid in risk-on"
+      "instrument": "AUD/USD",
+      "direction": "range",
+      "magnitude_pips": 20,
+      "rationale": "AUD is still digesting the CPI miss, limiting rally."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 20,
+      "rationale": "NZD is top G10 performer and should add on risk support."
      }
     ]
    },
    {
-    "name": "Hot PCE re-prices Fed, USD rebounds",
-    "probability": 0.4,
-    "thesis": "Core PCE above 0.3% and solid ADP revive hawkish Fed bets, reversing USD softness.",
+    "name": "Hawkish US data triggers DXY rebound",
+    "probability": 0.3,
+    "thesis": "Strong ADP / Core PCE / GDP forces markets to reprice Fed odds, lifting USD and unwinding the overnight risk-on move.",
     "triggers": [
-     "Core PCE m/m above 0.3%",
-     "ADP above 73K",
-     "Final GDP price index above 6.4%"
+     "ADP Non-Farm Employment Change above 73K",
+     "Core PCE Price Index m/m above 0.3%",
+     "Final GDP q/q revised above 1.5%"
     ],
-    "invalidation": "PCE misses or risk rally accelerates",
+    "invalidation": "DXY/USD fails to hold above 101.161 and VIX falls further.",
     "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 30.9,
-      "rationale": "EUR/USD range_pips 30.9; USD recovery erases overnight gains"
-     },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 71.2,
-      "rationale": "USD/JPY overnight up leg 71.2 pips; hawkish PCE re-pricing lifts it"
+      "magnitude_pips": 40,
+      "rationale": "USD rebound from 157.143 close; JPY strength fades."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "EUR/USD struggles above 1.13319 and falls back into its 30.9-pip range."
      },
      {
       "instrument": "AUD/USD",
       "direction": "down",
-      "magnitude_pips": 35.8,
-      "rationale": "AUD/USD range_pips 35.8; high-beta AUD extends losses on USD rebound"
+      "magnitude_pips": 25,
+      "rationale": "AUD already weak after CPI miss; hawkish USD compounds downside."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 25,
+      "rationale": "GBP closes near high but remains sensitive to USD reversal."
      }
     ]
    },
    {
-    "name": "Rangebound consolidation before US data",
-    "probability": 0.25,
-    "thesis": "No strong directional impulse; markets hold overnight ranges into German CPI/ADP.",
+    "name": "AUD underperformance / CPI repricing continues",
+    "probability": 0.35,
+    "thesis": "Markets keep penalizing AUD after the cooling CPI, with AUD/NZD and AUD/CHF continuing lower; NZD and GBP stay resilient.",
     "triggers": [
-     "German prelim CPI in line at 0.5%",
-     "ADP near consensus",
-     "No Fed surprises"
+     "AUD/NZD resumes lower below 1.23599",
+     "AUD/CHF extends below 0.58178",
+     "RBA-sensitive front-end yields move lower"
     ],
-    "invalidation": "Break of EUR/USD 30.9-pip range or USD/JPY 114.7-pip range",
+    "invalidation": "AUD/USD reclaims 0.69708 and AUD/NZD climbs back above 1.23599.",
     "pair_paths": [
      {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 30.9,
-      "rationale": "EUR/USD already held 30.9-pip range; no catalyst breaks it before US data"
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 114.7,
-      "rationale": "USD/JPY range_pips 114.7; overnight attempt rejected, chop persists"
-     },
-     {
       "instrument": "AUD/NZD",
+      "direction": "down",
+      "magnitude_pips": 40,
+      "rationale": "AUD/NZD fell -0.173% after CPI, and the leg still has downside."
+     },
+     {
+      "instrument": "AUD/CHF",
+      "direction": "down",
+      "magnitude_pips": 25,
+      "rationale": "AUD/CHF dropped -0.098% and CHF strength faded but AUD remains pressured."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 15,
+      "rationale": "NZD top performer; benefits from rotation out of AUD."
+     },
+     {
+      "instrument": "GBP/USD",
       "direction": "range",
-      "magnitude_pips": 77.0,
-      "rationale": "AUD/NZD range_pips 77.0; stabilises after CPI-driven -21.4 pip drop"
+      "magnitude_pips": 10,
+      "rationale": "GBP strong but pair consolidates near 1.32268."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Core PCE surprises hot",
-    "why_it_matters": "Could reverse the overnight USD decline and pressure NZD/JPY strength",
-    "watch": "0.3% forecast vs 0.2% prior; DXY 101.161"
+    "risk": "US Core PCE overshoots 0.3%",
+    "why_it_matters": "Would threaten the overnight USD-soft, risk-on setup and could reverse EUR/USD and cable.",
+    "watch": "DXY/USD at 101.161 and VIX at 17.475."
    },
    {
-    "risk": "AUD positioning still crowded",
-    "why_it_matters": "Post-CPI -9.26σ AUD/NZD and -9.47σ AUD/CHF show leveraged long AUD; unwinding can continue",
-    "watch": "AUD/NZD 1.23599 and AUD/CHF 0.58178"
+    "risk": "German CPI jumps above 0.5% forecast",
+    "why_it_matters": "Would strengthen EUR and pressure EUR/USD higher, especially with no ECB offset in the window.",
+    "watch": "EUR/USD 1.13319 and EUR/CHF 0.94574."
    },
    {
-    "risk": "Fed speakers turn more hawkish after Williams",
-    "why_it_matters": "Williams failed to lift USD, but if PCE aligns, USD short squeeze may accelerate",
-    "watch": "USD/JPY 157.143, EUR/USD 1.13319"
+    "risk": "Oil resumes slide after Brent fell -0.825%",
+    "why_it_matters": "Could drag CAD and NOK/SEK further, reinforcing commodity-currency weakness.",
+    "watch": "Brent/USD 105.553 and USD/CAD 1.41984."
    }
   ],
-  "calendar_ahead_note": "German prelim CPI (0.5% f/c) at 08:29 can move EUR; US ADP (73K), Core PCE (0.3% f/c), Final GDP (1.5%) are the main USD catalysts. Hot PCE is the highest-impact risk and can reverse the overnight USD decline.",
+  "calendar_ahead_note": "German CPI at 08:29 opens the European session; the key US run is ADP at 14:15, then Core PCE and Final GDP at 14:30—the PCE print can validate or break the current USD softness.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 15107,
-   "completion_tokens": 8938,
-   "total_tokens": 24045,
+   "completion_tokens": 8687,
+   "total_tokens": 23794,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 15104
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7076
+    "reasoning_tokens": 6589
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 14467
+   "prompt_cache_hit_tokens": 15104,
+   "prompt_cache_miss_tokens": 3
   }
  }
 }
