@@ -13,7 +13,7 @@
   "end_local": "2026-09-30T19:00:00+02:00",
   "fwd_start_utc": "2026-09-30T17:00:00+00:00",
   "fwd_end_utc": "2026-10-01T17:00:00+00:00",
-  "generated_utc": "2026-09-30T17:57:37.579081+00:00",
+  "generated_utc": "2026-09-30T21:23:51.785087+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 51
+   "with_actual": 50
   }
  },
  "facts": {
@@ -2364,187 +2364,182 @@
   ]
  },
  "analysis": {
-  "session_summary": "The tape was a clear risk-on rotation: SPX +0.666% while DXY fell 0.182% and VIX was flat at 0.0%. Sterling led with +0.368% strength, closing at its best, despite no UK catalyst; the euro also gained 0.143% against a soft dollar. AUD was the weakest at -0.328% after a trimmed mean CPI miss (0.2% vs 0.3% forecast) drove a normal 0.480% drop. The US GDP beat at 2.2% vs 1.5% produced an inverted dollar decline of 0.161%, while ADP at 90K vs 73K was muted.",
+  "session_summary": "GBP led the board, closing at its best with no own releases, while AUD lagged sharply after a normal CPI miss. US Final GDP beat but produced inverted USD weakness; ADP was muted. Commodity currencies and risk proxies were mixed, with Brent up 1.087% and SPX up 0.666%. The tape shows fading of early JPY, NZD, CHF, and AUD attempts and a late USD recovery from its lows.",
   "themes": [
    {
-    "theme": "Sterling exceptionalism",
-    "evidence": "GBP strength_pct 0.368 and GBP/USD gain 58.2 pips; EUR/GBP fell 19.3 pips and closed at 0.85486.",
+    "theme": "Dollar weakness despite strong GDP",
+    "evidence": "Final GDP q/q actual 2.2% vs 1.5% forecast, polarity inverted, USD weaker 0.161%; DXY -0.182%.",
+    "currencies": [
+     "USD"
+    ]
+   },
+   {
+    "theme": "Sterling strength without a domestic catalyst",
+    "evidence": "GBP rank 1, strength +0.368%, closed at its best, own releases [].",
     "currencies": [
      "GBP"
     ]
    },
    {
-    "theme": "AUD selloff on soft domestic inflation",
-    "evidence": "Trimmed mean CPI missed at 0.2% vs 0.3% forecast, triggering a normal -0.48% AUD impulse; AUD/USD fell 17.8 pips and AUD/NZD fell 45.7 pips.",
+    "theme": "Aussie underperformance after CPI miss",
+    "evidence": "Trimmed Mean CPI miss 0.2% vs 0.3%, polarity normal, AUD weaker 0.480%; AUD rank 8 -0.328%.",
     "currencies": [
-     "AUD",
-     "NZD",
-     "CHF"
-    ]
-   },
-   {
-    "theme": "USD data reaction divergence",
-    "evidence": "Final GDP beat (2.2% vs 1.5%) caused an inverted -0.161% USD impulse; ADP (90K vs 73K) was muted at -0.013%; DXY closed -0.182%.",
-    "currencies": [
-     "USD",
-     "EUR",
-     "GBP"
+     "AUD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Dollar fell because a GDP beat triggered an inverted sell-off; ADP moved only -0.013%.",
-   "EUR": "Euro gained 0.143% with no own release; strength was residual dollar softness.",
-   "JPY": "Yen had no own catalyst; early +0.41% bid faded 73%.",
-   "GBP": "Sterling had no own release; demand was persistent and closed at its best.",
-   "AUD": "AUD fell 0.480% after trimmed mean CPI missed at 0.2% versus 0.3% forecast.",
-   "CAD": "Loonie had no domestic driver and closed at its weakest, down 0.196%.",
-   "CHF": "Swiss franc had no clear catalyst; its early +0.12% move faded 62%.",
-   "NZD": "Kiwi had no own data; it led +0.24% then gave back 87%."
+   "USD": "Final GDP beat triggered inverted USD weakness; ADP muted, leaving USD only slightly lower after late recovery.",
+   "EUR": "No own releases; it held its range and closed modestly firmer without a clear catalyst.",
+   "JPY": "No own releases; attempt rejected after leading +0.41% and giving back 73%.",
+   "GBP": "No own releases; strongest currency, closed at its best and led the majors.",
+   "AUD": "Australian CPI miss drove normal AUD weakness; attempt rejected after leading +0.15% and giving back 94%.",
+   "CAD": "No own releases; held a weak range and was second weakest major.",
+   "CHF": "No own releases; attempt rejected, gave back 62% of early gains and closed near flat.",
+   "NZD": "No own releases; attempt rejected, gave back 87% after early lead and closed marginally firmer."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD printed an early +57.4 pip leg with no clear catalyst, then reversed -35.5 pips into the close despite the USD GDP dip."
+   "EUR/USD": "EUR/USD built a 57.4-pip rally through the session without a clear catalyst, then gave back 35.5 pips into the close even as the GDP event moved it the other way."
   },
   "polarity_reads": [
    {
     "event": "Trimmed Mean CPI m/m +2 more",
-    "read": "The normal AUD fade on a miss suggests positions were not short AUD and the market moved to price RBA easing quickly."
+    "read": "Normal polarity with AUD weakening 0.480% on a miss; positions were set for Australian inflation to confirm upside, so the miss hit AUD."
    },
    {
     "event": "Final GDP q/q +2 more",
-    "read": "The inverted dollar decline on a strong beat implies USD longs were crowded; good news was a sell trigger."
+    "read": "Inverted polarity with USD weakening 0.161% on a beat; market was positioned to sell dollars on any US strength, suggesting crowded USD shorts or fading good news."
    },
    {
     "event": "ADP Non-Farm Employment Change",
-    "read": "A muted reaction to a positive surprise signals exhausted USD drivers and limited appetite to chase the dollar."
+    "read": "Muted polarity with basket moving -0.013%; ADP did not shift USD positioning, consistent with it being a non-marginal release for the dollar tone."
    }
   ],
   "scenarios": [
    {
-    "name": "USD squeeze on hawkish Fed/strong ISM",
-    "probability": 0.35,
-    "thesis": "Fed speakers or a strong ISM repricing hawkish expectations trigger a dollar rebound against overextended GBP and EUR longs.",
+    "name": "USD recovery extends",
+    "probability": 0.4,
+    "thesis": "Dollar recovers further from its selling rejection as FOMC speakers and US data reassert rate support, unwinding the inverted GDP reaction.",
     "triggers": [
-     "Kashkari or Waller push back against rate cuts",
-     "ISM Manufacturing PMI prints above 54.8 forecast",
-     "Trump avoids trade/geopolitical negatives"
+     "President Trump Speaks delivers pro-growth or hawkish tone",
+     "FOMC Kashkari or Waller signal more hikes",
+     "ISM Manufacturing PMI beats 54.8 forecast"
     ],
-    "invalidation": "ISM misses and Fed commentary is dismissed, keeping dollar offered.",
+    "invalidation": "EUR/USD closes back above 1.13388 and pushes through the 66.9-pip daily range high.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 24.3,
-      "rationale": "A retracement limited to today's 24.3 pip gain."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 18.8,
-      "rationale": "A squeeze matching today's 18.8 pip USD/JPY decline."
+      "rationale": "Retraces today's 24.3-pip rise as USD recovers."
      },
      {
       "instrument": "GBP/USD",
       "direction": "down",
-      "magnitude_pips": 37.4,
-      "rationale": "A pullback using today's late 37.4 pip GBP/USD leg."
+      "magnitude_pips": 58.2,
+      "rationale": "Cable gives back its 58.2-pip gain if USD bid returns."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 17.8,
+      "rationale": "Aussie remains weak after CPI miss and extends its 17.8-pip decline."
      }
     ]
    },
    {
-    "name": "Risk-on continuation and USD softness",
-    "probability": 0.4,
-    "thesis": "Equities hold their gains and commodities stay bid, keeping high-beta FX supported while the dollar stays on the back foot.",
+    "name": "GBP strength continues",
+    "probability": 0.35,
+    "thesis": "Sterling remains the strongest major, continuing to close at its best as no domestic catalyst challenges the move and risk tone stays supportive.",
     "triggers": [
-     "SPX holds above 7711.8",
-     "Brent remains near 107.588",
-     "Swiss CPI does not surprise to the high side"
+     "BOE Bailey avoids dovish pushback",
+     "EUR/GBP remains below 0.85486",
+     "US data comes in soft enough to keep USD offered"
     ],
-    "invalidation": "Fed speakers explicitly validate a hike and US yields jump sharply.",
+    "invalidation": "EUR/GBP breaks back above 0.85486 and holds, signalling a sterling fade.",
     "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 24.3,
-      "rationale": "Extension limited by today's 24.3 pip daily gain."
-     },
      {
       "instrument": "GBP/USD",
       "direction": "up",
       "magnitude_pips": 58.2,
-      "rationale": "Sterling strength extends by today's 58.2 pip daily gain."
+      "rationale": "Extends its 58.2-pip daily gain as GBP outperformance persists."
      },
      {
-      "instrument": "USD/JPY",
+      "instrument": "EUR/GBP",
       "direction": "down",
-      "magnitude_pips": 18.8,
-      "rationale": "Yen bid returns after today's 18.8 pip USD/JPY decline."
+      "magnitude_pips": 19.3,
+      "rationale": "Grinds through its 19.3-pip daily decline as GBP remains favored."
      }
     ]
    },
    {
-    "name": "AUD stabilizes but remains laggard",
+    "name": "AUD underperformance persists",
     "probability": 0.25,
-    "thesis": "After the CPI miss, AUD downside slows but any bounce is shallow as the market stays wary of RBA easing.",
+    "thesis": "Australian CPI miss keeps AUD as weakest major, extending the 0.480% event drop and the 94% retracement of its early gain.",
     "triggers": [
-     "No further negative AUD data",
-     "Absence of China/RBA headlines",
-     "Risk sentiment stays supportive but AUD fails to attract buyers"
+     "Risk sentiment wobbles or commodity prices fail to support AUD",
+     "AUD/NZD remains offered below 1.23356",
+     "USD stabilizes rather than falls"
     ],
-    "invalidation": "AUD/USD breaks below 0.69508 and AUD/NZD below 1.23356, opening a new leg lower.",
+    "invalidation": "AUD/USD closes back above 0.69508, erasing the day's weakness.",
     "pair_paths": [
      {
       "instrument": "AUD/USD",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 17.8,
-      "rationale": "Range bound near today's 17.8 pip AUD/USD decline."
+      "rationale": "Extends its 17.8-pip daily decline as AUD stays weak."
      },
      {
       "instrument": "AUD/NZD",
       "direction": "down",
       "magnitude_pips": 45.7,
-      "rationale": "Further AUD/NZD downside near today's 45.7 pip drop."
+      "rationale": "Extends its 45.7-pip daily decline on Aussie underperformance vs Kiwi."
      },
      {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 6.5,
-      "rationale": "Kiwi gains limited by today's 6.5 pip NZD/USD rise."
+      "instrument": "AUD/CHF",
+      "direction": "down",
+      "magnitude_pips": 18.7,
+      "rationale": "Extends its 18.7-pip daily decline as AUD is sold broadly."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Fed speakers after the window may react to GDP/ADP",
-    "why_it_matters": "Hawkish commentary could trigger a USD short squeeze after the inverted GDP reaction.",
-    "watch": "Treasury yields and DXY 101.119"
+    "risk": "Inverted USD reaction persists",
+    "why_it_matters": "A positive US GDP beat led to USD weakness, so further strong US data may also be sold, keeping the dollar offered.",
+    "watch": "ISM Manufacturing PMI, Unemployment Claims, President Trump, FOMC Kashkari/Waller."
    },
    {
-    "risk": "US ISM Manufacturing PMI at 16:00",
-    "why_it_matters": "It is the main USD data after ADP/GDP and can validate or reverse dollar softness.",
-    "watch": "ISM forecast 54.8 vs prior 54.6 and USD/JPY 157.274"
+    "risk": "AUD CPI-driven weakness broadens",
+    "why_it_matters": "AUD was the weakest major and gave back 94% of its early gain after the CPI miss, leaving it vulnerable to further downside.",
+    "watch": "Risk tone, Brent/USD, and any China/Australia headlines."
    },
    {
-    "risk": "Swiss CPI and SNB Schlegel",
-    "why_it_matters": "Could inject volatility into CHF crosses that have been quiet.",
-    "watch": "USD/CHF 0.83512 and EUR/CHF 0.94693"
+    "risk": "Fed speakers revive rate hike premium",
+    "why_it_matters": "Fed's Williams talked about one more hike; if upcoming FOMC speakers echo that, USD could recover strongly and unwind today's late bounce.",
+    "watch": "FOMC Kashkari, Waller, President Trump."
+   },
+   {
+    "risk": "GBP strength fades on Bailey",
+    "why_it_matters": "GBP closed at its best with no domestic catalyst; Bailey could challenge the move and trigger a sharp EUR/GBP rebound.",
+    "watch": "BOE Gov Bailey Speaks, EUR/GBP close vs 0.85486."
    }
   ],
-  "calendar_ahead_note": "Tonight's Trump speech at 21:30 and Kashkari at 00:00 can reprice USD before Swiss CPI and Bailey at 08:30/10:00; US claims at 14:30 and ISM at 16:00 plus Waller are the main USD events, with Lagarde and Schlegel shaping EUR and CHF later.",
+  "calendar_ahead_note": "Coming window includes US ISM Manufacturing PMI, Unemployment Claims, President Trump, FOMC Kashkari/Waller, BOE Bailey, ECB Lagarde, Swiss CPI, and SNB Schlegel; these can confirm or reverse the USD recovery and GBP strength.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 21006,
-   "completion_tokens": 9205,
-   "total_tokens": 30211,
+   "completion_tokens": 8420,
+   "total_tokens": 29426,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 20992
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7186
+    "reasoning_tokens": 6430
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 20366
+   "prompt_cache_hit_tokens": 20992,
+   "prompt_cache_miss_tokens": 14
   }
  }
 }
