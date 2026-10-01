@@ -1,0 +1,2060 @@
+{
+ "meta": {
+  "date": "2026-10-01",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-09-30T17:00:00+00:00",
+  "end_utc": "2026-10-01T05:00:00+00:00",
+  "start_local": "2026-09-30T19:00:00+02:00",
+  "end_local": "2026-10-01T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-01T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-01T17:00:00+00:00",
+  "generated_utc": "2026-10-01T05:05:13.738418+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 36,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 36,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 56
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-09-30 19:00 CEST",
+   "to_local": "2026-10-01 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.206,
+    "intraday_peak": 0.206,
+    "intraday_trough": -0.014,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "FOMC Member Kashkari Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.005%, inside the noise floor"
+     },
+     {
+      "title": "President Trump Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "USD stronger by 0.046%, but no forecast to score the surprise against"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "FOMC Member Kashkari Speaks",
+     "instrument": "USD/MXN",
+     "sigma": 4.22
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 2,
+    "strength_pct": 0.119,
+    "intraday_peak": 0.175,
+    "intraday_trough": -0.031,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Kashkari Speaks",
+     "instrument": "AUD/NZD",
+     "sigma": 4.69
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 3,
+    "strength_pct": 0.103,
+    "intraday_peak": 0.126,
+    "intraday_trough": 0.022,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Kashkari Speaks",
+     "instrument": "EUR/GBP",
+     "sigma": 4.9
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 4,
+    "strength_pct": 0.027,
+    "intraday_peak": 0.097,
+    "intraday_trough": -0.016,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.10%, gave back 62%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Kashkari Speaks",
+     "instrument": "EUR/CHF",
+     "sigma": 5.96
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 5,
+    "strength_pct": 0.026,
+    "intraday_peak": 0.045,
+    "intraday_trough": -0.073,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Kashkari Speaks",
+     "instrument": "EUR/CHF",
+     "sigma": 5.96
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 6,
+    "strength_pct": -0.011,
+    "intraday_peak": -0.007,
+    "intraday_trough": -0.077,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 1.79
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.039,
+    "intraday_peak": 0.09,
+    "intraday_trough": -0.059,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.09%, gave back 87%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Kashkari Speaks",
+     "instrument": "NZD/CHF",
+     "sigma": 5.43
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.43,
+    "intraday_peak": 0.0,
+    "intraday_trough": -0.449,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.18,
+    "from_EUR": 0.026,
+    "from_USD": -0.206,
+    "base_share": 0.11
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.103,
+    "from_GBP": 0.103,
+    "from_USD": -0.206,
+    "base_share": 0.33
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.087,
+    "from_AUD": 0.119,
+    "from_USD": -0.206,
+    "base_share": 0.37
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.245,
+    "from_NZD": -0.039,
+    "from_USD": -0.206,
+    "base_share": 0.16
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.635,
+    "from_USD": 0.206,
+    "from_JPY": 0.43,
+    "base_share": 0.32
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.179,
+    "from_USD": 0.206,
+    "from_CHF": -0.027,
+    "base_share": 0.88
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.217,
+    "from_USD": 0.206,
+    "from_CAD": 0.011,
+    "base_share": 0.95
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.077,
+    "from_EUR": 0.026,
+    "from_GBP": -0.103,
+    "base_share": 0.2
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.455,
+    "from_EUR": 0.026,
+    "from_JPY": 0.43,
+    "base_share": 0.06
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.001,
+    "from_EUR": 0.026,
+    "from_CHF": -0.027,
+    "base_share": 0.49
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.093,
+    "from_EUR": 0.026,
+    "from_AUD": -0.119,
+    "base_share": 0.18
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.037,
+    "from_EUR": 0.026,
+    "from_CAD": 0.011,
+    "base_share": 0.69
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.065,
+    "from_EUR": 0.026,
+    "from_NZD": 0.039,
+    "base_share": 0.4
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.533,
+    "from_GBP": 0.103,
+    "from_JPY": 0.43,
+    "base_share": 0.19
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.076,
+    "from_GBP": 0.103,
+    "from_CHF": -0.027,
+    "base_share": 0.79
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.016,
+    "from_GBP": 0.103,
+    "from_AUD": -0.119,
+    "base_share": 0.46
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.114,
+    "from_GBP": 0.103,
+    "from_CAD": 0.011,
+    "base_share": 0.9
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.142,
+    "from_GBP": 0.103,
+    "from_NZD": 0.039,
+    "base_share": 0.73
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.548,
+    "from_AUD": 0.119,
+    "from_JPY": 0.43,
+    "base_share": 0.22
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.092,
+    "from_AUD": 0.119,
+    "from_CHF": -0.027,
+    "base_share": 0.81
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.13,
+    "from_AUD": 0.119,
+    "from_CAD": 0.011,
+    "base_share": 0.91
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.158,
+    "from_AUD": 0.119,
+    "from_NZD": 0.039,
+    "base_share": 0.75
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.391,
+    "from_NZD": -0.039,
+    "from_JPY": 0.43,
+    "base_share": 0.08
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.066,
+    "from_NZD": -0.039,
+    "from_CHF": -0.027,
+    "base_share": 0.59
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.028,
+    "from_NZD": -0.039,
+    "from_CAD": 0.011,
+    "base_share": 0.77
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.418,
+    "from_CAD": -0.011,
+    "from_JPY": 0.43,
+    "base_share": 0.03
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.038,
+    "from_CAD": -0.011,
+    "from_CHF": -0.027,
+    "base_share": 0.3
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.457,
+    "from_CHF": 0.027,
+    "from_JPY": 0.43,
+    "base_share": 0.06
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.235
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.136
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.118
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.031
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.03
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.013
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.044
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.49
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.13187,
+    "chg_pips": -20.1,
+    "chg_pct": -0.177,
+    "range_pips": 22.0,
+    "close_in_range": 0.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32503,
+    "chg_pips": -13.4,
+    "chg_pct": -0.101,
+    "range_pips": 22.7,
+    "close_in_range": 0.02,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69451,
+    "chg_pips": -5.7,
+    "chg_pct": -0.082,
+    "range_pips": 15.7,
+    "close_in_range": 0.34,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56206,
+    "chg_pips": -13.8,
+    "chg_pct": -0.245,
+    "range_pips": 19.1,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.276,
+    "chg_pips": 100.2,
+    "chg_pct": 0.637,
+    "range_pips": 106.2,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83662,
+    "chg_pips": 15.0,
+    "chg_pct": 0.18,
+    "range_pips": 22.2,
+    "close_in_range": 1.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42478,
+    "chg_pips": 32.0,
+    "chg_pct": 0.225,
+    "range_pips": 34.8,
+    "close_in_range": 0.99,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.94694,
+    "chg_pips": 0.1,
+    "chg_pct": 0.001,
+    "range_pips": 16.0,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.173,
+    "chg_pips": 86.0,
+    "chg_pct": 0.457,
+    "range_pips": 111.4,
+    "close_in_range": 0.88,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23551,
+    "chg_pips": 19.5,
+    "chg_pct": 0.158,
+    "range_pips": 59.2,
+    "close_in_range": 0.89,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.85419,
+    "chg_pips": -6.7,
+    "chg_pct": -0.078,
+    "range_pips": 12.4,
+    "close_in_range": 0.45,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58097,
+    "chg_pips": 4.9,
+    "chg_pct": 0.084,
+    "range_pips": 21.5,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.47023,
+    "chg_pips": -3.1,
+    "chg_pct": -0.066,
+    "range_pips": 9.8,
+    "close_in_range": 0.4,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.0223,
+    "chg_pips": 236.1,
+    "chg_pct": 0.236,
+    "range_pips": 371.8,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.64111,
+    "chg_pips": 318.6,
+    "chg_pct": 0.332,
+    "range_pips": 454.1,
+    "close_in_range": 0.99,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.43516,
+    "chg_pips": 158.3,
+    "chg_pct": 0.096,
+    "range_pips": 735.8,
+    "close_in_range": 0.68,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.07887,
+    "chg_pips": 162.0,
+    "chg_pct": 0.09,
+    "range_pips": 565.3,
+    "close_in_range": 0.53,
+    "unit": "pips"
+   },
+   {
+    "instrument": "Brent/USD",
+    "close": 105.89,
+    "chg_pips": -169.8,
+    "chg_pct": -1.578,
+    "range_pips": 349.4,
+    "close_in_range": 0.44,
+    "unit": "pips ($0.01)"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.364,
+    "chg_pips": 24.5,
+    "chg_pct": 0.242,
+    "range_pips": 28.3,
+    "close_in_range": 0.99,
+    "unit": "points"
+   },
+   {
+    "instrument": "SPX/USD",
+    "close": 7698.9,
+    "chg_pips": -12.9,
+    "chg_pct": -0.167,
+    "range_pips": 65.9,
+    "close_in_range": 0.76,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.574,
+    "chg_pips": -16.1,
+    "chg_pct": -0.908,
+    "range_pips": 41.0,
+    "close_in_range": 0.12,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "down",
+    "pips": -16.1,
+    "ret_pct": -0.142,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "21:30",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 11.5,
+    "ret_pct": 0.102,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -16.9,
+    "ret_pct": -0.149,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: International Trade in Goods, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 101.8,
+    "ret_pct": 0.647,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "down",
+    "pips": -8.3,
+    "ret_pct": -0.063,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-3.7 in 15 min, 45% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -3.7,
+      "share_of_leg": 0.45
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "21:45",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 10.2,
+    "ret_pct": 0.077,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -20.2,
+    "ret_pct": -0.152,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: International Trade in Goods, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 12.6,
+    "ret_pct": 0.151,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "21:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -16.1,
+    "ret_pct": -0.193,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 11.6,
+    "ret_pct": 0.139,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "01:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -9.2,
+    "ret_pct": -0.11,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tankan Manufacturing Index +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 19.0,
+    "ret_pct": 0.228,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: International Trade in Goods, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "down",
+    "pips": -7.7,
+    "ret_pct": -0.111,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-3.1 in 15 min, 40% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -3.1,
+      "share_of_leg": 0.4
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "22:00",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 4.0,
+    "ret_pct": 0.058,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "01:15",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -6.3,
+    "ret_pct": -0.091,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ: Summary of Opinions at the Monetary Policy Meeting o…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "04:00",
+    "to": "05:45",
+    "dir": "up",
+    "pips": 12.5,
+    "ret_pct": 0.18,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "05:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -8.6,
+    "ret_pct": -0.124,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 19.9,
+    "ret_pct": 0.14,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (+5.2 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": 5.2,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -10.7,
+    "ret_pct": -0.075,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump on Iranian leaders: Maybe you blow them up. Blow th…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 22.9,
+    "ret_pct": 0.161,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "00:45",
+    "dir": "down",
+    "pips": -3.8,
+    "ret_pct": -0.067,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:45",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 5.4,
+    "ret_pct": 0.096,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ: Summary of Opinions at the Monetary Policy Meeting o…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "02:30",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -15.9,
+    "ret_pct": -0.282,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: PMI slips to six-month low in September moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "04:00",
+    "to": "05:45",
+    "dir": "up",
+    "pips": 5.3,
+    "ret_pct": 0.094,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.098,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "up",
+    "pips": 2.9,
+    "ret_pct": 0.031,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed Watchdog Finds No Criminal Violations In Renovation P…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "20:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -11.6,
+    "ret_pct": -0.122,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The report just came out on Powell's &quot;renovat…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:15",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 8.5,
+    "ret_pct": 0.09,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "00:00",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -5.3,
+    "ret_pct": -0.056,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 7.5,
+    "ret_pct": 0.079,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: International Trade in Goods, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -14.0,
+    "ret_pct": -0.074,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-5.5 in 15 min, 39% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -5.5,
+      "share_of_leg": 0.39
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 95.5,
+    "ret_pct": 0.507,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tankan Manufacturing Index +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -18.6,
+    "ret_pct": -0.151,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed Watchdog Finds No Criminal Violations In Renovation P…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 39.1,
+    "ret_pct": 0.317,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Kashkari Speaks pushed it along (+13.5 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Kashkari Speaks",
+      "ccy": "USD",
+      "pips": 13.5,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -9.4,
+    "ret_pct": -0.11,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-3.0 in 15 min, 32% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -3.0,
+      "share_of_leg": 0.32
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:00",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 6.0,
+    "ret_pct": 0.07,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Kashkari Speaks pushed it along (+2.9 in 15 min, 48% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Kashkari Speaks",
+      "ccy": "USD",
+      "pips": 2.9,
+      "share_of_leg": 0.48
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -3.7,
+    "ret_pct": -0.043,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ: Summary of Opinions at the Monetary Policy Meeting o…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 2.6,
+    "ret_pct": 0.03,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tankan Manufacturing Index +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 3.6,
+    "ret_pct": 0.062,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed Watchdog Finds No Criminal Violations In Renovation P…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "21:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -14.0,
+    "ret_pct": -0.241,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The report just came out on Powell's &quot;renovat…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:15",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 11.3,
+    "ret_pct": 0.195,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:30",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -6.5,
+    "ret_pct": -0.112,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ: Summary of Opinions at the Monetary Policy Meeting o…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.3,
+    "ret_pct": 0.212,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Goods Trade Balance +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 2.5,
+    "ret_pct": 0.053,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed Watchdog Finds No Criminal Violations In Renovation P…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "21:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -8.0,
+    "ret_pct": -0.17,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The report just came out on Powell's &quot;renovat…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 9.1,
+    "ret_pct": 0.194,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -5.7,
+    "ret_pct": -0.121,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: PMI slips to six-month low in September, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 242.9,
+    "ret_pct": 0.243,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (+93.6 in 15 min, 39% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": 93.6,
+      "share_of_leg": 0.39
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "22:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -236.8,
+    "ret_pct": -0.236,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump on Iranian leaders: Maybe you blow them up. Blow th… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:00",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 322.4,
+    "ret_pct": 0.323,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "04:00",
+    "to": "05:45",
+    "dir": "down",
+    "pips": -168.6,
+    "ret_pct": -0.168,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "05:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 123.6,
+    "ret_pct": 0.123,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 196.9,
+    "ret_pct": 0.205,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (+43.1 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": 43.1,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -219.5,
+    "ret_pct": -0.228,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump on Iranian leaders: Maybe you blow them up. Blow th…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 376.2,
+    "ret_pct": 0.392,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 193.3,
+    "ret_pct": 0.118,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "21:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -471.5,
+    "ret_pct": -0.287,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:15",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 660.2,
+    "ret_pct": 0.403,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -203.3,
+    "ret_pct": -0.124,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 262.1,
+    "ret_pct": 0.145,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "21:30",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -336.7,
+    "ret_pct": -0.186,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:00",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 355.4,
+    "ret_pct": 0.197,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Kashkari Speaks pushed it along (+162.6 in 15 min, 46% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Kashkari Speaks",
+      "ccy": "USD",
+      "pips": 162.6,
+      "share_of_leg": 0.46
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "00:45",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -201.5,
+    "ret_pct": -0.111,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ: Summary of Opinions at the Monetary Policy Meeting o…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "02:00",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 352.1,
+    "ret_pct": 0.195,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: PMI slips to six-month low in September moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -232.4,
+    "ret_pct": -0.128,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "down",
+    "pips": -38.5,
+    "ret_pct": -0.358,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-11.0 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -11.0,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "22:30",
+    "to": "23:30",
+    "dir": "up",
+    "pips": 51.7,
+    "ret_pct": 0.482,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Goolsbee Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -175.5,
+    "ret_pct": -1.63,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "00:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "FOMC Member Kashkari Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.005%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.005,
+    "top_movers": [
+     {
+      "instrument": "EUR/CHF",
+      "pct": 0.073,
+      "pips": 6.9,
+      "unit": "pips",
+      "sigma": 5.96
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.109,
+      "pips": 5.1,
+      "unit": "pips",
+      "sigma": 5.43
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.041,
+      "pips": 3.5,
+      "unit": "pips",
+      "sigma": 4.9
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.088,
+      "pips": 10.8,
+      "unit": "pips",
+      "sigma": 4.69
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.093,
+      "pips": 5.4,
+      "unit": "pips",
+      "sigma": 4.3
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.126,
+      "pips": 226.7,
+      "unit": "pips",
+      "sigma": 4.22
+     }
+    ]
+   },
+   {
+    "time": "21:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "President Trump Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "unscored",
+    "polarity_note": "USD stronger by 0.046%, but no forecast to score the surprise against",
+    "own_ccy_impulse_pct": 0.046,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.019,
+      "pips": 2.7,
+      "unit": "pips",
+      "sigma": 1.79
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.012,
+      "pips": -1.0,
+      "unit": "pips",
+      "sigma": -1.4
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.016,
+      "pips": -1.8,
+      "unit": "pips",
+      "sigma": -1.4
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.023,
+      "pips": -1.6,
+      "unit": "pips",
+      "sigma": -1.3
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.039,
+      "pips": 69.6,
+      "unit": "pips",
+      "sigma": 1.3
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.022,
+      "pips": 1.8,
+      "unit": "pips",
+      "sigma": 1.12
+     }
+    ]
+   }
+  ],
+  "headline_count": 14,
+  "top_headlines": [
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "Fed Watchdog Finds No Criminal Violations In Renovation Project"
+   },
+   {
+    "time": "19:45",
+    "impact": "low",
+    "title": "Trump on Iran: You will see things happening very soon"
+   },
+   {
+    "time": "21:15",
+    "impact": "low",
+    "title": "Cook: The Dual Mandate in Rural America"
+   },
+   {
+    "time": "21:45",
+    "impact": "low",
+    "title": "Trump: The report just came out on Powell's &quot;renovation&quot; of the Fed Headquarters. Powell should be forced to resign"
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "Trump on Iranian leaders: Maybe you blow them up. Blow them up or make a deal. The time is coming"
+   },
+   {
+    "time": "23:15",
+    "impact": "low",
+    "title": "Trump: Diesel Export Ban Something We Think About Daily, Could Have Negative Impact On Gasoline"
+   },
+   {
+    "time": "23:45",
+    "impact": "low",
+    "title": "NZ: Building consents issued: August 2026"
+   },
+   {
+    "time": "00:00",
+    "impact": "low",
+    "title": "Fed's Kashkari: Inflation still too high, about 3%"
+   },
+   {
+    "time": "00:00",
+    "impact": "low",
+    "title": "Fed's Kashkari: Expects one more rate increase this year and another in 2027"
+   },
+   {
+    "time": "01:45",
+    "impact": "low",
+    "title": "BOJ: Summary of Opinions at the Monetary Policy Meeting on September 17 and 18, 2026"
+   },
+   {
+    "time": "01:45",
+    "impact": "low",
+    "title": "Japan Tankan Outline (September 2026)"
+   },
+   {
+    "time": "02:30",
+    "impact": "low",
+    "title": "Japan: PMI slips to six-month low in September"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "08:30",
+    "ccy": "CHF",
+    "impact": "Medium",
+    "event": "CPI m/m",
+    "forecast": "0.0%",
+    "previous": "0.4%"
+   },
+   {
+    "time": "10:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Unemployment Claims",
+    "forecast": "201K",
+    "previous": "197K"
+   },
+   {
+    "time": "15:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "FOMC Member Waller Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "ISM Manufacturing PMI",
+    "forecast": "54.8",
+    "previous": "54.6"
+   },
+   {
+    "time": "17:30",
+    "ccy": "CHF",
+    "impact": "Medium",
+    "event": "SNB Chairman Schlegel Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Overnight tape was a strong-USD, weak-JPY session: USD closed at its best, up 0.206% against the basket, while JPY fell 0.43%. The US calendar offered no tradable surprise—Kashkari was muted (0.005% basket) and Trump headlines were unscored—so most legs lack a confident catalyst. Commodity FX split: AUD held firm, NZD and CAD lagged, while Brent fell 1.578%.",
+  "themes": [
+   {
+    "theme": "Strong USD close",
+    "evidence": "USD strength_pct 0.206; DXY +24.5 points; USD/JPY +100.2 pips; EUR/USD -20.1 pips",
+    "currencies": [
+     "USD",
+     "JPY",
+     "EUR"
+    ]
+   },
+   {
+    "theme": "Weak JPY / funding pressure",
+    "evidence": "JPY strength_pct -0.43; USD/JPY close 158.276; CHF/JPY +86.0 pips",
+    "currencies": [
+     "JPY",
+     "USD",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Commodity FX divergence and soft oil",
+    "evidence": "AUD strength_pct 0.119 vs NZD -0.039 and CAD -0.011; Brent -1.578%; USD/CAD +32.0 pips",
+    "currencies": [
+     "AUD",
+     "NZD",
+     "CAD",
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "USD firmed throughout, closing at its best; Trump headlines aided but Kashkari was muted.",
+   "EUR": "EUR closed at its best but with no catalyst; modest gains from position recovery.",
+   "JPY": "JPY weakened sharply across the board with no own catalyst, serving as funding currency.",
+   "GBP": "GBP held its range with no UK catalyst, firm but not leading.",
+   "AUD": "AUD held its range with no domestic catalyst, supported by cross flows and firm risk appetite.",
+   "CAD": "CAD recovered to nearly flat after early weakness, with no Canadian catalyst.",
+   "CHF": "CHF attempted early strength but faded, ending mildly firmer with no domestic catalyst.",
+   "NZD": "NZD attempted strength but faded, ending weak with no domestic catalyst."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD traded in three legs—initial USD-led drop, shallow bounce, renewed USD pressure—closing at its low with every leg lacking a confident catalyst."
+  },
+  "polarity_reads": [
+   {
+    "event": "FOMC Member Kashkari Speaks",
+    "read": "A 0.005% USD basket impulse inside the noise floor says the market had already priced hawkish Fed commentary, leaving no fresh USD bid."
+   },
+   {
+    "event": "President Trump Speaks",
+    "read": "The 0.046% USD pop was unscored because no forecast exists, but it shows headline-sensitive USD demand rather than a confirmed surprise."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "US data extends dollar strength",
+    "probability": 0.45,
+    "thesis": "A firm ISM/claims print plus hawkish Fed talk validates the overnight USD bid and extends USD/JPY upside.",
+    "triggers": [
+     "ISM Manufacturing PMI prints above 54.8",
+     "Unemployment Claims below 201K",
+     "FOMC Member Waller sounds hawkish"
+    ],
+    "invalidation": "ISM falls back toward 54.6 and USD/JPY fails to hold above 158.276",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 20.1,
+      "rationale": "Overnight USD strength resumes; pair retests the 1.13187 low."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 100.2,
+      "rationale": "Yield differentials and USD strength extend the 100.2-pip overnight gain."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 32.0,
+      "rationale": "USD strength outweighs CAD recovery; pair pushes toward 1.42478 close."
+     }
+    ]
+   },
+   {
+    "name": "USD consolidation / profit-taking",
+    "probability": 0.35,
+    "thesis": "After a one-way overnight USD rally, low-liquidity Asia/Europe takes profit, leaving majors rangebound into US data.",
+    "triggers": [
+     "Swiss CPI m/m prints 0.0% as forecast",
+     "BOE Bailey pushes back on dovish pricing",
+     "USD/JPY stalls below 158.276"
+    ],
+    "invalidation": "USD/JPY takes out 158.276 and DXY breaks above 101.364",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 22.0,
+      "rationale": "No fresh catalyst leaves EUR/USD inside its 22.0-pip overnight range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 106.2,
+      "rationale": "Profit-taking unwinds part of the 106.2-pip overnight range against stretched longs."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 22.7,
+      "rationale": "Cable retraces within its 22.7-pip range as USD consolidates."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off yen rebound",
+    "probability": 0.2,
+    "thesis": "A geopolitical headline or risk shock triggers a violent unwinding of yen shorts and safe-haven bids for CHF.",
+    "triggers": [
+     "Trump geopolitical headline on Iran",
+     "VIX turns higher from 17.574",
+     "Brent rallies from 105.89"
+    ],
+    "invalidation": "VIX holds below 17.574 and USD/JPY reverses back above 158.276",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 100.2,
+      "rationale": "Risk-off yen demand unwinds the 100.2-pip overnight USD/JPY gain."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 22.2,
+      "rationale": "Safe-haven franc buying reverses the 22.2-pip USD/CHF overnight range."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 15.7,
+      "rationale": "Risk-sensitive AUD underperforms within its 15.7-pip overnight range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "US data (claims 201K, ISM 54.8) surprises hawkish",
+    "why_it_matters": "Would extend a 0.206% USD strength move and push USD/JPY beyond 158.276",
+    "watch": "DXY 101.364, USD/JPY 158.276"
+   },
+   {
+    "risk": "Fed speaker / BOE / ECB rhetoric turns less dovish",
+    "why_it_matters": "Rate differentials can unwind USD strength or accelerate it",
+    "watch": "EUR/USD 1.13187, GBP/USD 1.32503"
+   },
+   {
+    "risk": "Geopolitical headline (Trump/Iran) escalates",
+    "why_it_matters": "Could spark safe-haven flows into JPY/CHF and disrupt risk",
+    "watch": "VIX 17.574, Brent 105.89"
+   },
+   {
+    "risk": "SNB CPI and Schlegel surprise",
+    "why_it_matters": "CHF is sensitive as overnight EUR/CHF sat near flat at 0.94694",
+    "watch": "EUR/CHF 0.94694, USD/CHF 0.83662"
+   }
+  ],
+  "calendar_ahead_note": "Swiss CPI at 08:30 and BOE Bailey at 10:00 can move CHF/GBP before US claims (201K) and ISM (54.8) at 14:30/16:00; Lagarde, Waller, and SNB Schlegel add event risk. The US data window is the main trigger for whether the strong-USD close extends or reverses.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 16249,
+   "completion_tokens": 7829,
+   "total_tokens": 24078,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5841
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 15609
+  }
+ }
+}
