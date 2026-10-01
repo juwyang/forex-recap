@@ -13,7 +13,7 @@
   "end_local": "2026-10-01T07:00:00+02:00",
   "fwd_start_utc": "2026-10-01T05:00:00+00:00",
   "fwd_end_utc": "2026-10-01T17:00:00+00:00",
-  "generated_utc": "2026-10-01T05:05:13.738418+00:00",
+  "generated_utc": "2026-10-01T11:34:15.619697+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 36,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 56
+   "with_actual": 71
   }
  },
  "facts": {
@@ -1870,191 +1870,189 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight tape was a strong-USD, weak-JPY session: USD closed at its best, up 0.206% against the basket, while JPY fell 0.43%. The US calendar offered no tradable surprise—Kashkari was muted (0.005% basket) and Trump headlines were unscored—so most legs lack a confident catalyst. Commodity FX split: AUD held firm, NZD and CAD lagged, while Brent fell 1.578%.",
+  "session_summary": "The overnight tape was a broad USD strength story: DXY rose 0.242%, USD/JPY gained 0.637%, and EUR/USD fell 20.1 pips. No clean catalyst owned the move—FOMC Member Kashkari left only a 0.005% USD impulse, and President Trump's speech was unscored but coincided with USD strength. JPY was weakest at -0.43% with no Japanese catalyst, while CHF and NZD early gains were rejected, giving back 62% and 87% respectively. Risk appetite was soft, with SPX -0.167% and VIX -0.908%.",
   "themes": [
    {
-    "theme": "Strong USD close",
-    "evidence": "USD strength_pct 0.206; DXY +24.5 points; USD/JPY +100.2 pips; EUR/USD -20.1 pips",
+    "theme": "Broad USD strength dominates",
+    "evidence": "DXY +0.242%, USD/JPY +0.637%, EUR/USD -0.177%, GBP/USD -0.101%, AUD/USD -0.082%.",
     "currencies": [
      "USD",
      "JPY",
-     "EUR"
+     "EUR",
+     "GBP",
+     "AUD"
     ]
    },
    {
-    "theme": "Weak JPY / funding pressure",
-    "evidence": "JPY strength_pct -0.43; USD/JPY close 158.276; CHF/JPY +86.0 pips",
+    "theme": "No clean catalyst: Fedspeak and Trump headlines too weak",
+    "evidence": "Kashkari basket moved 0.005% inside the noise floor; Trump speech moved USD only 0.046% and was unscored.",
     "currencies": [
-     "JPY",
      "USD",
-     "CHF"
-    ]
-   },
-   {
-    "theme": "Commodity FX divergence and soft oil",
-    "evidence": "AUD strength_pct 0.119 vs NZD -0.039 and CAD -0.011; Brent -1.578%; USD/CAD +32.0 pips",
-    "currencies": [
+     "EUR",
+     "CHF",
      "AUD",
-     "NZD",
-     "CAD",
-     "USD"
+     "NZD"
+    ]
+   },
+   {
+    "theme": "JPY weakness and rejected CHF/NZD attempts",
+    "evidence": "JPY -0.43%, CHF +0.027% gave back 62%, NZD -0.039% gave back 87%.",
+    "currencies": [
+     "JPY",
+     "CHF",
+     "NZD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "USD firmed throughout, closing at its best; Trump headlines aided but Kashkari was muted.",
-   "EUR": "EUR closed at its best but with no catalyst; modest gains from position recovery.",
-   "JPY": "JPY weakened sharply across the board with no own catalyst, serving as funding currency.",
-   "GBP": "GBP held its range with no UK catalyst, firm but not leading.",
-   "AUD": "AUD held its range with no domestic catalyst, supported by cross flows and firm risk appetite.",
-   "CAD": "CAD recovered to nearly flat after early weakness, with no Canadian catalyst.",
-   "CHF": "CHF attempted early strength but faded, ending mildly firmer with no domestic catalyst.",
-   "NZD": "NZD attempted strength but faded, ending weak with no domestic catalyst."
+   "USD": "No scored catalyst; broad dollar bid drove +0.206% strength.",
+   "EUR": "No eurozone catalyst; moved +0.026% on cross flows.",
+   "JPY": "No Japanese catalyst; weakened 0.43% on broad flows.",
+   "GBP": "No UK catalyst; gained 0.103% on cross flows.",
+   "AUD": "No Australian catalyst; gained 0.119% on cross flows.",
+   "CAD": "No Canadian catalyst; fell 0.011% tracking USD.",
+   "CHF": "No Swiss catalyst; +0.027% attempt rejected, gave back 62%.",
+   "NZD": "No NZ catalyst; -0.039% attempt rejected, gave back 87%."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD traded in three legs—initial USD-led drop, shallow bounce, renewed USD pressure—closing at its low with every leg lacking a confident catalyst."
+   "EUR/USD": "EUR/USD's three legs—down 16.1, up 11.5, down 16.9 pips—had no clear catalyst and left the pair down 20.1 pips at the low."
   },
   "polarity_reads": [
    {
     "event": "FOMC Member Kashkari Speaks",
-    "read": "A 0.005% USD basket impulse inside the noise floor says the market had already priced hawkish Fed commentary, leaving no fresh USD bid."
+    "read": "Hawkish headlines produced only a 0.005% USD basket impulse, inside the noise floor; market did not reprice hawkish risk."
    },
    {
     "event": "President Trump Speaks",
-    "read": "The 0.046% USD pop was unscored because no forecast exists, but it shows headline-sensitive USD demand rather than a confirmed surprise."
+    "read": "Unscored because no forecast; USD strengthened 0.046% on the headlines, but no surprise polarity can be inferred."
    }
   ],
   "scenarios": [
    {
-    "name": "US data extends dollar strength",
+    "name": "USD strength extends",
     "probability": 0.45,
-    "thesis": "A firm ISM/claims print plus hawkish Fed talk validates the overnight USD bid and extends USD/JPY upside.",
+    "thesis": "Overnight USD bid persists with strong U.S. data and hawkish Fedspeak.",
     "triggers": [
-     "ISM Manufacturing PMI prints above 54.8",
-     "Unemployment Claims below 201K",
+     "US Unemployment Claims 201K or lower",
+     "ISM Manufacturing PMI above 54.8",
      "FOMC Member Waller sounds hawkish"
     ],
-    "invalidation": "ISM falls back toward 54.6 and USD/JPY fails to hold above 158.276",
+    "invalidation": "EUR/USD recovers above 1.13187.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 20.1,
-      "rationale": "Overnight USD strength resumes; pair retests the 1.13187 low."
+      "rationale": "USD strength extends the overnight decline of 20.1 pips."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
       "magnitude_pips": 100.2,
-      "rationale": "Yield differentials and USD strength extend the 100.2-pip overnight gain."
+      "rationale": "JPY weakness and USD strength continue the +100.2 pip overnight move."
      },
      {
-      "instrument": "USD/CAD",
-      "direction": "up",
-      "magnitude_pips": 32.0,
-      "rationale": "USD strength outweighs CAD recovery; pair pushes toward 1.42478 close."
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 13.4,
+      "rationale": "USD strength outweighs GBP support, matching the overnight -13.4 pip move."
      }
     ]
    },
    {
-    "name": "USD consolidation / profit-taking",
+    "name": "Range/consolidation",
     "probability": 0.35,
-    "thesis": "After a one-way overnight USD rally, low-liquidity Asia/Europe takes profit, leaving majors rangebound into US data.",
+    "thesis": "Mixed calendar and non-committal central bank speakers keep major pairs inside overnight ranges.",
     "triggers": [
-     "Swiss CPI m/m prints 0.0% as forecast",
-     "BOE Bailey pushes back on dovish pricing",
-     "USD/JPY stalls below 158.276"
+     "BOE Gov Bailey and ECB Lagarde non-committal",
+     "CHF CPI m/m meets 0.0% forecast",
+     "ISM Manufacturing PMI near 54.8"
     ],
-    "invalidation": "USD/JPY takes out 158.276 and DXY breaks above 101.364",
+    "invalidation": "USD/JPY closes below 158.276.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
       "magnitude_pips": 22.0,
-      "rationale": "No fresh catalyst leaves EUR/USD inside its 22.0-pip overnight range."
+      "rationale": "Overnight EUR/USD range was 22.0 pips; crosswinds keep it contained."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "down",
+      "direction": "range",
       "magnitude_pips": 106.2,
-      "rationale": "Profit-taking unwinds part of the 106.2-pip overnight range against stretched longs."
+      "rationale": "USD/JPY overnight range was 106.2 pips; consolidation near highs."
      },
      {
       "instrument": "GBP/USD",
-      "direction": "up",
+      "direction": "range",
       "magnitude_pips": 22.7,
-      "rationale": "Cable retraces within its 22.7-pip range as USD consolidates."
+      "rationale": "GBP/USD overnight range was 22.7 pips; Bailey non-committal caps direction."
      }
     ]
    },
    {
-    "name": "Risk-off yen rebound",
+    "name": "JPY recovery / USD pullback",
     "probability": 0.2,
-    "thesis": "A geopolitical headline or risk shock triggers a violent unwinding of yen shorts and safe-haven bids for CHF.",
+    "thesis": "Overextended USD/JPY and yen weakness partially reverse if BOJ talk or risk sentiment stabilizes.",
     "triggers": [
-     "Trump geopolitical headline on Iran",
-     "VIX turns higher from 17.574",
-     "Brent rallies from 105.89"
+     "BOJ Summary of Opinions hawkish",
+     "VIX drops below 17.574",
+     "SPX stabilizes after -0.167%"
     ],
-    "invalidation": "VIX holds below 17.574 and USD/JPY reverses back above 158.276",
+    "invalidation": "USD/JPY breaks above 158.276.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 100.2,
-      "rationale": "Risk-off yen demand unwinds the 100.2-pip overnight USD/JPY gain."
+      "magnitude_pips": 101.8,
+      "rationale": "The overnight up-leg was +101.8 pips; a reversal could retrace that move."
      },
      {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 22.2,
-      "rationale": "Safe-haven franc buying reverses the 22.2-pip USD/CHF overnight range."
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 11.5,
+      "rationale": "Short-covering bounce matches the overnight EUR/USD up-leg of 11.5 pips."
      },
      {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 15.7,
-      "rationale": "Risk-sensitive AUD underperforms within its 15.7-pip overnight range."
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 10.2,
+      "rationale": "The overnight GBP/USD up-leg was 10.2 pips; GBP can recover with USD softer."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "US data (claims 201K, ISM 54.8) surprises hawkish",
-    "why_it_matters": "Would extend a 0.206% USD strength move and push USD/JPY beyond 158.276",
-    "watch": "DXY 101.364, USD/JPY 158.276"
+    "risk": "Hawkish Fedspeak from Waller or further Kashkari headlines",
+    "why_it_matters": "Would extend USD strength after USD/JPY already +0.637% overnight.",
+    "watch": "USD/JPY 158.276, EUR/USD 1.13187"
    },
    {
-    "risk": "Fed speaker / BOE / ECB rhetoric turns less dovish",
-    "why_it_matters": "Rate differentials can unwind USD strength or accelerate it",
-    "watch": "EUR/USD 1.13187, GBP/USD 1.32503"
+    "risk": "BOE/ECB speakers push back on rate-cut expectations",
+    "why_it_matters": "Could lift GBP and EUR crosses after EUR/GBP -0.078% overnight.",
+    "watch": "EUR/GBP 0.85419, GBP/USD 1.32503"
    },
    {
-    "risk": "Geopolitical headline (Trump/Iran) escalates",
-    "why_it_matters": "Could spark safe-haven flows into JPY/CHF and disrupt risk",
-    "watch": "VIX 17.574, Brent 105.89"
-   },
-   {
-    "risk": "SNB CPI and Schlegel surprise",
-    "why_it_matters": "CHF is sensitive as overnight EUR/CHF sat near flat at 0.94694",
-    "watch": "EUR/CHF 0.94694, USD/CHF 0.83662"
+    "risk": "Trump Iran headlines escalate",
+    "why_it_matters": "Risk-off would support USD and pressure Brent, which already fell -1.578% overnight.",
+    "watch": "Brent/USD 105.89, USD/CAD 1.42478"
    }
   ],
-  "calendar_ahead_note": "Swiss CPI at 08:30 and BOE Bailey at 10:00 can move CHF/GBP before US claims (201K) and ISM (54.8) at 14:30/16:00; Lagarde, Waller, and SNB Schlegel add event risk. The US data window is the main trigger for whether the strong-USD close extends or reverses.",
+  "calendar_ahead_note": "CHF CPI at 08:30 (forecast 0.0% vs previous 0.4%), BOE Bailey 10:00, US Unemployment Claims 14:30 (201K vs 197K), ECB Lagarde 15:30, Waller and ISM Manufacturing 16:00 (54.8 vs 54.6), SNB Schlegel 17:30 can alter the picture.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 16249,
-   "completion_tokens": 7829,
-   "total_tokens": 24078,
+   "completion_tokens": 9640,
+   "total_tokens": 25889,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 16128
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5841
+    "reasoning_tokens": 7696
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 15609
+   "prompt_cache_hit_tokens": 16128,
+   "prompt_cache_miss_tokens": 121
   }
  }
 }
