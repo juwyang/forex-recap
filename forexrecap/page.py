@@ -1,13 +1,10 @@
 """Compose the full HTML page and the Markdown twin."""
 from __future__ import annotations
 
-from .config import EXTRA_INSTRUMENTS
 from .render import (_esc, _fmt_px, _pct, _pips, ahead_html, analysis_html,
                      market_map_html, reactions_html, risks_html,
-                     scenarios_html, snapshot_rows)
-from .attribution_map import (attribution_map_html, drivers_html,
-                              pair_reasons_html)
-from .grid import cross_table_html, usd_grid_html
+                     scenarios_html)
+from .grid import cross_table_html, drivers_html, usd_grid_html
 from .util import hhmm
 
 CSS = """
@@ -80,25 +77,6 @@ th.num{text-align:right}
 td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
 tbody tr:last-child td{border-bottom:none}
 
-/* attribution map: same layout as the strength map, different payload */
-.am-scroll{overflow-x:auto;padding-bottom:6px}
-.am{display:flex;gap:5px;min-width:1000px}
-.am-col{flex:1 1 0;display:flex;flex-direction:column;gap:2px;min-width:120px}
-.am-head{height:34px;border-radius:4px;background:var(--panel);
-  border:1px solid var(--line);display:flex;align-items:center;
-  justify-content:space-between;padding:0 8px;margin-bottom:2px}
-.am-head b{font-size:13px} .am-head span{font-family:var(--mono);font-size:10.5px;color:var(--dim)}
-.am-cell{background:var(--panel);border:1px solid var(--line);border-radius:5px;
-  padding:5px 7px 6px;display:flex;flex-direction:column;gap:2px;min-height:52px}
-.am-cell.empty{background:transparent;border:none;min-height:0}
-.am-pair{font-size:10.5px;font-weight:600}
-.am-val{font-family:var(--mono);font-size:12px;font-weight:700}
-.am-legs{font-family:var(--mono);font-size:9px;color:var(--dim)}
-.sb{display:flex;height:4px;border-radius:2px;overflow:hidden;background:var(--flat)}
-.sb i{display:block;height:100%}
-.sb i.up{background:var(--up)} .sb i.down{background:var(--down)}
-.sbcell{width:88px}
-
 .drivers{list-style:none;margin:0 0 4px;padding:0}
 .drivers li{display:flex;gap:10px;align-items:baseline;padding:7px 0;
   border-bottom:1px solid var(--line);font-size:13.5px}
@@ -108,7 +86,6 @@ tbody tr:last-child td{border-bottom:none}
 .dr-txt{flex:1}
 .dr-note{display:block;font-style:normal;font-family:var(--mono);
   font-size:11.5px;color:var(--dim);margin-top:2px}
-table.reasons td{font-size:13px}
 
 /* the dollar grid: six buckets across, one currency per row */
 table.grid{font-size:12.5px;min-width:900px}
@@ -131,6 +108,9 @@ table.grid td em{display:block;font-style:normal;font-family:var(--mono);
   font-size:10px;opacity:.65;margin-top:1px}
 table.grid td.day{background:var(--flat);font-weight:700}
 table.grid tbody tr:hover td{background:var(--flat)}
+table.grid tr.gsep th{font-size:9.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.08em;padding-top:12px;font-weight:600}
+table.grid tr.gsep th b{font-weight:600}
 
 table.crosses{font-size:13px;min-width:760px}
 table.crosses td.mono{font-size:12.5px}
@@ -222,8 +202,6 @@ def build_html(report, analysis, frames):
         _kv("instruments", "%d" % m["instruments_loaded"]),
     ])
 
-    extras = [report["snapshots"][k] for k in EXTRA_INSTRUMENTS if k in report["snapshots"]]
-
     cal = m.get("calendar") or {}
     prov = ("Prices and headlines: ForexFactory Market Data Service "
             "(mds-api.forexfactory.com), 15-minute bars; reactions measured on "
@@ -267,30 +245,6 @@ strongest to weakest by mean move against the other seven. Reciprocal cells are
 exact inverses, so USD/AUD is not simply the negative of AUD/USD.</p>
 %s
 
-<h2>What each move was made of</h2>
-<p class="sub">A pair does not move &mdash; two currencies move and the pair
-reports the difference. In log space that is an identity, so every cell below
-splits exactly into a base leg and a quote leg. The reasons are composed from
-the eight currency drivers rather than written per pair, because the split is
-what proves a pair&rsquo;s move <em>is</em> the difference of its two sides.</p>
-%s
-
-<h3>The eight drivers</h3>
-%s
-
-<h3>Pair by pair</h3>
-%s
-
-<h2>Beyond the majors</h2>
-<div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
-<th class="num">change</th><th class="num">%%</th><th class="num">range</th>
-<th class="num">close in range</th></tr></thead><tbody>%s</tbody></table></div>
-
-<h3>Risk context</h3>
-<div class="tw"><table><thead><tr><th>instrument</th><th class="num">close</th>
-<th class="num">change</th><th class="num">%%</th><th class="num">range</th>
-<th class="num">close in range</th></tr></thead><tbody>%s</tbody></table></div>
-
 <h2>Event reaction functions and polarity</h2>
 <p class="sub">Each release is measured from the last complete bar before it.
 Polarity asks whether the currency moved the way its surprise implies &mdash;
@@ -298,6 +252,9 @@ an <b>inverted</b> read is the one worth acting on.</p>
 %s
 
 <h2>The session against the dollar</h2>
+%s
+
+<h3>Why each currency moved</h3>
 %s
 
 <h2>Crosses &mdash; the day in one line each</h2>
@@ -319,13 +276,9 @@ an <b>inverted</b> read is the one worth acting on.</p>
         title, window, _esc(m["sessions"]), strip,
         analysis_html(analysis),
         market_map_html(report),
-        attribution_map_html(report, analysis),
-        drivers_html(analysis, report),
-        pair_reasons_html(report, analysis),
-        snapshot_rows(extras),
-        snapshot_rows(report["context"]),
         reactions_html(report),
         usd_grid_html(frames, report, m["start_utc"], m["end_utc"]),
+        drivers_html(analysis, report),
         cross_table_html(frames, m["start_utc"], m["end_utc"]),
         resc_note, scenarios_html(analysis),
         risks_html(analysis),
@@ -357,49 +310,6 @@ def build_markdown(report, analysis):
         L.append("| %s | %s |" % (c, _pct(v)))
     L.append("")
 
-    drivers = (analysis or {}).get("currency_drivers") or {}
-    if drivers:
-        L.append("## The eight drivers")
-        L.append("")
-        for c, _v in report["map"]["strength"]:
-            f_ = (report.get("ccy_facts") or {}).get(c) or {}
-            if drivers.get(c):
-                L.append("- **%s** %s - %s%s" % (
-                    c, _pct(f_.get("strength_pct")), drivers[c],
-                    "  _(%s)_" % f_["shape_note"] if f_.get("shape_note") else ""))
-        L.append("")
-
-    split = report.get("split") or {}
-    if split:
-        L.append("## What each move was made of")
-        L.append("")
-        L.append("Base and quote legs add to the move exactly: a pair is the "
-                 "difference of two currency moves, not a thing that moves.")
-        L.append("")
-        L.append("| pair | move | base leg | quote leg | base share |")
-        L.append("|---|---|---|---|---|")
-        for d_ in report["detail"]:
-            p_ = d_["instrument"]
-            x = split.get(p_)
-            if not x:
-                continue
-            L.append("| %s | %s | %s %s | %s %s | %.0f%% |"
-                     % (p_, _pct(x["total_pct"]), x["base"], _pct(x["base_contrib"]),
-                        x["quote"], _pct(x["quote_contrib"]), 100 * x["base_share"]))
-        L.append("")
-
-    L.append("## Beyond the majors")
-    L.append("")
-    L.append("| instrument | close | change | % | range |")
-    L.append("|---|---|---|---|---|")
-    for k in EXTRA_INSTRUMENTS:
-        s = report["snapshots"].get(k)
-        if s:
-            L.append("| %s | %s | %s %s | %s | %s |"
-                     % (k, _fmt_px(s["close"]), _pips(s["chg_pips"]), s["unit"],
-                        _pct(s["chg_pct"]), _pips(s["range_pips"]).lstrip("+")))
-    L.append("")
-
     from .grid import usd_grid, cross_table, buckets
     frames_md = report.get("_frames_md")
     if frames_md:
@@ -419,6 +329,18 @@ def build_markdown(report, analysis):
                 d = r["day"]
                 L.append("| **%s**/USD | %s | **%+.2f%% / %+.0f** |"
                          % (r["ccy"], cs, d["pct"], d["pips"]))
+            L.append("")
+
+        drivers = (analysis or {}).get("currency_drivers") or {}
+        if drivers:
+            L.append("## Why each currency moved")
+            L.append("")
+            for c, _v in report["map"]["strength"]:
+                f_ = (report.get("ccy_facts") or {}).get(c) or {}
+                if drivers.get(c):
+                    L.append("- **%s** %s - %s%s" % (
+                        c, _pct(f_.get("strength_pct")), drivers[c],
+                        "  _(%s)_" % f_["shape_note"] if f_.get("shape_note") else ""))
             L.append("")
 
         xs = cross_table(frames_md, m["start_utc"], m["end_utc"])
@@ -449,23 +371,6 @@ def build_markdown(report, analysis):
         for n, pc, pp, u, sg in r["top_movers"]:
             L.append("- %s: %s %s (%s)" % (n, _pips(pp), u,
                                            ("%+.1f sigma" % sg) if sg else "-"))
-        L.append("")
-
-    L.append("## Path and attribution")
-    L.append("")
-    for entry in report["detail"]:
-        L.append("### %s" % entry["instrument"])
-        L.append("")
-        L.append("| window | dir | %s | return | dur | attribution |"
-                 % (entry["legs"][0]["unit"] if entry["legs"] else "pips"))
-        L.append("|---|---|---|---|---|---|")
-        for leg in entry["legs"]:
-            a = leg["attribution"]
-            L.append("| %s->%s | %s | %s | %s | %d min | %s: %s |"
-                     % (hhmm(leg["start_ts"]), hhmm(leg["end_ts"]), leg["dir"],
-                        _pips(leg["pips"]), _pct(leg["ret_pct"], 3),
-                        int(leg["minutes"]), a["confidence"],
-                        a["explanation"].replace("|", "/")))
         L.append("")
 
     if analysis and not analysis.get("error"):

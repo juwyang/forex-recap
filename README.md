@@ -35,11 +35,11 @@ For each edition, into `reports/YYYY-MM/YYYY-MM-DD-<edition>.{html,md,json}`:
   barchart's, columns ordered strongest to weakest by mean move against the
   other seven. Reciprocal cells are exact inverses (`1/(1+r)-1`), so USD/AUD
   reads −0.13% when AUD/USD reads +0.12%, not −0.12%.
-- **Beyond the majors** — USD/SEK, USD/NOK, USD/ZAR, USD/MXN, Brent/USD, plus
-  DXY / SPX / VIX as risk context.
-- **The session against the dollar** — a currency × time-bucket grid, six
-  buckets wide (four hours each on a 24-hour edition), every cell carrying
-  percent and pips, with the releases of each bucket printed in its header.
+- **The session against the dollar** — a grid six buckets wide (four hours each
+  on a 24-hour edition), every cell carrying percent and pips, with the
+  releases of each bucket printed in its header. Eleven currencies ranked
+  against each other, then Brent, gold, SPX and NDX in a block of their own.
+- **Crosses** — every non-dollar cross as one line of daily OHLC.
 - **Event reaction functions and polarity** — for every medium/high release, the
   measured move across 5/15/60-minute horizons on every tracked instrument,
   ranked by size relative to that instrument's own volatility.
@@ -62,10 +62,16 @@ to the day's return exactly (residual 3e-14 pp) with the reciprocal, and are
 visibly off without it. Buckets run edge to edge rather than first-bar to
 last-bar so nothing falls down the gaps between them.
 
+**Non-currencies do not join the strength ranking.** Brent, gold and the two
+indices are quoted against the dollar like everything else and share the grid,
+but they sit in a block beneath the currencies rather than being sorted among
+them: an index moving 1% is not "stronger" than a currency moving 0.3%, and a
+single sort over both would imply it is.
+
 **Attribution still runs, but off the page.** Each leg is still scored against
 the releases around it and the result still reaches the model; it is no longer
-printed per pair, because the timeline lets you make that comparison yourself.
-The rules below still govern what the model is told.
+printed per pair. The per-currency drivers it feeds are what the grid rows
+mean, and those are printed.
 
 **Attribution refuses by default.** Plenty of intraday legs are flow or
 positioning, and labelling them with whatever release happened to be nearby is

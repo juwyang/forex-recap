@@ -73,17 +73,22 @@ def build_one(day, edition, args, seen=None):
                   % (analysis.get("_model"),
                      (analysis.get("_usage") or {}).get("total_tokens", "?")))
 
+    # Render everything before touching disk. Opening for write truncates, so
+    # rendering straight into an open file means a crash halfway through leaves
+    # a zero-byte report where a good one used to be -- and the later files
+    # never get written at all.
+    page = build_html(report, analysis, frames)
+    md = build_markdown(report, analysis)
+    blob = json.dumps({"meta": report["meta"], "facts": report["facts"],
+                       "analysis": analysis}, ensure_ascii=False, indent=1,
+                      default=_json_default)
+
     stem = "%s-%s" % (day.isoformat(), edition)
     outdir = os.path.join(args.out, day.strftime("%Y-%m"))
     os.makedirs(outdir, exist_ok=True)
-    with open(os.path.join(outdir, stem + ".html"), "w", encoding="utf-8") as fh:
-        fh.write(build_html(report, analysis, frames))
-    with open(os.path.join(outdir, stem + ".md"), "w", encoding="utf-8") as fh:
-        fh.write(build_markdown(report, analysis))
-    with open(os.path.join(outdir, stem + ".json"), "w", encoding="utf-8") as fh:
-        json.dump({"meta": report["meta"], "facts": report["facts"],
-                   "analysis": analysis}, fh, ensure_ascii=False, indent=1,
-                  default=_json_default)
+    for ext, body in ((".html", page), (".md", md), (".json", blob)):
+        with open(os.path.join(outdir, stem + ext), "w", encoding="utf-8") as fh:
+            fh.write(body)
     print("[out] %s/%s.{html,md,json}" % (outdir, stem))
     return True
 

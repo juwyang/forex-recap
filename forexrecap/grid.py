@@ -23,8 +23,12 @@ from __future__ import annotations
 
 import datetime as dt
 
-from .config import MAJOR_PAIRS, tick_for
+from .config import GRID_EXTRAS, MAJOR_PAIRS, tick_for
 from .util import hhmm, to_local
+
+
+def _pct(v, dp=2):
+    return "-" if v is None else ("%+." + str(dp) + "f%%") % v
 
 # ccy, the pair FF actually quotes, whether that quote is USD-base
 USD_ROWS = [
@@ -37,6 +41,11 @@ USD_ROWS = [
 ]
 
 CROSSES = [p for p in MAJOR_PAIRS if "USD" not in p.split("/")]
+
+# Not currencies, so they are not sorted into the strength ranking; they sit in
+# their own block under it. They are already quoted against the dollar, so the
+# row maths is the ordinary direct case.
+EXTRA_ROWS = [(name.split("/")[0], name, False) for name in GRID_EXTRAS]
 N_BUCKETS = 6
 
 
@@ -61,10 +70,11 @@ def _price_at(df, ts, window_start):
 
 
 def usd_grid(frames, start, end, n=N_BUCKETS):
-    """One row per currency: its move against the dollar in each bucket."""
+    """One row per currency, then the non-currency instruments beneath."""
     bks = buckets(start, end, n)
     rows = []
-    for ccy, pair, inverted in USD_ROWS:
+    for ccy, pair, inverted in USD_ROWS + EXTRA_ROWS:
+        is_ccy = (ccy, pair, inverted) in USD_ROWS
         df = frames.get(pair)
         if df is None or not len(df):
             continue
@@ -89,8 +99,12 @@ def usd_grid(frames, start, end, n=N_BUCKETS):
                  for b0, b1 in bks]
         day = leg(_price_at(df, start, start), _price_at(df, end, start))
         rows.append({"ccy": ccy, "pair": pair, "inverted": inverted,
+                     "is_ccy": is_ccy, "unit": tick_for(pair)[1],
                      "cells": cells, "day": day})
-    rows.sort(key=lambda r: -(r["day"]["pct"] if r["day"] else 0))
+    # Currencies rank against each other; the instruments keep their own block,
+    # because an index moving 1% is not "stronger" than a currency moving 0.3%.
+    rows.sort(key=lambda r: (not r["is_ccy"],
+                             -(r["day"]["pct"] if r["day"] else 0)))
     return rows, bks
 
 
@@ -186,7 +200,12 @@ def usd_grid_html(frames, report, start, end):
         for i, (b0, b1) in enumerate(bks))
 
     body = []
+    first_extra = True
     for r in rows:
+        if not r["is_ccy"] and first_extra:
+            first_extra = False
+            body.append('<tr class="gsep"><th class="grow">not currencies</th>'
+                        '<td colspan="%d"></td></tr>' % (len(bks) + 1))
         cells = "".join(
             '<td class="num %s">%s<em>%s</em></td>'
             % ("up" if c and c["pct"] >= 0 else ("down" if c else "dim"),
@@ -194,10 +213,14 @@ def usd_grid_html(frames, report, start, end):
                _fmt(c["pips"] if c else None, 0))
             for c in r["cells"])
         d = r["day"]
+        label = ('<b>%s</b>/USD' % _esc(r["ccy"]) if r["is_ccy"]
+                 else '<b>%s</b>' % _esc(r["pair"]))
+        sub = _esc(r["pair"]) if r["inverted"] else (
+            "" if r["is_ccy"] else _esc(r["unit"]))
         body.append(
-            '<tr><th class="grow"><b>%s</b>/USD<span class="gq">%s</span></th>%s'
+            '<tr><th class="grow">%s<span class="gq">%s</span></th>%s'
             '<td class="num day %s">%s<em>%s</em></td></tr>'
-            % (_esc(r["ccy"]), _esc(r["pair"]) if r["inverted"] else "",
+            % (label, sub,
                cells, "up" if d and d["pct"] >= 0 else "down",
                _fmt(d["pct"] if d else None, 2, "%"),
                _fmt(d["pips"] if d else None, 0)))
@@ -217,6 +240,40 @@ def usd_grid_html(frames, report, start, end):
 def _short(s, n):
     s = (s or "").strip()
     return s if len(s) <= n else s[:n - 1] + "…"
+
+
+def drivers_html(analysis, report):
+    """One clause per currency, in strength order.
+
+    These are what the grid rows mean. The model writes them from measured
+    facts about that currency alone, never about a pair, so nothing here can
+    contradict anything else on the page.
+    """
+    drivers = (analysis or {}).get("currency_drivers") or {}
+    facts = report.get("ccy_facts") or {}
+    if not drivers:
+        return ""
+    rows = []
+    for ccy, _ in report["map"]["strength"]:
+        d = drivers.get(ccy)
+        f = facts.get(ccy) or {}
+        if not d:
+            continue
+        shape = f.get("verdict") or ""
+        note = f.get("shape_note")
+        tag = ""
+        if shape in ("attempt rejected", "selling rejected"):
+            tag = '<span class="badge pol-inverted">%s</span>' % _esc(shape)
+        elif shape == "closed at its best":
+            tag = '<span class="badge pol-normal">%s</span>' % _esc(shape)
+        rows.append('<li><span class="dr-ccy">%s</span>'
+                    '<span class="dr-str %s">%s</span>'
+                    '<span class="dr-txt">%s %s%s</span></li>'
+                    % (_esc(ccy),
+                       "up" if f.get("strength_pct", 0) >= 0 else "down",
+                       _pct(f.get("strength_pct")), _esc(d), tag,
+                       ('<em class="dr-note">%s</em>' % _esc(note)) if note else ""))
+    return '<ul class="drivers">%s</ul>' % "".join(rows)
 
 
 def cross_table_html(frames, start, end):

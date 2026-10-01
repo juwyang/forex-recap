@@ -8,7 +8,7 @@ from .attribution import attribute_legs
 from .calendar_ff import (group_releases, in_window, load_events,
                           weeks_covering)
 from .decompose import currency_facts, decompose_all, strength_path
-from .config import (CONTEXT_INSTRUMENTS, CURRENCIES, DETAIL_PAIRS,
+from .config import (CONTEXT_INSTRUMENTS, CURRENCIES, DETAIL_PAIRS, GRID_EXTRAS,
                      EXTRA_INSTRUMENTS, MAJOR_PAIRS, REACTION_WINDOWS_MIN,
                      tick_for)
 from .market import load_all, market_map
@@ -17,7 +17,7 @@ from .util import (edition_spec, forward_window, hhmm, is_trading_day,
                    session_window, to_local)
 from .zigzag import enrich, segment
 
-UNIVERSE = MAJOR_PAIRS + EXTRA_INSTRUMENTS + CONTEXT_INSTRUMENTS
+UNIVERSE = MAJOR_PAIRS + EXTRA_INSTRUMENTS + GRID_EXTRAS + CONTEXT_INSTRUMENTS
 
 
 def build(report_date, edition="evening", ttl=900, want_llm=True):

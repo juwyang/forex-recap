@@ -54,21 +54,28 @@ MAJOR_PAIRS = [
 ]
 
 # Instruments outside the major complex, reported in their own table.
-EXTRA_INSTRUMENTS = ["USD/SEK", "USD/NOK", "USD/ZAR", "USD/MXN", "Brent/USD"]
+EXTRA_INSTRUMENTS = ["USD/SEK", "USD/NOK", "USD/ZAR", "USD/MXN"]
+
+# Quoted against the dollar like everything else in the grid, but not
+# currencies, so they sit in their own block at the foot of it rather than
+# being sorted into a currency strength ranking.
+GRID_EXTRAS = ["Brent/USD", "Gold/USD", "SPX/USD", "NDX/USD"]
 
 # Quoted for context only -- they frame the session's risk tone but are not
 # part of the strength ranking.
-CONTEXT_INSTRUMENTS = ["DXY/USD", "SPX/USD", "VIX/USD"]
+# Fetched for the model and the JSON twin; DXY is redundant on a page where
+# every row is already dollar-relative, so neither is rendered.
+CONTEXT_INSTRUMENTS = ["DXY/USD", "VIX/USD"]
 
 # Pairs that get the full zigzag / leg-attribution treatment.
 DETAIL_PAIRS = [
     "EUR/USD", "USD/JPY", "GBP/USD", "USD/CHF", "AUD/USD", "USD/CAD", "NZD/USD",
     "EUR/CHF", "CHF/JPY", "AUD/NZD", "EUR/GBP", "AUD/CHF", "NZD/CHF",
-    "USD/SEK", "USD/NOK", "USD/ZAR", "USD/MXN", "Brent/USD",
+    "USD/SEK", "USD/NOK", "USD/ZAR", "USD/MXN", "Brent/USD", "Gold/USD",
 ]
 
 # Risk-tone proxies quoted in the header line.
-RISK_PROXIES = ["Brent/USD", "SPX/USD", "VIX/USD", "AUD/JPY"]
+RISK_PROXIES = ["Brent/USD", "Gold/USD", "SPX/USD", "NDX/USD", "VIX/USD"]
 
 # --- tick sizes ----------------------------------------------------------
 # Explicit so "pips" is never ambiguous on gold, oil or crypto. Anything not
@@ -82,6 +89,7 @@ TICKS = {
     "ETH/USD":   (0.10, "pips ($0.10)"),
     "DXY/USD":   (0.01, "points"),
     "SPX/USD":   (1.00, "points"),
+    "NDX/USD":   (1.00, "points"),
     "VIX/USD":   (0.01, "points"),
 }
 
