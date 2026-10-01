@@ -59,6 +59,8 @@ def build_one(day, edition, args, seen=None):
               % (day, edition, 100 * cov))
         return False
     frames = report.pop("_frames")
+    # the Markdown twin renders the same tables, so it needs the bars too
+    report["_frames_md"] = frames
 
     analysis = None
     if not args.no_llm:

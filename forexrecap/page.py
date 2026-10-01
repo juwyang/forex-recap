@@ -3,11 +3,11 @@ from __future__ import annotations
 
 from .config import EXTRA_INSTRUMENTS
 from .render import (_esc, _fmt_px, _pct, _pips, ahead_html, analysis_html,
-                     headlines_html, market_map_html, reactions_html,
-                     risks_html, scenarios_html, snapshot_rows)
+                     market_map_html, reactions_html, risks_html,
+                     scenarios_html, snapshot_rows)
 from .attribution_map import (attribution_map_html, drivers_html,
                               pair_reasons_html)
-from .timeline import timeline_html
+from .grid import cross_table_html, usd_grid_html
 from .util import hhmm
 
 CSS = """
@@ -110,40 +110,30 @@ tbody tr:last-child td{border-bottom:none}
   font-size:11.5px;color:var(--dim);margin-top:2px}
 table.reasons td{font-size:13px}
 
-/* timeline: event band + stacked lanes on one shared axis */
-.tl-scroll{overflow-x:auto;padding-bottom:4px}
-.tl{min-width:940px}
-.tl-events,.tl-axis,.tl-lane{display:block;width:100%;height:auto}
-.tl-events{margin-bottom:1px}
-.tl-axis{opacity:.85}
-.lanes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-  background:var(--panel);border-radius:8px;overflow:hidden;margin:2px 0}
-.lane + .lane{border-top:1px solid var(--line)}
+/* the dollar grid: six buckets across, one currency per row */
+table.grid{font-size:12.5px;min-width:900px}
+table.grid th.gcol{vertical-align:top;padding:0 6px 7px;text-align:center;
+  border-bottom:1px solid var(--line)}
+table.grid th.gcol.day{background:var(--flat)}
+.gt{display:block;font-family:var(--mono);font-size:10.5px;color:var(--fg);
+  font-weight:700;letter-spacing:0;text-transform:none;margin-bottom:3px}
+.gev{display:block;font-size:9px;font-weight:600;line-height:1.35;
+  padding:1px 4px;border-radius:3px;margin-bottom:1px;text-transform:none;
+  letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+table.grid th.grow{text-align:left;font-size:12.5px;color:var(--fg);
+  text-transform:none;letter-spacing:0;padding:6px 9px;white-space:nowrap;
+  border-bottom:1px solid var(--line)}
+table.grid th.grow b{font-size:13px}
+.gq{display:block;font-family:var(--mono);font-size:9.5px;color:var(--dim);
+  font-weight:400;margin-top:1px}
+table.grid td{padding:6px 7px;line-height:1.3}
+table.grid td em{display:block;font-style:normal;font-family:var(--mono);
+  font-size:10px;opacity:.65;margin-top:1px}
+table.grid td.day{background:var(--flat);font-weight:700}
+table.grid tbody tr:hover td{background:var(--flat)}
 
-.ax-t{stroke:var(--line);stroke-width:1}
-.ax-l{font:9px var(--mono);fill:var(--dim);text-anchor:middle}
-
-.ev-stem{stroke:var(--line);stroke-width:1}
-.ev-stem.release{stroke:var(--dim);stroke-dasharray:2 2}
-.ev-lab{font:9px var(--mono);fill:var(--dim)}
-.ev-lab.release{font-weight:700;fill:var(--fg)}
-.ev-lab.imp-high{fill:var(--down)}
-.ev-lab.imp-medium{fill:#c07d10}
-.ev-dot{fill:var(--dim)}
-.ev-dot.release{fill:var(--accent)}
-.ev-dot.imp-high{fill:var(--down)}
-.ev-dot.imp-medium{fill:#c07d10}
-
-.ln-guide{stroke:var(--down);stroke-width:.8;stroke-dasharray:2 3;opacity:.35}
-.ln-base{stroke:var(--line);stroke-width:1}
-.ln-price{fill:none;stroke:var(--dim);stroke-width:.9;opacity:.4}
-.ln-leg{stroke-width:1.9;stroke-linecap:round}
-.ln-leg.up{stroke:var(--up)} .ln-leg.down{stroke:var(--down)}
-.ln-lab{font:600 8.5px var(--mono);text-anchor:middle}
-.ln-lab.up{fill:var(--up)} .ln-lab.down{fill:var(--down)}
-.ln-name{font:600 11px ui-sans-serif,system-ui,sans-serif;fill:var(--fg)}
-.ln-chg{font:9px var(--mono)}
-.ln-chg.up{fill:var(--up)} .ln-chg.down{fill:var(--down)}
+table.crosses{font-size:13px;min-width:760px}
+table.crosses td.mono{font-size:12.5px}
 
 /* badges */
 .badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;
@@ -307,12 +297,10 @@ Polarity asks whether the currency moved the way its surprise implies &mdash;
 an <b>inverted</b> read is the one worth acting on.</p>
 %s
 
-<h2>Timeline and price paths</h2>
-<p class="sub">Every row shares one time axis, mapped from the timestamp rather
-than the bar index, so a release lines up with what each pair did at that
-moment. Dotted guides mark high-impact events. Legs are a zigzag over
-15-minute closes with the reversal threshold auto-tuned to each instrument&rsquo;s
-own range; the number on a leg is its size in that instrument&rsquo;s pips.</p>
+<h2>The session against the dollar</h2>
+%s
+
+<h2>Crosses &mdash; the day in one line each</h2>
 %s
 
 <h2>Scenarios for the window ahead</h2>
@@ -324,8 +312,6 @@ own range; the number on a leg is its size in that instrument&rsquo;s pips.</p>
 <h2>Calendar ahead &mdash; %s to %s</h2>
 %s
 
-<h2>Headlines in the window</h2>
-%s
 
 <footer>%s<br>Generated %s UTC.</footer>
 </div></body></html>""" % (
@@ -339,13 +325,13 @@ own range; the number on a leg is its size in that instrument&rsquo;s pips.</p>
         snapshot_rows(extras),
         snapshot_rows(report["context"]),
         reactions_html(report),
-        timeline_html(report, frames),
+        usd_grid_html(frames, report, m["start_utc"], m["end_utc"]),
+        cross_table_html(frames, m["start_utc"], m["end_utc"]),
         resc_note, scenarios_html(analysis),
         risks_html(analysis),
         m["fwd_start_utc"].astimezone(m["start_local"].tzinfo).strftime("%a %H:%M"),
         m["fwd_end_utc"].astimezone(m["start_local"].tzinfo).strftime("%a %H:%M %Z"),
         ahead_html(report),
-        headlines_html(report),
         prov, m["generated_utc"].strftime("%Y-%m-%d %H:%M"),
     )
 
@@ -413,6 +399,40 @@ def build_markdown(report, analysis):
                      % (k, _fmt_px(s["close"]), _pips(s["chg_pips"]), s["unit"],
                         _pct(s["chg_pct"]), _pips(s["range_pips"]).lstrip("+")))
     L.append("")
+
+    from .grid import usd_grid, cross_table, buckets
+    frames_md = report.get("_frames_md")
+    if frames_md:
+        rows, bks = usd_grid(frames_md, m["start_utc"], m["end_utc"])
+        if rows:
+            L.append("## The session against the dollar")
+            L.append("")
+            L.append("Every row is ccy/USD, so any cross is the difference of two "
+                     "rows. Cells are percent over the bucket, pips in the traded "
+                     "pair's tick.")
+            L.append("")
+            L.append("| ccy | " + " | ".join("%s-%s" % (hhmm(a), hhmm(b)) for a, b in bks) + " | day |")
+            L.append("|---" * (len(bks) + 2) + "|")
+            for r in rows:
+                cs = " | ".join(("%+.2f%% / %+.0f" % (c["pct"], c["pips"])) if c else "-"
+                                for c in r["cells"])
+                d = r["day"]
+                L.append("| **%s**/USD | %s | **%+.2f%% / %+.0f** |"
+                         % (r["ccy"], cs, d["pct"], d["pips"]))
+            L.append("")
+
+        xs = cross_table(frames_md, m["start_utc"], m["end_utc"])
+        if xs:
+            L.append("## Crosses")
+            L.append("")
+            L.append("| cross | open | high | low | close | chg | pips | range |")
+            L.append("|---|---|---|---|---|---|---|---|")
+            for r in xs:
+                L.append("| %s | %s | %s | %s | %s | %+.2f%% | %+.0f | %.0f |"
+                         % (r["pair"], _fmt_px(r["open"]), _fmt_px(r["high"]),
+                            _fmt_px(r["low"]), _fmt_px(r["close"]),
+                            r["chg_pct"], r["chg_pips"], r["range_pips"]))
+            L.append("")
 
     L.append("## Event reactions")
     L.append("")

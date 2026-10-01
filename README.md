@@ -37,9 +37,9 @@ For each edition, into `reports/YYYY-MM/YYYY-MM-DD-<edition>.{html,md,json}`:
   reads −0.13% when AUD/USD reads +0.12%, not −0.12%.
 - **Beyond the majors** — USD/SEK, USD/NOK, USD/ZAR, USD/MXN, Brent/USD, plus
   DXY / SPX / VIX as risk context.
-- **Timeline and price paths** — an event band over stacked per-instrument
-  lanes, all on one time axis, so a release lines up with what each pair did at
-  that moment. Each lane carries the zigzag with every leg's size in pips.
+- **The session against the dollar** — a currency × time-bucket grid, six
+  buckets wide (four hours each on a 24-hour edition), every cell carrying
+  percent and pips, with the releases of each bucket printed in its header.
 - **Event reaction functions and polarity** — for every medium/high release, the
   measured move across 5/15/60-minute horizons on every tracked instrument,
   ranked by size relative to that instrument's own volatility.
@@ -48,13 +48,19 @@ For each edition, into `reports/YYYY-MM/YYYY-MM-DD-<edition>.{html,md,json}`:
 
 ## The parts that required judgement
 
-**The timeline is keyed on time, not on bar index.** Alignment is the whole
-point of stacking the lanes, and instruments do not all print the same number
-of bars in a window — an index-based x slides the rows against each other by
-however many bars they differ. Every row maps timestamp to x through the same
-function, verified in the DOM: all eighteen lanes share identical guide
-positions. A market closure inside a window shows as a flat stretch rather than
-being squeezed out, which is what keeps the axis honest.
+**Every row of the dollar grid faces the same way.** The point of a
+dollar-only table is that a cross can be read off it by subtraction — EUR/CHF
+is the EUR row minus the CHF row — and that only works if the rows FF quotes
+as USD/X are inverted to X/USD first. Percent is normalised so a positive
+number always means the currency beat the dollar; pips keep the traded pair's
+own tick, so the magnitude stays the one a trader recognises.
+
+**Inverting a quote is a reciprocal, not a negation.** If USD/CAD rises by r,
+CAD/USD falls by `1 − 1/(1+r)`, not by r. The difference is invisible on a
+single bucket and breaks the chain across six: the six bucket returns compound
+to the day's return exactly (residual 3e-14 pp) with the reciprocal, and are
+visibly off without it. Buckets run edge to edge rather than first-bar to
+last-bar so nothing falls down the gaps between them.
 
 **Attribution still runs, but off the page.** Each leg is still scored against
 the releases around it and the result still reaches the model; it is no longer
