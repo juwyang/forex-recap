@@ -13,13 +13,13 @@
   "end_local": "2026-10-01T19:00:00+02:00",
   "fwd_start_utc": "2026-10-01T17:00:00+00:00",
   "fwd_end_utc": "2026-10-02T17:00:00+00:00",
-  "generated_utc": "2026-10-01T17:05:11.150782+00:00",
+  "generated_utc": "2026-10-01T21:46:33.753603+00:00",
   "partial": false,
   "coverage_min": 1440,
-  "instruments_loaded": 36,
+  "instruments_loaded": 38,
   "instruments_failed": [],
   "fx_coverage": 1.0,
-  "m5_loaded": 36,
+  "m5_loaded": 38,
   "m5_failed": [],
   "reaction_interval": "M5",
   "missing_map_cells": [],
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 79
+   "with_actual": 80
   }
  },
  "facts": {
@@ -617,15 +617,6 @@
     "range_pips": 3808.7,
     "close_in_range": 0.89,
     "unit": "pips"
-   },
-   {
-    "instrument": "Brent/USD",
-    "close": 110.33,
-    "chg_pips": 274.2,
-    "chg_pct": 2.549,
-    "range_pips": 655.1,
-    "close_in_range": 0.91,
-    "unit": "pips ($0.01)"
    }
   ],
   "risk_context": [
@@ -636,15 +627,6 @@
     "chg_pct": 0.807,
     "range_pips": 87.0,
     "close_in_range": 0.98,
-    "unit": "points"
-   },
-   {
-    "instrument": "SPX/USD",
-    "close": 7637.7,
-    "chg_pips": -74.1,
-    "chg_pct": -0.961,
-    "range_pips": 97.6,
-    "close_in_range": 0.21,
     "unit": "points"
    },
    {
@@ -1760,6 +1742,118 @@
       "share_of_leg": 0.21
      }
     ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "up",
+    "pips": 73.2,
+    "ret_pct": 0.176,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed Watchdog Finds No Criminal Violations In Renovation P…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "23:15",
+    "to": "02:15",
+    "dir": "down",
+    "pips": -170.6,
+    "ret_pct": -0.41,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Kashkari Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "02:15",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 474.7,
+    "ret_pct": 1.146,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: PMI slips to six-month low in September, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "08:00",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -396.1,
+    "ret_pct": -0.945,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK: Annual house price growth halves in September moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "10:30",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 308.7,
+    "ret_pct": 0.744,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump Administration Has Been Taking Steps To Turn China's … pushed it along (+47.3 in 15 min, 15% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump Administration Has Been Taking Steps To Turn China's Dependence On US Aviation Suppliers Into Leverage For Trade Negotiations RTRS Cites Source",
+      "ccy": null,
+      "pips": 47.3,
+      "share_of_leg": 0.15
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "13:45",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -288.8,
+    "ret_pct": -0.691,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Financial conditions: what's priced in? &#8722; speech by…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 87.4,
+    "ret_pct": 0.21,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but SNB Chairman Schlegel Speaks pushed it along (+30.2 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "SNB Chairman Schlegel Speaks",
+      "ccy": "CHF",
+      "pips": 30.2,
+      "share_of_leg": 0.35
+     }
+    ]
    }
   ],
   "event_reactions": [
@@ -1846,6 +1940,13 @@
       "sigma": 3.78
      },
      {
+      "instrument": "Gold/USD",
+      "pct": -0.262,
+      "pips": -109.2,
+      "unit": "pips ($0.10)",
+      "sigma": -3.65
+     },
+     {
       "instrument": "USD/SEK",
       "pct": 0.149,
       "pips": 149.0,
@@ -1865,13 +1966,6 @@
       "pips": 293.5,
       "unit": "pips",
       "sigma": 3.03
-     },
-     {
-      "instrument": "NZD/USD",
-      "pct": -0.098,
-      "pips": -5.5,
-      "unit": "pips",
-      "sigma": -2.85
      }
     ]
    },
@@ -2126,6 +2220,13 @@
       "sigma": -1.8
      },
      {
+      "instrument": "Gold/USD",
+      "pct": 0.111,
+      "pips": 46.4,
+      "unit": "pips ($0.10)",
+      "sigma": 1.54
+     },
+     {
       "instrument": "USD/SEK",
       "pct": -0.061,
       "pips": -61.6,
@@ -2145,13 +2246,6 @@
       "pips": 4.5,
       "unit": "pips",
       "sigma": 1.38
-     },
-     {
-      "instrument": "NZD/USD",
-      "pct": 0.045,
-      "pips": 2.5,
-      "unit": "pips",
-      "sigma": 1.3
      }
     ]
    },
@@ -2327,207 +2421,204 @@
   ]
  },
  "analysis": {
-  "session_summary": "Full day tape favored safe havens: DXY up 0.807%, SPX down 0.961%, VIX up 3.383%. CHF led with +0.759% strength while EUR lagged at -0.676%; USD closed at its best. The ISM miss at 54.5 vs 54.8 produced an inverted USD reaction (+0.102%), implying short-covering. EUR/USD fell 120.2 pips to 1.12186 and closed at 0.02 of its range.",
+  "session_summary": "The full trading day saw the dollar close at its best, with USD strength_pct +0.392 and DXY +0.807 despite an ISM manufacturing miss that printed 54.5 vs 54.8 forecast. CHF outperformed as the top currency, rising +0.759 strength_pct after SNB Chairman Schlegel spoke, while EUR was weakest at -0.676 strength_pct. The ISM reaction was inverted: the USD strengthened 0.102% on the miss, indicating crowded short-USD positioning. High-beta and European FX were sold, with EUR/USD closing at 1.12186, down 120.2 pips, and VIX up 3.383%.",
   "themes": [
    {
-    "theme": "Risk-off into month-end",
-    "evidence": "SPX -0.961%, VIX +3.383%, DXY +0.807%",
+    "theme": "Inverted US data reaction signals crowded USD shorts",
+    "evidence": "ISM Manufacturing PMI missed at 54.5 vs 54.8 forecast, yet USD strengthened 0.102% and DXY closed +0.807%.",
     "currencies": [
      "USD",
+     "EUR",
+     "GBP"
+    ]
+   },
+   {
+    "theme": "CHF safe-haven bid dominates on SNB commentary",
+    "evidence": "CHF was top with +0.759 strength_pct and USD/CHF fell 30.6 pips to 0.83206; SNB Schlegel speech produced CHF stronger by 0.078%.",
+    "currencies": [
      "CHF",
-     "JPY"
-    ]
-   },
-   {
-    "theme": "CHF outperformance",
-    "evidence": "CHF strength +0.759%, USD/CHF -30.6 pips, EUR/CHF -134.8 pips",
-    "currencies": [
-     "CHF"
-    ]
-   },
-   {
-    "theme": "EUR broad weakness",
-    "evidence": "EUR strength -0.676%, EUR/USD -120.2 pips, EUR/GBP -40.1 pips",
-    "currencies": [
+     "USD",
      "EUR"
     ]
    },
    {
-    "theme": "Inverted USD reaction to ISM",
-    "evidence": "ISM 54.5 vs 54.8, USD +0.102%",
+    "theme": "High-beta and European FX under pressure into NFP",
+    "evidence": "EUR was weakest at -0.676 strength_pct; AUD, GBP, NZD all closed lower with attempt-rejected shapes against USD.",
     "currencies": [
-     "USD"
+     "EUR",
+     "AUD",
+     "GBP",
+     "NZD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "ISM miss inverted to USD strength, signaling short-covering; USD closed at session best.",
-   "EUR": "ECB Lagarde offered nothing; EUR fell to weakest major with no hawkish support.",
-   "JPY": "No Japanese data; yen surged on unconfirmed intervention headline before fading.",
-   "GBP": "BOE Bailey was muted; GBP led early then gave back 98% of gains.",
-   "AUD": "No Australian data; early gains faded with risk-off and USD strength.",
-   "CAD": "No domestic data; CAD firmed with Brent up 2.5% despite risk-off.",
-   "CHF": "SNB Schlegel speak drove CHF recovery after inline CPI dip; hawkish read.",
-   "NZD": "No New Zealand data; NZD attempt rejected, closing at session lows."
+   "USD": "Strengthened on inverted ISM reaction and closed at its best.",
+   "EUR": "Weakest on the day; Lagarde speech muted and no clear catalyst.",
+   "JPY": "Recovered from early selling; late surge had no clear catalyst.",
+   "GBP": "Bailey speech muted; attempt rejected and closed weaker.",
+   "AUD": "No own releases; attempt rejected and closed weaker.",
+   "CAD": "No own releases; closed at its best with modest strength.",
+   "CHF": "Top currency on SNB Schlegel; inline CPI initially weakened it.",
+   "NZD": "No own releases; attempt rejected and gave back all gains."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD printed three main legs—down 70.1, up 34.1, then down 85.6 pips—with the final leg dominated by EUR weakness and USD strength; SNB Schlegel added 14.7 pips (17% of final leg)."
+   "EUR/USD": "Three legs: down -70.1 pips, up 34.1 pips, then down -85.6 pips with SNB Schlegel contributing only 17% of the final leg (-14.7 pips), leaving the first two legs without clear catalysts."
   },
   "polarity_reads": [
    {
     "event": "ISM Manufacturing PMI +1 more",
-    "read": "A miss (54.5 vs 54.8) produced USD +0.102%, implying the market was positioned short dollars and covered on the disappointment; upward USD reaction is inconsistent with rate-cut pricing."
+    "read": "A miss surprise (54.5 vs 54.8) produced USD strength of 0.102%, opposite the textbook sign; this implies positioning was skewed short USD or long risk, so bad data triggered covering."
    },
    {
     "event": "SNB Chairman Schlegel Speaks",
-    "read": "CHF firmed 0.078% with no forecast to score; the move implies markets read the speech as hawkish or as confirming SNB tolerance for CHF strength."
-   },
-   {
-    "event": "CPI m/m (CHF)",
-    "read": "Inline 0.0% vs 0.0% initially left CHF weaker 0.064%, showing no data impetus; subsequent CHF recovery was not driven by CPI."
-   },
-   {
-    "event": "BOE Gov Bailey Speaks",
-    "read": "GBP basket moved -0.013%, inside noise; no hawkish signal, reinforcing GBP's inability to hold gains."
+    "read": "CHF strengthened 0.078% despite no forecast to score; the broad CHF bid against EUR and USD shows markets leaning CHF-positive regardless of specific policy signal."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-off extension with USD strength",
-    "probability": 0.35,
-    "thesis": "A risk-off extension favors USD and CHF, while high-beta FX stays offered; EUR remains the weak leg.",
+    "name": "Trend continuation: USD and CHF strength persist",
+    "probability": 0.45,
+    "thesis": "The inverted ISM reaction and close at session best keep USD bid into US labor data; CHF remains supported after Schlegel while EUR stays heavy.",
     "triggers": [
-     "NFP beats 89K forecast",
-     "Average hourly earnings above 0.3%",
-     "VIX holds above 18.3"
+     "NFP prints at or above 89K forecast",
+     "Eurozone CPI flash delivers no hawkish surprise",
+     "CHF demand persists without SNB pushback"
     ],
-    "invalidation": "EUR/USD recovers above 1.12186 or VIX closes below 18.335.",
+    "invalidation": "EUR/USD recovers its 120.2 pip decline or USD/CHF erases its 30.6 pip drop.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 40,
-      "rationale": "EUR weakness compounds with USD strength; today's close at 0.02 range suggests downside extends."
+      "magnitude_pips": 120.2,
+      "rationale": "Repeats today's daily range as USD strength and EUR weakness extend."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 30,
-      "rationale": "USD strength and risk-off keep yen bid but USD dominates."
+      "magnitude_pips": 54.6,
+      "rationale": "Follows today's +54.6 pip daily change if USD bid persists without yen intervention headlines."
      },
      {
       "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 20,
-      "rationale": "CHF safe-haven bid outpaces USD, extending today's 30.6 pip decline."
+      "magnitude_pips": 30.6,
+      "rationale": "CHF remains top; repeats today's 30.6 pip decline on SNB-driven demand."
+     },
+     {
+      "instrument": "EUR/CHF",
+      "direction": "down",
+      "magnitude_pips": 134.8,
+      "rationale": "EUR weakness plus CHF strength mirrors today's 134.8 pip drop."
+     }
+    ]
+   },
+   {
+    "name": "Rebound: US data disappoints, high-beta short squeeze",
+    "probability": 0.3,
+    "thesis": "Crowded USD longs and short EUR/high-beta positions unwind if NFP misses and risk sentiment improves, causing counter-trend bounces.",
+    "triggers": [
+     "NFP prints below 89K forecast",
+     "Eurozone CPI flash above forecast",
+     "Risk assets reverse higher and VIX drops"
+    ],
+    "invalidation": "EUR/USD closes below 1.12186 or USD/JPY breaks above 157.82.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 34.1,
+      "rationale": "Matches today's midday recovery leg as USD fades from session best."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 40.8,
+      "rationale": "Mirrors today's 40.8 pip bounce leg in GBP/USD."
      },
      {
       "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 25,
-      "rationale": "High-beta AUD fades as risk-off persists."
-     }
-    ]
-   },
-   {
-    "name": "Europe inflation surprise and risk rebound",
-    "probability": 0.35,
-    "thesis": "Strong Euro CPI flash lifts EUR and triggers a correction in short EUR positions; risk sentiment stabilizes.",
-    "triggers": [
-     "Euro CPI flash y/y prints above 3.7% forecast",
-     "Core CPI flash y/y above 2.5% forecast",
-     "SPX finds support above 7637.7"
-    ],
-    "invalidation": "EUR/USD fails to hold above 1.12186 or breaks below today's low.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 60,
-      "rationale": "CPI surprise forces short covering; EUR was weakest and has room to rebound."
-     },
-     {
-      "instrument": "EUR/CHF",
-      "direction": "up",
-      "magnitude_pips": 40,
-      "rationale": "EUR rebound against CHF after EUR/CHF fell 134.8 pips today."
+      "magnitude_pips": 19.1,
+      "rationale": "Uses today's AUD/USD +19.1 pip recovery leg as a proxy for a squeeze."
      },
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 30,
-      "rationale": "USD weakens vs EUR and JPY as yields fall on risk rebound."
+      "magnitude_pips": 97.1,
+      "rationale": "Repeats today's 97.1 pip USD/JPY down leg if yen strength resumes."
      }
     ]
    },
    {
-    "name": "CHF-led safe-haven continuation",
-    "probability": 0.3,
-    "thesis": "CHF retains its leadership on geopolitical or risk headlines, dragging EUR/CHF and USD/CHF lower; JPY also benefits.",
+    "name": "Risk-off / vol expansion",
+    "probability": 0.25,
+    "thesis": "Rising VIX and headline risk trigger safe-haven demand in CHF and JPY; USD mixed but high-beta and EUR sell off sharply.",
     "triggers": [
-     "Renewed SNB or Swiss macro headlines",
-     "VIX above 18.335",
-     "EUR/CHF breaks below today's 0.93345 close"
+     "Headlines on trade or geopolitical stress",
+     "VIX extends above 18.335",
+     "High-beta pairs break session lows"
     ],
-    "invalidation": "EUR/CHF recovers above 0.93345 or CHF strength fades below +0.759%.",
+    "invalidation": "VIX drops below 18.335 or USD/CHF rallies above 0.83206.",
     "pair_paths": [
      {
-      "instrument": "EUR/CHF",
+      "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 60,
-      "rationale": "CHF strength and EUR weakness continue the 1.424% decline; today's leg was -134.8 pips."
+      "magnitude_pips": 124.3,
+      "rationale": "Full daily range extends as EUR weakens on risk-off."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 121.5,
+      "rationale": "Repeats today's 121.5 pip range as JPY safe-haven bid drives USD/JPY lower."
      },
      {
       "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 40,
-      "rationale": "CHF outperforms USD despite USD strength; today's USD/CHF fell 30.6 pips."
+      "magnitude_pips": 89.4,
+      "rationale": "CHF safe-haven demand takes USD/CHF through today's 89.4 pip range."
      },
      {
-      "instrument": "CHF/JPY",
-      "direction": "up",
-      "magnitude_pips": 50,
-      "rationale": "CHF strength dominates, and JPY's surge fades; today CHF/JPY rose 135.3 pips."
+      "instrument": "EUR/CHF",
+      "direction": "down",
+      "magnitude_pips": 154.3,
+      "rationale": "EUR weakness and CHF strength combine, exceeding today's 154.3 pip range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "US jobs data surprise",
-    "why_it_matters": "Could reverse USD strength if NFP misses 89K; average hourly earnings matters.",
-    "watch": "Average Hourly Earnings m/m and Non-Farm Employment Change at 14:30"
+    "risk": "NFP miss triggers sharp USD unwinding",
+    "why_it_matters": "The inverted ISM reaction shows crowded short USD; a soft NFP could accelerate the unwind.",
+    "watch": "US Non-Farm Employment Change, forecast 89K vs previous 162K, and Average Hourly Earnings m/m."
    },
    {
-    "risk": "ECB hawkish CPI surprise",
-    "why_it_matters": "EUR is heavily short; a hot CPI flash can trigger violent short covering.",
-    "watch": "Euro CPI Flash Estimate y/y and Core CPI Flash Estimate at 11:00"
+    "risk": "SNB verbal intervention or CHF strength overextension",
+    "why_it_matters": "CHF top and SNB Schlegel-driven demand may invite pushback or profit-taking.",
+    "watch": "SNB speakers and USD/CHF, EUR/CHF downside momentum."
    },
    {
-    "risk": "Tokyo CPI and yen intervention",
-    "why_it_matters": "Tokyo CPI above 2.4% could fuel BOJ hike bets; yen surge risk.",
-    "watch": "Tokyo Core CPI y/y at 01:30"
-   },
-   {
-    "risk": "Oil price volatility",
-    "why_it_matters": "Brent rose 2.549% and can swing CAD/NOK; risk sentiment tied to oil.",
-    "watch": "Brent/USD continuation"
+    "risk": "Yen surge headlines continue without intervention confirmation",
+    "why_it_matters": "Late-day yen surge lacked clear catalyst; headlines could trigger volatile USD/JPY swings.",
+    "watch": "USD/JPY 157.82 close and any BOJ/MOF comments."
    }
   ],
-  "calendar_ahead_note": "Tokyo Core CPI (01:30), Euro CPI flash (11:00), and US jobs data (14:30) can change the picture; NFP forecast 89K makes the USD reaction binary.",
+  "calendar_ahead_note": "Tokyo Core CPI y/y (2.4% forecast, 1.8% previous) leads into Eurozone CPI flash estimates and then US Average Hourly Earnings, NFP (89K forecast, 162K previous), and Unemployment Rate. The labor data is the key near-term catalyst for USD positioning after the inverted ISM move.",
   "_model": "deepseek-v4-pro",
   "_usage": {
-   "prompt_tokens": 20161,
-   "completion_tokens": 9653,
-   "total_tokens": 29814,
+   "prompt_tokens": 21036,
+   "completion_tokens": 9938,
+   "total_tokens": 30974,
    "prompt_tokens_details": {
     "cached_tokens": 640
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7536
+    "reasoning_tokens": 7871
    },
    "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 19521
+   "prompt_cache_miss_tokens": 20396
   }
  }
 }
