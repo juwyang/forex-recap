@@ -1,0 +1,1854 @@
+{
+ "meta": {
+  "date": "2026-10-02",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-10-01T17:00:00+00:00",
+  "end_utc": "2026-10-02T05:00:00+00:00",
+  "start_local": "2026-10-01T19:00:00+02:00",
+  "end_local": "2026-10-02T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-02T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-02T17:00:00+00:00",
+  "generated_utc": "2026-10-02T05:33:27.619219+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 83
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-10-01 19:00 CEST",
+   "to_local": "2026-10-02 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "AUD",
+    "rank": 1,
+    "strength_pct": 0.128,
+    "intraday_peak": 0.17,
+    "intraday_trough": 0.05,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "AUD/CHF",
+     "sigma": -1.28
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 2,
+    "strength_pct": 0.099,
+    "intraday_peak": 0.131,
+    "intraday_trough": -0.025,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "EUR/CHF",
+     "sigma": -0.95
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 3,
+    "strength_pct": 0.095,
+    "intraday_peak": 0.095,
+    "intraday_trough": -0.131,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "NZD/CHF",
+     "sigma": -0.9
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 4,
+    "strength_pct": 0.081,
+    "intraday_peak": 0.109,
+    "intraday_trough": -0.029,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "CHF/JPY",
+     "sigma": -2.29
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 5,
+    "strength_pct": 0.038,
+    "intraday_peak": 0.115,
+    "intraday_trough": -0.018,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "GBP",
+    "rank": 6,
+    "strength_pct": -0.008,
+    "intraday_peak": 0.01,
+    "intraday_trough": -0.046,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 7,
+    "strength_pct": -0.205,
+    "intraday_peak": 0.003,
+    "intraday_trough": -0.205,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "USD/JPY",
+     "sigma": -2.71
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.228,
+    "intraday_peak": 0.036,
+    "intraday_trough": -0.287,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Tokyo Core CPI y/y",
+      "impact": "Medium",
+      "actual": "2.7%",
+      "forecast": "2.4%",
+      "polarity": "normal",
+      "note": "beat surprise -> JPY stronger 0.067%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "USD/JPY",
+     "sigma": -2.71
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.304,
+    "from_EUR": 0.099,
+    "from_USD": 0.205,
+    "base_share": 0.32
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.197,
+    "from_GBP": -0.008,
+    "from_USD": 0.205,
+    "base_share": 0.04
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.333,
+    "from_AUD": 0.128,
+    "from_USD": 0.205,
+    "base_share": 0.38
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.301,
+    "from_NZD": 0.095,
+    "from_USD": 0.205,
+    "base_share": 0.32
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.023,
+    "from_USD": -0.205,
+    "from_JPY": 0.228,
+    "base_share": 0.47
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.287,
+    "from_USD": -0.205,
+    "from_CHF": -0.081,
+    "base_share": 0.72
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.243,
+    "from_USD": -0.205,
+    "from_CAD": -0.038,
+    "base_share": 0.84
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.107,
+    "from_EUR": 0.099,
+    "from_GBP": 0.008,
+    "base_share": 0.92
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.326,
+    "from_EUR": 0.099,
+    "from_JPY": 0.228,
+    "base_share": 0.3
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.017,
+    "from_EUR": 0.099,
+    "from_CHF": -0.081,
+    "base_share": 0.55
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.029,
+    "from_EUR": 0.099,
+    "from_AUD": -0.128,
+    "base_share": 0.43
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.06,
+    "from_EUR": 0.099,
+    "from_CAD": -0.038,
+    "base_share": 0.72
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.003,
+    "from_EUR": 0.099,
+    "from_NZD": -0.095,
+    "base_share": 0.51
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.22,
+    "from_GBP": -0.008,
+    "from_JPY": 0.228,
+    "base_share": 0.03
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.09,
+    "from_GBP": -0.008,
+    "from_CHF": -0.081,
+    "base_share": 0.09
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.136,
+    "from_GBP": -0.008,
+    "from_AUD": -0.128,
+    "base_share": 0.06
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.046,
+    "from_GBP": -0.008,
+    "from_CAD": -0.038,
+    "base_share": 0.18
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.104,
+    "from_GBP": -0.008,
+    "from_NZD": -0.095,
+    "base_share": 0.08
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.356,
+    "from_AUD": 0.128,
+    "from_JPY": 0.228,
+    "base_share": 0.36
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.047,
+    "from_AUD": 0.128,
+    "from_CHF": -0.081,
+    "base_share": 0.61
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.09,
+    "from_AUD": 0.128,
+    "from_CAD": -0.038,
+    "base_share": 0.77
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.033,
+    "from_AUD": 0.128,
+    "from_NZD": -0.095,
+    "base_share": 0.57
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.323,
+    "from_NZD": 0.095,
+    "from_JPY": 0.228,
+    "base_share": 0.29
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.014,
+    "from_NZD": 0.095,
+    "from_CHF": -0.081,
+    "base_share": 0.54
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.057,
+    "from_NZD": 0.095,
+    "from_CAD": -0.038,
+    "base_share": 0.71
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.266,
+    "from_CAD": 0.038,
+    "from_JPY": 0.228,
+    "base_share": 0.14
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.043,
+    "from_CAD": 0.038,
+    "from_CHF": -0.081,
+    "base_share": 0.32
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.309,
+    "from_CHF": 0.081,
+    "from_JPY": 0.228,
+    "base_share": 0.26
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.147
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.113
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.109
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.093
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.044
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.009
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.234
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.26
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.12526,
+    "chg_pips": 34.0,
+    "chg_pct": 0.303,
+    "range_pips": 40.1,
+    "close_in_range": 0.94,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32106,
+    "chg_pips": 25.9,
+    "chg_pct": 0.196,
+    "range_pips": 31.2,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69338,
+    "chg_pips": 23.0,
+    "chg_pct": 0.333,
+    "range_pips": 28.7,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56132,
+    "chg_pips": 16.9,
+    "chg_pct": 0.302,
+    "range_pips": 28.7,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 157.861,
+    "chg_pips": 4.1,
+    "chg_pct": 0.026,
+    "range_pips": 63.4,
+    "close_in_range": 0.38,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82969,
+    "chg_pips": -23.7,
+    "chg_pct": -0.285,
+    "range_pips": 39.2,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42135,
+    "chg_pips": -35.6,
+    "chg_pct": -0.25,
+    "range_pips": 41.0,
+    "close_in_range": 0.07,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.93362,
+    "chg_pips": 1.7,
+    "chg_pct": 0.018,
+    "range_pips": 22.9,
+    "close_in_range": 0.29,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.25,
+    "chg_pips": 58.4,
+    "chg_pct": 0.308,
+    "range_pips": 94.9,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23513,
+    "chg_pips": 4.1,
+    "chg_pct": 0.033,
+    "range_pips": 38.4,
+    "close_in_range": 0.33,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.85176,
+    "chg_pips": 9.1,
+    "chg_pct": 0.107,
+    "range_pips": 17.4,
+    "close_in_range": 0.67,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57522,
+    "chg_pips": 2.7,
+    "chg_pct": 0.047,
+    "range_pips": 12.7,
+    "close_in_range": 0.34,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46571,
+    "chg_pips": 0.5,
+    "chg_pct": 0.011,
+    "range_pips": 17.0,
+    "close_in_range": 0.68,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.02538,
+    "chg_pips": -386.6,
+    "chg_pct": -0.384,
+    "range_pips": 723.8,
+    "close_in_range": 0.27,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.61696,
+    "chg_pips": -202.3,
+    "chg_pct": -0.21,
+    "range_pips": 778.2,
+    "close_in_range": 0.59,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.67205,
+    "chg_pips": -90.3,
+    "chg_pct": -0.054,
+    "range_pips": 1010.9,
+    "close_in_range": 0.28,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.26561,
+    "chg_pips": -1228.6,
+    "chg_pct": -0.668,
+    "range_pips": 1338.6,
+    "close_in_range": 0.0,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.686,
+    "chg_pips": -24.9,
+    "chg_pct": -0.244,
+    "range_pips": 31.1,
+    "close_in_range": 0.08,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.873,
+    "chg_pips": -46.2,
+    "chg_pct": -2.52,
+    "range_pips": 51.2,
+    "close_in_range": 0.0,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 30.6,
+    "ret_pct": 0.273,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "01:45",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -13.9,
+    "ret_pct": -0.124,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Monetary Base y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 18.5,
+    "ret_pct": 0.165,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "up",
+    "pips": 48.8,
+    "ret_pct": 0.309,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Expects To Resume Iran Bombing By End Of November -…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "20:15",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -35.4,
+    "ret_pct": -0.224,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Bowman Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "01:30",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 28.8,
+    "ret_pct": 0.182,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -30.2,
+    "ret_pct": -0.191,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 16.9,
+    "ret_pct": 0.128,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "22:15",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -16.4,
+    "ret_pct": -0.124,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Fed policy is not restrictive, must be modestly ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 27.1,
+    "ret_pct": 0.206,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "up",
+    "pips": 5.5,
+    "ret_pct": 0.066,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump Expects To Resume Iran Bombing By End Of November - W… pushed it along (+10.1 in 15 min, 184% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump Expects To Resume Iran Bombing By End Of November - WSJ",
+      "ccy": null,
+      "pips": 10.1,
+      "share_of_leg": 1.84
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:45",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -21.8,
+    "ret_pct": -0.262,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Expects To Resume Iran Bombing By End Of November -… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:15",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 17.6,
+    "ret_pct": 0.212,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Fed policy is not restrictive, must be modestly ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -25.6,
+    "ret_pct": -0.308,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 16.3,
+    "ret_pct": 0.236,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "22:15",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -16.3,
+    "ret_pct": -0.235,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Logan Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 18.6,
+    "ret_pct": 0.269,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -31.5,
+    "ret_pct": -0.221,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:30",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 15.3,
+    "ret_pct": 0.108,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Fed policy is not restrictive, must be modestly ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -19.8,
+    "ret_pct": -0.139,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 8.2,
+    "ret_pct": 0.146,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "22:00",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -17.8,
+    "ret_pct": -0.317,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Logan Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 24.2,
+    "ret_pct": 0.433,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "up",
+    "pips": 12.3,
+    "ret_pct": 0.132,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump Expects To Resume Iran Bombing By End Of November - W… pushed it along (+6.7 in 15 min, 54% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump Expects To Resume Iran Bombing By End Of November - WSJ",
+      "ccy": null,
+      "pips": 6.7,
+      "share_of_leg": 0.54
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:45",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -10.4,
+    "ret_pct": -0.111,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Expects To Resume Iran Bombing By End Of November -… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:45",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 12.9,
+    "ret_pct": 0.138,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Fed policy is not restrictive, must be modestly ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "03:15",
+    "to": "05:45",
+    "dir": "down",
+    "pips": -19.6,
+    "ret_pct": -0.21,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "05:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 6.4,
+    "ret_pct": 0.069,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 79.1,
+    "ret_pct": 0.417,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Expects To Resume Iran Bombing By End Of November -…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "21:45",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -36.8,
+    "ret_pct": -0.193,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 27.9,
+    "ret_pct": 0.147,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "up",
+    "pips": 12.0,
+    "ret_pct": 0.097,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "22:45",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -21.1,
+    "ret_pct": -0.171,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:45",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 35.2,
+    "ret_pct": 0.285,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Fed policy is not restrictive, must be modestly ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -25.1,
+    "ret_pct": -0.203,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Monetary Base y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 14.0,
+    "ret_pct": 0.165,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump Expects To Resume Iran Bombing By End Of November - W… pushed it along (+2.8 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump Expects To Resume Iran Bombing By End Of November - WSJ",
+      "ccy": null,
+      "pips": 2.8,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -5.1,
+    "ret_pct": -0.06,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Monetary Base y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "up",
+    "pips": 4.3,
+    "ret_pct": 0.075,
+    "minutes": 225,
+    "cause": "Jefferson: The U.S. Economy and Monetary Policy",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "Jefferson: The U.S. Economy and Monetary Policy -- +4.1 in the first 15 min, 95% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "22:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -9.5,
+    "ret_pct": -0.165,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "02:30",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 8.4,
+    "ret_pct": 0.146,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -4.8,
+    "ret_pct": -0.083,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -7.5,
+    "ret_pct": -0.161,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Expects To Resume Iran Bombing By End Of November -…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:00",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 5.6,
+    "ret_pct": 0.12,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "00:15",
+    "to": "02:15",
+    "dir": "down",
+    "pips": -10.2,
+    "ret_pct": -0.219,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Tokyo Core CPI y/y +1 more pushed it along (-2.2 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Tokyo Core CPI y/y +1 more",
+      "ccy": "JPY",
+      "pips": -2.2,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "02:15",
+    "to": "03:45",
+    "dir": "up",
+    "pips": 10.3,
+    "ret_pct": 0.222,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "03:45",
+    "to": "05:45",
+    "dir": "down",
+    "pips": -4.9,
+    "ret_pct": -0.105,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "05:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 5.0,
+    "ret_pct": 0.107,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -584.1,
+    "ret_pct": -0.58,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 544.0,
+    "ret_pct": 0.544,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Fed policy is not restrictive, must be modestly ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -348.2,
+    "ret_pct": -0.346,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -656.2,
+    "ret_pct": -0.681,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 743.5,
+    "ret_pct": 0.777,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Logan Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -293.0,
+    "ret_pct": -0.304,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "up",
+    "pips": 713.5,
+    "ret_pct": 0.428,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Expects To Resume Iran Bombing By End Of November -…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "20:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -721.3,
+    "ret_pct": -0.431,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Bowman Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:00",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 639.5,
+    "ret_pct": 0.384,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Logan Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -611.9,
+    "ret_pct": -0.366,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -957.2,
+    "ret_pct": -0.521,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:15",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 527.8,
+    "ret_pct": 0.289,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Logan Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -716.1,
+    "ret_pct": -0.391,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "up",
+    "pips": 149.0,
+    "ret_pct": 1.35,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trump Expects To Resume Iran Bombing By End Of November - W… pushed it along (+181.0 in 15 min, 121% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trump Expects To Resume Iran Bombing By End Of November - WSJ",
+      "ccy": null,
+      "pips": 181.0,
+      "share_of_leg": 1.21
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -80.2,
+    "ret_pct": -0.717,
+    "minutes": 660,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Cook Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 106.2,
+    "ret_pct": 0.255,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Jefferson: The U.S. Economy and Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -413.5,
+    "ret_pct": -0.989,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Monetary Base y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 443.3,
+    "ret_pct": 1.071,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "01:30",
+    "ccy": "JPY",
+    "impact": "Medium",
+    "event": "Tokyo Core CPI y/y",
+    "actual": "2.7%",
+    "forecast": "2.4%",
+    "previous": "1.8%",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> JPY stronger 0.067%",
+    "own_ccy_impulse_pct": 0.067,
+    "top_movers": [
+     {
+      "instrument": "USD/JPY",
+      "pct": -0.078,
+      "pips": -12.3,
+      "unit": "pips",
+      "sigma": -2.71
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.055,
+      "pips": -10.4,
+      "unit": "pips",
+      "sigma": -2.29
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": -0.03,
+      "pips": -1.7,
+      "unit": "pips",
+      "sigma": -1.28
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.016,
+      "pips": -1.5,
+      "unit": "pips",
+      "sigma": -0.95
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.023,
+      "pips": -1.9,
+      "unit": "pips",
+      "sigma": -0.93
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": -0.024,
+      "pips": -1.1,
+      "unit": "pips",
+      "sigma": -0.9
+     }
+    ]
+   }
+  ],
+  "headline_count": 10,
+  "top_headlines": [
+   {
+    "time": "19:30",
+    "impact": "high",
+    "title": "Jefferson: The U.S. Economy and Monetary Policy"
+   },
+   {
+    "time": "19:45",
+    "impact": "medium",
+    "title": "Trump Expects To Resume Iran Bombing By End Of November - WSJ"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "Bowman: Modernizing Financial Regulation: Initial Observations from eSLR"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "BOC's Rogers: Canada's housing affordability dilemma"
+   },
+   {
+    "time": "21:30",
+    "impact": "low",
+    "title": "Bessent: The US is delivering on commitments to stabilize global energy markets. We look to our allies to match their commitments with action"
+   },
+   {
+    "time": "21:30",
+    "impact": "low",
+    "title": "Fed's Cook: Supply shocks have had surprisingly persistent effects, becoming more salient for policy"
+   },
+   {
+    "time": "21:45",
+    "impact": "low",
+    "title": "Fed's Bowman sees no urgent need for more rate moves this year"
+   },
+   {
+    "time": "01:15",
+    "impact": "low",
+    "title": "Logan: Fed policy is not restrictive, must be modestly tight"
+   },
+   {
+    "time": "01:15",
+    "impact": "low",
+    "title": "Logan: Opening remarks for moderated conversation at Voices of the Eleventh District"
+   },
+   {
+    "time": "01:45",
+    "impact": "low",
+    "title": "Japan Monetary Base (September 2026)"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "11:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "Core CPI Flash Estimate y/y",
+    "forecast": "2.5%",
+    "previous": "2.4%"
+   },
+   {
+    "time": "11:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "CPI Flash Estimate y/y",
+    "forecast": "3.7%",
+    "previous": "3.3%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Average Hourly Earnings m/m",
+    "forecast": "0.3%",
+    "previous": "0.3%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Non-Farm Employment Change",
+    "forecast": "89K",
+    "previous": "162K"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Unemployment Rate",
+    "forecast": "4.1%",
+    "previous": "4.1%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The overnight tape was dominated by broad USD softness: DXY fell 0.244% and USD strength printed -0.205% despite no US data. Tokyo Core CPI y/y beat at 2.7% vs 2.4% forecast but produced only 0.067% JPY strength and was quickly faded, leaving JPY the weakest major at -0.228%. AUD led gains at 0.128% while VIX dropped 2.52%, confirming a risk-on tilt.",
+  "themes": [
+   {
+    "theme": "Broad USD softness",
+    "evidence": "DXY chg -0.244%, USD strength -0.205%; EUR up 0.099%, AUD up 0.128%, NZD up 0.095%.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Risk-on commodity FX bid",
+    "evidence": "VIX down 2.52%; AUD strength 0.128%, NZD 0.095%; USD/SEK -386.6 pips, USD/MXN -1228.6 pips.",
+    "currencies": [
+     "AUD",
+     "NZD",
+     "SEK",
+     "MXN"
+    ]
+   },
+   {
+    "theme": "Tokyo CPI beat faded",
+    "evidence": "Tokyo Core CPI y/y printed 2.7% vs 2.4% forecast but only gave 0.067% JPY strength; JPY closed weakest at -0.228%.",
+    "currencies": [
+     "JPY"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No own data; softened broadly, DXY down 0.244% despite Fed speakers sounding tight.",
+   "EUR": "No own releases; firm into Eurozone CPI, helped by broad USD softness.",
+   "JPY": "Tokyo CPI beat briefly sparked strength but was faded; closed weakest despite that release.",
+   "GBP": "No own releases; nearly flat and closed at session best without clear catalyst.",
+   "AUD": "No own releases; strongest major, held its range on risk appetite.",
+   "CAD": "No own releases; low-impact BOC Rogers remarks, little independent move.",
+   "CHF": "No own releases; modestly firmer, no direct catalyst.",
+   "NZD": "No own releases; closed at its best with risk-on tone."
+  },
+  "leg_notes": {
+   "EUR/USD": "Three uncatalyzed legs left EUR/USD up 34 pips near the top of a 40.1-pip range."
+  },
+  "polarity_reads": [
+   {
+    "event": "Tokyo Core CPI y/y",
+    "read": "Normal polarity beat produced only 0.067% JPY strength and price reversed; market not positioned for sustained JPY upside."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "USD softness extends into US data",
+    "probability": 0.45,
+    "thesis": "Risk-on tone persists and USD drifts lower into NFP; a soft jobs print accelerates the move.",
+    "triggers": [
+     "NFP below 89K forecast",
+     "Eurozone CPI core at/above 2.5% forecast",
+     "VIX remains subdued"
+    ],
+    "invalidation": "NFP above 162K prior with AHE above 0.3%",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 40.1,
+      "rationale": "EUR strength plus USD softness; close already at 0.94 of overnight range."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 28.7,
+      "rationale": "AUD top strength of 0.128% with risk appetite."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 39.2,
+      "rationale": "USD weakness dominates despite no direct CHF catalyst."
+     }
+    ]
+   },
+   {
+    "name": "US jobs hawkish repricing",
+    "probability": 0.35,
+    "thesis": "Strong NFP/AHE forces a hawkish USD rebound from oversold levels.",
+    "triggers": [
+     "NFP above 89K forecast",
+     "AHE at/above 0.3% forecast",
+     "Unemployment 4.1% or lower"
+    ],
+    "invalidation": "NFP below 89K or VIX spikes on geopolitical risk",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 40.1,
+      "rationale": "USD rebound reverses overnight EUR/USD gains."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 63.4,
+      "rationale": "JPY weakest and yields move higher on strong US data."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 39.2,
+      "rationale": "USD squeeze lifts USD/CHF from near session low."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off safe-haven squeeze",
+    "probability": 0.2,
+    "thesis": "Geopolitical escalation or poor jobs triggers risk-off despite current VIX decline; CHF and JPY bid.",
+    "triggers": [
+     "Trump Iran headline escalates further",
+     "NFP shocks below forecast with risk sentiment souring",
+     "VIX jumps from 17.873"
+    ],
+    "invalidation": "Risk-on tone holds with NFP in line",
+    "pair_paths": [
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 39.2,
+      "rationale": "CHF outperforms on safe-haven demand."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 63.4,
+      "rationale": "JPY reclaims safe-haven bid despite overnight weak tape."
+     },
+     {
+      "instrument": "EUR/CHF",
+      "direction": "down",
+      "magnitude_pips": 22.9,
+      "rationale": "CHF strength outweighs EUR support in risk-off."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Geopolitical Iran escalation",
+    "why_it_matters": "Trump headline moved Brent +149.0 pips in 45 min and could reverse risk-on tone.",
+    "watch": "Brent/USD, USD/CHF, USD/JPY"
+   },
+   {
+    "risk": "US NFP/AHE surprise",
+    "why_it_matters": "USD is already down 0.244% DXY; a strong jobs print could force hawkish repricing.",
+    "watch": "NFP 89K forecast, AHE 0.3%, unemployment 4.1%"
+   },
+   {
+    "risk": "Eurozone CPI miss",
+    "why_it_matters": "EUR strength 0.099% ahead of CPI; a low print could unwind EUR/USD gains.",
+    "watch": "Core CPI Flash 2.5% forecast, CPI Flash 3.7% forecast"
+   }
+  ],
+  "calendar_ahead_note": "EUR CPI at 11:00 and US jobs at 14:30 are the main risk events; any Core CPI surprise or NFP/AHE deviation will dominate.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 14610,
+   "completion_tokens": 6915,
+   "total_tokens": 21525,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5203
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 13970
+  }
+ }
+}
