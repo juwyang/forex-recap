@@ -13,7 +13,7 @@
   "end_local": "2026-10-02T07:00:00+02:00",
   "fwd_start_utc": "2026-10-02T05:00:00+00:00",
   "fwd_end_utc": "2026-10-02T17:00:00+00:00",
-  "generated_utc": "2026-10-02T05:33:27.619219+00:00",
+  "generated_utc": "2026-10-02T11:03:49.557696+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 83
+   "with_actual": 86
   }
  },
  "facts": {
@@ -1674,181 +1674,176 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was dominated by broad USD softness: DXY fell 0.244% and USD strength printed -0.205% despite no US data. Tokyo Core CPI y/y beat at 2.7% vs 2.4% forecast but produced only 0.067% JPY strength and was quickly faded, leaving JPY the weakest major at -0.228%. AUD led gains at 0.128% while VIX dropped 2.52%, confirming a risk-on tilt.",
+  "session_summary": "Overnight the tape was dominated by broad USD softness: DXY lost 24.9 points and USD/CHF fell 23.7 pips, while AUD and NZD led gains. Tokyo Core CPI beat at 2.7% vs 2.4% gave only a 0.067% JPY impulse that faded; USD/JPY closed barely changed. EUR/USD advanced 34 pips in three legs with no single catalyst. VIX dropped 46.2 points, keeping the risk-positive tone intact.",
   "themes": [
    {
     "theme": "Broad USD softness",
-    "evidence": "DXY chg -0.244%, USD strength -0.205%; EUR up 0.099%, AUD up 0.128%, NZD up 0.095%.",
+    "evidence": "DXY close 101.686, -24.9 points; USD/CHF -23.7 pips; USD/CAD -35.6 pips.",
     "currencies": [
      "USD",
      "EUR",
+     "GBP",
      "AUD",
-     "NZD"
+     "NZD",
+     "CAD",
+     "CHF"
     ]
    },
    {
-    "theme": "Risk-on commodity FX bid",
-    "evidence": "VIX down 2.52%; AUD strength 0.128%, NZD 0.095%; USD/SEK -386.6 pips, USD/MXN -1228.6 pips.",
+    "theme": "Commodity/risk FX bid",
+    "evidence": "AUD strength 0.128%; NZD strength 0.095%; AUD/USD +23.0 pips; NZD/USD +16.9 pips; VIX -46.2 points.",
     "currencies": [
      "AUD",
      "NZD",
-     "SEK",
-     "MXN"
+     "CAD"
     ]
    },
    {
-    "theme": "Tokyo CPI beat faded",
-    "evidence": "Tokyo Core CPI y/y printed 2.7% vs 2.4% forecast but only gave 0.067% JPY strength; JPY closed weakest at -0.228%.",
+    "theme": "JPY underperformance despite CPI beat",
+    "evidence": "Tokyo Core CPI 2.7% vs 2.4% forecast; own-currency impulse only +0.067%; USD/JPY +4.1 pips; CHF/JPY +58.4 pips.",
     "currencies": [
-     "JPY"
+     "JPY",
+     "CHF"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No own data; softened broadly, DXY down 0.244% despite Fed speakers sounding tight.",
-   "EUR": "No own releases; firm into Eurozone CPI, helped by broad USD softness.",
-   "JPY": "Tokyo CPI beat briefly sparked strength but was faded; closed weakest despite that release.",
-   "GBP": "No own releases; nearly flat and closed at session best without clear catalyst.",
-   "AUD": "No own releases; strongest major, held its range on risk appetite.",
-   "CAD": "No own releases; low-impact BOC Rogers remarks, little independent move.",
-   "CHF": "No own releases; modestly firmer, no direct catalyst.",
-   "NZD": "No own releases; closed at its best with risk-on tone."
+   "USD": "Broad softness with no own catalyst; DXY lost 24.9 points.",
+   "EUR": "Steady bid with no own releases; strength 0.099% supported by USD softness.",
+   "JPY": "Tokyo Core CPI beat initially added 0.067%, but closed weakest with strength -0.228%.",
+   "GBP": "Nearly flat with strength -0.008%; no clear catalyst.",
+   "AUD": "Top performer with strength 0.128%; no own releases, held gains.",
+   "CAD": "Modest gain with strength 0.038%; no own catalyst.",
+   "CHF": "Mild gain with strength 0.081%; safe-haven flow contained.",
+   "NZD": "Gained with strength 0.095% and closed at best; no own releases."
   },
   "leg_notes": {
-   "EUR/USD": "Three uncatalyzed legs left EUR/USD up 34 pips near the top of a 40.1-pip range."
+   "EUR/USD": "EUR/USD rose 30.6 pips into 01:45, gave back 13.9, then added 18.5; no leg had a clear catalyst and the pair closed 34 pips higher."
   },
   "polarity_reads": [
    {
     "event": "Tokyo Core CPI y/y",
-    "read": "Normal polarity beat produced only 0.067% JPY strength and price reversed; market not positioned for sustained JPY upside."
+    "read": "The 2.7% vs 2.4% beat gave only a 0.067% JPY impulse that faded; USD/JPY closed up 4.1 pips, so the yen's CPI bid was not sustained and positioning remains short."
    }
   ],
   "scenarios": [
    {
-    "name": "USD softness extends into US data",
+    "name": "Carry/risk continuation",
     "probability": 0.45,
-    "thesis": "Risk-on tone persists and USD drifts lower into NFP; a soft jobs print accelerates the move.",
+    "thesis": "Broad USD softness persists into the US session with VIX low; AUD, EUR, and NZD remain bid.",
     "triggers": [
-     "NFP below 89K forecast",
-     "Eurozone CPI core at/above 2.5% forecast",
-     "VIX remains subdued"
+     "No US/China headline escalation",
+     "US employment data in line with 89K NFP"
     ],
-    "invalidation": "NFP above 162K prior with AHE above 0.3%",
+    "invalidation": "US yields rebound sharply or risk-off headlines return.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 40.1,
-      "rationale": "EUR strength plus USD softness; close already at 0.94 of overnight range."
+      "magnitude_pips": 40,
+      "rationale": "USD softness extended; today's range was 40.1 pips."
      },
      {
       "instrument": "AUD/USD",
       "direction": "up",
-      "magnitude_pips": 28.7,
-      "rationale": "AUD top strength of 0.128% with risk appetite."
+      "magnitude_pips": 29,
+      "rationale": "AUD is top performer, strength 0.128%; today's range 28.7 pips."
      },
      {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 39.2,
-      "rationale": "USD weakness dominates despite no direct CHF catalyst."
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 63,
+      "rationale": "JPY weak but USD also soft; today's range 63.4 pips."
      }
     ]
    },
    {
-    "name": "US jobs hawkish repricing",
-    "probability": 0.35,
-    "thesis": "Strong NFP/AHE forces a hawkish USD rebound from oversold levels.",
+    "name": "US jobs reversal",
+    "probability": 0.3,
+    "thesis": "Stronger US jobs and wages repricing lifts USD; commodity FX gives back gains.",
     "triggers": [
-     "NFP above 89K forecast",
-     "AHE at/above 0.3% forecast",
-     "Unemployment 4.1% or lower"
+     "NFP above 89K",
+     "Wage growth above 0.3%",
+     "Unemployment rate at or below 4.1%"
     ],
-    "invalidation": "NFP below 89K or VIX spikes on geopolitical risk",
+    "invalidation": "DXY stays below 101.686.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 40.1,
-      "rationale": "USD rebound reverses overnight EUR/USD gains."
+      "magnitude_pips": 40,
+      "rationale": "USD rebound unwinds broad softness; today's range 40.1 pips."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 63.4,
-      "rationale": "JPY weakest and yields move higher on strong US data."
+      "magnitude_pips": 63,
+      "rationale": "US data drives USD yield repricing; USD/JPY range 63.4 pips."
      },
      {
-      "instrument": "USD/CHF",
+      "instrument": "USD/CAD",
       "direction": "up",
-      "magnitude_pips": 39.2,
-      "rationale": "USD squeeze lifts USD/CHF from near session low."
+      "magnitude_pips": 41,
+      "rationale": "CAD strength gives back; USD/CAD range 41.0 pips."
      }
     ]
    },
    {
-    "name": "Risk-off safe-haven squeeze",
-    "probability": 0.2,
-    "thesis": "Geopolitical escalation or poor jobs triggers risk-off despite current VIX decline; CHF and JPY bid.",
+    "name": "Yen repricing higher",
+    "probability": 0.25,
+    "thesis": "Oversold yen snaps back after Tokyo CPI beat despite soft USD; risk-off or BoJ speculation lifts JPY.",
     "triggers": [
-     "Trump Iran headline escalates further",
-     "NFP shocks below forecast with risk sentiment souring",
-     "VIX jumps from 17.873"
+     "Risk-off headline",
+     "CHF/JPY reversal from 190.25"
     ],
-    "invalidation": "Risk-on tone holds with NFP in line",
+    "invalidation": "CHF/JPY holds above 190.25.",
     "pair_paths": [
-     {
-      "instrument": "USD/CHF",
-      "direction": "down",
-      "magnitude_pips": 39.2,
-      "rationale": "CHF outperforms on safe-haven demand."
-     },
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 63.4,
-      "rationale": "JPY reclaims safe-haven bid despite overnight weak tape."
+      "magnitude_pips": 63,
+      "rationale": "Yen rallies, USD/JPY range 63.4 pips."
      },
      {
-      "instrument": "EUR/CHF",
+      "instrument": "CHF/JPY",
       "direction": "down",
-      "magnitude_pips": 22.9,
-      "rationale": "CHF strength outweighs EUR support in risk-off."
+      "magnitude_pips": 95,
+      "rationale": "Cross was 58.4 pips higher today, range 94.9 pips; reversal."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Geopolitical Iran escalation",
-    "why_it_matters": "Trump headline moved Brent +149.0 pips in 45 min and could reverse risk-on tone.",
-    "watch": "Brent/USD, USD/CHF, USD/JPY"
+    "risk": "US employment surprise",
+    "why_it_matters": "Can reverse USD softness in a thin Asia/NY afternoon tape.",
+    "watch": "Average Hourly Earnings m/m, NFP, Unemployment Rate at 14:30."
    },
    {
-    "risk": "US NFP/AHE surprise",
-    "why_it_matters": "USD is already down 0.244% DXY; a strong jobs print could force hawkish repricing.",
-    "watch": "NFP 89K forecast, AHE 0.3%, unemployment 4.1%"
+    "risk": "EUR flash CPI miss",
+    "why_it_matters": "Can unwind EUR bid into ECB pricing.",
+    "watch": "Eurozone Core CPI Flash Estimate y/y 2.5% forecast at 11:00."
    },
    {
-    "risk": "Eurozone CPI miss",
-    "why_it_matters": "EUR strength 0.099% ahead of CPI; a low print could unwind EUR/USD gains.",
-    "watch": "Core CPI Flash 2.5% forecast, CPI Flash 3.7% forecast"
+    "risk": "Iran headline escalation",
+    "why_it_matters": "Brent initially jumped 149 pips on Trump Iran headline then faded.",
+    "watch": "Oil and safe-haven CHF/JPY reaction."
    }
   ],
-  "calendar_ahead_note": "EUR CPI at 11:00 and US jobs at 14:30 are the main risk events; any Core CPI surprise or NFP/AHE deviation will dominate.",
+  "calendar_ahead_note": "Eurozone flash CPI at 11:00 and US employment report at 14:30 can materially change the broad USD-softness and EUR-bid narrative.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14610,
-   "completion_tokens": 6915,
-   "total_tokens": 21525,
+   "completion_tokens": 5846,
+   "total_tokens": 20456,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 14592
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5203
+    "reasoning_tokens": 4134
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 13970
+   "prompt_cache_hit_tokens": 14592,
+   "prompt_cache_miss_tokens": 18
   }
  }
 }
