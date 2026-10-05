@@ -13,7 +13,7 @@
   "end_local": "2026-10-05T07:00:00+02:00",
   "fwd_start_utc": "2026-10-05T05:00:00+00:00",
   "fwd_end_utc": "2026-10-05T17:00:00+00:00",
-  "generated_utc": "2026-10-05T05:14:30.325081+00:00",
+  "generated_utc": "2026-10-05T12:13:21.526312+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 94
+   "with_actual": 101
   }
  },
  "facts": {
@@ -2167,163 +2167,184 @@
   ]
  },
  "analysis": {
-  "session_summary": "Friday's US employment report printed 29K vs 89K forecast and initially weakened the dollar, but USD selling was rejected: it fell to -0.20% then recovered 90% to rank second at +0.213%. EUR was the weakest major at -0.413%, giving back 87% of an early +0.07% attempt, while AUD led at +0.266% and CAD lagged at -0.283%. Oil-reserve headlines drove risk and commodity FX, with USD/SEK and USD/NOK closing up 0.579% and 0.473% respectively.",
+  "session_summary": "Friday's NFP miss printed 29K vs 89K forecast, initially selling USD by 0.097%, but USD selling was rejected and recovered 90% of its intraday loss. EUR was the weakest major despite a muted CPI beat, closing with strength at -0.413%, while AUD led at 0.266%. The tape shows a late USD bid into the weekend/Asia reopen; VIX fell 0.854% while DXY rose 0.455%.",
   "themes": [
    {
-    "theme": "Post-NFP dollar dip faded fast, leaving USD resilient despite soft jobs print.",
-    "evidence": "USD strength_pct 0.213, shape note sold to -0.20% and recovered 90%, DXY +0.455%.",
+    "theme": "Post-payrolls USD rebound",
+    "evidence": "NFP miss printed 29K vs 89K; USD sold 0.097% then recovered 90% and DXY closed +0.455%.",
     "currencies": [
-     "USD"
+     "USD",
+     "CHF"
     ]
    },
    {
-    "theme": "Euro is the clear laggard after muted CPI and failed upside attempt.",
-    "evidence": "EUR strength_pct -0.413, attempt rejected gave back 87% of early gains, CPI basket moved -0.036%.",
-    "currencies": [
-     "EUR"
-    ]
-   },
-   {
-    "theme": "Commodity/risk FX divergence: AUD strong, NZD/CAD weak, oil headlines add volatility.",
-    "evidence": "AUD strength 0.266 vs CAD -0.283 and NZD -0.204, AUD/NZD +0.47%, USD/CAD +0.497%, USD/SEK +0.579%, USD/NOK +0.473%.",
+    "theme": "Commodity FX divergence",
+    "evidence": "AUD strength 0.266%, NZD -0.204%, CAD -0.283%; AUD/NZD +0.47% and USD/CAD +0.497%.",
     "currencies": [
      "AUD",
      "NZD",
      "CAD"
     ]
+   },
+   {
+    "theme": "Energy release headlines without FX follow-through",
+    "evidence": "Top headlines on IEA/diesel releases, Kihara oil reserves, and OPEC+ delays; most FX legs had no single trigger assigned.",
+    "currencies": [
+     "CAD",
+     "NZD",
+     "CHF"
+    ]
    }
   ],
   "currency_drivers": {
-   "USD": "NFP miss briefly weakened it, then selling was rejected and it recovered 90% of losses.",
-   "EUR": "CPI beat was muted, basket -0.036%; early +0.07% attempt gave back 87%.",
-   "JPY": "No catalyst; held a tight range with modest +0.061% strength.",
-   "GBP": "No catalyst; closed at its best, third-strongest at +0.199%.",
-   "AUD": "No own catalyst; strongest major at +0.266%, holding gains as risk appetite favored it.",
-   "CAD": "No catalyst; fell 0.283% against majors, pressured by oil and risk flows.",
-   "CHF": "No catalyst; safe-haven bid kept it firm at +0.161%.",
-   "NZD": "No catalyst; soft at -0.204%, lagging AUD despite similar risk profile."
+   "USD": "NFP miss initially sold USD 0.097%, then selling was rejected, recovered 90%.",
+   "EUR": "CPI surprise was muted/inside noise; EUR attempt rejected, gave back 87%.",
+   "JPY": "No own catalyst; held range; sensitive to NFP but no direct driver.",
+   "GBP": "No own releases; closed at its best with 0.199% strength.",
+   "AUD": "No own catalyst; held range and led strength at 0.266%.",
+   "CAD": "No own releases; held weak range at -0.283% strength.",
+   "CHF": "No own releases; held range, strength 0.161%.",
+   "NZD": "No own releases; held weak range at -0.204% strength."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD drifted down -25.8 pips into NFP, popped +57.6 on the miss, then faded -100.3 pips into the close, leaving euro the weakest major."
+   "EUR/USD": "EUR/USD fell 25.8 pips before NFP, spiked +57.6 on the payrolls miss, then retraced -100.3 to close near lows; EUR weakness contributed 66% of the pair move."
   },
   "polarity_reads": [
    {
     "event": "Non-Farm Employment Change +2 more",
-    "read": "Normal polarity (USD weaker on miss) but only -0.097% own-currency impulse and 90% recovery suggests market was not positioned for a soft print, limiting sustained USD downside."
+    "read": "Normal polarity: miss weakened USD; Gold +0.866% and USD/JPY -0.292% show the initial USD dip was faded, consistent with crowded short-USD positioning."
    },
    {
     "event": "CPI Flash Estimate y/y +1 more",
-    "read": "Muted polarity with basket -0.036% inside noise floor shows EUR had no bid; euro traders ignored the inflation beat, consistent with weak positioning."
+    "read": "Muted polarity: EUR basket moved -0.036% inside the noise floor despite 3.8% actual versus 3.7% forecast, showing EUR could not rally on a beat."
    }
   ],
   "scenarios": [
    {
-    "name": "Soft ISM reignites dollar weakness but EUR underperforms",
-    "probability": 0.35,
-    "thesis": "ISM below 55.1 revives the NFP story, pressuring USD, but euro's own negative momentum caps EUR/USD upside while GBP/AUD lead.",
+    "name": "USD drift and EUR weakness persist",
+    "probability": 0.45,
+    "thesis": "ISM services keeps the USD bid and EUR remains offered after failing to rally on CPI.",
     "triggers": [
-     "ISM Services PMI prints below 55.1",
-     "Fed speakers lean dovish",
-     "Oil headlines fade"
+     "ISM Services PMI prints at or above 55.1",
+     "Oil release headlines fade",
+     "EUR/USD fails to recover above 1.11823"
     ],
-    "invalidation": "ISM prints above 55.4 or USD recovery extends beyond DXY 102.149.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 57.6,
-      "rationale": "Short covering after EUR laggard, but euro weakness limits move to the size of the prior NFP pop."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 46.0,
-      "rationale": "The NFP impulse showed USD/JPY falling 46.0 pips in 15 minutes, likely to repeat on soft ISM."
-     }
-    ]
-   },
-   {
-    "name": "Strong ISM extends USD recovery",
-    "probability": 0.35,
-    "thesis": "ISM above 55.4 confirms resilient US economy, pushing USD higher and resuming EUR weakness and CAD softness.",
-    "triggers": [
-     "ISM prints above 55.4",
-     "US yields rise",
-     "Oil headlines keep CAD heavy"
-    ],
-    "invalidation": "ISM below 55.1 or EUR/USD breaks above 1.11823.",
+    "invalidation": "EUR/USD recovers above 1.11823.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 70.3,
-      "rationale": "EUR/USD closed down 70.3 pips on the day; a strong ISM extends the downtrend by a similar amount."
+      "magnitude_pips": 100.3,
+      "rationale": "EUR strength -0.413 plus USD strength 0.213; last leg was -100.3."
      },
      {
       "instrument": "USD/CAD",
       "direction": "up",
       "magnitude_pips": 70.6,
-      "rationale": "USD/CAD already gained 70.6 pips; oil and CAD weakness can repeat that move."
+      "rationale": "CAD weak at -0.283%, USD bid; current pair change +70.6."
+     },
+     {
+      "instrument": "EUR/GBP",
+      "direction": "down",
+      "magnitude_pips": 51.8,
+      "rationale": "EUR weakness versus GBP strength; current pair change -51.8."
      }
     ]
    },
    {
-    "name": "ISM in line, consolidation",
+    "name": "Payrolls fade resumes",
     "probability": 0.3,
-    "thesis": "ISM prints near 55.1 with no fresh catalyst; markets consolidate post-NFP recovery within recent ranges.",
+    "thesis": "Late USD recovery overdone; ISM miss triggers USD unwind and EUR short-covering.",
     "triggers": [
-     "ISM prints close to 55.1",
-     "No new oil headline",
-     "Equities stable"
+     "ISM Services PMI below 55.1",
+     "Oil release news supports risk",
+     "VIX remains below 17.72"
     ],
-    "invalidation": "A break of EUR/USD 124.0-pip range or USD/JPY 121.9-pip range.",
+    "invalidation": "USD/CHF takes out 0.83011.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 124.0,
-      "rationale": "EUR/USD range was 124.0 pips; without drivers price stays inside it."
+      "direction": "up",
+      "magnitude_pips": 57.6,
+      "rationale": "NFP spike magnitude was +57.6; EUR short-covering."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 121.9,
-      "rationale": "USD/JPY range was 121.9 pips; consolidation within that band is likely."
+      "direction": "down",
+      "magnitude_pips": 63.3,
+      "rationale": "Post-NFP down leg was -63.3; USD/JPY highly sensitive with sigma -8.03."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 40.8,
+      "rationale": "AUD strength 0.266; risk positive opens path to 40.8 up leg."
+     }
+    ]
+   },
+   {
+    "name": "Energy/risk whipsaw",
+    "probability": 0.25,
+    "thesis": "Oil reserve, OPEC+ delay, and Iran headlines dominate; CHF and JPY crosses whipsaw while EUR underperforms.",
+    "triggers": [
+     "Japan Kihara oil release headlines escalate",
+     "OPEC+ assessment delay headlines",
+     "Trump Iran hard way comments"
+    ],
+    "invalidation": "Brent/USD fails to hold above 424.5 rebound.",
+    "pair_paths": [
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 34.9,
+      "rationale": "Risk-off USD/CHF up leg 34.9; CHF safe-haven."
+     },
+     {
+      "instrument": "CHF/JPY",
+      "direction": "up",
+      "magnitude_pips": 51.3,
+      "rationale": "CHF/JPY up leg 51.3 on energy-risk flows."
+     },
+     {
+      "instrument": "EUR/CHF",
+      "direction": "down",
+      "magnitude_pips": 53.6,
+      "rationale": "EUR weak versus CHF strong; current pair change -53.6."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Oil reserve announcements reverse commodity FX moves",
-    "why_it_matters": "CAD, NOK, SEK and risk sentiment are sensitive to headline-driven supply narratives, as shown by USD/CAD +0.497% and USD/NOK +0.473%.",
-    "watch": "IEA/EU/Japan oil statements, Brent swings"
+    "risk": "ISM Services PMI surprise",
+    "why_it_matters": "Only hard calendar event ahead; can confirm or break the USD recovery from the NFP miss.",
+    "watch": "55.1 forecast vs 55.4 previous"
    },
    {
-    "risk": "Fed repricing after ISM could undo USD recovery",
-    "why_it_matters": "USD selling was rejected after NFP; a soft ISM could trigger a larger unwind of long USD positions.",
-    "watch": "ISM Services, Fed speakers, DXY 102.149"
+    "risk": "Oil reserve release headlines",
+    "why_it_matters": "Top headlines on IEA/diesel can distort commodity and risk-proxy currencies.",
+    "watch": "Japan Kihara, France/IEA, diesel export ban"
    },
    {
-    "risk": "EUR short-covering on any USD weakness",
-    "why_it_matters": "EUR is the weakest major and heavily short; a catalyst could force a sharp squeeze.",
-    "watch": "EUR/USD 1.11823 and EUR strength attempts"
+    "risk": "Second-day USD repositioning after NFP",
+    "why_it_matters": "USD sold 0.097% then recovered 90%; if recovery stalls, EUR/USD can retrace the last leg.",
+    "watch": "EUR/USD close near low 1.11823, USD/JPY close 158.10"
    }
   ],
-  "calendar_ahead_note": "ISM Services PMI at 16:00 (forecast 55.1 vs previous 55.4) is the key event; a miss can challenge the USD recovery while a beat reinforces it, and any oil headlines will continue to drive CAD, NOK, SEK.",
+  "calendar_ahead_note": "The window ahead holds only ISM Services PMI at 16:00 (forecast 55.1 vs previous 55.4); a beat supports the USD recovery, a miss revives the NFP fade.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 19182,
-   "completion_tokens": 7319,
-   "total_tokens": 26501,
+   "completion_tokens": 7172,
+   "total_tokens": 26354,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 19072
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5496
+    "reasoning_tokens": 5308
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 18542
+   "prompt_cache_hit_tokens": 19072,
+   "prompt_cache_miss_tokens": 110
   }
  }
 }
