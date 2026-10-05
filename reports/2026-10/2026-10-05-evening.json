@@ -13,7 +13,7 @@
   "end_local": "2026-10-05T19:00:00+02:00",
   "fwd_start_utc": "2026-10-05T17:00:00+00:00",
   "fwd_end_utc": "2026-10-06T17:00:00+00:00",
-  "generated_utc": "2026-10-05T17:14:40.203765+00:00",
+  "generated_utc": "2026-10-05T23:07:39.003864+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 38,
@@ -1863,176 +1863,151 @@
   ]
  },
  "analysis": {
-  "session_summary": "The window from Friday close through Asia reopen saw AUD as the strongest major (+0.377%) and EUR the weakest (-0.332%), with most legs lacking identifiable catalysts. ISM Services PMI (54.9 vs 55.1) produced a muted USD reaction of -0.026%, inside the noise floor. EUR/USD fell 53.9 pips with 69% of the move from EUR weakness and no clear trigger on any leg. Positioning and flow dominated, leaving DXY up 0.316% and VIX down 2.58%.",
+  "session_summary": "The window was led by a clear anti-EUR and pro-AUD skew: EUR was the weakest major at -0.332% strength while AUD led at +0.377%. USD selling was rejected, dipping to -0.07% then recovering 65%, and the ISM Services release at 54.9 vs 55.1 was muted with only a -0.026% USD basket move. Most major legs lacked a clear catalyst, while AUD/NZD stood out with a +72.3-pip close driven by AUD strength against NZD weakness. The tape shows fading early attempts in JPY, CHF, and NZD, leaving EUR/USD down 53.9 pips on EUR-driven flow.",
   "themes": [
    {
-    "theme": "AUD/NZD divergence without clear catalyst",
-    "evidence": "AUD strength +0.377% vs NZD -0.206%; AUD/NZD gained 72.3 pips and closed at 0.95 of its range.",
+    "theme": "Anti-EUR leadership",
+    "evidence": "EUR was the weakest major at -0.332% strength; EUR/USD move was 69% EUR-driven and closed -53.9 pips.",
+    "currencies": [
+     "EUR",
+     "USD",
+     "GBP"
+    ]
+   },
+   {
+    "theme": "AUD/NZD divergence",
+    "evidence": "AUD rank 1 at +0.377% against NZD -0.206%; AUD/NZD closed +72.3 pips with an 89.0-pip up leg.",
     "currencies": [
      "AUD",
      "NZD"
     ]
    },
    {
-    "theme": "EUR broad weakness",
-    "evidence": "EUR was the weakest major at -0.332% with no own releases; EUR/USD fell 53.9 pips with 69% contribution from EUR.",
-    "currencies": [
-     "EUR"
-    ]
-   },
-   {
-    "theme": "ISM services PMI muted",
-    "evidence": "ISM 54.9 vs 55.1 caused only a -0.026% basket move, inside noise; USD strength was +0.15%.",
+    "theme": "USD selling rejected, ISM muted",
+    "evidence": "USD sold to -0.07% and recovered 65%; ISM Services 54.9 vs 55.1 moved the USD basket only -0.026%.",
     "currencies": [
      "USD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "ISM Services PMI miss was muted, leaving USD strength mostly flow-driven.",
-   "EUR": "No own releases or clear catalyst; weakest major at -0.332%.",
-   "JPY": "No catalyst; strength flat at +0.001% despite 0.23% intraday peak.",
-   "GBP": "No own releases; held its range near flat at +0.011%.",
-   "AUD": "No own releases; strongest major at +0.377%, held its range.",
-   "CAD": "No own releases; selling rejected, recovered 83% from intraday trough.",
-   "CHF": "No catalyst; attempt rejected, gave back 100% from intraday peak.",
-   "NZD": "No catalyst; attempt rejected, gave back 83% from intraday peak."
+   "USD": "ISM Services miss caused only a -0.026% muted basket move; USD later recovered to +0.15%.",
+   "EUR": "Weakest major, no own catalyst; -0.332% strength with no own releases.",
+   "JPY": "No own catalyst; early +0.23% attempt gave back 73% to end flat.",
+   "GBP": "No own catalyst; held its range near +0.011% strength.",
+   "AUD": "Strongest major, no own catalyst; +0.377% strength and held its range.",
+   "CAD": "No own catalyst; selling rejected, recovered 83% from -0.05% to +0.157%.",
+   "CHF": "No own catalyst; +0.17% attempt fully reversed, ended -0.158%.",
+   "NZD": "No own catalyst; +0.08% attempt rejected, ended -0.206%."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD's three legs all lack clear catalysts, and the net -53.9 pip decline was driven mainly by EUR weakness."
+   "EUR/USD": "Three legs—down 93.7, up 54.9, down 16.9 pips—lacked clear catalysts; the pair closed -53.9 pips with EUR contributing 69% of the move."
   },
   "polarity_reads": [
    {
     "event": "ISM Services PMI",
-    "read": "Reaction was muted rather than inverted: the -0.026% basket move was inside the noise floor, implying no clear USD directional repricing from the slight miss."
+    "read": "The 54.9 vs 55.1 miss was too small to shift USD: the basket moved -0.026%, inside the noise floor, implying no crowded short-dollar positioning into the release."
    }
   ],
   "scenarios": [
    {
-    "name": "AUD-led risk-on continues",
-    "probability": 0.4,
-    "thesis": "AUD remains strongest and EUR weakest, while a non-hawkish Ueda leaves carry trades intact; ISM muted suggests no USD repricing.",
+    "name": "EUR weakness extends",
+    "probability": 0.45,
+    "thesis": "EUR is the weakest major at -0.332% with no own catalyst; EUR/USD's -53.9 close was 69% EUR-driven.",
     "triggers": [
-     "Ueda avoids a hawkish signal",
-     "Risk sentiment steady",
-     "Ivey PMI not CAD-negative"
+     "EUR/USD holds below 1.12024",
+     "No hawkish ECB headline to reverse EUR"
     ],
-    "invalidation": "Ueda turns hawkish or risk sentiment deteriorates sharply.",
+    "invalidation": "EUR/USD recovers above 1.12024 and EUR strength turns positive.",
     "pair_paths": [
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 25,
-      "rationale": "AUD had no local catalyst but held strength; continuation likely while risk is steady."
-     },
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 30,
-      "rationale": "EUR remains the weakest major with no release to reverse the flow."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 40,
-      "rationale": "USD and JPY both flat with no clear catalyst; expected to stay rangebound."
+      "magnitude_pips": 53.9,
+      "rationale": "The realized EUR/USD drop of 53.9 pips was EUR-driven; persistence extends the down move."
      }
     ]
    },
    {
-    "name": "BOJ hawkish surprise",
+    "name": "USD bounce broadens",
     "probability": 0.35,
-    "thesis": "BOJ Gov Ueda signals more tightening, sparking JPY buying and unwinding of carry positions.",
+    "thesis": "USD selling was rejected after the -0.07% dip; USD ended +0.15% despite the muted ISM miss.",
     "triggers": [
-     "Ueda mentions sustained inflation",
-     "Ueda hints at rate hikes",
-     "JPY crosses break lower"
+     "USD weakness probe fails again",
+     "VIX holds at/below 17.32128"
     ],
-    "invalidation": "Ueda sounds dovish or risk appetite improves sharply.",
+    "invalidation": "USD falls below the prior -0.07% trough and fails to recover.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 60,
-      "rationale": "JPY strength would dominate with USD muted after ISM."
+      "direction": "up",
+      "magnitude_pips": 63.1,
+      "rationale": "USD/JPY already posted a 63.1-pip up leg during the window; continuation fits USD selling rejection."
      },
      {
-      "instrument": "AUD/JPY",
-      "direction": "down",
-      "magnitude_pips": 50,
-      "rationale": "AUD/JPY is sensitive to carry unwinds and JPY repricing."
-     },
-     {
-      "instrument": "EUR/JPY",
-      "direction": "down",
-      "magnitude_pips": 50,
-      "rationale": "EUR weakness plus JPY strength compounds the downside."
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 35.8,
+      "rationale": "USD/CHF had a 35.8-pip up leg as USD selling was rejected."
      }
     ]
    },
    {
-    "name": "EUR short squeeze",
-    "probability": 0.25,
-    "thesis": "After EUR's -0.332% drop, profit-taking emerges with no fresh negative news, causing a bounce.",
+    "name": "AUD resilience continues",
+    "probability": 0.2,
+    "thesis": "AUD was the strongest major at +0.377% and held its range despite no own catalyst.",
     "triggers": [
-     "Ueda neutral",
-     "Risk sentiment positive",
-     "Ivey PMI weak for CAD"
+     "AUD/NZD holds near 1.24572",
+     "AUD/USD holds above 0.69641"
     ],
-    "invalidation": "EUR breaks to new lows or Ueda turns hawkish.",
+    "invalidation": "AUD/USD loses 0.69641 and AUD/NZD reverses lower.",
     "pair_paths": [
      {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 40,
-      "rationale": "Short covering in EUR after it was weakest with no catalyst."
-     },
-     {
-      "instrument": "EUR/CHF",
-      "direction": "up",
-      "magnitude_pips": 30,
-      "rationale": "EUR rebound against CHF which also had no own catalyst."
-     },
-     {
       "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 20,
-      "rationale": "AUD may fade after leading strength if profit-taking rotates out."
+      "direction": "up",
+      "magnitude_pips": 31.7,
+      "rationale": "AUD/USD produced a 31.7-pip up leg; renewed strength extends the move."
+     },
+     {
+      "instrument": "AUD/NZD",
+      "direction": "up",
+      "magnitude_pips": 89.0,
+      "rationale": "AUD/NZD posted an 89.0-pip up leg; divergence favors continuation."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "BOJ Gov Ueda Speaks (08:35, High)",
-    "why_it_matters": "Can reprice JPY and trigger carry unwinds across AUD/JPY, CHF/JPY, USD/JPY.",
-    "watch": "USD/JPY, AUD/JPY, CHF/JPY"
+    "risk": "BOJ Gov Ueda speaks at 08:35",
+    "why_it_matters": "JPY had a failed +0.23% pop and ended flat; policy wording can spark a sharp move.",
+    "watch": "JPY crosses, especially USD/JPY and EUR/JPY."
    },
    {
-    "risk": "Ivey PMI (16:00, Medium)",
-    "why_it_matters": "CAD has no own releases yet showed selling rejected; a surprise can alter CAD path.",
-    "watch": "USD/CAD, EUR/CAD, AUD/CAD"
+    "risk": "Geopolitical headlines (Trump Iran/diesel, OPEC+ quotas)",
+    "why_it_matters": "Oil and risk moves may spill into commodity FX and safe havens.",
+    "watch": "Brent/USD, USD/CHF, AUD/NZD."
    },
    {
-    "risk": "Thin post-weekend liquidity",
-    "why_it_matters": "Several legs had no clear catalyst, suggesting flow-driven moves vulnerable to reversal.",
-    "watch": "EUR/USD, AUD/NZD"
+    "risk": "ISM Services muted miss not a reliable USD signal",
+    "why_it_matters": "The -0.026% USD basket move may hide underlying dollar demand.",
+    "watch": "DXY and USD recovery legs; next USD data."
    }
   ],
-  "calendar_ahead_note": "BOJ Gov Ueda Speaks at 08:35 is high impact and can reprice JPY; Ivey PMI at 16:00 is medium for CAD. No other high impact releases in the window.",
+  "calendar_ahead_note": "BOJ Gov Ueda Speaks at 08:35 (High) is the key risk; Canadian Ivey PMI at 16:00 (Medium) can move CAD. No other scheduled items in the coming window.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 16469,
-   "completion_tokens": 7227,
-   "total_tokens": 23696,
+   "completion_tokens": 7670,
+   "total_tokens": 24139,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 16384
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5570
+    "reasoning_tokens": 6036
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 15829
+   "prompt_cache_hit_tokens": 16384,
+   "prompt_cache_miss_tokens": 85
   }
  }
 }
