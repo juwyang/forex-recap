@@ -1,0 +1,2329 @@
+{
+ "meta": {
+  "date": "2026-10-05",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "since Friday's 07:00",
+  "sessions": "Friday close -> weekend -> Asia reopen",
+  "weekend_bridged": true,
+  "hours": 72.0,
+  "start_utc": "2026-10-02T05:00:00+00:00",
+  "end_utc": "2026-10-05T05:00:00+00:00",
+  "start_local": "2026-10-02T07:00:00+02:00",
+  "end_local": "2026-10-05T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-05T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-05T17:00:00+00:00",
+  "generated_utc": "2026-10-05T05:14:30.325081+00:00",
+  "partial": false,
+  "coverage_min": 4320,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 0.333,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 94
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "since Friday's 07:00",
+   "sessions": "Friday close -> weekend -> Asia reopen",
+   "from_local": "2026-10-02 07:00 CEST",
+   "to_local": "2026-10-05 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "AUD",
+    "rank": 1,
+    "strength_pct": 0.266,
+    "intraday_peak": 0.324,
+    "intraday_trough": -0.018,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "AUD/USD",
+     "sigma": 5.61
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 2,
+    "strength_pct": 0.213,
+    "intraday_peak": 0.258,
+    "intraday_trough": -0.195,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.20%, recovered 90%",
+    "own_releases": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "impact": "High",
+      "actual": "29K",
+      "forecast": "89K",
+      "polarity": "normal",
+      "note": "miss surprise -> USD weaker 0.097%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "Gold/USD",
+     "sigma": 9.13
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 3,
+    "strength_pct": 0.199,
+    "intraday_peak": 0.199,
+    "intraday_trough": -0.098,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI Flash Estimate y/y +1 more",
+     "instrument": "GBP/USD",
+     "sigma": -1.51
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 4,
+    "strength_pct": 0.161,
+    "intraday_peak": 0.361,
+    "intraday_trough": 0.004,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "USD/CHF",
+     "sigma": -5.76
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 5,
+    "strength_pct": 0.061,
+    "intraday_peak": 0.184,
+    "intraday_trough": -0.059,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "USD/JPY",
+     "sigma": -8.03
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 6,
+    "strength_pct": -0.204,
+    "intraday_peak": 0.034,
+    "intraday_trough": -0.205,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 7,
+    "strength_pct": -0.283,
+    "intraday_peak": -0.011,
+    "intraday_trough": -0.367,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "USD/CAD",
+     "sigma": -5.92
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 8,
+    "strength_pct": -0.413,
+    "intraday_peak": 0.068,
+    "intraday_trough": -0.487,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 87%",
+    "own_releases": [
+     {
+      "title": "CPI Flash Estimate y/y +1 more",
+      "impact": "Medium",
+      "actual": "3.8%",
+      "forecast": "3.7%",
+      "polarity": "muted",
+      "note": "basket moved -0.036%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "CPI Flash Estimate y/y +1 more",
+     "instrument": "EUR/USD",
+     "sigma": -1.2
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.626,
+    "from_EUR": -0.413,
+    "from_USD": -0.213,
+    "base_share": 0.66
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.015,
+    "from_GBP": 0.199,
+    "from_USD": -0.213,
+    "base_share": 0.48
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.053,
+    "from_AUD": 0.266,
+    "from_USD": -0.213,
+    "base_share": 0.56
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.417,
+    "from_NZD": -0.204,
+    "from_USD": -0.213,
+    "base_share": 0.49
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.153,
+    "from_USD": 0.213,
+    "from_JPY": -0.061,
+    "base_share": 0.78
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.052,
+    "from_USD": 0.213,
+    "from_CHF": -0.161,
+    "base_share": 0.57
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.496,
+    "from_USD": 0.213,
+    "from_CAD": 0.283,
+    "base_share": 0.43
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.611,
+    "from_EUR": -0.413,
+    "from_GBP": -0.199,
+    "base_share": 0.68
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.473,
+    "from_EUR": -0.413,
+    "from_JPY": -0.061,
+    "base_share": 0.87
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.574,
+    "from_EUR": -0.413,
+    "from_CHF": -0.161,
+    "base_share": 0.72
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.679,
+    "from_EUR": -0.413,
+    "from_AUD": -0.266,
+    "base_share": 0.61
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.13,
+    "from_EUR": -0.413,
+    "from_CAD": 0.283,
+    "base_share": 0.59
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.209,
+    "from_EUR": -0.413,
+    "from_NZD": 0.204,
+    "base_share": 0.67
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.138,
+    "from_GBP": 0.199,
+    "from_JPY": -0.061,
+    "base_share": 0.77
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.037,
+    "from_GBP": 0.199,
+    "from_CHF": -0.161,
+    "base_share": 0.55
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.068,
+    "from_GBP": 0.199,
+    "from_AUD": -0.266,
+    "base_share": 0.43
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.482,
+    "from_GBP": 0.199,
+    "from_CAD": 0.283,
+    "base_share": 0.41
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.403,
+    "from_GBP": 0.199,
+    "from_NZD": 0.204,
+    "base_share": 0.49
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.205,
+    "from_AUD": 0.266,
+    "from_JPY": -0.061,
+    "base_share": 0.81
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.105,
+    "from_AUD": 0.266,
+    "from_CHF": -0.161,
+    "base_share": 0.62
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.549,
+    "from_AUD": 0.266,
+    "from_CAD": 0.283,
+    "base_share": 0.48
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.47,
+    "from_AUD": 0.266,
+    "from_NZD": 0.204,
+    "base_share": 0.57
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.265,
+    "from_NZD": -0.204,
+    "from_JPY": -0.061,
+    "base_share": 0.77
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.365,
+    "from_NZD": -0.204,
+    "from_CHF": -0.161,
+    "base_share": 0.56
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.079,
+    "from_NZD": -0.204,
+    "from_CAD": 0.283,
+    "base_share": 0.42
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.344,
+    "from_CAD": -0.283,
+    "from_JPY": -0.061,
+    "base_share": 0.82
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.444,
+    "from_CAD": -0.283,
+    "from_CHF": -0.161,
+    "base_share": 0.64
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.101,
+    "from_CHF": 0.161,
+    "from_JPY": -0.061,
+    "base_share": 0.73
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.305
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.244
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.228
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.185
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.07
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.233
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.323
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.47
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11823,
+    "chg_pips": -70.3,
+    "chg_pct": -0.625,
+    "range_pips": 124.0,
+    "close_in_range": 0.17,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32086,
+    "chg_pips": -2.0,
+    "chg_pct": -0.015,
+    "range_pips": 65.5,
+    "close_in_range": 0.28,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69372,
+    "chg_pips": 3.4,
+    "chg_pct": 0.049,
+    "range_pips": 43.5,
+    "close_in_range": 0.12,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.55899,
+    "chg_pips": -23.3,
+    "chg_pct": -0.415,
+    "range_pips": 55.6,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.1,
+    "chg_pips": 23.9,
+    "chg_pct": 0.151,
+    "range_pips": 121.9,
+    "close_in_range": 0.94,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83011,
+    "chg_pips": 4.2,
+    "chg_pct": 0.051,
+    "range_pips": 88.0,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42841,
+    "chg_pips": 70.6,
+    "chg_pct": 0.497,
+    "range_pips": 91.6,
+    "close_in_range": 0.9,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92826,
+    "chg_pips": -53.6,
+    "chg_pct": -0.574,
+    "range_pips": 88.1,
+    "close_in_range": 0.26,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.445,
+    "chg_pips": 19.5,
+    "chg_pct": 0.102,
+    "range_pips": 108.8,
+    "close_in_range": 0.55,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24093,
+    "chg_pips": 58.0,
+    "chg_pct": 0.47,
+    "range_pips": 73.4,
+    "close_in_range": 0.89,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84658,
+    "chg_pips": -51.8,
+    "chg_pct": -0.608,
+    "range_pips": 67.0,
+    "close_in_range": 0.09,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57586,
+    "chg_pips": 6.4,
+    "chg_pct": 0.111,
+    "range_pips": 48.2,
+    "close_in_range": 0.61,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46401,
+    "chg_pips": -17.0,
+    "chg_pct": -0.365,
+    "range_pips": 29.6,
+    "close_in_range": 0.24,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.08345,
+    "chg_pips": 580.7,
+    "chg_pct": 0.579,
+    "range_pips": 1160.3,
+    "close_in_range": 0.82,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.66247,
+    "chg_pips": 455.1,
+    "chg_pct": 0.473,
+    "range_pips": 1118.8,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.72968,
+    "chg_pips": 576.3,
+    "chg_pct": 0.346,
+    "range_pips": 1778.9,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.2253,
+    "chg_pips": -403.1,
+    "chg_pct": -0.221,
+    "range_pips": 2399.9,
+    "close_in_range": 0.49,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 102.149,
+    "chg_pips": 46.3,
+    "chg_pct": 0.455,
+    "range_pips": 87.6,
+    "close_in_range": 0.84,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.72036,
+    "chg_pips": -15.3,
+    "chg_pct": -0.854,
+    "range_pips": 40.4,
+    "close_in_range": 0.46,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "07:00",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -25.8,
+    "ret_pct": -0.229,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI Flash Estimate y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "14:00",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 57.6,
+    "ret_pct": 0.513,
+    "minutes": 150,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 29K vs forecast 89K) -- +8.8 in the first 15 min, 15% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": 8.8,
+      "share_of_leg": 0.15
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -100.3,
+    "ret_pct": -0.889,
+    "minutes": 3735,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "07:00",
+    "to": "11:15",
+    "dir": "down",
+    "pips": -31.3,
+    "ret_pct": -0.198,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item France has proposed plan to release 50M barrels of diesel…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "11:15",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 29.8,
+    "ret_pct": 0.189,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item OPEC+ oil production capacity assessment exercise is dela…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "13:15",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -63.3,
+    "ret_pct": -0.401,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but The US Employment Situation -- September 2026 pushed it along (-31.0 in 15 min, 49% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": -31.0,
+      "share_of_leg": 0.49
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "14:45",
+    "to": "18:30",
+    "dir": "up",
+    "pips": 74.2,
+    "ret_pct": 0.472,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "18:30",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -45.0,
+    "ret_pct": -0.285,
+    "minutes": 3405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Goolsbee Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 63.9,
+    "ret_pct": 0.406,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "07:00",
+    "to": "08:15",
+    "dir": "up",
+    "pips": 9.4,
+    "ret_pct": 0.071,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "08:15",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -18.8,
+    "ret_pct": -0.142,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOE Monthly Decision Maker Panel data - September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "14:00",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 52.9,
+    "ret_pct": 0.401,
+    "minutes": 150,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 29K vs forecast 89K) -- +15.3 in the first 15 min, 29% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": 15.3,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:30",
+    "to": "18:30",
+    "dir": "down",
+    "pips": -27.8,
+    "ret_pct": -0.21,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "18:30",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 24.0,
+    "ret_pct": 0.181,
+    "minutes": 3225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Goolsbee Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "00:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -40.2,
+    "ret_pct": -0.303,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "07:00",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -23.1,
+    "ret_pct": -0.278,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Registered unemployment increased by 23,587 people…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "09:45",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 14.8,
+    "ret_pct": 0.179,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item France plans call with G7 leaders to coordinate on prices…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "10:30",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -26.2,
+    "ret_pct": -0.316,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI Flash Estimate y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "14:30",
+    "to": "18:15",
+    "dir": "up",
+    "pips": 34.9,
+    "ret_pct": 0.422,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Non-Farm Employment Change +2 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "18:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -18.9,
+    "ret_pct": -0.228,
+    "minutes": 3165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Goolsbee Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 24.1,
+    "ret_pct": 0.291,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "07:00",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 40.8,
+    "ret_pct": 0.588,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but The US Employment Situation -- September 2026 pushed it along (+7.6 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": 7.6,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "15:45",
+    "to": "19:15",
+    "dir": "down",
+    "pips": -28.9,
+    "ret_pct": -0.414,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:15",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 13.0,
+    "ret_pct": 0.187,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item DOJ Not Reopening Criminal Probe Into Powell, Blanche Say…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "21:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -21.7,
+    "ret_pct": -0.312,
+    "minutes": 3420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump On Diesel: We're Not Going To Be Doing The Export B…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "07:00",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 29.8,
+    "ret_pct": 0.21,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item France plans call with G7 leaders to coordinate on prices…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:15",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -26.4,
+    "ret_pct": -0.185,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but The US Employment Situation -- September 2026 pushed it along (-6.3 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": -6.3,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "14:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 65.8,
+    "ret_pct": 0.463,
+    "minutes": 3840,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "07:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 6.2,
+    "ret_pct": 0.11,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Registered unemployment increased by 23,587 people…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "10:00",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -12.5,
+    "ret_pct": -0.222,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italian retail trade - August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "12:45",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 21.5,
+    "ret_pct": 0.383,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (+4.5 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": 4.5,
+      "share_of_leg": 0.21
+     },
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": 4.5,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "14:45",
+    "to": "19:15",
+    "dir": "down",
+    "pips": -21.2,
+    "ret_pct": -0.377,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:15",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 12.4,
+    "ret_pct": 0.221,
+    "minutes": 3180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Goolsbee: Inflation going the wrong way and stalled…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -29.5,
+    "ret_pct": -0.525,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "07:00",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -17.0,
+    "ret_pct": -0.182,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "08:00",
+    "to": "09:00",
+    "dir": "up",
+    "pips": 22.2,
+    "ret_pct": 0.238,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "09:00",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -59.0,
+    "ret_pct": -0.632,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI Flash Estimate y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:00",
+    "to": "16:45",
+    "dir": "up",
+    "pips": 64.6,
+    "ret_pct": 0.696,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US Employment Situation -- September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "16:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -61.4,
+    "ret_pct": -0.657,
+    "minutes": 3720,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "07:00",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 51.0,
+    "ret_pct": 0.268,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Registered unemployment increased by 23,587 people…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "13:45",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -71.8,
+    "ret_pct": -0.376,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (-24.9 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": -24.9,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "14:45",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 47.8,
+    "ret_pct": 0.252,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Welcome remarks for the Fifth Annual Workshop on t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "21:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -47.0,
+    "ret_pct": -0.247,
+    "minutes": 2985,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Nagel: More dynamism for the economy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:00",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 51.3,
+    "ret_pct": 0.27,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Iran can have it the hard way or the easy way moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "01:30",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -55.3,
+    "ret_pct": -0.29,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ANZ Commodity Price Index, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 45.5,
+    "ret_pct": 0.239,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "07:00",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 45.1,
+    "ret_pct": 0.365,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US Employment Situation -- September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "15:45",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -29.1,
+    "ret_pct": -0.235,
+    "minutes": 3360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Welcome remarks for the Fifth Annual Workshop on t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 41.1,
+    "ret_pct": 0.332,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "07:00",
+    "to": "09:00",
+    "dir": "up",
+    "pips": 7.8,
+    "ret_pct": 0.092,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "09:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -59.3,
+    "ret_pct": -0.696,
+    "minutes": 4185,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI Flash Estimate y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "07:00",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -10.2,
+    "ret_pct": -0.177,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "08:00",
+    "to": "09:00",
+    "dir": "up",
+    "pips": 12.6,
+    "ret_pct": 0.219,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "09:00",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -17.2,
+    "ret_pct": -0.299,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item France has proposed plan to release 50M barrels of diesel…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "14:00",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 37.1,
+    "ret_pct": 0.647,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US Employment Situation -- September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "15:45",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -21.1,
+    "ret_pct": -0.365,
+    "minutes": 3315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Welcome remarks for the Fifth Annual Workshop on t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 6.0,
+    "ret_pct": 0.104,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Inflation Gauge m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "07:00",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -17.8,
+    "ret_pct": -0.382,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italian retail trade - August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "14:00",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 21.4,
+    "ret_pct": 0.461,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US Employment Situation -- September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "15:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -18.5,
+    "ret_pct": -0.397,
+    "minutes": 3360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Welcome remarks for the Fifth Annual Workshop on t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:15",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 15.2,
+    "ret_pct": 0.327,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "00:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -16.4,
+    "ret_pct": -0.352,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "07:00",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 355.2,
+    "ret_pct": 0.354,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI Flash Estimate y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "14:00",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -585.4,
+    "ret_pct": -0.582,
+    "minutes": 105,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 29K vs forecast 89K) -- -119.6 in the first 15 min, 20% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": -119.6,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "15:45",
+    "to": "18:30",
+    "dir": "up",
+    "pips": 409.6,
+    "ret_pct": 0.41,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "18:30",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -410.0,
+    "ret_pct": -0.408,
+    "minutes": 3150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Goolsbee Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 814.4,
+    "ret_pct": 0.814,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "07:00",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 346.7,
+    "ret_pct": 0.361,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI Flash Estimate y/y +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:00",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -556.8,
+    "ret_pct": -0.577,
+    "minutes": 105,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 29K vs forecast 89K) -- -60.6 in the first 15 min, 11% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "15:45",
+    "to": "18:15",
+    "dir": "up",
+    "pips": 353.0,
+    "ret_pct": 0.368,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "18:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -606.6,
+    "ret_pct": -0.63,
+    "minutes": 3180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Goolsbee Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 921.4,
+    "ret_pct": 0.963,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "07:00",
+    "to": "10:00",
+    "dir": "down",
+    "pips": -352.7,
+    "ret_pct": -0.212,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Registered unemployment increased by 23,587 people…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "10:00",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 912.8,
+    "ret_pct": 0.549,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italian retail trade - August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "13:45",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -1381.8,
+    "ret_pct": -0.826,
+    "minutes": 120,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 29K vs forecast 89K) -- -276.2 in the first 15 min, 20% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": -276.2,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "15:45",
+    "to": "19:15",
+    "dir": "up",
+    "pips": 1040.4,
+    "ret_pct": 0.627,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -597.7,
+    "ret_pct": -0.358,
+    "minutes": 3105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Goolsbee: Inflation going the wrong way and stalled…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 979.1,
+    "ret_pct": 0.589,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "07:00",
+    "to": "10:00",
+    "dir": "down",
+    "pips": -517.8,
+    "ret_pct": -0.284,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Registered unemployment increased by 23,587 people…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "10:00",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 1164.8,
+    "ret_pct": 0.64,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italian retail trade - August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "14:00",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -2180.8,
+    "ret_pct": -1.19,
+    "minutes": 105,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 29K vs forecast 89K) -- -516.8 in the first 15 min, 24% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": -516.8,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "15:45",
+    "to": "19:15",
+    "dir": "up",
+    "pips": 1041.7,
+    "ret_pct": 0.575,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:15",
+    "to": "00:30",
+    "dir": "down",
+    "pips": -889.8,
+    "ret_pct": -0.488,
+    "minutes": 3195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Goolsbee: Inflation going the wrong way and stalled…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "00:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 993.2,
+    "ret_pct": 0.548,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Kihara: Japan is already releasing oil reserves a… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "07:00",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -319.0,
+    "ret_pct": -2.883,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Non-Farm Employment Change +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "16:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 424.5,
+    "ret_pct": 3.951,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "21:45",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -314.8,
+    "ret_pct": -2.818,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump On Diesel: We're Not Going To Be Doing The Export B…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "22:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 275.2,
+    "ret_pct": 2.535,
+    "minutes": 3360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Daylight Saving Time Shift, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "07:00",
+    "to": "12:00",
+    "dir": "down",
+    "pips": -163.0,
+    "ret_pct": -0.389,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italian retail trade - August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "12:00",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 461.6,
+    "ret_pct": 1.107,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (+242.4 in 15 min, 53% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": 242.4,
+      "share_of_leg": 0.53
+     },
+     {
+      "title": "The US Employment Situation -- September 2026",
+      "ccy": null,
+      "pips": 242.4,
+      "share_of_leg": 0.53
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "14:45",
+    "to": "17:45",
+    "dir": "down",
+    "pips": -903.7,
+    "ret_pct": -2.143,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Factory Orders m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "17:45",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 328.7,
+    "ret_pct": 0.797,
+    "minutes": 3495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item DOJ Not Reopening Criminal Probe Into Powell, Blanche Say…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -288.6,
+    "ret_pct": -0.694,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Non-Farm Employment Change +2 more",
+    "actual": "29K",
+    "forecast": "89K",
+    "previous": "162K",
+    "polarity": "normal",
+    "polarity_note": "miss surprise -> USD weaker 0.097%",
+    "own_ccy_impulse_pct": -0.097,
+    "top_movers": [
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.866,
+      "pips": 362.3,
+      "unit": "pips ($0.10)",
+      "sigma": 9.13
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": -0.292,
+      "pips": -46.0,
+      "unit": "pips",
+      "sigma": -8.03
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": -0.328,
+      "pips": -548.4,
+      "unit": "pips",
+      "sigma": -6.06
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": -0.103,
+      "pips": -14.7,
+      "unit": "pips",
+      "sigma": -5.92
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.243,
+      "pips": -20.1,
+      "unit": "pips",
+      "sigma": -5.76
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.187,
+      "pips": 13.0,
+      "unit": "pips",
+      "sigma": 5.61
+     }
+    ]
+   },
+   {
+    "time": "11:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "CPI Flash Estimate y/y +1 more",
+    "actual": "3.8%",
+    "forecast": "3.7%",
+    "previous": "3.3%",
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.036%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.036,
+    "top_movers": [
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.076,
+      "pips": 6.3,
+      "unit": "pips",
+      "sigma": 1.8
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.083,
+      "pips": 138.7,
+      "unit": "pips",
+      "sigma": 1.54
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.04,
+      "pips": -5.3,
+      "unit": "pips",
+      "sigma": -1.51
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.071,
+      "pips": 71.6,
+      "unit": "pips",
+      "sigma": 1.34
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.039,
+      "pips": -4.4,
+      "unit": "pips",
+      "sigma": -1.2
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.05,
+      "pips": 2.9,
+      "unit": "pips",
+      "sigma": 1.2
+     }
+    ]
+   }
+  ],
+  "headline_count": 23,
+  "top_headlines": [
+   {
+    "time": "14:30",
+    "impact": "high",
+    "title": "The US Employment Situation -- September 2026"
+   },
+   {
+    "time": "03:15",
+    "impact": "high",
+    "title": "Japan's Kihara: Japan is already releasing oil reserves and has no plans for a further release"
+   },
+   {
+    "time": "09:00",
+    "impact": "low",
+    "title": "Spain: Registered unemployment increased by 23,587 people in September"
+   },
+   {
+    "time": "09:00",
+    "impact": "low",
+    "title": "EU Commissioner Jorgensen: We are discussing with all members of the IEA, not only with the US, when it is time to release diesel"
+   },
+   {
+    "time": "09:45",
+    "impact": "low",
+    "title": "France has proposed plan to release 50M barrels of diesel from Europe and 50m barrels of crude oil across IEA members - Source"
+   },
+   {
+    "time": "10:00",
+    "impact": "low",
+    "title": "France plans call with G7 leaders to coordinate on prices, supply: Elysee Palace source"
+   },
+   {
+    "time": "10:15",
+    "impact": "low",
+    "title": "Italian retail trade - August 2026"
+   },
+   {
+    "time": "10:30",
+    "impact": "low",
+    "title": "BOE Monthly Decision Maker Panel data - September 2026"
+   },
+   {
+    "time": "11:00",
+    "impact": "low",
+    "title": "Euro area annual inflation up to 3.8%"
+   },
+   {
+    "time": "12:30",
+    "impact": "low",
+    "title": "The EU is ready for collective oil market action if the IEA sees it as necessary"
+   },
+   {
+    "time": "13:00",
+    "impact": "low",
+    "title": "OPEC+ oil production capacity assessment exercise is delayed because not all countries have submitted data - Sources"
+   },
+   {
+    "time": "16:00",
+    "impact": "low",
+    "title": "Logan: Welcome remarks for the Fifth Annual Workshop on the Macroeconomic Implications of Migration"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "ISM Services PMI",
+    "forecast": "55.1",
+    "previous": "55.4"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Friday's US employment report printed 29K vs 89K forecast and initially weakened the dollar, but USD selling was rejected: it fell to -0.20% then recovered 90% to rank second at +0.213%. EUR was the weakest major at -0.413%, giving back 87% of an early +0.07% attempt, while AUD led at +0.266% and CAD lagged at -0.283%. Oil-reserve headlines drove risk and commodity FX, with USD/SEK and USD/NOK closing up 0.579% and 0.473% respectively.",
+  "themes": [
+   {
+    "theme": "Post-NFP dollar dip faded fast, leaving USD resilient despite soft jobs print.",
+    "evidence": "USD strength_pct 0.213, shape note sold to -0.20% and recovered 90%, DXY +0.455%.",
+    "currencies": [
+     "USD"
+    ]
+   },
+   {
+    "theme": "Euro is the clear laggard after muted CPI and failed upside attempt.",
+    "evidence": "EUR strength_pct -0.413, attempt rejected gave back 87% of early gains, CPI basket moved -0.036%.",
+    "currencies": [
+     "EUR"
+    ]
+   },
+   {
+    "theme": "Commodity/risk FX divergence: AUD strong, NZD/CAD weak, oil headlines add volatility.",
+    "evidence": "AUD strength 0.266 vs CAD -0.283 and NZD -0.204, AUD/NZD +0.47%, USD/CAD +0.497%, USD/SEK +0.579%, USD/NOK +0.473%.",
+    "currencies": [
+     "AUD",
+     "NZD",
+     "CAD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "NFP miss briefly weakened it, then selling was rejected and it recovered 90% of losses.",
+   "EUR": "CPI beat was muted, basket -0.036%; early +0.07% attempt gave back 87%.",
+   "JPY": "No catalyst; held a tight range with modest +0.061% strength.",
+   "GBP": "No catalyst; closed at its best, third-strongest at +0.199%.",
+   "AUD": "No own catalyst; strongest major at +0.266%, holding gains as risk appetite favored it.",
+   "CAD": "No catalyst; fell 0.283% against majors, pressured by oil and risk flows.",
+   "CHF": "No catalyst; safe-haven bid kept it firm at +0.161%.",
+   "NZD": "No catalyst; soft at -0.204%, lagging AUD despite similar risk profile."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD drifted down -25.8 pips into NFP, popped +57.6 on the miss, then faded -100.3 pips into the close, leaving euro the weakest major."
+  },
+  "polarity_reads": [
+   {
+    "event": "Non-Farm Employment Change +2 more",
+    "read": "Normal polarity (USD weaker on miss) but only -0.097% own-currency impulse and 90% recovery suggests market was not positioned for a soft print, limiting sustained USD downside."
+   },
+   {
+    "event": "CPI Flash Estimate y/y +1 more",
+    "read": "Muted polarity with basket -0.036% inside noise floor shows EUR had no bid; euro traders ignored the inflation beat, consistent with weak positioning."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Soft ISM reignites dollar weakness but EUR underperforms",
+    "probability": 0.35,
+    "thesis": "ISM below 55.1 revives the NFP story, pressuring USD, but euro's own negative momentum caps EUR/USD upside while GBP/AUD lead.",
+    "triggers": [
+     "ISM Services PMI prints below 55.1",
+     "Fed speakers lean dovish",
+     "Oil headlines fade"
+    ],
+    "invalidation": "ISM prints above 55.4 or USD recovery extends beyond DXY 102.149.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 57.6,
+      "rationale": "Short covering after EUR laggard, but euro weakness limits move to the size of the prior NFP pop."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 46.0,
+      "rationale": "The NFP impulse showed USD/JPY falling 46.0 pips in 15 minutes, likely to repeat on soft ISM."
+     }
+    ]
+   },
+   {
+    "name": "Strong ISM extends USD recovery",
+    "probability": 0.35,
+    "thesis": "ISM above 55.4 confirms resilient US economy, pushing USD higher and resuming EUR weakness and CAD softness.",
+    "triggers": [
+     "ISM prints above 55.4",
+     "US yields rise",
+     "Oil headlines keep CAD heavy"
+    ],
+    "invalidation": "ISM below 55.1 or EUR/USD breaks above 1.11823.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 70.3,
+      "rationale": "EUR/USD closed down 70.3 pips on the day; a strong ISM extends the downtrend by a similar amount."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 70.6,
+      "rationale": "USD/CAD already gained 70.6 pips; oil and CAD weakness can repeat that move."
+     }
+    ]
+   },
+   {
+    "name": "ISM in line, consolidation",
+    "probability": 0.3,
+    "thesis": "ISM prints near 55.1 with no fresh catalyst; markets consolidate post-NFP recovery within recent ranges.",
+    "triggers": [
+     "ISM prints close to 55.1",
+     "No new oil headline",
+     "Equities stable"
+    ],
+    "invalidation": "A break of EUR/USD 124.0-pip range or USD/JPY 121.9-pip range.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 124.0,
+      "rationale": "EUR/USD range was 124.0 pips; without drivers price stays inside it."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 121.9,
+      "rationale": "USD/JPY range was 121.9 pips; consolidation within that band is likely."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Oil reserve announcements reverse commodity FX moves",
+    "why_it_matters": "CAD, NOK, SEK and risk sentiment are sensitive to headline-driven supply narratives, as shown by USD/CAD +0.497% and USD/NOK +0.473%.",
+    "watch": "IEA/EU/Japan oil statements, Brent swings"
+   },
+   {
+    "risk": "Fed repricing after ISM could undo USD recovery",
+    "why_it_matters": "USD selling was rejected after NFP; a soft ISM could trigger a larger unwind of long USD positions.",
+    "watch": "ISM Services, Fed speakers, DXY 102.149"
+   },
+   {
+    "risk": "EUR short-covering on any USD weakness",
+    "why_it_matters": "EUR is the weakest major and heavily short; a catalyst could force a sharp squeeze.",
+    "watch": "EUR/USD 1.11823 and EUR strength attempts"
+   }
+  ],
+  "calendar_ahead_note": "ISM Services PMI at 16:00 (forecast 55.1 vs previous 55.4) is the key event; a miss can challenge the USD recovery while a beat reinforces it, and any oil headlines will continue to drive CAD, NOK, SEK.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 19182,
+   "completion_tokens": 7319,
+   "total_tokens": 26501,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5496
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 18542
+  }
+ }
+}
