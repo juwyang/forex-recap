@@ -1,0 +1,2079 @@
+{
+ "meta": {
+  "date": "2026-10-06",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-05T17:00:00+00:00",
+  "end_utc": "2026-10-06T17:00:00+00:00",
+  "start_local": "2026-10-05T19:00:00+02:00",
+  "end_local": "2026-10-06T19:00:00+02:00",
+  "fwd_start_utc": "2026-10-06T17:00:00+00:00",
+  "fwd_end_utc": "2026-10-07T17:00:00+00:00",
+  "generated_utc": "2026-10-06T21:35:26.271952+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 28
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-05 19:00 CEST",
+   "to_local": "2026-10-06 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "NZD",
+    "rank": 1,
+    "strength_pct": 0.31,
+    "intraday_peak": 0.337,
+    "intraday_trough": -0.04,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOJ Gov Ueda Speaks",
+     "instrument": "AUD/NZD",
+     "sigma": -1.56
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 2,
+    "strength_pct": 0.24,
+    "intraday_peak": 0.374,
+    "intraday_trough": 0.0,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOJ Gov Ueda Speaks",
+     "instrument": "EUR/USD",
+     "sigma": 1.43
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 3,
+    "strength_pct": 0.193,
+    "intraday_peak": 0.221,
+    "intraday_trough": -0.064,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.06%, recovered 90%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Ivey PMI",
+     "instrument": "GBP/USD",
+     "sigma": 2.19
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 4,
+    "strength_pct": -0.001,
+    "intraday_peak": 0.085,
+    "intraday_trough": -0.048,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.08%, gave back 65%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Ivey PMI",
+     "instrument": "AUD/USD",
+     "sigma": 2.09
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 5,
+    "strength_pct": -0.012,
+    "intraday_peak": 0.016,
+    "intraday_trough": -0.222,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.22%, recovered 88%",
+    "own_releases": [
+     {
+      "title": "Ivey PMI",
+      "impact": "Medium",
+      "actual": "58.2",
+      "forecast": "65.2",
+      "polarity": "muted",
+      "note": "basket moved 0.023%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Ivey PMI",
+     "instrument": "USD/CAD",
+     "sigma": -2.94
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 6,
+    "strength_pct": -0.188,
+    "intraday_peak": 0.074,
+    "intraday_trough": -0.245,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 82%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOJ Gov Ueda Speaks",
+     "instrument": "NZD/CHF",
+     "sigma": 1.52
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 7,
+    "strength_pct": -0.25,
+    "intraday_peak": 0.042,
+    "intraday_trough": -0.284,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Ivey PMI",
+     "instrument": "USD/CAD",
+     "sigma": -2.94
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.291,
+    "intraday_peak": 0.071,
+    "intraday_trough": -0.309,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 95%",
+    "own_releases": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "JPY stronger by 0.066%, but no forecast to score the surprise against"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Ivey PMI",
+     "instrument": "USD/JPY",
+     "sigma": -2.15
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.489,
+    "from_EUR": 0.24,
+    "from_USD": 0.25,
+    "base_share": 0.49
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.443,
+    "from_GBP": 0.193,
+    "from_USD": 0.25,
+    "base_share": 0.44
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.248,
+    "from_AUD": -0.001,
+    "from_USD": 0.25,
+    "base_share": 0.01
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.56,
+    "from_NZD": 0.31,
+    "from_USD": 0.25,
+    "base_share": 0.55
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.041,
+    "from_USD": -0.25,
+    "from_JPY": 0.291,
+    "base_share": 0.46
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.062,
+    "from_USD": -0.25,
+    "from_CHF": 0.188,
+    "base_share": 0.57
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.238,
+    "from_USD": -0.25,
+    "from_CAD": 0.012,
+    "base_share": 0.95
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.047,
+    "from_EUR": 0.24,
+    "from_GBP": -0.193,
+    "base_share": 0.55
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.531,
+    "from_EUR": 0.24,
+    "from_JPY": 0.291,
+    "base_share": 0.45
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.428,
+    "from_EUR": 0.24,
+    "from_CHF": 0.188,
+    "base_share": 0.56
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.241,
+    "from_EUR": 0.24,
+    "from_AUD": 0.001,
+    "base_share": 0.99
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.251,
+    "from_EUR": 0.24,
+    "from_CAD": 0.012,
+    "base_share": 0.95
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.071,
+    "from_EUR": 0.24,
+    "from_NZD": -0.31,
+    "base_share": 0.44
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.484,
+    "from_GBP": 0.193,
+    "from_JPY": 0.291,
+    "base_share": 0.4
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.381,
+    "from_GBP": 0.193,
+    "from_CHF": 0.188,
+    "base_share": 0.51
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.194,
+    "from_GBP": 0.193,
+    "from_AUD": 0.001,
+    "base_share": 0.99
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.205,
+    "from_GBP": 0.193,
+    "from_CAD": 0.012,
+    "base_share": 0.94
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.118,
+    "from_GBP": 0.193,
+    "from_NZD": -0.31,
+    "base_share": 0.38
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.29,
+    "from_AUD": -0.001,
+    "from_JPY": 0.291,
+    "base_share": 0.01
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.187,
+    "from_AUD": -0.001,
+    "from_CHF": 0.188,
+    "base_share": 0.01
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.01,
+    "from_AUD": -0.001,
+    "from_CAD": 0.012,
+    "base_share": 0.11
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.312,
+    "from_AUD": -0.001,
+    "from_NZD": -0.31,
+    "base_share": 0.0
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.602,
+    "from_NZD": 0.31,
+    "from_JPY": 0.291,
+    "base_share": 0.52
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.499,
+    "from_NZD": 0.31,
+    "from_CHF": 0.188,
+    "base_share": 0.62
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.322,
+    "from_NZD": 0.31,
+    "from_CAD": 0.012,
+    "base_share": 0.96
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.279,
+    "from_CAD": -0.012,
+    "from_JPY": 0.291,
+    "base_share": 0.04
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.176,
+    "from_CAD": -0.012,
+    "from_CHF": 0.188,
+    "base_share": 0.06
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.103,
+    "from_CHF": -0.188,
+    "from_JPY": 0.291,
+    "base_share": 0.39
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.356
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.274
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.221
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.001
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.013
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.215
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.285
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.332
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.12573,
+    "chg_pips": 54.9,
+    "chg_pct": 0.49,
+    "range_pips": 79.1,
+    "close_in_range": 0.76,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32721,
+    "chg_pips": 58.6,
+    "chg_pct": 0.443,
+    "range_pips": 84.0,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69815,
+    "chg_pips": 17.4,
+    "chg_pct": 0.25,
+    "range_pips": 28.3,
+    "close_in_range": 0.71,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56214,
+    "chg_pips": 31.4,
+    "chg_pct": 0.562,
+    "range_pips": 43.1,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.157,
+    "chg_pips": 6.6,
+    "chg_pct": 0.042,
+    "range_pips": 47.5,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83138,
+    "chg_pips": -5.1,
+    "chg_pct": -0.061,
+    "range_pips": 28.1,
+    "close_in_range": 0.56,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42217,
+    "chg_pips": -33.9,
+    "chg_pct": -0.238,
+    "range_pips": 71.2,
+    "close_in_range": 0.11,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.93591,
+    "chg_pips": 39.9,
+    "chg_pct": 0.428,
+    "range_pips": 50.4,
+    "close_in_range": 0.87,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.224,
+    "chg_pips": 19.7,
+    "chg_pct": 0.104,
+    "range_pips": 67.4,
+    "close_in_range": 0.6,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24183,
+    "chg_pips": -38.9,
+    "chg_pct": -0.312,
+    "range_pips": 56.1,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84817,
+    "chg_pips": 4.0,
+    "chg_pct": 0.047,
+    "range_pips": 17.0,
+    "close_in_range": 0.34,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58043,
+    "chg_pips": 10.9,
+    "chg_pct": 0.188,
+    "range_pips": 25.8,
+    "close_in_range": 0.76,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46735,
+    "chg_pips": 23.2,
+    "chg_pct": 0.499,
+    "range_pips": 30.3,
+    "close_in_range": 0.91,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.99238,
+    "chg_pips": -641.2,
+    "chg_pct": -0.638,
+    "range_pips": 960.5,
+    "close_in_range": 0.29,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.56057,
+    "chg_pips": -392.2,
+    "chg_pct": -0.409,
+    "range_pips": 680.4,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.5351,
+    "chg_pips": -1349.8,
+    "chg_pct": -0.81,
+    "range_pips": 2034.8,
+    "close_in_range": 0.29,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 17.97753,
+    "chg_pips": -1516.6,
+    "chg_pct": -0.837,
+    "range_pips": 2266.4,
+    "close_in_range": 0.3,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.61,
+    "chg_pips": -38.6,
+    "chg_pct": -0.378,
+    "range_pips": 55.1,
+    "close_in_range": 0.21,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.04903,
+    "chg_pips": -27.2,
+    "chg_pct": -1.572,
+    "range_pips": 51.1,
+    "close_in_range": 0.13,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 31.0,
+    "ret_pct": 0.277,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "03:15",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -26.3,
+    "ret_pct": -0.234,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "08:00",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 71.3,
+    "ret_pct": 0.636,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "14:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -17.2,
+    "ret_pct": -0.153,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -34.2,
+    "ret_pct": -0.216,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:15",
+    "to": "11:15",
+    "dir": "up",
+    "pips": 42.3,
+    "ret_pct": 0.268,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "11:15",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -27.8,
+    "ret_pct": -0.176,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US and China are discussing reciprocal nuclear site v…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "13:30",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 25.8,
+    "ret_pct": 0.163,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "14:15",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -19.4,
+    "ret_pct": -0.123,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trade Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "15:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 14.8,
+    "ret_pct": 0.094,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 23.7,
+    "ret_pct": 0.179,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:15",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -28.2,
+    "ret_pct": -0.213,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "08:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 70.8,
+    "ret_pct": 0.536,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but China Seeks Talks With EU To Address Concerns pushed it along (+11.9 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "China Seeks Talks With EU To Address Concerns",
+      "ccy": null,
+      "pips": 11.9,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -17.2,
+    "ret_pct": -0.207,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:45",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 12.1,
+    "ret_pct": 0.146,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: If Republicans win the House and Senate, I'm going…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:15",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -14.0,
+    "ret_pct": -0.168,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ANZ Job Advertisements m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "03:15",
+    "to": "09:15",
+    "dir": "up",
+    "pips": 21.9,
+    "ret_pct": 0.264,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BoJ's Governor Ueda: We're to keep raising rates in respons… pushed it along (+3.6 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BoJ's Governor Ueda: We're to keep raising rates in response to economy and inflation",
+      "ccy": null,
+      "pips": 3.6,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "09:15",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -24.6,
+    "ret_pct": -0.296,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Slowest fall in UK construction output since January, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "13:30",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 22.9,
+    "ret_pct": 0.276,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "16:15",
+    "to": "17:30",
+    "dir": "down",
+    "pips": -18.4,
+    "ret_pct": -0.221,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Bowman Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "17:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 9.5,
+    "ret_pct": 0.114,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Daly concerned AI, tariffs, energy costs may last l…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "05:15",
+    "dir": "up",
+    "pips": 13.8,
+    "ret_pct": 0.198,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "05:15",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -13.8,
+    "ret_pct": -0.198,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The reason for BD's announcement is my strong medi…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "08:30",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 16.0,
+    "ret_pct": 0.23,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:30",
+    "to": "12:00",
+    "dir": "down",
+    "pips": -9.8,
+    "ret_pct": -0.14,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Rehn: Energy price pressure may persist for some ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "12:00",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 19.9,
+    "ret_pct": 0.286,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Seeks Talks With EU To Address Concerns, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -6.7,
+    "ret_pct": -0.096,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -9.6,
+    "ret_pct": -0.067,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:45",
+    "to": "09:15",
+    "dir": "up",
+    "pips": 33.2,
+    "ret_pct": 0.233,
+    "minutes": 570,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: If Republicans win the House and Senate, I'm going…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "09:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -60.3,
+    "ret_pct": -0.422,
+    "minutes": 570,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but China Seeks Talks With EU To Address Concerns pushed it along (-11.0 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "China Seeks Talks With EU To Address Concerns",
+      "ccy": null,
+      "pips": -11.0,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 19.7,
+    "ret_pct": 0.353,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "03:15",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -16.4,
+    "ret_pct": -0.293,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "08:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 32.3,
+    "ret_pct": 0.578,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -2.6,
+    "ret_pct": -0.028,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "21:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 42.6,
+    "ret_pct": 0.457,
+    "minutes": 1305,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: No Rush To Reach A Trade Deal With Canada, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 16.4,
+    "ret_pct": 0.086,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "20:45",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -32.4,
+    "ret_pct": -0.17,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: No Rush To Reach A Trade Deal With Canada, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:30",
+    "to": "07:15",
+    "dir": "up",
+    "pips": 34.6,
+    "ret_pct": 0.182,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: If Republicans win the House and Senate, I'm going…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "07:15",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -21.6,
+    "ret_pct": -0.114,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germany: New orders in manufacturing in August 2026: -10.…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "08:00",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 47.9,
+    "ret_pct": 0.252,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "14:00",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -53.7,
+    "ret_pct": -0.282,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US ADP National Employment Report Preliminary Estimate fo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 28.6,
+    "ret_pct": 0.151,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Bowman: Modernizing the Regulatory and Supervisory Landsc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -34.1,
+    "ret_pct": -0.274,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:45",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 28.5,
+    "ret_pct": 0.229,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: If Republicans win the House and Senate, I'm going…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "08:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -38.8,
+    "ret_pct": -0.311,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: We're to keep raising rates in respo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 8.8,
+    "ret_pct": 0.104,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "06:30",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.084,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Gov Ueda Speaks pushed it along (-1.9 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "ccy": "JPY",
+      "pips": -1.9,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "09:00",
+    "to": "11:30",
+    "dir": "up",
+    "pips": 11.2,
+    "ret_pct": 0.132,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: When we look forward to how much fiscal polic…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "11:30",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -15.5,
+    "ret_pct": -0.183,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Seeks Talks With EU To Address Concerns, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 4.6,
+    "ret_pct": 0.054,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Sato agrees with policy of adjusting rates in stage…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -7.4,
+    "ret_pct": -0.128,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:45",
+    "to": "05:15",
+    "dir": "up",
+    "pips": 13.0,
+    "ret_pct": 0.225,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: If Republicans win the House and Senate, I'm going…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "05:15",
+    "to": "08:15",
+    "dir": "down",
+    "pips": -6.9,
+    "ret_pct": -0.119,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The reason for BD's announcement is my strong medi…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "08:15",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 13.6,
+    "ret_pct": 0.235,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Gov Ueda Speaks pushed it along (+2.5 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "ccy": "JPY",
+      "pips": 2.5,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "10:30",
+    "to": "12:00",
+    "dir": "down",
+    "pips": -13.3,
+    "ret_pct": -0.229,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Rehn: Energy price pressure may persist for some ti…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "12:00",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 16.0,
+    "ret_pct": 0.276,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US and China are discussing reciprocal nuclear site v… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -4.4,
+    "ret_pct": -0.076,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Bowman: Modernizing the Regulatory and Supervisory Landsc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "down",
+    "pips": -1.6,
+    "ret_pct": -0.034,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "20:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 26.8,
+    "ret_pct": 0.577,
+    "minutes": 1365,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Bessent: Operation Economic Outcast is delivering results, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -358.3,
+    "ret_pct": -0.356,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:30",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 312.6,
+    "ret_pct": 0.312,
+    "minutes": 510,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "08:00",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -872.8,
+    "ret_pct": -0.868,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "14:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 242.3,
+    "ret_pct": 0.243,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -325.0,
+    "ret_pct": -0.338,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "08:30",
+    "dir": "up",
+    "pips": 469.5,
+    "ret_pct": 0.491,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "08:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -563.4,
+    "ret_pct": -0.586,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -1978.6,
+    "ret_pct": -1.187,
+    "minutes": 1140,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "14:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 572.7,
+    "ret_pct": 0.348,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -2060.4,
+    "ret_pct": -1.137,
+    "minutes": 1200,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 578.5,
+    "ret_pct": 0.323,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "00:00",
+    "dir": "down",
+    "pips": -141.0,
+    "ret_pct": -1.279,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "00:00",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 140.6,
+    "ret_pct": 1.292,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "06:30",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -353.5,
+    "ret_pct": -3.207,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: We're to keep raising rates in respo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 272.6,
+    "ret_pct": 2.555,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 222.2,
+    "ret_pct": 0.538,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Central Bank Head Warns State At Risk Of Being Str…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "02:45",
+    "to": "07:45",
+    "dir": "down",
+    "pips": -307.9,
+    "ret_pct": -0.742,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finmin Katayama: Government has sufficient measures…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "07:45",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 583.8,
+    "ret_pct": 1.417,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Gov Ueda Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "14:00",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -324.0,
+    "ret_pct": -0.776,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 108.5,
+    "ret_pct": 0.262,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Bowman Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "08:35",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Gov Ueda Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "unscored",
+    "polarity_note": "JPY stronger by 0.066%, but no forecast to score the surprise against",
+    "own_ccy_impulse_pct": 0.066,
+    "top_movers": [
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.031,
+      "pips": -3.8,
+      "unit": "pips",
+      "sigma": -1.56
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.03,
+      "pips": 1.4,
+      "unit": "pips",
+      "sigma": 1.52
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": 0.029,
+      "pips": 3.8,
+      "unit": "pips",
+      "sigma": 1.52
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.038,
+      "pips": 2.1,
+      "unit": "pips",
+      "sigma": 1.5
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": -0.19,
+      "pips": -20.8,
+      "unit": "pips ($0.01)",
+      "sigma": -1.46
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": 0.031,
+      "pips": 3.5,
+      "unit": "pips",
+      "sigma": 1.43
+     }
+    ]
+   },
+   {
+    "time": "16:00",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "Ivey PMI",
+    "actual": "58.2",
+    "forecast": "65.2",
+    "previous": "64.3",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.023%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.023,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": -0.043,
+      "pips": -6.1,
+      "unit": "pips",
+      "sigma": -2.94
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": 0.041,
+      "pips": 5.5,
+      "unit": "pips",
+      "sigma": 2.19
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": -0.038,
+      "pips": -6.0,
+      "unit": "pips",
+      "sigma": -2.15
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.042,
+      "pips": 2.9,
+      "unit": "pips",
+      "sigma": 2.09
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": -0.067,
+      "pips": -120.2,
+      "unit": "pips",
+      "sigma": -1.92
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.037,
+      "pips": 2.1,
+      "unit": "pips",
+      "sigma": 1.5
+     }
+    ]
+   }
+  ],
+  "headline_count": 30,
+  "top_headlines": [
+   {
+    "time": "03:45",
+    "impact": "medium",
+    "title": "Japan Finmin Katayama: Government has sufficient measures for next year's budget spending needs"
+   },
+   {
+    "time": "08:30",
+    "impact": "medium",
+    "title": "BoJ's Governor Ueda: We're to keep raising rates in response to economy and inflation"
+   },
+   {
+    "time": "13:30",
+    "impact": "medium",
+    "title": "China Seeks Talks With EU To Address Concerns"
+   },
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "French Central Bank Head Warns State At Risk Of Being Strangled By Interest Rates"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "Bessent: Operation Economic Outcast is delivering results"
+   },
+   {
+    "time": "21:15",
+    "impact": "low",
+    "title": "Trump: No Rush To Reach A Trade Deal With Canada"
+   },
+   {
+    "time": "23:00",
+    "impact": "low",
+    "title": "NZIER's QSBO shows a further lift in business confidence despite soft activity"
+   },
+   {
+    "time": "00:00",
+    "impact": "low",
+    "title": "Trump: If Republicans win the House and Senate, I'm going to give all Adult Citizens $5,000"
+   },
+   {
+    "time": "01:30",
+    "impact": "low",
+    "title": "AU: Sentiment hit again by fuel and interest rate rises"
+   },
+   {
+    "time": "05:30",
+    "impact": "low",
+    "title": "Trump: The reason for BD's announcement is my strong medical device tariffs, which will be in place by the end of the year"
+   },
+   {
+    "time": "05:30",
+    "impact": "low",
+    "title": "Auction Result of 10-Year JGBs on October 6, 2026"
+   },
+   {
+    "time": "06:30",
+    "impact": "low",
+    "title": "Many in BoJ wary of raising interest rates in October: Sources"
+   }
+  ],
+  "calendar_ahead": []
+ },
+ "analysis": {
+  "session_summary": "The session was defined by a broad, catalyst-light dollar decline: DXY fell 0.38% and VIX eased 1.57%, lifting G10 risk FX led by NZD (+0.31%) and EUR (+0.24%). BOJ Governor Ueda’s comments triggered only a 0.066% JPY impulse that fully faded, leaving JPY the weakest major at -0.29%. Ivey PMI missed at 58.2 vs 65.2 but CAD’s reaction was muted inside the noise floor. No calendar events are due ahead, leaving headline-driven flows in control.",
+  "themes": [
+   {
+    "theme": "Broad dollar weakness without a fundamental anchor",
+    "evidence": "DXY -0.38%, VIX -1.57%, USD/SEK -0.638%, USD/MXN -0.837%, USD/ZAR -0.81%",
+    "currencies": [
+     "USD",
+     "NZD",
+     "EUR",
+     "GBP",
+     "CAD",
+     "CHF",
+     "AUD",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "BOJ Ueda impulse rejected",
+    "evidence": "BOJ Gov Ueda Speaks at 08:35 produced JPY stronger by 0.066%, but JPY day ended -0.291% and gave back 95% of its peak",
+    "currencies": [
+     "JPY"
+    ]
+   },
+   {
+    "theme": "NZD outperformance with no releases",
+    "evidence": "NZD strength +0.31%, AUD/NZD -0.312%, NZD/USD +0.56%, no own releases",
+    "currencies": [
+     "NZD",
+     "AUD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No US data or policy catalyst; dollar fell broadly with DXY -0.38% and VIX easing.",
+   "EUR": "No euro-area catalyst; euro held its range and rose with risk appetite, up 0.24%.",
+   "JPY": "BOJ Ueda sparked only a 0.066% JPY impulse that reversed; finished weakest with no follow-through.",
+   "GBP": "No UK catalyst; sterling selling was rejected and recovered 90% from its lows.",
+   "AUD": "No domestic catalyst; a +0.08% attempt was rejected and gave back 65%.",
+   "CAD": "Ivey PMI missed at 58.2 vs 65.2 but CAD recovered 88% from lows; reaction muted.",
+   "CHF": "No Swiss catalyst; CHF attempt to lead was rejected and gave back 82%.",
+   "NZD": "No releases; NZD held its range and led G10 at +0.31%."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD's four legs netted +54.9 pips with no catalyst assigned to any leg: early up, mid-session dip, strong up-leg, then late fade."
+  },
+  "polarity_reads": [
+   {
+    "event": "BOJ Gov Ueda Speaks",
+    "read": "The 0.066% JPY impulse was real but unscored and fully faded; positioning does not chase hawkish BOJ rhetoric."
+   },
+   {
+    "event": "Ivey PMI",
+    "read": "The 58.2 vs 65.2 miss produced only a 0.023% basket move inside noise; CAD positioning was indifferent to the data."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Risk-on continuation",
+    "probability": 0.45,
+    "thesis": "Broad dollar weakness persists as VIX stays contained and China-EU optimism holds.",
+    "triggers": [
+     "Constructive China-EU follow-through",
+     "No USD-supportive event"
+    ],
+    "invalidation": "DXY closes back above its daily midpoint and VIX turns higher.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 79.1,
+      "rationale": "EUR and USD contributions both favor upside; today's full range is the next objective."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 84.0,
+      "rationale": "GBP selling was rejected and recovered 90%; a break of the range targets the day's range."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 43.1,
+      "rationale": "NZD led G10 and held its range with no catalyst; continuation uses the daily range."
+     }
+    ]
+   },
+   {
+    "name": "BOJ repricing / JPY squeeze",
+    "probability": 0.3,
+    "thesis": "Markets revisit BOJ hike path after Ueda, squeezing JPY shorts.",
+    "triggers": [
+     "Follow-up hawkish BOJ comments",
+     "JGB yield rise",
+     "Risk-off"
+    ],
+    "invalidation": "JPY impulse fades again and USD/JPY holds above 158.157.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 47.5,
+      "rationale": "The full daily range is the natural target for a fresh JPY repricing."
+     },
+     {
+      "instrument": "CHF/JPY",
+      "direction": "down",
+      "magnitude_pips": 67.4,
+      "rationale": "CHF/JPY's wider daily range captures the cross's sensitivity to JPY strength."
+     }
+    ]
+   },
+   {
+    "name": "Rangebound consolidation",
+    "probability": 0.25,
+    "thesis": "Catalyst-light markets consolidate inside today's ranges.",
+    "triggers": [
+     "DXY holds 101.61",
+     "VIX steadies near 17.05"
+    ],
+    "invalidation": "A fresh risk-positive catalyst breaks EUR/USD above today's high.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 79.1,
+      "rationale": "Trade within the 79.1-pip daily range until a catalyst emerges."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 47.5,
+      "rationale": "USD/JPY stays inside its 47.5-pip range as BOJ and USD impulses offset."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "BOJ Ueda impulse proves to be the start of a hawkish repricing",
+    "why_it_matters": "JPY is weakest despite a clear hike signal, leaving asymmetric upside if markets follow through.",
+    "watch": "BOJ commentary, JGB yields, USD/JPY close above 158.157"
+   },
+   {
+    "risk": "Risk-on dollar decline reverses on headline fatigue",
+    "why_it_matters": "The dollar drop had no obvious fundamental anchor; high-beta longs are crowded.",
+    "watch": "VIX reversal and DXY reclaim of 101.61"
+   }
+  ],
+  "calendar_ahead_note": "No scheduled calendar events in the coming window; headline risk and BOJ/Fed speak remain the key catalysts.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 16937,
+   "completion_tokens": 10987,
+   "total_tokens": 27924,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9351
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 16297
+  }
+ }
+}
