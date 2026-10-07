@@ -1,0 +1,1778 @@
+{
+ "meta": {
+  "date": "2026-10-07",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-06T17:00:00+00:00",
+  "end_utc": "2026-10-07T17:00:00+00:00",
+  "start_local": "2026-10-06T19:00:00+02:00",
+  "end_local": "2026-10-07T19:00:00+02:00",
+  "fwd_start_utc": "2026-10-07T17:00:00+00:00",
+  "fwd_end_utc": "2026-10-08T17:00:00+00:00",
+  "generated_utc": "2026-10-07T21:56:35.940092+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 38
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-06 19:00 CEST",
+   "to_local": "2026-10-07 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "JPY",
+    "rank": 1,
+    "strength_pct": 0.353,
+    "intraday_peak": 0.353,
+    "intraday_trough": -0.138,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 2,
+    "strength_pct": 0.27,
+    "intraday_peak": 0.337,
+    "intraday_trough": -0.055,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.06%, recovered 83%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 3,
+    "strength_pct": 0.032,
+    "intraday_peak": 0.215,
+    "intraday_trough": 0.001,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.21%, gave back 85%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 4,
+    "strength_pct": 0.017,
+    "intraday_peak": 0.207,
+    "intraday_trough": -0.094,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.21%, gave back 63%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "AUD",
+    "rank": 5,
+    "strength_pct": -0.017,
+    "intraday_peak": 0.05,
+    "intraday_trough": -0.108,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "NZD",
+    "rank": 6,
+    "strength_pct": -0.166,
+    "intraday_peak": 0.06,
+    "intraday_trough": -0.211,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.06%, gave back 83%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "GBP",
+    "rank": 7,
+    "strength_pct": -0.185,
+    "intraday_peak": 0.012,
+    "intraday_trough": -0.209,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "EUR",
+    "rank": 8,
+    "strength_pct": -0.306,
+    "intraday_peak": 0.005,
+    "intraday_trough": -0.44,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.576,
+    "from_EUR": -0.306,
+    "from_USD": -0.27,
+    "base_share": 0.53
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.455,
+    "from_GBP": -0.185,
+    "from_USD": -0.27,
+    "base_share": 0.41
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.287,
+    "from_AUD": -0.017,
+    "from_USD": -0.27,
+    "base_share": 0.06
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.436,
+    "from_NZD": -0.166,
+    "from_USD": -0.27,
+    "base_share": 0.38
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.083,
+    "from_USD": 0.27,
+    "from_JPY": -0.353,
+    "base_share": 0.43
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.253,
+    "from_USD": 0.27,
+    "from_CHF": -0.017,
+    "base_share": 0.94
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.238,
+    "from_USD": 0.27,
+    "from_CAD": -0.032,
+    "base_share": 0.89
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.121,
+    "from_EUR": -0.306,
+    "from_GBP": 0.185,
+    "base_share": 0.62
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.659,
+    "from_EUR": -0.306,
+    "from_JPY": -0.353,
+    "base_share": 0.46
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.323,
+    "from_EUR": -0.306,
+    "from_CHF": -0.017,
+    "base_share": 0.95
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.29,
+    "from_EUR": -0.306,
+    "from_AUD": 0.017,
+    "base_share": 0.95
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.338,
+    "from_EUR": -0.306,
+    "from_CAD": -0.032,
+    "base_share": 0.9
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.14,
+    "from_EUR": -0.306,
+    "from_NZD": 0.166,
+    "base_share": 0.65
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.538,
+    "from_GBP": -0.185,
+    "from_JPY": -0.353,
+    "base_share": 0.34
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.202,
+    "from_GBP": -0.185,
+    "from_CHF": -0.017,
+    "base_share": 0.92
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.168,
+    "from_GBP": -0.185,
+    "from_AUD": 0.017,
+    "base_share": 0.92
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.217,
+    "from_GBP": -0.185,
+    "from_CAD": -0.032,
+    "base_share": 0.85
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.019,
+    "from_GBP": -0.185,
+    "from_NZD": 0.166,
+    "base_share": 0.53
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.37,
+    "from_AUD": -0.017,
+    "from_JPY": -0.353,
+    "base_share": 0.04
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.033,
+    "from_AUD": -0.017,
+    "from_CHF": -0.017,
+    "base_share": 0.49
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.049,
+    "from_AUD": -0.017,
+    "from_CAD": -0.032,
+    "base_share": 0.34
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.149,
+    "from_AUD": -0.017,
+    "from_NZD": 0.166,
+    "base_share": 0.09
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.519,
+    "from_NZD": -0.166,
+    "from_JPY": -0.353,
+    "base_share": 0.32
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.183,
+    "from_NZD": -0.166,
+    "from_CHF": -0.017,
+    "base_share": 0.91
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.198,
+    "from_NZD": -0.166,
+    "from_CAD": -0.032,
+    "base_share": 0.84
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.321,
+    "from_CAD": 0.032,
+    "from_JPY": -0.353,
+    "base_share": 0.08
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.015,
+    "from_CAD": 0.032,
+    "from_CHF": -0.017,
+    "base_share": 0.66
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.336,
+    "from_CHF": 0.017,
+    "from_JPY": -0.353,
+    "base_share": 0.05
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.405
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.31
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.037
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.02
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.019
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.189
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.211
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.349
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11926,
+    "chg_pips": -64.7,
+    "chg_pct": -0.575,
+    "range_pips": 100.4,
+    "close_in_range": 0.28,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32118,
+    "chg_pips": -60.3,
+    "chg_pct": -0.454,
+    "range_pips": 86.5,
+    "close_in_range": 0.21,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69615,
+    "chg_pips": -20.0,
+    "chg_pct": -0.286,
+    "range_pips": 44.5,
+    "close_in_range": 0.42,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.5597,
+    "chg_pips": -24.4,
+    "chg_pct": -0.434,
+    "range_pips": 42.3,
+    "close_in_range": 0.28,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.027,
+    "chg_pips": -13.0,
+    "chg_pct": -0.082,
+    "range_pips": 65.4,
+    "close_in_range": 0.26,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83349,
+    "chg_pips": 21.1,
+    "chg_pct": 0.254,
+    "range_pips": 32.2,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42556,
+    "chg_pips": 33.9,
+    "chg_pct": 0.238,
+    "range_pips": 75.2,
+    "close_in_range": 0.67,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.9329,
+    "chg_pips": -30.1,
+    "chg_pct": -0.322,
+    "range_pips": 72.9,
+    "close_in_range": 0.46,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.584,
+    "chg_pips": -64.0,
+    "chg_pct": -0.336,
+    "range_pips": 85.1,
+    "close_in_range": 0.08,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24371,
+    "chg_pips": 18.8,
+    "chg_pct": 0.151,
+    "range_pips": 36.3,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84714,
+    "chg_pips": -10.3,
+    "chg_pct": -0.121,
+    "range_pips": 36.1,
+    "close_in_range": 0.66,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58022,
+    "chg_pips": -2.1,
+    "chg_pct": -0.036,
+    "range_pips": 36.5,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.4665,
+    "chg_pips": -8.5,
+    "chg_pct": -0.182,
+    "range_pips": 29.3,
+    "close_in_range": 0.45,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.00952,
+    "chg_pips": 171.4,
+    "chg_pct": 0.172,
+    "range_pips": 809.4,
+    "close_in_range": 0.46,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.57548,
+    "chg_pips": 149.1,
+    "chg_pct": 0.156,
+    "range_pips": 776.9,
+    "close_in_range": 0.67,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.61359,
+    "chg_pips": 784.9,
+    "chg_pct": 0.475,
+    "range_pips": 2324.0,
+    "close_in_range": 0.52,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 17.97388,
+    "chg_pips": -36.5,
+    "chg_pct": -0.02,
+    "range_pips": 1734.6,
+    "close_in_range": 0.15,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 102.048,
+    "chg_pips": 43.8,
+    "chg_pct": 0.431,
+    "range_pips": 70.5,
+    "close_in_range": 0.71,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.59983,
+    "chg_pips": 55.1,
+    "chg_pct": 3.231,
+    "range_pips": 74.8,
+    "close_in_range": 0.87,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -88.8,
+    "ret_pct": -0.789,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but EU states expect no new oil release obligations after G7 pa… pushed it along (-19.4 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "EU states expect no new oil release obligations after G7 pact",
+      "ccy": null,
+      "pips": -19.4,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 24.6,
+    "ret_pct": 0.22,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "down",
+    "pips": -10.1,
+    "ret_pct": -0.064,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "20:00",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 42.3,
+    "ret_pct": 0.268,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:00",
+    "to": "10:00",
+    "dir": "down",
+    "pips": -56.7,
+    "ret_pct": -0.358,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but EU states expect no new oil release obligations after G7 pa… pushed it along (-20.2 in 15 min, 36% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "EU states expect no new oil release obligations after G7 pact",
+      "ccy": null,
+      "pips": -20.2,
+      "share_of_leg": 0.36
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "10:00",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 44.0,
+    "ret_pct": 0.279,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran says it will soon block 'illegal' routes in Hormuz, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "15:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -33.5,
+    "ret_pct": -0.212,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Crude Oil Inventories, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -75.5,
+    "ret_pct": -0.569,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 16.2,
+    "ret_pct": 0.123,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "07:00",
+    "dir": "up",
+    "pips": 22.1,
+    "ret_pct": 0.266,
+    "minutes": 720,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "07:00",
+    "to": "08:45",
+    "dir": "down",
+    "pips": -12.5,
+    "ret_pct": -0.15,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's Fin. Min. Katayama: Will thoroughly explain budge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "08:45",
+    "to": "11:00",
+    "dir": "up",
+    "pips": 13.0,
+    "ret_pct": 0.156,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but EU states expect no new oil release obligations after G7 pa… pushed it along (+4.6 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "EU states expect no new oil release obligations after G7 pact",
+      "ccy": null,
+      "pips": 4.6,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "11:00",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -17.9,
+    "ret_pct": -0.215,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran says it will soon block 'illegal' routes in Hormuz, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "13:30",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 17.7,
+    "ret_pct": 0.213,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says Deal Not Out Of Reach If US Abides By Law: ISNA, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "14:30",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -16.1,
+    "ret_pct": -0.193,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 15.3,
+    "ret_pct": 0.184,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Crude Oil Inventories, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -36.9,
+    "ret_pct": -0.528,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 16.2,
+    "ret_pct": 0.233,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -12.4,
+    "ret_pct": -0.087,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:00",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 68.3,
+    "ret_pct": 0.481,
+    "minutes": 930,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "14:30",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -33.7,
+    "ret_pct": -0.236,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 15.1,
+    "ret_pct": 0.106,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US: Short- and Medium-Term Inflation Expectations Increas…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -35.6,
+    "ret_pct": -0.633,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 10.0,
+    "ret_pct": 0.179,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -61.5,
+    "ret_pct": -0.657,
+    "minutes": 1110,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "13:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 32.2,
+    "ret_pct": 0.346,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -27.2,
+    "ret_pct": -0.143,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Schmid: Labor force remains in a good place, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:30",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 34.5,
+    "ret_pct": 0.182,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Average Cash Earnings y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:00",
+    "to": "10:00",
+    "dir": "down",
+    "pips": -75.0,
+    "ret_pct": -0.394,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but EU states expect no new oil release obligations after G7 pa… pushed it along (-34.9 in 15 min, 47% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "EU states expect no new oil release obligations after G7 pact",
+      "ccy": null,
+      "pips": -34.9,
+      "share_of_leg": 0.47
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "10:00",
+    "to": "13:30",
+    "dir": "up",
+    "pips": 76.7,
+    "ret_pct": 0.405,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran says it will soon block 'illegal' routes in Hormuz, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "13:30",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -55.6,
+    "ret_pct": -0.292,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "14:45",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 31.6,
+    "ret_pct": 0.167,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -51.3,
+    "ret_pct": -0.27,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EIA: US crude inventories down by 3.2 million barrels, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "00:45",
+    "dir": "down",
+    "pips": -9.5,
+    "ret_pct": -0.077,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Schmid: Labor force remains in a good place, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:45",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 29.0,
+    "ret_pct": 0.234,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Average Cash Earnings y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "06:30",
+    "to": "12:30",
+    "dir": "down",
+    "pips": -15.9,
+    "ret_pct": -0.128,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "12:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 16.2,
+    "ret_pct": 0.13,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "10:00",
+    "dir": "down",
+    "pips": -31.4,
+    "ret_pct": -0.37,
+    "minutes": 900,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but EU states expect no new oil release obligations after G7 pa… pushed it along (-9.5 in 15 min, 30% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "EU states expect no new oil release obligations after G7 pact",
+      "ccy": null,
+      "pips": -9.5,
+      "share_of_leg": 0.3
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "10:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 20.9,
+    "ret_pct": 0.247,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 9.8,
+    "ret_pct": 0.169,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Schmid: Labor force remains in a good place, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "03:15",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -13.3,
+    "ret_pct": -0.229,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German production in August 2026: +2.0% on the previous m…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "09:15",
+    "to": "11:00",
+    "dir": "up",
+    "pips": 9.7,
+    "ret_pct": 0.167,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "11:00",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -30.2,
+    "ret_pct": -0.52,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran says it will soon block 'illegal' routes in Hormuz, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "13:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 21.6,
+    "ret_pct": 0.374,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.152,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Schmid: Labor force remains in a good place moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:15",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 13.4,
+    "ret_pct": 0.287,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:15",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -28.4,
+    "ret_pct": -0.607,
+    "minutes": 735,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Foreign Currency Reserves, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "13:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 12.8,
+    "ret_pct": 0.275,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -184.2,
+    "ret_pct": -0.184,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:45",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 738.8,
+    "ret_pct": 0.741,
+    "minutes": 870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -380.4,
+    "ret_pct": -0.379,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -335.6,
+    "ret_pct": -0.351,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 689.6,
+    "ret_pct": 0.724,
+    "minutes": 915,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -183.4,
+    "ret_pct": -0.191,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 1799.4,
+    "ret_pct": 1.088,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -989.1,
+    "ret_pct": -0.592,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -291.4,
+    "ret_pct": -0.162,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:45",
+    "to": "13:30",
+    "dir": "up",
+    "pips": 1589.7,
+    "ret_pct": 0.886,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iran says it will soon block 'illegal' routes in Hormuz pushed it along (+256.5 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iran says it will soon block 'illegal' routes in Hormuz",
+      "ccy": null,
+      "pips": 256.5,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "13:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1342.5,
+    "ret_pct": -0.741,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "up",
+    "pips": 90.6,
+    "ret_pct": 0.826,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "23:45",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -56.6,
+    "ret_pct": -0.512,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Average Cash Earnings y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 81.7,
+    "ret_pct": 0.742,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "03:00",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -82.8,
+    "ret_pct": -0.747,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item EU states expect no new oil release obligations after G7 …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "10:30",
+    "to": "15:30",
+    "dir": "up",
+    "pips": 163.0,
+    "ret_pct": 1.481,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran says it will soon block 'illegal' routes in Hormuz, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -181.1,
+    "ret_pct": -1.622,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Crude Oil Inventories moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -897.5,
+    "ret_pct": -2.157,
+    "minutes": 1170,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Schmid Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 371.3,
+    "ret_pct": 0.912,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.0… moved price the other way.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [],
+  "headline_count": 17,
+  "top_headlines": [
+   {
+    "time": "09:45",
+    "impact": "high",
+    "title": "EU states expect no new oil release obligations after G7 pact"
+   },
+   {
+    "time": "14:30",
+    "impact": "high",
+    "title": "Spot Gold Extends Losses, Last Down Nearly 2% At $4,081.01/oz"
+   },
+   {
+    "time": "12:30",
+    "impact": "medium",
+    "title": "Iran says it will soon block 'illegal' routes in Hormuz"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "Fed's Schmid: Labor force remains in a good place"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "Trump: Reiterates that oil keeps flowing through Hormuz"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Trump: Iran must be finished up; the question is how"
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "API Crude: -2.1M, Gasoline: -1.4M, Distillate: +0.461, Cushing: +0.866"
+   },
+   {
+    "time": "06:30",
+    "impact": "low",
+    "title": "Japan PM Takaichi: Will consider reviewing policies, government revenue and spending if interest rate shifts differ from expectations"
+   },
+   {
+    "time": "07:30",
+    "impact": "low",
+    "title": "Japan's Fin. Min. Katayama: Will thoroughly explain budget compilation to the market"
+   },
+   {
+    "time": "08:00",
+    "impact": "low",
+    "title": "German production in August 2026: +2.0% on the previous month"
+   },
+   {
+    "time": "08:00",
+    "impact": "low",
+    "title": "UK: House prices hold steady despite impact of higher interest rates"
+   },
+   {
+    "time": "09:00",
+    "impact": "low",
+    "title": "The French trade balance is improving due to a greater decrease in imports than in exports"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "19:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "President Trump Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "20:00",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "FOMC Meeting Minutes",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "10:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "FOMC Member Waller Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:15",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Unemployment Claims",
+    "forecast": "200K",
+    "previous": "197K"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The full trading day was a broad dollar-bid, risk-off tape: DXY rose 43.8 points to 102.048, VIX added 55.1 points (+3.231%), and EUR/USD fell 64.7 pips to 1.11926 while gold lost nearly 2%. EUR was the weakest major (-0.306%) and JPY the strongest (+0.353%), leaving USD/JPY down 13.0 pips despite the dollar bid. With no central-bank release or data on the calendar for the majors, the tape lacked a single clear catalyst; the G7 oil-release headline contributed only partial moves. Late in the day a modest bounce in EUR/USD, GBP/USD, AUD/USD and USD/CAD did not retrace the bulk of the decline.",
+  "themes": [
+   {
+    "theme": "Broad dollar bid and risk-off",
+    "evidence": "DXY +43.8 points, VIX +55.1 points (+3.231%), EUR/USD -64.7 pips, Gold/USD first leg -897.5 pips (-2.157%)",
+    "currencies": [
+     "USD",
+     "EUR",
+     "GBP",
+     "AUD",
+     "NZD",
+     "CHF",
+     "CAD"
+    ]
+   },
+   {
+    "theme": "JPY strength despite firm dollar",
+    "evidence": "JPY rank 1 +0.353%, USD/JPY -13.0 pips, CHF/JPY -64.0 pips",
+    "currencies": [
+     "JPY",
+     "USD",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Moves lacked single catalyst",
+    "evidence": "All leg causes are null/confidence none; only EU oil-release headline partially moved EUR/USD (-19.4 pips of -88.8), USD/JPY (-20.2 of -56.7), CHF/JPY (-34.9 of -75.0)",
+    "currencies": [
+     "EUR",
+     "USD",
+     "JPY",
+     "CHF"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Sold early then recovered 83%; no US data or speaker release drove the tape.",
+   "EUR": "Weakest major with no own releases; sold through the session with only a late partial bounce.",
+   "JPY": "Strengthened to best close with no own releases; stand-alone bid, not a release-driven move.",
+   "GBP": "Held weak range with no own releases; lower against firmer dollar.",
+   "AUD": "Held range with no own releases; small loss in risk-off tape.",
+   "CAD": "Attempted early gain then gave back 85%; no own releases.",
+   "CHF": "Attempted early gain then gave back 63%; no own releases.",
+   "NZD": "Attempted early gain then gave back 83%; no own releases."
+  },
+  "leg_notes": {
+   "EUR/USD": "The dominant leg was a 88.8-pip decline from 19:00 to 14:15 with no single trigger, only partially reversed by a 24.6-pip bounce into 18:45."
+  },
+  "polarity_reads": [],
+  "scenarios": [
+   {
+    "name": "Risk-off continuation: USD and JPY bid",
+    "probability": 0.4,
+    "thesis": "VIX up, gold down, and EUR weakness continue; safe-haven demand favors USD and JPY, pressuring EUR/USD and USD/JPY.",
+    "triggers": [
+     "Further Iran/Hormuz headlines",
+     "EUR/USD closes below 1.11926",
+     "DXY extends above 102.048"
+    ],
+    "invalidation": "EUR/USD recovers more than the late 24.6-pip bounce",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 100.4,
+      "rationale": "Today's range was 100.4 pips and close was only at 28% of range; continuation targets the lower bound."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 65.4,
+      "rationale": "Yen strength outweighed dollar bid; USD/JPY range was 65.4 pips with close at 26%."
+     }
+    ]
+   },
+   {
+    "name": "Dollar correction and late bounce extends",
+    "probability": 0.35,
+    "thesis": "Late recoveries in EUR/USD, GBP/USD, AUD/USD extend as dollar profit-taking dominates; VIX fails to hold elevated levels.",
+    "triggers": [
+     "No new negative headlines",
+     "FOMC minutes less hawkish",
+     "VIX falls back from 17.59983"
+    ],
+    "invalidation": "DXY closes above 102.048",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 24.6,
+      "rationale": "Late bounce measured 24.6 pips from 14:15 to 18:45; extension targets that scale first."
+     }
+    ]
+   },
+   {
+    "name": "Range-bound consolidation",
+    "probability": 0.25,
+    "thesis": "Market holds within today's ranges as no major catalyst emerges; pairs churn around current closes.",
+    "triggers": [
+     "No high-impact headlines",
+     "Calendar events pass without surprise"
+    ],
+    "invalidation": "Breakout of today's high/low in EUR/USD or USD/JPY",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 100.4,
+      "rationale": "Staying within today's 100.4-pip range with midpoint around 1.11926."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Iran/Hormuz escalation",
+    "why_it_matters": "It already produced partial USD/MXN up leg and safe-haven JPY bid; renewed threats would extend USD and JPY against EUR/commodity FX.",
+    "watch": "Brent/USD and USD/MXN reactions to further Hormuz headlines"
+   },
+   {
+    "risk": "FOMC minutes and Fed speakers",
+    "why_it_matters": "With USD having no own release today, minutes can shift rate expectations and drive USD/JPY and EUR/USD sharply.",
+    "watch": "FOMC Meeting Minutes at 20:00, Waller at 10:30"
+   },
+   {
+    "risk": "BOE Bailey comments",
+    "why_it_matters": "GBP/USD was already down 60.3 pips; Bailey could trigger an outsized GBP move given no BOE catalyst earlier.",
+    "watch": "BOE Gov Bailey Speaks at 14:15"
+   }
+  ],
+  "calendar_ahead_note": "FOMC minutes at 20:00 are the highest-risk item, with President Trump speaking at 19:00 and Waller at 10:30; BOE's Bailey at 14:15 can move GBP, and US claims at 14:30 can add USD volatility.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 14634,
+   "completion_tokens": 8085,
+   "total_tokens": 22719,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6459
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 13994
+  }
+ }
+}
