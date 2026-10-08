@@ -1,0 +1,2077 @@
+{
+ "meta": {
+  "date": "2026-10-08",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-10-07T17:00:00+00:00",
+  "end_utc": "2026-10-08T05:00:00+00:00",
+  "start_local": "2026-10-07T19:00:00+02:00",
+  "end_local": "2026-10-08T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-08T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-08T17:00:00+00:00",
+  "generated_utc": "2026-10-08T11:59:03.065004+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 44
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-10-07 19:00 CEST",
+   "to_local": "2026-10-08 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "NZD",
+    "rank": 1,
+    "strength_pct": 0.117,
+    "intraday_peak": 0.117,
+    "intraday_trough": -0.009,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Meeting Minutes",
+     "instrument": "NZD/USD",
+     "sigma": 3.34
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 2,
+    "strength_pct": 0.105,
+    "intraday_peak": 0.105,
+    "intraday_trough": -0.031,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 3,
+    "strength_pct": 0.066,
+    "intraday_peak": 0.072,
+    "intraday_trough": -0.004,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 4,
+    "strength_pct": -0.004,
+    "intraday_peak": 0.02,
+    "intraday_trough": -0.106,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.11%, recovered 80%",
+    "own_releases": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.002%, inside the noise floor"
+     },
+     {
+      "title": "President Trump Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "no-data",
+      "note": "no quotes around the release"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "FOMC Meeting Minutes",
+     "instrument": "NZD/USD",
+     "sigma": 3.34
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 5,
+    "strength_pct": -0.023,
+    "intraday_peak": -0.001,
+    "intraday_trough": -0.041,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Meeting Minutes",
+     "instrument": "GBP/USD",
+     "sigma": 2.25
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 6,
+    "strength_pct": -0.039,
+    "intraday_peak": 0.002,
+    "intraday_trough": -0.08,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "AUD",
+    "rank": 7,
+    "strength_pct": -0.088,
+    "intraday_peak": 0.042,
+    "intraday_trough": -0.088,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Meeting Minutes",
+     "instrument": "AUD/NZD",
+     "sigma": -2.57
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.134,
+    "intraday_peak": 0.14,
+    "intraday_trough": -0.134,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.14%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.109,
+    "from_EUR": 0.105,
+    "from_USD": 0.004,
+    "base_share": 0.96
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.018,
+    "from_GBP": -0.023,
+    "from_USD": 0.004,
+    "base_share": 0.84
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.084,
+    "from_AUD": -0.088,
+    "from_USD": 0.004,
+    "base_share": 0.95
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.122,
+    "from_NZD": 0.117,
+    "from_USD": 0.004,
+    "base_share": 0.96
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.13,
+    "from_USD": -0.004,
+    "from_JPY": 0.134,
+    "base_share": 0.03
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.071,
+    "from_USD": -0.004,
+    "from_CHF": -0.066,
+    "base_share": 0.06
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.034,
+    "from_USD": -0.004,
+    "from_CAD": 0.039,
+    "base_share": 0.1
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.128,
+    "from_EUR": 0.105,
+    "from_GBP": 0.023,
+    "base_share": 0.82
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.239,
+    "from_EUR": 0.105,
+    "from_JPY": 0.134,
+    "base_share": 0.44
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.038,
+    "from_EUR": 0.105,
+    "from_CHF": -0.066,
+    "base_share": 0.61
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.193,
+    "from_EUR": 0.105,
+    "from_AUD": 0.088,
+    "base_share": 0.54
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.144,
+    "from_EUR": 0.105,
+    "from_CAD": 0.039,
+    "base_share": 0.73
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.013,
+    "from_EUR": 0.105,
+    "from_NZD": -0.117,
+    "base_share": 0.47
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.111,
+    "from_GBP": -0.023,
+    "from_JPY": 0.134,
+    "base_share": 0.15
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.089,
+    "from_GBP": -0.023,
+    "from_CHF": -0.066,
+    "base_share": 0.26
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.065,
+    "from_GBP": -0.023,
+    "from_AUD": 0.088,
+    "base_share": 0.21
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.016,
+    "from_GBP": -0.023,
+    "from_CAD": 0.039,
+    "base_share": 0.37
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.14,
+    "from_GBP": -0.023,
+    "from_NZD": -0.117,
+    "base_share": 0.16
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.046,
+    "from_AUD": -0.088,
+    "from_JPY": 0.134,
+    "base_share": 0.4
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.155,
+    "from_AUD": -0.088,
+    "from_CHF": -0.066,
+    "base_share": 0.57
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.049,
+    "from_AUD": -0.088,
+    "from_CAD": 0.039,
+    "base_share": 0.69
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.206,
+    "from_AUD": -0.088,
+    "from_NZD": -0.117,
+    "base_share": 0.43
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.252,
+    "from_NZD": 0.117,
+    "from_JPY": 0.134,
+    "base_share": 0.47
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.051,
+    "from_NZD": 0.117,
+    "from_CHF": -0.066,
+    "base_share": 0.64
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.156,
+    "from_NZD": 0.117,
+    "from_CAD": 0.039,
+    "base_share": 0.75
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.095,
+    "from_CAD": -0.039,
+    "from_JPY": 0.134,
+    "base_share": 0.22
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.105,
+    "from_CAD": -0.039,
+    "from_CHF": -0.066,
+    "base_share": 0.37
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.201,
+    "from_CHF": 0.066,
+    "from_JPY": 0.134,
+    "base_share": 0.33
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.134
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.12
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.076
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.005
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.026
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.044
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.101
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.153
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.12051,
+    "chg_pips": 12.5,
+    "chg_pct": 0.112,
+    "range_pips": 22.6,
+    "close_in_range": 0.66,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32096,
+    "chg_pips": -2.2,
+    "chg_pct": -0.017,
+    "range_pips": 16.2,
+    "close_in_range": 0.22,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69558,
+    "chg_pips": -5.7,
+    "chg_pct": -0.082,
+    "range_pips": 14.8,
+    "close_in_range": 0.09,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56039,
+    "chg_pips": 6.9,
+    "chg_pct": 0.123,
+    "range_pips": 14.8,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.23,
+    "chg_pips": 20.3,
+    "chg_pct": 0.128,
+    "range_pips": 64.4,
+    "close_in_range": 0.99,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83289,
+    "chg_pips": -6.0,
+    "chg_pct": -0.072,
+    "range_pips": 16.5,
+    "close_in_range": 0.52,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.4262,
+    "chg_pips": 6.4,
+    "chg_pct": 0.045,
+    "range_pips": 20.5,
+    "close_in_range": 0.72,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.93326,
+    "chg_pips": 3.6,
+    "chg_pct": 0.039,
+    "range_pips": 16.8,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.963,
+    "chg_pips": 37.9,
+    "chg_pct": 0.2,
+    "range_pips": 71.3,
+    "close_in_range": 1.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24114,
+    "chg_pips": -25.7,
+    "chg_pct": -0.207,
+    "range_pips": 33.2,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84822,
+    "chg_pips": 10.8,
+    "chg_pct": 0.127,
+    "range_pips": 17.1,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57933,
+    "chg_pips": -8.9,
+    "chg_pct": -0.153,
+    "range_pips": 13.9,
+    "close_in_range": 0.12,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46672,
+    "chg_pips": 2.2,
+    "chg_pct": 0.047,
+    "range_pips": 9.2,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.99283,
+    "chg_pips": -166.9,
+    "chg_pct": -0.167,
+    "range_pips": 357.1,
+    "close_in_range": 0.49,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.56823,
+    "chg_pips": -72.5,
+    "chg_pct": -0.076,
+    "range_pips": 256.0,
+    "close_in_range": 0.46,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.62945,
+    "chg_pips": 158.6,
+    "chg_pct": 0.095,
+    "range_pips": 569.6,
+    "close_in_range": 0.71,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 17.9791,
+    "chg_pips": 52.2,
+    "chg_pct": 0.029,
+    "range_pips": 588.4,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 102.014,
+    "chg_pips": -3.4,
+    "chg_pct": -0.033,
+    "range_pips": 15.5,
+    "close_in_range": 0.71,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.37256,
+    "chg_pips": -22.7,
+    "chg_pct": -1.291,
+    "range_pips": 38.3,
+    "close_in_range": 0.41,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -5.9,
+    "ret_pct": -0.053,
+    "minutes": 270,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": -1.6,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:30",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 18.1,
+    "ret_pct": 0.162,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "04:00",
+    "to": "05:00",
+    "dir": "down",
+    "pips": -12.2,
+    "ret_pct": -0.109,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 6.8,
+    "ret_pct": 0.061,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 12.4,
+    "ret_pct": 0.078,
+    "minutes": 405,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "01:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -37.0,
+    "ret_pct": -0.234,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Current Account, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 50.3,
+    "ret_pct": 0.319,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 3.5,
+    "ret_pct": 0.026,
+    "minutes": 105,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": 1.5,
+      "share_of_leg": 0.43
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "20:45",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -9.6,
+    "ret_pct": -0.073,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Credit m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:15",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 8.7,
+    "ret_pct": 0.066,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "01:30",
+    "to": "02:45",
+    "dir": "down",
+    "pips": -10.1,
+    "ret_pct": -0.076,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Balance of Payments (Preliminary), too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "02:45",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 12.7,
+    "ret_pct": 0.096,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "04:00",
+    "to": "05:00",
+    "dir": "down",
+    "pips": -13.6,
+    "ret_pct": -0.103,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 2.5,
+    "ret_pct": 0.019,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "down",
+    "pips": -3.0,
+    "ret_pct": -0.036,
+    "minutes": 90,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "20:30",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 6.8,
+    "ret_pct": 0.082,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Credit m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "21:30",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -13.8,
+    "ret_pct": -0.166,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RICS House Price Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "04:00",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 12.7,
+    "ret_pct": 0.153,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -4.9,
+    "ret_pct": -0.059,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -10.3,
+    "ret_pct": -0.148,
+    "minutes": 270,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "23:30",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 6.2,
+    "ret_pct": 0.089,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "00:15",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -9.1,
+    "ret_pct": -0.131,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Inflation Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "02:30",
+    "to": "04:15",
+    "dir": "up",
+    "pips": 12.8,
+    "ret_pct": 0.184,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "04:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -11.8,
+    "ret_pct": -0.169,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 11.1,
+    "ret_pct": 0.078,
+    "minutes": 180,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": 1.8,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -8.6,
+    "ret_pct": -0.06,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 12.4,
+    "ret_pct": 0.087,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:15",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -12.5,
+    "ret_pct": -0.088,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.063,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "down",
+    "pips": -5.6,
+    "ret_pct": -0.1,
+    "minutes": 210,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "22:30",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 3.1,
+    "ret_pct": 0.055,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:30",
+    "to": "02:45",
+    "dir": "down",
+    "pips": -3.6,
+    "ret_pct": -0.064,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RICS House Price Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "02:45",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 11.0,
+    "ret_pct": 0.197,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "04:00",
+    "to": "05:00",
+    "dir": "down",
+    "pips": -8.6,
+    "ret_pct": -0.153,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 4.0,
+    "ret_pct": 0.071,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "down",
+    "pips": -2.8,
+    "ret_pct": -0.03,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Meeting Minutes pushed it along (-1.3 in 15 min, 46% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": -1.3,
+      "share_of_leg": 0.46
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "20:30",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 5.2,
+    "ret_pct": 0.056,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item White House Seeks Iran Strike Options Before Midterms: At…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "21:30",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -10.5,
+    "ret_pct": -0.113,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:30",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 9.2,
+    "ret_pct": 0.099,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "01:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -3.6,
+    "ret_pct": -0.039,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 5.5,
+    "ret_pct": 0.059,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -10.2,
+    "ret_pct": -0.054,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:45",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 25.1,
+    "ret_pct": 0.132,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RICS House Price Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "01:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -40.2,
+    "ret_pct": -0.212,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Current Account, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 60.8,
+    "ret_pct": 0.321,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -27.0,
+    "ret_pct": -0.217,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Meeting Minutes pushed it along (-4.4 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": -4.4,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:15",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 26.8,
+    "ret_pct": 0.216,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -22.6,
+    "ret_pct": -0.182,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Inflation Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -3.8,
+    "ret_pct": -0.045,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Meeting Minutes pushed it along (-1.5 in 15 min, 39% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": -1.5,
+      "share_of_leg": 0.39
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.7,
+    "ret_pct": 0.15,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RICS House Price Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -11.2,
+    "ret_pct": -0.193,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:15",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 6.3,
+    "ret_pct": 0.109,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:00",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -7.2,
+    "ret_pct": -0.124,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Inflation Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "02:30",
+    "to": "04:45",
+    "dir": "up",
+    "pips": 6.6,
+    "ret_pct": 0.114,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -6.0,
+    "ret_pct": -0.103,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -6.7,
+    "ret_pct": -0.144,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 3.3,
+    "ret_pct": 0.071,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -2.6,
+    "ret_pct": -0.056,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "02:30",
+    "to": "05:15",
+    "dir": "up",
+    "pips": 5.4,
+    "ret_pct": 0.116,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "05:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -0.4,
+    "ret_pct": -0.009,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "up",
+    "pips": 111.7,
+    "ret_pct": 0.112,
+    "minutes": 210,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "22:30",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -310.4,
+    "ret_pct": -0.31,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RICS House Price Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 153.2,
+    "ret_pct": 0.154,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 55.5,
+    "ret_pct": 0.058,
+    "minutes": 450,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Meeting Minutes",
+      "ccy": "USD",
+      "pips": 20.1,
+      "share_of_leg": 0.36
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "02:30",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -156.4,
+    "ret_pct": -0.163,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 100.4,
+    "ret_pct": 0.105,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on October 8th, 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 338.8,
+    "ret_pct": 0.204,
+    "minutes": 195,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "22:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -258.5,
+    "ret_pct": -0.155,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:15",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 389.0,
+    "ret_pct": 0.234,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RICS House Price Balance, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "02:30",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -268.5,
+    "ret_pct": -0.161,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Don't Think I Want To Make A Deal With Iran moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "03:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 160.5,
+    "ret_pct": 0.097,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 504.5,
+    "ret_pct": 0.281,
+    "minutes": 150,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "21:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -283.6,
+    "ret_pct": -0.158,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:15",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 220.5,
+    "ret_pct": 0.123,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "00:00",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -310.2,
+    "ret_pct": -0.173,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "03:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 293.0,
+    "ret_pct": 0.163,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 179.9,
+    "ret_pct": 1.642,
+    "minutes": 705,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "down",
+    "pips": -188.5,
+    "ret_pct": -0.458,
+    "minutes": 165,
+    "cause": "President Trump Speaks",
+    "cause_ccy": "USD",
+    "confidence": "low",
+    "note": "USD President Trump Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "21:45",
+    "to": "04:30",
+    "dir": "up",
+    "pips": 419.6,
+    "ret_pct": 1.023,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK Residential Market Survey September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "04:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -94.9,
+    "ret_pct": -0.229,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "20:00",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "FOMC Meeting Minutes",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.002%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.002,
+    "top_movers": [
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.061,
+      "pips": 3.4,
+      "unit": "pips",
+      "sigma": 3.34
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.042,
+      "pips": -5.2,
+      "unit": "pips",
+      "sigma": -2.57
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": 0.024,
+      "pips": 3.2,
+      "unit": "pips",
+      "sigma": 2.25
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.116,
+      "pips": 47.5,
+      "unit": "pips ($0.10)",
+      "sigma": 1.9
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.022,
+      "pips": 1.5,
+      "unit": "pips",
+      "sigma": 1.4
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": 0.103,
+      "pips": 11.2,
+      "unit": "pips ($0.01)",
+      "sigma": 1.16
+     }
+    ]
+   },
+   {
+    "time": "19:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "President Trump Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "no-data",
+    "polarity_note": "no quotes around the release",
+    "own_ccy_impulse_pct": null,
+    "top_movers": []
+   }
+  ],
+  "headline_count": 9,
+  "top_headlines": [
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "US Treasury Auction Results"
+   },
+   {
+    "time": "19:30",
+    "impact": "low",
+    "title": "Trump: Warsh is great"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "Minutes of the Federal Open Market Committee"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "White House Seeks Iran Strike Options Before Midterms: Atlantic"
+   },
+   {
+    "time": "01:00",
+    "impact": "low",
+    "title": "UK Residential Market Survey September 2026"
+   },
+   {
+    "time": "01:45",
+    "impact": "low",
+    "title": "Japan Balance of Payments (Preliminary)"
+   },
+   {
+    "time": "02:30",
+    "impact": "low",
+    "title": "Trump: Don't Think I Want To Make A Deal With Iran"
+   },
+   {
+    "time": "05:30",
+    "impact": "low",
+    "title": "Auction Result of 30-Year JGBs on October 8th, 2026"
+   },
+   {
+    "time": "06:30",
+    "impact": "low",
+    "title": "Japan's Takaichi Rules Out Need for Reflationary Measures, Affirms BOJ Independence"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "10:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "FOMC Member Waller Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:15",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Unemployment Claims",
+    "forecast": "200K",
+    "previous": "197K"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The overnight tape was led by NZD (+0.117%) and EUR (+0.105%), both closing at their session best, while JPY was the weakest (-0.134%) after giving back an early +0.14% bid and AUD lagged (-0.088%). USD was flat (-0.004%) after early selling to -0.106% was rejected; FOMC minutes were muted (basket -0.002% inside noise floor) and Trump headlines had no quotes. Most intraday legs had no clear catalyst. EUR/USD rose 0.109% almost entirely on EUR strength, while USD/JPY rose 0.13% on yen weakness.",
+  "themes": [
+   {
+    "theme": "NZD/EUR strength leadership",
+    "evidence": "NZD +0.117%, EUR +0.105%, both closed at their best; NZD/USD +6.9 pips, EUR/USD +12.5 pips.",
+    "currencies": [
+     "NZD",
+     "EUR",
+     "USD"
+    ]
+   },
+   {
+    "theme": "JPY weakness and rejected early bid",
+    "evidence": "JPY -0.134%, closed at worst; USD/JPY +20.3 pips to 158.23, CHF/JPY +37.9 pips at range high.",
+    "currencies": [
+     "JPY",
+     "USD",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "USD chop with no clear catalyst",
+    "evidence": "USD -0.004%, intraday trough -0.106%, recovered; FOMC minutes muted -0.002%; Trump no-data; many legs uncaused.",
+    "currencies": [
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "FOMC minutes were muted and Trump headlines had no data; early selling was rejected.",
+   "EUR": "No own releases; strength was demand-driven with no clear catalyst.",
+   "JPY": "Led early strength then gave back all of it; weakest on the day without own releases.",
+   "GBP": "No own releases; held its range slightly lower against stronger currencies.",
+   "AUD": "No own releases; weakest commodity dollar, held lower range with no clear catalyst.",
+   "CAD": "No own releases; held range modestly softer with no clear catalyst.",
+   "CHF": "No own releases; closed at its best with modest strength.",
+   "NZD": "No own releases; strongest currency, closed at its best, most sensitive to FOMC minutes."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD’s overnight legs were mostly uncatalyzed: a Trump-speech dip of -5.9 pips was followed by an 18.1-pip uncaused rally, then a -12.2-pip flow/technical drop and a final 6.8-pip drift; net +12.5 pips came almost entirely from EUR (+0.105%) rather than USD."
+  },
+  "polarity_reads": [
+   {
+    "event": "FOMC Meeting Minutes",
+    "read": "Muted basket impulse of -0.002% inside noise floor; no USD directional signal, so positioning was not stretched for a surprise."
+   },
+   {
+    "event": "President Trump Speaks",
+    "read": "No quotes around release, no measured impulse; cannot infer positioning from this event."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Asia drift continues",
+    "probability": 0.5,
+    "thesis": "No high-impact releases until FOMC Waller/BOE Bailey later; overnight strength in NZD/EUR and JPY weakness persist, with USD staying near flat.",
+    "triggers": [
+     "No high-impact releases before London",
+     "Asia risk appetite holds",
+     "NZD and EUR remain firm"
+    ],
+    "invalidation": "USD/JPY breaks below 158.23 and EUR/USD drops below 1.12051.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 22.6,
+      "rationale": "EUR strength +0.105% and measured range 22.6 pips support modest upside drift."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 64.4,
+      "rationale": "JPY weakness -0.134% and measured range 64.4 pips support further upside."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 14.8,
+      "rationale": "AUD weakness -0.088% and measured range 14.8 pips support lower drift."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off yen rebound",
+    "probability": 0.3,
+    "thesis": "JPY early strength retraced but may return if risk sentiment worsens; USD/JPY falls, CHF/JPY also reverses from high close.",
+    "triggers": [
+     "Trump Iran headlines escalate",
+     "Risk-off flows into JPY/CHF",
+     "USD/JPY loses 158.23"
+    ],
+    "invalidation": "USD/JPY holds above 158.23 and AUD/USD recovers above 0.69558.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 64.4,
+      "rationale": "Risk-off yen rebound would retrace measured 64.4-pip range."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 14.8,
+      "rationale": "Risk-off hits AUD with weak domestic catalysts."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 22.6,
+      "rationale": "USD recovery would retrace EUR/USD range after uncaused EUR strength."
+     }
+    ]
+   },
+   {
+    "name": "USD recovery",
+    "probability": 0.2,
+    "thesis": "USD selling rejected; if FOMC Waller or claims later supports USD, it could strengthen, reversing EUR/NZD gains.",
+    "triggers": [
+     "FOMC Waller sounds hawkish",
+     "US claims beat 200K forecast",
+     "USD recovers from overnight selling"
+    ],
+    "invalidation": "EUR/USD pushes above 1.12051 and USD/JPY falls below 158.23.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 22.6,
+      "rationale": "USD recovery after FOMC Waller/claims would retrace EUR-led gains."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 64.4,
+      "rationale": "USD recovery extends yen weakness."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 14.8,
+      "rationale": "USD strength compounds AUD softness."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "FOMC Member Waller Speaks at 10:30",
+    "why_it_matters": "Can shift USD after muted FOMC minutes.",
+    "watch": "DXY and USD/JPY reaction"
+   },
+   {
+    "risk": "BOE Gov Bailey Speaks at 14:15",
+    "why_it_matters": "Can move GBP and EUR/GBP.",
+    "watch": "GBP/USD and EUR/GBP"
+   },
+   {
+    "risk": "US Unemployment Claims at 14:30",
+    "why_it_matters": "Labor market read can change USD path.",
+    "watch": "DXY, USD/JPY, EUR/USD"
+   },
+   {
+    "risk": "Geopolitical Trump/Iran headlines",
+    "why_it_matters": "Drove overnight noise in oil/gold and risk.",
+    "watch": "Brent, Gold, JPY, CHF"
+   }
+  ],
+  "calendar_ahead_note": "Next window has FOMC Member Waller at 10:30, BOE Gov Bailey at 14:15, and US Unemployment Claims at 14:30; these can break existing ranges and clarify USD/GBP direction.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 16215,
+   "completion_tokens": 6899,
+   "total_tokens": 23114,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5005
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 15575
+  }
+ }
+}
