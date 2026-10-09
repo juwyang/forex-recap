@@ -1,0 +1,1575 @@
+{
+ "meta": {
+  "date": "2026-10-09",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-10-08T17:00:00+00:00",
+  "end_utc": "2026-10-09T05:00:00+00:00",
+  "start_local": "2026-10-08T19:00:00+02:00",
+  "end_local": "2026-10-09T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-09T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-09T17:00:00+00:00",
+  "generated_utc": "2026-10-09T11:51:00.642109+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 52
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-10-08 19:00 CEST",
+   "to_local": "2026-10-09 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "NZD",
+    "rank": 1,
+    "strength_pct": 0.194,
+    "intraday_peak": 0.194,
+    "intraday_trough": -0.017,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "AUD",
+    "rank": 2,
+    "strength_pct": 0.152,
+    "intraday_peak": 0.152,
+    "intraday_trough": -0.036,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "EUR",
+    "rank": 3,
+    "strength_pct": 0.087,
+    "intraday_peak": 0.087,
+    "intraday_trough": -0.003,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 4,
+    "strength_pct": 0.082,
+    "intraday_peak": 0.113,
+    "intraday_trough": 0.018,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "GBP",
+    "rank": 5,
+    "strength_pct": 0.005,
+    "intraday_peak": 0.027,
+    "intraday_trough": -0.021,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 6,
+    "strength_pct": -0.023,
+    "intraday_peak": 0.042,
+    "intraday_trough": -0.023,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 7,
+    "strength_pct": -0.218,
+    "intraday_peak": -0.063,
+    "intraday_trough": -0.218,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.279,
+    "intraday_peak": 0.037,
+    "intraday_trough": -0.279,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.305,
+    "from_EUR": 0.087,
+    "from_USD": 0.218,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.223,
+    "from_GBP": 0.005,
+    "from_USD": 0.218,
+    "base_share": 0.02
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.37,
+    "from_AUD": 0.152,
+    "from_USD": 0.218,
+    "base_share": 0.41
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.412,
+    "from_NZD": 0.194,
+    "from_USD": 0.218,
+    "base_share": 0.47
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.061,
+    "from_USD": -0.218,
+    "from_JPY": 0.279,
+    "base_share": 0.44
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.301,
+    "from_USD": -0.218,
+    "from_CHF": -0.082,
+    "base_share": 0.73
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.195,
+    "from_USD": -0.218,
+    "from_CAD": 0.023,
+    "base_share": 0.9
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.082,
+    "from_EUR": 0.087,
+    "from_GBP": -0.005,
+    "base_share": 0.95
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.366,
+    "from_EUR": 0.087,
+    "from_JPY": 0.279,
+    "base_share": 0.24
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.005,
+    "from_EUR": 0.087,
+    "from_CHF": -0.082,
+    "base_share": 0.51
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.065,
+    "from_EUR": 0.087,
+    "from_AUD": -0.152,
+    "base_share": 0.36
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.11,
+    "from_EUR": 0.087,
+    "from_CAD": 0.023,
+    "base_share": 0.79
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.107,
+    "from_EUR": 0.087,
+    "from_NZD": -0.194,
+    "base_share": 0.31
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.284,
+    "from_GBP": 0.005,
+    "from_JPY": 0.279,
+    "base_share": 0.02
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.078,
+    "from_GBP": 0.005,
+    "from_CHF": -0.082,
+    "base_share": 0.06
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.147,
+    "from_GBP": 0.005,
+    "from_AUD": -0.152,
+    "base_share": 0.03
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.028,
+    "from_GBP": 0.005,
+    "from_CAD": 0.023,
+    "base_share": 0.18
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.189,
+    "from_GBP": 0.005,
+    "from_NZD": -0.194,
+    "base_share": 0.02
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.431,
+    "from_AUD": 0.152,
+    "from_JPY": 0.279,
+    "base_share": 0.35
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.07,
+    "from_AUD": 0.152,
+    "from_CHF": -0.082,
+    "base_share": 0.65
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.175,
+    "from_AUD": 0.152,
+    "from_CAD": 0.023,
+    "base_share": 0.87
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.042,
+    "from_AUD": 0.152,
+    "from_NZD": -0.194,
+    "base_share": 0.44
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.473,
+    "from_NZD": 0.194,
+    "from_JPY": 0.279,
+    "base_share": 0.41
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.111,
+    "from_NZD": 0.194,
+    "from_CHF": -0.082,
+    "base_share": 0.7
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.217,
+    "from_NZD": 0.194,
+    "from_CAD": 0.023,
+    "base_share": 0.89
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.256,
+    "from_CAD": -0.023,
+    "from_JPY": 0.279,
+    "base_share": 0.08
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.105,
+    "from_CAD": -0.023,
+    "from_CHF": -0.082,
+    "base_share": 0.22
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.362,
+    "from_CHF": 0.082,
+    "from_JPY": 0.279,
+    "base_share": 0.23
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.222
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.174
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.1
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.094
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.006
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.026
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.249
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.319
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.12294,
+    "chg_pips": 33.9,
+    "chg_pct": 0.303,
+    "range_pips": 34.3,
+    "close_in_range": 0.99,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32426,
+    "chg_pips": 29.1,
+    "chg_pct": 0.22,
+    "range_pips": 34.5,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69779,
+    "chg_pips": 25.7,
+    "chg_pct": 0.37,
+    "range_pips": 26.9,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56203,
+    "chg_pips": 22.9,
+    "chg_pct": 0.409,
+    "range_pips": 23.7,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.101,
+    "chg_pips": 9.6,
+    "chg_pct": 0.061,
+    "range_pips": 60.9,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83033,
+    "chg_pips": -24.7,
+    "chg_pct": -0.297,
+    "range_pips": 27.6,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42122,
+    "chg_pips": -29.7,
+    "chg_pct": -0.209,
+    "range_pips": 34.6,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.93242,
+    "chg_pips": 0.5,
+    "chg_pct": 0.005,
+    "range_pips": 11.5,
+    "close_in_range": 0.83,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.418,
+    "chg_pips": 70.3,
+    "chg_pct": 0.371,
+    "range_pips": 87.4,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24145,
+    "chg_pips": -5.2,
+    "chg_pct": -0.042,
+    "range_pips": 22.0,
+    "close_in_range": 0.49,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84794,
+    "chg_pips": 6.8,
+    "chg_pct": 0.08,
+    "range_pips": 10.5,
+    "close_in_range": 0.99,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57939,
+    "chg_pips": 4.1,
+    "chg_pct": 0.071,
+    "range_pips": 15.0,
+    "close_in_range": 0.9,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46666,
+    "chg_pips": 5.3,
+    "chg_pct": 0.114,
+    "range_pips": 15.3,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.95336,
+    "chg_pips": -357.2,
+    "chg_pct": -0.358,
+    "range_pips": 404.0,
+    "close_in_range": 0.11,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.54738,
+    "chg_pips": -331.7,
+    "chg_pct": -0.346,
+    "range_pips": 415.3,
+    "close_in_range": 0.2,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.51387,
+    "chg_pips": -1029.3,
+    "chg_pct": -0.619,
+    "range_pips": 1048.9,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.1574,
+    "chg_pips": -145.0,
+    "chg_pct": -0.08,
+    "range_pips": 906.9,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.78,
+    "chg_pips": -23.6,
+    "chg_pct": -0.231,
+    "range_pips": 26.8,
+    "close_in_range": 0.11,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.40587,
+    "chg_pips": -35.3,
+    "chg_pct": -1.988,
+    "range_pips": 62.9,
+    "close_in_range": 0.08,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "down",
+    "pips": -3.8,
+    "ret_pct": -0.034,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "20:15",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 12.5,
+    "ret_pct": 0.112,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Putin In Talks With Iran's Pezeshkian: Russia Is Ready To…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "22:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -8.9,
+    "ret_pct": -0.079,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Blasts caused By tankers hitting mines In Strait Of Hormu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 22.4,
+    "ret_pct": 0.2,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 26.0,
+    "ret_pct": 0.165,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:30",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -32.3,
+    "ret_pct": -0.204,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 33.1,
+    "ret_pct": 0.21,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 7.7,
+    "ret_pct": 0.058,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -7.6,
+    "ret_pct": -0.057,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Blasts caused By tankers hitting mines In Strait Of Hormu… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:15",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 22.5,
+    "ret_pct": 0.17,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -3.8,
+    "ret_pct": -0.029,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -9.4,
+    "ret_pct": -0.113,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:15",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 5.8,
+    "ret_pct": 0.07,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "01:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -13.4,
+    "ret_pct": -0.161,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "down",
+    "pips": -2.5,
+    "ret_pct": -0.036,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "20:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 24.5,
+    "ret_pct": 0.352,
+    "minutes": 630,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Putin In Talks With Iran's Pezeshkian: Russia Is Ready To…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "down",
+    "pips": -13.2,
+    "ret_pct": -0.093,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "21:45",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 6.8,
+    "ret_pct": 0.048,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Blasts caused By tankers hitting mines In Strait Of Hormu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "01:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -13.6,
+    "ret_pct": -0.096,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -4.1,
+    "ret_pct": -0.073,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 21.8,
+    "ret_pct": 0.389,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -6.9,
+    "ret_pct": -0.074,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Gulf Shuts In 1.3 Million B/d Or 63% Oil Production: M…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:30",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 7.4,
+    "ret_pct": 0.079,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:45",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -5.6,
+    "ret_pct": -0.06,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "03:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 4.5,
+    "ret_pct": 0.048,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 73.5,
+    "ret_pct": 0.387,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Treasury Auction Results, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 7.7,
+    "ret_pct": 0.062,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Treasury Auction Results, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -16.3,
+    "ret_pct": -0.131,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Blasts caused By tankers hitting mines In Strait Of Hormu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:15",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 14.6,
+    "ret_pct": 0.118,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:45",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.057,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:00",
+    "to": "04:30",
+    "dir": "up",
+    "pips": 11.0,
+    "ret_pct": 0.089,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "04:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -9.5,
+    "ret_pct": -0.076,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 1.7,
+    "ret_pct": 0.02,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Gulf Shuts In 1.3 Million B/d Or 63% Oil Production: M…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "22:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -6.0,
+    "ret_pct": -0.071,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Blasts caused By tankers hitting mines In Strait Of Hormu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.106,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -5.8,
+    "ret_pct": -0.1,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Gulf Shuts In 1.3 Million B/d Or 63% Oil Production: M…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.3,
+    "ret_pct": 0.213,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -9.2,
+    "ret_pct": -0.197,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Gulf Shuts In 1.3 Million B/d Or 63% Oil Production: M…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 14.4,
+    "ret_pct": 0.31,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -189.6,
+    "ret_pct": -0.19,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:00",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 173.4,
+    "ret_pct": 0.174,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "01:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -217.5,
+    "ret_pct": -0.218,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -294.2,
+    "ret_pct": -0.307,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 228.6,
+    "ret_pct": 0.24,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "01:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -162.9,
+    "ret_pct": -0.17,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 118.7,
+    "ret_pct": 0.072,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Treasury Auction Results, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "20:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -985.9,
+    "ret_pct": -0.593,
+    "minutes": 600,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Putin In Talks With Iran's Pezeshkian: Russia Is Ready To…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 664.4,
+    "ret_pct": 0.366,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "20:45",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -531.1,
+    "ret_pct": -0.292,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Putin In Talks With Iran's Pezeshkian: Russia Is Ready To…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 261.5,
+    "ret_pct": 0.144,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -310.0,
+    "ret_pct": -0.17,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "up",
+    "pips": 80.5,
+    "ret_pct": 0.716,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:00",
+    "to": "22:00",
+    "dir": "down",
+    "pips": -93.5,
+    "ret_pct": -0.825,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Putin In Talks With Iran's Pezeshkian: Russia Is Ready To…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "up",
+    "pips": 67.5,
+    "ret_pct": 0.6,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Blasts caused By tankers hitting mines In Strait Of Hormu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -147.8,
+    "ret_pct": -1.307,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Household Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "down",
+    "pips": -66.1,
+    "ret_pct": -0.16,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "20:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 565.0,
+    "ret_pct": 1.37,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Putin In Talks With Iran's Pezeshkian: Russia Is Ready To…, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [],
+  "headline_count": 6,
+  "top_headlines": [
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "US Treasury Auction Results"
+   },
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "Treasury: US Is Targeting The Remnants Of Iran's Shadow Fleet"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "US Gulf Shuts In 1.3 Million B/d Or 63% Oil Production: MMA"
+   },
+   {
+    "time": "19:45",
+    "impact": "low",
+    "title": "Fed's Musalem: Inflation is elevated and being driven by persistent demand pressures and supply shocks"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "Putin In Talks With Iran's Pezeshkian: Russia Is Ready To Undertake All Measures To End Iran Conflict"
+   },
+   {
+    "time": "22:30",
+    "impact": "low",
+    "title": "Blasts caused By tankers hitting mines In Strait Of Hormuz: Fars"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Employment Change",
+    "forecast": "6.1K",
+    "previous": "-41.7K"
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Unemployment Rate",
+    "forecast": "6.5%",
+    "previous": "6.4%"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Prelim UoM Consumer Sentiment",
+    "forecast": "47.5",
+    "previous": "47.8"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Prelim UoM Inflation Expectations",
+    "forecast": null,
+    "previous": "4.6%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Overnight FX saw broad USD and JPY weakness with no clear catalyst: NZD led (+0.194%), AUD followed (+0.152%), while JPY (-0.279%) and USD (-0.218%) lagged. EUR (+0.087%) and CHF (+0.082%) firmed modestly, GBP was flat. Risk proxies supported high-beta: Gold/USD rose 565.0 points, VIX fell 35.3 points; most legs showed fade-and-rally patterns with no event ownership.",
+  "themes": [
+   {
+    "theme": "Broad USD/JPY weakness without a clear catalyst",
+    "evidence": "USD -0.218%, JPY -0.279%, both lacked own releases and event reactions; USD/JPY closed nearly flat at +9.6 pips.",
+    "currencies": [
+     "USD",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "Antipodean and risk-sensitive outperformance",
+    "evidence": "NZD +0.194%, AUD +0.152%, both closed at intraday best amid no own data.",
+    "currencies": [
+     "NZD",
+     "AUD"
+    ]
+   },
+   {
+    "theme": "Risk bid supported high-beta and commodities",
+    "evidence": "Gold/USD +565.0, VIX -35.3 points; oil headlines around Hormuz drew attention but lacked ownership.",
+    "currencies": [
+     "AUD",
+     "NZD",
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Weakened broadly with no clear catalyst; no own releases or event reaction.",
+   "EUR": "Firmed modestly without a clear catalyst; flow-driven alongside soft USD tone.",
+   "JPY": "Weakest major with no clear catalyst; move likely flow or positioning.",
+   "GBP": "Flat, rangebound; no clear catalyst and negligible move.",
+   "AUD": "Strengthened with no own releases; closed at its best on risk appetite.",
+   "CAD": "Slightly weaker overall; no clear catalyst, held range.",
+   "CHF": "Mild strength, held range; no clear catalyst.",
+   "NZD": "Strongest major with no own releases; closed at its best on risk appetite."
+  },
+  "leg_notes": {
+   "EUR/USD": "Four legs alternated between small dips and recoveries before a final up-leg to 1.12294; none showed a clear catalyst."
+  },
+  "polarity_reads": [],
+  "scenarios": [
+   {
+    "name": "Risk-on extension",
+    "probability": 0.45,
+    "thesis": "Soft USD/JPY persists, high-beta and commodity FX extend gains; no data to disrupt flow.",
+    "triggers": [
+     "USD/JPY holds above 158.101",
+     "AUD/USD holds above 0.69779",
+     "NZD/USD holds above 0.56203"
+    ],
+    "invalidation": "USD/JPY breaks below 158.101 or AUD/USD drops below 0.69779.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 60.9,
+      "rationale": "JPY weakest major, no catalyst to reverse flow."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 26.9,
+      "rationale": "AUD strong with risk appetite, closed at its best."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 23.7,
+      "rationale": "NZD strongest major, closed at its best."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off reversal",
+    "probability": 0.35,
+    "thesis": "Safe havens rebound, high-beta unwinds as flow and positioning reverse; USD and JPY strengthen.",
+    "triggers": [
+     "EUR/USD breaks below 1.12294",
+     "AUD/USD drops below 0.69779",
+     "USD/JPY falls below 158.101"
+    ],
+    "invalidation": "EUR/USD reclaims 1.12294 and AUD/USD holds above 0.69779.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 34.3,
+      "rationale": "USD strength in risk-off unwinds EUR gains."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 26.9,
+      "rationale": "High-beta AUD unwinds against safe-haven USD."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 60.9,
+      "rationale": "JPY strengthens more than USD in risk-off."
+     }
+    ]
+   },
+   {
+    "name": "Choppy range",
+    "probability": 0.2,
+    "thesis": "No clear driver; pairs stay within overnight ranges as liquidity thins ahead of US data.",
+    "triggers": [
+     "EUR/USD respects its 34.3-pip range",
+     "USD/JPY respects its 60.9-pip range"
+    ],
+    "invalidation": "Break of EUR/USD range 34.3 or USD/JPY range 60.9.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 34.3,
+      "rationale": "Rangebound with no catalyst."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 60.9,
+      "rationale": "Rangebound with no catalyst."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "USD/JPY weakness with no clear catalyst can reverse sharply.",
+    "why_it_matters": "JPY is weakest major (-0.279%) but move lacks fundamental anchor; positioning unwinds could be violent.",
+    "watch": "USD/JPY 158.101 and range 60.9."
+   },
+   {
+    "risk": "Oil/Hormuz headlines escalate.",
+    "why_it_matters": "Headlines around tanker mines and Iran conflict could spark safe-haven demand and hit risk FX.",
+    "watch": "Brent/USD and safe havens CHF/JPY."
+   },
+   {
+    "risk": "CAD employment surprise.",
+    "why_it_matters": "High-impact CAD jobs can drive USD/CAD and broad CAD crosses.",
+    "watch": "14:30 CAD Employment Change forecast 6.1K, Unemployment Rate 6.5%."
+   }
+  ],
+  "calendar_ahead_note": "CAD employment (14:30) and UoM sentiment/inflation expectations (16:00) are the key scheduled events; they can reset USD/CAD and broader risk tone.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 12330,
+   "completion_tokens": 6529,
+   "total_tokens": 18859,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4949
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 11690
+  }
+ }
+}
