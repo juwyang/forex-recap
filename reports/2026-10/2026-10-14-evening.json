@@ -1,0 +1,2150 @@
+{
+ "meta": {
+  "date": "2026-10-14",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-13T17:00:00+00:00",
+  "end_utc": "2026-10-14T17:00:00+00:00",
+  "start_local": "2026-10-13T19:00:00+02:00",
+  "end_local": "2026-10-14T19:00:00+02:00",
+  "fwd_start_utc": "2026-10-14T17:00:00+00:00",
+  "fwd_end_utc": "2026-10-15T17:00:00+00:00",
+  "generated_utc": "2026-10-14T20:36:57.805721+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 26
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-13 19:00 CEST",
+   "to_local": "2026-10-14 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.426,
+    "intraday_peak": 0.517,
+    "intraday_trough": -0.173,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.17%, recovered 87%",
+    "own_releases": [
+     {
+      "title": "Core CPI m/m +3 more",
+      "impact": "High",
+      "actual": "0.3%",
+      "forecast": "0.2%",
+      "polarity": "normal",
+      "note": "beat surprise -> USD stronger 0.457%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +3 more",
+     "instrument": "USD/CHF",
+     "sigma": 14.09
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 2,
+    "strength_pct": 0.209,
+    "intraday_peak": 0.209,
+    "intraday_trough": -0.125,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "USD/JPY",
+     "sigma": 0.8
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 3,
+    "strength_pct": 0.129,
+    "intraday_peak": 0.371,
+    "intraday_trough": -0.018,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.37%, gave back 62%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "AUD/NZD",
+     "sigma": 1.36
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 4,
+    "strength_pct": 0.086,
+    "intraday_peak": 0.086,
+    "intraday_trough": -0.087,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "BOC Gov Macklem Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.015%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "EUR",
+    "rank": 5,
+    "strength_pct": -0.163,
+    "intraday_peak": 0.059,
+    "intraday_trough": -0.245,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.06%, gave back 73%",
+    "own_releases": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "EUR weaker by 0.046%, but no forecast to score the surprise against"
+     },
+     {
+      "title": "ECB President Lagarde Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.012%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +3 more",
+     "instrument": "EUR/USD",
+     "sigma": -13.05
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 6,
+    "strength_pct": -0.193,
+    "intraday_peak": 0.07,
+    "intraday_trough": -0.209,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 94%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +3 more",
+     "instrument": "USD/CHF",
+     "sigma": 14.09
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.246,
+    "intraday_peak": 0.116,
+    "intraday_trough": -0.288,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.12%, gave back 90%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +3 more",
+     "instrument": "NZD/USD",
+     "sigma": -12.32
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 8,
+    "strength_pct": -0.247,
+    "intraday_peak": 0.095,
+    "intraday_trough": -0.254,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.09%, gave back 98%",
+    "own_releases": [
+     {
+      "title": "BOE Gov Bailey Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.012%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "EUR/GBP",
+     "sigma": 1.0
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.59,
+    "from_EUR": -0.163,
+    "from_USD": -0.426,
+    "base_share": 0.28
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.673,
+    "from_GBP": -0.247,
+    "from_USD": -0.426,
+    "base_share": 0.37
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.297,
+    "from_AUD": 0.129,
+    "from_USD": -0.426,
+    "base_share": 0.23
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.673,
+    "from_NZD": -0.246,
+    "from_USD": -0.426,
+    "base_share": 0.37
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.217,
+    "from_USD": 0.426,
+    "from_JPY": -0.209,
+    "base_share": 0.67
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.62,
+    "from_USD": 0.426,
+    "from_CHF": 0.193,
+    "base_share": 0.69
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.34,
+    "from_USD": 0.426,
+    "from_CAD": -0.086,
+    "base_share": 0.83
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.084,
+    "from_EUR": -0.163,
+    "from_GBP": 0.247,
+    "base_share": 0.4
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.372,
+    "from_EUR": -0.163,
+    "from_JPY": -0.209,
+    "base_share": 0.44
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.03,
+    "from_EUR": -0.163,
+    "from_CHF": 0.193,
+    "base_share": 0.46
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.292,
+    "from_EUR": -0.163,
+    "from_AUD": -0.129,
+    "base_share": 0.56
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.249,
+    "from_EUR": -0.163,
+    "from_CAD": -0.086,
+    "base_share": 0.66
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.083,
+    "from_EUR": -0.163,
+    "from_NZD": 0.246,
+    "base_share": 0.4
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.456,
+    "from_GBP": -0.247,
+    "from_JPY": -0.209,
+    "base_share": 0.54
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.054,
+    "from_GBP": -0.247,
+    "from_CHF": 0.193,
+    "base_share": 0.56
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.376,
+    "from_GBP": -0.247,
+    "from_AUD": -0.129,
+    "base_share": 0.66
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.333,
+    "from_GBP": -0.247,
+    "from_CAD": -0.086,
+    "base_share": 0.74
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.001,
+    "from_GBP": -0.247,
+    "from_NZD": 0.246,
+    "base_share": 0.5
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.08,
+    "from_AUD": 0.129,
+    "from_JPY": -0.209,
+    "base_share": 0.38
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.322,
+    "from_AUD": 0.129,
+    "from_CHF": 0.193,
+    "base_share": 0.4
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.043,
+    "from_AUD": 0.129,
+    "from_CAD": -0.086,
+    "base_share": 0.6
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.375,
+    "from_AUD": 0.129,
+    "from_NZD": 0.246,
+    "base_share": 0.34
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.455,
+    "from_NZD": -0.246,
+    "from_JPY": -0.209,
+    "base_share": 0.54
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.053,
+    "from_NZD": -0.246,
+    "from_CHF": 0.193,
+    "base_share": 0.56
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.332,
+    "from_NZD": -0.246,
+    "from_CAD": -0.086,
+    "base_share": 0.74
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.123,
+    "from_CAD": 0.086,
+    "from_JPY": -0.209,
+    "base_share": 0.29
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.279,
+    "from_CAD": 0.086,
+    "from_CHF": 0.193,
+    "base_share": 0.31
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.402,
+    "from_CHF": -0.193,
+    "from_JPY": -0.209,
+    "base_share": 0.48
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.488
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.239
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.148
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.099
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.186
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.22
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.281
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.282
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11234,
+    "chg_pips": -66.0,
+    "chg_pct": -0.59,
+    "range_pips": 98.1,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.3155,
+    "chg_pips": -89.0,
+    "chg_pct": -0.672,
+    "range_pips": 138.1,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69588,
+    "chg_pips": -20.7,
+    "chg_pct": -0.297,
+    "range_pips": 62.4,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.55742,
+    "chg_pips": -37.6,
+    "chg_pct": -0.67,
+    "range_pips": 64.1,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.742,
+    "chg_pips": 34.5,
+    "chg_pct": 0.218,
+    "range_pips": 83.3,
+    "close_in_range": 0.75,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83834,
+    "chg_pips": 51.6,
+    "chg_pct": 0.619,
+    "range_pips": 77.9,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42637,
+    "chg_pips": 48.4,
+    "chg_pct": 0.34,
+    "range_pips": 102.7,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.93255,
+    "chg_pips": 2.9,
+    "chg_pct": 0.031,
+    "range_pips": 21.3,
+    "close_in_range": 0.58,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.339,
+    "chg_pips": -76.1,
+    "chg_pct": -0.4,
+    "range_pips": 120.1,
+    "close_in_range": 0.12,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24828,
+    "chg_pips": 46.7,
+    "chg_pct": 0.376,
+    "range_pips": 68.5,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84554,
+    "chg_pips": 7.1,
+    "chg_pct": 0.084,
+    "range_pips": 32.8,
+    "close_in_range": 0.88,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58338,
+    "chg_pips": 18.8,
+    "chg_pct": 0.323,
+    "range_pips": 39.2,
+    "close_in_range": 0.7,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46731,
+    "chg_pips": -2.4,
+    "chg_pct": -0.051,
+    "range_pips": 20.2,
+    "close_in_range": 0.44,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.06121,
+    "chg_pips": 862.3,
+    "chg_pct": 0.864,
+    "range_pips": 1477.5,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.54705,
+    "chg_pips": 234.8,
+    "chg_pct": 0.247,
+    "range_pips": 1192.4,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.6178,
+    "chg_pips": 1176.0,
+    "chg_pct": 0.713,
+    "range_pips": 2141.8,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.4574,
+    "chg_pips": 753.3,
+    "chg_pct": 0.41,
+    "range_pips": 2519.0,
+    "close_in_range": 0.43,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 102.584,
+    "chg_pips": 54.5,
+    "chg_pct": 0.534,
+    "range_pips": 86.2,
+    "close_in_range": 0.85,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 17.26,
+    "chg_pips": 50.0,
+    "chg_pct": 2.983,
+    "range_pips": 97.8,
+    "close_in_range": 0.77,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "08:30",
+    "dir": "up",
+    "pips": 19.0,
+    "ret_pct": 0.17,
+    "minutes": 810,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "08:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -87.1,
+    "ret_pct": -0.777,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (-59.2 in 15 min, 68% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": -59.2,
+      "share_of_leg": 0.68
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -23.7,
+    "ret_pct": -0.15,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "06:45",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 79.8,
+    "ret_pct": 0.505,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (+39.3 in 15 min, 49% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 39.3,
+      "share_of_leg": 0.49
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -20.1,
+    "ret_pct": -0.126,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Statement from U.S. Secretary of the Treasury Scott Besse…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 26.5,
+    "ret_pct": 0.2,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "06:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -119.3,
+    "ret_pct": -0.899,
+    "minutes": 720,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (-58.8 in 15 min, 49% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": -58.8,
+      "share_of_leg": 0.49
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "06:30",
+    "dir": "down",
+    "pips": -13.2,
+    "ret_pct": -0.158,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "06:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 66.1,
+    "ret_pct": 0.795,
+    "minutes": 735,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (+44.2 in 15 min, 67% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 44.2,
+      "share_of_leg": 0.67
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 32.2,
+    "ret_pct": 0.461,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -53.1,
+    "ret_pct": -0.757,
+    "minutes": 270,
+    "cause": "Core CPI m/m +3 more",
+    "cause_ccy": "USD",
+    "confidence": "high",
+    "note": "USD Core CPI m/m +3 more (actual 0.3% vs forecast 0.2%) -- -35.2 in the first 15 min, 66% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": -35.2,
+      "share_of_leg": 0.66
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "06:15",
+    "dir": "down",
+    "pips": -19.0,
+    "ret_pct": -0.134,
+    "minutes": 675,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "06:15",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 100.5,
+    "ret_pct": 0.708,
+    "minutes": 570,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +3 more pushed it along (+50.9 in 15 min, 51% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +3 more",
+      "ccy": "USD",
+      "pips": 50.9,
+      "share_of_leg": 0.51
+     },
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 50.9,
+      "share_of_leg": 0.51
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -33.7,
+    "ret_pct": -0.236,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Statement from U.S. Secretary of the Treasury Scott Besse…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 14.3,
+    "ret_pct": 0.255,
+    "minutes": 600,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -53.7,
+    "ret_pct": -0.954,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (-32.3 in 15 min, 60% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": -32.3,
+      "share_of_leg": 0.6
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 3.3,
+    "ret_pct": 0.035,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "20:30",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -7.4,
+    "ret_pct": -0.079,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: An increase in long-term interest rates const… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:45",
+    "to": "10:15",
+    "dir": "up",
+    "pips": 13.4,
+    "ret_pct": 0.144,
+    "minutes": 630,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "10:15",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -18.4,
+    "ret_pct": -0.197,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "15:00",
+    "to": "17:15",
+    "dir": "up",
+    "pips": 16.6,
+    "ret_pct": 0.178,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The Conference Board Leading Economic Index (LEI) for the… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "17:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -5.1,
+    "ret_pct": -0.055,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Zelenskiy On Trump: If You're In The Middle, You Have To …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 24.9,
+    "ret_pct": 0.131,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -102.1,
+    "ret_pct": -0.536,
+    "minutes": 930,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +3 more pushed it along (-52.0 in 15 min, 51% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +3 more",
+      "ccy": "USD",
+      "pips": -52.0,
+      "share_of_leg": 0.51
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 55.6,
+    "ret_pct": 0.447,
+    "minutes": 1170,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "14:30",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -17.5,
+    "ret_pct": -0.14,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Consumer Price Index - September 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "15:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 12.1,
+    "ret_pct": 0.097,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The Conference Board Leading Economic Index (LEI) for the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -19.3,
+    "ret_pct": -0.228,
+    "minutes": 1185,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but ECB President Lagarde Speaks pushed it along (-3.1 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "ccy": "EUR",
+      "pips": -3.1,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": -8.4,
+      "share_of_leg": 0.44
+     },
+     {
+      "title": "Core CPI m/m +3 more",
+      "ccy": "USD",
+      "pips": -8.4,
+      "share_of_leg": 0.44
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 27.1,
+    "ret_pct": 0.322,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CB Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.122,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: 2% inflation not some unicorn, something we…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:15",
+    "to": "12:15",
+    "dir": "up",
+    "pips": 37.2,
+    "ret_pct": 0.641,
+    "minutes": 780,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "12:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -10.6,
+    "ret_pct": -0.181,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Consumer Price Index - September 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -9.2,
+    "ret_pct": -0.197,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 13.8,
+    "ret_pct": 0.296,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Visitor Arrivals m/m moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "05:00",
+    "to": "08:15",
+    "dir": "down",
+    "pips": -5.3,
+    "ret_pct": -0.113,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOE Gov Bailey Speaks pushed it along (-2.3 in 15 min, 43% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOE Gov Bailey Speaks",
+      "ccy": "GBP",
+      "pips": -2.3,
+      "share_of_leg": 0.43
+     },
+     {
+      "title": "BOC Gov Macklem Speaks",
+      "ccy": "CAD",
+      "pips": -1.6,
+      "share_of_leg": 0.3
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "08:15",
+    "to": "10:45",
+    "dir": "up",
+    "pips": 8.7,
+    "ret_pct": 0.186,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but ECB President Lagarde Speaks pushed it along (+2.2 in 15 min, 25% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "ccy": "EUR",
+      "pips": 2.2,
+      "share_of_leg": 0.25
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "10:45",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -13.1,
+    "ret_pct": -0.28,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +3 more pushed it along (-2.4 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +3 more",
+      "ccy": "USD",
+      "pips": -2.4,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 2.0,
+    "ret_pct": 0.043,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Statement from U.S. Secretary of the Treasury Scott Besse…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "05:00",
+    "dir": "down",
+    "pips": -268.9,
+    "ret_pct": -0.27,
+    "minutes": 600,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "05:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1166.2,
+    "ret_pct": 1.173,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (+799.7 in 15 min, 69% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 799.7,
+      "share_of_leg": 0.69
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -629.5,
+    "ret_pct": -0.661,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 884.5,
+    "ret_pct": 0.935,
+    "minutes": 270,
+    "cause": "Core CPI m/m +3 more",
+    "cause_ccy": "USD",
+    "confidence": "high",
+    "note": "USD Core CPI m/m +3 more (actual 0.3% vs forecast 0.2%) -- +620.2 in the first 15 min, 70% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 620.2,
+      "share_of_leg": 0.7
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -467.5,
+    "ret_pct": -0.283,
+    "minutes": 810,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "08:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1665.3,
+    "ret_pct": 1.012,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (+1290.6 in 15 min, 77% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 1290.6,
+      "share_of_leg": 0.77
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -322.1,
+    "ret_pct": -0.175,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:00",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 2235.1,
+    "ret_pct": 1.218,
+    "minutes": 1020,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (+1493.0 in 15 min, 67% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": 1493.0,
+      "share_of_leg": 0.67
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1181.1,
+    "ret_pct": -0.636,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Statement from U.S. Secretary of the Treasury Scott Besse…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "down",
+    "pips": -42.2,
+    "ret_pct": -0.365,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:15",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 131.2,
+    "ret_pct": 1.14,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: An increase in long-term interest rates const…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "03:15",
+    "to": "11:00",
+    "dir": "down",
+    "pips": -163.1,
+    "ret_pct": -1.401,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "11:00",
+    "to": "12:30",
+    "dir": "up",
+    "pips": 108.6,
+    "ret_pct": 0.946,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Bowman Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "12:30",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -116.7,
+    "ret_pct": -1.007,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Core CPI m/m +3 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 127.2,
+    "ret_pct": 1.109,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The Conference Board Leading Economic Index (LEI) for the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 107.0,
+    "ret_pct": 0.257,
+    "minutes": 600,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "05:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -841.9,
+    "ret_pct": -2.021,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - September 2026 pushed it along (-614.7 in 15 min, 73% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - September 2026",
+      "ccy": null,
+      "pips": -614.7,
+      "share_of_leg": 0.73
+     }
+    ]
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core CPI m/m +3 more",
+    "actual": "0.3%",
+    "forecast": "0.2%",
+    "previous": "0.3%",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> USD stronger 0.457%",
+    "own_ccy_impulse_pct": 0.457,
+    "top_movers": [
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.463,
+      "pips": 38.6,
+      "unit": "pips",
+      "sigma": 14.09
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.414,
+      "pips": -46.4,
+      "unit": "pips",
+      "sigma": -13.05
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.846,
+      "pips": 1551.9,
+      "unit": "pips",
+      "sigma": 12.76
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.708,
+      "pips": 1165.5,
+      "unit": "pips",
+      "sigma": 12.68
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.507,
+      "pips": -28.5,
+      "unit": "pips",
+      "sigma": -12.32
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.582,
+      "pips": 579.9,
+      "unit": "pips",
+      "sigma": 12.06
+     }
+    ]
+   },
+   {
+    "time": "10:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "unscored",
+    "polarity_note": "EUR weaker by 0.046%, but no forecast to score the surprise against",
+    "own_ccy_impulse_pct": -0.046,
+    "top_movers": [
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.013,
+      "pips": -1.2,
+      "unit": "pips",
+      "sigma": -0.91
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.028,
+      "pips": -3.1,
+      "unit": "pips",
+      "sigma": -0.87
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.017,
+      "pips": 0.8,
+      "unit": "pips",
+      "sigma": 0.79
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.017,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.78
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.022,
+      "pips": -2.9,
+      "unit": "pips",
+      "sigma": -0.74
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.007,
+      "pips": -0.6,
+      "unit": "pips",
+      "sigma": -0.6
+     }
+    ]
+   },
+   {
+    "time": "08:05",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "BOC Gov Macklem Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.015%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.015,
+    "top_movers": [
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.187,
+      "pips": 77.4,
+      "unit": "pips ($0.10)",
+      "sigma": 1.95
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": -0.138,
+      "pips": -16.0,
+      "unit": "pips ($0.01)",
+      "sigma": -1.37
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": -0.051,
+      "pips": -84.8,
+      "unit": "pips",
+      "sigma": -0.92
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.017,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.79
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.008,
+      "pips": 0.7,
+      "unit": "pips",
+      "sigma": 0.7
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.01,
+      "pips": 1.3,
+      "unit": "pips",
+      "sigma": 0.68
+     }
+    ]
+   },
+   {
+    "time": "07:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.012%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.012,
+    "top_movers": [
+     {
+      "instrument": "NZD/CHF",
+      "pct": -0.038,
+      "pips": -1.8,
+      "unit": "pips",
+      "sigma": -1.77
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.015,
+      "pips": 1.9,
+      "unit": "pips",
+      "sigma": 1.0
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.012,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 1.0
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.091,
+      "pips": 37.7,
+      "unit": "pips ($0.10)",
+      "sigma": 0.95
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": -0.021,
+      "pips": -1.2,
+      "unit": "pips",
+      "sigma": -0.94
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.032,
+      "pips": -1.8,
+      "unit": "pips",
+      "sigma": -0.78
+     }
+    ]
+   },
+   {
+    "time": "04:10",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.012%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.012,
+    "top_movers": [
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.021,
+      "pips": 2.6,
+      "unit": "pips",
+      "sigma": 1.36
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.017,
+      "pips": 2.7,
+      "unit": "pips",
+      "sigma": 0.8
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.012,
+      "pips": 0.7,
+      "unit": "pips",
+      "sigma": 0.55
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": -0.045,
+      "pips": -5.2,
+      "unit": "pips ($0.01)",
+      "sigma": -0.44
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.011,
+      "pips": -1.5,
+      "unit": "pips",
+      "sigma": -0.38
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": 0.008,
+      "pips": 1.5,
+      "unit": "pips",
+      "sigma": 0.38
+     }
+    ]
+   }
+  ],
+  "headline_count": 23,
+  "top_headlines": [
+   {
+    "time": "20:00",
+    "impact": "high",
+    "title": "Fed's Williams: One more interest-rate hike appropriate this year"
+   },
+   {
+    "time": "14:30",
+    "impact": "high",
+    "title": "US Consumer Price Index - September 2026"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "Fed's Barkin: 2% inflation not some unicorn, something we can hit"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "Fed's Barkin: It is clear that inflation is enduring, acting makes sense"
+   },
+   {
+    "time": "20:30",
+    "impact": "low",
+    "title": "ECB's Lane: An increase in long-term interest rates constitutes a material tightening, relevant for the ECB in setting its policy stance"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Collins: Perspectives on the Economy and the Banking Landscape"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Bailey: The longer the energy hit lasts, the harder it gets"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Fed's Collins sees another rate hike on the table before end of 2026"
+   },
+   {
+    "time": "23:45",
+    "impact": "low",
+    "title": "NZ international travel: August 2026"
+   },
+   {
+    "time": "01:45",
+    "impact": "low",
+    "title": "Japan Money Stock (Preliminary Figures for September 2026)"
+   },
+   {
+    "time": "03:45",
+    "impact": "low",
+    "title": "Producer prices in China rise at fastest pace since June 2022, beating expectations"
+   },
+   {
+    "time": "04:15",
+    "impact": "low",
+    "title": "ECB President Lagarde: Inflation increasing mainly but not solely due to energy prices"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "02:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "Employment Change",
+    "forecast": "19.6K",
+    "previous": "39.5K"
+   },
+   {
+    "time": "02:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "Unemployment Rate",
+    "forecast": "4.6%",
+    "previous": "4.6%"
+   },
+   {
+    "time": "06:30",
+    "ccy": "CHF",
+    "impact": "Medium",
+    "event": "SNB Chairman Schlegel Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "GDP m/m",
+    "forecast": "-0.1%",
+    "previous": "0.4%"
+   },
+   {
+    "time": "09:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "12:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "EU Economic Summit",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core PPI m/m",
+    "forecast": "0.3%",
+    "previous": "0.2%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core Retail Sales m/m",
+    "forecast": "0.6%",
+    "previous": "1.4%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "PPI m/m",
+    "forecast": "0.6%",
+    "previous": "0.4%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Retail Sales m/m",
+    "forecast": "0.3%",
+    "previous": "1.2%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Philly Fed Manufacturing Index",
+    "forecast": "28.2",
+    "previous": "37.8"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Unemployment Claims",
+    "forecast": "199K",
+    "previous": "197K"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The dollar rejected early weakness and led the board after US core CPI printed 0.3% versus 0.2%, adding 0.457% to the USD basket. EUR and GBP led early but gave back 73% and 98% of those gains respectively, closing as the weakest majors. Central-bank remarks from Lagarde, Bailey and Macklem all scored muted or unscored, leaving the CPI release as the only tradable impulse. The tape shows risk-sensitive currencies failed to hold early gains while USD/CHF and USD/MXN saw pronounced repricing.",
+  "themes": [
+   {
+    "theme": "US core CPI triggers broad dollar repricing",
+    "evidence": "Core CPI m/m +3 more actual 0.3% vs forecast 0.2% produced USD own-currency impulse +0.457%; USD/CHF +0.62%, USD/JPY +0.217%, EUR/USD -0.59%, DXY +0.534%.",
+    "currencies": [
+     "USD",
+     "CHF",
+     "JPY",
+     "EUR"
+    ]
+   },
+   {
+    "theme": "Early high-beta and European FX gains rejected",
+    "evidence": "EUR led +0.06% then gave back 73%; GBP led +0.09% then gave back 98%; AUD led +0.37% then gave back 62%; NZD led +0.12% then gave back 90%.",
+    "currencies": [
+     "EUR",
+     "GBP",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Central-bank commentary was noise",
+    "evidence": "Lagarde's remarks scored muted 0.012% and unscored -0.046%; Bailey basket moved 0.012%; Macklem basket moved -0.015%, all inside the noise floor.",
+    "currencies": [
+     "EUR",
+     "GBP",
+     "CAD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "US core CPI beat at 0.3% vs 0.2% added 0.457%, reversing early selling into broad demand.",
+   "EUR": "ECB Lagarde's remarks scored unscored or muted; EUR led +0.06% then gave back 73%.",
+   "JPY": "No own releases; closed at its best (+0.209%) with no direct catalyst.",
+   "GBP": "BOE Bailey's speech was muted; GBP led +0.09% then gave back 98% to close weakest.",
+   "AUD": "No own releases; led +0.37% then gave back 62%, still positive for the day.",
+   "CAD": "BOC Macklem's speech was muted; closed at its best (+0.086%) with no tradable impulse.",
+   "CHF": "No own releases; led +0.07% then gave back 94% to close lower.",
+   "NZD": "No own releases; led +0.12% then gave back 90% to close near lows."
+  },
+  "leg_notes": {
+   "EUR/USD": "The pair first rose 19.0 pips with no clear catalyst, then fell 87.1 pips in a leg where US CPI accounted for 68% of the move."
+  },
+  "polarity_reads": [
+   {
+    "event": "Core CPI m/m +3 more",
+    "read": "Normal beat polarity (USD +0.457%) shows positioning was not fighting USD strength; USD/CHF sigma 14.09 indicates a short-dollar squeeze."
+   },
+   {
+    "event": "ECB President Lagarde Speaks",
+    "read": "Scored muted at 0.012% and later unscored at -0.046%, indicating no new information to reprice EUR, so positioning was flat."
+   },
+   {
+    "event": "BOE Gov Bailey Speaks",
+    "read": "Muted 0.012% basket move inside noise means Bailey added nothing; GBP weakness was USD-driven, not BOE-driven."
+   },
+   {
+    "event": "BOC Gov Macklem Speaks",
+    "read": "Muted -0.015% basket move inside noise argues no CAD-specific positioning was triggered."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "USD inflation repricing extends",
+    "probability": 0.45,
+    "thesis": "The CPI beat reinforces higher-for-longer USD; firm US PPI/retail sales extend dollar gains while commodity FX stabilizes but lags.",
+    "triggers": [
+     "US Core PPI m/m above 0.3%",
+     "US Core Retail Sales m/m above 0.6%"
+    ],
+    "invalidation": "US data miss or risk sentiment flips sharply risk-on",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 66.0,
+      "rationale": "EUR/USD already fell 66.0 pips today; another USD-positive surprise can match that downside."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 34.5,
+      "rationale": "USD/JPY rose 34.5 pips on CPI; extension would target the 158.74 close plus further yen underperformance."
+     }
+    ]
+   },
+   {
+    "name": "Post-CPI consolidation",
+    "probability": 0.35,
+    "thesis": "Market digests the USD spike; majors hold ranges near current levels as participants reduce positions ahead of the next US data block.",
+    "triggers": [
+     "US data prints close to consensus",
+     "Equities stabilize and VIX fades from 17.26"
+    ],
+    "invalidation": "Break of EUR/USD 1.11234 or USD/JPY 158.742 on strong follow-through",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 98.1,
+      "rationale": "EUR/USD range today was 98.1 pips; consolidation argues for staying inside that band."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "range",
+      "magnitude_pips": 77.9,
+      "rationale": "USD/CHF range was 77.9 pips, and a range scenario respects the 0.83834 close."
+     }
+    ]
+   },
+   {
+    "name": "USD reversal on soft US data",
+    "probability": 0.2,
+    "thesis": "If PPI/retail sales miss, the CPI-driven USD bid unwinds and crowded long-USD positioning from the CPI reaction violently reverses.",
+    "triggers": [
+     "US Core PPI m/m below 0.3%",
+     "US Core Retail Sales m/m below 0.6%",
+     "VIX drops below 17.26"
+    ],
+    "invalidation": "US core CPI effects dominate and data beats",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 66.0,
+      "rationale": "A reversal of today's 66.0-pip EUR/USD decline would see the pair revisit the pre-CPI starting point."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 89.0,
+      "rationale": "GBP/USD was down 89.0 pips; a USD unwind could retrace that move."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "USD short-squeeze extends on US data",
+    "why_it_matters": "Normal CPI beat drove USD/CHF sigma 14.09 and DXY +0.534%, leaving crowded short-dollar trades vulnerable.",
+    "watch": "USD/CHF close 0.83834, USD/JPY close 158.742"
+   },
+   {
+    "risk": "European and UK data disappoint",
+    "why_it_matters": "EUR and GBP gave back early gains and closed at the bottom of their ranges, making them vulnerable to soft GDP/retail sales.",
+    "watch": "EUR/USD close 1.11234, GBP/USD close 1.3155"
+   },
+   {
+    "risk": "Risk sentiment deteriorates further",
+    "why_it_matters": "VIX/USD rose 2.983% to 17.26, signaling fragile equities; high-beta FX may underperform.",
+    "watch": "USD/ZAR close 16.6178, USD/MXN close 18.4574, AUD/USD close 0.69588"
+   },
+   {
+    "risk": "Upcoming unemployment/employment surprise",
+    "why_it_matters": "AUD Employment Change and Unemployment Rate release could shift AUD crosses sharply given current AUD strength.",
+    "watch": "AUD/NZD close 1.24828, AUD/USD close 0.69588"
+   }
+  ],
+  "calendar_ahead_note": "AUD employment and unemployment at 02:30 lead; GBP GDP and BOE Bailey at 08:00/09:30; SNB Schlegel at 06:30; then US Core PPI, PPI, Core Retail Sales, Retail Sales, Philly Fed and Claims at 14:30 will either confirm or reverse the USD bid.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 17040,
+   "completion_tokens": 8943,
+   "total_tokens": 25983,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6830
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 16400
+  }
+ }
+}
