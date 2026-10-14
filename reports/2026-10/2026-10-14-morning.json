@@ -1,0 +1,1885 @@
+{
+ "meta": {
+  "date": "2026-10-14",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-10-13T17:00:00+00:00",
+  "end_utc": "2026-10-14T05:00:00+00:00",
+  "start_local": "2026-10-13T19:00:00+02:00",
+  "end_local": "2026-10-14T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-14T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-14T17:00:00+00:00",
+  "generated_utc": "2026-10-14T10:06:29.669804+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 20
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-10-13 19:00 CEST",
+   "to_local": "2026-10-14 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "AUD",
+    "rank": 1,
+    "strength_pct": 0.136,
+    "intraday_peak": 0.136,
+    "intraday_trough": -0.018,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "AUD/NZD",
+     "sigma": 1.77
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 2,
+    "strength_pct": 0.079,
+    "intraday_peak": 0.116,
+    "intraday_trough": -0.062,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.06%, recovered 79%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "AUD/NZD",
+     "sigma": 1.77
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 3,
+    "strength_pct": 0.05,
+    "intraday_peak": 0.056,
+    "intraday_trough": 0.016,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "GBP/USD",
+     "sigma": -0.91
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 4,
+    "strength_pct": -0.002,
+    "intraday_peak": 0.059,
+    "intraday_trough": -0.002,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.06%, gave back 100%",
+    "own_releases": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.012%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "EUR/USD",
+     "sigma": -0.91
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 5,
+    "strength_pct": -0.007,
+    "intraday_peak": 0.07,
+    "intraday_trough": -0.007,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 1.03
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 6,
+    "strength_pct": -0.019,
+    "intraday_peak": 0.033,
+    "intraday_trough": -0.125,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.13%, recovered 67%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "USD/JPY",
+     "sigma": 1.43
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 7,
+    "strength_pct": -0.06,
+    "intraday_peak": -0.017,
+    "intraday_trough": -0.067,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 8,
+    "strength_pct": -0.178,
+    "intraday_peak": -0.013,
+    "intraday_trough": -0.178,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "USD/JPY",
+     "sigma": 1.43
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.176,
+    "from_EUR": -0.002,
+    "from_USD": 0.178,
+    "base_share": 0.01
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.229,
+    "from_GBP": 0.05,
+    "from_USD": 0.178,
+    "base_share": 0.22
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.315,
+    "from_AUD": 0.136,
+    "from_USD": 0.178,
+    "base_share": 0.43
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.258,
+    "from_NZD": 0.079,
+    "from_USD": 0.178,
+    "base_share": 0.31
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.159,
+    "from_USD": -0.178,
+    "from_JPY": 0.019,
+    "base_share": 0.9
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.172,
+    "from_USD": -0.178,
+    "from_CHF": 0.007,
+    "base_share": 0.96
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.119,
+    "from_USD": -0.178,
+    "from_CAD": 0.06,
+    "base_share": 0.75
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.053,
+    "from_EUR": -0.002,
+    "from_GBP": -0.05,
+    "base_share": 0.04
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.017,
+    "from_EUR": -0.002,
+    "from_JPY": 0.019,
+    "base_share": 0.1
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.004,
+    "from_EUR": -0.002,
+    "from_CHF": 0.007,
+    "base_share": 0.24
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.139,
+    "from_EUR": -0.002,
+    "from_AUD": -0.136,
+    "base_share": 0.02
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.058,
+    "from_EUR": -0.002,
+    "from_CAD": 0.06,
+    "base_share": 0.03
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.081,
+    "from_EUR": -0.002,
+    "from_NZD": -0.079,
+    "base_share": 0.03
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.07,
+    "from_GBP": 0.05,
+    "from_JPY": 0.019,
+    "base_share": 0.73
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.057,
+    "from_GBP": 0.05,
+    "from_CHF": 0.007,
+    "base_share": 0.89
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.086,
+    "from_GBP": 0.05,
+    "from_AUD": -0.136,
+    "base_share": 0.27
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.11,
+    "from_GBP": 0.05,
+    "from_CAD": 0.06,
+    "base_share": 0.46
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.029,
+    "from_GBP": 0.05,
+    "from_NZD": -0.079,
+    "base_share": 0.39
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.155,
+    "from_AUD": 0.136,
+    "from_JPY": 0.019,
+    "base_share": 0.88
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.143,
+    "from_AUD": 0.136,
+    "from_CHF": 0.007,
+    "base_share": 0.95
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.196,
+    "from_AUD": 0.136,
+    "from_CAD": 0.06,
+    "base_share": 0.7
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.057,
+    "from_AUD": 0.136,
+    "from_NZD": -0.079,
+    "base_share": 0.63
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.098,
+    "from_NZD": 0.079,
+    "from_JPY": 0.019,
+    "base_share": 0.81
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.086,
+    "from_NZD": 0.079,
+    "from_CHF": 0.007,
+    "base_share": 0.92
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.139,
+    "from_NZD": 0.079,
+    "from_CAD": 0.06,
+    "base_share": 0.57
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.041,
+    "from_CAD": -0.06,
+    "from_JPY": 0.019,
+    "base_share": 0.76
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.053,
+    "from_CAD": -0.06,
+    "from_CHF": 0.007,
+    "base_share": 0.9
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.013,
+    "from_CHF": -0.007,
+    "from_JPY": 0.019,
+    "base_share": 0.26
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.156
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.091
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.058
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.002
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.007
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.022
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.068
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.204
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.1209,
+    "chg_pips": 19.6,
+    "chg_pct": 0.175,
+    "range_pips": 22.9,
+    "close_in_range": 0.91,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32743,
+    "chg_pips": 30.3,
+    "chg_pct": 0.229,
+    "range_pips": 32.1,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.70015,
+    "chg_pips": 22.0,
+    "chg_pct": 0.315,
+    "range_pips": 25.5,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56264,
+    "chg_pips": 14.6,
+    "chg_pct": 0.26,
+    "range_pips": 24.6,
+    "close_in_range": 0.88,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.145,
+    "chg_pips": -25.2,
+    "chg_pct": -0.159,
+    "range_pips": 37.1,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83174,
+    "chg_pips": -14.4,
+    "chg_pct": -0.173,
+    "range_pips": 16.2,
+    "close_in_range": 0.03,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.41986,
+    "chg_pips": -16.7,
+    "chg_pct": -0.117,
+    "range_pips": 23.9,
+    "close_in_range": 0.08,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.93231,
+    "chg_pips": 0.5,
+    "chg_pct": 0.005,
+    "range_pips": 9.4,
+    "close_in_range": 0.48,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.125,
+    "chg_pips": 2.5,
+    "chg_pct": 0.013,
+    "range_pips": 37.4,
+    "close_in_range": 0.28,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24431,
+    "chg_pips": 7.0,
+    "chg_pct": 0.056,
+    "range_pips": 19.9,
+    "close_in_range": 0.91,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.8444,
+    "chg_pips": -4.3,
+    "chg_pct": -0.051,
+    "range_pips": 7.1,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58234,
+    "chg_pips": 8.4,
+    "chg_pct": 0.144,
+    "range_pips": 17.3,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46795,
+    "chg_pips": 4.0,
+    "chg_pct": 0.086,
+    "range_pips": 17.6,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.9456,
+    "chg_pips": -293.8,
+    "chg_pct": -0.295,
+    "range_pips": 325.3,
+    "close_in_range": 0.06,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.4908,
+    "chg_pips": -327.7,
+    "chg_pct": -0.344,
+    "range_pips": 365.6,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.45441,
+    "chg_pips": -457.9,
+    "chg_pct": -0.278,
+    "range_pips": 534.2,
+    "close_in_range": 0.03,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.36896,
+    "chg_pips": -131.1,
+    "chg_pct": -0.071,
+    "range_pips": 475.7,
+    "close_in_range": 0.41,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.8595,
+    "chg_pips": -18.0,
+    "chg_pct": -0.176,
+    "range_pips": 19.6,
+    "close_in_range": 0.04,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 16.62661,
+    "chg_pips": -13.3,
+    "chg_pct": -0.796,
+    "range_pips": 27.1,
+    "close_in_range": 0.05,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 9.9,
+    "ret_pct": 0.088,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Fed's Williams: One more interest-rate hike appropriate thi… pushed it along (+6.5 in 15 min, 66% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Williams: One more interest-rate hike appropriate this year",
+      "ccy": null,
+      "pips": 6.5,
+      "share_of_leg": 0.66
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "20:30",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -5.1,
+    "ret_pct": -0.046,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: An increase in long-term interest rates const… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.7,
+    "ret_pct": 0.113,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "down",
+    "pips": -9.3,
+    "ret_pct": -0.059,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "20:00",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 18.5,
+    "ret_pct": 0.117,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -32.9,
+    "ret_pct": -0.208,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "up",
+    "pips": 9.1,
+    "ret_pct": 0.069,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "20:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -8.8,
+    "ret_pct": -0.066,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 26.2,
+    "ret_pct": 0.198,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -8.3,
+    "ret_pct": -0.1,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:00",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 6.2,
+    "ret_pct": 0.074,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "01:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -11.0,
+    "ret_pct": -0.132,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Money Stock (Preliminary Figures for September 2026), too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 5.8,
+    "ret_pct": 0.083,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Fed's Williams: One more interest-rate hike appropriate thi… pushed it along (+5.5 in 15 min, 95% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Williams: One more interest-rate hike appropriate this year",
+      "ccy": null,
+      "pips": 5.5,
+      "share_of_leg": 0.95
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "20:45",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -8.1,
+    "ret_pct": -0.116,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Collins Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 24.1,
+    "ret_pct": 0.345,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "down",
+    "pips": -6.7,
+    "ret_pct": -0.047,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "20:00",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 10.7,
+    "ret_pct": 0.075,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "01:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -21.3,
+    "ret_pct": -0.15,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -5.7,
+    "ret_pct": -0.102,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "23:45",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 20.0,
+    "ret_pct": 0.357,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Visitor Arrivals m/m moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -1.5,
+    "ret_pct": -0.027,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MPC Member Breeden Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 3.3,
+    "ret_pct": 0.035,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "20:30",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -7.4,
+    "ret_pct": -0.079,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: An increase in long-term interest rates const… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:45",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 8.5,
+    "ret_pct": 0.091,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -4.4,
+    "ret_pct": -0.047,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 4.9,
+    "ret_pct": 0.026,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "22:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -13.3,
+    "ret_pct": -0.07,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Collins: Perspectives on the Economy and the Banking Land… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:45",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 33.3,
+    "ret_pct": 0.175,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item M2 Money Stock y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -23.5,
+    "ret_pct": -0.123,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Producer prices in China rise at fastest pace since June …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 8.8,
+    "ret_pct": 0.071,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "21:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -12.2,
+    "ret_pct": -0.098,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Collins: Perspectives on the Economy and the Banking Land…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:15",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 14.2,
+    "ret_pct": 0.114,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Visitor Arrivals m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:45",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -13.0,
+    "ret_pct": -0.104,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.7,
+    "ret_pct": 0.102,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Producer prices in China rise at fastest pace since June …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 2.9,
+    "ret_pct": 0.034,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: 2% inflation not some unicorn, something we…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "20:30",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.065,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: An increase in long-term interest rates const… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:30",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 4.5,
+    "ret_pct": 0.053,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "02:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.065,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.122,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: 2% inflation not some unicorn, something we…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 16.2,
+    "ret_pct": 0.279,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -9.2,
+    "ret_pct": -0.197,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.5,
+    "ret_pct": 0.268,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Visitor Arrivals m/m moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -165.0,
+    "ret_pct": -0.165,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:00",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 87.9,
+    "ret_pct": 0.088,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "00:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -181.7,
+    "ret_pct": -0.182,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -159.6,
+    "ret_pct": -0.168,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:00",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 158.3,
+    "ret_pct": 0.167,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "01:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -306.2,
+    "ret_pct": -0.322,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Money Stock (Preliminary Figures for September 2026), too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -361.8,
+    "ret_pct": -0.219,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: One more interest-rate hike appropriate t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:30",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 219.4,
+    "ret_pct": 0.133,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -293.7,
+    "ret_pct": -0.178,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item M2 Money Stock y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "down",
+    "pips": -293.6,
+    "ret_pct": -0.16,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Fed's Williams: One more interest-rate hike appropriate thi… pushed it along (-166.2 in 15 min, 57% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Williams: One more interest-rate hike appropriate this year",
+      "ccy": null,
+      "pips": -166.2,
+      "share_of_leg": 0.57
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "20:45",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 249.5,
+    "ret_pct": 0.136,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Collins Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "22:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -278.0,
+    "ret_pct": -0.151,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 219.6,
+    "ret_pct": 0.12,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: August 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "01:45",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -122.6,
+    "ret_pct": -0.067,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item M2 Money Stock y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "03:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 72.6,
+    "ret_pct": 0.04,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "down",
+    "pips": -42.2,
+    "ret_pct": -0.365,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:15",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 131.2,
+    "ret_pct": 1.14,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Lane: An increase in long-term interest rates const…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -71.3,
+    "ret_pct": -0.612,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "down",
+    "pips": -84.9,
+    "ret_pct": -0.204,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:45",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 166.1,
+    "ret_pct": 0.4,
+    "minutes": 90,
+    "cause": "Fed's Williams: One more interest-rate hike appropriate this year",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "Fed's Williams: One more interest-rate hike appropriate this year -- +101.6 in the first 15 min, 61% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "21:15",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -190.8,
+    "ret_pct": -0.458,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Collins Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "03:30",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 216.6,
+    "ret_pct": 0.523,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "05:00",
+    "to": "06:00",
+    "dir": "down",
+    "pips": -116.4,
+    "ret_pct": -0.279,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MPC Member Breeden Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "06:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 96.2,
+    "ret_pct": 0.232,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "04:10",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.012%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.012,
+    "top_movers": [
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.021,
+      "pips": 2.6,
+      "unit": "pips",
+      "sigma": 1.77
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.017,
+      "pips": 2.7,
+      "unit": "pips",
+      "sigma": 1.43
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.012,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 1.03
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.022,
+      "pips": 41.3,
+      "unit": "pips",
+      "sigma": 1.02
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.011,
+      "pips": -1.5,
+      "unit": "pips",
+      "sigma": -0.91
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.01,
+      "pips": -1.1,
+      "unit": "pips",
+      "sigma": -0.91
+     }
+    ]
+   }
+  ],
+  "headline_count": 11,
+  "top_headlines": [
+   {
+    "time": "20:00",
+    "impact": "high",
+    "title": "Fed's Williams: One more interest-rate hike appropriate this year"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "Fed's Barkin: 2% inflation not some unicorn, something we can hit"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "Fed's Barkin: It is clear that inflation is enduring, acting makes sense"
+   },
+   {
+    "time": "20:30",
+    "impact": "low",
+    "title": "ECB's Lane: An increase in long-term interest rates constitutes a material tightening, relevant for the ECB in setting its policy stance"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Collins: Perspectives on the Economy and the Banking Landscape"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Bailey: The longer the energy hit lasts, the harder it gets"
+   },
+   {
+    "time": "22:00",
+    "impact": "low",
+    "title": "Fed's Collins sees another rate hike on the table before end of 2026"
+   },
+   {
+    "time": "23:45",
+    "impact": "low",
+    "title": "NZ international travel: August 2026"
+   },
+   {
+    "time": "01:45",
+    "impact": "low",
+    "title": "Japan Money Stock (Preliminary Figures for September 2026)"
+   },
+   {
+    "time": "03:45",
+    "impact": "low",
+    "title": "Producer prices in China rise at fastest pace since June 2022, beating expectations"
+   },
+   {
+    "time": "04:15",
+    "impact": "low",
+    "title": "ECB President Lagarde: Inflation increasing mainly but not solely due to energy prices"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "07:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "08:05",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "BOC Gov Macklem Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "10:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "12:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "EU Economic Summit",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core CPI m/m",
+    "forecast": "0.2%",
+    "previous": "0.3%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core CPI y/y",
+    "forecast": "2.5%",
+    "previous": "2.4%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "CPI m/m",
+    "forecast": "0.6%",
+    "previous": "0.4%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "CPI y/y",
+    "forecast": "3.6%",
+    "previous": "3.4%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Broad USD weakness dominated the overnight tape, with DXY -0.176 and the dollar's currency-strength at -0.178; risk appetite improved as VIX fell -0.796. AUD (+0.136) and NZD (+0.079) led, while EUR was flat (-0.002) and Lagarde's speech moved the basket only 0.012% inside the noise floor. Fed's Williams' hawkish remark briefly supported the dollar but later faded; USD/JPY closed -0.159 at 158.145. Most USD pairs closed near session extremes, showing no evidence of sustained dollar demand.",
+  "themes": [
+   {
+    "theme": "Broad USD weakness / risk-on",
+    "evidence": "DXY -0.176, VIX -0.796, AUD +0.136, NZD +0.079, USD/JPY -0.159",
+    "currencies": [
+     "USD",
+     "AUD",
+     "NZD",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "ECB communication fails to move EUR",
+    "evidence": "Lagarde speech moved EUR basket 0.012% inside noise floor; EUR strength -0.002",
+    "currencies": [
+     "EUR"
+    ]
+   },
+   {
+    "theme": "Commodity FX outperformance on China producer prices",
+    "evidence": "AUD/NZD +0.057, AUD/USD +0.315%; China producer prices fastest since June 2022",
+    "currencies": [
+     "AUD",
+     "NZD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No own release; broad risk-on and faded post-Williams bid left the dollar heavy.",
+   "EUR": "Lagarde speech was muted; flat against broad USD weakness, no own directional driver.",
+   "JPY": "No domestic catalyst; recovered from early dip but ended slightly soft without independent driver.",
+   "GBP": "No UK data; drifted higher with broad USD softness and steady risk tone.",
+   "AUD": "No domestic release; led on China PPI beat and strong risk appetite.",
+   "CAD": "No Canadian data; held range and lagged commodity peers despite firmer oil.",
+   "CHF": "No own catalyst; attempt higher rejected, ended flat amid risk-on.",
+   "NZD": "No own catalyst; early selling rejected, recovered 79% with risk sentiment."
+  },
+  "leg_notes": {
+   "EUR/USD": "An initial 9.9-pip rise, partly on Williams (6.5 pips, 66% of leg), was followed by a 5.1-pip pullback and a 12.7-pip advance with no clear catalyst."
+  },
+  "polarity_reads": [
+   {
+    "event": "ECB President Lagarde Speaks",
+    "read": "Muted: the measured 0.012% basket move was inside the noise floor, so no positioning shift."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "USD weakness extends",
+    "probability": 0.45,
+    "thesis": "Broad USD weakness continues into London/NY; risk-on persists and CPI does not challenge.",
+    "triggers": [
+     "DXY stays below 101.86",
+     "AUD/NZD holds above 1.2443",
+     "US CPI m/m at or below 0.6%"
+    ],
+    "invalidation": "US Core CPI y/y prints above 2.5% or DXY closes above 101.86.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 22.9,
+      "rationale": "USD weakness dominates; overnight range 22.9 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 37.1,
+      "rationale": "USD weakness dominates; overnight range 37.1 pips."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 25.5,
+      "rationale": "AUD is strongest currency (+0.136); overnight range 25.5 pips."
+     }
+    ]
+   },
+   {
+    "name": "US CPI lifts USD",
+    "probability": 0.35,
+    "thesis": "CPI surprise revives Fed hawkish pricing and dollar rebound, unwinding risk-on positions.",
+    "triggers": [
+     "Core CPI m/m above 0.2%",
+     "CPI y/y above 3.6%",
+     "DXY rebounds through 101.86"
+    ],
+    "invalidation": "AUD/USD holds above 0.70015 and DXY stays below 101.86.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 22.9,
+      "rationale": "US CPI beat lifts USD; overnight range 22.9 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 37.1,
+      "rationale": "Yield support and USD rebound; overnight range 37.1 pips."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 25.5,
+      "rationale": "Risk unwind if CPI hot; overnight range 25.5 pips."
+     }
+    ]
+   },
+   {
+    "name": "Rangebound before CPI",
+    "probability": 0.2,
+    "thesis": "Markets consolidate near current levels into US CPI, with no fresh impulse from Bailey/Macklem/Lagarde.",
+    "triggers": [
+     "EUR/USD holds inside 1.1209 ± 22.9 pips",
+     "GBP/USD holds inside 1.32743 ± 32.1 pips",
+     "No surprise from Bailey, Macklem, or Lagarde"
+    ],
+    "invalidation": "Any US CPI surprise or DXY break of 101.86.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 22.9,
+      "rationale": "Overnight 22.9-pip range expected to cap."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 37.1,
+      "rationale": "Overnight 37.1-pip range expected to hold."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "range",
+      "magnitude_pips": 25.5,
+      "rationale": "Overnight 25.5-pip range expected to persist."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "US CPI m/m above 0.6% forecast",
+    "why_it_matters": "Would reverse broad USD weakness and risk-on",
+    "watch": "CPI m/m and y/y at 14:30"
+   },
+   {
+    "risk": "Hawkish BOE/BOC comments",
+    "why_it_matters": "Could support GBP and CAD, disrupting USD-short trade",
+    "watch": "Bailey 07:30, Macklem 08:05"
+   },
+   {
+    "risk": "China PPI-led commodity rally unwinds",
+    "why_it_matters": "AUD/NZD and commodity FX are extended after China PPI beat; reversal could hit AUD",
+    "watch": "AUD/NZD 1.24431, Brent/USD"
+   }
+  ],
+  "calendar_ahead_note": "Bailey at 07:30, Macklem at 08:05, Lagarde at 10:30, EU Summit at 12:15, then US CPI at 14:30 (core m/m 0.2%, y/y 2.5%, headline m/m 0.6%, y/y 3.6%) can all change the picture.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 14884,
+   "completion_tokens": 7511,
+   "total_tokens": 22395,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5698
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 14244
+  }
+ }
+}
