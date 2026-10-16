@@ -13,7 +13,7 @@
   "end_local": "2026-10-16T07:00:00+02:00",
   "fwd_start_utc": "2026-10-16T05:00:00+00:00",
   "fwd_end_utc": "2026-10-16T17:00:00+00:00",
-  "generated_utc": "2026-10-16T05:22:17.407284+00:00",
+  "generated_utc": "2026-10-16T09:42:15.682400+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 53
+   "with_actual": 56
   }
  },
  "facts": {
@@ -1967,200 +1967,183 @@
   "calendar_ahead": []
  },
  "analysis": {
-  "session_summary": "Overnight trade showed broad USD depreciation: the dollar index fell 0.205% and USD ranked weakest among majors. NZD (+0.531%) and AUD (+0.251%) led, closing at their best, while EUR, JPY, CHF and CAD all held tight ranges. No single driver explains the tape; most legs lacked a clear catalyst, though Fed Warsh headlines coincided with later USD-selling. BOE Bailey and BOC Macklem speeches were muted and left no policy imprint.",
+  "session_summary": "Overnight the dollar was the weakest major: DXY lost 20.9 points (-0.205%) and USD strength was -0.306%, while NZD (+0.609% vs majors) and AUD (+0.288%) led. Most legs had no clear catalyst; the only scored central-bank events were muted (Bailey +0.001% GBP basket, Macklem -0.021% CAD basket) and Warsh was unscored though briefly bid USD 0.051%. EUR/USD closed 22.1 pips higher at 1.1229 with USD weakness the main contribution (+0.306% vs -0.108% from EUR). The tape reads as a flow-driven USD unwind rather than a fundamental repricing.",
   "themes": [
    {
-    "theme": "Broad USD softness with high-beta outperformance",
-    "evidence": "DXY/USD -0.205%; USD basket -0.306%; AUD/USD +0.557%; NZD/USD +0.840%; all closed at their best.",
+    "theme": "Broad USD unwind without a single obvious trigger",
+    "evidence": "DXY -20.9 points/-0.205%, USD strength -0.306%; most legs marked no clear catalyst.",
     "currencies": [
-     "USD",
-     "AUD",
-     "NZD"
+     "USD"
     ]
    },
    {
-    "theme": "Central bank speak failed to generate directional impulse",
-    "evidence": "BOE Bailey basket moved 0.001% and BOC Macklem basket moved -0.021%, both inside the noise floor; Fed Warsh was unscored with a 0.051% USD impulse but later Warsh headlines had USD-negative leg shares of 39-62%.",
+    "theme": "High-beta commodity FX outperform",
+    "evidence": "NZD +0.609% and AUD +0.288% vs majors; NZD/USD +47.1 pips and AUD/USD +38.5 pips, both closed at best.",
     "currencies": [
-     "USD",
+     "NZD",
+     "AUD"
+    ]
+   },
+   {
+    "theme": "Central bank speak adds little direct impulse",
+    "evidence": "Bailey muted +0.001% GBP, Macklem muted -0.021% CAD, Warsh unscored but 0.051% USD bid.",
+    "currencies": [
      "GBP",
-     "CAD"
-    ]
-   },
-   {
-    "theme": "European currencies and JPY held range; CHF attempt rejected",
-    "evidence": "EUR -0.108%, JPY -0.109%, CHF -0.104%; CHF intraday peak +0.13% before giving back 100%; EUR/CHF -0.004%, CHF/JPY +0.005%.",
-    "currencies": [
-     "EUR",
-     "JPY",
-     "CHF"
+     "CAD",
+     "USD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Softened broadly without a clear catalyst; Warsh headlines coincided with late USD selling.",
-   "EUR": "No own catalyst; held its range.",
-   "JPY": "No own catalyst; held its range.",
-   "GBP": "Bailey speech produced no impulse; closed marginally higher after recovering from an early dip.",
-   "AUD": "No own catalyst; closed at its best as a high-beta outperformer.",
-   "CAD": "Macklem speech was muted; CAD was soft against most except a weaker USD.",
-   "CHF": "No own catalyst; early +0.13% attempt fully reversed.",
-   "NZD": "No own catalyst; strongest and closed at its best."
+   "USD": "No clear catalyst; broadly soft despite an unscored Warsh headline that briefly lifted USD 0.051%.",
+   "EUR": "No clear catalyst; no own releases and held its range.",
+   "JPY": "No clear catalyst; minor weakness with no Japanese event.",
+   "GBP": "Bailey speech muted at +0.001% basket, so no own-currency impulse.",
+   "AUD": "No own releases or clear catalyst; closed at its best.",
+   "CAD": "Macklem speech muted at -0.021% basket, no meaningful own reaction.",
+   "CHF": "Attempted early gain fully reversed; no own releases or catalyst.",
+   "NZD": "No own releases or clear catalyst; strongest major, closed at its best."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped through six uncaused legs and netted +22.1 pips; every leg had no confident catalyst, leaving USD weakness as the main prop."
+   "EUR/USD": "EUR/USD posted six mostly uncaused legs but closed 22.1 pips higher as USD weakness (+0.306%) overwhelmed a soft EUR (-0.108%)."
   },
   "polarity_reads": [
    {
     "event": "Fed Chairman Warsh Speaks",
-    "read": "Unscored because no forecast; initial 0.051% USD impulse was not confirmed, and follow-up Warsh headlines were met with USD selling, implying the market did not reward USD."
+    "read": "Unscored because there was no forecast; the 0.051% USD impulse suggests the market initially read the comments as hawkish."
    },
    {
     "event": "BOC Gov Macklem Speaks",
-    "read": "Muted at -0.021% basket move inside noise; no CAD policy impulse, so CAD price action was flow-driven."
+    "read": "Muted (-0.021% CAD basket) means no CAD-specific response, consistent with positioning already squared."
    },
    {
     "event": "BOE Gov Bailey Speaks",
-    "read": "Muted at 0.001% basket move; GBP showed no direct policy reaction, leaving it exposed to USD flows."
+    "read": "Muted (+0.001% GBP basket) confirms no GBP impulse from Bailey."
    }
   ],
   "scenarios": [
    {
-    "name": "USD softness persists",
-    "probability": 0.45,
-    "thesis": "With an empty calendar and no catalyst to reverse the overnight USD drop, high-beta commodity currencies stay bid and USD remains offered.",
+    "name": "USD softness holds, high-beta consolidates",
+    "probability": 0.5,
+    "thesis": "The flow-driven USD unwind pauses but no catalyst emerges for a reversal; high-beta pairs stay near highs.",
     "triggers": [
-     "USD/JPY holds below 157.823",
-     "NZD/USD sustains above 0.56543",
-     "No hawkish Fed headline"
+     "No calendar events; range trading",
+     "Warsh/Bailey/Macklem follow-ups remain muted"
     ],
-    "invalidation": "A hawkish Fed speaker or unexpected US data pushes USD higher and reverses NZD/AUD gains.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 28.3,
-      "rationale": "Largest overnight EUR/USD leg was up 28.3 pips; without a catalyst, a retest of that extension is plausible."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 34.9,
-      "rationale": "AUD/USD moved 34.9 pips up across the session; continuation of commodity strength."
-     },
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 44.8,
-      "rationale": "NZD/USD gained 44.8 pips overnight and closed at its best."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 30.9,
-      "rationale": "USD/JPY lost 30.9 pips overnight; USD softness points to another down leg."
-     }
-    ]
-   },
-   {
-    "name": "USD short-covering rebound",
-    "probability": 0.3,
-    "thesis": "A 0.306% USD decline with no clear catalyst leaves room for profit-taking and mean reversion if Fed comments get re-read hawkishly.",
-    "triggers": [
-     "DXY/USD regains 101.673",
-     "USD/JPY reclaims 157.823",
-     "AUD/USD fails below 0.69467"
-    ],
-    "invalidation": "NZD/USD extends above 0.56543 and USD basket makes a new low.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 22.1,
-      "rationale": "The overnight EUR/USD gain of 22.1 pips is a natural retracement target if USD recovers."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 38.5,
-      "rationale": "AUD/USD's 38.5-pip gain is at risk of being fully retraced."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 30.9,
-      "rationale": "USD/JPY's 30.9-pip decline could be reversed by short covering."
-     }
-    ]
-   },
-   {
-    "name": "Range-bound consolidation",
-    "probability": 0.25,
-    "thesis": "Several majors held their ranges overnight and the calendar is empty, favoring tight two-way trade before the next session.",
-    "triggers": [
-     "EUR/USD stays inside its 36.5-pip range",
-     "USD/JPY stays inside its 41.8-pip range",
-     "AUD/USD stays inside its 40.1-pip range"
-    ],
-    "invalidation": "A high-impact headline or central bank surprise produces a range break.",
+    "invalidation": "EUR/USD breaks below 1.1229 and USD/JPY rallies above 157.823.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
       "magnitude_pips": 36.5,
-      "rationale": "EUR/USD posted a 36.5-pip range overnight; an empty calendar argues for repetition."
+      "rationale": "Overnight range with no catalyst; USD weakness offsets soft EUR."
      },
      {
       "instrument": "USD/JPY",
       "direction": "range",
       "magnitude_pips": 41.8,
-      "rationale": "USD/JPY overnight range was 41.8 pips."
+      "rationale": "Range after mixed Warsh impact; close near low at 157.823."
      },
      {
       "instrument": "AUD/USD",
       "direction": "range",
       "magnitude_pips": 40.1,
-      "rationale": "AUD/USD overnight range was 40.1 pips."
+      "rationale": "Closed at best; likely consolidates near 0.69467."
+     }
+    ]
+   },
+   {
+    "name": "Risk-on continuation extends NZD/AUD gains",
+    "probability": 0.3,
+    "thesis": "High-beta commodity currencies extend as USD weakness persists and no counter-catalyst appears.",
+    "triggers": [
+     "Equity/risk sentiment remains supportive (VIX holds near 17.71)",
+     "USD/ZAR and USD/NOK continue lower"
+    ],
+    "invalidation": "USD/JPY reverses above 157.823 and AUD/NZD retakes 1.22848.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 22.1,
+      "rationale": "USD weakness extends; EUR contribution minor."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 38.5,
+      "rationale": "AUD closed at best with no own releases; risk on supports."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 47.1,
+      "rationale": "NZD strongest major; closed at best."
+     }
+    ]
+   },
+   {
+    "name": "USD snap-back on re-pricing of Warsh",
+    "probability": 0.2,
+    "thesis": "Market re-reads Warsh as hawkish or positions unwind, producing a sharp USD rebound against recent high-beta gains.",
+    "triggers": [
+     "Another Warsh headline emphasizes price stability",
+     "DXY bid back above 101.673"
+    ],
+    "invalidation": "EUR/USD holds above 1.1229 and NZD/USD holds above 0.56543.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 22.1,
+      "rationale": "Reverses overnight gain as USD strength returns."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 30.9,
+      "rationale": "Snaps back the 30.9 pip overnight decline."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 20.5,
+      "rationale": "CAD gives back muted Macklem-related weakness."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Fed speakers re-rate USD",
-    "why_it_matters": "Warsh initial impulse was +0.051% USD but follow-up headlines had USD-negative impact; further Fed speak may reprice USD.",
-    "watch": "Further Fed Warsh, Hammack, Goolsbee commentary."
+    "risk": "Warsh comments remain unscored and could be re-read as hawkish",
+    "why_it_matters": "The 05:30 Warsh event briefly lifted USD 0.051%; no forecast means the market has no anchor and can reverse quickly.",
+    "watch": "Another Warsh headline; DXY/USD"
    },
    {
-    "risk": "High-beta/commodity unwind",
-    "why_it_matters": "AUD and NZD closed at their best and are exposed to a sharp reversal if risk appetite fades or EU-China trade rhetoric escalates.",
-    "watch": "EU trade tool headlines, China response, commodity prices."
+    "risk": "High-beta long positions are one-way without a clear catalyst",
+    "why_it_matters": "NZD and AUD closed at their best with no own releases, so flow can unwind if risk appetite fades.",
+    "watch": "AUD/NZD, NZD/USD, USD/ZAR"
    },
    {
-    "risk": "No-catalyst liquidity gaps",
-    "why_it_matters": "Most legs had no clear cause, making directional signals unreliable and stops vulnerable in thin Asia liquidity.",
-    "watch": "Unexpected headlines or flows."
-   },
-   {
-    "risk": "Oil weakness",
-    "why_it_matters": "Brent/USD fell 0.944% in a session leg; pressure on oil-linked CAD and NOK could spill into FX.",
-    "watch": "Brent price action and related headlines."
+    "risk": "Muted central-bank speeches may hide later transcripts/QA that shift pricing",
+    "why_it_matters": "Bailey and Macklem baskets were inside noise floor, but full text could alter GBP/CAD.",
+    "watch": "GBP/USD, USD/CAD"
    }
   ],
-  "calendar_ahead_note": "Calendar ahead is empty; no scheduled high-impact releases. The main catalysts will be unscheduled Fed/central bank headlines and any geopolitical or trade developments.",
+  "calendar_ahead_note": "No calendar events are scheduled in the coming window; unscheduled central-bank comments or headlines are the only likely catalysts.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17440,
-   "completion_tokens": 9152,
-   "total_tokens": 26592,
+   "completion_tokens": 7705,
+   "total_tokens": 25145,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 17408
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7074
+    "reasoning_tokens": 5875
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 16800
+   "prompt_cache_hit_tokens": 17408,
+   "prompt_cache_miss_tokens": 32
   }
  }
 }
