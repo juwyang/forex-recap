@@ -13,7 +13,7 @@
   "end_local": "2026-10-19T07:00:00+02:00",
   "fwd_start_utc": "2026-10-19T05:00:00+00:00",
   "fwd_end_utc": "2026-10-19T17:00:00+00:00",
-  "generated_utc": "2026-10-19T05:05:17.040368+00:00",
+  "generated_utc": "2026-10-19T10:42:05.982465+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 38,
@@ -2002,151 +2002,139 @@
   ]
  },
  "analysis": {
-  "session_summary": "The window was led by commodity/FX outperformance: AUD +0.262% and CAD +0.241%, while JPY was weakest at -0.314%. DXY slipped only -0.065% and VIX rose 4.335%, but there was no headline catalyst behind the G10 tape; leg notes repeatedly flag flow/technical. BOE Governor Bailey's appearance was a non-event: GBP basket moved 0.000%. EUR/USD closed +3.1 pips after three uncaused legs.",
+  "session_summary": "The Friday close through Asia reopen lacked high-impact data, leaving flows to dominate. AUD led with +0.262% and CAD followed at +0.241%, while JPY lagged at -0.314%; USD was soft with DXY -0.065%. VIX rose +4.335% to 18.47692 and Brent gained +3.874%, supporting commodity FX. The only measured event, BOE Gov Bailey, printed a 0.000% basket impulse inside the noise floor.",
   "themes": [
    {
-    "theme": "No-catalyst flow tape",
-    "evidence": "All major legs flagged no clear catalyst; EUR/USD legs were +42.7, -84.3, +49.0 pips.",
+    "theme": "Commodity/high-beta outperformance",
+    "evidence": "AUD +0.262% and CAD +0.241% led; Brent rose +3.874%.",
     "currencies": [
-     "EUR",
-     "USD"
+     "AUD",
+     "CAD"
     ]
    },
    {
-    "theme": "Commodity FX outperforms funding currencies",
-    "evidence": "AUD +0.262% and CAD +0.241% against JPY -0.314%.",
+    "theme": "JPY underperformance",
+    "evidence": "JPY was weakest at -0.314%; CHF/JPY rose 92.3 pips and USD/JPY rose 26.7 pips.",
     "currencies": [
-     "AUD",
-     "CAD",
      "JPY"
     ]
    },
    {
-    "theme": "Bailey non-event",
-    "evidence": "BOE Gov Bailey Speaks produced a basket move of 0.000%, inside the noise floor.",
+    "theme": "No catalyst tape",
+    "evidence": "All legs show cause null/confidence none; BOE Bailey reaction was 0.000% inside the noise floor.",
     "currencies": [
-     "GBP"
+     "USD",
+     "EUR",
+     "GBP",
+     "JPY",
+     "AUD",
+     "CAD",
+     "CHF",
+     "NZD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No clear catalyst in window; soft despite small DXY slip.",
-   "EUR": "No clear catalyst; selling rejected.",
-   "JPY": "No clear catalyst; weakest of majors.",
-   "GBP": "BOE Bailey was muted, no net impulse.",
-   "AUD": "No clear catalyst; strongest of majors.",
-   "CAD": "No clear catalyst; selling rejected and recovered.",
-   "CHF": "No clear catalyst; held its range.",
-   "NZD": "No clear catalyst; attempt rejected."
+   "USD": "No clear catalyst; soft against most majors despite VIX rising.",
+   "EUR": "No clear catalyst; early selling was rejected, leaving it modestly lower.",
+   "JPY": "No clear catalyst; weakest major with broad underperformance.",
+   "GBP": "BOE Bailey speech printed 0.000% basket impulse; gains were modest and faded.",
+   "AUD": "No own catalyst; strength tracked firmer Brent.",
+   "CAD": "No own catalyst; selling rejected, leaving CAD firm into CPI.",
+   "CHF": "No own catalyst; firmer against USD and EUR.",
+   "NZD": "No own catalyst; soft but NZD/USD barely changed."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped +42.7, -84.3 and +49.0 pips across three legs, closing only +3.1 pips with no leg catalyst."
+   "EUR/USD": "EUR/USD chopped in a 88.5-pip range, ending +3.1 pips with no leg tied to a catalyst."
   },
   "polarity_reads": [
    {
     "event": "BOE Gov Bailey Speaks",
-    "read": "Muted basket move of 0.000% inside the noise floor implies no clear GBP positioning impulse was tested."
+    "read": "Measured basket impulse was 0.000%, inside the noise floor, so Bailey provided no tradable GBP signal."
    }
   ],
   "scenarios": [
    {
-    "name": "Commodity FX extension",
-    "probability": 0.5,
-    "thesis": "AUD and CAD ended strongest with no catalyst, so carry/flow bid extends in quiet tape.",
+    "name": "CAD CPI in line extends CAD strength",
+    "probability": 0.4,
+    "thesis": "Headline CPI at 0.2% m/m with core metrics stable leaves CAD's recent strength intact.",
     "triggers": [
-     "No headline shock",
-     "Canada CPI in line or soft"
+     "CAD CPI m/m prints at or below 0.2%",
+     "USD/CAD fails to recover above 1.41221"
     ],
-    "invalidation": "Clear USD-supportive headline emerges.",
+    "invalidation": "USD/CAD breaks back above 1.41221.",
     "pair_paths": [
      {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 36.7,
-      "rationale": "AUD was strongest and closed at its best; last up leg was +36.7 pips."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 33.7,
-      "rationale": "JPY weakest; last USD/JPY up leg was +33.7 pips."
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 54.5,
+      "rationale": "USD/CAD already fell 54.5 pips; in-line CPI can sustain the move."
      }
     ]
    },
    {
-    "name": "Range fade / exhaustion",
+    "name": "Risk-on extends JPY weakness",
     "probability": 0.35,
-    "thesis": "Uncaused legs mean moves are likely to fade; choppy ranges persist with no macro driver.",
+    "thesis": "AUD and Brent strength continue, pressuring JPY further.",
     "triggers": [
-     "EUR/USD returns toward full range 88.5 pips",
-     "USD/CAD bounces from close near low"
+     "AUD/USD holds above 0.6975",
+     "VIX does not spike further"
     ],
-    "invalidation": "Fresh macro catalyst breaks the range.",
+    "invalidation": "USD/JPY falls back below 158.09.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 64.1,
+      "rationale": "USD/JPY range was 64.1 pips; risk-on flows can push toward the top of that range."
+     }
+    ]
+   },
+   {
+    "name": "Event-light consolidation",
+    "probability": 0.25,
+    "thesis": "No high-impact data until CAD CPI, so major pairs hold recent ranges.",
+    "triggers": [
+     "CAD CPI prints near 0.2% without surprise",
+     "EUR/USD remains inside its 88.5-pip range"
+    ],
+    "invalidation": "EUR/USD breaks its 88.5-pip range.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "range",
       "magnitude_pips": 88.5,
-      "rationale": "Three legs had no catalyst and pair closed +3.1 pips, within an 88.5-pip range."
-     },
-     {
-      "instrument": "USD/CAD",
-      "direction": "up",
-      "magnitude_pips": 24.1,
-      "rationale": "USD/CAD closed near low and last up leg was +24.1 pips."
-     }
-    ]
-   },
-   {
-    "name": "USD recovery / risk wobble",
-    "probability": 0.15,
-    "thesis": "VIX rose 4.335% while DXY slipped only -0.065%; a further vol spike can lift USD broadly.",
-    "triggers": [
-     "VIX holds above 18.47692",
-     "Equity risk sentiment worsens"
-    ],
-    "invalidation": "AUD/CAD keep printing fresh highs.",
-    "pair_paths": [
-     {
-      "instrument": "USD/CHF",
-      "direction": "up",
-      "magnitude_pips": 33.2,
-      "rationale": "USD/CHF last up leg was +33.2 pips and can recover if USD firms."
+      "rationale": "EUR/USD traded a 88.5-pip range; without a catalyst it can stay within that band."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Canada CPI surprise",
-    "why_it_matters": "CAD is second-strongest after no catalyst, so a hot CPI could extend CAD strength or unwind if soft.",
-    "watch": "CAD CPI m/m forecast 0.2% prev -0.1%"
+    "risk": "VIX rose +4.335% to 18.47692 while commodity FX outperformed.",
+    "why_it_matters": "If volatility keeps rising, high-beta gains can unwind quickly.",
+    "watch": "VIX 18.47692."
    },
    {
-    "risk": "VIX continuation",
-    "why_it_matters": "VIX rose 4.335% while DXY barely moved; a vol spike could force USD short covering.",
-    "watch": "VIX above 18.47692"
-   },
-   {
-    "risk": "BOJ communication",
-    "why_it_matters": "JPY is weakest and multiple Ueda headlines appeared; any hawkish shift can squeeze shorts.",
-    "watch": "USD/JPY near 158.09"
+    "risk": "Most major legs had no clear catalyst.",
+    "why_it_matters": "Unexplained moves can reverse quickly when real news hits.",
+    "watch": "CAD CPI and any BOJ Ueda follow-up."
    }
   ],
-  "calendar_ahead_note": "High-impact Canada CPI at 14:30: CPI m/m forecast 0.2% vs -0.1% prior, median and trimmed seen 2.0% and 1.9%; can alter CAD strength and risk tone.",
+  "calendar_ahead_note": "CAD CPI at 14:30 (forecast 0.2% m/m, previous -0.1%) is the key event; median/trimmed at 2.0/1.9 and common at 2.6 will shape CAD and broader USD sentiment.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17667,
-   "completion_tokens": 9136,
-   "total_tokens": 26803,
+   "completion_tokens": 9730,
+   "total_tokens": 27397,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 17664
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7756
+    "reasoning_tokens": 8438
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 17027
+   "prompt_cache_hit_tokens": 17664,
+   "prompt_cache_miss_tokens": 3
   }
  }
 }
