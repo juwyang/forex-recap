@@ -1,0 +1,2152 @@
+{
+ "meta": {
+  "date": "2026-10-19",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "since Friday's 07:00",
+  "sessions": "Friday close -> weekend -> Asia reopen",
+  "weekend_bridged": true,
+  "hours": 72.0,
+  "start_utc": "2026-10-16T05:00:00+00:00",
+  "end_utc": "2026-10-19T05:00:00+00:00",
+  "start_local": "2026-10-16T07:00:00+02:00",
+  "end_local": "2026-10-19T07:00:00+02:00",
+  "fwd_start_utc": "2026-10-19T05:00:00+00:00",
+  "fwd_end_utc": "2026-10-19T17:00:00+00:00",
+  "generated_utc": "2026-10-19T05:05:17.040368+00:00",
+  "partial": false,
+  "coverage_min": 4320,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 0.333,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 74
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "since Friday's 07:00",
+   "sessions": "Friday close -> weekend -> Asia reopen",
+   "from_local": "2026-10-16 07:00 CEST",
+   "to_local": "2026-10-19 07:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "AUD",
+    "rank": 1,
+    "strength_pct": 0.262,
+    "intraday_peak": 0.269,
+    "intraday_trough": -0.127,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "AUD/USD",
+     "sigma": 0.0
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 2,
+    "strength_pct": 0.241,
+    "intraday_peak": 0.362,
+    "intraday_trough": -0.05,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.05%, recovered 71%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 0.0
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 3,
+    "strength_pct": 0.169,
+    "intraday_peak": 0.3,
+    "intraday_trough": -0.003,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 0.0
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 4,
+    "strength_pct": 0.04,
+    "intraday_peak": 0.227,
+    "intraday_trough": -0.06,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.23%, gave back 65%",
+    "own_releases": [
+     {
+      "title": "BOE Gov Bailey Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.000%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "GBP/USD",
+     "sigma": 0.0
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 5,
+    "strength_pct": -0.117,
+    "intraday_peak": 0.086,
+    "intraday_trough": -0.472,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.47%, recovered 64%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "EUR/USD",
+     "sigma": 0.0
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 6,
+    "strength_pct": -0.136,
+    "intraday_peak": 0.131,
+    "intraday_trough": -0.196,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.13%, gave back 82%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 7,
+    "strength_pct": -0.144,
+    "intraday_peak": 0.058,
+    "intraday_trough": -0.224,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.06%, gave back 72%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "USD/JPY",
+     "sigma": 0.0
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 8,
+    "strength_pct": -0.314,
+    "intraday_peak": 0.005,
+    "intraday_trough": -0.315,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOE Gov Bailey Speaks",
+     "instrument": "USD/JPY",
+     "sigma": 0.0
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.027,
+    "from_EUR": -0.117,
+    "from_USD": 0.144,
+    "base_share": 0.45
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.184,
+    "from_GBP": 0.04,
+    "from_USD": 0.144,
+    "base_share": 0.22
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.407,
+    "from_AUD": 0.262,
+    "from_USD": 0.144,
+    "base_share": 0.65
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.009,
+    "from_NZD": -0.136,
+    "from_USD": 0.144,
+    "base_share": 0.48
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.169,
+    "from_USD": -0.144,
+    "from_JPY": 0.314,
+    "base_share": 0.32
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.313,
+    "from_USD": -0.144,
+    "from_CHF": -0.169,
+    "base_share": 0.46
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.385,
+    "from_USD": -0.144,
+    "from_CAD": -0.241,
+    "base_share": 0.38
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.157,
+    "from_EUR": -0.117,
+    "from_GBP": -0.04,
+    "base_share": 0.75
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.196,
+    "from_EUR": -0.117,
+    "from_JPY": 0.314,
+    "base_share": 0.27
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.286,
+    "from_EUR": -0.117,
+    "from_CHF": -0.169,
+    "base_share": 0.41
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.38,
+    "from_EUR": -0.117,
+    "from_AUD": -0.262,
+    "base_share": 0.31
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.358,
+    "from_EUR": -0.117,
+    "from_CAD": -0.241,
+    "base_share": 0.33
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.018,
+    "from_EUR": -0.117,
+    "from_NZD": 0.136,
+    "base_share": 0.46
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.354,
+    "from_GBP": 0.04,
+    "from_JPY": 0.314,
+    "base_share": 0.11
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.129,
+    "from_GBP": 0.04,
+    "from_CHF": -0.169,
+    "base_share": 0.19
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.222,
+    "from_GBP": 0.04,
+    "from_AUD": -0.262,
+    "base_share": 0.13
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.201,
+    "from_GBP": 0.04,
+    "from_CAD": -0.241,
+    "base_share": 0.14
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.176,
+    "from_GBP": 0.04,
+    "from_NZD": 0.136,
+    "base_share": 0.23
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.576,
+    "from_AUD": 0.262,
+    "from_JPY": 0.314,
+    "base_share": 0.46
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.094,
+    "from_AUD": 0.262,
+    "from_CHF": -0.169,
+    "base_share": 0.61
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.022,
+    "from_AUD": 0.262,
+    "from_CAD": -0.241,
+    "base_share": 0.52
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.398,
+    "from_AUD": 0.262,
+    "from_NZD": 0.136,
+    "base_share": 0.66
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.178,
+    "from_NZD": -0.136,
+    "from_JPY": 0.314,
+    "base_share": 0.3
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.304,
+    "from_NZD": -0.136,
+    "from_CHF": -0.169,
+    "base_share": 0.45
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.376,
+    "from_NZD": -0.136,
+    "from_CAD": -0.241,
+    "base_share": 0.36
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.554,
+    "from_CAD": 0.241,
+    "from_JPY": 0.314,
+    "base_share": 0.43
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.072,
+    "from_CAD": 0.241,
+    "from_CHF": -0.169,
+    "base_share": 0.59
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.482,
+    "from_CHF": 0.169,
+    "from_JPY": 0.314,
+    "base_share": 0.35
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.3
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.275
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.193
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.046
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.134
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.155
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.165
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.358
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.12321,
+    "chg_pips": 3.1,
+    "chg_pct": 0.028,
+    "range_pips": 88.5,
+    "close_in_range": 0.58,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.3328,
+    "chg_pips": 24.6,
+    "chg_pct": 0.185,
+    "range_pips": 79.3,
+    "close_in_range": 0.45,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.6975,
+    "chg_pips": 28.3,
+    "chg_pct": 0.407,
+    "range_pips": 41.4,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56547,
+    "chg_pips": 0.4,
+    "chg_pct": 0.007,
+    "range_pips": 34.1,
+    "close_in_range": 0.41,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.09,
+    "chg_pips": 26.7,
+    "chg_pct": 0.169,
+    "range_pips": 64.1,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82421,
+    "chg_pips": -25.8,
+    "chg_pct": -0.312,
+    "range_pips": 57.7,
+    "close_in_range": 0.42,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.41221,
+    "chg_pips": -54.5,
+    "chg_pct": -0.384,
+    "range_pips": 79.2,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92576,
+    "chg_pips": -26.6,
+    "chg_pct": -0.287,
+    "range_pips": 72.2,
+    "close_in_range": 0.59,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 191.796,
+    "chg_pips": 92.3,
+    "chg_pct": 0.484,
+    "range_pips": 136.6,
+    "close_in_range": 0.74,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23335,
+    "chg_pips": 48.7,
+    "chg_pct": 0.396,
+    "range_pips": 67.4,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.84271,
+    "chg_pips": -13.4,
+    "chg_pct": -0.159,
+    "range_pips": 46.2,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57488,
+    "chg_pips": 5.5,
+    "chg_pct": 0.096,
+    "range_pips": 33.8,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46606,
+    "chg_pips": -14.3,
+    "chg_pct": -0.306,
+    "range_pips": 24.7,
+    "close_in_range": 0.41,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.9064,
+    "chg_pips": -262.2,
+    "chg_pct": -0.264,
+    "range_pips": 651.9,
+    "close_in_range": 0.41,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.42129,
+    "chg_pips": -281.6,
+    "chg_pct": -0.298,
+    "range_pips": 493.4,
+    "close_in_range": 0.19,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.4456,
+    "chg_pips": -7.5,
+    "chg_pct": -0.005,
+    "range_pips": 1119.0,
+    "close_in_range": 0.52,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.44227,
+    "chg_pips": 356.7,
+    "chg_pct": 0.194,
+    "range_pips": 1729.5,
+    "close_in_range": 0.59,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.607,
+    "chg_pips": -6.6,
+    "chg_pct": -0.065,
+    "range_pips": 41.5,
+    "close_in_range": 0.57,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 18.47692,
+    "chg_pips": 76.8,
+    "chg_pct": 4.335,
+    "range_pips": 240.1,
+    "close_in_range": 0.41,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "07:00",
+    "to": "12:15",
+    "dir": "up",
+    "pips": 42.7,
+    "ret_pct": 0.38,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "12:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -84.3,
+    "ret_pct": -0.748,
+    "minutes": 3540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Import Prices m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 49.0,
+    "ret_pct": 0.438,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BusinessNZ Services Landscape, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "07:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 18.2,
+    "ret_pct": 0.115,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: To keep raising rate in response to …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "10:00",
+    "to": "12:00",
+    "dir": "down",
+    "pips": -19.1,
+    "ret_pct": -0.121,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Annual inflation up to 3.8% in the euro area, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "12:00",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 20.5,
+    "ret_pct": 0.13,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italy Foreign Trade and Import Prices - August 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "15:15",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -33.1,
+    "ret_pct": -0.209,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "16:15",
+    "to": "18:30",
+    "dir": "up",
+    "pips": 52.8,
+    "ret_pct": 0.335,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "18:30",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -49.6,
+    "ret_pct": -0.313,
+    "minutes": 3330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 33.7,
+    "ret_pct": 0.214,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJs Ueda: Says it is inappropriate to preannounce emerge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "07:00",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 70.3,
+    "ret_pct": 0.529,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -63.7,
+    "ret_pct": -0.477,
+    "minutes": 3285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOE Gov Bailey Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 23.5,
+    "ret_pct": 0.177,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rightmove HPI m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "07:00",
+    "to": "12:30",
+    "dir": "down",
+    "pips": -45.0,
+    "ret_pct": -0.544,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "12:30",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 22.8,
+    "ret_pct": 0.277,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: I have been watching weak yen, MidEa…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "14:45",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -27.5,
+    "ret_pct": -0.333,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "16:15",
+    "to": "18:30",
+    "dir": "up",
+    "pips": 33.2,
+    "ret_pct": 0.404,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "18:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -11.8,
+    "ret_pct": -0.143,
+    "minutes": 3615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "07:00",
+    "to": "12:15",
+    "dir": "up",
+    "pips": 21.8,
+    "ret_pct": 0.314,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "12:15",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -14.4,
+    "ret_pct": -0.207,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Import Prices m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "14:45",
+    "to": "16:45",
+    "dir": "up",
+    "pips": 13.7,
+    "ret_pct": 0.197,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "16:45",
+    "to": "19:00",
+    "dir": "down",
+    "pips": -27.5,
+    "ret_pct": -0.395,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 36.7,
+    "ret_pct": 0.529,
+    "minutes": 3585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "07:00",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -32.5,
+    "ret_pct": -0.229,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:30",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 24.3,
+    "ret_pct": 0.172,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Gov Council Member Alexopoulos Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "14:45",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -33.1,
+    "ret_pct": -0.234,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "16:15",
+    "to": "19:00",
+    "dir": "up",
+    "pips": 24.1,
+    "ret_pct": 0.17,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -40.0,
+    "ret_pct": -0.282,
+    "minutes": 3585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "07:00",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -4.7,
+    "ret_pct": -0.083,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "08:00",
+    "to": "12:15",
+    "dir": "up",
+    "pips": 26.2,
+    "ret_pct": 0.464,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "12:15",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -19.8,
+    "ret_pct": -0.349,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: I have been watching weak yen, MidEa…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "14:45",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 13.4,
+    "ret_pct": 0.237,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "16:30",
+    "to": "19:00",
+    "dir": "down",
+    "pips": -25.5,
+    "ret_pct": -0.45,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 18.7,
+    "ret_pct": 0.331,
+    "minutes": 3180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:00",
+    "to": "01:00",
+    "dir": "down",
+    "pips": -10.5,
+    "ret_pct": -0.185,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 4.7,
+    "ret_pct": 0.083,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rightmove HPI m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "07:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -54.9,
+    "ret_pct": -0.591,
+    "minutes": 3870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trade Balance +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 29.2,
+    "ret_pct": 0.316,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ Overseas merchandise trade: September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "07:00",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 121.0,
+    "ret_pct": 0.634,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "13:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -77.7,
+    "ret_pct": -0.405,
+    "minutes": 3480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: I have been watching weak yen, MidEa…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 50.6,
+    "ret_pct": 0.265,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BusinessNZ Services Landscape, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "07:00",
+    "to": "10:15",
+    "dir": "down",
+    "pips": -15.1,
+    "ret_pct": -0.123,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "10:15",
+    "to": "18:30",
+    "dir": "up",
+    "pips": 29.7,
+    "ret_pct": 0.242,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Italy Foreign Trade and Import Prices - August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "18:30",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -18.9,
+    "ret_pct": -0.154,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "22:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 51.8,
+    "ret_pct": 0.422,
+    "minutes": 3360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Assist Gov Kent Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "07:00",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -20.9,
+    "ret_pct": -0.248,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "16:15",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 13.7,
+    "ret_pct": 0.163,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "20:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -32.7,
+    "ret_pct": -0.388,
+    "minutes": 3045,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOE Gov Bailey Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 26.2,
+    "ret_pct": 0.312,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BusinessNZ Services Landscape, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "07:00",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -17.9,
+    "ret_pct": -0.312,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "13:30",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 11.5,
+    "ret_pct": 0.201,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ueda: No evidence the BoJ's neutral rate is around any pa…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "15:00",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -16.9,
+    "ret_pct": -0.295,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US industrial production up 0.7% in September, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "16:15",
+    "to": "17:30",
+    "dir": "up",
+    "pips": 14.2,
+    "ret_pct": 0.248,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "17:30",
+    "to": "20:45",
+    "dir": "down",
+    "pips": -14.2,
+    "ret_pct": -0.248,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "20:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 28.7,
+    "ret_pct": 0.502,
+    "minutes": 3480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Assist Gov Kent Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "07:00",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -17.7,
+    "ret_pct": -0.379,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "15:45",
+    "to": "17:30",
+    "dir": "up",
+    "pips": 8.0,
+    "ret_pct": 0.172,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "17:30",
+    "to": "19:00",
+    "dir": "down",
+    "pips": -12.2,
+    "ret_pct": -0.262,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 8.1,
+    "ret_pct": 0.174,
+    "minutes": 3585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "07:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -560.0,
+    "ret_pct": -0.564,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "12:15",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 348.4,
+    "ret_pct": 0.353,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ueda: No evidence the BoJ's neutral rate is around any pa…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "14:45",
+    "to": "16:45",
+    "dir": "down",
+    "pips": -206.2,
+    "ret_pct": -0.208,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:45",
+    "to": "18:30",
+    "dir": "up",
+    "pips": 360.8,
+    "ret_pct": 0.365,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "18:30",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -250.2,
+    "ret_pct": -0.252,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "22:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 2.4,
+    "ret_pct": 0.002,
+    "minutes": 3360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJs Ueda: Says it is inappropriate to preannounce emergenc… pushed it along (+64.5 in 15 min, 2688% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJs Ueda: Says it is inappropriate to preannounce emergency bond market auctions",
+      "ccy": null,
+      "pips": 64.5,
+      "share_of_leg": 26.88
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "07:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -241.4,
+    "ret_pct": -0.255,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "12:15",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 236.2,
+    "ret_pct": 0.251,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ueda: No evidence the BoJ's neutral rate is around any pa…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:45",
+    "to": "16:45",
+    "dir": "down",
+    "pips": -190.6,
+    "ret_pct": -0.202,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "16:45",
+    "to": "18:00",
+    "dir": "up",
+    "pips": 163.9,
+    "ret_pct": 0.174,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "18:00",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -275.4,
+    "ret_pct": -0.291,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "22:45",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 164.8,
+    "ret_pct": 0.175,
+    "minutes": 3015,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOE Gov Bailey Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "01:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -169.8,
+    "ret_pct": -0.18,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rightmove HPI m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "07:00",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 196.1,
+    "ret_pct": 0.119,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "08:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -653.2,
+    "ret_pct": -0.396,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "12:15",
+    "to": "19:00",
+    "dir": "up",
+    "pips": 836.5,
+    "ret_pct": 0.51,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Import Prices m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -451.1,
+    "ret_pct": -0.274,
+    "minutes": 3165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:45",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 290.0,
+    "ret_pct": 0.176,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ Overseas merchandise trade: September 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "00:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -310.0,
+    "ret_pct": -0.188,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rightmove HPI m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "07:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -640.2,
+    "ret_pct": -0.348,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ's Governor Ueda: To keep raising rate in response to …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "12:15",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 1631.2,
+    "ret_pct": 0.889,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Import Prices m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "22:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -650.3,
+    "ret_pct": -0.351,
+    "minutes": 3405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item TIC Long-Term Purchases moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "07:00",
+    "to": "10:15",
+    "dir": "down",
+    "pips": -37.7,
+    "ret_pct": -0.33,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "10:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 441.4,
+    "ret_pct": 3.874,
+    "minutes": 4110,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Import Prices m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "07:00",
+    "to": "11:00",
+    "dir": "up",
+    "pips": 189.4,
+    "ret_pct": 0.454,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China Finance Minister: Chinese side is willing to give f…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "11:00",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -310.1,
+    "ret_pct": -0.74,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Annual inflation up to 3.8% in the euro area moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "15:15",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 367.7,
+    "ret_pct": 0.884,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Industrial Production m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "16:15",
+    "to": "19:00",
+    "dir": "down",
+    "pips": -387.7,
+    "ret_pct": -0.924,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Lawmakers introduce a bill to block trumps Russia diesel …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 266.5,
+    "ret_pct": 0.641,
+    "minutes": 3285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "01:45",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -174.5,
+    "ret_pct": -0.417,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJs Ueda: Says it is inappropriate to preannounce emerge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 161.1,
+    "ret_pct": 0.387,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China: National Economy was Generally Stable with New Ach…, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "08:45",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.000%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.0,
+    "top_movers": [
+     {
+      "instrument": "EUR/USD",
+      "pct": 0.0,
+      "pips": 0.0,
+      "unit": "pips",
+      "sigma": 0.0
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.0,
+      "pips": 0.0,
+      "unit": "pips",
+      "sigma": 0.0
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": 0.0,
+      "pips": 0.0,
+      "unit": "pips",
+      "sigma": 0.0
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.0,
+      "pips": 0.0,
+      "unit": "pips",
+      "sigma": 0.0
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.0,
+      "pips": 0.0,
+      "unit": "pips",
+      "sigma": 0.0
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.0,
+      "pips": 0.0,
+      "unit": "pips",
+      "sigma": 0.0
+     }
+    ]
+   }
+  ],
+  "headline_count": 35,
+  "top_headlines": [
+   {
+    "time": "19:30",
+    "impact": "medium",
+    "title": "Iran Says It's Ready To Help Resolve Saudi-Yemen Conflict"
+   },
+   {
+    "time": "02:15",
+    "impact": "medium",
+    "title": "BOJs Ueda: Says it is inappropriate to preannounce emergency bond market auctions"
+   },
+   {
+    "time": "08:15",
+    "impact": "low",
+    "title": "China Finance Minister: Chinese side is willing to give full play to the role of the China-EU financial dialogue and other mechanisms with the EU side"
+   },
+   {
+    "time": "08:30",
+    "impact": "low",
+    "title": "BoJ's Governor Ueda: To keep raising rate in response to economy, prices"
+   },
+   {
+    "time": "09:15",
+    "impact": "low",
+    "title": "China: EU talks show differences can be managed via dialog"
+   },
+   {
+    "time": "09:30",
+    "impact": "low",
+    "title": "PBOC's Pan: PBOC to support offshore yuan markets development"
+   },
+   {
+    "time": "11:00",
+    "impact": "low",
+    "title": "Annual inflation up to 3.8% in the euro area"
+   },
+   {
+    "time": "11:00",
+    "impact": "low",
+    "title": "Euro area international trade in goods deficit EUR16.1 bn"
+   },
+   {
+    "time": "12:00",
+    "impact": "low",
+    "title": "Italy Foreign Trade and Import Prices - August 2026"
+   },
+   {
+    "time": "13:45",
+    "impact": "low",
+    "title": "BoJ's Governor Ueda: I have been watching weak yen, MidEast in terms of inflation"
+   },
+   {
+    "time": "14:00",
+    "impact": "low",
+    "title": "Ueda: No evidence the BoJ's neutral rate is around any particular level"
+   },
+   {
+    "time": "14:15",
+    "impact": "low",
+    "title": "Canada Housing starts and construction data for September 2026"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "CPI m/m",
+    "forecast": "0.2%",
+    "previous": "-0.1%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Median CPI y/y",
+    "forecast": "2.0%",
+    "previous": "2.0%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Trimmed CPI y/y",
+    "forecast": "1.9%",
+    "previous": "1.9%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "Common CPI y/y",
+    "forecast": "2.6%",
+    "previous": "2.6%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The window was led by commodity/FX outperformance: AUD +0.262% and CAD +0.241%, while JPY was weakest at -0.314%. DXY slipped only -0.065% and VIX rose 4.335%, but there was no headline catalyst behind the G10 tape; leg notes repeatedly flag flow/technical. BOE Governor Bailey's appearance was a non-event: GBP basket moved 0.000%. EUR/USD closed +3.1 pips after three uncaused legs.",
+  "themes": [
+   {
+    "theme": "No-catalyst flow tape",
+    "evidence": "All major legs flagged no clear catalyst; EUR/USD legs were +42.7, -84.3, +49.0 pips.",
+    "currencies": [
+     "EUR",
+     "USD"
+    ]
+   },
+   {
+    "theme": "Commodity FX outperforms funding currencies",
+    "evidence": "AUD +0.262% and CAD +0.241% against JPY -0.314%.",
+    "currencies": [
+     "AUD",
+     "CAD",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "Bailey non-event",
+    "evidence": "BOE Gov Bailey Speaks produced a basket move of 0.000%, inside the noise floor.",
+    "currencies": [
+     "GBP"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No clear catalyst in window; soft despite small DXY slip.",
+   "EUR": "No clear catalyst; selling rejected.",
+   "JPY": "No clear catalyst; weakest of majors.",
+   "GBP": "BOE Bailey was muted, no net impulse.",
+   "AUD": "No clear catalyst; strongest of majors.",
+   "CAD": "No clear catalyst; selling rejected and recovered.",
+   "CHF": "No clear catalyst; held its range.",
+   "NZD": "No clear catalyst; attempt rejected."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD chopped +42.7, -84.3 and +49.0 pips across three legs, closing only +3.1 pips with no leg catalyst."
+  },
+  "polarity_reads": [
+   {
+    "event": "BOE Gov Bailey Speaks",
+    "read": "Muted basket move of 0.000% inside the noise floor implies no clear GBP positioning impulse was tested."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Commodity FX extension",
+    "probability": 0.5,
+    "thesis": "AUD and CAD ended strongest with no catalyst, so carry/flow bid extends in quiet tape.",
+    "triggers": [
+     "No headline shock",
+     "Canada CPI in line or soft"
+    ],
+    "invalidation": "Clear USD-supportive headline emerges.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 36.7,
+      "rationale": "AUD was strongest and closed at its best; last up leg was +36.7 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 33.7,
+      "rationale": "JPY weakest; last USD/JPY up leg was +33.7 pips."
+     }
+    ]
+   },
+   {
+    "name": "Range fade / exhaustion",
+    "probability": 0.35,
+    "thesis": "Uncaused legs mean moves are likely to fade; choppy ranges persist with no macro driver.",
+    "triggers": [
+     "EUR/USD returns toward full range 88.5 pips",
+     "USD/CAD bounces from close near low"
+    ],
+    "invalidation": "Fresh macro catalyst breaks the range.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 88.5,
+      "rationale": "Three legs had no catalyst and pair closed +3.1 pips, within an 88.5-pip range."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 24.1,
+      "rationale": "USD/CAD closed near low and last up leg was +24.1 pips."
+     }
+    ]
+   },
+   {
+    "name": "USD recovery / risk wobble",
+    "probability": 0.15,
+    "thesis": "VIX rose 4.335% while DXY slipped only -0.065%; a further vol spike can lift USD broadly.",
+    "triggers": [
+     "VIX holds above 18.47692",
+     "Equity risk sentiment worsens"
+    ],
+    "invalidation": "AUD/CAD keep printing fresh highs.",
+    "pair_paths": [
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 33.2,
+      "rationale": "USD/CHF last up leg was +33.2 pips and can recover if USD firms."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Canada CPI surprise",
+    "why_it_matters": "CAD is second-strongest after no catalyst, so a hot CPI could extend CAD strength or unwind if soft.",
+    "watch": "CAD CPI m/m forecast 0.2% prev -0.1%"
+   },
+   {
+    "risk": "VIX continuation",
+    "why_it_matters": "VIX rose 4.335% while DXY barely moved; a vol spike could force USD short covering.",
+    "watch": "VIX above 18.47692"
+   },
+   {
+    "risk": "BOJ communication",
+    "why_it_matters": "JPY is weakest and multiple Ueda headlines appeared; any hawkish shift can squeeze shorts.",
+    "watch": "USD/JPY near 158.09"
+   }
+  ],
+  "calendar_ahead_note": "High-impact Canada CPI at 14:30: CPI m/m forecast 0.2% vs -0.1% prior, median and trimmed seen 2.0% and 1.9%; can alter CAD strength and risk tone.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 17667,
+   "completion_tokens": 9136,
+   "total_tokens": 26803,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7756
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 17027
+  }
+ }
+}
