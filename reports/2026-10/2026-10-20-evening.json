@@ -1,0 +1,2131 @@
+{
+ "meta": {
+  "date": "2026-10-20",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-19T17:00:00+00:00",
+  "end_utc": "2026-10-20T17:00:00+00:00",
+  "start_local": "2026-10-19T19:00:00+02:00",
+  "end_local": "2026-10-20T19:00:00+02:00",
+  "fwd_start_utc": "2026-10-20T17:00:00+00:00",
+  "fwd_end_utc": "2026-10-21T17:00:00+00:00",
+  "generated_utc": "2026-10-20T17:05:18.557901+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 29
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-19 19:00 CEST",
+   "to_local": "2026-10-20 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "GBP",
+    "rank": 1,
+    "strength_pct": 0.269,
+    "intraday_peak": 0.365,
+    "intraday_trough": -0.042,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Average Earnings Index 3m/y",
+      "impact": "Medium",
+      "actual": "3.7%",
+      "forecast": "3.8%",
+      "polarity": "inverted",
+      "note": "miss surprise -> GBP stronger 0.106%  (opposite to the textbook sign)"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "EUR/GBP",
+     "sigma": -7.12
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 2,
+    "strength_pct": 0.14,
+    "intraday_peak": 0.214,
+    "intraday_trough": -0.008,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "NZD/CHF",
+     "sigma": 1.14
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 3,
+    "strength_pct": 0.071,
+    "intraday_peak": 0.103,
+    "intraday_trough": -0.094,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.09%, recovered 84%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 4,
+    "strength_pct": 0.058,
+    "intraday_peak": 0.116,
+    "intraday_trough": -0.086,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.09%, recovered 71%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "USD/CAD",
+     "sigma": -1.13
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 5,
+    "strength_pct": -0.024,
+    "intraday_peak": 0.104,
+    "intraday_trough": -0.045,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.10%, gave back 86%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "USD/JPY",
+     "sigma": 1.25
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 6,
+    "strength_pct": -0.06,
+    "intraday_peak": 0.042,
+    "intraday_trough": -0.23,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.23%, recovered 63%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "EUR/GBP",
+     "sigma": -7.12
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 7,
+    "strength_pct": -0.222,
+    "intraday_peak": 0.118,
+    "intraday_trough": -0.222,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.12%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "NZD/CHF",
+     "sigma": 1.14
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 8,
+    "strength_pct": -0.232,
+    "intraday_peak": 0.025,
+    "intraday_trough": -0.297,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Average Earnings Index 3m/y",
+     "instrument": "GBP/USD",
+     "sigma": 5.14
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": 0.172,
+    "from_EUR": -0.06,
+    "from_USD": 0.232,
+    "base_share": 0.21
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.501,
+    "from_GBP": 0.269,
+    "from_USD": 0.232,
+    "base_share": 0.54
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.303,
+    "from_AUD": 0.071,
+    "from_USD": 0.232,
+    "base_share": 0.23
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.372,
+    "from_NZD": 0.14,
+    "from_USD": 0.232,
+    "base_share": 0.38
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.208,
+    "from_USD": -0.232,
+    "from_JPY": 0.024,
+    "base_share": 0.91
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.01,
+    "from_USD": -0.232,
+    "from_CHF": 0.222,
+    "base_share": 0.51
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.29,
+    "from_USD": -0.232,
+    "from_CAD": -0.058,
+    "base_share": 0.8
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.329,
+    "from_EUR": -0.06,
+    "from_GBP": -0.269,
+    "base_share": 0.18
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.036,
+    "from_EUR": -0.06,
+    "from_JPY": 0.024,
+    "base_share": 0.71
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.162,
+    "from_EUR": -0.06,
+    "from_CHF": 0.222,
+    "base_share": 0.21
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.131,
+    "from_EUR": -0.06,
+    "from_AUD": -0.071,
+    "base_share": 0.46
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.118,
+    "from_EUR": -0.06,
+    "from_CAD": -0.058,
+    "base_share": 0.51
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.2,
+    "from_EUR": -0.06,
+    "from_NZD": -0.14,
+    "base_share": 0.3
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.293,
+    "from_GBP": 0.269,
+    "from_JPY": 0.024,
+    "base_share": 0.92
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.492,
+    "from_GBP": 0.269,
+    "from_CHF": 0.222,
+    "base_share": 0.55
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.198,
+    "from_GBP": 0.269,
+    "from_AUD": -0.071,
+    "base_share": 0.79
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.212,
+    "from_GBP": 0.269,
+    "from_CAD": -0.058,
+    "base_share": 0.82
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.13,
+    "from_GBP": 0.269,
+    "from_NZD": -0.14,
+    "base_share": 0.66
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.095,
+    "from_AUD": 0.071,
+    "from_JPY": 0.024,
+    "base_share": 0.75
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.293,
+    "from_AUD": 0.071,
+    "from_CHF": 0.222,
+    "base_share": 0.24
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.013,
+    "from_AUD": 0.071,
+    "from_CAD": -0.058,
+    "base_share": 0.55
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.069,
+    "from_AUD": 0.071,
+    "from_NZD": -0.14,
+    "base_share": 0.34
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.164,
+    "from_NZD": 0.14,
+    "from_JPY": 0.024,
+    "base_share": 0.85
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.362,
+    "from_NZD": 0.14,
+    "from_CHF": 0.222,
+    "base_share": 0.39
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.082,
+    "from_NZD": 0.14,
+    "from_CAD": -0.058,
+    "base_share": 0.71
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.082,
+    "from_CAD": 0.058,
+    "from_JPY": 0.024,
+    "base_share": 0.71
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.28,
+    "from_CAD": 0.058,
+    "from_CHF": 0.222,
+    "base_share": 0.21
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.198,
+    "from_CHF": -0.222,
+    "from_JPY": 0.024,
+    "base_share": 0.9
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.308
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.16
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.082
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.066
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.027
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.068
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.254
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.265
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.12312,
+    "chg_pips": 19.3,
+    "chg_pct": 0.172,
+    "range_pips": 55.8,
+    "close_in_range": 0.48,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.33707,
+    "chg_pips": 66.9,
+    "chg_pct": 0.503,
+    "range_pips": 111.6,
+    "close_in_range": 0.66,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.69976,
+    "chg_pips": 21.2,
+    "chg_pct": 0.304,
+    "range_pips": 46.4,
+    "close_in_range": 0.58,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56825,
+    "chg_pips": 21.1,
+    "chg_pct": 0.373,
+    "range_pips": 40.9,
+    "close_in_range": 0.61,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.193,
+    "chg_pips": -32.9,
+    "chg_pct": -0.208,
+    "range_pips": 77.1,
+    "close_in_range": 0.47,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.826,
+    "chg_pips": -0.7,
+    "chg_pct": -0.008,
+    "range_pips": 47.3,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.4054,
+    "chg_pips": -40.8,
+    "chg_pct": -0.289,
+    "range_pips": 80.1,
+    "close_in_range": 0.27,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92769,
+    "chg_pips": 15.0,
+    "chg_pct": 0.162,
+    "range_pips": 56.1,
+    "close_in_range": 0.83,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 191.509,
+    "chg_pips": -37.7,
+    "chg_pct": -0.196,
+    "range_pips": 71.6,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23132,
+    "chg_pips": -8.6,
+    "chg_pct": -0.07,
+    "range_pips": 36.5,
+    "close_in_range": 0.52,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83996,
+    "chg_pips": -27.7,
+    "chg_pct": -0.329,
+    "range_pips": 44.2,
+    "close_in_range": 0.34,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57799,
+    "chg_pips": 17.1,
+    "chg_pct": 0.297,
+    "range_pips": 38.4,
+    "close_in_range": 0.83,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46936,
+    "chg_pips": 16.9,
+    "chg_pct": 0.361,
+    "range_pips": 26.6,
+    "close_in_range": 0.83,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.9049,
+    "chg_pips": -119.2,
+    "chg_pct": -0.12,
+    "range_pips": 637.1,
+    "close_in_range": 0.7,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.40455,
+    "chg_pips": -86.3,
+    "chg_pct": -0.092,
+    "range_pips": 531.9,
+    "close_in_range": 0.66,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.3901,
+    "chg_pips": -416.6,
+    "chg_pct": -0.254,
+    "range_pips": 1194.3,
+    "close_in_range": 0.29,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.41999,
+    "chg_pips": -48.7,
+    "chg_pct": -0.026,
+    "range_pips": 1455.4,
+    "close_in_range": 0.33,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.551,
+    "chg_pips": -20.7,
+    "chg_pct": -0.203,
+    "range_pips": 55.6,
+    "close_in_range": 0.46,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 18.38877,
+    "chg_pips": -22.9,
+    "chg_pct": -1.231,
+    "range_pips": 85.4,
+    "close_in_range": 0.15,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "07:15",
+    "dir": "up",
+    "pips": 26.0,
+    "ret_pct": 0.232,
+    "minutes": 735,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "07:15",
+    "to": "11:00",
+    "dir": "down",
+    "pips": -30.0,
+    "ret_pct": -0.267,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ May Slightly Revise Up Fiscal 2027 Inflation Forecast…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "11:00",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 53.0,
+    "ret_pct": 0.473,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -26.3,
+    "ret_pct": -0.234,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -63.0,
+    "ret_pct": -0.397,
+    "minutes": 1230,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 29.7,
+    "ret_pct": 0.188,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iran-US talks continue, reports that the deal is close are … pushed it along (+12.5 in 15 min, 42% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iran-US talks continue, reports that the deal is close are wrong",
+      "ccy": null,
+      "pips": 12.5,
+      "share_of_leg": 0.42
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 105.1,
+    "ret_pct": 0.79,
+    "minutes": 1275,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -35.4,
+    "ret_pct": -0.264,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -6.6,
+    "ret_pct": -0.08,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 12.8,
+    "ret_pct": 0.155,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "01:45",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -44.8,
+    "ret_pct": -0.542,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China's loan prime rates remain unchanged, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 35.8,
+    "ret_pct": 0.435,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pending Home Sales m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 8.1,
+    "ret_pct": 0.116,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "02:00",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -12.1,
+    "ret_pct": -0.173,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "03:00",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 25.9,
+    "ret_pct": 0.371,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:30",
+    "to": "13:45",
+    "dir": "down",
+    "pips": -13.8,
+    "ret_pct": -0.197,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "13:45",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 31.0,
+    "ret_pct": 0.444,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -17.4,
+    "ret_pct": -0.248,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "up",
+    "pips": 16.8,
+    "ret_pct": 0.119,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The democrats gave us the highest inflation in his…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:30",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -77.4,
+    "ret_pct": -0.549,
+    "minutes": 1020,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 20.2,
+    "ret_pct": 0.144,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Pending Home Sales m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 35.3,
+    "ret_pct": 0.624,
+    "minutes": 1275,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -13.9,
+    "ret_pct": -0.244,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 8.2,
+    "ret_pct": 0.089,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "21:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -14.7,
+    "ret_pct": -0.159,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Good situation with respect to Iran, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 17.5,
+    "ret_pct": 0.189,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "01:45",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -38.4,
+    "ret_pct": -0.414,
+    "minutes": 750,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:15",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 48.2,
+    "ret_pct": 0.522,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US monthly new residential construction, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -5.3,
+    "ret_pct": -0.057,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -27.8,
+    "ret_pct": -0.145,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The democrats gave us the highest inflation in his…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:30",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 43.6,
+    "ret_pct": 0.228,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:30",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -49.8,
+    "ret_pct": -0.259,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finance Minister Katayama: Funding options will be …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "08:30",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 52.8,
+    "ret_pct": 0.276,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Zelenskyy: I spoke with Rubio, and it was a substantive c…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "14:00",
+    "to": "16:45",
+    "dir": "down",
+    "pips": -64.7,
+    "ret_pct": -0.337,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US ADP National Employment Report Preliminary Estimate fo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 12.6,
+    "ret_pct": 0.066,
+    "minutes": 120,
+    "cause": "Iran-US talks continue, reports that the deal is close are wrong",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "Iran-US talks continue, reports that the deal is close are wrong -- +23.2 in the first 15 min, 184% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 8.3,
+    "ret_pct": 0.067,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "21:30",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -15.5,
+    "ret_pct": -0.126,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:00",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 13.8,
+    "ret_pct": 0.112,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "01:15",
+    "to": "07:15",
+    "dir": "down",
+    "pips": -32.9,
+    "ret_pct": -0.267,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China's loan prime rates remain unchanged, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "07:15",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 12.6,
+    "ret_pct": 0.102,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "10:30",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -12.9,
+    "ret_pct": -0.105,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "14:00",
+    "to": "16:45",
+    "dir": "up",
+    "pips": 30.3,
+    "ret_pct": 0.246,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US ADP National Employment Report Preliminary Estimate fo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -12.1,
+    "ret_pct": -0.098,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -40.7,
+    "ret_pct": -0.483,
+    "minutes": 1260,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Declining German Economic Expectations pushed it along (-6.8 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Declining German Economic Expectations",
+      "ccy": null,
+      "pips": -6.8,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 13.7,
+    "ret_pct": 0.163,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 9.3,
+    "ret_pct": 0.161,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The democrats gave us the highest inflation in his…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -17.8,
+    "ret_pct": -0.308,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "03:00",
+    "to": "08:45",
+    "dir": "up",
+    "pips": 19.2,
+    "ret_pct": 0.334,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Labour market overview, UK: October 2026 pushed it along (+5.6 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Labour market overview, UK: October 2026",
+      "ccy": null,
+      "pips": 5.6,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "08:45",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -24.0,
+    "ret_pct": -0.416,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "14:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 29.2,
+    "ret_pct": 0.508,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US ADP National Employment Report Preliminary Estimate fo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -4.2,
+    "ret_pct": -0.09,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 11.1,
+    "ret_pct": 0.238,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:45",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -10.3,
+    "ret_pct": -0.22,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "03:00",
+    "to": "08:30",
+    "dir": "up",
+    "pips": 19.4,
+    "ret_pct": 0.415,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Labour market overview, UK: October 2026 pushed it along (+5.1 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Labour market overview, UK: October 2026",
+      "ccy": null,
+      "pips": 5.1,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "08:30",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -18.7,
+    "ret_pct": -0.398,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "14:15",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 21.9,
+    "ret_pct": 0.468,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US monthly new residential construction, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -3.2,
+    "ret_pct": -0.068,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -188.8,
+    "ret_pct": -0.19,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:00",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 170.6,
+    "ret_pct": 0.172,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "01:30",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -294.9,
+    "ret_pct": -0.297,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "09:45",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 320.3,
+    "ret_pct": 0.324,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "13:15",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -574.5,
+    "ret_pct": -0.579,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 406.3,
+    "ret_pct": 0.412,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -201.4,
+    "ret_pct": -0.214,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:30",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 264.3,
+    "ret_pct": 0.281,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "01:15",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -491.8,
+    "ret_pct": -0.522,
+    "minutes": 780,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 324.3,
+    "ret_pct": 0.346,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Housing Starts +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "08:45",
+    "dir": "down",
+    "pips": -544.2,
+    "ret_pct": -0.331,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "08:45",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 870.6,
+    "ret_pct": 0.531,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "13:45",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -1073.6,
+    "ret_pct": -0.652,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 281.6,
+    "ret_pct": 0.172,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "08:45",
+    "dir": "down",
+    "pips": -536.4,
+    "ret_pct": -0.291,
+    "minutes": 825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "08:45",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 1315.6,
+    "ret_pct": 0.716,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Declining German Economic Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "14:00",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -1308.2,
+    "ret_pct": -0.707,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 369.1,
+    "ret_pct": 0.201,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -109.7,
+    "ret_pct": -0.91,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "02:00",
+    "to": "11:30",
+    "dir": "up",
+    "pips": 242.2,
+    "ret_pct": 2.027,
+    "minutes": 570,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China's loan prime rates remain unchanged, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "11:30",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -530.5,
+    "ret_pct": -4.352,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 269.7,
+    "ret_pct": 2.313,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "up",
+    "pips": 81.6,
+    "ret_pct": 0.197,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Germanys Chancellor Merz: Russia's push to destabilize Eu…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "20:00",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -281.9,
+    "ret_pct": -0.68,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: The democrats gave us the highest inflation in his…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "03:15",
+    "to": "05:45",
+    "dir": "up",
+    "pips": 270.4,
+    "ret_pct": 0.657,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Finance Minister Katayama: Funding options will be … moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "05:45",
+    "to": "07:45",
+    "dir": "down",
+    "pips": -265.9,
+    "ret_pct": -0.641,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "07:45",
+    "to": "08:45",
+    "dir": "up",
+    "pips": 151.6,
+    "ret_pct": 0.368,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Labour market overview, UK: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "08:45",
+    "to": "11:45",
+    "dir": "down",
+    "pips": -223.5,
+    "ret_pct": -0.541,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Zelenskyy: I spoke with Rubio, and it was a substantive c… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "11:45",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 405.5,
+    "ret_pct": 0.986,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ADP Weekly Employment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -319.7,
+    "ret_pct": -0.77,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran-US talks continue, reports that the deal is close ar…, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Average Earnings Index 3m/y",
+    "actual": "3.7%",
+    "forecast": "3.8%",
+    "previous": "3.9%",
+    "polarity": "inverted",
+    "polarity_note": "miss surprise -> GBP stronger 0.106%  (opposite to the textbook sign)",
+    "own_ccy_impulse_pct": 0.106,
+    "top_movers": [
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.109,
+      "pips": -9.2,
+      "unit": "pips",
+      "sigma": -7.12
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": 0.101,
+      "pips": 13.5,
+      "unit": "pips",
+      "sigma": 5.14
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.021,
+      "pips": 3.3,
+      "unit": "pips",
+      "sigma": 1.25
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.032,
+      "pips": 1.5,
+      "unit": "pips",
+      "sigma": 1.14
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": -0.018,
+      "pips": -2.6,
+      "unit": "pips",
+      "sigma": -1.13
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.026,
+      "pips": 1.5,
+      "unit": "pips",
+      "sigma": 1.12
+     }
+    ]
+   }
+  ],
+  "headline_count": 18,
+  "top_headlines": [
+   {
+    "time": "08:00",
+    "impact": "high",
+    "title": "Labour market overview, UK: October 2026"
+   },
+   {
+    "time": "11:00",
+    "impact": "high",
+    "title": "Declining German Economic Expectations"
+   },
+   {
+    "time": "17:00",
+    "impact": "medium",
+    "title": "Iran-US talks continue, reports that the deal is close are wrong"
+   },
+   {
+    "time": "19:30",
+    "impact": "low",
+    "title": "Germanys Chancellor Merz: Russia's push to destabilize Europe is underestimated"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "Trump: The democrats gave us the highest inflation in history"
+   },
+   {
+    "time": "21:15",
+    "impact": "low",
+    "title": "Trump: Good situation with respect to Iran"
+   },
+   {
+    "time": "03:00",
+    "impact": "low",
+    "title": "China's loan prime rates remain unchanged"
+   },
+   {
+    "time": "03:00",
+    "impact": "low",
+    "title": "Japan Economy Minister Kiuchi: Pledges to respect BOJ autonomy in monetary policy decisions"
+   },
+   {
+    "time": "03:15",
+    "impact": "low",
+    "title": "Japan Finance Minister Katayama: Funding options will be considered with fiscal sustainability in focus"
+   },
+   {
+    "time": "07:45",
+    "impact": "low",
+    "title": "BoJ May Slightly Revise Up Fiscal 2027 Inflation Forecast In Quarterly Report Due At October 29-30 Meeting: RTRS Cites Sources"
+   },
+   {
+    "time": "08:00",
+    "impact": "low",
+    "title": "Germany: Producer prices in September 2026: +6.7% on September 2025"
+   },
+   {
+    "time": "08:45",
+    "impact": "low",
+    "title": "Zelenskyy: I spoke with Rubio, and it was a substantive conversation focused on the issues that matter"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "CPI y/y",
+    "forecast": "3.4%",
+    "previous": "3.1%"
+   },
+   {
+    "time": "15:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Across Asia, London, and NY morning, GBP led with +0.269% strength while USD was weakest at -0.232%. A downside UK average earnings surprise strengthened GBP, an inverted reaction that set the tone for GBP/USD +66.9 pips. Most other currency moves lacked clear catalysts, with broad USD and CHF underperformance keeping USD/CHF nearly flat at -0.7 pips. Late Iran-US headlines triggered sharp reversals in CHF/JPY and oil.",
+  "themes": [
+   {
+    "theme": "GBP exceptionalism on inverted UK data",
+    "evidence": "Average Earnings Index 3m/y missed at 3.7% vs 3.8% forecast but GBP strengthened 0.106%; GBP was top strength at +0.269% and GBP/USD closed +66.9 pips.",
+    "currencies": [
+     "GBP"
+    ]
+   },
+   {
+    "theme": "Broad USD and CHF underperformance without clear catalysts",
+    "evidence": "USD strength was -0.232% and CHF -0.222%, the two weakest; USD/CHF closed -0.7 pips despite both moving, with no own releases for either.",
+    "currencies": [
+     "USD",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Late Iran headline caused sharp reversals",
+    "evidence": "CHF/JPY rose 12.6 pips in its final leg after 'Iran-US talks continue, reports that the deal is close are wrong' hit around 17:00.",
+    "currencies": [
+     "CHF",
+     "JPY"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No clear catalyst: USD fell broadly, with no US data or event explaining the move.",
+   "EUR": "No clear catalyst: EUR was soft, with only weak German headlines too weak to own the move.",
+   "JPY": "No clear catalyst: JPY was broadly flat, with a failed early bid and no own data.",
+   "GBP": "UK Average Earnings Index miss produced an inverted GBP rally, lifting GBP across the board.",
+   "AUD": "No clear catalyst: AUD selling was rejected, recovering 84% without an own data trigger.",
+   "CAD": "No clear catalyst: CAD selling rejected, recovering 71% with no Canada-specific catalyst.",
+   "CHF": "No clear catalyst: CHF gave back an early gain fully, ending as one of the weakest.",
+   "NZD": "No clear catalyst: NZD held its range and was second-strongest on broad USD weakness."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD carved four uncaused legs (+26.0, -30.0, +53.0, -26.3 pips) for a net +19.3 pip close, with USD weakness providing the bid against soft EUR."
+  },
+  "polarity_reads": [
+   {
+    "event": "Average Earnings Index 3m/y",
+    "read": "A downside wage surprise strengthened GBP by 0.106%, an inverted reaction that implies the market was not positioned for a dovish repricing; it hints at stale short GBP or expectations that the BoE will look through soft wages."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "GBP continuation after UK CPI",
+    "probability": 0.45,
+    "thesis": "UK CPI y/y (forecast 3.4%, previous 3.1%) prints hot or Bailey sounds hawkish, extending the inverted GBP bid.",
+    "triggers": [
+     "UK CPI y/y at or above 3.4%",
+     "BOE Gov Bailey emphasizes upside inflation risks"
+    ],
+    "invalidation": "CPI surprise below 3.1% or Bailey emphasizes downside growth risks",
+    "pair_paths": [
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 111.6,
+      "rationale": "Uses today's GBP/USD range as an extension target if CPI supports GBP."
+     },
+     {
+      "instrument": "EUR/GBP",
+      "direction": "down",
+      "magnitude_pips": 44.2,
+      "rationale": "Uses today's EUR/GBP range for a downside break if GBP outperforms."
+     }
+    ]
+   },
+   {
+    "name": "Mean reversion and USD stabilization",
+    "probability": 0.35,
+    "thesis": "USD weakness is overdone; with no US data, the dollar catches a bid against commodity FX while GBP holds its gain.",
+    "triggers": [
+     "DXY holds 101.551 support",
+     "No fresh negative US headlines"
+    ],
+    "invalidation": "DXY breaks below 101.551 and VIX falls further",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 77.1,
+      "rationale": "Uses today's USD/JPY range as a rebound target if USD stabilizes."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 46.4,
+      "rationale": "Uses today's AUD/USD range as a pullback target."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off USD rebound and GBP fade",
+    "probability": 0.2,
+    "thesis": "UK CPI fails to support GBP or Bailey sounds dovish; risk sentiment worsens, lifting USD against high beta and GBP.",
+    "triggers": [
+     "VIX rises from 18.38877",
+     "BOE Gov Bailey emphasizes downside risks"
+    ],
+    "invalidation": "Risk assets rally and VIX falls below close",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 77.1,
+      "rationale": "Uses today's USD/JPY range as a rebound target in risk-off."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 111.6,
+      "rationale": "Uses today's GBP/USD range for a reversal if GBP fades."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 47.3,
+      "rationale": "USD/CHF range is a rebound target if risk-off drives into USD."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "UK CPI y/y at 08:00",
+    "why_it_matters": "A hot print (forecast 3.4% vs 3.1% prior) would confirm GBP strength; a miss could unwind today's inverted rally.",
+    "watch": "Actual vs 3.4% forecast; GBP crosses"
+   },
+   {
+    "risk": "BOE Gov Bailey Speaks at 15:00",
+    "why_it_matters": "Can reframe today's wage-driven GBP bid or signal policy path.",
+    "watch": "Any remarks on wage growth or rate cuts"
+   },
+   {
+    "risk": "Iran-US talks headline flow",
+    "why_it_matters": "Late report of no deal triggered sharp CHF/JPY and Brent reversals.",
+    "watch": "Subsequent headlines confirming or denying talks"
+   },
+   {
+    "risk": "Low-liquidity, catalyst-light tape",
+    "why_it_matters": "Most legs had no clear catalyst, raising risk of stop-driven reversals.",
+    "watch": "VIX close 18.38877 and DXY close 101.551 as sentiment levels"
+   }
+  ],
+  "calendar_ahead_note": "UK CPI y/y at 08:00 (forecast 3.4%, previous 3.1%) is the main event; a surprise either way could extend or reverse GBP strength. BOE Gov Bailey speaks at 15:00 and may clarify today's inverted wage reaction.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 17359,
+   "completion_tokens": 7254,
+   "total_tokens": 24613,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5488
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 16719
+  }
+ }
+}
