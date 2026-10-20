@@ -13,7 +13,7 @@
   "end_local": "2026-10-20T07:00:00+02:00",
   "fwd_start_utc": "2026-10-20T05:00:00+00:00",
   "fwd_end_utc": "2026-10-20T17:00:00+00:00",
-  "generated_utc": "2026-10-20T05:31:26.408897+00:00",
+  "generated_utc": "2026-10-20T09:58:37.565264+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -1623,173 +1623,186 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was a broad, catalyst-light USD decline: USD strength printed -0.158% and DXY fell -0.192%, closing near session lows. NZD led (+0.108%) while GBP (+0.06%) and JPY (+0.058%) also firmed; AUD (-0.054%) and CAD (-0.063%) lagged. Most legs carried no identifiable catalyst, with China LPR unchanged and Japan comments deemed too weak to own the moves. VIX rose 0.583% even as USD slid, leaving risk tone mixed rather than cleanly risk-on.",
+  "session_summary": "Overnight trade was dominated by a broad, flow-driven US dollar selloff: USD ranked weakest at -0.158 strength-pct and DXY fell -0.192%, while NZD led at +0.108 followed by GBP +0.060 and JPY +0.058. No scheduled releases or headlines could account for the moves; leg notes repeatedly found events 'too weak to own the move' and several turns had nothing on the wire. EUR/USD closed near its high at 1.12332, USD/JPY near its low at 158.183, and risk signals were mixed with VIX up while USD fell. The tape leaves positioning stretched and exposed to the one medium-impact release ahead, UK average earnings at 08:00.",
   "themes": [
    {
-    "theme": "Broad USD slide with no US catalyst",
-    "evidence": "USD strength -0.158%, DXY -0.192%, USD/JPY -0.214%, USD/CHF -0.176%, USD/CAD -0.095%; US own_releases empty.",
+    "theme": "Broad dollar weakness with no obvious catalyst",
+    "evidence": "USD ranked 8th at -0.158 strength-pct; DXY fell -0.192%; every major USD pair showed USD-negative net moves.",
     "currencies": [
      "USD",
+     "EUR",
+     "GBP",
      "JPY",
-     "CHF",
-     "CAD"
+     "AUD",
+     "NZD",
+     "CAD",
+     "CHF"
     ]
    },
    {
-    "theme": "High-beta divergence within G10: NZD strong, AUD weak",
-    "evidence": "NZD strength +0.108% vs AUD -0.054%; AUD/NZD fell -0.162% (-20.0 pips) with no catalyst.",
+    "theme": "NZD leads, AUD lags despite similar risk profile",
+    "evidence": "NZD strength +0.108 vs AUD -0.054; AUD/NZD fell -0.162%.",
     "currencies": [
      "NZD",
      "AUD"
     ]
    },
    {
-    "theme": "Risk signals conflict",
-    "evidence": "VIX +0.583% while USD/SEK, USD/NOK, USD/ZAR, USD/MXN all moved lower against USD.",
+    "theme": "No headline impulse and flow-driven tape",
+    "evidence": "All leg notes marked headlines 'too weak to own the move'; China LPR unchanged as expected.",
     "currencies": [
+     "EUR",
      "USD",
-     "CHF",
      "JPY"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No US catalyst; broad drift lower left it weakest, closing at session trough.",
-   "EUR": "No eurozone catalyst; modest gain came from broad USD softness.",
-   "JPY": "No Japan release; firmed on flows despite only low-impact comments.",
-   "GBP": "No UK catalyst; steady bid with no identifiable driver.",
-   "AUD": "No catalyst; early strength faded and it closed lower.",
-   "CAD": "No Canadian catalyst; held range and closed slightly softer.",
-   "CHF": "No Swiss catalyst; early selling was rejected and it recovered.",
-   "NZD": "No domestic catalyst; led gains on flows and closed at its best."
+   "USD": "Weakest major, no own catalyst; broad flow-driven selling took dollar to -0.158 strength-pct.",
+   "EUR": "No own catalyst; mild +0.032 strength, closed at its best after early dip.",
+   "JPY": "No own catalyst; +0.058 strength, closed at its best as the yen firmed.",
+   "GBP": "No own catalyst; second strongest at +0.060, closed at its best.",
+   "AUD": "Attempt rejected; early gain faded to -0.054 with no clear catalyst.",
+   "CAD": "Held its range, -0.063 strength, no own catalyst.",
+   "CHF": "Selling rejected; recovered 80% from low to +0.018, no catalyst.",
+   "NZD": "Strongest major, +0.108 and closed at its best; no own catalyst."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD's three legs had no clear catalyst; the final 23.9-pip upswing carried it to 1.12332, near the top of a 27.6-pip range."
+   "EUR/USD": "The pair had a small early up leg, a shallow pullback, and then a 23.9-pip up leg into 06:45, all with no clear catalyst; it closed at 96% of its 27.6-pip range with a net +21.3 pips."
   },
   "polarity_reads": [],
   "scenarios": [
    {
-    "name": "USD softness extends in Asia",
-    "probability": 0.35,
-    "thesis": "The catalyst-light USD decline continues into the Asian morning, with high-beta and risk-sensitive currencies outperforming.",
+    "name": "Continuation of dollar softness",
+    "probability": 0.45,
+    "thesis": "With no clear catalyst to reverse the overnight flow and only a medium UK data point ahead, the path of least resistance remains USD weakness into London.",
     "triggers": [
-     "No US data or headlines to arrest the USD drift",
-     "GBP wage data does not trigger a broad USD rebound"
+     "DXY holds below 101.563",
+     "EUR/USD holds above 1.12332",
+     "NZD/USD holds above 0.56764"
     ],
-    "invalidation": "DXY recovers above 101.563",
+    "invalidation": "DXY reclaims 101.9 or a risk-off shock lifts the dollar across the board.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 27.6,
-      "rationale": "Repeat of overnight range after no catalyst; USD remains offered."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 45.4,
-      "rationale": "USD/JPY overnight range was 45.4 pips; yen strength extends."
+      "rationale": "EUR/USD closed at 96% of its 27.6-pip range; continuation uses the overnight range as the initial measured target."
      },
      {
       "instrument": "GBP/USD",
       "direction": "up",
       "magnitude_pips": 37.4,
-      "rationale": "GBP strength +0.06% and USD weakness continue to support."
-     }
-    ]
-   },
-   {
-    "name": "Two-way chop holds",
-    "probability": 0.4,
-    "thesis": "No catalyst leaves pairs inside their overnight ranges, with flows and technical levels dominating.",
-    "triggers": [
-     "Light calendar with only low-impact headline risk",
-     "Risk tone remains mixed with VIX elevated"
-    ],
-    "invalidation": "A sharp break of the overnight high or low in EUR/USD",
-    "pair_paths": [
+      "rationale": "GBP/USD closed at 95% of its 37.4-pip range with the second strongest currency, so it can lead if USD softness persists."
+     },
      {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 27.6,
-      "rationale": "No catalyst to extend; pair remains inside 27.6-pip range."
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 19.6,
+      "rationale": "NZD was the strongest major and closed at its best; a minor extension targets the 19.6-pip overnight range."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 45.4,
-      "rationale": "USD/JPY range-bound within its 45.4-pip overnight span."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "range",
-      "magnitude_pips": 19.1,
-      "rationale": "AUD/USD stuck in 19.1-pip range amid conflicting risk signals."
+      "rationale": "USD/JPY closed near its low and the yen was firm; a retest of the 45.4-pip range low is the downside target."
      }
     ]
    },
    {
-    "name": "USD short squeeze on profit-taking",
-    "probability": 0.25,
-    "thesis": "Profit-taking after an overnight -0.158% USD slide lifts the dollar modestly into the European open.",
+    "name": "Profit-taking and dollar rebound",
+    "probability": 0.35,
+    "thesis": "After extremes with no fresh catalyst, stretched positions trigger a bounce in the oversold dollar, led by USD/JPY and EUR/USD retracement.",
     "triggers": [
-     "Position squaring before the European session",
-     "GBP wage data surprise that boosts yields"
+     "DXY rebounds from 101.563",
+     "EUR/USD loses 1.1200",
+     "USD/JPY regains 158.50"
     ],
-    "invalidation": "USD/JPY falls back below 158.183",
+    "invalidation": "DXY makes a new session low below 101.5 and EUR/USD clears 1.1250.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 6.8,
-      "rationale": "Echoes the initial EUR/USD 6.8-pip pullback on a USD bounce."
+      "magnitude_pips": 21.3,
+      "rationale": "The current +21.3-pip net move is vulnerable to full retracement if the dollar regains its footing."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 29.1,
+      "rationale": "GBP/USD's +29.1-pip net gain can be unwound as the second biggest mover."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 15.0,
+      "rationale": "NZD/USD's +15.0-pip gain is the clearest stretched long to trim if risk wobbles."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 6.6,
-      "rationale": "USD/JPY could retrace its first 6.6-pip up leg."
+      "magnitude_pips": 33.9,
+      "rationale": "USD/JPY's -33.9-pip net drop can snap back with short covering in the dollar."
+     }
+    ]
+   },
+   {
+    "name": "UK earnings surprise reshuffles GBP",
+    "probability": 0.2,
+    "thesis": "The 08:00 UK Average Earnings release is the only medium-impact item; a softer print would strip GBP support and cause relative GBP underperformance even if USD remains soft.",
+    "triggers": [
+     "GBP Average Earnings misses 3.8% forecast",
+     "GBP/USD loses 1.3300",
+     "EUR/GBP reclaims 0.8450"
+    ],
+    "invalidation": "Average Earnings in line or stronger; GBP holds its bid and outperforms.",
+    "pair_paths": [
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 37.4,
+      "rationale": "A weaker wage print would undercut the second-ranked currency, unwinding the 37.4-pip overnight range."
      },
      {
-      "instrument": "USD/CHF",
+      "instrument": "EUR/GBP",
       "direction": "up",
-      "magnitude_pips": 5.6,
-      "rationale": "USD/CHF could retrace its first 5.6-pip up leg."
+      "magnitude_pips": 7.2,
+      "rationale": "EUR/GBP has a tight 7.2-pip range; softer UK data can push it to the top of that range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "GBP wage data surprise",
-    "why_it_matters": "Only medium-impact release in the window; could alter GBP strength if wages deviate from forecast.",
-    "watch": "Average Earnings Index 3m/y vs 3.8% forecast, 3.9% prior"
+    "risk": "Dollar shorts are crowded and catalyst-free, making the tape fragile.",
+    "why_it_matters": "With no identifiable driver for USD weakness, any headline or flow can snap positions; the USD closed at its weakest point.",
+    "watch": "DXY 101.563 and EUR/USD 1.12332"
    },
    {
-    "risk": "No-catalyst price action",
-    "why_it_matters": "Moves without news can unwind quickly when flow reverses.",
-    "watch": "DXY 101.563 and USD strength trough -0.158%"
+    "risk": "UK Average Earnings at 08:00 can alter GBP ranking.",
+    "why_it_matters": "GBP is second strongest and GBP/USD is up 29.1 pips; a soft print can reverse relative GBP strength.",
+    "watch": "Consensus 3.8% vs previous 3.9%"
    },
    {
-    "risk": "VIX rise despite USD weakness",
-    "why_it_matters": "Elevated vol may trigger haven flows into JPY/CHF if risk sentiment worsens.",
-    "watch": "VIX 18.72646 and CHF/JPY cross"
+    "risk": "VIX rose against a falling dollar, so risk sentiment may be less benign than spot suggests.",
+    "why_it_matters": "If equity volatility continues higher, high-beta NZD and GBP gains could be vulnerable despite USD weakness.",
+    "watch": "VIX at 18.72646 and NZD/USD 0.56764"
    }
   ],
-  "calendar_ahead_note": "The only scheduled item is 08:00 GBP Average Earnings Index 3m/y (forecast 3.8%, previous 3.9%); a surprise could shift GBP crosses and set the tone for the European open.",
+  "calendar_ahead_note": "Only GBP Average Earnings Index 3m/y at 08:00 (forecast 3.8%, previous 3.9%) is scheduled; before that no medium-impact releases, so the flow/technical tone can persist.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14303,
-   "completion_tokens": 5623,
-   "total_tokens": 19926,
+   "completion_tokens": 8095,
+   "total_tokens": 22398,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 14208
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 3945
+    "reasoning_tokens": 6027
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 13663
+   "prompt_cache_hit_tokens": 14208,
+   "prompt_cache_miss_tokens": 95
   }
  }
 }
