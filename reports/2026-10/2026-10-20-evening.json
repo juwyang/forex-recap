@@ -13,7 +13,7 @@
   "end_local": "2026-10-20T19:00:00+02:00",
   "fwd_start_utc": "2026-10-20T17:00:00+00:00",
   "fwd_end_utc": "2026-10-21T17:00:00+00:00",
-  "generated_utc": "2026-10-20T17:05:18.557901+00:00",
+  "generated_utc": "2026-10-20T20:29:05.754265+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 29
+   "with_actual": 22
   }
  },
  "facts": {
@@ -1965,167 +1965,142 @@
   ]
  },
  "analysis": {
-  "session_summary": "Across Asia, London, and NY morning, GBP led with +0.269% strength while USD was weakest at -0.232%. A downside UK average earnings surprise strengthened GBP, an inverted reaction that set the tone for GBP/USD +66.9 pips. Most other currency moves lacked clear catalysts, with broad USD and CHF underperformance keeping USD/CHF nearly flat at -0.7 pips. Late Iran-US headlines triggered sharp reversals in CHF/JPY and oil.",
+  "session_summary": "The tape was a broad dollar selloff: DXY fell 0.203 and VIX dropped 1.231, leaving USD weakest at -0.232%. GBP led on an inverted UK wage print (3.7% vs 3.8% forecast produced +0.106% GBP strength), while EUR/USD chopped through four uncaused legs to close +19.3 pips. Commodity FX (AUD +0.071%, NZD +0.14%, CAD +0.058%) closed off early lows, and late Iran-US headlines reversed USD/JPY and oil sharply.",
   "themes": [
    {
-    "theme": "GBP exceptionalism on inverted UK data",
-    "evidence": "Average Earnings Index 3m/y missed at 3.7% vs 3.8% forecast but GBP strengthened 0.106%; GBP was top strength at +0.269% and GBP/USD closed +66.9 pips.",
+    "theme": "GBP strength despite soft wage data",
+    "evidence": "Average Earnings Index 3m/y printed 3.7% vs 3.8% forecast; GBP strengthened 0.106% (inverted) and EUR/GBP closed -0.329%.",
     "currencies": [
-     "GBP"
+     "GBP",
+     "EUR",
+     "USD"
     ]
    },
    {
-    "theme": "Broad USD and CHF underperformance without clear catalysts",
-    "evidence": "USD strength was -0.232% and CHF -0.222%, the two weakest; USD/CHF closed -0.7 pips despite both moving, with no own releases for either.",
+    "theme": "Broad dollar weakness in a risk-on tape",
+    "evidence": "DXY fell 0.203 and VIX fell 1.231; USD was weakest at -0.232%, while AUD, NZD and CAD strengthened.",
     "currencies": [
      "USD",
-     "CHF"
+     "AUD",
+     "NZD",
+     "CAD"
     ]
    },
    {
-    "theme": "Late Iran headline caused sharp reversals",
-    "evidence": "CHF/JPY rose 12.6 pips in its final leg after 'Iran-US talks continue, reports that the deal is close are wrong' hit around 17:00.",
+    "theme": "Late geopolitical headline reversals",
+    "evidence": "Iran-US talks close are wrong headline contributed +12.5 pips in 15 min, 42% of the USD/JPY up leg.",
     "currencies": [
-     "CHF",
+     "USD",
      "JPY"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No clear catalyst: USD fell broadly, with no US data or event explaining the move.",
-   "EUR": "No clear catalyst: EUR was soft, with only weak German headlines too weak to own the move.",
-   "JPY": "No clear catalyst: JPY was broadly flat, with a failed early bid and no own data.",
-   "GBP": "UK Average Earnings Index miss produced an inverted GBP rally, lifting GBP across the board.",
-   "AUD": "No clear catalyst: AUD selling was rejected, recovering 84% without an own data trigger.",
-   "CAD": "No clear catalyst: CAD selling rejected, recovering 71% with no Canada-specific catalyst.",
-   "CHF": "No clear catalyst: CHF gave back an early gain fully, ending as one of the weakest.",
-   "NZD": "No clear catalyst: NZD held its range and was second-strongest on broad USD weakness."
+   "USD": "No US catalyst; broad risk-on and lower VIX left the dollar weakest across majors.",
+   "EUR": "No euro-area catalyst; early selling to -0.23% was rejected and recovered 63%.",
+   "JPY": "No Japan catalyst; early bid to +0.10% was fully rejected.",
+   "GBP": "Average Earnings Index miss was inverted; GBP strengthened 0.106% instead of weakening.",
+   "AUD": "No domestic catalyst; selling to -0.09% was rejected and recovered 84%.",
+   "CAD": "No domestic catalyst; selling to -0.09% was rejected and recovered 71%.",
+   "CHF": "No Swiss catalyst; early +0.12% bid was fully erased.",
+   "NZD": "No own release; held a 0.14% gain without a clear catalyst."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD carved four uncaused legs (+26.0, -30.0, +53.0, -26.3 pips) for a net +19.3 pip close, with USD weakness providing the bid against soft EUR."
+   "EUR/USD": "EUR/USD chopped through four legs with no clear catalyst: +26.0, -30.0, +53.0, -26.3 pips, closing +19.3 pips near mid-range."
   },
   "polarity_reads": [
    {
     "event": "Average Earnings Index 3m/y",
-    "read": "A downside wage surprise strengthened GBP by 0.106%, an inverted reaction that implies the market was not positioned for a dovish repricing; it hints at stale short GBP or expectations that the BoE will look through soft wages."
+    "read": "The inverted move on a soft print suggests GBP was not positioned for further weakness; the miss triggered short-covering."
    }
   ],
   "scenarios": [
    {
-    "name": "GBP continuation after UK CPI",
+    "name": "Dollar softness extends",
     "probability": 0.45,
-    "thesis": "UK CPI y/y (forecast 3.4%, previous 3.1%) prints hot or Bailey sounds hawkish, extending the inverted GBP bid.",
+    "thesis": "Risk appetite remains firm with VIX lower; USD stays offered and commodity FX/GBP hold gains.",
     "triggers": [
-     "UK CPI y/y at or above 3.4%",
-     "BOE Gov Bailey emphasizes upside inflation risks"
+     "No hawkish US headlines",
+     "VIX holds near 18.38877"
     ],
-    "invalidation": "CPI surprise below 3.1% or Bailey emphasizes downside growth risks",
+    "invalidation": "DXY breaks above 101.551 and USD strength turns positive.",
     "pair_paths": [
      {
-      "instrument": "GBP/USD",
+      "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 111.6,
-      "rationale": "Uses today's GBP/USD range as an extension target if CPI supports GBP."
-     },
-     {
-      "instrument": "EUR/GBP",
-      "direction": "down",
-      "magnitude_pips": 44.2,
-      "rationale": "Uses today's EUR/GBP range for a downside break if GBP outperforms."
+      "magnitude_pips": 53.0,
+      "rationale": "EUR/USD already recovered from -0.23%; a weak USD extends the 53.0-pip up leg."
      }
     ]
    },
    {
-    "name": "Mean reversion and USD stabilization",
+    "name": "Consolidation",
     "probability": 0.35,
-    "thesis": "USD weakness is overdone; with no US data, the dollar catches a bid against commodity FX while GBP holds its gain.",
+    "thesis": "After a one-way dollar slide, pairs hold near their closes and digest the late headline reversal.",
     "triggers": [
-     "DXY holds 101.551 support",
-     "No fresh negative US headlines"
+     "No high-impact data before UK CPI",
+     "Iran-US headline fades without follow-through"
     ],
-    "invalidation": "DXY breaks below 101.551 and VIX falls further",
+    "invalidation": "Sustained break of EUR/USD 55.8-pip range.",
     "pair_paths": [
      {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 77.1,
-      "rationale": "Uses today's USD/JPY range as a rebound target if USD stabilizes."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 46.4,
-      "rationale": "Uses today's AUD/USD range as a pullback target."
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 55.8,
+      "rationale": "EUR/USD closed mid-range at 0.48 after four uncaused legs."
      }
     ]
    },
    {
-    "name": "Risk-off USD rebound and GBP fade",
+    "name": "GBP reversal on UK CPI/Bailey",
     "probability": 0.2,
-    "thesis": "UK CPI fails to support GBP or Bailey sounds dovish; risk sentiment worsens, lifting USD against high beta and GBP.",
+    "thesis": "GBP is extended after an inverted wage print; a soft CPI or dovish Bailey comment triggers profit-taking.",
     "triggers": [
-     "VIX rises from 18.38877",
-     "BOE Gov Bailey emphasizes downside risks"
+     "UK CPI y/y below 3.4% forecast",
+     "Bailey sounds less hawkish than priced"
     ],
-    "invalidation": "Risk assets rally and VIX falls below close",
+    "invalidation": "GBP/USD holds above 1.33707 close.",
     "pair_paths": [
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 77.1,
-      "rationale": "Uses today's USD/JPY range as a rebound target in risk-off."
-     },
      {
       "instrument": "GBP/USD",
       "direction": "down",
-      "magnitude_pips": 111.6,
-      "rationale": "Uses today's GBP/USD range for a reversal if GBP fades."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "up",
-      "magnitude_pips": 47.3,
-      "rationale": "USD/CHF range is a rebound target if risk-off drives into USD."
+      "magnitude_pips": 35.4,
+      "rationale": "The last GBP/USD down leg was -35.4 pips; a catalyst could repeat it."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "UK CPI y/y at 08:00",
-    "why_it_matters": "A hot print (forecast 3.4% vs 3.1% prior) would confirm GBP strength; a miss could unwind today's inverted rally.",
-    "watch": "Actual vs 3.4% forecast; GBP crosses"
+    "risk": "Late geopolitical headline whipsaw",
+    "why_it_matters": "Iran-US deal-close denial moved USD/JPY +12.5 pips in 15 min (42% of leg) and remains a live catalyst.",
+    "watch": "Iran-US talks continue, reports that the deal is close are wrong"
    },
    {
-    "risk": "BOE Gov Bailey Speaks at 15:00",
-    "why_it_matters": "Can reframe today's wage-driven GBP bid or signal policy path.",
-    "watch": "Any remarks on wage growth or rate cuts"
+    "risk": "UK CPI repricing",
+    "why_it_matters": "CPI y/y forecast 3.4% vs previous 3.1%; GBP already rallied on inverted wage data so the reaction can be violent.",
+    "watch": "CPI y/y at 08:00, BOE Gov Bailey Speaks at 15:00"
    },
    {
-    "risk": "Iran-US talks headline flow",
-    "why_it_matters": "Late report of no deal triggered sharp CHF/JPY and Brent reversals.",
-    "watch": "Subsequent headlines confirming or denying talks"
-   },
-   {
-    "risk": "Low-liquidity, catalyst-light tape",
-    "why_it_matters": "Most legs had no clear catalyst, raising risk of stop-driven reversals.",
-    "watch": "VIX close 18.38877 and DXY close 101.551 as sentiment levels"
+    "risk": "Risk sentiment reversal",
+    "why_it_matters": "USD was weakest and VIX fell; any risk-off would lift USD/CHF and USD/JPY.",
+    "watch": "VIX/USD close 18.38877 and DXY/USD close 101.551"
    }
   ],
-  "calendar_ahead_note": "UK CPI y/y at 08:00 (forecast 3.4%, previous 3.1%) is the main event; a surprise either way could extend or reverse GBP strength. BOE Gov Bailey speaks at 15:00 and may clarify today's inverted wage reaction.",
+  "calendar_ahead_note": "UK CPI y/y at 08:00 (forecast 3.4% vs previous 3.1%) and BOE Gov Bailey at 15:00 are the next potential repricing events; they can confirm or reverse GBP's strong session.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17359,
-   "completion_tokens": 7254,
-   "total_tokens": 24613,
+   "completion_tokens": 8396,
+   "total_tokens": 25755,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 17280
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5488
+    "reasoning_tokens": 6920
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 16719
+   "prompt_cache_hit_tokens": 17280,
+   "prompt_cache_miss_tokens": 79
   }
  }
 }
