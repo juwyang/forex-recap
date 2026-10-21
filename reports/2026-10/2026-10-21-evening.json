@@ -13,7 +13,7 @@
   "end_local": "2026-10-21T19:00:00+02:00",
   "fwd_start_utc": "2026-10-21T17:00:00+00:00",
   "fwd_end_utc": "2026-10-22T17:00:00+00:00",
-  "generated_utc": "2026-10-21T19:50:34.941661+00:00",
+  "generated_utc": "2026-10-21T20:33:31.027647+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 39
+   "with_actual": 31
   }
  },
  "facts": {
@@ -2213,179 +2213,183 @@
   ]
  },
  "analysis": {
-  "session_summary": "Antipodean FX led, with AUD/USD +32.9 pips and NZD/USD +17.6 pips, while USD was soft and CAD weakest. UK CPI printed 3.5% vs 3.4% forecast but GBP reaction was muted; Bailey also left no impulse. Late Russia-Ukraine headlines moved USD/MXN +1.04% and USD/NOK -0.308%, but no single catalyst owned major legs. DXY fell -0.059% and VIX -1.002%, leaving most pairs range-bound.",
+  "session_summary": "The tape was risk-on with commodity FX leading: AUD strength 0.315% and NZD strength 0.154% against majors, while DXY fell 0.059% and VIX fell 1.002%. UK CPI printed 3.5% vs 3.4% but GBP was muted, and no event produced a meaningful leg in EUR/USD, which chopped to only +1.4 pips. Most moves had no clear catalyst, with flow and technicals dominating.",
   "themes": [
    {
-    "theme": "Antipodean FX outperformance",
-    "evidence": "AUD strength +0.36% and NZD +0.176% were the top two; AUD/USD +32.9 pips and NZD/USD +17.6 pips.",
+    "theme": "Flow-driven, catalyst-light tape",
+    "evidence": "Most EUR/USD and major legs had cause null/confidence none; only BOE Bailey partially owned one USD/JPY leg (8.5 pips, 39%).",
     "currencies": [
-     "AUD",
-     "NZD"
+     "USD",
+     "EUR",
+     "JPY"
     ]
    },
    {
-    "theme": "Soft USD with no catalyst",
-    "evidence": "DXY -0.059% and VIX -1.002%; USD was second weakest at -0.177%.",
+    "theme": "Commodity FX outperformance on soft USD",
+    "evidence": "AUD strength 0.315%, NZD 0.154%, while USD -0.155%; AUD/NZD rose 0.162%.",
     "currencies": [
+     "AUD",
+     "NZD",
      "USD"
     ]
    },
    {
-    "theme": "UK data ignored",
-    "evidence": "UK CPI y/y printed 3.5% vs 3.4% forecast but GBP basket moved only -0.028%; Bailey speech muted at +0.015%.",
+    "theme": "UK CPI failed to trigger GBP repricing",
+    "evidence": "CPI y/y 3.5% vs 3.4% but GBP basket impulse -0.028%, inside noise floor.",
     "currencies": [
      "GBP"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No US data; dollar soft with DXY down 0.059% and VIX lower, no clear catalyst.",
-   "EUR": "No euro-area releases; single currency drifted lower with no clear catalyst.",
-   "JPY": "No Japanese releases; yen held range and was soft on crosses, no clear catalyst.",
-   "GBP": "UK CPI above forecast at 3.5% but muted; Bailey no impulse, sterling unchanged.",
-   "AUD": "No Australian releases; Aussie led majors and was strongest currency of the day.",
-   "CAD": "No Canadian releases; loonie was weakest major with no clear catalyst.",
-   "CHF": "No Swiss releases; franc firmed slightly and held its range.",
-   "NZD": "No New Zealand releases; kiwi tracked AUD strength and closed at session best."
+   "USD": "No clear catalyst; broad softness with DXY -0.059% despite risk-on.",
+   "EUR": "No clear catalyst; weakened, contributing to EUR/GBP decline.",
+   "JPY": "No clear catalyst; softer on crosses, but USD weakness dominated USD/JPY down.",
+   "GBP": "CPI 3.5% vs 3.4% and Bailey both muted; no directional impulse.",
+   "AUD": "No clear catalyst; strongest major, led risk-on gains.",
+   "CAD": "No clear catalyst; weakest major, underperformed all peers.",
+   "CHF": "No clear catalyst; mild strength, range-bound with risk appetite.",
+   "NZD": "No clear catalyst; firm, second-strongest after AUD."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD printed seven alternating legs, none owned by a news catalyst, netting +1.4 pips on a 25-pip range and closing at 1.12326."
+   "EUR/USD": "EUR/USD chopped through six legs for only +1.4 pips, closing 74% of a 25-pip range; no leg had a clear catalyst."
   },
   "polarity_reads": [
    {
     "event": "BOE Gov Bailey Speaks",
-    "read": "Muted basket move of 0.015% inside noise floor; markets had no directional GBP exposure to Bailey."
+    "read": "Reaction muted (basket 0.015%) implies no new policy signal and GBP already positioned for current path."
    },
    {
     "event": "CPI y/y",
-    "read": "Above-forecast UK CPI at 3.5% vs 3.4% still moved GBP basket only -0.028%; no hawkish impulse, suggesting priced in or flow offset."
+    "read": "Despite actual 3.5% vs forecast 3.4%, basket moved -0.028%, showing CPI beat was priced or offset."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-on continuation",
+    "name": "Risk-on continuation, commodity FX outperform",
     "probability": 0.45,
-    "thesis": "Lower VIX and soft USD support further Antipodean and EUR recovery; no macro catalyst to reverse the tape.",
+    "thesis": "USD softness persists and risk appetite holds; AUD/NZD stay bid; GBP catches no bid.",
     "triggers": [
-     "US claims not hot; risk appetite holds",
-     "NZD CPI not a negative shock; VIX stays lower"
+     "No escalation in Russia-Ukraine headlines",
+     "US claims print near forecast 200K",
+     "Crude oil remains contained"
     ],
-    "invalidation": "AUD/USD loses 0.7030 close-to-close or VIX turns higher.",
+    "invalidation": "DXY reverses higher or VIX jumps",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 25.0,
-      "rationale": "USD soft; pair has room to test upper end of its 25-pip range."
+      "rationale": "USD soft, EUR stable; range extension toward upper end of 25-pip range."
      },
      {
       "instrument": "AUD/USD",
       "direction": "up",
       "magnitude_pips": 40.3,
-      "rationale": "AUD is strongest major and risk appetite supports extension within 40-pip range."
+      "rationale": "AUD top strength, risk-on supports 40.3-pip range continuation."
      },
      {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 29.7,
-      "rationale": "NZD closed at session best and follows AUD higher within 30-pip range."
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 55.0,
+      "rationale": "USD weakness dominates; 55-pip range lower."
      }
     ]
    },
    {
-    "name": "USD stabilization/rebound",
+    "name": "USD stabilizes, GBP delayed CPI repricing",
     "probability": 0.3,
-    "thesis": "Strong US data or geopolitical escalation lifts USD and unwinds commodity FX outperformance.",
+    "thesis": "DXY finds support; market reprices GBP on 3.5% CPI; EUR weakens.",
     "triggers": [
-     "US unemployment claims surprise below 200K",
-     "Russia/Ukraine talks break down",
-     "VIX pops above today's 18.2"
+     "Bailey hawkish follow-up",
+     "US claims stronger than 200K",
+     "ECB speakers sound dovish"
     ],
-    "invalidation": "AUD/USD holds above 0.7030 and VIX stays below 18.2.",
+    "invalidation": "AUD/NZD continue to lead, GBP stays muted",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 25.0,
-      "rationale": "Strong US data/geopolitical risk bid lifts USD, pushing pair lower within range."
+      "rationale": "USD stabilizes, EUR weak."
      },
      {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 40.3,
-      "rationale": "High-beta AUD gives back gains, moves within 40-pip range."
-     },
-     {
-      "instrument": "USD/JPY",
+      "instrument": "GBP/USD",
       "direction": "up",
-      "magnitude_pips": 55.0,
-      "rationale": "USD rebound and risk-off lift USD/JPY toward upper end of 55-pip range."
+      "magnitude_pips": 38.8,
+      "rationale": "GBP catches up to CPI; range 38.8 pips."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 43.2,
+      "rationale": "CAD weakest, USD stabilizes; 43.2-pip range."
      }
     ]
    },
    {
-    "name": "Range consolidation",
+    "name": "Risk-off shock",
     "probability": 0.25,
-    "thesis": "Light calendar and no fresh impulse keep major pairs inside today's ranges.",
+    "thesis": "Russia-Ukraine talks sour, VIX jumps; commodity FX unwinds, safe-havens bid.",
     "triggers": [
-     "No high-impact surprise in NZ CPI or US claims",
-     "Momentum fades into range",
-     "Volumes light"
+     "Negative Russia-Ukraine headline",
+     "Crude oil spikes",
+     "Equity selloff"
     ],
-    "invalidation": "A break of EUR/USD 25-pip range or AUD/USD 40-pip range.",
+    "invalidation": "US says Russians accepted trilateral meeting leads to ceasefire optimism",
     "pair_paths": [
      {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 25.0,
-      "rationale": "No catalyst; pair consolidates within 25-pip range."
-     },
-     {
       "instrument": "AUD/USD",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 40.3,
-      "rationale": "No data; strongest pair holds within 40-pip range."
+      "rationale": "Carry unwind, AUD loses top rank."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 55.0,
-      "rationale": "Mixed signals; holds 55-pip range."
+      "rationale": "JPY safe-haven bid, despite soft driver."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 27.6,
+      "rationale": "CHF safe-haven bid, range 27.6 pips."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "NZD CPI q/q surprise",
-    "why_it_matters": "High impact and NZD closed at session best; a surprise could unwind NZD strength.",
-    "watch": "0.8% forecast vs 1.5% prior"
+    "risk": "Russia-Ukraine trilateral meeting flops",
+    "why_it_matters": "Could flip risk-on positioning and unwind AUD/NZD gains; USD/JPY and CHF could reverse.",
+    "watch": "Headlines from US official / Russia acceptance follow-up."
    },
    {
-    "risk": "US Unemployment Claims surprise",
-    "why_it_matters": "USD is already soft; strong data would challenge DXY at 101.491.",
-    "watch": "200K forecast vs 199K previous"
+    "risk": "NZ CPI q/q surprises",
+    "why_it_matters": "Could rewrite NZD strength; forecast 0.8% vs previous 1.5%.",
+    "watch": "23:45 release."
    },
    {
-    "risk": "Geopolitical headlines",
-    "why_it_matters": "USD/MXN +1.04% and USD/NOK -0.308% show outsized cross-asset sensitivity to Russia/Ukraine headlines.",
-    "watch": "US-Russia-Ukraine meeting headlines"
+    "risk": "US Unemployment Claims miss",
+    "why_it_matters": "USD softness could deepen or reverse; DXY already -0.059%.",
+    "watch": "14:30 claims vs forecast 200K previous 199K."
    }
   ],
-  "calendar_ahead_note": "NZD CPI q/q at 23:45 and US Unemployment Claims at 14:30 can change the picture; NZD and USD are the most exposed.",
+  "calendar_ahead_note": "Coming window will be dominated by NZ CPI q/q at 23:45 (forecast 0.8% vs previous 1.5%) and US Unemployment Claims at 14:30 (forecast 200K vs previous 199K). These can shift NZD and USD and may provide the first catalyst-heavy session after a flow-only tape.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 19453,
-   "completion_tokens": 9214,
-   "total_tokens": 28667,
+   "completion_tokens": 7070,
+   "total_tokens": 26523,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 19328
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7438
+    "reasoning_tokens": 5333
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 18813
+   "prompt_cache_hit_tokens": 19328,
+   "prompt_cache_miss_tokens": 125
   }
  }
 }
