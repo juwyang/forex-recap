@@ -13,7 +13,7 @@
   "end_local": "2026-10-21T07:00:00+02:00",
   "fwd_start_utc": "2026-10-21T05:00:00+00:00",
   "fwd_end_utc": "2026-10-21T17:00:00+00:00",
-  "generated_utc": "2026-10-21T05:19:09.462819+00:00",
+  "generated_utc": "2026-10-21T10:03:31.702344+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 31
+   "with_actual": 30
   }
  },
  "facts": {
@@ -1548,156 +1548,177 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight tape was flow-driven with no currency-specific macro release or measured event reaction. AUD was the strongest major (+0.173%) while NZD was weakest (-0.171%); USD closed effectively flat (+0.001%). EUR and CAD sat lower in the ranks, and JPY/CHF firmed modestly. With VIX down 0.678% and DXY up only 3 points, risk appetite was mildly supportive but not decisive.",
+  "session_summary": "Overnight tape was a flow-driven antipodean divergence: AUD was the strongest and NZD the weakest, with AUD/NZD up 0.345%. EUR and CAD lagged while USD was flat and VIX fell. No leg had a clear catalyst; top headlines including RBA Hauser and BOJ Himino were too weak to own moves. Thin Asia liquidity amplified the range without fundamental backing.",
   "themes": [
    {
     "theme": "Antipodean divergence",
-    "evidence": "AUD strength +0.173% vs NZD -0.171%; AUD/NZD rose 42.5 pips (+0.345%).",
+    "evidence": "AUD/USD +0.172% vs NZD/USD -0.172%; AUD/NZD +0.345%",
     "currencies": [
      "AUD",
      "NZD"
     ]
    },
    {
-    "theme": "No clear catalyst",
-    "evidence": "All legs have confidence none and no own releases; event_reactions empty.",
+    "theme": "Risk-on without clear catalyst",
+    "evidence": "VIX/USD -0.678%, DXY flat; AUD strength and NZD weakness with no attributable event",
     "currencies": [
+     "AUD",
      "USD",
-     "EUR",
-     "JPY",
-     "GBP",
-     "AUD",
-     "CAD",
-     "CHF",
      "NZD"
     ]
    },
    {
-    "theme": "Modest safe-haven support",
-    "evidence": "JPY +0.061% and CHF +0.05% closed firmer, VIX down 0.678%.",
+    "theme": "Event-light flow",
+    "evidence": "All measured legs have confidence none; nearest headlines too weak to own moves",
     "currencies": [
+     "EUR",
+     "GBP",
      "JPY",
-     "CHF"
+     "CHF",
+     "CAD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No own releases or clear catalyst; closed at its best, flat.",
-   "EUR": "No own releases or clear catalyst; weaker, near the bottom of major ranks.",
-   "JPY": "No own releases or clear catalyst; closed at its best, modestly firmer.",
-   "GBP": "No own releases; marginal gains with no clear catalyst.",
-   "AUD": "No own releases or clear catalyst; still the strongest major in the window.",
-   "CAD": "No own releases or clear catalyst; modestly softer against most currencies.",
-   "CHF": "No own releases or clear catalyst; held its range and closed firmer.",
-   "NZD": "No own releases; weakest major with no clear catalyst, closed near session lows."
+   "USD": "No clear catalyst; flat despite DXY +0.03 and lower VIX; no dominant driver.",
+   "EUR": "No clear catalyst; weakened against all majors with no attributable releases or reaction.",
+   "JPY": "No clear catalyst; strengthened modestly though BOJ Himino headlines were too weak to own.",
+   "GBP": "No clear catalyst; held its range with MPC Greene and upcoming CPI not yet priced.",
+   "AUD": "No clear catalyst; strongest currency with no own releases and RBA Hauser too weak to explain.",
+   "CAD": "No clear catalyst; softened with no own releases or event reaction.",
+   "CHF": "No clear catalyst; gained slightly with VIX lower and no direct driver.",
+   "NZD": "No clear catalyst; weakest currency, down sharply with NZ credit card data too weak to explain."
   },
   "leg_notes": {
-   "EUR/USD": "A 6.7-pip early rise reversed into a 13.4-pip decline and close near session lows; neither leg had a clear catalyst."
+   "EUR/USD": "EUR/USD's two legs (up 6.7 pips then down 13.4 pips) retraced the initial lift and closed near the low; neither had a clear catalyst."
   },
   "polarity_reads": [],
   "scenarios": [
    {
-    "name": "Hot UK CPI sparks GBP bid",
-    "probability": 0.4,
-    "thesis": "CPI above 3.4% forecast lifts BOE repricing and GBP.",
+    "name": "Asia risk-on continuation",
+    "probability": 0.45,
+    "thesis": "AUD and NZD divergence persists with carry demand; USD flat, VIX low, no catalyst to stop it.",
     "triggers": [
-     "GBP CPI y/y > 3.4%"
+     "AUD/NZD holds above 1.23",
+     "AUD/USD stays above 0.70",
+     "NZD/USD remains below 0.57"
     ],
-    "invalidation": "CPI prints at or below 3.4%",
+    "invalidation": "AUD/NZD closes back below 1.21 or NZD/USD regains 0.57.",
     "pair_paths": [
      {
-      "instrument": "GBP/USD",
+      "instrument": "AUD/USD",
       "direction": "up",
-      "magnitude_pips": 16.5,
-      "rationale": "GBP upside consistent with the overnight 16.5-pip range."
+      "magnitude_pips": 33.7,
+      "rationale": "AUD strength persists with no counter-catalyst."
      },
      {
-      "instrument": "EUR/GBP",
+      "instrument": "NZD/USD",
       "direction": "down",
-      "magnitude_pips": 7.4,
-      "rationale": "EUR/GBP downside consistent with its 7.4-pip range."
+      "magnitude_pips": 14.9,
+      "rationale": "NZD weakness extends toward range lows."
+     },
+     {
+      "instrument": "AUD/NZD",
+      "direction": "up",
+      "magnitude_pips": 66.5,
+      "rationale": "Antipodean divergence widens further."
      }
     ]
    },
    {
-    "name": "Soft UK CPI boosts BoE cut bets",
+    "name": "Positioning mean reversion",
     "probability": 0.35,
-    "thesis": "CPI below forecast pressures GBP.",
+    "thesis": "Overnight moves lack catalysts, so profit-taking reverses AUD/NZD and lifts NZD.",
     "triggers": [
-     "GBP CPI y/y < 3.4%"
+     "AUD/NZD fails at 1.2360",
+     "NZD/USD recovers 0.5680",
+     "AUD/USD slips below 0.6990"
     ],
-    "invalidation": "CPI prints at or above 3.4%",
+    "invalidation": "Strong breakout above AUD/NZD 1.24 or NZD/USD below 0.5650.",
     "pair_paths": [
      {
-      "instrument": "GBP/USD",
+      "instrument": "AUD/USD",
       "direction": "down",
-      "magnitude_pips": 16.5,
-      "rationale": "GBP/USD downside consistent with its 16.5-pip overnight range."
+      "magnitude_pips": 33.7,
+      "rationale": "AUD gives back flow-driven gains."
      },
      {
-      "instrument": "EUR/GBP",
+      "instrument": "NZD/USD",
       "direction": "up",
-      "magnitude_pips": 7.4,
-      "rationale": "EUR/GBP upside consistent with its 7.4-pip range."
+      "magnitude_pips": 14.9,
+      "rationale": "NZD short covering."
+     },
+     {
+      "instrument": "AUD/NZD",
+      "direction": "down",
+      "magnitude_pips": 42.5,
+      "rationale": "Cross retraces after +0.345% move."
      }
     ]
    },
    {
-    "name": "In-line CPI and Bailey neutral",
-    "probability": 0.25,
-    "thesis": "CPI matches forecast and Bailey offers no new guidance, leaving GBP rangebound.",
+    "name": "Risk-off / safe-haven reversal",
+    "probability": 0.2,
+    "thesis": "Lower VIX and no clear catalysts give way to deleveraging; JPY and CHF strengthen, commodity pairs fall.",
     "triggers": [
-     "GBP CPI y/y = 3.4%",
-     "Bailey repeats recent guidance"
+     "USD/JPY breaks below 157.5",
+     "USD/CHF drops below 0.82",
+     "AUD/USD loses 0.6950"
     ],
-    "invalidation": "CPI deviates from forecast or Bailey shifts tone",
+    "invalidation": "USD/JPY recovers above 158.2 or VIX turns lower again.",
     "pair_paths": [
      {
-      "instrument": "GBP/USD",
-      "direction": "range",
-      "magnitude_pips": 16.5,
-      "rationale": "Range consistent with overnight 16.5-pip GBP/USD range."
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 34.4,
+      "rationale": "JPY strengthens on risk-off."
      },
      {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 15.6,
-      "rationale": "EUR/USD range consistent with 15.6-pip overnight range."
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 20.5,
+      "rationale": "CHF bid as haven."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 33.7,
+      "rationale": "High-beta AUD underperforms."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Overnight tape had no clear catalyst",
-    "why_it_matters": "Positions may unwind sharply on the first London catalyst, amplifying moves.",
-    "watch": "GBP CPI at 08:00, BOE Bailey at 15:00"
+    "risk": "AUD/NZD divergence extends without fundamental support",
+    "why_it_matters": "Moves are flow-driven and can reverse quickly in thin liquidity",
+    "watch": "AUD/NZD 1.23557 and NZD/USD 0.56727"
    },
    {
-    "risk": "AUD/NZD divergence is extreme",
-    "why_it_matters": "AUD strongest, NZD weakest; AUD/NZD rose 42.5 pips, inviting mean reversion.",
-    "watch": "Any RBA/RBNZ headline or Asia risk sentiment shift"
+    "risk": "UK CPI/Bailey reprices GBP",
+    "why_it_matters": "GBP held its range but upcoming high-impact data can break it",
+    "watch": "GBP/USD 1.3373 and EUR/GBP 0.83928"
    },
    {
-    "risk": "BOE Bailey tone after CPI",
-    "why_it_matters": "Bailey can contradict the CPI signal and reverse GBP paths.",
-    "watch": "15:00 Bailey speech"
+    "risk": "RBA Hauser comments trigger delayed AUD reaction",
+    "why_it_matters": "Medium-impact headline was too weak at the time but may be digested later",
+    "watch": "AUD/USD 0.70096"
    }
   ],
-  "calendar_ahead_note": "GBP CPI y/y (08:00, forecast 3.4%) is the main risk, followed by BOE Gov Bailey at 15:00; either can break the overnight flow-driven ranges.",
+  "calendar_ahead_note": "08:00 GBP CPI y/y (forecast 3.4%, previous 3.1%) and 15:00 BOE Gov Bailey Speaks are the main events; they can change GBP and broader risk tone after a flow-driven overnight.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 13704,
-   "completion_tokens": 6454,
-   "total_tokens": 20158,
+   "completion_tokens": 5778,
+   "total_tokens": 19482,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 13696
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5077
+    "reasoning_tokens": 4143
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 13064
+   "prompt_cache_hit_tokens": 13696,
+   "prompt_cache_miss_tokens": 8
   }
  }
 }
