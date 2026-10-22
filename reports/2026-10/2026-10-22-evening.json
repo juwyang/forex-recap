@@ -1,0 +1,2172 @@
+{
+ "meta": {
+  "date": "2026-10-22",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-21T17:00:00+00:00",
+  "end_utc": "2026-10-22T17:00:00+00:00",
+  "start_local": "2026-10-21T19:00:00+02:00",
+  "end_local": "2026-10-22T19:00:00+02:00",
+  "fwd_start_utc": "2026-10-22T17:00:00+00:00",
+  "fwd_end_utc": "2026-10-23T17:00:00+00:00",
+  "generated_utc": "2026-10-22T17:05:54.392345+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 49
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-21 19:00 CEST",
+   "to_local": "2026-10-22 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "JPY",
+    "rank": 1,
+    "strength_pct": 0.627,
+    "intraday_peak": 0.813,
+    "intraday_trough": -0.074,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.07%, recovered 79%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Unemployment Claims",
+     "instrument": "CHF/JPY",
+     "sigma": -1.82
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 2,
+    "strength_pct": 0.204,
+    "intraday_peak": 0.411,
+    "intraday_trough": -0.027,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Unemployment Claims",
+     "instrument": "EUR/CHF",
+     "sigma": 2.47
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 3,
+    "strength_pct": 0.199,
+    "intraday_peak": 0.285,
+    "intraday_trough": -0.012,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI q/q",
+     "instrument": "USD/CAD",
+     "sigma": 0.85
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 4,
+    "strength_pct": -0.085,
+    "intraday_peak": 0.001,
+    "intraday_trough": -0.211,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI q/q",
+     "instrument": "EUR/GBP",
+     "sigma": 0.95
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 5,
+    "strength_pct": -0.111,
+    "intraday_peak": 0.082,
+    "intraday_trough": -0.166,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.08%, gave back 78%",
+    "own_releases": [
+     {
+      "title": "Unemployment Claims",
+      "impact": "Medium",
+      "actual": "194K",
+      "forecast": "200K",
+      "polarity": "muted",
+      "note": "basket moved 0.019%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Unemployment Claims",
+     "instrument": "USD/MXN",
+     "sigma": -2.61
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 6,
+    "strength_pct": -0.189,
+    "intraday_peak": 0.113,
+    "intraday_trough": -0.282,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.11%, gave back 77%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Unemployment Claims",
+     "instrument": "EUR/CHF",
+     "sigma": 2.47
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 7,
+    "strength_pct": -0.242,
+    "intraday_peak": 0.036,
+    "intraday_trough": -0.463,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI q/q",
+     "instrument": "AUD/NZD",
+     "sigma": 5.51
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 8,
+    "strength_pct": -0.403,
+    "intraday_peak": 0.071,
+    "intraday_trough": -0.498,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 83%",
+    "own_releases": [
+     {
+      "title": "CPI q/q",
+      "impact": "High",
+      "actual": "0.7%",
+      "forecast": "0.8%",
+      "polarity": "normal",
+      "note": "miss surprise -> NZD weaker 0.124%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "CPI q/q",
+     "instrument": "AUD/NZD",
+     "sigma": 5.51
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.078,
+    "from_EUR": -0.189,
+    "from_USD": 0.111,
+    "base_share": 0.63
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.026,
+    "from_GBP": -0.085,
+    "from_USD": 0.111,
+    "base_share": 0.43
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.131,
+    "from_AUD": -0.242,
+    "from_USD": 0.111,
+    "base_share": 0.69
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.292,
+    "from_NZD": -0.403,
+    "from_USD": 0.111,
+    "base_share": 0.78
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.737,
+    "from_USD": -0.111,
+    "from_JPY": -0.627,
+    "base_share": 0.15
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.315,
+    "from_USD": -0.111,
+    "from_CHF": -0.204,
+    "base_share": 0.35
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.31,
+    "from_USD": -0.111,
+    "from_CAD": -0.199,
+    "base_share": 0.36
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.105,
+    "from_EUR": -0.189,
+    "from_GBP": 0.085,
+    "base_share": 0.69
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.816,
+    "from_EUR": -0.189,
+    "from_JPY": -0.627,
+    "base_share": 0.23
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.394,
+    "from_EUR": -0.189,
+    "from_CHF": -0.204,
+    "base_share": 0.48
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.053,
+    "from_EUR": -0.189,
+    "from_AUD": 0.242,
+    "base_share": 0.44
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.389,
+    "from_EUR": -0.189,
+    "from_CAD": -0.199,
+    "base_share": 0.49
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.213,
+    "from_EUR": -0.189,
+    "from_NZD": 0.403,
+    "base_share": 0.32
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.711,
+    "from_GBP": -0.085,
+    "from_JPY": -0.627,
+    "base_share": 0.12
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.289,
+    "from_GBP": -0.085,
+    "from_CHF": -0.204,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.158,
+    "from_GBP": -0.085,
+    "from_AUD": 0.242,
+    "base_share": 0.26
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.284,
+    "from_GBP": -0.085,
+    "from_CAD": -0.199,
+    "base_share": 0.3
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.318,
+    "from_GBP": -0.085,
+    "from_NZD": 0.403,
+    "base_share": 0.17
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.869,
+    "from_AUD": -0.242,
+    "from_JPY": -0.627,
+    "base_share": 0.28
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.447,
+    "from_AUD": -0.242,
+    "from_CHF": -0.204,
+    "base_share": 0.54
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.442,
+    "from_AUD": -0.242,
+    "from_CAD": -0.199,
+    "base_share": 0.55
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.16,
+    "from_AUD": -0.242,
+    "from_NZD": 0.403,
+    "base_share": 0.38
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -1.029,
+    "from_NZD": -0.403,
+    "from_JPY": -0.627,
+    "base_share": 0.39
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.607,
+    "from_NZD": -0.403,
+    "from_CHF": -0.204,
+    "base_share": 0.66
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.602,
+    "from_NZD": -0.403,
+    "from_CAD": -0.199,
+    "base_share": 0.67
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.427,
+    "from_CAD": 0.199,
+    "from_JPY": -0.627,
+    "base_share": 0.24
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.005,
+    "from_CAD": 0.199,
+    "from_CHF": -0.204,
+    "base_share": 0.49
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.422,
+    "from_CHF": 0.204,
+    "from_JPY": -0.627,
+    "base_share": 0.25
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.719
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.234
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.229
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.096
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.126
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.216
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.276
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.459
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.1224,
+    "chg_pips": -8.6,
+    "chg_pct": -0.077,
+    "range_pips": 66.9,
+    "close_in_range": 0.53,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.34003,
+    "chg_pips": 3.6,
+    "chg_pct": 0.027,
+    "range_pips": 63.9,
+    "close_in_range": 0.71,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.70214,
+    "chg_pips": -9.1,
+    "chg_pct": -0.129,
+    "range_pips": 42.4,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56837,
+    "chg_pips": -16.4,
+    "chg_pct": -0.288,
+    "range_pips": 42.2,
+    "close_in_range": 0.38,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 156.914,
+    "chg_pips": -116.2,
+    "chg_pct": -0.735,
+    "range_pips": 165.3,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82177,
+    "chg_pips": -25.8,
+    "chg_pct": -0.313,
+    "range_pips": 65.5,
+    "close_in_range": 0.4,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.40138,
+    "chg_pips": -42.6,
+    "chg_pct": -0.303,
+    "range_pips": 46.4,
+    "close_in_range": 0.02,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92235,
+    "chg_pips": -36.2,
+    "chg_pct": -0.391,
+    "range_pips": 67.2,
+    "close_in_range": 0.42,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.936,
+    "chg_pips": -81.0,
+    "chg_pct": -0.422,
+    "range_pips": 122.7,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23522,
+    "chg_pips": 19.0,
+    "chg_pct": 0.154,
+    "range_pips": 59.9,
+    "close_in_range": 0.77,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83756,
+    "chg_pips": -8.9,
+    "chg_pct": -0.106,
+    "range_pips": 24.8,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57698,
+    "chg_pips": -25.7,
+    "chg_pct": -0.443,
+    "range_pips": 57.4,
+    "close_in_range": 0.47,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.467,
+    "chg_pips": -28.8,
+    "chg_pct": -0.613,
+    "range_pips": 51.2,
+    "close_in_range": 0.29,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.89974,
+    "chg_pips": 202.7,
+    "chg_pct": 0.205,
+    "range_pips": 687.1,
+    "close_in_range": 0.5,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.32685,
+    "chg_pips": -487.1,
+    "chg_pct": -0.52,
+    "range_pips": 533.9,
+    "close_in_range": 0.02,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.50079,
+    "chg_pips": 1509.8,
+    "chg_pct": 0.923,
+    "range_pips": 1962.2,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.70317,
+    "chg_pips": 915.9,
+    "chg_pct": 0.492,
+    "range_pips": 2497.4,
+    "close_in_range": 0.39,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.409,
+    "chg_pips": -8.2,
+    "chg_pct": -0.081,
+    "range_pips": 43.7,
+    "close_in_range": 0.37,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 19.085,
+    "chg_pips": 88.1,
+    "chg_pct": 4.837,
+    "range_pips": 143.8,
+    "close_in_range": 0.76,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -13.8,
+    "ret_pct": -0.123,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "21:00",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 32.4,
+    "ret_pct": 0.289,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "05:00",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -62.3,
+    "ret_pct": -0.554,
+    "minutes": 675,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 33.0,
+    "ret_pct": 0.295,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Natural Gas Storage, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 21.7,
+    "ret_pct": 0.137,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "21:00",
+    "to": "11:45",
+    "dir": "down",
+    "pips": -149.2,
+    "ret_pct": -0.943,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "11:45",
+    "to": "15:30",
+    "dir": "up",
+    "pips": 48.4,
+    "ret_pct": 0.309,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -37.2,
+    "ret_pct": -0.237,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CB Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -16.0,
+    "ret_pct": -0.119,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "21:00",
+    "to": "10:15",
+    "dir": "up",
+    "pips": 31.7,
+    "ret_pct": 0.237,
+    "minutes": 795,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "10:15",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -57.8,
+    "ret_pct": -0.431,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CBI Industrial Order Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 44.2,
+    "ret_pct": 0.331,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Natural Gas Storage moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 11.2,
+    "ret_pct": 0.136,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "20:45",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -56.8,
+    "ret_pct": -0.688,
+    "minutes": 735,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "09:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 18.4,
+    "ret_pct": 0.224,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Summary of Monetary Policy Discussions, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "10:00",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -17.0,
+    "ret_pct": -0.207,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "11:30",
+    "to": "15:30",
+    "dir": "up",
+    "pips": 42.8,
+    "ret_pct": 0.522,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Unemployment Insurance Weekly Claims pushed it along (+7.5 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Unemployment Insurance Weekly Claims",
+      "ccy": null,
+      "pips": 7.5,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -22.6,
+    "ret_pct": -0.274,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CB Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "00:30",
+    "dir": "down",
+    "pips": -8.9,
+    "ret_pct": -0.127,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "00:30",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 12.2,
+    "ret_pct": 0.174,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "02:15",
+    "to": "05:30",
+    "dir": "down",
+    "pips": -25.7,
+    "ret_pct": -0.365,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "05:30",
+    "to": "10:15",
+    "dir": "up",
+    "pips": 11.2,
+    "ret_pct": 0.16,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran's Revolutionary Guards' Navy: US continued insistenc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:15",
+    "to": "13:15",
+    "dir": "down",
+    "pips": -25.4,
+    "ret_pct": -0.362,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK: output to stabilise but profitability squeeze to cont…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "13:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 26.9,
+    "ret_pct": 0.385,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -41.5,
+    "ret_pct": -0.295,
+    "minutes": 855,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "09:15",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 27.1,
+    "ret_pct": 0.193,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SNB: Monetary policy assessment of September 2026: Summar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -28.4,
+    "ret_pct": -0.202,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item IPPI m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -13.6,
+    "ret_pct": -0.239,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but CPI q/q pushed it along (-4.8 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "CPI q/q",
+      "ccy": "NZD",
+      "pips": -4.8,
+      "share_of_leg": 0.35
+     },
+     {
+      "title": "NZ consumers price index: September 2026 quarter",
+      "ccy": null,
+      "pips": -4.8,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:15",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 21.7,
+    "ret_pct": 0.381,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "02:15",
+    "to": "05:45",
+    "dir": "down",
+    "pips": -26.9,
+    "ret_pct": -0.471,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:45",
+    "to": "08:45",
+    "dir": "up",
+    "pips": 13.6,
+    "ret_pct": 0.239,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "08:45",
+    "to": "13:15",
+    "dir": "down",
+    "pips": -27.3,
+    "ret_pct": -0.479,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran's Revolutionary Guards' Navy: US continued insistenc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "13:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 14.4,
+    "ret_pct": 0.254,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "13:15",
+    "dir": "down",
+    "pips": -58.2,
+    "ret_pct": -0.629,
+    "minutes": 1095,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ consumers price index: September 2026 quarter, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "13:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 22.4,
+    "ret_pct": 0.243,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Unemployment Claims pushed it along (+7.4 in 15 min, 33% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Unemployment Claims",
+      "ccy": "USD",
+      "pips": 7.4,
+      "share_of_leg": 0.33
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -22.5,
+    "ret_pct": -0.117,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:15",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 35.6,
+    "ret_pct": 0.186,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ consumers price index: September 2026 quarter, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -98.5,
+    "ret_pct": -0.513,
+    "minutes": 990,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Unemployment Insurance Weekly Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -18.7,
+    "ret_pct": -0.152,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:30",
+    "to": "05:45",
+    "dir": "up",
+    "pips": 23.3,
+    "ret_pct": 0.189,
+    "minutes": 375,
+    "cause": "CPI q/q",
+    "cause_ccy": "NZD",
+    "confidence": "high",
+    "note": "NZD CPI q/q (actual 0.7% vs forecast 0.8%) -- +26.2 in the first 15 min, 112% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "NZ consumers price index: September 2026 quarter",
+      "ccy": null,
+      "pips": 26.2,
+      "share_of_leg": 1.12
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "05:45",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -27.0,
+    "ret_pct": -0.219,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "09:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 44.0,
+    "ret_pct": 0.357,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SNB: Monetary policy assessment of September 2026: Summar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 9.2,
+    "ret_pct": 0.11,
+    "minutes": 600,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ consumers price index: September 2026 quarter, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "05:00",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -18.2,
+    "ret_pct": -0.217,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SNB: Monetary policy assessment of September 2026: Summar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "11:30",
+    "to": "12:15",
+    "dir": "up",
+    "pips": 7.6,
+    "ret_pct": 0.091,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CBI Industrial Order Expectations, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "12:15",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -13.3,
+    "ret_pct": -0.159,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Unemployment Insurance Weekly Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 5.3,
+    "ret_pct": 0.063,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Confidence, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -49.4,
+    "ret_pct": -0.853,
+    "minutes": 840,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "09:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 24.6,
+    "ret_pct": 0.428,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Unemployment Insurance Weekly Claims pushed it along (+6.5 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Unemployment Insurance Weekly Claims",
+      "ccy": null,
+      "pips": 6.5,
+      "share_of_leg": 0.26
+     },
+     {
+      "title": "Unemployment Claims",
+      "ccy": "USD",
+      "pips": 6.5,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -11.6,
+    "ret_pct": -0.247,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 18.6,
+    "ret_pct": 0.397,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CPI q/q moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "02:15",
+    "to": "13:00",
+    "dir": "down",
+    "pips": -48.6,
+    "ret_pct": -1.033,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran's Revolutionary Guards' Navy: US continued insistenc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "13:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 12.5,
+    "ret_pct": 0.268,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Unemployment Claims pushed it along (+3.5 in 15 min, 28% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Unemployment Claims",
+      "ccy": "USD",
+      "pips": 3.5,
+      "share_of_leg": 0.28
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 218.7,
+    "ret_pct": 0.221,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "21:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -287.0,
+    "ret_pct": -0.29,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:45",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 240.5,
+    "ret_pct": 0.244,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ consumers price index: September 2026 quarter moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "04:00",
+    "to": "05:00",
+    "dir": "down",
+    "pips": -192.9,
+    "ret_pct": -0.195,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "05:00",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 559.1,
+    "ret_pct": 0.566,
+    "minutes": 675,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -320.7,
+    "ret_pct": -0.323,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Natural Gas Storage, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -259.5,
+    "ret_pct": -0.277,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:45",
+    "to": "03:45",
+    "dir": "up",
+    "pips": 167.8,
+    "ret_pct": 0.179,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ consumers price index: September 2026 quarter moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "03:45",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -229.1,
+    "ret_pct": -0.245,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran's Revolutionary Guards' Navy: US continued insistenc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "09:15",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 327.4,
+    "ret_pct": 0.35,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SNB: Monetary policy assessment of September 2026: Summar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "13:15",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -346.9,
+    "ret_pct": -0.37,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Unemployment Insurance Weekly Claims pushed it along (-54.7 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Unemployment Insurance Weekly Claims",
+      "ccy": null,
+      "pips": -54.7,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "15:00",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 227.3,
+    "ret_pct": 0.243,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Leading Economic Index Holds Steady At 0% In September…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -375.7,
+    "ret_pct": -0.401,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Natural Gas Storage moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 1854.0,
+    "ret_pct": 1.134,
+    "minutes": 1095,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "13:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -348.9,
+    "ret_pct": -0.211,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "13:00",
+    "dir": "up",
+    "pips": 2334.4,
+    "ret_pct": 1.254,
+    "minutes": 1080,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "13:00",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -1810.0,
+    "ret_pct": -0.961,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 399.4,
+    "ret_pct": 0.214,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item CB Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "10:45",
+    "dir": "up",
+    "pips": 387.2,
+    "ret_pct": 3.265,
+    "minutes": 945,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Officials: State Dept Preparing To Issue Ordered Depar…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "10:45",
+    "to": "17:15",
+    "dir": "down",
+    "pips": -144.8,
+    "ret_pct": -1.183,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Unemployment Claims, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "17:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 108.5,
+    "ret_pct": 0.897,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Iran is doing everything they can to drive up the …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "down",
+    "pips": -184.8,
+    "ret_pct": -0.447,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "20:45",
+    "to": "23:15",
+    "dir": "up",
+    "pips": 308.5,
+    "ret_pct": 0.75,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US State Dept: Issued Ordered Departure For Non-Emergency…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "23:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1061.7,
+    "ret_pct": -2.562,
+    "minutes": 1170,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ consumers price index: September 2026 quarter moved price the other way.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "23:45",
+    "ccy": "NZD",
+    "impact": "High",
+    "event": "CPI q/q",
+    "actual": "0.7%",
+    "forecast": "0.8%",
+    "previous": "1.5%",
+    "polarity": "normal",
+    "polarity_note": "miss surprise -> NZD weaker 0.124%",
+    "own_ccy_impulse_pct": -0.124,
+    "top_movers": [
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.129,
+      "pips": 15.9,
+      "unit": "pips",
+      "sigma": 5.51
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.054,
+      "pips": -3.1,
+      "unit": "pips",
+      "sigma": -1.85
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": -0.047,
+      "pips": -2.2,
+      "unit": "pips",
+      "sigma": -1.56
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.012,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.95
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.012,
+      "pips": 1.7,
+      "unit": "pips",
+      "sigma": 0.85
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": -0.084,
+      "pips": -10.1,
+      "unit": "pips ($0.01)",
+      "sigma": -0.71
+     }
+    ]
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Unemployment Claims",
+    "actual": "194K",
+    "forecast": "200K",
+    "previous": "199K",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.019%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.019,
+    "top_movers": [
+     {
+      "instrument": "USD/MXN",
+      "pct": -0.127,
+      "pips": -237.3,
+      "unit": "pips",
+      "sigma": -2.61
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": 0.053,
+      "pips": 4.9,
+      "unit": "pips",
+      "sigma": 2.47
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.055,
+      "pips": 4.5,
+      "unit": "pips",
+      "sigma": 2.1
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.066,
+      "pips": 3.8,
+      "unit": "pips",
+      "sigma": 1.98
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.046,
+      "pips": -8.7,
+      "unit": "pips",
+      "sigma": -1.82
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.054,
+      "pips": 2.5,
+      "unit": "pips",
+      "sigma": 1.78
+     }
+    ]
+   }
+  ],
+  "headline_count": 11,
+  "top_headlines": [
+   {
+    "time": "20:45",
+    "impact": "high",
+    "title": "US Officials: State Dept Preparing To Issue Ordered Departure Of Some Personnel And Family Members At US Embassies Across The Gulf"
+   },
+   {
+    "time": "23:45",
+    "impact": "high",
+    "title": "NZ consumers price index: September 2026 quarter"
+   },
+   {
+    "time": "21:15",
+    "impact": "medium",
+    "title": "US State Dept: Issued Ordered Departure For Non-Emergency US Govt Employees And Their Family Members In Saudi Arabia Only"
+   },
+   {
+    "time": "14:30",
+    "impact": "medium",
+    "title": "US Unemployment Insurance Weekly Claims"
+   },
+   {
+    "time": "09:00",
+    "impact": "low",
+    "title": "Iran's Revolutionary Guards' Navy: US continued insistence on pushing vessels to sail through 'illegal' routes in the Gulf will lead to confrontation"
+   },
+   {
+    "time": "09:30",
+    "impact": "low",
+    "title": "SNB: Monetary policy assessment of September 2026: Summary of discussion"
+   },
+   {
+    "time": "12:15",
+    "impact": "low",
+    "title": "UK: output to stabilise but profitability squeeze to continue - CBI Industrial Trends Survey"
+   },
+   {
+    "time": "16:00",
+    "impact": "low",
+    "title": "Flash Consumer Confidence Indicator for the EU and Euro Area"
+   },
+   {
+    "time": "16:15",
+    "impact": "low",
+    "title": "US Leading Economic Index Holds Steady At 0% In September, Beating Expectations"
+   },
+   {
+    "time": "16:30",
+    "impact": "low",
+    "title": "EIA: US gas inventories up by 77 billion cubic feet"
+   },
+   {
+    "time": "17:30",
+    "impact": "low",
+    "title": "Trump: Iran is doing everything they can to drive up the price of oil prior to the US Midterm Election"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Retail Sales m/m",
+    "forecast": "-0.1%",
+    "previous": "0.5%"
+   },
+   {
+    "time": "09:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "French Flash Manufacturing PMI",
+    "forecast": "50.5",
+    "previous": "50.3"
+   },
+   {
+    "time": "09:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "French Flash Services PMI",
+    "forecast": "50.7",
+    "previous": "51.4"
+   },
+   {
+    "time": "09:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Flash Manufacturing PMI",
+    "forecast": "53.5",
+    "previous": "53.8"
+   },
+   {
+    "time": "09:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Flash Services PMI",
+    "forecast": "52.5",
+    "previous": "52.9"
+   },
+   {
+    "time": "10:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Flash Manufacturing PMI",
+    "forecast": "51.8",
+    "previous": "52.0"
+   },
+   {
+    "time": "10:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Flash Services PMI",
+    "forecast": "51.8",
+    "previous": "51.7"
+   },
+   {
+    "time": "15:45",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Flash Manufacturing PMI",
+    "forecast": "55.4",
+    "previous": "57.0"
+   },
+   {
+    "time": "15:45",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Flash Services PMI",
+    "forecast": "57.9",
+    "previous": "58.7"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Revised UoM Consumer Sentiment",
+    "forecast": "46.3",
+    "previous": "46.3"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Revised UoM Inflation Expectations",
+    "forecast": null,
+    "previous": "4.7%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The tape was catalyst-light: apart from NZD CPI q/q, no leg had high confidence, and most major pairs chopped without a clean driver. JPY was the standout winner, finishing up 0.627% strength and driving USD/JPY down 116.2 pips, while NZD was weakest after CPI q/q missed at 0.7% vs 0.8%. The US Unemployment Claims beat (194K vs 200K) was muted, moving the USD basket only 0.019% and not producing follow-through. Risk proxies firmed—VIX +4.837% and USD/ZAR +0.923%—but G10 FX stayed rangebound.",
+  "themes": [
+   {
+    "theme": "Catalyst-light tape",
+    "evidence": "EUR/USD legs all confidence none; only NZD CPI had a high-confidence leg.",
+    "currencies": [
+     "EUR",
+     "USD",
+     "GBP",
+     "AUD",
+     "CAD",
+     "CHF",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "NZD CPI miss drives underperformance",
+    "evidence": "NZD CPI q/q 0.7% vs forecast 0.8%; own-ccy impulse -0.124%; NZD/USD -16.4 pips.",
+    "currencies": [
+     "NZD"
+    ]
+   },
+   {
+    "theme": "JPY and CHF risk bid",
+    "evidence": "JPY strength_pct 0.627; USD/JPY -116.2 pips; CHF/JPY -81.0 pips.",
+    "currencies": [
+     "JPY",
+     "CHF"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Claims beat was muted; early strength faded 78%, leaving USD slightly softer.",
+   "EUR": "No own releases; attempt to gain was rejected and closed weaker.",
+   "JPY": "No clear catalyst; persistent buying, selling rejected, finished strongest.",
+   "GBP": "No own releases; held range, ended slightly weaker.",
+   "AUD": "No clear catalyst; held range but closed lower with no event driver.",
+   "CAD": "No own releases; held range and edged marginally higher.",
+   "CHF": "No catalyst; held range, gained modestly as risk hedge.",
+   "NZD": "CPI q/q miss at 0.7% vs 0.8% drove initial drop; later moves lacked catalysts."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD printed four catalyst-less legs; the largest down leg from 05:00 to 16:15 (-62.3 pips) coincided only with noise, and the close sat 0.53 in range."
+  },
+  "polarity_reads": [
+   {
+    "event": "NZD CPI q/q",
+    "read": "Miss produced normal polarity (NZD -0.124%), implying no downside cushion or inverted positioning."
+   },
+   {
+    "event": "US Unemployment Claims",
+    "read": "Beat was muted at 0.019% inside noise despite 194K vs 200K, showing limited fresh USD demand or already stretched longs."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "JPY bid persists",
+    "probability": 0.4,
+    "thesis": "No catalyst unwinds yen demand; elevated VIX and Gulf headlines keep safe-haven flows intact.",
+    "triggers": [
+     "VIX holds above 19",
+     "Gulf headlines continue",
+     "US yields fail to spike"
+    ],
+    "invalidation": "Strong US PMIs lift yields and USD/JPY recovers with volume",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 116.2,
+      "rationale": "A repeat of today's -116.2 pip slide as JPY buying extends."
+     },
+     {
+      "instrument": "CHF/JPY",
+      "direction": "down",
+      "magnitude_pips": 81.0,
+      "rationale": "Mirrors today's -81.0 pip CHF/JPY move with CHF also supported."
+     }
+    ]
+   },
+   {
+    "name": "NZD mean reversion",
+    "probability": 0.35,
+    "thesis": "After closing weakest and CPI-driven slide, short-covering lifts NZD into Asia with no new catalyst.",
+    "triggers": [
+     "NZD/USD holds above 0.56837 close",
+     "AUD/NZD stalls after +19.0 pips gain"
+    ],
+    "invalidation": "Break below NZD/USD 0.56837 with fresh NZD-negative news",
+    "pair_paths": [
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 16.4,
+      "rationale": "Retraces today's -16.4 pip fall as shorts take profit."
+     },
+     {
+      "instrument": "AUD/NZD",
+      "direction": "down",
+      "magnitude_pips": 19.0,
+      "rationale": "Reverses today's +19.0 pip CPI-led AUD/NZD gain."
+     },
+     {
+      "instrument": "NZD/CHF",
+      "direction": "up",
+      "magnitude_pips": 28.8,
+      "rationale": "Rebounds part of today's -28.8 pip drop."
+     }
+    ]
+   },
+   {
+    "name": "USD rebounds on PMIs",
+    "probability": 0.25,
+    "thesis": "Upcoming flash PMIs and UoM give the muted claims beat follow-through, lifting USD from oversold.",
+    "triggers": [
+     "US Flash PMIs above forecast",
+     "UoM sentiment stable/improves",
+     "DXY holds above 101.4"
+    ],
+    "invalidation": "Risk-off persists and USD/JPY fails to lift from close",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 62.3,
+      "rationale": "Repeats largest EUR/USD down leg as USD rebounds."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 48.4,
+      "rationale": "Recovers the 48.4 pip bounce seen after claims."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 25.8,
+      "rationale": "Erases today's -25.8 pip fall."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Catalyst-less tape produces sudden headline-driven moves",
+    "why_it_matters": "Most G10 legs had no driver, so flow/technical breaks can be violent.",
+    "watch": "VIX 19.085, Gulf headlines"
+   },
+   {
+    "risk": "NZD CPI shock not fully absorbed",
+    "why_it_matters": "NZD is weakest and further data surprises can extend the move.",
+    "watch": "NZD/USD 0.56837, AUD/NZD 1.23522"
+   },
+   {
+    "risk": "US PMIs contradict muted claims reaction",
+    "why_it_matters": "Strong data could unwind yen bid and lift USD sharply.",
+    "watch": "US Flash PMIs 15:45, UoM 16:00"
+   }
+  ],
+  "calendar_ahead_note": "GBP retail sales and flash PMIs for EUR/GBP/USD can provide catalysts; US PMIs and UoM sentiment are the main events that can break today's range.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 17230,
+   "completion_tokens": 9068,
+   "total_tokens": 26298,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7360
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 16590
+  }
+ }
+}
