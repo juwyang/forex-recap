@@ -13,7 +13,7 @@
   "end_local": "2026-10-22T19:00:00+02:00",
   "fwd_start_utc": "2026-10-22T17:00:00+00:00",
   "fwd_end_utc": "2026-10-23T17:00:00+00:00",
-  "generated_utc": "2026-10-22T17:05:54.392345+00:00",
+  "generated_utc": "2026-10-22T20:30:43.167292+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 49
+   "with_actual": 42
   }
  },
  "facts": {
@@ -1994,179 +1994,190 @@
   ]
  },
  "analysis": {
-  "session_summary": "The tape was catalyst-light: apart from NZD CPI q/q, no leg had high confidence, and most major pairs chopped without a clean driver. JPY was the standout winner, finishing up 0.627% strength and driving USD/JPY down 116.2 pips, while NZD was weakest after CPI q/q missed at 0.7% vs 0.8%. The US Unemployment Claims beat (194K vs 200K) was muted, moving the USD basket only 0.019% and not producing follow-through. Risk proxies firmed—VIX +4.837% and USD/ZAR +0.923%—but G10 FX stayed rangebound.",
+  "session_summary": "The tape was dominated by a NZD CPI miss: quarterly CPI printed 0.7% vs 0.8% forecast, sending NZD down 0.124% and making it the weakest major at -0.403%. JPY was the strongest, up 0.627%, with USD/JPY -116.2 pips and closing near the low at 0.14 of range, despite no Japanese releases. US unemployment claims beat at 194K vs 200K but the USD basket moved only 0.019%, inside the noise floor, and USD gains were rejected at -0.111%. Geopolitical Gulf headlines lifted VIX 4.837% and hit EM FX, but did not own any major leg.",
   "themes": [
    {
-    "theme": "Catalyst-light tape",
-    "evidence": "EUR/USD legs all confidence none; only NZD CPI had a high-confidence leg.",
-    "currencies": [
-     "EUR",
-     "USD",
-     "GBP",
-     "AUD",
-     "CAD",
-     "CHF",
-     "JPY"
-    ]
-   },
-   {
-    "theme": "NZD CPI miss drives underperformance",
-    "evidence": "NZD CPI q/q 0.7% vs forecast 0.8%; own-ccy impulse -0.124%; NZD/USD -16.4 pips.",
-    "currencies": [
-     "NZD"
-    ]
-   },
-   {
-    "theme": "JPY and CHF risk bid",
-    "evidence": "JPY strength_pct 0.627; USD/JPY -116.2 pips; CHF/JPY -81.0 pips.",
+    "theme": "JPY safe-haven bid",
+    "evidence": "JPY strength 0.627%, USD/JPY -116.2 pips and close in 0.14 of range; CHF/JPY -81.0 pips.",
     "currencies": [
      "JPY",
-     "CHF"
+     "CHF",
+     "USD"
+    ]
+   },
+   {
+    "theme": "NZD CPI-driven weakness",
+    "evidence": "NZD CPI actual 0.7% vs forecast 0.8%; NZD -0.403%; NZD/USD -16.4 pips; AUD/NZD +19.0 pips.",
+    "currencies": [
+     "NZD",
+     "AUD",
+     "USD"
+    ]
+   },
+   {
+    "theme": "Muted US data, rejected USD",
+    "evidence": "Unemployment Claims actual 194K vs 200K, basket moved 0.019%; USD -0.111%, attempt rejected 78%.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "GBP"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Claims beat was muted; early strength faded 78%, leaving USD slightly softer.",
-   "EUR": "No own releases; attempt to gain was rejected and closed weaker.",
-   "JPY": "No clear catalyst; persistent buying, selling rejected, finished strongest.",
-   "GBP": "No own releases; held range, ended slightly weaker.",
-   "AUD": "No clear catalyst; held range but closed lower with no event driver.",
-   "CAD": "No own releases; held range and edged marginally higher.",
-   "CHF": "No catalyst; held range, gained modestly as risk hedge.",
-   "NZD": "CPI q/q miss at 0.7% vs 0.8% drove initial drop; later moves lacked catalysts."
+   "USD": "Unemployment Claims beat but basket moved 0.019%; gains were rejected.",
+   "EUR": "Attempted early gain reversed 77%; no clear catalyst.",
+   "JPY": "Broad safe-haven bid; sold early then recovered 79%, no own releases.",
+   "GBP": "Held its range, no own releases, no clear catalyst.",
+   "AUD": "Held its range with no own releases and no clear catalyst.",
+   "CAD": "Held its range, no own releases, no clear catalyst.",
+   "CHF": "Held its range, no own releases, no clear catalyst.",
+   "NZD": "CPI miss printed 0.7% vs 0.8%, weaker 0.124%; rally gave back 83%."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD printed four catalyst-less legs; the largest down leg from 05:00 to 16:15 (-62.3 pips) coincided only with noise, and the close sat 0.53 in range."
+   "EUR/USD": "EUR/USD traded in a four-leg chop: early dip -13.8 pips, Asia rebound +32.4, NY-morning selloff -62.3, late bounce +33.0; no leg had a clear catalyst."
   },
   "polarity_reads": [
    {
     "event": "NZD CPI q/q",
-    "read": "Miss produced normal polarity (NZD -0.124%), implying no downside cushion or inverted positioning."
+    "read": "Normal miss reaction: NZD weakened 0.124% on a 0.7% vs 0.8% print, so the currency moved in the direction of the surprise without a contrarian fade."
    },
    {
-    "event": "US Unemployment Claims",
-    "read": "Beat was muted at 0.019% inside noise despite 194K vs 200K, showing limited fresh USD demand or already stretched longs."
+    "event": "Unemployment Claims",
+    "read": "Muted reaction with USD basket at 0.019% inside noise floor implies the better print was already priced or was not a positioning trigger."
    }
   ],
   "scenarios": [
    {
-    "name": "JPY bid persists",
-    "probability": 0.4,
-    "thesis": "No catalyst unwinds yen demand; elevated VIX and Gulf headlines keep safe-haven flows intact.",
+    "name": "Base: range retention, residual JPY bid",
+    "probability": 0.5,
+    "thesis": "Momentum from the NZD CPI shock fades; G10 pairs hold today's ranges with no new catalyst, and JPY strength eases from peak but USD/JPY stays heavy.",
     "triggers": [
-     "VIX holds above 19",
-     "Gulf headlines continue",
-     "US yields fail to spike"
+     "VIX closes below 19.085",
+     "No escalation in Gulf headlines",
+     "USD/JPY holds below 156.914"
     ],
-    "invalidation": "Strong US PMIs lift yields and USD/JPY recovers with volume",
+    "invalidation": "A sustained break above 156.914 in USD/JPY or VIX above 19.085 revives USD.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 66.9,
+      "rationale": "Today's 66.9-pip range likely contains EUR/USD absent a catalyst."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 116.2,
+      "rationale": "USD/JPY fell 116.2 pips today; residual JPY bid can repeat that scale."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 16.4,
+      "rationale": "NZD/USD fell 16.4 pips on the CPI miss and closed low in range."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off Gulf escalation",
+    "probability": 0.3,
+    "thesis": "Gulf headlines turn from noise to driver: safe-haven JPY and CHF bid while high-beta and EM currencies sell.",
+    "triggers": [
+     "State Dept ordered departure headlines intensify",
+     "VIX holds above 19.085",
+     "USD/MXN extends above 18.70317"
+    ],
+    "invalidation": "Gulf de-escalation and VIX below 19.085.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 116.2,
-      "rationale": "A repeat of today's -116.2 pip slide as JPY buying extends."
-     },
-     {
-      "instrument": "CHF/JPY",
-      "direction": "down",
-      "magnitude_pips": 81.0,
-      "rationale": "Mirrors today's -81.0 pip CHF/JPY move with CHF also supported."
-     }
-    ]
-   },
-   {
-    "name": "NZD mean reversion",
-    "probability": 0.35,
-    "thesis": "After closing weakest and CPI-driven slide, short-covering lifts NZD into Asia with no new catalyst.",
-    "triggers": [
-     "NZD/USD holds above 0.56837 close",
-     "AUD/NZD stalls after +19.0 pips gain"
-    ],
-    "invalidation": "Break below NZD/USD 0.56837 with fresh NZD-negative news",
-    "pair_paths": [
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 16.4,
-      "rationale": "Retraces today's -16.4 pip fall as shorts take profit."
-     },
-     {
-      "instrument": "AUD/NZD",
-      "direction": "down",
-      "magnitude_pips": 19.0,
-      "rationale": "Reverses today's +19.0 pip CPI-led AUD/NZD gain."
-     },
-     {
-      "instrument": "NZD/CHF",
-      "direction": "up",
-      "magnitude_pips": 28.8,
-      "rationale": "Rebounds part of today's -28.8 pip drop."
-     }
-    ]
-   },
-   {
-    "name": "USD rebounds on PMIs",
-    "probability": 0.25,
-    "thesis": "Upcoming flash PMIs and UoM give the muted claims beat follow-through, lifting USD from oversold.",
-    "triggers": [
-     "US Flash PMIs above forecast",
-     "UoM sentiment stable/improves",
-     "DXY holds above 101.4"
-    ],
-    "invalidation": "Risk-off persists and USD/JPY fails to lift from close",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 62.3,
-      "rationale": "Repeats largest EUR/USD down leg as USD rebounds."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 48.4,
-      "rationale": "Recovers the 48.4 pip bounce seen after claims."
+      "rationale": "Safe-haven JPY bid; today's USD/JPY drop of 116.2 pips can extend."
      },
      {
       "instrument": "USD/CHF",
-      "direction": "up",
+      "direction": "down",
       "magnitude_pips": 25.8,
-      "rationale": "Erases today's -25.8 pip fall."
+      "rationale": "CHF strength; today's USD/CHF fell 25.8 pips."
+     },
+     {
+      "instrument": "USD/MXN",
+      "direction": "up",
+      "magnitude_pips": 915.9,
+      "rationale": "EM risk-off; today's USD/MXN rose 915.9 pips."
+     }
+    ]
+   },
+   {
+    "name": "Data-driven PMI/UoM repricing",
+    "probability": 0.2,
+    "thesis": "Flash PMIs and UoM surprises force EUR and GBP to take out today's ranges; any US data disappointment strengthens the case for lower USD.",
+    "triggers": [
+     "Euro area flash PMIs beat 50.5 and 53.5",
+     "US flash PMI below 55.4",
+     "UoM holds at 46.3"
+    ],
+    "invalidation": "PMIs and UoM all print in line, leaving ranges intact.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 66.9,
+      "rationale": "EUR/USD range is 66.9 pips; a positive PMI shock can produce a full-range move."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 63.9,
+      "rationale": "GBP/USD range is 63.9 pips; UK PMIs could drive a full-range up day."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 165.3,
+      "rationale": "USD/JPY range is 165.3 pips; cross-currents keep it contained."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Catalyst-less tape produces sudden headline-driven moves",
-    "why_it_matters": "Most G10 legs had no driver, so flow/technical breaks can be violent.",
-    "watch": "VIX 19.085, Gulf headlines"
+    "risk": "Gulf escalation headlines",
+    "why_it_matters": "VIX/USD rose 4.837% and EM FX weakened; headline risk can flip risk sentiment quickly.",
+    "watch": "USD/MXN 18.70317, USD/ZAR 16.50079, VIX 19.085."
    },
    {
-    "risk": "NZD CPI shock not fully absorbed",
-    "why_it_matters": "NZD is weakest and further data surprises can extend the move.",
-    "watch": "NZD/USD 0.56837, AUD/NZD 1.23522"
+    "risk": "NZD CPI weakness overextended",
+    "why_it_matters": "NZD is weakest at -0.403% and NZD/USD close at 0.38 of range; a bounce in NZD/USD can unwind crosses.",
+    "watch": "NZD/USD 0.56837, AUD/NZD 1.23522."
    },
    {
-    "risk": "US PMIs contradict muted claims reaction",
-    "why_it_matters": "Strong data could unwind yen bid and lift USD sharply.",
-    "watch": "US Flash PMIs 15:45, UoM 16:00"
+    "risk": "USD positioning after muted claims",
+    "why_it_matters": "USD attempt rejected and DXY -8.2 points; a better data calendar could force a short-covering bounce.",
+    "watch": "DXY 101.409, USD/JPY 156.914, USD/CHF 0.82177."
+   },
+   {
+    "risk": "PMI repricing",
+    "why_it_matters": "Flash PMIs can shift rate expectations after a day with no clear catalysts.",
+    "watch": "EUR/USD 1.1224, GBP/USD 1.34003, USD/JPY 156.914."
    }
   ],
-  "calendar_ahead_note": "GBP retail sales and flash PMIs for EUR/GBP/USD can provide catalysts; US PMIs and UoM sentiment are the main events that can break today's range.",
+  "calendar_ahead_note": "UK Retail Sales m/m (-0.1% fcst), French/German flash PMIs, US flash PMIs (55.4 mfg, 57.9 svc), and revised UoM 46.3 can change the picture; PMI surprises are the key.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17230,
-   "completion_tokens": 9068,
-   "total_tokens": 26298,
+   "completion_tokens": 8416,
+   "total_tokens": 25646,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 17152
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7360
+    "reasoning_tokens": 6327
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 16590
+   "prompt_cache_hit_tokens": 17152,
+   "prompt_cache_miss_tokens": 78
   }
  }
 }
