@@ -1,0 +1,2726 @@
+{
+ "meta": {
+  "date": "2026-10-23",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-22T17:00:00+00:00",
+  "end_utc": "2026-10-23T17:00:00+00:00",
+  "start_local": "2026-10-22T19:00:00+02:00",
+  "end_local": "2026-10-23T19:00:00+02:00",
+  "fwd_start_utc": "2026-10-23T17:00:00+00:00",
+  "fwd_end_utc": "2026-10-26T18:00:00+00:00",
+  "generated_utc": "2026-10-23T17:05:24.075307+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 70
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-22 19:00 CEST",
+   "to_local": "2026-10-23 19:00 CEST"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "NZD",
+    "rank": 1,
+    "strength_pct": 0.319,
+    "intraday_peak": 0.334,
+    "intraday_trough": -0.1,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Flash Manufacturing PMI +1 more",
+     "instrument": "NZD/CHF",
+     "sigma": 2.08
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 2,
+    "strength_pct": 0.197,
+    "intraday_peak": 0.209,
+    "intraday_trough": -0.185,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Revised UoM Consumer Sentiment +1 more",
+     "instrument": "AUD/USD",
+     "sigma": -2.71
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 3,
+    "strength_pct": 0.11,
+    "intraday_peak": 0.249,
+    "intraday_trough": -0.013,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Retail Sales m/m",
+     "instrument": "USD/CAD",
+     "sigma": -1.94
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 4,
+    "strength_pct": 0.059,
+    "intraday_peak": 0.086,
+    "intraday_trough": -0.102,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.10%, recovered 86%",
+    "own_releases": [
+     {
+      "title": "Flash Manufacturing PMI +1 more",
+      "impact": "Medium",
+      "actual": "56.0",
+      "forecast": "55.4",
+      "polarity": "muted",
+      "note": "basket moved -0.014%, inside the noise floor"
+     },
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "impact": "Medium",
+      "actual": "48.0",
+      "forecast": "46.3",
+      "polarity": "muted",
+      "note": "basket moved 0.024%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "French Flash Services PMI +1 more",
+     "instrument": "EUR/USD",
+     "sigma": -4.71
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 5,
+    "strength_pct": 0.046,
+    "intraday_peak": 0.363,
+    "intraday_trough": -0.054,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.36%, gave back 76%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Retail Sales m/m",
+     "instrument": "USD/JPY",
+     "sigma": -0.66
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 6,
+    "strength_pct": -0.171,
+    "intraday_peak": 0.009,
+    "intraday_trough": -0.198,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Retail Sales m/m",
+      "impact": "Medium",
+      "actual": "-0.4%",
+      "forecast": "-0.1%",
+      "polarity": "muted",
+      "note": "basket moved 0.001%, inside the noise floor"
+     },
+     {
+      "title": "Flash Services PMI +1 more",
+      "impact": "Medium",
+      "actual": "53.1",
+      "forecast": "51.8",
+      "polarity": "muted",
+      "note": "basket moved 0.031%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Flash Services PMI +1 more",
+     "instrument": "EUR/GBP",
+     "sigma": -4.11
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 7,
+    "strength_pct": -0.213,
+    "intraday_peak": 0.015,
+    "intraday_trough": -0.257,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "French Flash Services PMI +1 more",
+      "impact": "Medium",
+      "actual": "48.4",
+      "forecast": "50.7",
+      "polarity": "normal",
+      "note": "miss surprise -> EUR weaker 0.093%"
+     },
+     {
+      "title": "German Flash Services PMI +1 more",
+      "impact": "Medium",
+      "actual": "51.7",
+      "forecast": "52.5",
+      "polarity": "inverted",
+      "note": "miss surprise -> EUR stronger 0.048%  (opposite to the textbook sign)"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "French Flash Services PMI +1 more",
+     "instrument": "EUR/USD",
+     "sigma": -4.71
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 8,
+    "strength_pct": -0.348,
+    "intraday_peak": 0.187,
+    "intraday_trough": -0.355,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.19%, gave back 99%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Flash Services PMI +1 more",
+     "instrument": "USD/CHF",
+     "sigma": 3.79
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.272,
+    "from_EUR": -0.213,
+    "from_USD": -0.059,
+    "base_share": 0.78
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.23,
+    "from_GBP": -0.171,
+    "from_USD": -0.059,
+    "base_share": 0.74
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.138,
+    "from_AUD": 0.197,
+    "from_USD": -0.059,
+    "base_share": 0.77
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.26,
+    "from_NZD": 0.319,
+    "from_USD": -0.059,
+    "base_share": 0.84
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.014,
+    "from_USD": 0.059,
+    "from_JPY": -0.046,
+    "base_share": 0.56
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.407,
+    "from_USD": 0.059,
+    "from_CHF": 0.348,
+    "base_share": 0.15
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.05,
+    "from_USD": 0.059,
+    "from_CAD": -0.11,
+    "base_share": 0.35
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.042,
+    "from_EUR": -0.213,
+    "from_GBP": 0.171,
+    "base_share": 0.55
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.258,
+    "from_EUR": -0.213,
+    "from_JPY": -0.046,
+    "base_share": 0.82
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.135,
+    "from_EUR": -0.213,
+    "from_CHF": 0.348,
+    "base_share": 0.38
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.41,
+    "from_EUR": -0.213,
+    "from_AUD": -0.197,
+    "base_share": 0.52
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.322,
+    "from_EUR": -0.213,
+    "from_CAD": -0.11,
+    "base_share": 0.66
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.532,
+    "from_EUR": -0.213,
+    "from_NZD": -0.319,
+    "base_share": 0.4
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.217,
+    "from_GBP": -0.171,
+    "from_JPY": -0.046,
+    "base_share": 0.79
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.177,
+    "from_GBP": -0.171,
+    "from_CHF": 0.348,
+    "base_share": 0.33
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.368,
+    "from_GBP": -0.171,
+    "from_AUD": -0.197,
+    "base_share": 0.46
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.28,
+    "from_GBP": -0.171,
+    "from_CAD": -0.11,
+    "base_share": 0.61
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.49,
+    "from_GBP": -0.171,
+    "from_NZD": -0.319,
+    "base_share": 0.35
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.152,
+    "from_AUD": 0.197,
+    "from_JPY": -0.046,
+    "base_share": 0.81
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.545,
+    "from_AUD": 0.197,
+    "from_CHF": 0.348,
+    "base_share": 0.36
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.088,
+    "from_AUD": 0.197,
+    "from_CAD": -0.11,
+    "base_share": 0.64
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.122,
+    "from_AUD": 0.197,
+    "from_NZD": -0.319,
+    "base_share": 0.38
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.274,
+    "from_NZD": 0.319,
+    "from_JPY": -0.046,
+    "base_share": 0.87
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.667,
+    "from_NZD": 0.319,
+    "from_CHF": 0.348,
+    "base_share": 0.48
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 0.21,
+    "from_NZD": 0.319,
+    "from_CAD": -0.11,
+    "base_share": 0.74
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.064,
+    "from_CAD": 0.11,
+    "from_JPY": -0.046,
+    "base_share": 0.71
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.458,
+    "from_CAD": 0.11,
+    "from_CHF": 0.348,
+    "base_share": 0.24
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.394,
+    "from_CHF": -0.348,
+    "from_JPY": -0.046,
+    "base_share": 0.88
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.366
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.226
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.126
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.068
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.053
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.195
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.243
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.397
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11933,
+    "chg_pips": -30.7,
+    "chg_pct": -0.274,
+    "range_pips": 46.5,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.33693,
+    "chg_pips": -31.0,
+    "chg_pct": -0.231,
+    "range_pips": 42.5,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.7031,
+    "chg_pips": 9.6,
+    "chg_pct": 0.137,
+    "range_pips": 31.2,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56985,
+    "chg_pips": 14.8,
+    "chg_pct": 0.26,
+    "range_pips": 26.5,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 156.937,
+    "chg_pips": 2.3,
+    "chg_pct": 0.015,
+    "range_pips": 107.9,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82513,
+    "chg_pips": 33.6,
+    "chg_pct": 0.409,
+    "range_pips": 61.5,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.40058,
+    "chg_pips": -8.0,
+    "chg_pct": -0.057,
+    "range_pips": 50.0,
+    "close_in_range": 0.75,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92359,
+    "chg_pips": 12.4,
+    "chg_pct": 0.134,
+    "range_pips": 46.5,
+    "close_in_range": 0.88,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.187,
+    "chg_pips": -74.9,
+    "chg_pct": -0.392,
+    "range_pips": 130.7,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23372,
+    "chg_pips": -15.0,
+    "chg_pct": -0.121,
+    "range_pips": 47.4,
+    "close_in_range": 0.68,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83722,
+    "chg_pips": -3.4,
+    "chg_pct": -0.041,
+    "range_pips": 16.5,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.58013,
+    "chg_pips": 31.5,
+    "chg_pct": 0.546,
+    "range_pips": 60.1,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.47013,
+    "chg_pips": 31.3,
+    "chg_pct": 0.67,
+    "range_pips": 51.2,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.93895,
+    "chg_pips": 392.1,
+    "chg_pct": 0.396,
+    "range_pips": 581.3,
+    "close_in_range": 0.88,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.33205,
+    "chg_pips": 52.0,
+    "chg_pct": 0.056,
+    "range_pips": 552.1,
+    "close_in_range": 0.46,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.59434,
+    "chg_pips": 935.5,
+    "chg_pct": 0.567,
+    "range_pips": 1572.5,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.67481,
+    "chg_pips": -283.6,
+    "chg_pct": -0.152,
+    "range_pips": 1648.4,
+    "close_in_range": 0.2,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.634,
+    "chg_pips": 22.5,
+    "chg_pct": 0.222,
+    "range_pips": 36.9,
+    "close_in_range": 0.89,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 19.859,
+    "chg_pips": 77.4,
+    "chg_pct": 4.056,
+    "range_pips": 141.0,
+    "close_in_range": 0.63,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "down",
+    "pips": -15.5,
+    "ret_pct": -0.138,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "22:00",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 12.1,
+    "ret_pct": 0.108,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Presidential determination pursuant to section 303 of the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "02:30",
+    "to": "10:45",
+    "dir": "down",
+    "pips": -34.7,
+    "ret_pct": -0.309,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but French Flash Services PMI +1 more pushed it along (-10.4 in 15 min, 30% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "French Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": -10.4,
+      "share_of_leg": 0.3
+     },
+     {
+      "title": "French private sector slips back into contraction in October",
+      "ccy": null,
+      "pips": -10.4,
+      "share_of_leg": 0.3
+     },
+     {
+      "title": "UK business activity growth accelerates to its fastest since February, helped by rebound in new orders",
+      "ccy": null,
+      "pips": -8.0,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "10:45",
+    "to": "12:00",
+    "dir": "up",
+    "pips": 10.8,
+    "ret_pct": 0.097,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "12:00",
+    "to": "13:45",
+    "dir": "down",
+    "pips": -10.8,
+    "ret_pct": -0.096,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "13:45",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 16.7,
+    "ret_pct": 0.149,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Retail Trade, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -13.2,
+    "ret_pct": -0.118,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Belgian NBB Business Climate, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "02:15",
+    "dir": "down",
+    "pips": -69.9,
+    "ret_pct": -0.446,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Presidential determination pursuant to section 303 of the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:15",
+    "to": "08:30",
+    "dir": "up",
+    "pips": 93.0,
+    "ret_pct": 0.595,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Officials say Japan is weighing cuts to gasoline subsidies … pushed it along (+24.9 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Officials say Japan is weighing cuts to gasoline subsidies from December",
+      "ccy": null,
+      "pips": 24.9,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "08:30",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -53.5,
+    "ret_pct": -0.341,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but French Flash Services PMI +1 more pushed it along (-9.6 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "French Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": -9.6,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "11:30",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 36.5,
+    "ret_pct": 0.233,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "13:15",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -55.8,
+    "ret_pct": -0.356,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Retail Trade, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 55.2,
+    "ret_pct": 0.353,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Flash Manufacturing PMI +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -16.7,
+    "ret_pct": -0.125,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:00",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 18.4,
+    "ret_pct": 0.137,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: Output declines as price pressures intensify in Octob…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "02:30",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -39.6,
+    "ret_pct": -0.295,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Officials say Japan is weighing cuts to gasoline subsidie…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "14:00",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 17.3,
+    "ret_pct": 0.129,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Retail Trade, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "14:45",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -12.4,
+    "ret_pct": -0.093,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Belgian business confidence indicator, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "15:30",
+    "to": "16:45",
+    "dir": "up",
+    "pips": 14.2,
+    "ret_pct": 0.106,
+    "minutes": 75,
+    "cause": "Flash Manufacturing PMI +1 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Flash Manufacturing PMI +1 more (actual 56.0 vs forecast 55.4) -- +3.5 in the first 15 min, 25% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -16.3,
+    "ret_pct": -0.122,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: We Could Take All Of The Oil In Iran, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -18.8,
+    "ret_pct": -0.229,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:00",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 39.3,
+    "ret_pct": 0.48,
+    "minutes": 510,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Officials say Japan is weighing cuts to gasoline subsidie…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "10:30",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -16.2,
+    "ret_pct": -0.197,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK business activity growth accelerates to its fastest si… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "11:30",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 25.9,
+    "ret_pct": 0.315,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "14:00",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -21.0,
+    "ret_pct": -0.255,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Retail Trade, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 28.7,
+    "ret_pct": 0.349,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -15.9,
+    "ret_pct": -0.226,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "06:45",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 17.4,
+    "ret_pct": 0.248,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Retail Sales m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:00",
+    "to": "10:45",
+    "dir": "down",
+    "pips": -8.7,
+    "ret_pct": -0.124,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Flash Services PMI +1 more pushed it along (-4.1 in 15 min, 47% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Flash Services PMI +1 more",
+      "ccy": "GBP",
+      "pips": -4.1,
+      "share_of_leg": 0.47
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:45",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 19.0,
+    "ret_pct": 0.271,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Retail Trade, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1.5,
+    "ret_pct": -0.021,
+    "minutes": 180,
+    "cause": "Revised UoM Consumer Sentiment +1 more",
+    "cause_ccy": "USD",
+    "confidence": "high",
+    "note": "USD Revised UoM Consumer Sentiment +1 more (actual 48.0 vs forecast 46.3) -- -4.6 in the first 15 min, 307% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -11.7,
+    "ret_pct": -0.084,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Presidential determination pursuant to section 303 of the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "02:30",
+    "to": "10:45",
+    "dir": "up",
+    "pips": 17.5,
+    "ret_pct": 0.125,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Officials say Japan is weighing cuts to gasoline subsidie…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "10:45",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -42.6,
+    "ret_pct": -0.304,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Core Retail Sales m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 32.4,
+    "ret_pct": 0.232,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -6.8,
+    "ret_pct": -0.12,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "23:15",
+    "to": "05:30",
+    "dir": "up",
+    "pips": 20.3,
+    "ret_pct": 0.358,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: Output declines as price pressures intensify in Octob…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:30",
+    "to": "10:45",
+    "dir": "down",
+    "pips": -14.4,
+    "ret_pct": -0.253,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but UK business activity growth accelerates to its fastest sinc… pushed it along (-4.1 in 15 min, 28% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "UK business activity growth accelerates to its fastest since February, helped by rebound in new orders",
+      "ccy": null,
+      "pips": -4.1,
+      "share_of_leg": 0.28
+     },
+     {
+      "title": "Flash Services PMI +1 more",
+      "ccy": "GBP",
+      "pips": -4.1,
+      "share_of_leg": 0.28
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "10:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 14.7,
+    "ret_pct": 0.259,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Flash Manufacturing PMI +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -24.8,
+    "ret_pct": -0.269,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:00",
+    "to": "08:45",
+    "dir": "up",
+    "pips": 27.0,
+    "ret_pct": 0.294,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Retail Sales m/m pushed it along (+6.1 in 15 min, 23% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Retail Sales m/m",
+      "ccy": "GBP",
+      "pips": 6.1,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "08:45",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -21.7,
+    "ret_pct": -0.235,
+    "minutes": 165,
+    "cause": "French Flash Services PMI +1 more",
+    "cause_ccy": "EUR",
+    "confidence": "medium",
+    "note": "EUR French Flash Services PMI +1 more (actual 48.4 vs forecast 50.7) -- -9.9 in the first 15 min, 46% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "French private sector slips back into contraction in October",
+      "ccy": null,
+      "pips": -9.9,
+      "share_of_leg": 0.46
+     },
+     {
+      "title": "UK business activity growth accelerates to its fastest since February, helped by rebound in new orders",
+      "ccy": null,
+      "pips": -4.0,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Flash Services PMI +1 more",
+      "ccy": "GBP",
+      "pips": -4.0,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "11:30",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 24.4,
+    "ret_pct": 0.265,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:00",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -12.4,
+    "ret_pct": -0.134,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Retail Trade, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 21.2,
+    "ret_pct": 0.23,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Revised UoM Consumer Sentiment +1 more pushed it along (+10.7 in 15 min, 50% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": 10.7,
+      "share_of_leg": 0.5
+     },
+     {
+      "title": "Flash Manufacturing PMI +1 more",
+      "ccy": "USD",
+      "pips": 4.9,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "up",
+    "pips": 20.2,
+    "ret_pct": 0.106,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "20:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -45.7,
+    "ret_pct": -0.239,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Adjusting imports of wind turbines and their parts and co…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:00",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 36.5,
+    "ret_pct": 0.191,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: Output declines as price pressures intensify in Octob…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "00:45",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -55.7,
+    "ret_pct": -0.291,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item National Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:30",
+    "to": "04:30",
+    "dir": "up",
+    "pips": 66.8,
+    "ret_pct": 0.351,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Officials say Japan is weighing cuts to gasoline subsidie…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "04:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -102.7,
+    "ret_pct": -0.537,
+    "minutes": 855,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Is Expected To Continue Rapid Rate Hikes, Focusing On…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "06:30",
+    "dir": "down",
+    "pips": -42.2,
+    "ret_pct": -0.342,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "06:30",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 40.4,
+    "ret_pct": 0.328,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Retail Sales m/m pushed it along (+8.8 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Retail Sales m/m",
+      "ccy": "GBP",
+      "pips": 8.8,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "German Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": 7.6,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "13:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -10.4,
+    "ret_pct": -0.084,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Revised UoM Consumer Sentiment +1 more pushed it along (-6.6 in 15 min, 63% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": -6.6,
+      "share_of_leg": 0.63
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -7.7,
+    "ret_pct": -0.092,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Adjusting imports of wind turbines and their parts and co…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:00",
+    "to": "08:45",
+    "dir": "up",
+    "pips": 7.7,
+    "ret_pct": 0.092,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Officials say Japan is weighing cuts to gasoline subsidie…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "08:45",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -14.2,
+    "ret_pct": -0.17,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but French private sector slips back into contraction in October pushed it along (-4.1 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "French private sector slips back into contraction in October",
+      "ccy": null,
+      "pips": -4.1,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "10:30",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 15.1,
+    "ret_pct": 0.181,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Flash Services PMI +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "16:00",
+    "to": "16:45",
+    "dir": "down",
+    "pips": -7.4,
+    "ret_pct": -0.088,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "16:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 2.4,
+    "ret_pct": 0.029,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: We Could Take All Of The Oil In Iran, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -18.0,
+    "ret_pct": -0.312,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "02:00",
+    "to": "10:15",
+    "dir": "up",
+    "pips": 31.7,
+    "ret_pct": 0.551,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Retail Sales m/m pushed it along (+7.9 in 15 min, 25% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Retail Sales m/m",
+      "ccy": "GBP",
+      "pips": 7.9,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "BOJ Is Expected To Continue Rapid Rate Hikes, Focusing On December",
+      "ccy": null,
+      "pips": 5.3,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "10:15",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -15.4,
+    "ret_pct": -0.266,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK business activity growth accelerates to its fastest si…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "11:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 36.6,
+    "ret_pct": 0.635,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Flash Manufacturing PMI +1 more pushed it along (+7.2 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Flash Manufacturing PMI +1 more",
+      "ccy": "USD",
+      "pips": 7.2,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -12.3,
+    "ret_pct": -0.263,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 45.2,
+    "ret_pct": 0.971,
+    "minutes": 1140,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Is Expected To Continue Rapid Rate Hikes, Focusing On…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 160.0,
+    "ret_pct": 0.162,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -194.4,
+    "ret_pct": -0.196,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Presidential determination pursuant to section 303 of the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 497.2,
+    "ret_pct": 0.503,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but French private sector slips back into contraction in October pushed it along (+90.9 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "French private sector slips back into contraction in October",
+      "ccy": null,
+      "pips": 90.9,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "UK business activity growth accelerates to its fastest since February, helped by rebound in new orders",
+      "ccy": null,
+      "pips": 81.5,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "French Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": 90.9,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "14:00",
+    "to": "17:45",
+    "dir": "down",
+    "pips": -206.0,
+    "ret_pct": -0.207,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Flash Manufacturing PMI +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "17:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 164.8,
+    "ret_pct": 0.166,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 96.2,
+    "ret_pct": 0.103,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -235.8,
+    "ret_pct": -0.253,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Presidential determination pursuant to section 303 of the…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 486.6,
+    "ret_pct": 0.523,
+    "minutes": 675,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but French private sector slips back into contraction in October pushed it along (+76.1 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "French private sector slips back into contraction in October",
+      "ccy": null,
+      "pips": 76.1,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "French Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": 76.1,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "10:30",
+    "to": "11:45",
+    "dir": "down",
+    "pips": -262.1,
+    "ret_pct": -0.28,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK business activity growth accelerates to its fastest si… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "11:45",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 225.3,
+    "ret_pct": 0.241,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "13:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -228.7,
+    "ret_pct": -0.244,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Flash Manufacturing PMI +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -334.9,
+    "ret_pct": -0.203,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Adjusting imports of wind turbines and their parts and co…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1251.3,
+    "ret_pct": 0.76,
+    "minutes": 1155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: Output declines as price pressures intensify in Octob…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -214.7,
+    "ret_pct": -0.115,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink … moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:15",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 507.1,
+    "ret_pct": 0.271,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: Output declines as price pressures intensify in Octob…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "03:00",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -417.6,
+    "ret_pct": -0.223,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Retail Sales m/m pushed it along (-161.0 in 15 min, 39% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Retail Sales m/m",
+      "ccy": "GBP",
+      "pips": -161.0,
+      "share_of_leg": 0.39
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "08:30",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 1006.6,
+    "ret_pct": 0.538,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but French Flash Services PMI +1 more pushed it along (+217.7 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "French Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": 217.7,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "13:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1230.9,
+    "ret_pct": -0.655,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Revised UoM Consumer Sentiment +1 more pushed it along (-244.0 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": -244.0,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "08:15",
+    "dir": "up",
+    "pips": 195.3,
+    "ret_pct": 1.597,
+    "minutes": 795,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Officials say Japan is weighing cuts to gasoline subsidie…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "08:15",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -110.9,
+    "ret_pct": -0.893,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but German Flash Services PMI +1 more pushed it along (-29.1 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "German Flash Services PMI +1 more",
+      "ccy": "EUR",
+      "pips": -29.1,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "10:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 295.3,
+    "ret_pct": 2.399,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -480.8,
+    "ret_pct": -1.19,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump called Musk and asked him to lift Ukraine Starlink …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "03:45",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 403.1,
+    "ret_pct": 1.01,
+    "minutes": 675,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but UK business activity growth accelerates to its fastest sinc… pushed it along (+70.7 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "UK business activity growth accelerates to its fastest since February, helped by rebound in new orders",
+      "ccy": null,
+      "pips": 70.7,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Flash Services PMI +1 more",
+      "ccy": "GBP",
+      "pips": 70.7,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "15:00",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -542.4,
+    "ret_pct": -1.345,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Revised UoM Consumer Sentiment +1 more pushed it along (-148.9 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": -148.9,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 225.2,
+    "ret_pct": 0.566,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: We Could Take All Of The Oil In Iran moved price the other way.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "15:45",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Flash Manufacturing PMI +1 more",
+    "actual": "56.0",
+    "forecast": "55.4",
+    "previous": "57.0",
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.014%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.014,
+    "top_movers": [
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.069,
+      "pips": 4.0,
+      "unit": "pips",
+      "sigma": 2.34
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.049,
+      "pips": 4.0,
+      "unit": "pips",
+      "sigma": 2.2
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.049,
+      "pips": 2.3,
+      "unit": "pips",
+      "sigma": 2.08
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.021,
+      "pips": 1.8,
+      "unit": "pips",
+      "sigma": 2.0
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": 0.036,
+      "pips": 3.3,
+      "unit": "pips",
+      "sigma": 1.96
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": -0.062,
+      "pips": -115.6,
+      "unit": "pips",
+      "sigma": -1.89
+     }
+    ]
+   },
+   {
+    "time": "09:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "French Flash Services PMI +1 more",
+    "actual": "48.4",
+    "forecast": "50.7",
+    "previous": "51.4",
+    "polarity": "normal",
+    "polarity_note": "miss surprise -> EUR weaker 0.093%",
+    "own_ccy_impulse_pct": -0.093,
+    "top_movers": [
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.075,
+      "pips": -8.4,
+      "unit": "pips",
+      "sigma": -4.71
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.08,
+      "pips": 79.7,
+      "unit": "pips",
+      "sigma": 3.41
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.061,
+      "pips": -5.6,
+      "unit": "pips",
+      "sigma": -3.33
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.082,
+      "pips": 76.4,
+      "unit": "pips",
+      "sigma": 3.27
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.032,
+      "pips": -2.7,
+      "unit": "pips",
+      "sigma": -2.99
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.041,
+      "pips": -5.5,
+      "unit": "pips",
+      "sigma": -2.64
+     }
+    ]
+   },
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Retail Sales m/m",
+    "actual": "-0.4%",
+    "forecast": "-0.1%",
+    "previous": "0.5%",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.001%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.001,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": -0.026,
+      "pips": -3.6,
+      "unit": "pips",
+      "sigma": -1.94
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": 0.01,
+      "pips": 0.8,
+      "unit": "pips",
+      "sigma": 0.89
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.016,
+      "pips": 0.9,
+      "unit": "pips",
+      "sigma": 0.74
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": -0.022,
+      "pips": -3.4,
+      "unit": "pips",
+      "sigma": -0.66
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.011,
+      "pips": -1.4,
+      "unit": "pips",
+      "sigma": -0.62
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.013,
+      "pips": -1.1,
+      "unit": "pips",
+      "sigma": -0.61
+     }
+    ]
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Revised UoM Consumer Sentiment +1 more",
+    "actual": "48.0",
+    "forecast": "46.3",
+    "previous": "46.3",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.024%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.024,
+    "top_movers": [
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.057,
+      "pips": -4.0,
+      "unit": "pips",
+      "sigma": -2.71
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": 0.047,
+      "pips": 4.3,
+      "unit": "pips",
+      "sigma": 2.56
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.052,
+      "pips": 4.3,
+      "unit": "pips",
+      "sigma": 2.36
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.13,
+      "pips": -52.2,
+      "unit": "pips ($0.10)",
+      "sigma": -1.69
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.044,
+      "pips": 73.5,
+      "unit": "pips",
+      "sigma": 1.69
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.02,
+      "pips": 2.8,
+      "unit": "pips",
+      "sigma": 1.52
+     }
+    ]
+   },
+   {
+    "time": "09:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Flash Services PMI +1 more",
+    "actual": "51.7",
+    "forecast": "52.5",
+    "previous": "52.9",
+    "polarity": "inverted",
+    "polarity_note": "miss surprise -> EUR stronger 0.048%  (opposite to the textbook sign)",
+    "own_ccy_impulse_pct": 0.048,
+    "top_movers": [
+     {
+      "instrument": "Brent/USD",
+      "pct": -0.191,
+      "pips": -23.7,
+      "unit": "pips ($0.01)",
+      "sigma": -1.6
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.027,
+      "pips": -2.5,
+      "unit": "pips",
+      "sigma": -1.49
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.033,
+      "pips": 30.8,
+      "unit": "pips",
+      "sigma": 1.32
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": -0.028,
+      "pips": -1.3,
+      "unit": "pips",
+      "sigma": -1.18
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.011,
+      "pips": -0.9,
+      "unit": "pips",
+      "sigma": -1.0
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.022,
+      "pips": -1.8,
+      "unit": "pips",
+      "sigma": -0.99
+     }
+    ]
+   },
+   {
+    "time": "10:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Flash Services PMI +1 more",
+    "actual": "53.1",
+    "forecast": "51.8",
+    "previous": "51.7",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.031%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.031,
+    "top_movers": [
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.072,
+      "pips": -8.1,
+      "unit": "pips",
+      "sigma": -4.54
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.11,
+      "pips": 102.4,
+      "unit": "pips",
+      "sigma": 4.38
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": -0.503,
+      "pips": -62.3,
+      "unit": "pips ($0.01)",
+      "sigma": -4.2
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.044,
+      "pips": -3.7,
+      "unit": "pips",
+      "sigma": -4.11
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.084,
+      "pips": 6.9,
+      "unit": "pips",
+      "sigma": 3.79
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.074,
+      "pips": 73.7,
+      "unit": "pips",
+      "sigma": 3.15
+     }
+    ]
+   }
+  ],
+  "headline_count": 20,
+  "top_headlines": [
+   {
+    "time": "10:00",
+    "impact": "high",
+    "title": "BOJ Is Expected To Continue Rapid Rate Hikes, Focusing On December"
+   },
+   {
+    "time": "03:30",
+    "impact": "medium",
+    "title": "Officials say Japan is weighing cuts to gasoline subsidies from December"
+   },
+   {
+    "time": "09:15",
+    "impact": "medium",
+    "title": "French private sector slips back into contraction in October"
+   },
+   {
+    "time": "10:30",
+    "impact": "medium",
+    "title": "UK business activity growth accelerates to its fastest since February, helped by rebound in new orders"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "Trump called Musk and asked him to lift Ukraine Starlink restrictions - WSJ"
+   },
+   {
+    "time": "21:45",
+    "impact": "low",
+    "title": "Adjusting imports of wind turbines and their parts and components into the US"
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "Presidential determination pursuant to section 303 of the defense production act of 1950"
+   },
+   {
+    "time": "00:00",
+    "impact": "low",
+    "title": "AU: Output declines as price pressures intensify in October"
+   },
+   {
+    "time": "02:30",
+    "impact": "low",
+    "title": "JN: Business activity rises solidly again in October, but pace of job creation wanes"
+   },
+   {
+    "time": "06:00",
+    "impact": "low",
+    "title": "US Is Prepared For Long Stand-off With Iran, Says Trump Envoy - FT"
+   },
+   {
+    "time": "08:00",
+    "impact": "low",
+    "title": "Retail sales, Great Britain: September 2026"
+   },
+   {
+    "time": "09:30",
+    "impact": "low",
+    "title": "German business activity growth softens in October"
+   }
+  ],
+  "calendar_ahead": []
+ },
+ "analysis": {
+  "session_summary": "Full trading day was led by pro-cyclical FX: NZD (+0.319%) and AUD (+0.197%) closed at their best, while CHF (-0.348%) and EUR (-0.213%) lagged. US data beats were muted and did not drive the dollar; the French services miss briefly knocked EUR/USD 8.4 pips but not the close. Several legs had no clear catalyst, leaving flow and technicals to dominate. The tape shows stretched EUR shorts via the inverted German PMI reaction and a weak CHF funding tone.",
+  "themes": [
+   {
+    "theme": "Commodity FX outperforms without own catalysts",
+    "evidence": "NZD +0.319% and AUD +0.197%, both closed at their best with no own releases.",
+    "currencies": [
+     "NZD",
+     "AUD"
+    ]
+   },
+   {
+    "theme": "European data miss but EUR weakness is mixed",
+    "evidence": "French services PMI miss weakened EUR 0.093%; German services PMI miss inverted to strengthen EUR 0.048%, yet EUR closed -0.213%.",
+    "currencies": [
+     "EUR"
+    ]
+   },
+   {
+    "theme": "CHF funding weakness drives high-beta crosses",
+    "evidence": "CHF -0.348% was weakest; USD/CHF +0.407%, NZD/CHF +0.67%, CHF/JPY -0.392%.",
+    "currencies": [
+     "CHF",
+     "USD",
+     "JPY",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "US data beats were muted",
+    "evidence": "Flash Manufacturing PMI 56.0 vs 55.4 and Revised UoM 48.0 vs 46.3 both produced basket moves inside the noise floor.",
+    "currencies": [
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Own data were muted; dollar recovered from early selling without a clear catalyst.",
+   "EUR": "French services PMI miss weakened EUR, while German services miss briefly lifted it.",
+   "JPY": "No own releases; BOJ rate-hike headlines supported an early bid that faded.",
+   "GBP": "UK retail sales and services PMI were muted, leaving no clear own driver.",
+   "AUD": "No own releases; closed at its best without a clear catalyst.",
+   "CAD": "No own releases; held its range and closed firmer with no clear catalyst.",
+   "CHF": "No own releases; early bid rejected, ended weakest among majors.",
+   "NZD": "No own releases; led strength and closed at its best without a clear catalyst."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD net fell 30.7 pips on EUR weakness; the 02:30-10:45 decline was partly driven by French services PMI (-10.4 pips, 30% of leg), while other legs lacked identifiable catalysts."
+  },
+  "polarity_reads": [
+   {
+    "event": "French Flash Services PMI +1 more",
+    "read": "Clean EUR downside: a miss weakened EUR 0.093%; no positioning distortion."
+   },
+   {
+    "event": "German Flash Services PMI +1 more",
+    "read": "Inverted reaction: a miss strengthened EUR 0.048%, implying crowded shorts were squeezed."
+   },
+   {
+    "event": "Flash Manufacturing PMI +1 more",
+    "read": "USD beat was muted (basket -0.014% inside noise); market did not chase dollar strength."
+   },
+   {
+    "event": "Revised UoM Consumer Sentiment +1 more",
+    "read": "USD beat was muted (basket +0.024% inside noise); sentiment beat did not alter positioning."
+   },
+   {
+    "event": "UK Retail Sales m/m",
+    "read": "GBP ignored the miss (basket 0.001% inside noise); downside was already exhausted or offset."
+   },
+   {
+    "event": "Flash Services PMI +1 more",
+    "read": "GBP did not rally on the beat (basket 0.031% inside noise); gains were faded against EUR."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Commodity FX and weak CHF continuation",
+    "probability": 0.45,
+    "thesis": "The session's pro-cyclical bias extends: NZD and AUD stay bid, CHF remains the funding laggard, and US data continues to be ignored.",
+    "triggers": [
+     "NZD/USD holds above 0.56985",
+     "USD/CHF holds above 0.82513",
+     "AUD/USD remains above 0.7031"
+    ],
+    "invalidation": "NZD/USD drops below 0.56985 or USD/CHF breaks below 0.82513.",
+    "pair_paths": [
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 14.8,
+      "rationale": "Strongest currency, closed at best; daily gain 14.8 pips likely extends."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 33.6,
+      "rationale": "CHF weakest; USD/CHF daily gain 33.6 pips may continue."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 9.6,
+      "rationale": "AUD strength with no own releases; daily gain 9.6 pips sets path."
+     }
+    ]
+   },
+   {
+    "name": "Mean reversion in stretched crosses",
+    "probability": 0.35,
+    "thesis": "The sharp CHF/JPY and EUR/CHF moves stall; profit-taking lifts CHF and yen crosses while trimming commodity-FX gains.",
+    "triggers": [
+     "CHF/JPY stabilizes above 190.187",
+     "EUR/CHF fails to push above 0.92359",
+     "USD/CHF fails at 0.82513"
+    ],
+    "invalidation": "USD/CHF extends above 0.82513 and NZD/CHF above 0.47013.",
+    "pair_paths": [
+     {
+      "instrument": "CHF/JPY",
+      "direction": "up",
+      "magnitude_pips": 74.9,
+      "rationale": "Daily drop -74.9 pips; corrective bounce likely if CHF selling pauses."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 33.6,
+      "rationale": "USD/CHF daily gain 33.6 pips unwinds."
+     },
+     {
+      "instrument": "EUR/CHF",
+      "direction": "down",
+      "magnitude_pips": 12.4,
+      "rationale": "EUR/CHF daily gain 12.4 pips retraces as CHF recovers."
+     }
+    ]
+   },
+   {
+    "name": "Dollar reverses lower on US data fatigue",
+    "probability": 0.2,
+    "thesis": "Muted US beats fail to hold dollar gains; DXY drops back and EUR/USD recovers its daily loss, but commodity FX stays firm.",
+    "triggers": [
+     "DXY/USD falls below 101.634",
+     "EUR/USD reclaims 1.11933",
+     "USD/JPY fails to hold 156.937"
+    ],
+    "invalidation": "USD/CHF holds above 0.82513 and EUR/USD cannot recover 1.11933.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 30.7,
+      "rationale": "Daily decline -30.7 pips reverses if EUR shorts cover."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 2.3,
+      "rationale": "Small daily gain 2.3 pips unwinds with a softer dollar."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 31.0,
+      "rationale": "GBP daily loss -31.0 pips can reverse with dollar weakness."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "CHF weakness accelerates despite risk-on FX",
+    "why_it_matters": "USD/CHF closed near its range high (0.97) and CHF/JPY fell -74.9 pips; a crowded funding unwind can amplify crosses.",
+    "watch": "USD/CHF 0.82513 and NZD/CHF 0.47013."
+   },
+   {
+    "risk": "EUR short squeeze from inverted German PMI",
+    "why_it_matters": "German services miss strengthened EUR 0.048%, suggesting crowded shorts; any positive surprise can trigger a sharp EUR rebound.",
+    "watch": "EUR/USD 1.11933 and EUR/CHF 0.92359."
+   },
+   {
+    "risk": "VIX rises despite pro-risk FX bid",
+    "why_it_matters": "VIX +4.056% to 19.859 while AUD/NZD strength; equity vol can spill into FX if it accelerates.",
+    "watch": "VIX/USD 19.859."
+   }
+  ],
+  "calendar_ahead_note": "No calendar events scheduled in the coming window.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 22049,
+   "completion_tokens": 8952,
+   "total_tokens": 31001,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6801
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 21409
+  }
+ }
+}
