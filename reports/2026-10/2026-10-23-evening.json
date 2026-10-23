@@ -13,7 +13,7 @@
   "end_local": "2026-10-23T19:00:00+02:00",
   "fwd_start_utc": "2026-10-23T17:00:00+00:00",
   "fwd_end_utc": "2026-10-26T18:00:00+00:00",
-  "generated_utc": "2026-10-23T17:05:24.075307+00:00",
+  "generated_utc": "2026-10-23T20:20:43.231983+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 70
+   "with_actual": 62
   }
  },
  "facts": {
@@ -2521,206 +2521,177 @@
   "calendar_ahead": []
  },
  "analysis": {
-  "session_summary": "Full trading day was led by pro-cyclical FX: NZD (+0.319%) and AUD (+0.197%) closed at their best, while CHF (-0.348%) and EUR (-0.213%) lagged. US data beats were muted and did not drive the dollar; the French services miss briefly knocked EUR/USD 8.4 pips but not the close. Several legs had no clear catalyst, leaving flow and technicals to dominate. The tape shows stretched EUR shorts via the inverted German PMI reaction and a weak CHF funding tone.",
+  "session_summary": "Commodity-linked currencies led, with NZD +0.319%, AUD +0.197%, and CAD +0.110% closing firm, while CHF -0.348% and EUR -0.213% lagged. French services PMI missed and dragged EUR lower, but German PMI produced an inverted bounce, suggesting short positioning. US data were muted; USD recovered early losses to close slightly higher. The tape was choppy with most legs lacking a clear catalyst.",
   "themes": [
    {
-    "theme": "Commodity FX outperforms without own catalysts",
-    "evidence": "NZD +0.319% and AUD +0.197%, both closed at their best with no own releases.",
+    "theme": "Commodity FX bid",
+    "evidence": "NZD closed at its best (0.319%), AUD closed at its best (0.197%), CAD held its range (0.110%).",
     "currencies": [
      "NZD",
-     "AUD"
+     "AUD",
+     "CAD"
     ]
    },
    {
-    "theme": "European data miss but EUR weakness is mixed",
-    "evidence": "French services PMI miss weakened EUR 0.093%; German services PMI miss inverted to strengthen EUR 0.048%, yet EUR closed -0.213%.",
+    "theme": "European underperformance",
+    "evidence": "EUR -0.213%, GBP -0.171%, CHF -0.348%; French services PMI fell into contraction at 48.4 vs 50.7.",
+    "currencies": [
+     "EUR",
+     "GBP",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Inverted German data reaction",
+    "evidence": "German Flash Services PMI missed (51.7 vs 52.5) but EUR strengthened 0.048%.",
     "currencies": [
      "EUR"
-    ]
-   },
-   {
-    "theme": "CHF funding weakness drives high-beta crosses",
-    "evidence": "CHF -0.348% was weakest; USD/CHF +0.407%, NZD/CHF +0.67%, CHF/JPY -0.392%.",
-    "currencies": [
-     "CHF",
-     "USD",
-     "JPY",
-     "NZD"
-    ]
-   },
-   {
-    "theme": "US data beats were muted",
-    "evidence": "Flash Manufacturing PMI 56.0 vs 55.4 and Revised UoM 48.0 vs 46.3 both produced basket moves inside the noise floor.",
-    "currencies": [
-     "USD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Own data were muted; dollar recovered from early selling without a clear catalyst.",
-   "EUR": "French services PMI miss weakened EUR, while German services miss briefly lifted it.",
-   "JPY": "No own releases; BOJ rate-hike headlines supported an early bid that faded.",
-   "GBP": "UK retail sales and services PMI were muted, leaving no clear own driver.",
-   "AUD": "No own releases; closed at its best without a clear catalyst.",
-   "CAD": "No own releases; held its range and closed firmer with no clear catalyst.",
-   "CHF": "No own releases; early bid rejected, ended weakest among majors.",
-   "NZD": "No own releases; led strength and closed at its best without a clear catalyst."
+   "USD": "US data muted; early selling to -0.10% was rejected.",
+   "EUR": "French PMI miss dragged EUR lower, but German PMI inverted bounce limited damage.",
+   "JPY": "No own releases; early attempt higher was rejected and gave back 76%.",
+   "GBP": "Retail sales and services PMI both muted, leaving GBP soft with no clear catalyst.",
+   "AUD": "No own releases; commodity bid kept it firm and it closed at its best.",
+   "CAD": "No own releases; quiet range trade with mild strength.",
+   "CHF": "No own releases; early strength attempt failed, leaving CHF the weakest major.",
+   "NZD": "No own releases; strongest major, closing at its best."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD net fell 30.7 pips on EUR weakness; the 02:30-10:45 decline was partly driven by French services PMI (-10.4 pips, 30% of leg), while other legs lacked identifiable catalysts."
+   "EUR/USD": "EUR/USD chopped through multiple uncaused legs; only the French services PMI miss provided a measurable push lower, net down 30.7 pips."
   },
   "polarity_reads": [
    {
-    "event": "French Flash Services PMI +1 more",
-    "read": "Clean EUR downside: a miss weakened EUR 0.093%; no positioning distortion."
-   },
-   {
     "event": "German Flash Services PMI +1 more",
-    "read": "Inverted reaction: a miss strengthened EUR 0.048%, implying crowded shorts were squeezed."
+    "read": "EUR strengthened 0.048% despite a miss, implying short EUR positioning was squeezed and downside exhausted near-term."
    },
    {
-    "event": "Flash Manufacturing PMI +1 more",
-    "read": "USD beat was muted (basket -0.014% inside noise); market did not chase dollar strength."
-   },
-   {
-    "event": "Revised UoM Consumer Sentiment +1 more",
-    "read": "USD beat was muted (basket +0.024% inside noise); sentiment beat did not alter positioning."
-   },
-   {
-    "event": "UK Retail Sales m/m",
-    "read": "GBP ignored the miss (basket 0.001% inside noise); downside was already exhausted or offset."
-   },
-   {
-    "event": "Flash Services PMI +1 more",
-    "read": "GBP did not rally on the beat (basket 0.031% inside noise); gains were faded against EUR."
+    "event": "French Flash Services PMI +1 more",
+    "read": "EUR fell 0.093% on a contractionary miss, consistent with normal data-driven selling."
    }
   ],
   "scenarios": [
    {
-    "name": "Commodity FX and weak CHF continuation",
-    "probability": 0.45,
-    "thesis": "The session's pro-cyclical bias extends: NZD and AUD stay bid, CHF remains the funding laggard, and US data continues to be ignored.",
+    "name": "Commodity FX continuation",
+    "probability": 0.5,
+    "thesis": "Broad risk appetite and commodity strength extend, keeping NZD/AUD/CAD bid while EUR and CHF remain pressured.",
     "triggers": [
-     "NZD/USD holds above 0.56985",
-     "USD/CHF holds above 0.82513",
-     "AUD/USD remains above 0.7031"
+     "NZD/USD holds above 0.5699 close and extends",
+     "AUD/USD remains above 0.7031 close",
+     "EUR/USD stays below 1.1193 close"
     ],
-    "invalidation": "NZD/USD drops below 0.56985 or USD/CHF breaks below 0.82513.",
+    "invalidation": "EUR/USD breaks back above 1.1193 and German PMI trend reverses.",
     "pair_paths": [
-     {
-      "instrument": "NZD/USD",
-      "direction": "up",
-      "magnitude_pips": 14.8,
-      "rationale": "Strongest currency, closed at best; daily gain 14.8 pips likely extends."
-     },
-     {
-      "instrument": "USD/CHF",
-      "direction": "up",
-      "magnitude_pips": 33.6,
-      "rationale": "CHF weakest; USD/CHF daily gain 33.6 pips may continue."
-     },
      {
       "instrument": "AUD/USD",
       "direction": "up",
       "magnitude_pips": 9.6,
-      "rationale": "AUD strength with no own releases; daily gain 9.6 pips sets path."
-     }
-    ]
-   },
-   {
-    "name": "Mean reversion in stretched crosses",
-    "probability": 0.35,
-    "thesis": "The sharp CHF/JPY and EUR/CHF moves stall; profit-taking lifts CHF and yen crosses while trimming commodity-FX gains.",
-    "triggers": [
-     "CHF/JPY stabilizes above 190.187",
-     "EUR/CHF fails to push above 0.92359",
-     "USD/CHF fails at 0.82513"
-    ],
-    "invalidation": "USD/CHF extends above 0.82513 and NZD/CHF above 0.47013.",
-    "pair_paths": [
+      "rationale": "AUD closed at its best and led commodity FX, supporting continuation."
+     },
      {
-      "instrument": "CHF/JPY",
+      "instrument": "NZD/USD",
       "direction": "up",
-      "magnitude_pips": 74.9,
-      "rationale": "Daily drop -74.9 pips; corrective bounce likely if CHF selling pauses."
+      "magnitude_pips": 14.8,
+      "rationale": "NZD was strongest major, closing at its best."
      },
      {
       "instrument": "USD/CHF",
-      "direction": "down",
+      "direction": "up",
       "magnitude_pips": 33.6,
-      "rationale": "USD/CHF daily gain 33.6 pips unwinds."
-     },
-     {
-      "instrument": "EUR/CHF",
-      "direction": "down",
-      "magnitude_pips": 12.4,
-      "rationale": "EUR/CHF daily gain 12.4 pips retraces as CHF recovers."
+      "rationale": "CHF weakness and USD recovery favor upside."
      }
     ]
    },
    {
-    "name": "Dollar reverses lower on US data fatigue",
-    "probability": 0.2,
-    "thesis": "Muted US beats fail to hold dollar gains; DXY drops back and EUR/USD recovers its daily loss, but commodity FX stays firm.",
+    "name": "European bounce / mean reversion",
+    "probability": 0.3,
+    "thesis": "Stretched EUR and CHF weakness fade as short positioning unwinds; commodity gains take a breather.",
     "triggers": [
-     "DXY/USD falls below 101.634",
-     "EUR/USD reclaims 1.11933",
-     "USD/JPY fails to hold 156.937"
+     "EUR/USD regains 1.1193 and holds",
+     "USD/CHF fails below 0.8251 close",
+     "AUD/USD stalls below 0.7031"
     ],
-    "invalidation": "USD/CHF holds above 0.82513 and EUR/USD cannot recover 1.11933.",
+    "invalidation": "NZD/USD makes fresh highs above 0.5699 and EUR/USD remains below 1.1193.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 30.7,
-      "rationale": "Daily decline -30.7 pips reverses if EUR shorts cover."
+      "rationale": "Daily drop of 30.7 pips reverses as short EUR positioning unwinds."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 33.6,
+      "rationale": "CHF short covering after 0.409% USD/CHF rise."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 9.6,
+      "rationale": "Commodity longs take profit after closed at best."
+     }
+    ]
+   },
+   {
+    "name": "Choppy range",
+    "probability": 0.2,
+    "thesis": "No calendar drivers leaves flows to dominate, with pairs holding recent ranges.",
+    "triggers": [
+     "EUR/USD stays inside 46.5-pip range",
+     "USD/JPY remains near 156.937 close",
+     "VIX holds near 19.859"
+    ],
+    "invalidation": "Break of EUR/USD daily range and a fresh headline catalyst.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 46.5,
+      "rationale": "Lack of catalyst keeps EUR/USD within its 46.5-pip daily range."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 2.3,
-      "rationale": "Small daily gain 2.3 pips unwinds with a softer dollar."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "up",
-      "magnitude_pips": 31.0,
-      "rationale": "GBP daily loss -31.0 pips can reverse with dollar weakness."
+      "direction": "range",
+      "magnitude_pips": 107.9,
+      "rationale": "USD/JPY already traded a 107.9-pip range and closed mid-range, supporting mean reversion."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "CHF weakness accelerates despite risk-on FX",
-    "why_it_matters": "USD/CHF closed near its range high (0.97) and CHF/JPY fell -74.9 pips; a crowded funding unwind can amplify crosses.",
-    "watch": "USD/CHF 0.82513 and NZD/CHF 0.47013."
+    "risk": "Inverted German data reaction signals crowded short EUR",
+    "why_it_matters": "A negative number failed to push EUR down, so further misses may trigger sharp EUR squeezes.",
+    "watch": "If German or euro-area data miss and EUR strengthens again."
    },
    {
-    "risk": "EUR short squeeze from inverted German PMI",
-    "why_it_matters": "German services miss strengthened EUR 0.048%, suggesting crowded shorts; any positive surprise can trigger a sharp EUR rebound.",
-    "watch": "EUR/USD 1.11933 and EUR/CHF 0.92359."
+    "risk": "CHF weakness is extreme and may bounce violently",
+    "why_it_matters": "CHF fell 0.348% and its early strength attempt was rejected; shorts are crowded.",
+    "watch": "USD/CHF reversal near 0.8251 close or safe-haven flows."
    },
    {
-    "risk": "VIX rises despite pro-risk FX bid",
-    "why_it_matters": "VIX +4.056% to 19.859 while AUD/NZD strength; equity vol can spill into FX if it accelerates.",
-    "watch": "VIX/USD 19.859."
+    "risk": "Commodity FX rally is vulnerable to risk-off",
+    "why_it_matters": "NZD/AUD/CAD led despite VIX rising 4.056%, so a sentiment turn could unwind quickly.",
+    "watch": "VIX 19.859 and any headline-driven risk reversal."
    }
   ],
-  "calendar_ahead_note": "No calendar events scheduled in the coming window.",
+  "calendar_ahead_note": "No high-impact events are scheduled in the coming window; headline flow and technical levels will likely dominate.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 22049,
-   "completion_tokens": 8952,
-   "total_tokens": 31001,
+   "completion_tokens": 7483,
+   "total_tokens": 29532,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 22016
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 6801
+    "reasoning_tokens": 5786
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 21409
+   "prompt_cache_hit_tokens": 22016,
+   "prompt_cache_miss_tokens": 33
   }
  }
 }
