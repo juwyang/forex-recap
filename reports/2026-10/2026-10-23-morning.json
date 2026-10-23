@@ -13,7 +13,7 @@
   "end_local": "2026-10-23T07:00:00+02:00",
   "fwd_start_utc": "2026-10-23T05:00:00+00:00",
   "fwd_end_utc": "2026-10-23T17:00:00+00:00",
-  "generated_utc": "2026-10-23T05:27:15.301792+00:00",
+  "generated_utc": "2026-10-23T09:59:01.728804+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 54
+   "with_actual": 55
   }
  },
  "facts": {
@@ -1659,179 +1659,152 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was choppy and headline-sensitive but with no confirmed catalyst; event reactions were empty and all legs had confidence 'none'. NZD was strongest and AUD weakest, leaving AUD/NZD down 0.333%. USD firmed modestly while VIX rose 1.789%, and USD/JPY's late rebound got a 24.9-pip, 31% contribution from a Japan gasoline-subsidy headline. Most majors held tight ranges, with EUR/USD closing at its low and 66% of its -0.135% move attributable to EUR.",
+  "session_summary": "Overnight NY afternoon to Asia trade produced no high-impact data and only one clear catalyst; Japan's gasoline-subsidy headline pushed USD/JPY higher by 24.9 pips within a 79.1-pip bounce. NZD led at +0.144% while AUD lagged at -0.189%, driving AUD/NZD down 41.1 pips to -0.333%. DXY closed +0.109% at 101.52 with VIX up 1.789 points to 19.43. The no-catalyst tape left EUR/USD at the bottom of a 22.4-pip range after three legs.",
   "themes": [
    {
-    "theme": "No confirmed catalyst",
-    "evidence": "Every leg has confidence 'none' and the event-reaction list is empty.",
-    "currencies": [
-     "USD",
-     "EUR",
-     "GBP",
-     "JPY",
-     "AUD",
-     "NZD",
-     "CHF",
-     "CAD"
-    ]
-   },
-   {
     "theme": "Antipodean divergence",
-    "evidence": "NZD strength 0.144% vs AUD weakness -0.189%; AUD/NZD fell 0.333%.",
+    "evidence": "NZD +0.144% vs AUD -0.189%; AUD/NZD -41.1 pips (-0.333%).",
     "currencies": [
      "NZD",
      "AUD"
     ]
    },
    {
-    "theme": "JPY headline sensitivity",
-    "evidence": "USD/JPY's 02:15–06:45 up leg gained 24.9 pips, 31% of the move, on gasoline-subsidy headline.",
+    "theme": "Headline noise without price ownership",
+    "evidence": "All seven headlines were low-impact and leg notes repeatedly say 'too weak to own the move.'",
     "currencies": [
+     "USD",
+     "EUR",
+     "GBP",
+     "CHF",
      "JPY",
-     "USD"
+     "CAD",
+     "AUD",
+     "NZD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No clear catalyst; closed at its best despite a dip, with no release behind it.",
-   "EUR": "No clear catalyst; held a weak range, no own releases to explain softness.",
-   "JPY": "No clear catalyst; an early bid faded sharply, leaving only a small gain.",
-   "GBP": "No clear catalyst; held its range with no fundamental driver.",
-   "AUD": "No clear catalyst; stayed under pressure throughout, weakest of majors.",
-   "CAD": "No clear catalyst; steady bid with no identifiable driver.",
-   "CHF": "No clear catalyst; an early bid was rejected yet it still closed firm.",
-   "NZD": "No clear catalyst; selling rejected and flow-driven recovery left it strongest."
+   "USD": "DXY closed at its best, +0.109%, with no US data or clear catalyst.",
+   "EUR": "No clear catalyst; held its range and closed -0.09%.",
+   "JPY": "Japan gasoline-subsidy headline pressured it; +0.36% peak faded to +0.009%.",
+   "GBP": "No clear catalyst; held its range and closed -0.044%.",
+   "AUD": "No clear catalyst; weakest at -0.189% and closed at its trough.",
+   "CAD": "No clear catalyst; closed at its best, +0.048%.",
+   "CHF": "No clear catalyst; led +0.19% but gave back 70% to +0.076%.",
+   "NZD": "No clear catalyst; sold to -0.10% then recovered 83% to +0.144%."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD: three choppy legs with no clear catalyst, closing at its 22.4-pip range low after EUR weakness drove 66% of the -0.135% slide."
+   "EUR/USD": "The pair traced three no-catalyst legs (-15.5, +12.1, -15.7 pips) to close at 1.12088, the bottom of a 22.4-pip range."
   },
   "polarity_reads": [],
   "scenarios": [
    {
-    "name": "Firm US data extends USD bid",
+    "name": "AUD/NZD extension lower",
     "probability": 0.45,
-    "thesis": "Upcoming US Flash PMIs and revised UoM exceed forecasts, reinforcing overnight USD strength and VIX bid.",
+    "thesis": "AUD remains weakest and NZD strongest with no catalyst to reverse the antipodean divergence.",
     "triggers": [
-     "US Flash Manufacturing/Services PMI above forecast",
-     "Revised UoM Consumer Sentiment not revised down",
-     "No dovish surprise in Fed-sensitive headlines"
+     "AUD/NZD holds below 1.23111",
+     "AUD/USD closes near 0.70048",
+     "NZD/USD stays above 0.56892"
     ],
-    "invalidation": "US data prints soft and risk sentiment rebounds.",
+    "invalidation": "AUD/NZD reclaims 1.23111 and AUD/USD moves back above 0.70048 intraday.",
     "pair_paths": [
      {
-      "instrument": "EUR/USD",
+      "instrument": "AUD/NZD",
       "direction": "down",
-      "magnitude_pips": 22.4,
-      "rationale": "EUR remains weakest contributor and USD firm, mirroring overnight 0.135% slide."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 104.2,
-      "rationale": "USD strength and JPY headline sensitivity favor extension of late rebound."
+      "magnitude_pips": 47.4,
+      "rationale": "Window range 47.4 pips; gap between AUD -0.189% and NZD +0.144% supports extension."
      },
      {
       "instrument": "AUD/USD",
       "direction": "down",
       "magnitude_pips": 19.6,
-      "rationale": "AUD already weakest; risk-off USD bid compounds downside."
+      "rationale": "AUD/USD window range 19.6 pips; close at 0.70048 leaves room toward the lower end."
      }
     ]
    },
    {
-    "name": "European data snapback",
+    "name": "Dollar mean reversion after DXY top",
     "probability": 0.35,
-    "thesis": "Eurozone PMIs beat and GBP retail sales stable, allowing EUR and GBP to recover against USD from oversold overnight levels.",
+    "thesis": "DXY closed at the top of its 21.7-point range, risking a pullback that lifts EUR/USD from its 0.0% range position.",
     "triggers": [
-     "French/German PMIs above forecast",
-     "UK Retail Sales not worse than -0.1%",
-     "VIX stabilizes below 19.43"
+     "DXY slips from 101.52",
+     "EUR/USD holds above 1.12088"
     ],
-    "invalidation": "Eurozone data disappoints or US data very strong.",
+    "invalidation": "DXY makes fresh highs above 101.52 and EUR/USD breaks below 1.12088.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 22.4,
-      "rationale": "EUR unwind of overnight 0.09% decline as positive PMIs lift the common currency."
+      "rationale": "EUR/USD window range 22.4 pips; close at range low sets up a mean reversion."
      },
      {
       "instrument": "GBP/USD",
       "direction": "up",
       "magnitude_pips": 20.0,
-      "rationale": "GBP held its range overnight and can recover if retail sales not weak."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 19.6,
-      "rationale": "Risk recovery would lift the most oversold AUD, though still fragile."
+      "rationale": "GBP/USD window range 20.0 pips; dollar pullback can lift cable toward the top of that range."
      }
     ]
    },
    {
-    "name": "No-catalyst chop persists",
+    "name": "Calendar data breakout",
     "probability": 0.2,
-    "thesis": "Data mixed and headlines fail to generate conviction, leaving currencies rangebound as overnight legs suggest no durable catalyst.",
+    "thesis": "GBP retail sales and flash PMIs finally give the tape a real catalyst; USD PMI strength can extend DXY gains.",
     "triggers": [
-     "Eurozone/US PMIs print near forecast",
-     "No new Iran/risk headline",
-     "Pairs hold inside overnight ranges"
+     "UK Retail Sales m/m beats -0.1%",
+     "US Flash Services PMI beats 57.9",
+     "German Flash Manufacturing PMI misses 53.5"
     ],
-    "invalidation": "A clear surprise in data or risk headline breaks ranges.",
+    "invalidation": "All PMIs print in line and headline flow remains low-impact.",
     "pair_paths": [
      {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 20.0,
+      "rationale": "GBP/USD window range 20.0 pips; a strong UK retail print targets the top of that range."
+     },
+     {
       "instrument": "EUR/USD",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 22.4,
-      "rationale": "22.4-pip overnight range likely remains the near-term envelope absent a catalyst."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 104.2,
-      "rationale": "104.2-pip range reflects headline-driven whipsaw; without follow-on headlines it can stay choppy."
-     },
-     {
-      "instrument": "AUD/NZD",
-      "direction": "range",
-      "magnitude_pips": 47.4,
-      "rationale": "Divergent NZD/AUD flows may pause after 0.333% slide; 47.4-pip range is wide enough for chop."
+      "rationale": "EUR/USD window range 22.4 pips; soft Euro PMIs and firm US PMIs can extend the -15.2-pip close lower."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Iran standoff headlines escalate into broader risk-off",
-    "why_it_matters": "VIX already rose 1.789% and the tape is headline-sensitive, so further escalation would pressure high-beta FX like AUD.",
-    "watch": "VIX, Brent/Gold, and top headlines."
+    "risk": "AUD and NZD moves lack clear catalysts",
+    "why_it_matters": "The extreme AUD/NZD -0.333% move may be flow-driven and prone to snap back.",
+    "watch": "AUD/NZD range 47.4 pips."
    },
    {
-    "risk": "Japan gasoline subsidy speculation drives JPY whipsaw",
-    "why_it_matters": "USD/JPY already moved a 104.2-pip range with a 24.9-pip contribution from that single headline.",
-    "watch": "Official Japan commentary and USD/JPY 156.97 close vicinity."
+    "risk": "Japan headline is the only measurable event",
+    "why_it_matters": "A one-sided gasoline-subsidy narrative can push USD/JPY beyond its 104.2-pip range.",
+    "watch": "USD/JPY close 156.974 and range 104.2."
    },
    {
-    "risk": "No-catalyst technical breaks fail",
-    "why_it_matters": "All overnight legs had confidence 'none', so false breaks may retrace quickly.",
-    "watch": "EUR/USD 22.4-pip range low and AUD/NZD 0.333% decline."
+    "risk": "VIX rose 1.789 points to 19.43",
+    "why_it_matters": "Rising vol can widen ranges if headline flow increases.",
+    "watch": "VIX close 19.43 and DXY top 101.52."
    }
   ],
-  "calendar_ahead_note": "GBP Retail Sales, Eurozone flash PMIs, US flash PMIs, and revised UoM consumer sentiment can all shift the picture; the empty reaction profile so far means these are the next real catalyst tests.",
+  "calendar_ahead_note": "Coming window has GBP Retail Sales at 08:00, Eurozone flash PMIs at 09:15/09:30, UK PMIs at 10:30, US flash PMIs and revised UoM at 15:45/16:00. Any upside surprise in US data can extend DXY; soft Euro/UK data would pressure EUR/GBP.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14682,
-   "completion_tokens": 6590,
-   "total_tokens": 21272,
+   "completion_tokens": 8168,
+   "total_tokens": 22850,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 14592
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 4871
+    "reasoning_tokens": 6493
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 14042
+   "prompt_cache_hit_tokens": 14592,
+   "prompt_cache_miss_tokens": 90
   }
  }
 }
