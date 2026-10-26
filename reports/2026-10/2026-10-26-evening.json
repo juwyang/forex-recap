@@ -13,7 +13,7 @@
   "end_local": "2026-10-26T19:00:00+01:00",
   "fwd_start_utc": "2026-10-26T18:00:00+00:00",
   "fwd_end_utc": "2026-10-27T18:00:00+00:00",
-  "generated_utc": "2026-10-26T20:41:01.607510+00:00",
+  "generated_utc": "2026-10-26T22:36:12.832093+00:00",
   "partial": false,
   "coverage_min": 4380,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 72
+   "with_actual": 64
   }
  },
  "facts": {
@@ -1898,11 +1898,11 @@
   ]
  },
  "analysis": {
-  "session_summary": "Broad USD bid and risk-on tone dominated the Friday-close-to-Asia tape; DXY added 0.081% to 101.716 while VIX fell 3.903% to 19.084. USD/JPY led with +47.7 pips to 157.414 and JPY was the weakest major; EUR/USD was nearly flat at -2.2 pips. The only medium-confidence catalyst was the WSJ report that Trump was expected to remove some Canada tariffs, which briefly sent USD/CAD down -11.6 pips before a full retrace. Almost all other legs carried 'no clear catalyst' notes, leaving the tape vulnerable to the next headline.",
+  "session_summary": "The weekend tape was quiet and mostly missing hard catalysts: event reactions were empty and nearly every zigzag leg had no clear cause. USD selling was rejected and the dollar closed firmer, while JPY was the weakest major and CHF gave back an early bid. Risk appetite improved at the margin with VIX/USD down -3.903% and USD/JPY up 47.7 pips, though EUR/USD barely moved with a 2.2-pip loss. The only calendar item ahead is US CB Consumer Confidence, which can reset the dollar tone.",
   "themes": [
    {
-    "theme": "Broad USD bid with no macro driver",
-    "evidence": "USD strength rank 1 (+0.112%), DXY +0.081%, USD/JPY +0.304%; most USD legs had no clear catalyst.",
+    "theme": "Broad risk-on without fresh escalation",
+    "evidence": "VIX/USD fell -3.903% to 19.084; USD/JPY rallied 47.7 pips to 157.414; Brent/USD moved erratically but no new negative headline.",
     "currencies": [
      "USD",
      "JPY",
@@ -1910,163 +1910,166 @@
     ]
    },
    {
-    "theme": "JPY underperformance as VIX falls",
-    "evidence": "JPY strength -0.192 rank 8; VIX -3.903% to 19.084; USD/JPY +47.7 pips; CHF/JPY +22.2 pips.",
+    "theme": "USD selling rejected",
+    "evidence": "USD strength 0.112% after intraday trough -0.091%; DXY/USD closed +0.081%.",
     "currencies": [
-     "JPY",
-     "CHF",
      "USD"
     ]
    },
    {
-    "theme": "Canada tariff relief briefly lifts CAD",
-    "evidence": "USD/CAD first leg down -11.6 pips on Trump tariff-removal headline with medium confidence; final USD/CAD +6.5 pips.",
+    "theme": "No macro catalyst for most pair moves",
+    "evidence": "Legs repeatedly show confidence none, cause null, or nearest item too weak; event_reactions array is empty.",
     "currencies": [
+     "EUR",
+     "GBP",
+     "AUD",
+     "NZD",
      "CAD",
-     "USD"
+     "CHF",
+     "JPY"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Broad dollar bid with no clear catalyst; DXY +0.081% and strength rank 1, selling rejected.",
-   "EUR": "Held its range, supported by France Moody's headlines; no major catalyst.",
-   "JPY": "Weakest major with no clear catalyst; attempt rejected, gave back 88%.",
-   "GBP": "Selling rejected, recovered 72%; no clear catalyst.",
-   "AUD": "Selling rejected, recovered 66%; no clear catalyst.",
-   "CAD": "Closed at its best; tariff-removal headline briefly supported, rank 3.",
-   "CHF": "Attempt rejected, gave back 98%; no clear catalyst.",
-   "NZD": "Selling rejected, recovered 74% but closed lower; no clear catalyst."
+   "USD": "Early selling rejected and closed firmer; no US data or rate driver in window.",
+   "EUR": "Held its range near highs; no euro-area catalyst, only brief France Moody's headline support.",
+   "JPY": "Led +0.06% then gave back 88%; closed weakest; no Japanese catalyst.",
+   "GBP": "Sold to -0.097%, recovered 72%; no UK catalyst in window.",
+   "AUD": "Sold to -0.149%, recovered 66%; no Australian catalyst.",
+   "CAD": "Closed at its best after WSJ report on removing Canadian tariffs; no domestic data.",
+   "CHF": "Led +0.146% then gave back 98%; no Swiss catalyst.",
+   "NZD": "Sold to -0.235%, recovered 74%; no New Zealand catalyst."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped in a 52.7-pip range, closing at 1.11911 (-2.2 pips); the largest down-leg from 03:30 to 14:45 (-51.5 pips) and the subsequent up-leg both lacked clear catalysts."
+   "EUR/USD": "A Lescure-driven early bounce gave way to a no-catalyst fade into 14:45, then a final 16.6-pip bounce left it 2.2 pips lower with no single dominant driver."
   },
   "polarity_reads": [],
   "scenarios": [
    {
-    "name": "Broad USD drift persists",
-    "probability": 0.45,
-    "thesis": "No first-tier catalyst before CB Consumer Confidence; the broad USD bid and VIX decline keep USD supported and JPY pressured.",
+    "name": "Pre-CB USD drift holds",
+    "probability": 0.5,
+    "thesis": "Without a hard catalyst, the dollar's recovered bid persists; JPY stays weakest and EUR/USD remains pinned near 1.11911.",
     "triggers": [
-     "DXY holds above 101.716",
-     "VIX remains below 19.084",
-     "USD/JPY holds above 157.414"
+     "USD/JPY holds above 157.414",
+     "US CB Consumer Confidence prints at or above 81.2 forecast",
+     "No new negative weekend headline"
     ],
-    "invalidation": "USD/JPY breaks below 157.414 or VIX jumps above 19.084.",
+    "invalidation": "EUR/USD closes above 1.11911 while USD/JPY breaks below 157.414.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 15.9,
-      "rationale": "Repeat of the 22:00-00:00 down-leg; USD strength rank 1, EUR/USD closed -2.2 pips."
+      "magnitude_pips": 52.7,
+      "rationale": "Repeating the session's 52.7-pip range with USD firm and no euro catalyst."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 24.3,
-      "rationale": "JPY weakest; first up-leg was +24.3 pips within a 98.9-pip range."
+      "magnitude_pips": 98.9,
+      "rationale": "Carry/FX risk bid; USD/JPY sees similar 98.9-pip range as yen stays weakest."
      },
      {
       "instrument": "GBP/USD",
       "direction": "down",
-      "magnitude_pips": 12.8,
-      "rationale": "GBP/USD closed -12.8 pips; broad USD bid extends."
+      "magnitude_pips": 59.5,
+      "rationale": "Sterling fades after early recovery; its session range was 59.5 pips."
      }
     ]
    },
    {
-    "name": "Risk-on carry extends JPY weakness",
-    "probability": 0.35,
-    "thesis": "VIX fall (-3.903% to 19.084) and Canada tariff relief support carry; JPY stays weakest while AUD and CAD recover.",
+    "name": "US data miss triggers reversal",
+    "probability": 0.3,
+    "thesis": "A weak CB Consumer Confidence reading challenges the dollar recovery and lifts oversold yen and Swiss franc.",
     "triggers": [
-     "CAD strength rank 3 persists",
-     "AUD/NZD +9.2 pips extends",
-     "VIX holds below 19.084"
+     "CB Consumer Confidence below 81.2 forecast",
+     "VIX/USD moves above 19.084",
+     "USD/JPY fails at 157.414"
     ],
-    "invalidation": "USD/CAD breaks above 1.40123 or VIX jumps above 19.084.",
+    "invalidation": "USD/JPY closes above 157.414 and VIX stays below 19.084.",
     "pair_paths": [
      {
       "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 74.2,
-      "rationale": "Largest USD/JPY up-leg was +74.2 pips; risk-on amplifies yen selling."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 16.0,
-      "rationale": "AUD/USD had a +16.0-pip up-leg from 07:00 to 10:30; selling rejected."
-     },
-     {
-      "instrument": "USD/CAD",
       "direction": "down",
-      "magnitude_pips": 11.6,
-      "rationale": "Initial tariff-relief headline produced a -11.6-pip USD/CAD down-leg."
-     }
-    ]
-   },
-   {
-    "name": "US data miss drives reversal",
-    "probability": 0.2,
-    "thesis": "CB Consumer Confidence (forecast 81.2 vs prior 81.9) disappoints, unwinding the broad USD bid and lifting EUR/USD.",
-    "triggers": [
-     "CB Consumer Confidence prints below 81.2",
-     "DXY falls below 101.716",
-     "EUR/USD breaks above 1.11911"
-    ],
-    "invalidation": "DXY closes above 101.716 and USD/JPY above 157.414.",
-    "pair_paths": [
+      "magnitude_pips": 98.9,
+      "rationale": "Full session range reversal in a safe-haven bid; 98.9 was the day's range."
+     },
      {
       "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 28.2,
-      "rationale": "First EUR/USD up-leg was +28.2 pips; reversal would challenge range highs."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "down",
-      "magnitude_pips": 47.2,
-      "rationale": "USD/JPY had a -47.2-pip down-leg from 01:15 to 03:30; risk off unwinds."
+      "magnitude_pips": 52.7,
+      "rationale": "Dollar retreat allows EUR/USD to retrace its 52.7-pip session range."
      },
      {
       "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 16.9,
-      "rationale": "Initial USD/CHF down-leg was -16.9 pips; CHF attempt rejected reversal."
+      "magnitude_pips": 47.2,
+      "rationale": "CHF recovers from its rejected bid; 47.2 was the session range."
+     }
+    ]
+   },
+   {
+    "name": "Risk-on accelerates after clean close",
+    "probability": 0.2,
+    "thesis": "Lower VIX and no new escalation extend carry and commodity FX strength, while USD gives up early gains except against JPY.",
+    "triggers": [
+     "VIX/USD closes below 19.084",
+     "No negative weekend headlines",
+     "USD/CAD breaks below 1.40123"
+    ],
+    "invalidation": "VIX/USD reverses above 19.084 or USD/CAD recaptures 1.40123.",
+    "pair_paths": [
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 37.2,
+      "rationale": "NZD selling rejected, could recover full 37.2-pip range in risk-on extension."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 59.5,
+      "rationale": "GBP also sold off and recovered 72%; a risk-on break retraces the 59.5-pip range."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 71.4,
+      "rationale": "Tariff relief supports CAD; 71.4-pip range is the measured session band."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "No-catalyst positioning unwinds sharply",
-    "why_it_matters": "Most legs had confidence 'none'; no macro anchor.",
-    "watch": "USD/JPY 157.414, EUR/USD 1.11911"
+    "risk": "US CB Consumer Confidence surprise",
+    "why_it_matters": "It is the only scheduled USD release in the window and can reverse the dollar recovery.",
+    "watch": "Actual vs 81.2 forecast and 81.9 previous."
    },
    {
-    "risk": "CB Consumer Confidence surprise",
-    "why_it_matters": "Only scheduled medium-impact USD release; forecast 81.2 vs prior 81.9.",
-    "watch": "DXY 101.716, USD/JPY 157.414"
+    "risk": "Weekend headline risk",
+    "why_it_matters": "France Moody's headline earlier gave only brief support; no hard catalysts, so any new geopolitical headline can dominate.",
+    "watch": "Iran/Middle East and tariff headlines from WSJ/Trump."
    },
    {
-    "risk": "Canada tariff headline gets faded/reversed",
-    "why_it_matters": "USD/CAD initially fell -11.6 pips on tariff relief, then closed +6.5 pips; CAD strength rank 3 could fade.",
-    "watch": "USD/CAD 1.40123, CAD strength 0.066"
+    "risk": "Thin liquidity amplifies flow",
+    "why_it_matters": "Many legs had no clear cause and confidence none; flow can exaggerate moves.",
+    "watch": "EUR/USD range 52.7 and USD/JPY 98.9 as measured band."
    }
   ],
-  "calendar_ahead_note": "CB Consumer Confidence is the next scheduled USD release (forecast 81.2 vs prior 81.9); a miss could extend the USD selling rejection seen early in the window.",
+  "calendar_ahead_note": "CB Consumer Confidence is the only scheduled item; a print below the 81.2 forecast or 81.9 previous can challenge the dollar recovery.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17186,
-   "completion_tokens": 7695,
-   "total_tokens": 24881,
+   "completion_tokens": 7804,
+   "total_tokens": 24990,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 17152
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5814
+    "reasoning_tokens": 6011
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 16546
+   "prompt_cache_hit_tokens": 17152,
+   "prompt_cache_miss_tokens": 34
   }
  }
 }
