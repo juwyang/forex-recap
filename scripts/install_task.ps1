@@ -45,23 +45,22 @@ $action = New-ScheduledTaskAction -Execute 'powershell.exe' `
 # Stripping the offset makes the boundary float with local time, which is what
 # "every day at 07:05" was supposed to mean.
 #
-# The repetition is the belt to that braces: if a run ever lands before its
-# cutoff again -- early trigger, wrong clock, a cutoff that moves -- the
-# retries half an hour apart cross it and build. Each extra run is a
-# seconds-long no-op once the archive is complete.
-$repeat = (New-ScheduledTaskTrigger -Once -At '00:00' `
-    -RepetitionInterval (New-TimeSpan -Minutes 30) `
-    -RepetitionDuration (New-TimeSpan -Hours 3)).Repetition
-
+# Deliberately NOT a repetition interval. Retrying every half hour would be
+# papering over the boundary bug above rather than fixing it, and it retries
+# the wrong thing: a run that finds nothing due exits 0, so unconditional
+# repeats cost twelve pointless pulls a day while doing nothing for the case
+# that actually fails. Restart-on-failure below covers that case instead.
 $triggers = @()
 foreach ($at in '07:05', '19:05') {
     $t = New-ScheduledTaskTrigger -Daily -At $at
     $t.StartBoundary = '2026-01-01T' + $at + ':00'   # no offset: local, DST-following
-    $t.Repetition = $repeat
     $triggers += $t
 }
 
+# RestartCount fires only when the run exits non-zero -- an upstream timeout,
+# a push that raced someone else -- so a healthy day is exactly two runs.
 $settings = New-ScheduledTaskSettingsSet `
+    -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 15) `
     -StartWhenAvailable `
     -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries `
     -RunOnlyIfNetworkAvailable `

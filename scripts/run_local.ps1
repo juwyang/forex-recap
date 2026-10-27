@@ -10,8 +10,7 @@
 
   The scheduled triggers carry an offset-free StartBoundary so they follow
   local time across a DST change; see install_task.ps1 for what goes wrong
-  otherwise. They also repeat every 30 minutes for three hours, so a run that
-  somehow lands before its own cutoff retries until it is past it.
+  otherwise. A healthy day is two runs -- retries happen only when one fails.
 
   WEEKENDS. This task is registered for all seven days on purpose, and the
   decision of what to build is left to the code rather than to the trigger:
