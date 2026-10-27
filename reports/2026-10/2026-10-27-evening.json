@@ -13,7 +13,7 @@
   "end_local": "2026-10-27T19:00:00+01:00",
   "fwd_start_utc": "2026-10-27T18:00:00+00:00",
   "fwd_end_utc": "2026-10-28T18:00:00+00:00",
-  "generated_utc": "2026-10-27T20:10:52.915644+00:00",
+  "generated_utc": "2026-10-27T22:07:10.123089+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -2238,142 +2238,189 @@
   ]
  },
  "analysis": {
-  "session_summary": "AUD led (+0.261%) and USD followed (+0.225%), while EUR lagged (-0.293%) in a session dominated by broad dollar strength and risk-on conditions: DXY rose 0.423% and VIX fell 0.626%. The only US release, CB Consumer Confidence, beat strongly (91.7 vs 81.2) but produced an inverted USD impulse of -0.052%. EUR/USD closed at 1.11332, down 57.9 pips at the bottom of its 58.6-pip range, while USD/JPY closed at 157.94, up 52.6 pips. The tape favored commodity FX recovery and punished the euro, with no major leg tied to a clear catalyst.",
+  "session_summary": "The window was a USD-supportive, risk-on session: DXY closed +0.423% at 102.146 and USD strength was +0.225%, while AUD (+0.261%) and NZD (+0.099%) outperformed. EUR was the weakest major (-0.293%), dragging EUR/USD down 57.9 pips. The main US event, CB Consumer Confidence, beat significantly (91.7 vs 81.2) but triggered an inverted USD dip of 0.052%, suggesting crowded USD longs. Most intraday legs had no clear catalyst, with the tape dominated by flow and event-positioning ahead of the heavy calendar.",
   "themes": [
    {
-    "theme": "Antipodean recovery dominates",
-    "evidence": "AUD strength +0.261% after selling was rejected; AUD/USD closed +2.5 pips and AUD/NZD +20.0 pips.",
-    "currencies": [
-     "AUD",
-     "NZD"
-    ]
-   },
-   {
-    "theme": "Broad USD strength with inverted data",
-    "evidence": "DXY +0.423%, VIX -0.626%, USD +0.225%; CB Consumer Confidence beat but USD impulse was -0.052%.",
+    "theme": "USD strength with commodity FX outperformance",
+    "evidence": "USD +0.225%, AUD +0.261%, NZD +0.099%; AUD/USD +2.5 pips and AUD/CHF +0.284%.",
     "currencies": [
      "USD",
-     "JPY"
+     "AUD",
+     "NZD",
+     "CHF"
     ]
    },
    {
-    "theme": "EUR weak across the board",
-    "evidence": "EUR strength -0.293%; EUR/USD -57.9 pips, EUR/CHF -25.0 pips, EUR/GBP -14.0 pips.",
+    "theme": "Euro broad underperformance",
+    "evidence": "EUR -0.293% against majors; EUR/USD -57.9 pips, EUR/CHF -25.0 pips, EUR/AUD -0.555%.",
     "currencies": [
      "EUR",
+     "USD",
      "CHF",
-     "GBP"
+     "AUD"
+    ]
+   },
+   {
+    "theme": "Inverted USD reaction to strong US data",
+    "evidence": "CB Consumer Confidence beat 91.7 vs 81.2 but USD weakened 0.052%; Gold/USD +0.128% and AUD/NZD +0.04%.",
+    "currencies": [
+     "USD",
+     "AUD",
+     "NZD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Consumer Confidence beat but USD weakened on release; broad dollar strength still closed it +0.225%.",
-   "EUR": "No catalyst; weakest major at -0.293%, closed near lows in all EUR crosses.",
-   "JPY": "No catalyst; held range and closed -0.109%, pressured by broad dollar strength.",
-   "GBP": "No catalyst; held range at -0.127% with no own releases.",
-   "AUD": "Selling rejected; recovered 90% of early dip to close +0.261%.",
-   "CAD": "Early +0.12% attempt rejected, gave back 89%; no clear catalyst.",
-   "CHF": "No catalyst; held range near flat at -0.023%.",
-   "NZD": "No catalyst; held range and closed +0.099%."
+   "USD": "USD closed at its best (+0.225%) despite the inverted CB Consumer Confidence reaction; no other US catalyst explains it.",
+   "EUR": "EUR had no clear catalyst and was the weakest major, closing down 0.293%.",
+   "JPY": "JPY had no clear catalyst and finished lower against all majors.",
+   "GBP": "GBP had no catalyst and traded near session lows, closing down 0.127%.",
+   "AUD": "AUD had no domestic catalyst; early selling was rejected and it became the strongest major.",
+   "CAD": "CAD had no catalyst; an early 0.12% bid was rejected, giving back 89%.",
+   "CHF": "CHF had no catalyst and held a tight range, ending nearly flat at -0.023%.",
+   "NZD": "NZD had no domestic catalyst; it held its range and closed 0.099% firmer."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD opened with a 51.2-pip decline, retraced 14.8 pips, then slid another 19.8 pips, leaving it 57.9 pips lower with no leg tied to a clear catalyst."
+   "EUR/USD": "The pair's three legs—a 51.2-pip decline, a 14.8-pip bounce, and a 19.8-pip slide—summed to a 57.9-pip loss with no leg attributed to a clear catalyst."
   },
   "polarity_reads": [
    {
     "event": "CB Consumer Confidence",
-    "read": "The inverted -0.052% USD impulse on a strong beat (91.7 vs 81.2) implies USD longs were crowded or the good news was already priced, so the market faded the dollar."
+    "read": "The CB Consumer Confidence beat produced USD weakness (inverted), suggesting long-USD positioning was used for profit-taking on good news."
    }
   ],
   "scenarios": [
    {
-    "name": "USD strength persists",
-    "probability": 0.55,
-    "thesis": "The dollar closed at its best (+0.225%) with DXY +0.423% and VIX -0.626%; the inverted Consumer Confidence reaction looks like a one-off fade, not a reversal.",
+    "name": "Commodity FX extension",
+    "probability": 0.45,
+    "thesis": "AUD/NZD and CAD benefit from domestic event risk while EUR lags; USD stays firm but loses to commodity currencies.",
     "triggers": [
-     "DXY holds above 102.146",
-     "USD/JPY holds above 157.94",
-     "EUR/USD stays below 1.11332"
+     "AUD CPI y/y prints at or above 4.2%",
+     "RBNZ OCR delivers 3.00% with hawkish tone",
+     "BOC hikes to 2.50% and signals more"
     ],
-    "invalidation": "EUR/USD reclaims 1.11332 and USD/JPY drops below 157.94",
+    "invalidation": "Dovish RBNZ/BOC or a risk-off shock reverses AUD/NZD and USD/CAD.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 58.6,
-      "rationale": "EUR is weakest (-0.293%) and EUR/USD closed at bottom of its 58.6-pip range."
+      "rationale": "EUR closed near session low; repeat of today's range if USD holds."
      },
      {
-      "instrument": "USD/JPY",
+      "instrument": "AUD/USD",
       "direction": "up",
-      "magnitude_pips": 56.8,
-      "rationale": "USD/JPY closed at 157.94, up 52.6 pips, at the top of its 56.8-pip range."
+      "magnitude_pips": 30.8,
+      "rationale": "AUD selling was rejected earlier; CPI beat extends recovery."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 40.6,
+      "rationale": "BOC hike supports CAD, reversing USD/CAD's 36.2-pip gain."
      }
     ]
    },
    {
-    "name": "Risk-off USD fade",
-    "probability": 0.45,
-    "thesis": "The inverted CB Consumer Confidence impulse (-0.052%) and stretched AUD recovery argue for a pullback in USD longs, favoring EUR and JPY.",
+    "name": "USD range consolidation",
+    "probability": 0.35,
+    "thesis": "DXY closed at its best and major pairs are stretched; the event calendar encourages two-way flow within today's ranges.",
     "triggers": [
-     "EUR/USD recovers above 1.11332",
-     "USD/JPY falls below 157.94",
-     "VIX rises above 18.96451"
+     "AUD CPI meets 0.7% m/m and 4.2% y/y",
+     "RBNZ delivers expected 3.00% OCR without new hawkish signals",
+     "GBP Budget contains no major fiscal surprise"
     ],
-    "invalidation": "DXY closes above 102.146 and USD/JPY makes a new high",
+    "invalidation": "A break of DXY 102.146 high or a strong US data surprise.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 58.6,
+      "rationale": "EUR/USD closed near low of range, likely mean revert to mid-range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 56.8,
+      "rationale": "USD/JPY closed at 0.99 of range; upside limited without fresh catalyst."
+     },
+     {
+      "instrument": "AUD/NZD",
+      "direction": "range",
+      "magnitude_pips": 43.8,
+      "rationale": "AUD/NZD closed at 0.98 of range; both AUD and NZD event risk caps extension."
+     }
+    ]
+   },
+   {
+    "name": "USD correction / crowded long unwind",
+    "probability": 0.2,
+    "thesis": "Inverted CB Consumer Confidence reaction signals crowding; high-impact events may trigger USD profit-taking, especially vs EUR and GBP.",
+    "triggers": [
+     "AUD CPI above forecast sparks commodity rally",
+     "RBNZ signals further tightening",
+     "GBP Budget supportive of GBP",
+     "BOC hawkish enough to support CAD"
+    ],
+    "invalidation": "Strong US data or risk-off headlines reassert USD safe-haven bid.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
       "magnitude_pips": 58.6,
-      "rationale": "EUR/USD range is 58.6 pips and close is at 0.01, allowing full-range recovery."
+      "rationale": "EUR/USD close at 0.01 of range leaves room for short-covering."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 52.7,
+      "rationale": "GBP Budget positive shock can unwind GBP's 0.127% decline."
      },
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 56.8,
-      "rationale": "USD/JPY range is 56.8 pips; a risk pullback may erase the 52.6-pip gain."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 30.8,
-      "rationale": "AUD strength +0.261% is vulnerable to profit-taking after selling was rejected."
+      "rationale": "Inverted USD reaction implies USD long reduction; USD/JPY closed at 0.99 high."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "AUD CPI/RBA and RBNZ event risk",
-    "why_it_matters": "AUD led +0.261% and AUD/NZD closed at 1.23664; upcoming AUD CPI and RBNZ OCR can reshuffle antipodean strength.",
-    "watch": "AUD/NZD, AUD/USD, RBA Gov Bullock Speaks at 01:15."
+    "risk": "AUD CPI and RBNZ OCR may cause sharp AUD/NZD repositioning.",
+    "why_it_matters": "AUD/NZD is most sensitive to CB Consumer Confidence at 2.4 sigma and closed at 0.98 of its 43.8-pip range.",
+    "watch": "AUD/NZD, AUD/USD"
    },
    {
-    "risk": "Inverted Consumer Confidence reaction misread",
-    "why_it_matters": "The strong beat produced a USD-negative impulse, but USD closed +0.225%; if the market treats further good US data as a fade, USD strength may reverse.",
-    "watch": "Next US data and USD/JPY, DXY."
+    "risk": "GBP Budget release could move GBP pairs sharply.",
+    "why_it_matters": "GBP closed down 0.127% and had no catalyst; a fiscal surprise can dominate.",
+    "watch": "GBP/USD, EUR/GBP"
    },
    {
-    "risk": "Geopolitical headlines around Iran",
-    "why_it_matters": "Top high-impact headline at 11:30 may shift risk sentiment; VIX fell 0.626%, but escalation could hit USD/JPY and commodity FX.",
-    "watch": "USD/JPY, AUD/USD, VIX."
+    "risk": "BOC decision may reverse USD/CAD.",
+    "why_it_matters": "USD/CAD closed at 0.98 of its range after a 36.2-pip gain; BOC is expected to hike to 2.50%.",
+    "watch": "USD/CAD, CAD/JPY"
+   },
+   {
+    "risk": "Geopolitical headlines from Iran and US-Canada tariffs remain live.",
+    "why_it_matters": "Brent and risk pairs reacted to Iran Supreme Leader; VIX fell 11.9 points.",
+    "watch": "Brent/USD, USD/CAD"
    }
   ],
-  "calendar_ahead_note": "RBA Bullock Speaks at 01:15, AUD CPI at 01:30 (m/m forecast 0.7%, y/y 4.2%), RBNZ OCR at 02:00 (forecast 3.00%), GBP Annual Budget at 13:30, and BOC Overnight Rate at 14:45 (forecast 2.50%) can all change the picture; AUD/NZD and USD/CAD are most exposed.",
+  "calendar_ahead_note": "The coming window is event-heavy: AUD CPI and RBNZ OCR can extend or reverse today's commodity-FX bid; GBP Budget and BOC decision are the main re-pricing risks for GBP and CAD.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 19605,
-   "completion_tokens": 7607,
-   "total_tokens": 27212,
+   "completion_tokens": 7946,
+   "total_tokens": 27551,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 19584
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5919
+    "reasoning_tokens": 5931
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 18965
+   "prompt_cache_hit_tokens": 19584,
+   "prompt_cache_miss_tokens": 21
   }
  }
 }
