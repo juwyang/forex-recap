@@ -13,7 +13,7 @@
   "end_local": "2026-10-27T07:00:00+01:00",
   "fwd_start_utc": "2026-10-27T06:00:00+00:00",
   "fwd_end_utc": "2026-10-27T18:00:00+00:00",
-  "generated_utc": "2026-10-27T06:47:11.092025+00:00",
+  "generated_utc": "2026-10-27T11:59:48.053889+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 5
+   "with_actual": 8
   }
  },
  "facts": {
@@ -1702,162 +1702,169 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight trade was driven by flow rather than data: no currency had its own releases and the measured event_reactions list is empty. The tape was mildly pro-USD (strength +0.096%, DXY +0.187% to 101.906) and strongly pro-NZD (+0.165%, selling rejected with 74% recovery), while EUR was weakest (-0.122%). USD/JPY rose 30.7 pips to close near its range high; EUR/USD fell 24.5 pips to close near its range low. Low-impact headlines on US-Canada tariffs, Japan, and Ambassador Greer were too weak to own any leg.",
+  "session_summary": "The overnight tape was flow-driven with no macro catalyst owning any move: all eight currency driver notes showed no own releases and most legs had confidence none. NZD led (+0.165%) and EUR lagged (-0.122%), while USD firmed (+0.096%) and the DXY rose 0.187%. Major pairs were contained: EUR/USD closed 24.5 pips lower, USD/JPY 30.7 pips higher, and VIX added 0.444%. The five low-impact headlines—US-Canada tariff talks, Greer statement, Japan SPPI, Moody’s comments, and Fin Min Katayama—were too weak to explain any leg.",
   "themes": [
    {
-    "theme": "No-catalyst flow tape",
-    "evidence": "No currency own_releases; event_reactions empty; leg notes repeatedly say no clear catalyst or too weak to own move.",
+    "theme": "Flow-driven, no catalyst",
+    "evidence": "All currency_drivers have no own releases and most_sensitive_to null; all legs have confidence none.",
     "currencies": [
      "USD",
      "EUR",
      "JPY",
      "GBP",
      "AUD",
-     "CAD",
-     "CHF",
-     "NZD"
-    ]
-   },
-   {
-    "theme": "USD firm, commodity FX bid",
-    "evidence": "USD strength +0.096% (DXY +0.187% to 101.906); NZD +0.165% with selling rejected; AUD +0.053%; CAD +0.046% vs EUR -0.122% and JPY -0.098%.",
-    "currencies": [
-     "USD",
      "NZD",
-     "AUD",
      "CAD",
-     "EUR",
-     "JPY"
+     "CHF"
     ]
    },
    {
-    "theme": "Yen soft despite Japan commentary",
-    "evidence": "JPY strength -0.098%; USD/JPY +30.7 pips to 157.721, close_in_range 0.92; Japan headlines were low impact with no measured reaction.",
+    "theme": "Kiwi strength / euro weakness",
+    "evidence": "NZD +0.165% vs EUR -0.122%; NZD/USD +3.9 pips while EUR/USD -24.5 pips.",
     "currencies": [
-     "JPY",
-     "USD"
+     "NZD",
+     "EUR"
+    ]
+   },
+   {
+    "theme": "JPY soft despite jawboning",
+    "evidence": "JPY -0.098% and USD/JPY +30.7 pips after Fin Min Katayama comments; no Japan release owned the move.",
+    "currencies": [
+     "JPY"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No own releases; strength +0.096%, holding gains with no clear catalyst.",
-   "EUR": "Weakest major at -0.122% strength; no own releases or clear catalyst for the drift lower.",
-   "JPY": "Soft at -0.098% strength; no own releases; held a weak range with no clear catalyst.",
-   "GBP": "Soft at -0.085% strength; no own releases; held a weak range with no clear catalyst.",
-   "AUD": "Third strongest at +0.053%; early selling rejected, recovering 71% with no own releases.",
-   "CAD": "Slightly firm at +0.046%; held its range with no own releases or clear catalyst.",
-   "CHF": "Attempt rejected; led +0.07% then gave back 89% to close -0.055% with no own releases.",
-   "NZD": "Strongest major at +0.165%; early selling rejected, recovering 74% with no own releases."
+   "USD": "No catalyst; steady bid with DXY up 0.187%.",
+   "EUR": "No catalyst; weakest at -0.122%, held low range.",
+   "JPY": "No catalyst; soft at -0.098% despite Japanese verbal intervention, no follow-through.",
+   "GBP": "No catalyst; weaker -0.085%, range-bound.",
+   "AUD": "No catalyst; early selling rejected, +0.053%.",
+   "CAD": "No catalyst; held range, +0.046%.",
+   "CHF": "No catalyst; attempt higher rejected, -0.055%.",
+   "NZD": "No catalyst; strongest flow, +0.165% with selling rejected."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD's three legs (down 23.3 pips to 02:00, up 7.6 pips, then down 7.1 pips) netted a -24.5 pip close near the bottom of its 28.4-pip range with no clear catalyst on any leg."
+   "EUR/USD": "Its three legs—down 23.3 pips, up 7.6 pips, down 7.1 pips—were all uncaused, leaving EUR/USD near the bottom of its 28.4-pip range."
   },
   "polarity_reads": [],
   "scenarios": [
    {
-    "name": "USD drift persists",
-    "probability": 0.35,
-    "thesis": "With no catalysts, overnight flow continues; USD holds its +0.096% strength and JPY stays soft, pushing USD/JPY higher.",
+    "name": "Flow-driven continuation",
+    "probability": 0.45,
+    "thesis": "No macro impulse, so overnight relationships persist; NZD and USD stay bid, EUR stays offered.",
     "triggers": [
-     "No strong CB Consumer Confidence surprise",
-     "DXY holds above 101.906"
+     "Liquidity fills and no surprise from CB Consumer Confidence",
+     "Steady risk tone with VIX not extending above overnight close"
     ],
-    "invalidation": "DXY breaks below 101.906 and EUR/USD clears 1.11666.",
+    "invalidation": "A clear surprise from US data or headline overturns the range.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 28.4,
-      "rationale": "EUR weakest, no catalyst to reverse; overnight low near."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 37.6,
-      "rationale": "USD firm and JPY soft; pair closed near range high."
-     }
-    ]
-   },
-   {
-    "name": "US data disappoints, USD gives back",
-    "probability": 0.4,
-    "thesis": "CB Consumer Confidence at 15:00 misses the 81.2 forecast, unwinding the dollar's overnight +0.096% strength and lifting EUR and NZD.",
-    "triggers": [
-     "CB Consumer Confidence prints below 81.2",
-     "DXY falls from 101.906"
-    ],
-    "invalidation": "CB Consumer Confidence prints at or above 81.2 and DXY holds 101.906.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 28.4,
-      "rationale": "EUR short covering as USD weakens after a weak confidence print."
+      "rationale": "EUR lagging and USD firm; measured EUR/USD range of 28.4 pips bounds the path."
      },
      {
       "instrument": "NZD/USD",
       "direction": "up",
       "magnitude_pips": 32.6,
-      "rationale": "NZD already bid; dollar pullback extends its recovery."
+      "rationale": "NZD strongest; overnight range of 32.6 pips supports continuation."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 37.6,
+      "rationale": "JPY soft; overnight range of 37.6 pips frames upside."
      }
     ]
    },
    {
-    "name": "Rangebound fixation",
-    "probability": 0.25,
-    "thesis": "Market holds within overnight ranges into the European open; CB Consumer Confidence is not a strong enough catalyst to break the tape.",
+    "name": "USD pullback after confidence miss",
+    "probability": 0.35,
+    "thesis": "US CB Consumer Confidence (forecast 81.2 vs previous 81.9) comes in soft, unwinding the USD bid and lifting EUR/GBP crosses.",
     "triggers": [
-     "CB Consumer Confidence prints near 81.2",
-     "EUR/USD stays inside its 28.4-pip range"
+     "CB Consumer Confidence misses forecast",
+     "EUR/USD recovers above 1.11666"
     ],
-    "invalidation": "EUR/USD breaks 1.11666 or DXY moves beyond 101.906.",
+    "invalidation": "Confidence prints at or above forecast and DXY holds above 101.906.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "range",
+      "direction": "up",
       "magnitude_pips": 28.4,
-      "rationale": "Inside overnight range with no clear catalyst."
+      "rationale": "USD pullback within measured 28.4-pip range."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 37.6,
-      "rationale": "No fresh impulse; holds near 157.721."
+      "rationale": "USD softening and JPY short squeeze within 37.6-pip range."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "range",
+      "magnitude_pips": 32.6,
+      "rationale": "NZD strength persists but USD drop may keep pair range-bound within 32.6 pips."
+     }
+    ]
+   },
+   {
+    "name": "Japan verbal intervention / risk-off",
+    "probability": 0.2,
+    "thesis": "Japanese Fin Min Katayama escalates, triggering Yen buying and risk-off; USD/JPY drops while EUR/JPY pressure continues.",
+    "triggers": [
+     "Follow-up Japanese verbal intervention",
+     "VIX rising above 19.16866"
+    ],
+    "invalidation": "No further Japan commentary and VIX fades.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 37.6,
+      "rationale": "Japan jawboning plus risk-off within 37.6-pip range."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 28.4,
+      "rationale": "Risk-off USD bid within 28.4-pip range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "No-catalyst flow tape can reverse quickly",
-    "why_it_matters": "With no own releases and empty event reactions, flows dominated and can unwind without warning.",
-    "watch": "Early European flows, EUR/USD 1.11666, DXY 101.906"
+    "risk": "US CB Consumer Confidence surprise",
+    "why_it_matters": "Only medium-impact calendar event; can shift USD from its overnight range.",
+    "watch": "15:00 forecast 81.2 vs previous 81.9"
    },
    {
-    "risk": "US CB Consumer Confidence at 15:00",
-    "why_it_matters": "It is the only medium-impact calendar item and can shift the dollar's +0.096% strength.",
-    "watch": "Actual vs 81.2 forecast, DXY reaction"
+    "risk": "Japan verbal intervention escalation",
+    "why_it_matters": "Fin Min Katayama already warned; follow-through could drive JPY sharply.",
+    "watch": "Headlines from Tokyo"
    },
    {
-    "risk": "Commodity FX divergence",
-    "why_it_matters": "NZD and AUD selling-rejected patterns look positioning-driven; a VIX uptick (+0.444% to 19.16866) could trigger reversal.",
-    "watch": "NZD/USD 0.56933, AUD/USD 0.70219, VIX 19.16866"
+    "risk": "VIX extension",
+    "why_it_matters": "VIX already +0.444% to 19.16866; further rise could force risk FX unwinds.",
+    "watch": "VIX vs 19.16866"
    }
   ],
-  "calendar_ahead_note": "Only medium-impact US CB Consumer Confidence at 15:00 (forecast 81.2 vs previous 81.9) can change the picture; otherwise the no-catalyst flow tape likely continues.",
+  "calendar_ahead_note": "US CB Consumer Confidence at 15:00 (forecast 81.2 vs previous 81.9) is the only medium-impact item; a miss could soften USD, a beat could extend the overnight bid.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 15094,
-   "completion_tokens": 8968,
-   "total_tokens": 24062,
+   "completion_tokens": 6023,
+   "total_tokens": 21117,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 14976
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 7282
+    "reasoning_tokens": 4384
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 14454
+   "prompt_cache_hit_tokens": 14976,
+   "prompt_cache_miss_tokens": 118
   }
  }
 }
