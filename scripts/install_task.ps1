@@ -34,10 +34,32 @@ if ($Python) { $argline += " -Python `"$Python`"" }
 $action = New-ScheduledTaskAction -Execute 'powershell.exe' `
     -Argument $argline -WorkingDirectory $repo
 
-$triggers = @(
-    New-ScheduledTaskTrigger -Daily -At '07:05'
-    New-ScheduledTaskTrigger -Daily -At '19:05'
-)
+# Two things have to be right here, and the obvious spelling gets both wrong.
+#
+# New-ScheduledTaskTrigger bakes the offset in force at registration time into
+# StartBoundary ("2026-09-10T07:05:00+02:00"), and Windows then honours that
+# absolute instant rather than the wall clock. When CEST ended the boundary
+# rewrote itself to 06:05+01:00 -- the same moment in UTC, an hour early in
+# local terms -- and both editions started firing BEFORE their own cutoffs,
+# so --catchup correctly found nothing due and the task became a silent no-op.
+# Stripping the offset makes the boundary float with local time, which is what
+# "every day at 07:05" was supposed to mean.
+#
+# The repetition is the belt to that braces: if a run ever lands before its
+# cutoff again -- early trigger, wrong clock, a cutoff that moves -- the
+# retries half an hour apart cross it and build. Each extra run is a
+# seconds-long no-op once the archive is complete.
+$repeat = (New-ScheduledTaskTrigger -Once -At '00:00' `
+    -RepetitionInterval (New-TimeSpan -Minutes 30) `
+    -RepetitionDuration (New-TimeSpan -Hours 3)).Repetition
+
+$triggers = @()
+foreach ($at in '07:05', '19:05') {
+    $t = New-ScheduledTaskTrigger -Daily -At $at
+    $t.StartBoundary = '2026-01-01T' + $at + ':00'   # no offset: local, DST-following
+    $t.Repetition = $repeat
+    $triggers += $t
+}
 
 $settings = New-ScheduledTaskSettingsSet `
     -StartWhenAvailable `

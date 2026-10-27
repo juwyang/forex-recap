@@ -8,6 +8,11 @@
   three minutes. Running locally on time is the fix; the GitHub schedule stays
   on as a backup for whenever this machine is off.
 
+  The scheduled triggers carry an offset-free StartBoundary so they follow
+  local time across a DST change; see install_task.ps1 for what goes wrong
+  otherwise. They also repeat every 30 minutes for three hours, so a run that
+  somehow lands before its own cutoff retries until it is past it.
+
   WEEKENDS. This task is registered for all seven days on purpose, and the
   decision of what to build is left to the code rather than to the trigger:
 
@@ -57,7 +62,10 @@ if (-not $Python) {
 Write-Log "--- start (python: $Python) ---"
 
 try {
-    git pull --rebase --quiet
+    # autoStash so an edit left in the working tree cannot take the whole
+    # unattended run down with it. A real conflict still fails, which is right;
+    # a half-finished change of mine is not a reason to skip the day's report.
+    git -c rebase.autoStash=true pull --rebase --quiet
     if ($LASTEXITCODE -ne 0) { Write-Log 'FAIL: git pull --rebase'; exit 1 }
 
     & $Python -m forexrecap.run --catchup --catchup-days $CatchupDays --out reports 2>&1 |
