@@ -13,7 +13,7 @@
   "end_local": "2026-10-28T07:00:00+01:00",
   "fwd_start_utc": "2026-10-28T06:00:00+00:00",
   "fwd_end_utc": "2026-10-28T18:00:00+00:00",
-  "generated_utc": "2026-10-28T06:27:05.297672+00:00",
+  "generated_utc": "2026-10-28T12:39:42.881867+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 20
+   "with_actual": 25
   }
  },
  "facts": {
@@ -2183,178 +2183,194 @@
   ]
  },
  "analysis": {
-  "session_summary": "Overnight tape was dominated by RBNZ holding at 2.75% against 3.00% forecast, sending NZD down 1.391% and NZD/USD -73.8 pips. AUD was second strongest after CPI 0.8% vs 0.7% beat; JPY was strongest despite no own releases and closed at its best. USD firmed with DXY +0.108 and VIX +0.443, while EUR/GBP/CHF/CAD held ranges. The tape says rate differentials and positioning, not broad risk-on, drove FX.",
+  "session_summary": "Overnight the tape was driven by the RBNZ's dovish hold: OCR remained 2.75% against a 3.00% consensus, sending NZD -1.391% on the release and making it the weakest major. AUD strength from a 0.8% vs 0.7% CPI beat ranked second, while JPY led with +0.294% on safe-haven demand; USD firmed +0.218% with DXY up +0.108. EUR/USD traded a news-light range to -14.7 pips, with no leg owning a clear catalyst. The main risk-relevant headline was a US warning of possible short, intense renewal of Iran war, adding to risk-off tone.",
   "themes": [
    {
-    "theme": "RBNZ hold drives NZD collapse",
-    "evidence": "OCR 2.75% vs 3.00% forecast, NZD -1.391%, NZD/USD -73.8 pips",
+    "theme": "RBNZ dovish shock crushes NZD",
+    "evidence": "OCR held at 2.75% vs 3.00% forecast; NZD own-ccy impulse -1.391%; NZD/USD -73.8 pips; AUD/NZD +169.0 pips.",
     "currencies": [
-     "NZD"
+     "NZD",
+     "AUD"
     ]
    },
    {
-    "theme": "AUD strength on CPI beat",
-    "evidence": "CPI 0.8% vs 0.7%, AUD +0.108%, AUD/USD +3.5 pips",
+    "theme": "Australia CPI beat supports AUD",
+    "evidence": "CPI printed 0.8% vs 0.7% forecast; AUD own-ccy impulse +0.108%; AUD/CHF +11.9 pips.",
     "currencies": [
      "AUD"
     ]
    },
    {
-    "theme": "JPY resilience without catalyst",
-    "evidence": "JPY +0.294%, no own releases, closed at its best",
+    "theme": "Safe-haven bid and risk-off headline",
+    "evidence": "JPY strength +0.294%, USD +0.218%, VIX +0.443%; US-Iran warning appeared across leg drivers.",
     "currencies": [
-     "JPY"
-    ]
-   },
-   {
-    "theme": "USD drift higher and risk caution",
-    "evidence": "DXY +0.108, VIX +0.443, USD +0.218",
-    "currencies": [
+     "JPY",
      "USD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No own releases; firmed as DXY rose 0.108 and closed at its best.",
-   "EUR": "No own catalyst; sold to -0.06% then recovered 77%, no clear driver.",
-   "JPY": "No own catalyst; strongest major, closed at best, pointing to flow rather than data.",
-   "GBP": "No own release; held its range, awaiting UK budget.",
-   "AUD": "CPI beat 0.8% vs 0.7% boosted it; RBA Bullock was muted.",
-   "CAD": "No own releases; held range, awaiting BOC.",
-   "CHF": "No own release; held range, not a driver.",
-   "NZD": "RBNZ held at 2.75% vs 3.00% forecast, NZD weakened 1.391% on miss."
+   "USD": "No US data; firmed with risk-off headlines and higher DXY.",
+   "EUR": "No euro-area catalyst; early selling was rejected and price recovered most losses.",
+   "JPY": "No Japanese releases; safe-haven demand drove strongest major, closing at its best.",
+   "GBP": "No UK data; GBP lacked an independent driver and tracked broad USD moves.",
+   "AUD": "Australia CPI beat at 0.8% vs 0.7% forecast, adding to AUD strength.",
+   "CAD": "No Canadian data; CAD moved modestly with no clear domestic catalyst.",
+   "CHF": "No Swiss catalyst; CHF largely tracked the dollar block with little independent direction.",
+   "NZD": "RBNZ held OCR at 2.75% vs 3.00% forecast, a dovish miss that sank NZD."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped lower in three legs--early USD drift, a bounce, then Asia-driven USD firmness; no single trigger owned it."
+   "EUR/USD": "EUR/USD three legs: -10.8 pips to 21:45, +6.2 pips to 23:30, then -12.3 pips into the close; none had a clear catalyst, leaving it -14.7 pips at 1.11185."
   },
   "polarity_reads": [
    {
     "event": "Official Cash Rate +1 more",
-    "read": "Normal miss surprise produced -1.391% NZD impulse; market was not positioned for a hold at 2.75%."
+    "read": "A normal -1.391% NZD impulse on a 25bp miss shows the market was positioned for RBNZ tightening; the dovish hold forced longs out."
    },
    {
     "event": "CPI m/m +2 more",
-    "read": "Beat surprise produced +0.108% AUD impulse; market underweight AUD, reacted to stronger inflation."
-   },
-   {
-    "event": "RBA Gov Bullock Speaks",
-    "read": "Muted basket 0.030% inside noise floor; no fresh positioning signal."
+    "read": "Normal +0.108% AUD impulse on a 0.1pp beat signals inflation expectations were underpriced, sparking AUD demand."
    },
    {
     "event": "RBNZ Press Conference",
-    "read": "Unscored; NZD weaker 0.220% without forecast, suggesting dovish tone but no measurable surprise."
+    "read": "Unscored because no forecast, but NZD fell another 0.220%, reinforcing the dovish interpretation."
+   },
+   {
+    "event": "RBA Gov Bullock Speaks",
+    "read": "Muted 0.030% basket move, inside the noise floor, confirms no new policy signal and no fresh AUD catalyst."
    }
   ],
   "scenarios": [
    {
-    "name": "RBNZ follow-through / NZD continues down",
+    "name": "Base: BOC 25bp, budget contained",
     "probability": 0.45,
-    "thesis": "The RBNZ hold and dovish press conference keep NZD under pressure; carry and momentum extend.",
+    "thesis": "BOC delivers the 2.50% hike and balanced guidance; NZD consolidates after the RBNZ overshoot.",
     "triggers": [
-     "NZD/USD holds below its close",
-     "AUD/NZD continues to rise"
+     "BOC OCR prints 2.50%",
+     "BOC presser balanced",
+     "GBP budget in line"
     ],
-    "invalidation": "NZD/USD recovers above its recent range",
+    "invalidation": "BOC hold or a hawkish surprise beyond 2.50%",
     "pair_paths": [
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 27.2,
+      "rationale": "BOC hike as forecast supports CAD; move capped by overnight range 27.2 pips."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "range",
+      "magnitude_pips": 104.3,
+      "rationale": "NZD stabilizes inside overnight range 104.3 pips after the dovish shock."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "range",
+      "magnitude_pips": 29.9,
+      "rationale": "Budget in line leaves GBP within overnight range 29.9 pips."
+     }
+    ]
+   },
+   {
+    "name": "Dovish BOC or budget shock",
+    "probability": 0.3,
+    "thesis": "BOC either holds or signals limited tightening, and/or the GBP budget disappoints, renewing risk-off and CAD/GBP underperformance.",
+    "triggers": [
+     "BOC OCR below 2.50%",
+     "BOC presser dovish",
+     "GBP budget deficit shock"
+    ],
+    "invalidation": "A clean 25bp hike with hawkish guidance and strong budget credibility",
+    "pair_paths": [
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 27.2,
+      "rationale": "Dovish BOC undermines CAD; USD/CAD tends toward 27.2 pip overnight range top."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 29.9,
+      "rationale": "Budget disappointment hits GBP; overnight range 29.9 pips provides the move envelope."
+     },
      {
       "instrument": "NZD/USD",
       "direction": "down",
       "magnitude_pips": 104.3,
-      "rationale": "NZD impulse -1.391% on RBNZ hold, USD closed best"
+      "rationale": "Risk-off extends post-RBNZ NZD weakness; overnight range 104.3 pips."
+     }
+    ]
+   },
+   {
+    "name": "Hawkish BOC / risk-on recovery",
+    "probability": 0.25,
+    "thesis": "BOC explicitly signals further tightening beyond 2.50% and geopolitical tensions ease; CAD and risk-sensitive FX recover, NZD shorts partly squeeze.",
+    "triggers": [
+     "BOC hikes above 2.50%",
+     "BOC presser hawkish",
+     "US-Iran tone de-escalates"
+    ],
+    "invalidation": "BOC hold or renewed geopolitical headline",
+    "pair_paths": [
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 27.2,
+      "rationale": "Hawkish BOC boosts CAD; USD/CAD targets low end of 27.2 pip range."
      },
      {
       "instrument": "AUD/NZD",
-      "direction": "up",
+      "direction": "down",
       "magnitude_pips": 255.1,
-      "rationale": "AUD strength +0.268 vs NZD -1.089 drives cross higher"
-     }
-    ]
-   },
-   {
-    "name": "AUD strength / risk recovery",
-    "probability": 0.35,
-    "thesis": "AUD CPI beat underpins AUD; if risk sentiment stabilizes, AUD extends gains against USD and CHF.",
-    "triggers": [
-     "AUD/USD holds above its close",
-     "AUD/CHF breaks its range high"
-    ],
-    "invalidation": "AUD/USD falls back below its pre-CPI level",
-    "pair_paths": [
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 30.9,
-      "rationale": "AUD CPI beat 0.108% impulse, AUD strength 0.268"
+      "rationale": "Risk-on helps oversold NZD rebound, cooling AUD/NZD from its 255.1 pip range."
      },
-     {
-      "instrument": "AUD/CHF",
-      "direction": "up",
-      "magnitude_pips": 33.0,
-      "rationale": "AUD strength vs CHF held range"
-     }
-    ]
-   },
-   {
-    "name": "JPY/risk-off consolidation",
-    "probability": 0.2,
-    "thesis": "JPY strength without an own catalyst suggests funding unwind; risk-off or geopolitical headlines favor JPY.",
-    "triggers": [
-     "USD/JPY holds below its close",
-     "CHF/JPY extends lower"
-    ],
-    "invalidation": "USD/JPY rallies back above its range",
-    "pair_paths": [
      {
       "instrument": "USD/JPY",
-      "direction": "down",
+      "direction": "up",
       "magnitude_pips": 28.9,
-      "rationale": "JPY strongest +0.294 no catalyst; risk-off supports"
-     },
-     {
-      "instrument": "CHF/JPY",
-      "direction": "down",
-      "magnitude_pips": 58.5,
-      "rationale": "JPY strength, CHF neutral"
+      "rationale": "Risk-on reduces safe-haven JPY demand; USD/JPY retests 28.9 pip range."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "RBNZ dovish repricing extends",
-    "why_it_matters": "NZD weakness can drag antipodean and AUD/NZD higher",
-    "watch": "RBNZ speakers, NZD/USD break of its recent range"
+    "risk": "BOC decision and press conference",
+    "why_it_matters": "Overnight Rate forecast 2.50% vs previous 2.25%; a hold or surprise beyond 2.50% can move CAD crosses sharply.",
+    "watch": "USD/CAD, CAD/JPY"
    },
    {
-    "risk": "BoC surprise / guidance",
-    "why_it_matters": "CAD held range; BoC later can reset USD/CAD",
-    "watch": "Overnight Rate forecast 2.50% vs previous 2.25%"
+    "risk": "GBP Annual Budget/Autumn Forecast",
+    "why_it_matters": "Fiscal surprise can hit GBP and gilt yields; no prior forecast to anchor expectations.",
+    "watch": "GBP/USD, EUR/GBP"
    },
    {
-    "risk": "UK Budget",
-    "why_it_matters": "GBP held range; fiscal headlines can drive GBP/USD",
-    "watch": "Annual Budget Release 13:30"
+    "risk": "Geopolitical escalation risk",
+    "why_it_matters": "US-Iran headline already contributed to risk-off; renewed escalation would boost safe havens and hurt high-beta FX.",
+    "watch": "NZD/USD, USD/JPY, VIX"
    },
    {
-    "risk": "Geopolitical headline",
-    "why_it_matters": "WSJ US-Iran warning moved USD/JPY and Brent; risk sentiment can flip",
-    "watch": "headlines after midterms"
+    "risk": "Post-RBNZ carry overhang",
+    "why_it_matters": "NZD is oversold after -1.391% OCR impulse; any positive NZD headline can trigger a sharp short squeeze.",
+    "watch": "NZD/USD, AUD/NZD"
    }
   ],
-  "calendar_ahead_note": "GBP Annual Budget/ Autumn Forecast and BoC Overnight Rate/MPR/Press Conference are the big event risks; they can reset GBP and CAD drivers.",
+  "calendar_ahead_note": "At 13:30 GBP Annual Budget/Autumn Forecast; at 14:45 BOC Overnight Rate expected 2.50% vs previous 2.25%, with press conference at 15:30. These can reprice GBP and CAD and shift broad risk.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 19158,
-   "completion_tokens": 4973,
-   "total_tokens": 24131,
+   "completion_tokens": 10114,
+   "total_tokens": 29272,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 19072
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 3261
+    "reasoning_tokens": 8007
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 18518
+   "prompt_cache_hit_tokens": 19072,
+   "prompt_cache_miss_tokens": 86
   }
  }
 }
