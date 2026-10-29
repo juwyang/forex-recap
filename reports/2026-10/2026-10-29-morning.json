@@ -13,7 +13,7 @@
   "end_local": "2026-10-29T07:00:00+01:00",
   "fwd_start_utc": "2026-10-29T06:00:00+00:00",
   "fwd_end_utc": "2026-10-29T18:00:00+00:00",
-  "generated_utc": "2026-10-29T06:05:10.256298+00:00",
+  "generated_utc": "2026-10-29T12:48:58.508151+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 32
+   "with_actual": 43
   }
  },
  "facts": {
@@ -2096,20 +2096,23 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was dominated by the FOMC press conference at 19:30, where USD fell 0.242% even though the Fed held rates at 4.00%. CAD and JPY led the majors, while NZD was the weakest. Asia then produced largely uncaused, mean-reverting chop as most post-00:30 legs had no clear catalyst.",
+  "session_summary": "The FOMC held the funds rate at 4.00% as expected, but Chair Warsh's press conference triggered a 0.242% negative USD impulse despite no forecast surprise. CAD and JPY led the G10 complex, closing at their best, while NZD was weakest and EUR/USD ended nearly unchanged at -0.5 pips. Most post-FOMC swings partially retraced in Asia with no clear local catalyst. VIX rose 1.328% as US-Iran headlines added risk premium.",
   "themes": [
    {
-    "theme": "FOMC-driven USD selling",
-    "evidence": "USD fell 0.242% during the press conference; the first USD/JPY leg closed -56.4 pips with high confidence, and most FOMC legs had high confidence.",
+    "theme": "FOMC presser drives broad USD weakness without a scored surprise",
+    "evidence": "own_ccy_impulse_pct -0.242; top movers include USD/ZAR -0.099%, USD/MXN -0.076%, AUD/USD +0.054%, EUR/USD +0.040%, NZD/USD +0.048%.",
     "currencies": [
      "USD",
-     "JPY",
-     "EUR"
+     "ZAR",
+     "MXN",
+     "AUD",
+     "EUR",
+     "NZD"
     ]
    },
    {
-    "theme": "CAD/JPY strength versus NZD weakness",
-    "evidence": "CAD closed +0.239% as rank 1, JPY +0.156% as rank 2, while NZD fell -0.174% as rank 8.",
+    "theme": "CAD and JPY strength, NZD weakness define G10 divergence",
+    "evidence": "CAD strength_pct 0.239, JPY 0.156, NZD -0.174.",
     "currencies": [
      "CAD",
      "JPY",
@@ -2117,147 +2120,169 @@
     ]
    },
    {
-    "theme": "Uncaused Asia chop",
-    "evidence": "After 00:30 multiple legs had confidence none and nearest events were too weak to own the move.",
+    "theme": "Asia session lacked catalysts, leaving pairs to retrace FOMC swings",
+    "evidence": "Multiple legs after 00:30 have no cause; EUR/USD closed -0.5 pips after a 46.5 pip range.",
     "currencies": [
      "EUR",
+     "USD",
+     "JPY",
      "GBP",
+     "CHF",
      "AUD",
      "NZD",
-     "CHF",
-     "JPY"
+     "CAD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "FOMC press conference weakened it 0.242% despite an as-expected 4.00% rate decision.",
-   "EUR": "No own releases; held its range with a -0.102% net move and 1.52 sigma sensitivity to FOMC.",
-   "JPY": "No own releases; closed at +0.156% as VIX rose 1.328 points, implying safe-haven demand.",
-   "GBP": "No own releases; held its range with a -0.011% net move.",
-   "AUD": "No own releases; FOMC-led pop faded, leaving +0.038% after an attempt rejected.",
-   "CAD": "No own releases or identified catalyst; led majors, closing at +0.239% rank 1.",
-   "CHF": "No own releases; held its range with a -0.042% net move.",
-   "NZD": "No own releases; weakest major at -0.174% after fading from its FOMC pop."
+   "USD": "USD weakened after FOMC presser with no forecast surprise; Warsh headlines drove it.",
+   "EUR": "EUR had no own catalyst; sagged broadly after FOMC presser sensitivity.",
+   "JPY": "JPY strengthened with no own release; closed at best without clear catalyst.",
+   "GBP": "GBP had no own catalyst; held its range.",
+   "AUD": "AUD attempted early FOMC presser-led gain but faded; no domestic catalyst.",
+   "CAD": "CAD had no own release but closed strongest; no clear catalyst.",
+   "CHF": "CHF lacked own driver; held its range.",
+   "NZD": "NZD was weakest; no own catalyst, faded after early FOMC bounce."
   },
   "leg_notes": {
-   "EUR/USD": "The pair's only catalyst-driven move was the first leg up (+23.0 pips on FOMC); subsequent up and down legs had no clear catalyst and left a net -0.5 pips."
+   "EUR/USD": "EUR/USD's only attributed leg was the FOMC presser up 23.0 pips; no-catalyst retracements largely canceled it, leaving close -0.5 pips."
   },
   "polarity_reads": [
    {
     "event": "FOMC Press Conference",
-    "read": "USD fell 0.242% during the press conference but polarity is unscored; the reaction implies the market used it to sell USD, not to respond to a data surprise."
+    "read": "Unscored; USD fell 0.242% without a forecast to score, implying long USD positioning was vulnerable."
    },
    {
     "event": "Federal Funds Rate +1 more",
-    "read": "Actual met forecast at 4.00% with no quotes around the release; polarity no-data, so the rate decision itself gave no independent USD signal."
+    "read": "No-data; actual matched forecast at 4.00%, offering no surprise to read positioning."
    }
   ],
   "scenarios": [
    {
-    "name": "Strong US data revives USD",
-    "probability": 0.35,
-    "thesis": "Advance GDP and Core PCE beat forecasts, reversing the overnight USD weakness.",
+    "name": "USD softness extends into US data/ECB",
+    "probability": 0.45,
+    "thesis": "US GDP and Core PCE print soft or ECB signals less dovish than expected, extending USD weakness and EUR recovery.",
     "triggers": [
-     "US Advance GDP q/q above 3.2% forecast",
-     "Core PCE m/m above 0.3% forecast"
+     "GDP q/q below 3.2%",
+     "Core PCE m/m below 0.3%",
+     "ECB presser pushes back on easing"
     ],
-    "invalidation": "US data misses and USD/JPY holds below the overnight close.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 46.5,
-      "rationale": "The overnight EUR/USD range was 46.5 pips; a USD bid can push it back toward the low end of that range."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 74.1,
-      "rationale": "USD/JPY overnight range was 74.1 pips; higher US yields on a GDP beat lift the pair."
-     }
-    ]
-   },
-   {
-    "name": "USD weakness extends after dovish FOMC follow-through",
-    "probability": 0.35,
-    "thesis": "Soft US data and continued FOMC-driven dollar selling keep USD under pressure, with EUR/USD and AUD/USD pressing higher.",
-    "triggers": [
-     "US Advance GDP q/q below 3.2% forecast",
-     "Core PCE m/m below 0.3% forecast",
-     "ECB not aggressively dovish"
-    ],
-    "invalidation": "ECB explicitly signals more cuts than expected or US data far exceeds forecast.",
+    "invalidation": "US data beats and ECB stays neutral.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 46.5,
-      "rationale": "EUR/USD range is 46.5 pips; if USD remains weak, the pair retests the overnight high."
+      "magnitude_pips": 23.0,
+      "rationale": "Overnight FOMC leg size as yardstick and EUR/USD close near unchanged gives room."
      },
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 74.1,
-      "rationale": "USD/JPY range was 74.1 pips; continued downside fits the first FOMC leg of -56.4 pips."
+      "magnitude_pips": 56.4,
+      "rationale": "USD weakness and JPY bid replicating post-FOMC leg."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 66.0,
+      "rationale": "CAD leading strength with no catalyst; broad USD soft extends."
      }
     ]
    },
    {
-    "name": "ECB dovish surprise caps EUR and produces range",
-    "probability": 0.3,
-    "thesis": "ECB keeps rates at 2.65% but the press conference emphasizes downside risks, limiting EUR upside even as USD is soft.",
+    "name": "USD stabilizes and post-FOMC retracement continues",
+    "probability": 0.35,
+    "thesis": "US data comes in firm and ECB neutral, supporting USD and unwinding overnight risk.",
     "triggers": [
-     "ECB Main Refinancing Rate at 2.65% as forecast",
-     "ECB Press Conference emphasizes dovish tone"
+     "GDP q/q at or above 3.2%",
+     "Core PCE m/m at or above 0.3%",
+     "ECB holds at 2.65% with neutral tone"
     ],
-    "invalidation": "ECB signals a hawkish shift or USD data is strongly negative.",
+    "invalidation": "US data misses and ECB turns dovish.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 46.5,
-      "rationale": "EUR/USD range was 46.5 pips; dovish ECB neutralizes USD weakness and holds the pair in its overnight band."
+      "direction": "down",
+      "magnitude_pips": 24.6,
+      "rationale": "Asia retracement amplitude as yardstick."
      },
      {
-      "instrument": "EUR/GBP",
-      "direction": "range",
-      "magnitude_pips": 10.5,
-      "rationale": "EUR/GBP overnight range was 10.5 pips; ECB tone and GBP stability keep it compact."
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 17.9,
+      "rationale": "Post-FOMC USD/JPY bounce amplitude."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 10.3,
+      "rationale": "AUD gave back 70% from peak; further revert."
+     }
+    ]
+   },
+   {
+    "name": "Risk-off geopolitical escalation",
+    "probability": 0.2,
+    "thesis": "US-Iran headlines intensify, driving safe-haven bids and pressuring high-beta FX.",
+    "triggers": [
+     "New US-Iran strike headlines",
+     "VIX extends above 18.767",
+     "Risk currencies underperform"
+    ],
+    "invalidation": "Geopolitical tensions fade quickly.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 39.5,
+      "rationale": "Safe-haven JPY bid on US-Iran headlines."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "down",
+      "magnitude_pips": 20.5,
+      "rationale": "NZD weakest in G10, overnight down leg."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 23.1,
+      "rationale": "CHF safe-haven bid, post-FOMC USD/CHF down leg."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Geopolitical Middle East escalation",
-    "why_it_matters": "VIX rose 1.328 points and Brent whipsawed; risk-sensitive currencies already showed uncaused chop.",
-    "watch": "US/Israel/Iran headlines, especially AP/Axios reports."
+    "risk": "US-Iran geopolitical escalation headlines",
+    "why_it_matters": "Risk sentiment can reverse USD weakness and support safe havens; VIX rose 1.328%.",
+    "watch": "Vance outreach, US warns allies of possible strikes after elections."
    },
    {
-    "risk": "US data surprise",
-    "why_it_matters": "USD fell 0.242% on FOMC, showing crowded positioning; a strong GDP or Core PCE beat can force a sharp reversal.",
-    "watch": "13:30 Advance GDP, Core PCE, claims."
+    "risk": "US GDP/Core PCE",
+    "why_it_matters": "Strong data could revive USD and challenge FOMC-driven weakness; forecast GDP 3.2% vs previous 1.5%, Core PCE 0.3% vs 0.2%.",
+    "watch": "13:30 CET Advance GDP q/q and Core PCE m/m."
    },
    {
-    "risk": "ECB policy tone",
-    "why_it_matters": "EUR is the second-weakest major at -0.102% and has a 1.52 sigma sensitivity to FOMC headlines; a dovish ECB can extend EUR underperformance.",
-    "watch": "14:15 ECB refi rate and 14:45 press conference."
+    "risk": "ECB decision/presser",
+    "why_it_matters": "EUR could reprice if ECB pushes back or signals; rate forecast 2.65% unchanged.",
+    "watch": "14:15 CET Main Refinancing Rate and 14:45 presser."
    }
   ],
-  "calendar_ahead_note": "US Advance GDP, Core PCE, claims and the ECB decision/press conference can reprice both USD and EUR after an overnight tape driven mainly by FOMC communication.",
+  "calendar_ahead_note": "US Advance GDP q/q and Core PCE m/m at 13:30, plus ECB decision and presser at 14:15/14:45, can shift USD/EUR pricing after FOMC.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 18251,
-   "completion_tokens": 6544,
-   "total_tokens": 24795,
+   "completion_tokens": 10948,
+   "total_tokens": 29199,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 18176
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 4766
+    "reasoning_tokens": 9107
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 17611
+   "prompt_cache_hit_tokens": 18176,
+   "prompt_cache_miss_tokens": 75
   }
  }
 }
