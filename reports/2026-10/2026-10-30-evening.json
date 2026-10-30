@@ -13,7 +13,7 @@
   "end_local": "2026-10-30T19:00:00+01:00",
   "fwd_start_utc": "2026-10-30T18:00:00+00:00",
   "fwd_end_utc": "2026-11-02T18:00:00+00:00",
-  "generated_utc": "2026-10-30T18:47:33.999015+00:00",
+  "generated_utc": "2026-10-30T22:13:13.741739+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -2524,203 +2524,207 @@
   ]
  },
  "analysis": {
-  "session_summary": "The full trading day was a risk-off, catalyst-light session: VIX rose 14.247%, JPY was the strongest major (+0.211%) and EUR the weakest (-0.231%). BOJ and US ECI both printed inline but still produced brief JPY/USD strength, while German GDP beat did little for EUR. Most legs had no clear catalyst, with EUR/USD closing -17.6 pips and DXY nearly flat (+0.01%).",
+  "session_summary": "Tokyo set the tone: BOJ stayed on hold at <1.25%, and the yen closed as the strongest G10 at +0.211%. Europe was the weakest, with EUR -0.231%, and its German GDP beat generated only a muted impulse. US labor costs printed inline but briefly lifted the dollar, while VIX rose 14.247% and risk-sensitive pairs were mixed. Most individual legs lacked a clear catalyst, so the tape reads as flow-driven yen demand and structural euro supply.",
   "themes": [
    {
-    "theme": "Safe-haven risk-off bid",
-    "evidence": "VIX rose 14.247%, JPY +0.211% strongest, CHF +0.145%, EUR -0.231% weakest.",
+    "theme": "Yen strength without a hawkish BOJ",
+    "evidence": "BOJ Policy Rate printed inline at <1.25% yet JPY still strengthened 0.068%; JPY closed +0.211%.",
     "currencies": [
      "JPY",
-     "CHF",
+     "USD"
+    ]
+   },
+   {
+    "theme": "Euro underperformance across G10",
+    "evidence": "EUR strength -0.231%; EUR/USD -0.157%; EUR/CHF -0.375%; EUR/GBP -0.288%.",
+    "currencies": [
      "EUR",
-     "USD"
+     "USD",
+     "CHF",
+     "GBP"
     ]
    },
    {
-    "theme": "Euro underperformance despite data beat",
-    "evidence": "German Prelim GDP q/q printed 0.2% vs 0.1% forecast but EUR was weakest major; EUR/USD -17.6 pips with base share 0.76 from EUR.",
+    "theme": "Risk premium building / VIX spike",
+    "evidence": "VIX +14.247%; USD/ZAR +0.628%; USD/MXN -0.23%; USD/NOK -0.62%; USD/SEK -0.246%.",
     "currencies": [
-     "EUR"
-    ]
-   },
-   {
-    "theme": "Catalyst-light price action",
-    "evidence": "BOJ and US ECI inline, German GDP and Canada GDP muted; most legs had no clear catalyst.",
-    "currencies": [
-     "GBP",
-     "AUD",
-     "NZD",
-     "CAD",
-     "JPY",
-     "USD"
+     "USD",
+     "ZAR",
+     "MXN",
+     "NOK",
+     "SEK"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "Inline ECI produced brief USD strength but overall index still lower on safe-haven flows.",
-   "EUR": "German GDP beat at 0.2% but basket response muted; euro was weakest major.",
-   "JPY": "Inline BOJ and muted press conference; yen still strengthened, likely safe-haven flow.",
-   "GBP": "No own releases; attempted rally was rejected, closing only modestly higher.",
-   "AUD": "No own releases; commodity currency weakened, then rejected selling.",
-   "CAD": "GDP missed at 0.0% vs 0.2% but reaction was muted, closing at session best.",
-   "CHF": "No own releases; safe-haven bid drove strength before giving back 75%.",
-   "NZD": "No own releases; sold to -0.20% then recovered, ending nearly flat."
+   "USD": "Inline ECI briefly bid USD; otherwise no clear catalyst and closed soft.",
+   "EUR": "German GDP beat caused no impulse; slid to weakest G10.",
+   "JPY": "BOJ printed inline but JPY still strengthened; no catalyst beyond yen demand.",
+   "GBP": "No UK releases; early strength faded to a marginal gain.",
+   "AUD": "No clear catalyst; weak throughout with partial recovery.",
+   "CAD": "GDP miss met no impulse; closed near its best.",
+   "CHF": "No own releases; early attempt rejected but closed second strongest.",
+   "NZD": "No clear catalyst; early selling was rejected and closed nearly flat."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD had an early +38.0 pip rise, then a BOJ-press-aided -28.6 pip drop, a Spain-data +23.5 pip bounce, a Canada-GDP-driven -61.0 pip drop, a late +27.9 pip no-news bounce, and a -18.7 pip fade, netting -17.6 pips."
+   "EUR/USD": "Alternating up/down legs with no single catalyst owned the move; EUR weakness dominated, leaving EUR/USD down 17.6 pips at 1.11515."
   },
   "polarity_reads": [
    {
     "event": "BOJ Policy Rate +2 more",
-    "read": "Inline decision but JPY still strengthened 0.068%, suggesting positioning was flat and safe-haven demand drove yen."
+    "read": "Inline policy still produced JPY strength (+0.068%), suggesting markets had already positioned for a hawkish hold or safe-haven bid."
    },
    {
     "event": "Employment Cost Index q/q",
-    "read": "Inline at 0.8% but USD strengthened 0.118%, indicating market leaned long USD or read wage inflation as hawkish."
+    "read": "Inline US labor costs still saw USD strengthen +0.118%, consistent with short-dollar positioning."
    },
    {
     "event": "German Prelim GDP q/q",
-    "read": "Beat at 0.2% vs 0.1% but EUR basket moved only 0.008%, showing euro upside lacked conviction."
+    "read": "Positive GDP surprise produced only a muted EUR impulse, signaling heavy underlying euro supply."
    },
    {
     "event": "GDP m/m",
-    "read": "Canada GDP 0.0% vs 0.2% but basket moved -0.010% inside noise, so no clear CAD positioning read."
-   },
-   {
-    "event": "BOJ Press Conference",
-    "read": "Muted 0.028% basket move; no material positioning signal."
-   },
-   {
-    "event": "Tokyo Core CPI y/y",
-    "read": "Muted -0.027%; noise, no signal."
+    "read": "CAD missed to 0.0% but basket move was -0.010%, showing little CAD downside positioning."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-off continuation",
+    "name": "Risk-off / JPY & CHF outperform",
     "probability": 0.4,
-    "thesis": "VIX surged 14.247% with JPY leading at +0.211% and CHF at +0.145%; if sentiment remains risk-averse, safe havens extend.",
+    "thesis": "The VIX spike extends; yen and franc retain safe-haven bid while euro and high-beta stay offered.",
     "triggers": [
-     "VIX holds above 20.964",
-     "ISM Manufacturing PMI comes in below 54.7",
-     "Fresh geopolitical headlines"
+     "ISM Manufacturing PMI below 54.7",
+     "Further US-Iran or Strait of Hormuz headlines",
+     "VIX holds above 20.964"
     ],
-    "invalidation": "USD/JPY closes back above 157.45",
+    "invalidation": "EUR/USD recovers above 1.11515 and USD/JPY stabilizes.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
       "direction": "down",
       "magnitude_pips": 78.1,
-      "rationale": "EUR weakest at -0.231%; risk-off with USD mixed pushes pair lower."
+      "rationale": "Euro structural weakness plus safe-haven USD demand."
      },
      {
       "instrument": "USD/JPY",
       "direction": "down",
       "magnitude_pips": 101.8,
-      "rationale": "JPY strongest at +0.211%; safe-haven demand is direct JPY bid."
+      "rationale": "Yen demand dominates in a risk-off extension."
      },
      {
       "instrument": "USD/CHF",
       "direction": "down",
       "magnitude_pips": 70.6,
-      "rationale": "CHF +0.145% on safe-haven flows, USD flat-to-weaker."
+      "rationale": "Franc safe-haven bid."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 29.3,
+      "rationale": "High-beta Australian dollar underperforms."
      }
     ]
    },
    {
-    "name": "US data and positioning rebound",
+    "name": "Mean reversion / USD recovery",
     "probability": 0.35,
-    "thesis": "Inline ECI still produced USD strength of 0.118%; a strong ISM Manufacturing PMI above 54.7 can trigger a USD short squeeze.",
+    "thesis": "Short-dollar positioning unwinds after inline ECI and strong ISM; euro and yen retrace.",
     "triggers": [
      "ISM Manufacturing PMI above 54.7",
-     "DXY reclaims 101.821 close",
-     "USD/MXN moves toward 18.7997 close"
+     "VIX falls back from 20.964",
+     "FOMC speakers sound less dovish"
     ],
-    "invalidation": "EUR/USD holds above 1.11515 close",
+    "invalidation": "USD/JPY breaks below 157.45 and EUR/USD reclaims 1.11515.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 61.0,
-      "rationale": "USD rebound after brief ECI strength; EUR leg down -61.0 pips shows path when USD firms."
-     },
-     {
-      "instrument": "GBP/USD",
-      "direction": "down",
-      "magnitude_pips": 51.4,
-      "rationale": "GBP rally rejected; USD strength pressures cable toward prior down leg of -51.4 pips."
+      "direction": "up",
+      "magnitude_pips": 78.1,
+      "rationale": "Dollar short covering lifts EUR/USD."
      },
      {
       "instrument": "USD/JPY",
       "direction": "up",
-      "magnitude_pips": 47.4,
-      "rationale": "Previous USD/JPY recovery leg was +47.4 pips; if USD bounces, similar magnitude possible."
+      "magnitude_pips": 101.8,
+      "rationale": "Yen strength fades as risk stabilizes."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 29.3,
+      "rationale": "High-beta recovery on firmer risk sentiment."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 70.6,
+      "rationale": "Franc safe-haven premium unwinds."
      }
     ]
    },
    {
-    "name": "Choppy range, no catalyst",
+    "name": "Euro underperformance persists",
     "probability": 0.25,
-    "thesis": "Most legs had no clear catalyst and event reactions were muted; prices likely stay range-bound.",
+    "thesis": "Euro remains the weakest G10; crosses with EUR continue to slide despite no fresh catalyst.",
     "triggers": [
-     "ISM in line with 54.7 forecast",
-     "No major headlines",
-     "DXY remains near 101.821"
+     "German GDP follow-through stays muted",
+     "EUR/GBP holds below 0.83305",
+     "EUR/CHF below 0.91919"
     ],
-    "invalidation": "Sustained break of EUR/USD 78.1 pips range",
+    "invalidation": "EUR/USD recovers above 1.11515 and EUR/GBP reclaims 0.83305.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "range",
+      "direction": "down",
       "magnitude_pips": 78.1,
-      "rationale": "EUR/USD traded a 78.1 pip range on the day; no clear driver to extend."
+      "rationale": "Structural euro supply keeps EUR/USD offered."
      },
      {
-      "instrument": "GBP/USD",
-      "direction": "range",
-      "magnitude_pips": 73.2,
-      "rationale": "GBP/USD range was 73.2 pips; mixed GBP vs USD drivers keep it contained."
+      "instrument": "EUR/GBP",
+      "direction": "down",
+      "magnitude_pips": 42.7,
+      "rationale": "Euro underperformance versus stronger GBP."
      },
      {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 101.8,
-      "rationale": "USD/JPY traded a 101.8 pip range; lack of fresh catalyst argues for range."
+      "instrument": "EUR/CHF",
+      "direction": "down",
+      "magnitude_pips": 43.6,
+      "rationale": "CHF outpaces EUR on safe-haven flows."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Geopolitical risk in Middle East",
-    "why_it_matters": "VIX rose 14.247% and CHF/JPY strengthened; escalation could intensify haven flows.",
-    "watch": "VIX close 20.964 and Brent/USD price action."
+    "risk": "ISM Manufacturing PMI surprise",
+    "why_it_matters": "It can shift the dollar path after inline ECI.",
+    "watch": "Actual vs 54.7 forecast; USD/MXN and Gold/USD reaction."
    },
    {
-    "risk": "US ISM Manufacturing PMI",
-    "why_it_matters": "Only scheduled catalyst ahead; a miss below 54.7 may cement risk-off, a beat may trigger USD rebound.",
-    "watch": "Actual vs 54.7 forecast and USD/JPY around 157.45 close."
+    "risk": "Geopolitical escalation / Iran",
+    "why_it_matters": "VIX is already +14.247%; headline risk can trigger risk-off without economic catalyst.",
+    "watch": "VIX, USD/ZAR, USD/JPY."
    },
    {
-    "risk": "EUR short squeeze vs structural weakness",
-    "why_it_matters": "EUR weakest despite German GDP beat; any risk-on reversal could squeeze shorts.",
-    "watch": "EUR/USD close 1.11515 and EUR/GBP 0.83305 close."
+    "risk": "Liquidity / end-of-month flow",
+    "why_it_matters": "Many legs lacked clear catalysts; month-end rebalancing may reverse moves.",
+    "watch": "EUR/USD around 1.11515 and GBP/USD around 1.33859."
    }
   ],
-  "calendar_ahead_note": "Only ISM Manufacturing PMI at 16:00 (forecast 54.7, previous 54.5); it can decide between USD rebound and risk-off continuation.",
+  "calendar_ahead_note": "ISM Manufacturing PMI at 16:00 is the only scheduled high/medium event ahead. With forecast 54.7 against 54.5 prior, a strong print could validate USD recovery, while a miss would extend risk-off yen/franc demand.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 21933,
-   "completion_tokens": 7973,
-   "total_tokens": 29906,
+   "completion_tokens": 7242,
+   "total_tokens": 29175,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 21888
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 5922
+    "reasoning_tokens": 5348
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 21293
+   "prompt_cache_hit_tokens": 21888,
+   "prompt_cache_miss_tokens": 45
   }
  }
 }
