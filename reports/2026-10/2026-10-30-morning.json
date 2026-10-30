@@ -13,7 +13,7 @@
   "end_local": "2026-10-30T07:00:00+01:00",
   "fwd_start_utc": "2026-10-30T06:00:00+00:00",
   "fwd_end_utc": "2026-10-30T18:00:00+00:00",
-  "generated_utc": "2026-10-30T06:05:13.517565+00:00",
+  "generated_utc": "2026-10-30T12:40:42.297687+00:00",
   "partial": false,
   "coverage_min": 720,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 53
+   "with_actual": 70
   }
  },
  "facts": {
@@ -1634,181 +1634,193 @@
   ]
  },
  "analysis": {
-  "session_summary": "The overnight tape was risk-off: DXY fell 0.152% and VIX rose 4.545%, while CHF led gains and AUD lagged. BOJ policy printed in line (<1.25% vs <1.25%) but JPY still strengthened 0.068% on the event. Most major legs had no clear catalyst, with nearest headlines too weak to own the moves. USD/JPY closed -28.0 pips and USD/CHF -37.3 pips, leaving CHF/JPY +54.6 pips.",
+  "session_summary": "CHF led the majors at +0.321% with no Swiss catalyst, while USD was broad-soft with no US catalyst; DXY fell 15.5 points to 101.656. The inline BOJ still produced a +0.068% JPY own-currency impulse, but JPY gave back 85% of its +0.22% attempt, leaving USD/JPY down 28 pips at 157.621. USD softness lifted EUR/USD 15.5 pips and GBP/USD 22.7 pips, while USD/CHF slid 37.3 pips and EUR/CHF fell 29.0 pips. High-beta AUD and NZD were mixed, with AUD/USD down 1.8 pips and NZD/USD up 7.3 pips.",
   "themes": [
    {
-    "theme": "Safe-haven CHF/JPY outperformed",
-    "evidence": "CHF strength_pct +0.321%, JPY +0.044%; USD/CHF -37.3 pips, CHF/JPY +54.6 pips, VIX +4.545%.",
+    "theme": "CHF outperformance with no catalyst",
+    "evidence": "CHF strength +0.321% rank 1; USD/CHF -37.3 pips, EUR/CHF -29.0 pips, AUD/CHF -27.7 pips, NZD/CHF -15.0 pips",
     "currencies": [
      "CHF",
-     "JPY"
-    ]
-   },
-   {
-    "theme": "US dollar soft despite risk-off",
-    "evidence": "DXY -0.152%; USD/SEK -273.5 pips, USD/NOK -326.7 pips, USD/JPY -28 pips.",
-    "currencies": [
-     "USD"
-    ]
-   },
-   {
-    "theme": "No clear catalyst for most legs",
-    "evidence": "EUR/USD 19:00-02:00 +38.0 pips and 02:00-06:45 -23.8 pips both have confidence none; BOJ Policy Rate too weak to own EUR/USD pullback.",
-    "currencies": [
+     "USD",
      "EUR",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Broad USD softness despite no US catalyst",
+    "evidence": "DXY -15.5 points to 101.656; EUR/USD +15.5 pips, GBP/USD +22.7 pips, USD/CHF -37.3 pips; USD strength -0.134%",
+    "currencies": [
+     "USD",
+     "EUR",
+     "GBP",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "BOJ noise not trend: yen attempt rejected",
+    "evidence": "BOJ inline; JPY own impulse +0.068%; JPY strength 0.044% but gave back 85% of +0.22%; USD/JPY -28.0 pips",
+    "currencies": [
+     "JPY",
      "USD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "No US data; broad dollar softness as DXY fell 0.152% while VIX rose 4.545%.",
-   "EUR": "No catalyst; attempted +0.15% gain was rejected, closing flat for the window.",
-   "JPY": "BOJ policy inline but yen firmed 0.068%; market not selling into an unchanged decision.",
-   "GBP": "No UK releases; cable gained on USD weakness but with modest 0.037% own strength.",
-   "AUD": "No clear catalyst; weakest major, down 0.158% amid risk-off.",
-   "CAD": "No Canadian data; CAD stayed soft in the risk-off tape.",
-   "CHF": "No domestic releases; safe-haven bid made CHF the strongest major, +0.321%.",
-   "NZD": "No data; sold to -0.196% then recovered 88%, closing near flat."
+   "USD": "No US catalyst; DXY fell 15.5 points to 101.656 as USD was broadly sold.",
+   "EUR": "No clear catalyst; attempted +0.15% but gave back 82%, ending only +0.006%.",
+   "JPY": "BOJ printed inline and CPI was muted; JPY strengthened 0.068% on the BOJ but gave back 85%.",
+   "GBP": "No clear catalyst; held its range and gained 0.037% without any UK release.",
+   "AUD": "No clear catalyst; weakest major at -0.158%, holding its range on low-impact Aussie data.",
+   "CAD": "No clear catalyst; held its range at -0.111% with no Canadian releases.",
+   "CHF": "No clear catalyst; strongest major at +0.321% and held its range.",
+   "NZD": "No clear catalyst; sold to -0.20% but recovered 88%, closing at -0.004%."
   },
   "leg_notes": {
-   "EUR/USD": "Initial 38.0-pip rise to 02:00 had no clear catalyst and then a -23.8-pip pullback left net +15.5 pips; both legs lacked clear drivers."
+   "EUR/USD": "EUR/USD carved a 38.0 pip up leg into 02:00 then a 23.8 pip down leg after; both legs lacked a clear catalyst, netting +15.5 pips."
   },
   "polarity_reads": [
    {
     "event": "BOJ Policy Rate +2 more",
-    "read": "Inline decision still produced a 0.068% yen impulse, implying the market was not positioned for a dovish surprise and wanted more hawkish guidance."
+    "read": "Inline BOJ still produced a +0.068% own-currency impulse, implying short-yen positioning was squeezed rather than fresh longs added."
    },
    {
     "event": "Tokyo Core CPI y/y",
-    "read": "Muted -0.027% basket move inside the noise floor means no inflation-driven position adjustment for JPY."
+    "read": "A -0.027% basket move inside the noise floor shows no positioning signal; CPI was ignored."
    }
   ],
   "scenarios": [
    {
-    "name": "Risk-off continuation / franc-yen bid",
+    "name": "CHF strength persists",
     "probability": 0.45,
-    "thesis": "BOJ presser does not push back; geopolitical headlines keep VIX elevated and CHF/JPY bid.",
+    "thesis": "CHF was the strongest major at +0.321% and held its range with no catalyst; momentum may continue into Europe.",
     "triggers": [
-     "BOJ Press Conference sounds neutral or hawkish",
-     "VIX holds above 19",
-     "USD/CHF remains below its overnight high"
+     "No Swiss headlines or data",
+     "Risk sentiment stays soft",
+     "BOJ press conference does not reverse CHF/JPY"
     ],
-    "invalidation": "BOJ presser explicitly dovish and VIX falls sharply.",
+    "invalidation": "A hawkish BOJ press conference lifts JPY enough to reverse CHF/JPY.",
     "pair_paths": [
      {
       "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 70.6,
-      "rationale": "CHF safe-haven bid extends; USD/CHF range is 70.6 pips."
+      "magnitude_pips": 56.6,
+      "rationale": "The 19:00-02:00 leg fell 56.6 pips, and CHF strength remains dominant."
      },
      {
-      "instrument": "USD/JPY",
+      "instrument": "EUR/CHF",
       "direction": "down",
-      "magnitude_pips": 86.3,
-      "rationale": "JPY firms post-BOJ; current range 86.3 pips."
-     },
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 53.7,
-      "rationale": "Dollar softness persists; EUR/USD range is 53.7 pips."
-     }
-    ]
-   },
-   {
-    "name": "BOJ presser triggers yen reversal",
-    "probability": 0.35,
-    "thesis": "Ueda sounds dovish, unwinding the yen bid; USD/JPY stabilizes and CHF/JPY slips.",
-    "triggers": [
-     "BOJ Press Conference pushes back on tightening",
-     "USD/JPY bounces after BOJ presser",
-     "CHF/JPY retreats from +54.6 pips"
-    ],
-    "invalidation": "BOJ presser reaffirms policy path and JPY strengthens.",
-    "pair_paths": [
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 86.3,
-      "rationale": "Yen bid unwinds; USD/JPY can retrace the full 86.3-pip range."
+      "magnitude_pips": 34.1,
+      "rationale": "EUR/CHF first leg fell 34.1 pips, with EUR flat and CHF strong."
      },
      {
       "instrument": "CHF/JPY",
-      "direction": "down",
-      "magnitude_pips": 92.0,
-      "rationale": "CHF/JPY gives back its advance within a 92.0-pip range."
+      "direction": "up",
+      "magnitude_pips": 81.1,
+      "rationale": "CHF/JPY first leg gained 81.1 pips as CHF outperformance dominated."
      },
      {
-      "instrument": "AUD/USD",
+      "instrument": "AUD/CHF",
       "direction": "down",
-      "magnitude_pips": 25.3,
-      "rationale": "Risk-off pressure on AUD persists; current range 25.3 pips."
+      "magnitude_pips": 36.5,
+      "rationale": "AUD/CHF fell 36.5 pips as AUD weakness and CHF strength combined."
      }
     ]
    },
    {
-    "name": "Consolidation after BOJ",
-    "probability": 0.2,
-    "thesis": "After big overnight swings, majors hold inside recent ranges awaiting European/US data.",
+    "name": "BOJ-driven yen correction fades",
+    "probability": 0.35,
+    "thesis": "JPY strengthened 0.068% on the inline BOJ but gave back 85% of its +0.22% attempt, so follow-through may fade.",
     "triggers": [
-     "BOJ Press Conference offers no new signal",
-     "EUR/USD stays within 53.7-pip range",
-     "DXY trades near 101.656"
+     "BOJ press conference offers no new hawkish guidance",
+     "Tokyo core CPI muted was ignored",
+     "USD stability in Asia afternoon"
     ],
-    "invalidation": "Break of overnight high/low or strong US ECI.",
+    "invalidation": "A hawkish BOJ press conference breaks USD/JPY below 157.621.",
     "pair_paths": [
      {
-      "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 53.7,
-      "rationale": "Range intact at 53.7 pips."
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 32.5,
+      "rationale": "Post-BOJ leg recovered 32.5 pips, showing prior yen strength being faded."
      },
      {
-      "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 86.3,
-      "rationale": "Range intact at 86.3 pips."
+      "instrument": "CHF/JPY",
+      "direction": "up",
+      "magnitude_pips": 26.5,
+      "rationale": "CHF/JPY last leg bounced 26.5 pips as yen correction stalled."
+     }
+    ]
+   },
+   {
+    "name": "Risk rebound lifts high-beta",
+    "probability": 0.2,
+    "thesis": "Geopolitical headlines failed to own FX legs; a calmer tape may lift AUD and NZD and soften CHF.",
+    "triggers": [
+     "No escalation in Iran/Strait of Hormuz headlines",
+     "Equities stabilize",
+     "BOJ press conference neutral"
+    ],
+    "invalidation": "A new escalation headline or VIX spike above 19.18385.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 22.3,
+      "rationale": "AUD/USD had a 22.3 pip bounce off lows; risk bid would extend it."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 16.1,
+      "rationale": "NZD/USD recovered 16.1 pips in its up leg; a calmer tape supports it."
      },
      {
       "instrument": "USD/CHF",
-      "direction": "range",
-      "magnitude_pips": 70.6,
-      "rationale": "Range intact at 70.6 pips."
+      "direction": "up",
+      "magnitude_pips": 22.6,
+      "rationale": "If CHF strength fades, USD/CHF can extend its 22.6 pip rebound."
+     },
+     {
+      "instrument": "AUD/CHF",
+      "direction": "up",
+      "magnitude_pips": 23.6,
+      "rationale": "AUD/CHF already bounced 23.6 pips off lows; risk recovery would extend."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "BOJ Press Conference yen volatility",
-    "why_it_matters": "BOJ statement already caused 0.068% JPY impulse and top mover AUD/USD sigma 1.65.",
-    "watch": "BOJ Press Conference 07:30; USD/JPY, CHF/JPY, AUD/USD."
+    "risk": "BOJ Press Conference at 07:30",
+    "why_it_matters": "JPY attempt rejected after inline BOJ; press conference can set the direction for yen crosses.",
+    "watch": "USD/JPY, CHF/JPY, EUR/JPY"
    },
    {
-    "risk": "Geopolitical escalation in Middle East",
-    "why_it_matters": "Headlines on Iran attack options and UKMTO Strait of Hormuz incident surfaced with VIX +4.545%.",
-    "watch": "Brent, USD/CHF, USD/JPY, Gold/USD."
+    "risk": "Geopolitical headlines in Iran/Strait of Hormuz",
+    "why_it_matters": "Top Admiral Briefs Trump on Iran attack options and UKMTO incident near Khasab; earlier moves were too weak to own but a risk shock could change that.",
+    "watch": "Brent/USD, USD/MXN, USD/SEK, USD/NOK, USD/CHF"
    },
    {
-    "risk": "US Employment Cost Index surprises",
-    "why_it_matters": "ECI q/q forecast 0.8% vs prior 0.9% can reprice Fed path and the dollar.",
-    "watch": "13:30 ECI, DXY/USD, EUR/USD, USD/JPY."
+    "risk": "Month-end flows and upcoming data",
+    "why_it_matters": "German prelim CPI/GDP, CAD GDP, US ECI can shift EUR, CAD, USD; month-end may amplify moves.",
+    "watch": "EUR/USD, USD/CAD, DXY"
    }
   ],
-  "calendar_ahead_note": "BOJ Press Conference at 07:30 can clarify the inline decision and drive JPY crosses; German CPI and GDP from 08:29/10:00 may set EUR tone; US Employment Cost Index 13:30 is the main USD event, alongside Canadian GDP 13:30.",
+  "calendar_ahead_note": "The 07:30 BOJ press conference can rewrite the yen story; German prelim CPI at 08:29 and GDP at 10:00, then CAD GDP and US ECI at 13:30 can move EUR, CAD and USD.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 14276,
-   "completion_tokens": 8040,
-   "total_tokens": 22316,
+   "completion_tokens": 9666,
+   "total_tokens": 23942,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 14208
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 6122
+    "reasoning_tokens": 7542
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 13636
+   "prompt_cache_hit_tokens": 14208,
+   "prompt_cache_miss_tokens": 68
   }
  }
 }
