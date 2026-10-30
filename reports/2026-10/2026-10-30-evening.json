@@ -1,0 +1,2726 @@
+{
+ "meta": {
+  "date": "2026-10-30",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-10-29T18:00:00+00:00",
+  "end_utc": "2026-10-30T18:00:00+00:00",
+  "start_local": "2026-10-29T19:00:00+01:00",
+  "end_local": "2026-10-30T19:00:00+01:00",
+  "fwd_start_utc": "2026-10-30T18:00:00+00:00",
+  "fwd_end_utc": "2026-11-02T18:00:00+00:00",
+  "generated_utc": "2026-10-30T18:47:33.999015+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 72
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-10-29 19:00 CET",
+   "to_local": "2026-10-30 19:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "JPY",
+    "rank": 1,
+    "strength_pct": 0.211,
+    "intraday_peak": 0.436,
+    "intraday_trough": 0.012,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "BOJ Policy Rate +2 more",
+      "impact": "High",
+      "actual": "<1.25%",
+      "forecast": "<1.25%",
+      "polarity": "inline",
+      "note": "printed in line; JPY still went stronger by 0.068%"
+     },
+     {
+      "title": "BOJ Press Conference",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.028%, inside the noise floor"
+     },
+     {
+      "title": "Tokyo Core CPI y/y",
+      "impact": "Medium",
+      "actual": "2.6%",
+      "forecast": "2.6%",
+      "polarity": "muted",
+      "note": "basket moved -0.027%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "German Prelim GDP q/q",
+     "instrument": "USD/JPY",
+     "sigma": 1.53
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 2,
+    "strength_pct": 0.145,
+    "intraday_peak": 0.526,
+    "intraday_trough": 0.018,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.53%, gave back 75%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "German Prelim GDP q/q",
+     "instrument": "USD/CHF",
+     "sigma": 2.22
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 3,
+    "strength_pct": 0.059,
+    "intraday_peak": 0.21,
+    "intraday_trough": -0.031,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.21%, gave back 63%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "German Prelim GDP q/q",
+     "instrument": "EUR/GBP",
+     "sigma": -2.73
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 4,
+    "strength_pct": 0.047,
+    "intraday_peak": 0.057,
+    "intraday_trough": -0.173,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "GDP m/m",
+      "impact": "Medium",
+      "actual": "0.0%",
+      "forecast": "0.2%",
+      "polarity": "muted",
+      "note": "basket moved -0.010%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "GDP m/m",
+     "instrument": "USD/CAD",
+     "sigma": 1.61
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 5,
+    "strength_pct": -0.024,
+    "intraday_peak": 0.059,
+    "intraday_trough": -0.196,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.20%, recovered 68%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOJ Press Conference",
+     "instrument": "NZD/USD",
+     "sigma": -1.34
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 6,
+    "strength_pct": -0.075,
+    "intraday_peak": 0.038,
+    "intraday_trough": -0.309,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.31%, recovered 68%",
+    "own_releases": [
+     {
+      "title": "Employment Cost Index q/q",
+      "impact": "Medium",
+      "actual": "0.8%",
+      "forecast": "0.8%",
+      "polarity": "inline",
+      "note": "printed in line; USD still went stronger by 0.118%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "GDP m/m",
+     "instrument": "USD/MXN",
+     "sigma": 2.68
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 7,
+    "strength_pct": -0.133,
+    "intraday_peak": -0.008,
+    "intraday_trough": -0.379,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.38%, recovered 66%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "German Prelim GDP q/q",
+     "instrument": "AUD/CHF",
+     "sigma": 1.59
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 8,
+    "strength_pct": -0.231,
+    "intraday_peak": 0.148,
+    "intraday_trough": -0.289,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.15%, gave back 87%",
+    "own_releases": [
+     {
+      "title": "German Prelim GDP q/q",
+      "impact": "Medium",
+      "actual": "0.2%",
+      "forecast": "0.1%",
+      "polarity": "muted",
+      "note": "basket moved 0.008%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "German Prelim GDP q/q",
+     "instrument": "EUR/GBP",
+     "sigma": -2.73
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.157,
+    "from_EUR": -0.231,
+    "from_USD": 0.075,
+    "base_share": 0.76
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.133,
+    "from_GBP": 0.059,
+    "from_USD": 0.075,
+    "base_share": 0.44
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.058,
+    "from_AUD": -0.133,
+    "from_USD": 0.075,
+    "base_share": 0.64
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.051,
+    "from_NZD": -0.024,
+    "from_USD": 0.075,
+    "base_share": 0.24
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.285,
+    "from_USD": -0.075,
+    "from_JPY": -0.211,
+    "base_share": 0.26
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.22,
+    "from_USD": -0.075,
+    "from_CHF": -0.145,
+    "base_share": 0.34
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": -0.122,
+    "from_USD": -0.075,
+    "from_CAD": -0.047,
+    "base_share": 0.61
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.29,
+    "from_EUR": -0.231,
+    "from_GBP": -0.059,
+    "base_share": 0.8
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.442,
+    "from_EUR": -0.231,
+    "from_JPY": -0.211,
+    "base_share": 0.52
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.377,
+    "from_EUR": -0.231,
+    "from_CHF": -0.145,
+    "base_share": 0.61
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.099,
+    "from_EUR": -0.231,
+    "from_AUD": 0.133,
+    "base_share": 0.64
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.278,
+    "from_EUR": -0.231,
+    "from_CAD": -0.047,
+    "base_share": 0.83
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.208,
+    "from_EUR": -0.231,
+    "from_NZD": 0.024,
+    "base_share": 0.91
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.152,
+    "from_GBP": 0.059,
+    "from_JPY": -0.211,
+    "base_share": 0.22
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.087,
+    "from_GBP": 0.059,
+    "from_CHF": -0.145,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.191,
+    "from_GBP": 0.059,
+    "from_AUD": 0.133,
+    "base_share": 0.31
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.011,
+    "from_GBP": 0.059,
+    "from_CAD": -0.047,
+    "base_share": 0.55
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.082,
+    "from_GBP": 0.059,
+    "from_NZD": 0.024,
+    "base_share": 0.71
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.343,
+    "from_AUD": -0.133,
+    "from_JPY": -0.211,
+    "base_share": 0.39
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.278,
+    "from_AUD": -0.133,
+    "from_CHF": -0.145,
+    "base_share": 0.48
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.18,
+    "from_AUD": -0.133,
+    "from_CAD": -0.047,
+    "base_share": 0.74
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.109,
+    "from_AUD": -0.133,
+    "from_NZD": 0.024,
+    "base_share": 0.85
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.234,
+    "from_NZD": -0.024,
+    "from_JPY": -0.211,
+    "base_share": 0.1
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.169,
+    "from_NZD": -0.024,
+    "from_CHF": -0.145,
+    "base_share": 0.14
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.071,
+    "from_NZD": -0.024,
+    "from_CAD": -0.047,
+    "base_share": 0.33
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.164,
+    "from_CAD": 0.047,
+    "from_JPY": -0.211,
+    "base_share": 0.18
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.098,
+    "from_CAD": 0.047,
+    "from_CHF": -0.145,
+    "base_share": 0.25
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.065,
+    "from_CHF": 0.145,
+    "from_JPY": -0.211,
+    "base_share": 0.41
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.241
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.166
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.067
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.054
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.027
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.085
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.151
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.264
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11515,
+    "chg_pips": -17.6,
+    "chg_pct": -0.158,
+    "range_pips": 78.1,
+    "close_in_range": 0.19,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.33859,
+    "chg_pips": 17.6,
+    "chg_pct": 0.132,
+    "range_pips": 73.2,
+    "close_in_range": 0.35,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.70293,
+    "chg_pips": -4.2,
+    "chg_pct": -0.06,
+    "range_pips": 29.3,
+    "close_in_range": 0.53,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.5632,
+    "chg_pips": 2.9,
+    "chg_pct": 0.052,
+    "range_pips": 32.4,
+    "close_in_range": 0.4,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 157.45,
+    "chg_pips": -45.1,
+    "chg_pct": -0.286,
+    "range_pips": 101.8,
+    "close_in_range": 0.48,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82427,
+    "chg_pips": -18.0,
+    "chg_pct": -0.218,
+    "range_pips": 70.6,
+    "close_in_range": 0.69,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.39582,
+    "chg_pips": -17.8,
+    "chg_pct": -0.127,
+    "range_pips": 50.4,
+    "close_in_range": 0.33,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.91919,
+    "chg_pips": -34.6,
+    "chg_pct": -0.375,
+    "range_pips": 43.6,
+    "close_in_range": 0.2,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 191.026,
+    "chg_pips": -11.1,
+    "chg_pct": -0.058,
+    "range_pips": 147.9,
+    "close_in_range": 0.34,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24802,
+    "chg_pips": -13.4,
+    "chg_pct": -0.107,
+    "range_pips": 61.0,
+    "close_in_range": 0.73,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83305,
+    "chg_pips": -24.1,
+    "chg_pct": -0.288,
+    "range_pips": 42.7,
+    "close_in_range": 0.2,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.5794,
+    "chg_pips": -16.1,
+    "chg_pct": -0.277,
+    "range_pips": 55.6,
+    "close_in_range": 0.69,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46422,
+    "chg_pips": -7.8,
+    "chg_pct": -0.168,
+    "range_pips": 36.6,
+    "close_in_range": 0.75,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.82801,
+    "chg_pips": -242.4,
+    "chg_pct": -0.246,
+    "range_pips": 644.1,
+    "close_in_range": 0.49,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.20114,
+    "chg_pips": -573.8,
+    "chg_pct": -0.62,
+    "range_pips": 842.3,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.72892,
+    "chg_pips": 1043.8,
+    "chg_pct": 0.628,
+    "range_pips": 1523.0,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.7997,
+    "chg_pips": -433.0,
+    "chg_pct": -0.23,
+    "range_pips": 1540.2,
+    "close_in_range": 0.19,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.821,
+    "chg_pips": 1.0,
+    "chg_pct": 0.01,
+    "range_pips": 51.2,
+    "close_in_range": 0.79,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 20.964,
+    "chg_pips": 261.4,
+    "chg_pct": 14.247,
+    "range_pips": 300.1,
+    "close_in_range": 0.97,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 38.0,
+    "ret_pct": 0.34,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "02:00",
+    "to": "07:45",
+    "dir": "down",
+    "pips": -28.6,
+    "ret_pct": -0.255,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Press Conference pushed it along (-6.9 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Press Conference",
+      "ccy": "JPY",
+      "pips": -6.9,
+      "share_of_leg": 0.24
+     },
+     {
+      "title": "BoJ's Ueda: Japan's economy expected to continue growing moderately",
+      "ccy": null,
+      "pips": -6.9,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "07:45",
+    "to": "11:15",
+    "dir": "up",
+    "pips": 23.5,
+    "ret_pct": 0.21,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Spain: Quarterly National Accounts - Third Quarter 2026. Ad… pushed it along (+4.7 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Spain: Quarterly National Accounts - Third Quarter 2026. Advance",
+      "ccy": null,
+      "pips": 4.7,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "11:15",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -61.0,
+    "ret_pct": -0.544,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (-12.5 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": -12.5,
+      "share_of_leg": 0.2
+     },
+     {
+      "title": "German inflation rate expected to be +2.8% in October 2026",
+      "ccy": null,
+      "pips": -9.2,
+      "share_of_leg": 0.15
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": -12.5,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:00",
+    "to": "17:00",
+    "dir": "up",
+    "pips": 27.9,
+    "ret_pct": 0.25,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "17:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -18.7,
+    "ret_pct": -0.167,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -54.9,
+    "ret_pct": -0.348,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:00",
+    "to": "07:45",
+    "dir": "up",
+    "pips": 37.4,
+    "ret_pct": 0.238,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Policy Rate +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "07:45",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -69.4,
+    "ret_pct": -0.44,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Quarterly National Accounts - Third Quarter 2026. …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "12:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 47.4,
+    "ret_pct": 0.302,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (+17.9 in 15 min, 38% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 17.9,
+      "share_of_leg": 0.38
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 17.9,
+      "share_of_leg": 0.38
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 32.1,
+    "ret_pct": 0.24,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "04:00",
+    "to": "06:15",
+    "dir": "down",
+    "pips": -19.9,
+    "ret_pct": -0.148,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Policy Rate +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "06:15",
+    "to": "12:00",
+    "dir": "up",
+    "pips": 48.6,
+    "ret_pct": 0.363,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Nationwide HPI m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "12:00",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -51.4,
+    "ret_pct": -0.383,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (-17.2 in 15 min, 33% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": -17.2,
+      "share_of_leg": 0.33
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": -17.2,
+      "share_of_leg": 0.33
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 5.6,
+    "ret_pct": 0.042,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Daly Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -56.6,
+    "ret_pct": -0.685,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:00",
+    "to": "07:45",
+    "dir": "up",
+    "pips": 33.5,
+    "ret_pct": 0.408,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Press Conference pushed it along (+5.7 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Press Conference",
+      "ccy": "JPY",
+      "pips": 5.7,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "BoJ's Ueda: Japan's economy expected to continue growing moderately",
+      "ccy": null,
+      "pips": 5.7,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "07:45",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -30.7,
+    "ret_pct": -0.373,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German import prices in September 2026: +10.4% on Septemb…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "09:15",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 48.6,
+    "ret_pct": 0.592,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (+10.6 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 10.6,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "German inflation rate expected to be +2.8% in October 2026",
+      "ccy": null,
+      "pips": 7.3,
+      "share_of_leg": 0.15
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 10.6,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -9.5,
+    "ret_pct": -0.115,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Daly Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -15.9,
+    "ret_pct": -0.226,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "23:45",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 22.3,
+    "ret_pct": 0.318,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Private Sector Credit m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "05:00",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -20.4,
+    "ret_pct": -0.29,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Housing Starts y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "09:00",
+    "to": "12:00",
+    "dir": "up",
+    "pips": 17.5,
+    "ret_pct": 0.249,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Quarterly National Accounts - Third Quarter 2026. …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "12:00",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -21.2,
+    "ret_pct": -0.301,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (-6.1 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": -6.1,
+      "share_of_leg": 0.29
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": -6.1,
+      "share_of_leg": 0.29
+     },
+     {
+      "title": "German inflation rate expected to be +2.8% in October 2026",
+      "ccy": null,
+      "pips": -3.6,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "15:00",
+    "to": "17:00",
+    "dir": "up",
+    "pips": 19.5,
+    "ret_pct": 0.278,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "17:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.101,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "up",
+    "pips": 17.0,
+    "ret_pct": 0.122,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:45",
+    "to": "13:15",
+    "dir": "down",
+    "pips": -39.3,
+    "ret_pct": -0.281,
+    "minutes": 870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Statement on Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:15",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 21.6,
+    "ret_pct": 0.155,
+    "minutes": 105,
+    "cause": "GDP m/m",
+    "cause_ccy": "CAD",
+    "confidence": "medium",
+    "note": "CAD GDP m/m (actual 0.0% vs forecast 0.2%) -- +15.8 in the first 15 min, 73% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Employment Cost Index q/q",
+      "ccy": "USD",
+      "pips": 15.8,
+      "share_of_leg": 0.73
+     },
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 15.8,
+      "share_of_leg": 0.73
+     },
+     {
+      "title": "German inflation rate expected to be +2.8% in October 2026",
+      "ccy": null,
+      "pips": 8.3,
+      "share_of_leg": 0.38
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "15:00",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -27.6,
+    "ret_pct": -0.198,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 12.7,
+    "ret_pct": 0.091,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Musalem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -6.5,
+    "ret_pct": -0.115,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:30",
+    "to": "05:30",
+    "dir": "up",
+    "pips": 16.1,
+    "ret_pct": 0.286,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Outlook for Economic Activity and Prices (October 2026) pushed it along (+2.7 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Outlook for Economic Activity and Prices (October 2026)",
+      "ccy": null,
+      "pips": 2.7,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "05:30",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -12.0,
+    "ret_pct": -0.213,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BoJ's Ueda: Japan's economy expected to continue growing mo… pushed it along (-3.2 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BoJ's Ueda: Japan's economy expected to continue growing moderately",
+      "ccy": null,
+      "pips": -3.2,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "08:30",
+    "to": "11:45",
+    "dir": "up",
+    "pips": 20.4,
+    "ret_pct": 0.362,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Quarterly National Accounts - Third Quarter 2026. …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "11:45",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -26.9,
+    "ret_pct": -0.476,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (-7.9 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": -7.9,
+      "share_of_leg": 0.29
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": -7.9,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.16,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Daly Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -34.1,
+    "ret_pct": -0.37,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Producer Price Indexes, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "04:00",
+    "to": "07:45",
+    "dir": "up",
+    "pips": 16.1,
+    "ret_pct": 0.175,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Policy Rate +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "07:45",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -17.7,
+    "ret_pct": -0.192,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Import Prices m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "09:15",
+    "to": "11:30",
+    "dir": "up",
+    "pips": 15.4,
+    "ret_pct": 0.168,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Prelim GDP q/q +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "11:30",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -18.2,
+    "ret_pct": -0.198,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Kocher: Inflation Risks Have Clearly Increased, But…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "12:45",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 14.0,
+    "ret_pct": 0.152,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada gross domestic product by industry, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -7.5,
+    "ret_pct": -0.082,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: The Fed has signaled a gradual approach, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 81.1,
+    "ret_pct": 0.424,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Indices of Industrial Production for September, 20…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:15",
+    "to": "15:00",
+    "dir": "down",
+    "pips": -136.0,
+    "ret_pct": -0.708,
+    "minutes": 765,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Statement on Monetary Policy pushed it along (-31.9 in 15 min, 23% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Statement on Monetary Policy",
+      "ccy": null,
+      "pips": -31.9,
+      "share_of_leg": 0.23
+     },
+     {
+      "title": "BOJ Outlook for Economic Activity and Prices (October 2026)",
+      "ccy": null,
+      "pips": -31.9,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 43.0,
+    "ret_pct": 0.226,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Daly: AI really matters for how we think about poli…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -20.4,
+    "ret_pct": -0.163,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "22:45",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 23.7,
+    "ret_pct": 0.19,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ukraine pauses attacks on Russian refineries after U.S. p…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "01:30",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -51.6,
+    "ret_pct": -0.413,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Statement on Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "09:15",
+    "to": "11:30",
+    "dir": "up",
+    "pips": 20.4,
+    "ret_pct": 0.164,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spain: Quarterly National Accounts - Third Quarter 2026. … moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "11:30",
+    "to": "12:30",
+    "dir": "down",
+    "pips": -15.1,
+    "ret_pct": -0.121,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Kocher: Inflation Risks Have Clearly Increased, But… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "12:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 34.2,
+    "ret_pct": 0.275,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but GDP m/m pushed it along (+7.0 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 7.0,
+      "share_of_leg": 0.2
+     },
+     {
+      "title": "Employment Cost Index q/q",
+      "ccy": "USD",
+      "pips": 7.0,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 9.4,
+    "ret_pct": 0.113,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ukraine pauses attacks on Russian refineries after U.S. p…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "02:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -32.9,
+    "ret_pct": -0.393,
+    "minutes": 1005,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Statement on Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -36.5,
+    "ret_pct": -0.628,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:45",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 14.9,
+    "ret_pct": 0.258,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ukraine pauses attacks on Russian refineries after U.S. p…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:45",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -28.3,
+    "ret_pct": -0.489,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Private Sector Credit m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "02:00",
+    "to": "05:45",
+    "dir": "up",
+    "pips": 29.6,
+    "ret_pct": 0.514,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Policy Rate +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "05:45",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -26.1,
+    "ret_pct": -0.451,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Housing Starts y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "09:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 31.7,
+    "ret_pct": 0.55,
+    "minutes": 570,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada gross domestic product by industry, August 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -33.4,
+    "ret_pct": -0.718,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "02:00",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 32.2,
+    "ret_pct": 0.697,
+    "minutes": 855,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Policy Rate +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -6.6,
+    "ret_pct": -0.142,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Musalem: US central bank to hike interest rates aga…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -483.8,
+    "ret_pct": -0.491,
+    "minutes": 1065,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Statement on Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "12:45",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 506.3,
+    "ret_pct": 0.517,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (+156.6 in 15 min, 31% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 156.6,
+      "share_of_leg": 0.31
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 156.6,
+      "share_of_leg": 0.31
+     },
+     {
+      "title": "German inflation rate expected to be +2.8% in October 2026",
+      "ccy": null,
+      "pips": 86.2,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -236.1,
+    "ret_pct": -0.24,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Daly Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -442.7,
+    "ret_pct": -0.478,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "04:00",
+    "to": "07:45",
+    "dir": "up",
+    "pips": 220.5,
+    "ret_pct": 0.239,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Press Conference pushed it along (+86.7 in 15 min, 39% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Press Conference",
+      "ccy": "JPY",
+      "pips": 86.7,
+      "share_of_leg": 0.39
+     },
+     {
+      "title": "BoJ's Ueda: Japan's economy expected to continue growing moderately",
+      "ccy": null,
+      "pips": 86.7,
+      "share_of_leg": 0.39
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "07:45",
+    "to": "11:45",
+    "dir": "down",
+    "pips": -405.4,
+    "ret_pct": -0.439,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Spain: Quarterly National Accounts - Third Quarter 2026. Ad… pushed it along (-114.1 in 15 min, 28% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Spain: Quarterly National Accounts - Third Quarter 2026. Advance",
+      "ccy": null,
+      "pips": -114.1,
+      "share_of_leg": 0.28
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "11:45",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 401.6,
+    "ret_pct": 0.437,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada gross domestic product by industry, August 2026 pushed it along (+108.0 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 108.0,
+      "share_of_leg": 0.27
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 108.0,
+      "share_of_leg": 0.27
+     },
+     {
+      "title": "German inflation rate expected to be +2.8% in October 2026",
+      "ccy": null,
+      "pips": 73.9,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "15:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -330.8,
+    "ret_pct": -0.358,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Daly Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "down",
+    "pips": -253.8,
+    "ret_pct": -0.153,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "22:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1386.7,
+    "ret_pct": 0.836,
+    "minutes": 1200,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Employment Cost Index q/q pushed it along (+220.1 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Employment Cost Index q/q",
+      "ccy": "USD",
+      "pips": 220.1,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 220.1,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 220.1,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "07:00",
+    "dir": "up",
+    "pips": 495.8,
+    "ret_pct": 0.263,
+    "minutes": 720,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Statement on Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "07:00",
+    "to": "11:45",
+    "dir": "down",
+    "pips": -426.8,
+    "ret_pct": -0.226,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Spain: Quarterly National Accounts - Third Quarter 2026. Ad… pushed it along (-77.5 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Spain: Quarterly National Accounts - Third Quarter 2026. Advance",
+      "ccy": null,
+      "pips": -77.5,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "11:45",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 657.5,
+    "ret_pct": 0.349,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Employment Cost Index q/q pushed it along (+391.5 in 15 min, 60% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Employment Cost Index q/q",
+      "ccy": "USD",
+      "pips": 391.5,
+      "share_of_leg": 0.6
+     },
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 391.5,
+      "share_of_leg": 0.6
+     },
+     {
+      "title": "GDP m/m",
+      "ccy": "CAD",
+      "pips": 391.5,
+      "share_of_leg": 0.6
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "13:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1116.2,
+    "ret_pct": -0.59,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German inflation rate expected to be +2.8% in October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 280.0,
+    "ret_pct": 2.252,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Indices of Industrial Production for September, 20…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "02:30",
+    "to": "07:15",
+    "dir": "down",
+    "pips": -187.3,
+    "ret_pct": -1.473,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Policy Rate +2 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "07:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 194.5,
+    "ret_pct": 1.553,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BoJ's Ueda: Japan's economy expected to continue growing mo… pushed it along (+33.2 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BoJ's Ueda: Japan's economy expected to continue growing moderately",
+      "ccy": null,
+      "pips": 33.2,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "Employment Cost Index q/q",
+      "ccy": "USD",
+      "pips": 35.3,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Canada gross domestic product by industry, August 2026",
+      "ccy": null,
+      "pips": 35.3,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 159.2,
+    "ret_pct": 0.397,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Top Admiral Briefs Trump On Iran Attack Options - WSJ, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "21:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1434.2,
+    "ret_pct": -3.562,
+    "minutes": 1305,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Statement on Monetary Policy, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "13:30",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "GDP m/m",
+    "actual": "0.0%",
+    "forecast": "0.2%",
+    "previous": "0.0%",
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.010%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.01,
+    "top_movers": [
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.116,
+      "pips": 218.3,
+      "unit": "pips",
+      "sigma": 2.68
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.145,
+      "pips": 57.6,
+      "unit": "pips ($0.10)",
+      "sigma": 1.81
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.029,
+      "pips": 4.0,
+      "unit": "pips",
+      "sigma": 1.61
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.018,
+      "pips": -2.3,
+      "unit": "pips",
+      "sigma": -0.64
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.018,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.52
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": -0.016,
+      "pips": -15.3,
+      "unit": "pips",
+      "sigma": -0.5
+     }
+    ]
+   },
+   {
+    "time": "13:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Employment Cost Index q/q",
+    "actual": "0.8%",
+    "forecast": "0.8%",
+    "previous": "0.9%",
+    "polarity": "inline",
+    "polarity_note": "printed in line; USD still went stronger by 0.118%",
+    "own_ccy_impulse_pct": 0.118,
+    "top_movers": [
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.116,
+      "pips": 218.3,
+      "unit": "pips",
+      "sigma": 2.68
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.145,
+      "pips": 57.6,
+      "unit": "pips ($0.10)",
+      "sigma": 1.81
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.029,
+      "pips": 4.0,
+      "unit": "pips",
+      "sigma": 1.61
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.018,
+      "pips": -2.3,
+      "unit": "pips",
+      "sigma": -0.64
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.018,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.52
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": -0.016,
+      "pips": -15.3,
+      "unit": "pips",
+      "sigma": -0.5
+     }
+    ]
+   },
+   {
+    "time": "04:02",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Policy Rate +2 more",
+    "actual": "<1.25%",
+    "forecast": "<1.25%",
+    "previous": "<1.25%",
+    "polarity": "inline",
+    "polarity_note": "printed in line; JPY still went stronger by 0.068%",
+    "own_ccy_impulse_pct": 0.068,
+    "top_movers": [
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.037,
+      "pips": 2.6,
+      "unit": "pips",
+      "sigma": 1.51
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.037,
+      "pips": 1.7,
+      "unit": "pips",
+      "sigma": 1.05
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.034,
+      "pips": 1.9,
+      "unit": "pips",
+      "sigma": 0.98
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.013,
+      "pips": -1.1,
+      "unit": "pips",
+      "sigma": -0.97
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.038,
+      "pips": 2.2,
+      "unit": "pips",
+      "sigma": 0.95
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.065,
+      "pips": -25.8,
+      "unit": "pips ($0.10)",
+      "sigma": -0.81
+     }
+    ]
+   },
+   {
+    "time": "10:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Prelim GDP q/q",
+    "actual": "0.2%",
+    "forecast": "0.1%",
+    "previous": "0.2%",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.008%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.008,
+    "top_movers": [
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.037,
+      "pips": -3.1,
+      "unit": "pips",
+      "sigma": -2.73
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.06,
+      "pips": -6.7,
+      "unit": "pips",
+      "sigma": -2.37
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.07,
+      "pips": 68.5,
+      "unit": "pips",
+      "sigma": 2.25
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.078,
+      "pips": 6.4,
+      "unit": "pips",
+      "sigma": 2.22
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.064,
+      "pips": 3.7,
+      "unit": "pips",
+      "sigma": 1.59
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.052,
+      "pips": 8.2,
+      "unit": "pips",
+      "sigma": 1.53
+     }
+    ]
+   },
+   {
+    "time": "07:30",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Press Conference",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.028%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.028,
+    "top_movers": [
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.069,
+      "pips": 68.0,
+      "unit": "pips",
+      "sigma": 2.23
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.042,
+      "pips": -5.6,
+      "unit": "pips",
+      "sigma": -1.84
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.053,
+      "pips": 49.1,
+      "unit": "pips",
+      "sigma": 1.77
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.042,
+      "pips": -4.7,
+      "unit": "pips",
+      "sigma": -1.67
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.039,
+      "pips": 64.3,
+      "unit": "pips",
+      "sigma": 1.38
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.046,
+      "pips": -2.6,
+      "unit": "pips",
+      "sigma": -1.34
+     }
+    ]
+   },
+   {
+    "time": "00:30",
+    "ccy": "JPY",
+    "impact": "Medium",
+    "event": "Tokyo Core CPI y/y",
+    "actual": "2.6%",
+    "forecast": "2.6%",
+    "previous": "2.7%",
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.027%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.027,
+    "top_movers": [
+     {
+      "instrument": "EUR/CHF",
+      "pct": 0.021,
+      "pips": 1.9,
+      "unit": "pips",
+      "sigma": 0.88
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.03,
+      "pips": 1.4,
+      "unit": "pips",
+      "sigma": 0.86
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.033,
+      "pips": 1.9,
+      "unit": "pips",
+      "sigma": 0.82
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.014,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.58
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": 0.018,
+      "pips": 1.0,
+      "unit": "pips",
+      "sigma": 0.52
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.017,
+      "pips": 1.4,
+      "unit": "pips",
+      "sigma": 0.48
+     }
+    ]
+   }
+  ],
+  "headline_count": 44,
+  "top_headlines": [
+   {
+    "time": "04:00",
+    "impact": "high",
+    "title": "BOJ Statement on Monetary Policy"
+   },
+   {
+    "time": "04:00",
+    "impact": "high",
+    "title": "BOJ Outlook for Economic Activity and Prices (October 2026)"
+   },
+   {
+    "time": "13:30",
+    "impact": "high",
+    "title": "Canada gross domestic product by industry, August 2026"
+   },
+   {
+    "time": "07:30",
+    "impact": "medium",
+    "title": "BoJ's Ueda: Japan's economy expected to continue growing moderately"
+   },
+   {
+    "time": "09:15",
+    "impact": "medium",
+    "title": "Spain: Quarterly National Accounts - Third Quarter 2026. Advance"
+   },
+   {
+    "time": "14:00",
+    "impact": "medium",
+    "title": "German inflation rate expected to be +2.8% in October 2026"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "Top Admiral Briefs Trump On Iran Attack Options - WSJ"
+   },
+   {
+    "time": "00:30",
+    "impact": "low",
+    "title": "Ukraine pauses attacks on Russian refineries after U.S. pressure - WSJ"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan: Indices of Industrial Production for September, 2026 (Preliminary Report)"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan: Preliminary Report on the Current Survey of Commerce"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "UKMTO: Report Received Of Incident 25 NM Northeast Of Khasab, Oman In The Strait Of Hormuz"
+   },
+   {
+    "time": "01:30",
+    "impact": "low",
+    "title": "Producer Price Indexes, Australia, September 2026"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "ISM Manufacturing PMI",
+    "forecast": "54.7",
+    "previous": "54.5"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The full trading day was a risk-off, catalyst-light session: VIX rose 14.247%, JPY was the strongest major (+0.211%) and EUR the weakest (-0.231%). BOJ and US ECI both printed inline but still produced brief JPY/USD strength, while German GDP beat did little for EUR. Most legs had no clear catalyst, with EUR/USD closing -17.6 pips and DXY nearly flat (+0.01%).",
+  "themes": [
+   {
+    "theme": "Safe-haven risk-off bid",
+    "evidence": "VIX rose 14.247%, JPY +0.211% strongest, CHF +0.145%, EUR -0.231% weakest.",
+    "currencies": [
+     "JPY",
+     "CHF",
+     "EUR",
+     "USD"
+    ]
+   },
+   {
+    "theme": "Euro underperformance despite data beat",
+    "evidence": "German Prelim GDP q/q printed 0.2% vs 0.1% forecast but EUR was weakest major; EUR/USD -17.6 pips with base share 0.76 from EUR.",
+    "currencies": [
+     "EUR"
+    ]
+   },
+   {
+    "theme": "Catalyst-light price action",
+    "evidence": "BOJ and US ECI inline, German GDP and Canada GDP muted; most legs had no clear catalyst.",
+    "currencies": [
+     "GBP",
+     "AUD",
+     "NZD",
+     "CAD",
+     "JPY",
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Inline ECI produced brief USD strength but overall index still lower on safe-haven flows.",
+   "EUR": "German GDP beat at 0.2% but basket response muted; euro was weakest major.",
+   "JPY": "Inline BOJ and muted press conference; yen still strengthened, likely safe-haven flow.",
+   "GBP": "No own releases; attempted rally was rejected, closing only modestly higher.",
+   "AUD": "No own releases; commodity currency weakened, then rejected selling.",
+   "CAD": "GDP missed at 0.0% vs 0.2% but reaction was muted, closing at session best.",
+   "CHF": "No own releases; safe-haven bid drove strength before giving back 75%.",
+   "NZD": "No own releases; sold to -0.20% then recovered, ending nearly flat."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD had an early +38.0 pip rise, then a BOJ-press-aided -28.6 pip drop, a Spain-data +23.5 pip bounce, a Canada-GDP-driven -61.0 pip drop, a late +27.9 pip no-news bounce, and a -18.7 pip fade, netting -17.6 pips."
+  },
+  "polarity_reads": [
+   {
+    "event": "BOJ Policy Rate +2 more",
+    "read": "Inline decision but JPY still strengthened 0.068%, suggesting positioning was flat and safe-haven demand drove yen."
+   },
+   {
+    "event": "Employment Cost Index q/q",
+    "read": "Inline at 0.8% but USD strengthened 0.118%, indicating market leaned long USD or read wage inflation as hawkish."
+   },
+   {
+    "event": "German Prelim GDP q/q",
+    "read": "Beat at 0.2% vs 0.1% but EUR basket moved only 0.008%, showing euro upside lacked conviction."
+   },
+   {
+    "event": "GDP m/m",
+    "read": "Canada GDP 0.0% vs 0.2% but basket moved -0.010% inside noise, so no clear CAD positioning read."
+   },
+   {
+    "event": "BOJ Press Conference",
+    "read": "Muted 0.028% basket move; no material positioning signal."
+   },
+   {
+    "event": "Tokyo Core CPI y/y",
+    "read": "Muted -0.027%; noise, no signal."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Risk-off continuation",
+    "probability": 0.4,
+    "thesis": "VIX surged 14.247% with JPY leading at +0.211% and CHF at +0.145%; if sentiment remains risk-averse, safe havens extend.",
+    "triggers": [
+     "VIX holds above 20.964",
+     "ISM Manufacturing PMI comes in below 54.7",
+     "Fresh geopolitical headlines"
+    ],
+    "invalidation": "USD/JPY closes back above 157.45",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 78.1,
+      "rationale": "EUR weakest at -0.231%; risk-off with USD mixed pushes pair lower."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 101.8,
+      "rationale": "JPY strongest at +0.211%; safe-haven demand is direct JPY bid."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 70.6,
+      "rationale": "CHF +0.145% on safe-haven flows, USD flat-to-weaker."
+     }
+    ]
+   },
+   {
+    "name": "US data and positioning rebound",
+    "probability": 0.35,
+    "thesis": "Inline ECI still produced USD strength of 0.118%; a strong ISM Manufacturing PMI above 54.7 can trigger a USD short squeeze.",
+    "triggers": [
+     "ISM Manufacturing PMI above 54.7",
+     "DXY reclaims 101.821 close",
+     "USD/MXN moves toward 18.7997 close"
+    ],
+    "invalidation": "EUR/USD holds above 1.11515 close",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 61.0,
+      "rationale": "USD rebound after brief ECI strength; EUR leg down -61.0 pips shows path when USD firms."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 51.4,
+      "rationale": "GBP rally rejected; USD strength pressures cable toward prior down leg of -51.4 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 47.4,
+      "rationale": "Previous USD/JPY recovery leg was +47.4 pips; if USD bounces, similar magnitude possible."
+     }
+    ]
+   },
+   {
+    "name": "Choppy range, no catalyst",
+    "probability": 0.25,
+    "thesis": "Most legs had no clear catalyst and event reactions were muted; prices likely stay range-bound.",
+    "triggers": [
+     "ISM in line with 54.7 forecast",
+     "No major headlines",
+     "DXY remains near 101.821"
+    ],
+    "invalidation": "Sustained break of EUR/USD 78.1 pips range",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 78.1,
+      "rationale": "EUR/USD traded a 78.1 pip range on the day; no clear driver to extend."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "range",
+      "magnitude_pips": 73.2,
+      "rationale": "GBP/USD range was 73.2 pips; mixed GBP vs USD drivers keep it contained."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 101.8,
+      "rationale": "USD/JPY traded a 101.8 pip range; lack of fresh catalyst argues for range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Geopolitical risk in Middle East",
+    "why_it_matters": "VIX rose 14.247% and CHF/JPY strengthened; escalation could intensify haven flows.",
+    "watch": "VIX close 20.964 and Brent/USD price action."
+   },
+   {
+    "risk": "US ISM Manufacturing PMI",
+    "why_it_matters": "Only scheduled catalyst ahead; a miss below 54.7 may cement risk-off, a beat may trigger USD rebound.",
+    "watch": "Actual vs 54.7 forecast and USD/JPY around 157.45 close."
+   },
+   {
+    "risk": "EUR short squeeze vs structural weakness",
+    "why_it_matters": "EUR weakest despite German GDP beat; any risk-on reversal could squeeze shorts.",
+    "watch": "EUR/USD close 1.11515 and EUR/GBP 0.83305 close."
+   }
+  ],
+  "calendar_ahead_note": "Only ISM Manufacturing PMI at 16:00 (forecast 54.7, previous 54.5); it can decide between USD rebound and risk-off continuation.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 21933,
+   "completion_tokens": 7973,
+   "total_tokens": 29906,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5922
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 21293
+  }
+ }
+}
