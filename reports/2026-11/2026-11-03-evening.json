@@ -13,7 +13,7 @@
   "end_local": "2026-11-03T19:00:00+01:00",
   "fwd_start_utc": "2026-11-03T18:00:00+00:00",
   "fwd_end_utc": "2026-11-04T18:00:00+00:00",
-  "generated_utc": "2026-11-03T18:05:16.162830+00:00",
+  "generated_utc": "2026-11-03T23:14:21.074633+00:00",
   "partial": false,
   "coverage_min": 1440,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 28
+   "with_actual": 25
   }
  },
  "facts": {
@@ -2418,201 +2418,174 @@
   ]
  },
  "analysis": {
-  "session_summary": "The full trading day was a USD and GBP outperformance tape: USD strength +0.202% after JOLTS beat 7.52M vs 7.15M; GBP strength +0.232% with no domestic catalyst. AUD was the weakest at -0.365% despite an inline RBA 4.85% and a press conference with no forecast score. Geopolitical headlines produced sharp legs but all were too weak to own individual moves.",
+  "session_summary": "The day was led by broad USD strength (+0.202%) and AUD underperformance (-0.365%), while GBP held top of the G10 at +0.232%. JOLTS beat (7.52M vs 7.15M) gave USD a measurable 0.089% impulse, and Swiss CPI beat (0.2% vs 0.0%) briefly lifted CHF before the franc faded. Most majors chopped on Middle East headlines with no clear catalyst; the VIX rose 2.34% but failed to generate sustainable havens.",
   "themes": [
    {
-    "theme": "USD labor-market strength",
-    "evidence": "JOLTS beat forecast 7.52M vs 7.15M and USD basket added 0.089% impulse; DXY +0.138%",
-    "currencies": [
-     "USD"
-    ]
-   },
-   {
-    "theme": "AUD underperformance despite RBA",
-    "evidence": "AUD strength -0.365%; Cash Rate inline 4.85% but AUD fell 0.251%; RBA press conference -0.093% unscored",
-    "currencies": [
-     "AUD"
-    ]
-   },
-   {
-    "theme": "Geopolitical headline chop",
-    "evidence": "US military strike, Qatari MOU, and Iranian 'no agreement' headlines caused legs but were too weak to own moves; VIX +2.343%",
+    "theme": "USD data strength",
+    "evidence": "JOLTS actual 7.52M vs 7.15M forecast produced USD +0.089% and USD/JPY +0.426%; DXY +0.138.",
     "currencies": [
      "USD",
-     "EUR",
-     "JPY",
-     "GBP",
+     "JPY"
+    ]
+   },
+   {
+    "theme": "AUD underperformance despite in-line RBA",
+    "evidence": "RBA Cash Rate printed in line at 4.85%, but AUD -0.365% on day; AUD/USD -0.567%, AUD/NZD -0.398%.",
+    "currencies": [
      "AUD",
-     "CAD",
-     "CHF",
      "NZD"
+    ]
+   },
+   {
+    "theme": "CHF CPI beat fades",
+    "evidence": "CHF strengthened 0.229% on CPI beat, but ended -0.067%; attempt rejected led +0.36% and gave back 90%.",
+    "currencies": [
+     "CHF",
+     "EUR"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "JOLTS beat 7.52M vs 7.15M delivered a normal 0.089% USD impulse.",
-   "EUR": "No domestic catalyst; EUR closed at its best, +0.11% strength.",
-   "JPY": "No catalyst; attempt rejected and gave back 100%, ending -0.225%.",
-   "GBP": "No own releases; held its range as strongest at +0.232%.",
-   "AUD": "RBA cash rate inline 4.85%, yet AUD fell 0.251%; press conference unscored.",
-   "CAD": "BOC Macklem was muted, CAD basket moved -0.001% inside noise.",
-   "CHF": "Swiss CPI beat 0.2% vs 0.0% gave CHF +0.229% impulse that mostly faded.",
-   "NZD": "No catalyst; recovered 69% of earlier selling to end +0.033%."
+   "USD": "JOLTS beat (7.52M vs 7.15M) supported the dollar; otherwise broad strength.",
+   "EUR": "No own releases; modest EUR strength mainly from weakness in AUD and JPY crosses.",
+   "JPY": "No Japanese catalyst; sold across the board, with USD/JPY up 0.426%.",
+   "GBP": "No UK releases; strongest major at +0.232%, steady bid held its range.",
+   "AUD": "In-line RBA (4.85%) and press conference still saw AUD weaker; weakest major at -0.365%.",
+   "CAD": "No own catalyst; Macklem speech muted and CAD rally attempt rejected.",
+   "CHF": "CPI beat initially drove CHF +0.229%, but the franc faded sharply afterward.",
+   "NZD": "No own releases; initial selling was rejected with a 69% recovery."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD chopped through eight legs and closed -10.2 pips (-0.091%) as USD strength from the JOLTS beat overcame EUR's late firmness; no leg had a single clear catalyst."
+   "EUR/USD": "EUR/USD chopped in a 31.2-pip range with no single catalyst; the 14:30-16:15 leg was 82% JOLTS-driven (-16.0 pips) and set the lower close."
   },
   "polarity_reads": [
    {
     "event": "Cash Rate +2 more",
-    "read": "Inline 4.85% but AUD weakened 0.251%, suggesting the market had priced a more hawkish RBA tone and was long AUD."
-   },
-   {
-    "event": "RBA Press Conference",
-    "read": "Unscored: AUD fell 0.093% without a forecast surprise; tone or positioning drove selling."
+    "read": "In-line RBA hike at 4.85% was met with AUD selling (-0.251%), indicating crowded long AUD positions and little new hawkish impulse."
    },
    {
     "event": "CPI m/m",
-    "read": "Normal: 0.2% vs 0.0% beat produced CHF +0.229%, strong inflation sensitivity."
+    "read": "Swiss CPI beat produced +0.229% CHF impulse, but the later fade shows the surprise was insufficient to reverse broader CHF softness."
+   },
+   {
+    "event": "RBA Press Conference",
+    "read": "AUD weakened another 0.093% with no forecast to score; the market leaned bearish on the guidance tone."
    },
    {
     "event": "JOLTS Job Openings",
-    "read": "Normal: beat 7.52M vs 7.15M gave USD +0.089%, confirming labor data supports USD."
+    "read": "USD gained 0.089% on the beat, suggesting jobs data still matters and USD positioning was not overextended long."
    },
    {
     "event": "BOC Gov Macklem Speaks",
-    "read": "Muted: -0.001% basket inside noise; no fresh CAD information."
+    "read": "CAD basket moved -0.001%, within noise; positioning balanced and no new information from Macklem."
    }
   ],
   "scenarios": [
    {
-    "name": "US strength extends",
-    "probability": 0.4,
-    "thesis": "ISM Services PMI beats 54.8 and JOLTS momentum carries USD higher.",
-    "triggers": [
-     "ISM Services PMI beats 54.8",
-     "VIX declines"
-    ],
-    "invalidation": "ISM Services PMI below 54.8 or dovish Fed repricing.",
-    "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "down",
-      "magnitude_pips": 31.2,
-      "rationale": "USD strength extends; EUR/USD daily range 31.2 pips limits move."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 85.1,
-      "rationale": "USD/JPY tracks yields; range 85.1 pips."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 53.1,
-      "rationale": "AUD remains weak; AUD/USD range 53.1 pips."
-     }
-    ]
-   },
-   {
-    "name": "Risk reset / EUR CPI surprise",
+    "name": "Geopolitical escalation returns",
     "probability": 0.35,
-    "thesis": "EUR CPI flash y/y 4.0% above 3.8% and Iran headlines fade, supports EUR and risk.",
+    "thesis": "Lack of Iran deal and fresh strikes push havens bid; high-beta AUD and oil-linked CAD underperform.",
     "triggers": [
-     "EUR CPI Flash Estimate y/y above 4.0%",
-     "US Approved Draft MOU headlines return"
+     "Iranian delegation says no new agreement reached",
+     "US military action escalates"
     ],
-    "invalidation": "EUR CPI at or below 3.8% or ISM Services PMI above 54.8.",
+    "invalidation": "Renewed calm in oil and no headlines.",
     "pair_paths": [
-     {
-      "instrument": "EUR/USD",
-      "direction": "up",
-      "magnitude_pips": 31.2,
-      "rationale": "EUR strength from hot CPI; range supports up to 31.2 pips."
-     },
      {
       "instrument": "USD/JPY",
       "direction": "down",
-      "magnitude_pips": 85.1,
-      "rationale": "Risk-on JPY crosses; daily range 85.1 pips."
+      "magnitude_pips": 25.4,
+      "rationale": "Geopolitical stress would reverse the day's USD/JPY gain and favor JPY havens; 25.4 is the day's measured risk-off leg."
      },
      {
       "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 53.1,
-      "rationale": "AUD recovers on risk reset; range 53.1 pips."
+      "direction": "down",
+      "magnitude_pips": 21.4,
+      "rationale": "High-beta AUD would extend its day's weakness; 21.4 pips matches the late AUD/USD down leg."
      }
     ]
    },
    {
-    "name": "Range/chop continues",
-    "probability": 0.25,
-    "thesis": "No dominant catalyst; pairs stay within daily ranges as headlines offset data.",
+    "name": "Detente and soft landing",
+    "probability": 0.4,
+    "thesis": "Iran MOU holds, oil slides, and risk appetite recovers; AUD and EUR rebound against USD.",
     "triggers": [
-     "ISM Services PMI in line 54.8",
-     "EUR CPI Flash Estimate y/y in line 4.0%",
-     "No high-impact geopolitical escalation"
+     "US approved MOU holds",
+     "Oil drops further",
+     "EUR CPI flash comes in neutral"
     ],
-    "invalidation": "Any surprise >1 sigma in NZ employment, EU CPI, or US ISM.",
+    "invalidation": "Iran deal breaks down or US ISM Services prints very strong.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 26.5,
+      "rationale": "AUD/USD had a 26.5-pip recovery leg during the day; a risk-on move could repeat that bounce."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 20.2,
+      "rationale": "A neutral EUR CPI and softer USD could retrace the JOLTS drop with a 20.2-pip bounce, matching the day's bounce."
+     }
+    ]
+   },
+   {
+    "name": "US exceptionalism / strong ISM",
+    "probability": 0.25,
+    "thesis": "JOLTS strength extends into ISM Services; USD gains broad, EUR/USD slides, high-beta FX stays heavy.",
+    "triggers": [
+     "ISM Services PMI beats forecast",
+     "EUR CPI flash comes in below forecast"
+    ],
+    "invalidation": "ISM misses or EUR CPI surprises sharply higher.",
     "pair_paths": [
      {
       "instrument": "EUR/USD",
-      "direction": "range",
-      "magnitude_pips": 31.2,
-      "rationale": "Stuck in range; no catalyst to break 31.2 pips."
+      "direction": "down",
+      "magnitude_pips": 16.0,
+      "rationale": "A repeat of the JOLTS-triggered leg (-16.0 pips) on a strong ISM would push spot to new session lows."
      },
      {
       "instrument": "USD/JPY",
-      "direction": "range",
-      "magnitude_pips": 85.1,
-      "rationale": "Chops within 85.1 pip range."
-     },
-     {
-      "instrument": "AUD/USD",
-      "direction": "range",
-      "magnitude_pips": 53.1,
-      "rationale": "AUD remains contained within 53.1 pip range."
+      "direction": "up",
+      "magnitude_pips": 45.2,
+      "rationale": "Strong US data would extend the day's post-JOLTS USD/JPY rally by the measured 45.2-pip leg."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Geopolitical headlines from Iran/US",
-    "why_it_matters": "They caused large swings but legs were too weak to own, creating false signals.",
-    "watch": "US-Iran talks, draft MOU, oil headlines."
+    "risk": "Iran/US MOU headlines remain binary",
+    "why_it_matters": "They caused large whipsaws in USD/JPY and AUD/USD with no clear catalyst.",
+    "watch": "Iranian delegation statements and oil moves."
    },
    {
-    "risk": "AUD underperformance can extend despite RBA",
-    "why_it_matters": "AUD -0.365% with inline RBA suggests structural selling.",
-    "watch": "NZD employment and China/commodity sentiment."
+    "risk": "NZD employment ahead",
+    "why_it_matters": "NZD closing above lows after selling rejection could be vulnerable to a strong or weak print.",
+    "watch": "Employment Change q/q (0.4% forecast) and Unemployment Rate (5.5%)."
    },
    {
-    "risk": "EUR CPI flash and core",
-    "why_it_matters": "EUR closed firm; a hot flash 4.0% vs 3.8% could trigger ECB repricing.",
-    "watch": "Core CPI Flash 2.5%, headline 4.0%."
-   },
-   {
-    "risk": "US ISM Services PMI",
-    "why_it_matters": "After JOLTS beat, strong ISM could reinforce USD strength.",
-    "watch": "ISM 54.8 vs previous 54.9."
+    "risk": "EUR CPI flash estimate",
+    "why_it_matters": "EUR closed at its best with no own releases; a high CPI print could force repricing.",
+    "watch": "Core CPI 2.5% and headline previous 3.8% / forecast 4.0%."
    }
   ],
-  "calendar_ahead_note": "Coming window starts with NZ employment (22:45) and unemployment, then EUR CPI flash (11:00), then US ISM Services PMI (16:00). These can shift NZD, EUR, and USD respectively.",
+  "calendar_ahead_note": "Ahead: NZ employment and unemployment at 22:45 (0.4% q/q, 5.5% unemployment), EUR CPI flash at 11:00 (headline forecast 4.0%, core 2.5%), and US ISM Services PMI at 16:00 (54.8 forecast) can materially shift rate expectations and risk tone.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 21388,
-   "completion_tokens": 6324,
-   "total_tokens": 27712,
+   "completion_tokens": 7608,
+   "total_tokens": 28996,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 21376
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 4355
+    "reasoning_tokens": 5734
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 20748
+   "prompt_cache_hit_tokens": 21376,
+   "prompt_cache_miss_tokens": 12
   }
  }
 }
