@@ -1,0 +1,2618 @@
+{
+ "meta": {
+  "date": "2026-11-03",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-11-02T18:00:00+00:00",
+  "end_utc": "2026-11-03T18:00:00+00:00",
+  "start_local": "2026-11-02T19:00:00+01:00",
+  "end_local": "2026-11-03T19:00:00+01:00",
+  "fwd_start_utc": "2026-11-03T18:00:00+00:00",
+  "fwd_end_utc": "2026-11-04T18:00:00+00:00",
+  "generated_utc": "2026-11-03T18:05:16.162830+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 28
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-11-02 19:00 CET",
+   "to_local": "2026-11-03 19:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "GBP",
+    "rank": 1,
+    "strength_pct": 0.232,
+    "intraday_peak": 0.257,
+    "intraday_trough": -0.03,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOC Gov Macklem Speaks",
+     "instrument": "EUR/GBP",
+     "sigma": -1.07
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 2,
+    "strength_pct": 0.202,
+    "intraday_peak": 0.222,
+    "intraday_trough": -0.018,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "JOLTS Job Openings",
+      "impact": "Medium",
+      "actual": "7.52M",
+      "forecast": "7.15M",
+      "polarity": "normal",
+      "note": "beat surprise -> USD stronger 0.089%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "CPI m/m",
+     "instrument": "USD/CHF",
+     "sigma": -9.01
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 3,
+    "strength_pct": 0.11,
+    "intraday_peak": 0.115,
+    "intraday_trough": -0.109,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI m/m",
+     "instrument": "EUR/CHF",
+     "sigma": -11.2
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 4,
+    "strength_pct": 0.081,
+    "intraday_peak": 0.26,
+    "intraday_trough": -0.031,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.26%, gave back 62%",
+    "own_releases": [
+     {
+      "title": "BOC Gov Macklem Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.001%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "BOC Gov Macklem Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 0.77
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 5,
+    "strength_pct": 0.033,
+    "intraday_peak": 0.131,
+    "intraday_trough": -0.182,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.18%, recovered 69%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI m/m",
+     "instrument": "NZD/CHF",
+     "sigma": -8.5
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 6,
+    "strength_pct": -0.067,
+    "intraday_peak": 0.357,
+    "intraday_trough": -0.114,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.36%, gave back 90%",
+    "own_releases": [
+     {
+      "title": "CPI m/m",
+      "impact": "Medium",
+      "actual": "0.2%",
+      "forecast": "0.0%",
+      "polarity": "normal",
+      "note": "beat surprise -> CHF stronger 0.229%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "CPI m/m",
+     "instrument": "EUR/CHF",
+     "sigma": -11.2
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 7,
+    "strength_pct": -0.225,
+    "intraday_peak": 0.101,
+    "intraday_trough": -0.226,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.10%, gave back 100%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "CPI m/m",
+     "instrument": "CHF/JPY",
+     "sigma": 9.66
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 8,
+    "strength_pct": -0.365,
+    "intraday_peak": 0.017,
+    "intraday_trough": -0.502,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Cash Rate +2 more",
+      "impact": "High",
+      "actual": "4.85%",
+      "forecast": "4.85%",
+      "polarity": "inline",
+      "note": "printed in line; AUD still went weaker by 0.251%"
+     },
+     {
+      "title": "RBA Press Conference",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "AUD weaker by 0.093%, but no forecast to score the surprise against"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "CPI m/m",
+     "instrument": "AUD/CHF",
+     "sigma": -7.93
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.092,
+    "from_EUR": 0.11,
+    "from_USD": -0.202,
+    "base_share": 0.35
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": 0.031,
+    "from_GBP": 0.232,
+    "from_USD": -0.202,
+    "base_share": 0.54
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.567,
+    "from_AUD": -0.365,
+    "from_USD": -0.202,
+    "base_share": 0.64
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.169,
+    "from_NZD": 0.033,
+    "from_USD": -0.202,
+    "base_share": 0.14
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.426,
+    "from_USD": 0.202,
+    "from_JPY": 0.225,
+    "base_share": 0.47
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.269,
+    "from_USD": 0.202,
+    "from_CHF": 0.067,
+    "base_share": 0.75
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.121,
+    "from_USD": 0.202,
+    "from_CAD": -0.081,
+    "base_share": 0.71
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.123,
+    "from_EUR": 0.11,
+    "from_GBP": -0.232,
+    "base_share": 0.32
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.335,
+    "from_EUR": 0.11,
+    "from_JPY": 0.225,
+    "base_share": 0.33
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.177,
+    "from_EUR": 0.11,
+    "from_CHF": 0.067,
+    "base_share": 0.62
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.475,
+    "from_EUR": 0.11,
+    "from_AUD": 0.365,
+    "base_share": 0.23
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.029,
+    "from_EUR": 0.11,
+    "from_CAD": -0.081,
+    "base_share": 0.58
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.077,
+    "from_EUR": 0.11,
+    "from_NZD": -0.033,
+    "base_share": 0.77
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.457,
+    "from_GBP": 0.232,
+    "from_JPY": 0.225,
+    "base_share": 0.51
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.3,
+    "from_GBP": 0.232,
+    "from_CHF": 0.067,
+    "base_share": 0.78
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.597,
+    "from_GBP": 0.232,
+    "from_AUD": 0.365,
+    "base_share": 0.39
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.152,
+    "from_GBP": 0.232,
+    "from_CAD": -0.081,
+    "base_share": 0.74
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.2,
+    "from_GBP": 0.232,
+    "from_NZD": -0.033,
+    "base_share": 0.88
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.14,
+    "from_AUD": -0.365,
+    "from_JPY": 0.225,
+    "base_share": 0.62
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.298,
+    "from_AUD": -0.365,
+    "from_CHF": 0.067,
+    "base_share": 0.84
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.446,
+    "from_AUD": -0.365,
+    "from_CAD": -0.081,
+    "base_share": 0.82
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.397,
+    "from_AUD": -0.365,
+    "from_NZD": -0.033,
+    "base_share": 0.92
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.257,
+    "from_NZD": 0.033,
+    "from_JPY": 0.225,
+    "base_share": 0.13
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.1,
+    "from_NZD": 0.033,
+    "from_CHF": 0.067,
+    "base_share": 0.33
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.048,
+    "from_NZD": 0.033,
+    "from_CAD": -0.081,
+    "base_share": 0.29
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.305,
+    "from_CAD": 0.081,
+    "from_JPY": 0.225,
+    "base_share": 0.26
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.148,
+    "from_CAD": 0.081,
+    "from_CHF": 0.067,
+    "base_share": 0.55
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.157,
+    "from_CHF": -0.067,
+    "from_JPY": 0.225,
+    "base_share": 0.23
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.266
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.231
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.126
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.092
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.037
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.077
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.256
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.416
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11945,
+    "chg_pips": -10.2,
+    "chg_pct": -0.091,
+    "range_pips": 31.2,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.34198,
+    "chg_pips": 4.2,
+    "chg_pct": 0.031,
+    "range_pips": 36.2,
+    "close_in_range": 0.66,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.6971,
+    "chg_pips": -39.6,
+    "chg_pct": -0.565,
+    "range_pips": 53.1,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.56153,
+    "chg_pips": -9.6,
+    "chg_pct": -0.171,
+    "range_pips": 29.0,
+    "close_in_range": 0.45,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.495,
+    "chg_pips": 68.0,
+    "chg_pct": 0.431,
+    "range_pips": 85.1,
+    "close_in_range": 0.87,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82051,
+    "chg_pips": 21.9,
+    "chg_pct": 0.268,
+    "range_pips": 67.7,
+    "close_in_range": 0.83,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.39924,
+    "chg_pips": 16.7,
+    "chg_pct": 0.119,
+    "range_pips": 53.1,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.91853,
+    "chg_pips": 16.2,
+    "chg_pct": 0.177,
+    "range_pips": 60.2,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 193.154,
+    "chg_pips": 28.9,
+    "chg_pct": 0.15,
+    "range_pips": 111.1,
+    "close_in_range": 0.55,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.24131,
+    "chg_pips": -49.6,
+    "chg_pct": -0.398,
+    "range_pips": 88.9,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83417,
+    "chg_pips": -10.1,
+    "chg_pct": -0.121,
+    "range_pips": 22.0,
+    "close_in_range": 0.53,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.57197,
+    "chg_pips": -17.2,
+    "chg_pct": -0.3,
+    "range_pips": 55.5,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46073,
+    "chg_pips": 4.6,
+    "chg_pct": 0.1,
+    "range_pips": 33.7,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.78839,
+    "chg_pips": 174.9,
+    "chg_pct": 0.179,
+    "range_pips": 528.8,
+    "close_in_range": 0.52,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.27628,
+    "chg_pips": -42.9,
+    "chg_pct": -0.046,
+    "range_pips": 934.7,
+    "close_in_range": 0.58,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.62228,
+    "chg_pips": 475.8,
+    "chg_pct": 0.287,
+    "range_pips": 1491.7,
+    "close_in_range": 0.66,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.8527,
+    "chg_pips": 3166.9,
+    "chg_pct": 1.709,
+    "range_pips": 3397.1,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.646,
+    "chg_pips": 14.0,
+    "chg_pct": 0.138,
+    "range_pips": 32.3,
+    "close_in_range": 0.55,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 19.97127,
+    "chg_pips": 45.7,
+    "chg_pct": 2.343,
+    "range_pips": 155.0,
+    "close_in_range": 0.39,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "00:00",
+    "dir": "down",
+    "pips": -16.0,
+    "ret_pct": -0.143,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Oil will go down further because &quot;we're winni…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "00:00",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 10.0,
+    "ret_pct": 0.089,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Envoy Witkoff: United States to mediate working-level … moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "01:00",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -16.4,
+    "ret_pct": -0.146,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "03:30",
+    "to": "09:00",
+    "dir": "up",
+    "pips": 23.2,
+    "ret_pct": 0.208,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Statement on Monetary Policy - November 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "09:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -25.6,
+    "ret_pct": -0.229,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "12:15",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 20.2,
+    "ret_pct": 0.181,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "14:30",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -19.5,
+    "ret_pct": -0.174,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Job Openings and Labor Turnover - September 2026 pushed it along (-16.0 in 15 min, 82% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Job Openings and Labor Turnover - September 2026",
+      "ccy": null,
+      "pips": -16.0,
+      "share_of_leg": 0.82
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 17.3,
+    "ret_pct": 0.155,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iranian Delegation Spokesman: No New Agreement Reached Ye… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "12:30",
+    "dir": "up",
+    "pips": 47.4,
+    "ret_pct": 0.3,
+    "minutes": 1050,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA's Bullock: Uncertain about next rate move, withholdin…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "12:30",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -25.4,
+    "ret_pct": -0.16,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Approved Draft MOU Presented By Qatari Delegation For Ir… pushed it along (-11.4 in 15 min, 45% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday",
+      "ccy": null,
+      "pips": -11.4,
+      "share_of_leg": 0.45
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 45.2,
+    "ret_pct": 0.286,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Job Openings and Labor Turnover - September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -9.8,
+    "ret_pct": -0.073,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Oil will go down further because &quot;we're winni…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:30",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 10.6,
+    "ret_pct": 0.079,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Envoy Witkoff: United States to mediate working-level … moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "01:15",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -15.5,
+    "ret_pct": -0.116,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "04:00",
+    "to": "09:00",
+    "dir": "up",
+    "pips": 26.8,
+    "ret_pct": 0.2,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Statement on Monetary Policy - November 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "09:00",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -20.0,
+    "ret_pct": -0.149,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "12:15",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 25.2,
+    "ret_pct": 0.188,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "15:45",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -21.1,
+    "ret_pct": -0.157,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iranian Delegation Spokesman: No New Agreement Reached Yet … pushed it along (-6.2 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": -6.2,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 10.8,
+    "ret_pct": 0.081,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOC Gov Macklem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 15.8,
+    "ret_pct": 0.193,
+    "minutes": 510,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "03:30",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -46.1,
+    "ret_pct": -0.562,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Statement by the Monetary Policy Board: Monetary Policy Dec… pushed it along (-8.4 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "ccy": null,
+      "pips": -8.4,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Cash Rate +2 more",
+      "ccy": "AUD",
+      "pips": -8.4,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "CPI m/m",
+      "ccy": "CHF",
+      "pips": -18.6,
+      "share_of_leg": 0.4
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "09:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 52.6,
+    "ret_pct": 0.645,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Job Openings and Labor Turnover - September 2026 pushed it along (+9.5 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Job Openings and Labor Turnover - September 2026",
+      "ccy": null,
+      "pips": 9.5,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "09:30",
+    "dir": "down",
+    "pips": -45.5,
+    "ret_pct": -0.649,
+    "minutes": 870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but RBA Statement on Monetary Policy - November 2026 pushed it along (-15.2 in 15 min, 33% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "RBA Statement on Monetary Policy - November 2026",
+      "ccy": null,
+      "pips": -15.2,
+      "share_of_leg": 0.33
+     },
+     {
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "ccy": null,
+      "pips": -15.2,
+      "share_of_leg": 0.33
+     },
+     {
+      "title": "US Military Launched An Undisclosed Strike Against Iran's Qeshm Island On Monday: WSJ",
+      "ccy": null,
+      "pips": -13.0,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "09:30",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 26.5,
+    "ret_pct": 0.38,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RCM/TIPP Economic Optimism, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -21.4,
+    "ret_pct": -0.306,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Job Openings and Labor Turnover - September 2026 pushed it along (-4.0 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Job Openings and Labor Turnover - September 2026",
+      "ccy": null,
+      "pips": -4.0,
+      "share_of_leg": 0.19
+     },
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": -4.3,
+      "share_of_leg": 0.2
+     },
+     {
+      "title": "BOC Gov Macklem Speaks",
+      "ccy": "CAD",
+      "pips": -5.9,
+      "share_of_leg": 0.28
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 17.1,
+    "ret_pct": 0.122,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Military Launched An Undisclosed Strike Against Iran's Q… pushed it along (+10.6 in 15 min, 62% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Military Launched An Undisclosed Strike Against Iran's Qeshm Island On Monday: WSJ",
+      "ccy": null,
+      "pips": 10.6,
+      "share_of_leg": 0.62
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:15",
+    "to": "12:30",
+    "dir": "down",
+    "pips": -42.6,
+    "ret_pct": -0.304,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Statement on Monetary Policy - November 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "12:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 40.3,
+    "ret_pct": 0.289,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iranian Delegation Spokesman: No New Agreement Reached Yet … pushed it along (+7.2 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": 7.2,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -13.7,
+    "ret_pct": -0.244,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Oil will go down further because &quot;we're winni…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "23:15",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 8.8,
+    "ret_pct": 0.157,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Envoy Witkoff: United States to mediate working-level … moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:15",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -14.1,
+    "ret_pct": -0.251,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "03:30",
+    "to": "07:15",
+    "dir": "up",
+    "pips": 25.2,
+    "ret_pct": 0.45,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Statement on Monetary Policy - November 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "07:15",
+    "to": "09:30",
+    "dir": "down",
+    "pips": -20.4,
+    "ret_pct": -0.362,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Swiss consumer prices increased by 0.2% in October, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "09:30",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 18.4,
+    "ret_pct": 0.328,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says Any Action It Takes Will Be Legitimate Self-def…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -13.8,
+    "ret_pct": -0.245,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Job Openings and Labor Turnover - September 2026 pushed it along (-3.1 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Job Openings and Labor Turnover - September 2026",
+      "ccy": null,
+      "pips": -3.1,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": -3.1,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "BOC Gov Macklem Speaks",
+      "ccy": "CAD",
+      "pips": -3.8,
+      "share_of_leg": 0.28
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -33.5,
+    "ret_pct": -0.365,
+    "minutes": 840,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Statement by the Monetary Policy Board: Monetary Policy Dec… pushed it along (-6.9 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "ccy": null,
+      "pips": -6.9,
+      "share_of_leg": 0.21
+     },
+     {
+      "title": "Cash Rate +2 more",
+      "ccy": "AUD",
+      "pips": -6.9,
+      "share_of_leg": 0.21
+     },
+     {
+      "title": "CPI m/m",
+      "ccy": "CHF",
+      "pips": -20.5,
+      "share_of_leg": 0.61
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "09:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 52.9,
+    "ret_pct": 0.579,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 15.7,
+    "ret_pct": 0.081,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The October 2026 Senior Loan Officer Opinion Survey on Ba…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "21:45",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -46.5,
+    "ret_pct": -0.241,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Oil Prices are DROPPING LIKE A ROCK, down almost $… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:30",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 34.6,
+    "ret_pct": 0.18,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Envoy Witkoff: United States to mediate working-level …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "01:15",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -31.5,
+    "ret_pct": -0.163,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:15",
+    "to": "09:00",
+    "dir": "up",
+    "pips": 102.8,
+    "ret_pct": 0.534,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but CPI m/m pushed it along (+42.4 in 15 min, 41% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "CPI m/m",
+      "ccy": "CHF",
+      "pips": 42.4,
+      "share_of_leg": 0.41
+     },
+     {
+      "title": "Swiss consumer prices increased by 0.2% in October",
+      "ccy": null,
+      "pips": 42.4,
+      "share_of_leg": 0.41
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "09:00",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -76.6,
+    "ret_pct": -0.396,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 28.7,
+    "ret_pct": 0.149,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Job Openings and Labor Turnover - September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -28.6,
+    "ret_pct": -0.229,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The October 2026 Senior Loan Officer Opinion Survey on Ba…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:00",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 43.0,
+    "ret_pct": 0.346,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Envoy Witkoff: United States to mediate working-level …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:15",
+    "to": "07:45",
+    "dir": "down",
+    "pips": -78.7,
+    "ret_pct": -0.631,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but RBA Press Conference pushed it along (-13.3 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "RBA Press Conference",
+      "ccy": "AUD",
+      "pips": -13.3,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "RBA Statement on Monetary Policy - November 2026",
+      "ccy": null,
+      "pips": -26.4,
+      "share_of_leg": 0.34
+     },
+     {
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "ccy": null,
+      "pips": -26.4,
+      "share_of_leg": 0.34
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "07:45",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 42.3,
+    "ret_pct": 0.341,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Approved Draft MOU Presented By Qatari Delegation For Ir… pushed it along (+6.7 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday",
+      "ccy": null,
+      "pips": 6.7,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -28.6,
+    "ret_pct": -0.23,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Job Openings and Labor Turnover - September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "13:00",
+    "dir": "down",
+    "pips": -17.8,
+    "ret_pct": -0.213,
+    "minutes": 1080,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "13:00",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 5.8,
+    "ret_pct": 0.07,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Approved Draft MOU Presented By Qatari Delegation For Ir… pushed it along (+2.7 in 15 min, 47% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday",
+      "ccy": null,
+      "pips": 2.7,
+      "share_of_leg": 0.47
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "14:45",
+    "to": "15:30",
+    "dir": "down",
+    "pips": -5.7,
+    "ret_pct": -0.068,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says Us Response To Its Demands Wasnt Convincing: BBG moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 8.5,
+    "ret_pct": 0.102,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iranian Delegation Spokesman: No New Agreement Reached Ye…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "09:30",
+    "dir": "down",
+    "pips": -49.5,
+    "ret_pct": -0.863,
+    "minutes": 870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but RBA Statement on Monetary Policy - November 2026 pushed it along (-18.4 in 15 min, 37% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "RBA Statement on Monetary Policy - November 2026",
+      "ccy": null,
+      "pips": -18.4,
+      "share_of_leg": 0.37
+     },
+     {
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "ccy": null,
+      "pips": -18.4,
+      "share_of_leg": 0.37
+     },
+     {
+      "title": "CPI m/m",
+      "ccy": "CHF",
+      "pips": -13.4,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "09:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 32.0,
+    "ret_pct": 0.563,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -9.3,
+    "ret_pct": -0.202,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The October 2026 Senior Loan Officer Opinion Survey on Ba…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:15",
+    "to": "07:15",
+    "dir": "up",
+    "pips": 12.8,
+    "ret_pct": 0.279,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Envoy Witkoff: United States to mediate working-level …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "07:15",
+    "to": "09:30",
+    "dir": "down",
+    "pips": -24.6,
+    "ret_pct": -0.534,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Swiss consumer prices increased by 0.2% in October pushed it along (-10.5 in 15 min, 43% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Swiss consumer prices increased by 0.2% in October",
+      "ccy": null,
+      "pips": -10.5,
+      "share_of_leg": 0.43
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "09:30",
+    "to": "12:45",
+    "dir": "up",
+    "pips": 30.2,
+    "ret_pct": 0.659,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Kocher Says Must Ensure Inflation Doesn't Become En…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "12:45",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -10.6,
+    "ret_pct": -0.23,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 6.7,
+    "ret_pct": 0.146,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Job Openings and Labor Turnover - September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 230.5,
+    "ret_pct": 0.236,
+    "minutes": 510,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "03:30",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -166.6,
+    "ret_pct": -0.17,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Statement by the Monetary Policy Board: Monetary Policy Dec… pushed it along (-44.0 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "ccy": null,
+      "pips": -44.0,
+      "share_of_leg": 0.26
+     },
+     {
+      "title": "Cash Rate +2 more",
+      "ccy": "AUD",
+      "pips": -44.0,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "09:00",
+    "to": "12:15",
+    "dir": "up",
+    "pips": 235.4,
+    "ret_pct": 0.241,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran Says Any Action It Takes Will Be Legitimate Self-def…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "12:15",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -289.2,
+    "ret_pct": -0.295,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Approved Draft MOU Presented By Qatari Delegation For …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "14:30",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 384.7,
+    "ret_pct": 0.394,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Job Openings and Labor Turnover - September 2026 pushed it along (+157.0 in 15 min, 41% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Job Openings and Labor Turnover - September 2026",
+      "ccy": null,
+      "pips": 157.0,
+      "share_of_leg": 0.41
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -223.6,
+    "ret_pct": -0.228,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iranian Delegation Spokesman: No New Agreement Reached Ye… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 257.2,
+    "ret_pct": 0.277,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Oil will go down further because &quot;we're winni…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "01:30",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -890.1,
+    "ret_pct": -0.956,
+    "minutes": 750,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Statement on Monetary Policy - November 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:00",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 773.6,
+    "ret_pct": 0.839,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Job Openings and Labor Turnover - September 2026 pushed it along (+124.7 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Job Openings and Labor Turnover - September 2026",
+      "ccy": null,
+      "pips": 124.7,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -257.0,
+    "ret_pct": -0.276,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOC Gov Macklem Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "09:30",
+    "dir": "up",
+    "pips": 937.0,
+    "ret_pct": 0.565,
+    "minutes": 870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Military Launched An Undisclosed Strike Against Iran's…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "09:30",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -1310.4,
+    "ret_pct": -0.786,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Approved Draft MOU Presented By Qatari Delegation For Ir… pushed it along (-607.7 in 15 min, 46% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday",
+      "ccy": null,
+      "pips": -607.7,
+      "share_of_leg": 0.46
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 873.7,
+    "ret_pct": 0.528,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iranian Delegation Spokesman: No New Agreement Reached Yet … pushed it along (+197.5 in 15 min, 23% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": 197.5,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 3008.4,
+    "ret_pct": 1.622,
+    "minutes": 1425,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iranian Delegation Spokesman: No New Agreement Reached Yet … pushed it along (+519.2 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": 519.2,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 320.0,
+    "ret_pct": 2.728,
+    "minutes": 780,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Loan Officer Survey, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "08:00",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -545.3,
+    "ret_pct": -4.525,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Approved Draft MOU Presented By Qatari Delegation For Ir… pushed it along (-188.8 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday",
+      "ccy": null,
+      "pips": -188.8,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 200.5,
+    "ret_pct": 1.743,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Job Openings and Labor Turnover - September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -660.9,
+    "ret_pct": -1.668,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item RBA Statement on Monetary Policy - November 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "09:45",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 674.8,
+    "ret_pct": 1.732,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Approved Draft MOU Presented By Qatari Delegation For Ir… pushed it along (+169.0 in 15 min, 25% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday",
+      "ccy": null,
+      "pips": 169.0,
+      "share_of_leg": 0.25
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -317.2,
+    "ret_pct": -0.8,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Iranian Delegation Spokesman: No New Agreement Reached Yet … pushed it along (-101.8 in 15 min, 32% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB",
+      "ccy": null,
+      "pips": -101.8,
+      "share_of_leg": 0.32
+     }
+    ]
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "04:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "Cash Rate +2 more",
+    "actual": "4.85%",
+    "forecast": "4.85%",
+    "previous": "4.60%",
+    "polarity": "inline",
+    "polarity_note": "printed in line; AUD still went weaker by 0.251%",
+    "own_ccy_impulse_pct": -0.251,
+    "top_movers": [
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.107,
+      "pips": -13.3,
+      "unit": "pips",
+      "sigma": -3.76
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": -0.133,
+      "pips": -7.6,
+      "unit": "pips",
+      "sigma": -3.49
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.082,
+      "pips": -5.7,
+      "unit": "pips",
+      "sigma": -2.8
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.178,
+      "pips": -70.1,
+      "unit": "pips ($0.10)",
+      "sigma": -2.42
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.036,
+      "pips": -3.3,
+      "unit": "pips",
+      "sigma": -1.58
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.049,
+      "pips": -4.0,
+      "unit": "pips",
+      "sigma": -1.49
+     }
+    ]
+   },
+   {
+    "time": "08:30",
+    "ccy": "CHF",
+    "impact": "Medium",
+    "event": "CPI m/m",
+    "actual": "0.2%",
+    "forecast": "0.0%",
+    "previous": "0.0%",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> CHF stronger 0.229%",
+    "own_ccy_impulse_pct": 0.229,
+    "top_movers": [
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.256,
+      "pips": -23.4,
+      "unit": "pips",
+      "sigma": -11.2
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": 0.275,
+      "pips": 53.1,
+      "unit": "pips",
+      "sigma": 9.66
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.296,
+      "pips": -24.2,
+      "unit": "pips",
+      "sigma": -9.01
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": -0.269,
+      "pips": -12.4,
+      "unit": "pips",
+      "sigma": -8.5
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": -0.301,
+      "pips": -17.2,
+      "unit": "pips",
+      "sigma": -7.93
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": 0.038,
+      "pips": 4.2,
+      "unit": "pips",
+      "sigma": 1.77
+     }
+    ]
+   },
+   {
+    "time": "05:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "RBA Press Conference",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "unscored",
+    "polarity_note": "AUD weaker by 0.093%, but no forecast to score the surprise against",
+    "own_ccy_impulse_pct": -0.093,
+    "top_movers": [
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.052,
+      "pips": 6.4,
+      "unit": "pips",
+      "sigma": 1.81
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.063,
+      "pips": 3.6,
+      "unit": "pips",
+      "sigma": 1.66
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.036,
+      "pips": 2.5,
+      "unit": "pips",
+      "sigma": 1.23
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.016,
+      "pips": 2.6,
+      "unit": "pips",
+      "sigma": 1.02
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.064,
+      "pips": -25.0,
+      "unit": "pips ($0.10)",
+      "sigma": -0.86
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.027,
+      "pips": 2.2,
+      "unit": "pips",
+      "sigma": 0.82
+     }
+    ]
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "JOLTS Job Openings",
+    "actual": "7.52M",
+    "forecast": "7.15M",
+    "previous": "7.08M",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> USD stronger 0.089%",
+    "own_ccy_impulse_pct": 0.089,
+    "top_movers": [
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.075,
+      "pips": 11.8,
+      "unit": "pips",
+      "sigma": 4.62
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.14,
+      "pips": 231.6,
+      "unit": "pips",
+      "sigma": 3.17
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.114,
+      "pips": 105.3,
+      "unit": "pips",
+      "sigma": 2.82
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.092,
+      "pips": 90.2,
+      "unit": "pips",
+      "sigma": 2.72
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.051,
+      "pips": -5.7,
+      "unit": "pips",
+      "sigma": -2.41
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.094,
+      "pips": 175.3,
+      "unit": "pips",
+      "sigma": 2.3
+     }
+    ]
+   },
+   {
+    "time": "17:00",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "BOC Gov Macklem Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.001%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.001,
+    "top_movers": [
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.043,
+      "pips": 42.5,
+      "unit": "pips",
+      "sigma": 1.28
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.052,
+      "pips": 96.8,
+      "unit": "pips",
+      "sigma": 1.27
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.036,
+      "pips": -2.0,
+      "unit": "pips",
+      "sigma": -1.19
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.033,
+      "pips": -2.3,
+      "unit": "pips",
+      "sigma": -1.13
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.012,
+      "pips": -1.0,
+      "unit": "pips",
+      "sigma": -1.07
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.011,
+      "pips": 1.6,
+      "unit": "pips",
+      "sigma": 0.77
+     }
+    ]
+   }
+  ],
+  "headline_count": 36,
+  "top_headlines": [
+   {
+    "time": "04:30",
+    "impact": "high",
+    "title": "RBA Statement on Monetary Policy - November 2026"
+   },
+   {
+    "time": "04:30",
+    "impact": "high",
+    "title": "Statement by the Monetary Policy Board: Monetary Policy Decision"
+   },
+   {
+    "time": "05:30",
+    "impact": "high",
+    "title": "RBA's Bullock: Uncertain about next rate move, withholding guidance"
+   },
+   {
+    "time": "08:30",
+    "impact": "high",
+    "title": "Swiss consumer prices increased by 0.2% in October"
+   },
+   {
+    "time": "14:15",
+    "impact": "high",
+    "title": "US Approved Draft MOU Presented By Qatari Delegation For Iran Yesterday"
+   },
+   {
+    "time": "01:30",
+    "impact": "medium",
+    "title": "US Military Launched An Undisclosed Strike Against Iran's Qeshm Island On Monday: WSJ"
+   },
+   {
+    "time": "05:30",
+    "impact": "medium",
+    "title": "RBA's Bullock: Rate increase was necessary to reduce inflation"
+   },
+   {
+    "time": "16:00",
+    "impact": "medium",
+    "title": "US Job Openings and Labor Turnover - September 2026"
+   },
+   {
+    "time": "16:15",
+    "impact": "medium",
+    "title": "Iranian Delegation Spokesman: No New Agreement Reached Yet - IRIB"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "The October 2026 Senior Loan Officer Opinion Survey on Bank Lending Practices"
+   },
+   {
+    "time": "20:30",
+    "impact": "low",
+    "title": "Trump: Oil will go down further because &quot;we're winning with Iran&quot;"
+   },
+   {
+    "time": "21:00",
+    "impact": "low",
+    "title": "After the elections, Trump says &quot;No&quot; to striking Iran - Pool Report"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "22:45",
+    "ccy": "NZD",
+    "impact": "High",
+    "event": "Employment Change q/q",
+    "forecast": "0.4%",
+    "previous": "0.5%"
+   },
+   {
+    "time": "22:45",
+    "ccy": "NZD",
+    "impact": "High",
+    "event": "Unemployment Rate",
+    "forecast": "5.5%",
+    "previous": "5.6%"
+   },
+   {
+    "time": "11:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "Core CPI Flash Estimate y/y",
+    "forecast": "2.5%",
+    "previous": "2.5%"
+   },
+   {
+    "time": "11:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "CPI Flash Estimate y/y",
+    "forecast": "4.0%",
+    "previous": "3.8%"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "ISM Services PMI",
+    "forecast": "54.8",
+    "previous": "54.9"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The full trading day was a USD and GBP outperformance tape: USD strength +0.202% after JOLTS beat 7.52M vs 7.15M; GBP strength +0.232% with no domestic catalyst. AUD was the weakest at -0.365% despite an inline RBA 4.85% and a press conference with no forecast score. Geopolitical headlines produced sharp legs but all were too weak to own individual moves.",
+  "themes": [
+   {
+    "theme": "USD labor-market strength",
+    "evidence": "JOLTS beat forecast 7.52M vs 7.15M and USD basket added 0.089% impulse; DXY +0.138%",
+    "currencies": [
+     "USD"
+    ]
+   },
+   {
+    "theme": "AUD underperformance despite RBA",
+    "evidence": "AUD strength -0.365%; Cash Rate inline 4.85% but AUD fell 0.251%; RBA press conference -0.093% unscored",
+    "currencies": [
+     "AUD"
+    ]
+   },
+   {
+    "theme": "Geopolitical headline chop",
+    "evidence": "US military strike, Qatari MOU, and Iranian 'no agreement' headlines caused legs but were too weak to own moves; VIX +2.343%",
+    "currencies": [
+     "USD",
+     "EUR",
+     "JPY",
+     "GBP",
+     "AUD",
+     "CAD",
+     "CHF",
+     "NZD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "JOLTS beat 7.52M vs 7.15M delivered a normal 0.089% USD impulse.",
+   "EUR": "No domestic catalyst; EUR closed at its best, +0.11% strength.",
+   "JPY": "No catalyst; attempt rejected and gave back 100%, ending -0.225%.",
+   "GBP": "No own releases; held its range as strongest at +0.232%.",
+   "AUD": "RBA cash rate inline 4.85%, yet AUD fell 0.251%; press conference unscored.",
+   "CAD": "BOC Macklem was muted, CAD basket moved -0.001% inside noise.",
+   "CHF": "Swiss CPI beat 0.2% vs 0.0% gave CHF +0.229% impulse that mostly faded.",
+   "NZD": "No catalyst; recovered 69% of earlier selling to end +0.033%."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD chopped through eight legs and closed -10.2 pips (-0.091%) as USD strength from the JOLTS beat overcame EUR's late firmness; no leg had a single clear catalyst."
+  },
+  "polarity_reads": [
+   {
+    "event": "Cash Rate +2 more",
+    "read": "Inline 4.85% but AUD weakened 0.251%, suggesting the market had priced a more hawkish RBA tone and was long AUD."
+   },
+   {
+    "event": "RBA Press Conference",
+    "read": "Unscored: AUD fell 0.093% without a forecast surprise; tone or positioning drove selling."
+   },
+   {
+    "event": "CPI m/m",
+    "read": "Normal: 0.2% vs 0.0% beat produced CHF +0.229%, strong inflation sensitivity."
+   },
+   {
+    "event": "JOLTS Job Openings",
+    "read": "Normal: beat 7.52M vs 7.15M gave USD +0.089%, confirming labor data supports USD."
+   },
+   {
+    "event": "BOC Gov Macklem Speaks",
+    "read": "Muted: -0.001% basket inside noise; no fresh CAD information."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "US strength extends",
+    "probability": 0.4,
+    "thesis": "ISM Services PMI beats 54.8 and JOLTS momentum carries USD higher.",
+    "triggers": [
+     "ISM Services PMI beats 54.8",
+     "VIX declines"
+    ],
+    "invalidation": "ISM Services PMI below 54.8 or dovish Fed repricing.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 31.2,
+      "rationale": "USD strength extends; EUR/USD daily range 31.2 pips limits move."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 85.1,
+      "rationale": "USD/JPY tracks yields; range 85.1 pips."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 53.1,
+      "rationale": "AUD remains weak; AUD/USD range 53.1 pips."
+     }
+    ]
+   },
+   {
+    "name": "Risk reset / EUR CPI surprise",
+    "probability": 0.35,
+    "thesis": "EUR CPI flash y/y 4.0% above 3.8% and Iran headlines fade, supports EUR and risk.",
+    "triggers": [
+     "EUR CPI Flash Estimate y/y above 4.0%",
+     "US Approved Draft MOU headlines return"
+    ],
+    "invalidation": "EUR CPI at or below 3.8% or ISM Services PMI above 54.8.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 31.2,
+      "rationale": "EUR strength from hot CPI; range supports up to 31.2 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 85.1,
+      "rationale": "Risk-on JPY crosses; daily range 85.1 pips."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 53.1,
+      "rationale": "AUD recovers on risk reset; range 53.1 pips."
+     }
+    ]
+   },
+   {
+    "name": "Range/chop continues",
+    "probability": 0.25,
+    "thesis": "No dominant catalyst; pairs stay within daily ranges as headlines offset data.",
+    "triggers": [
+     "ISM Services PMI in line 54.8",
+     "EUR CPI Flash Estimate y/y in line 4.0%",
+     "No high-impact geopolitical escalation"
+    ],
+    "invalidation": "Any surprise >1 sigma in NZ employment, EU CPI, or US ISM.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 31.2,
+      "rationale": "Stuck in range; no catalyst to break 31.2 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 85.1,
+      "rationale": "Chops within 85.1 pip range."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "range",
+      "magnitude_pips": 53.1,
+      "rationale": "AUD remains contained within 53.1 pip range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Geopolitical headlines from Iran/US",
+    "why_it_matters": "They caused large swings but legs were too weak to own, creating false signals.",
+    "watch": "US-Iran talks, draft MOU, oil headlines."
+   },
+   {
+    "risk": "AUD underperformance can extend despite RBA",
+    "why_it_matters": "AUD -0.365% with inline RBA suggests structural selling.",
+    "watch": "NZD employment and China/commodity sentiment."
+   },
+   {
+    "risk": "EUR CPI flash and core",
+    "why_it_matters": "EUR closed firm; a hot flash 4.0% vs 3.8% could trigger ECB repricing.",
+    "watch": "Core CPI Flash 2.5%, headline 4.0%."
+   },
+   {
+    "risk": "US ISM Services PMI",
+    "why_it_matters": "After JOLTS beat, strong ISM could reinforce USD strength.",
+    "watch": "ISM 54.8 vs previous 54.9."
+   }
+  ],
+  "calendar_ahead_note": "Coming window starts with NZ employment (22:45) and unemployment, then EUR CPI flash (11:00), then US ISM Services PMI (16:00). These can shift NZD, EUR, and USD respectively.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 21388,
+   "completion_tokens": 6324,
+   "total_tokens": 27712,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4355
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 20748
+  }
+ }
+}
