@@ -13,7 +13,7 @@
   "end_local": "2026-11-02T19:00:00+01:00",
   "fwd_start_utc": "2026-11-02T18:00:00+00:00",
   "fwd_end_utc": "2026-11-03T18:00:00+00:00",
-  "generated_utc": "2026-11-02T18:05:13.741332+00:00",
+  "generated_utc": "2026-11-03T00:54:02.230236+00:00",
   "partial": false,
   "coverage_min": 4320,
   "instruments_loaded": 38,
@@ -27,7 +27,7 @@
   "calendar": {
    "degraded": false,
    "profile": "safari17_0",
-   "with_actual": 93
+   "with_actual": 94
   }
  },
  "facts": {
@@ -1920,7 +1920,7 @@
     "ccy": "USD",
     "impact": "Medium",
     "event": "JOLTS Job Openings",
-    "forecast": "7.11M",
+    "forecast": "7.15M",
     "previous": "7.08M"
    },
    {
@@ -1942,168 +1942,187 @@
   ]
  },
  "analysis": {
-  "session_summary": "CHF led (+0.641%) and closed at its best while USD was soft (-0.084%) despite a normal ISM beat (55.5 vs 54.5) that gave only a 0.053% USD impulse. Iran headlines swung risk, with the Supreme Leader's talk authorization lifting AUD off its low and sinking Brent -7.411%. EUR and GBP held ranges, AUD's early +0.09% was rejected, and the tape closes with RBA and JOLTS ahead.",
+  "session_summary": "US-Iran diplomacy dominated the window: Iran's Supreme Leader granted authority for talks, Brent/USD fell 7.41%, Gold/USD rose 2.26%, and headlines whipsawed risk FX. The dollar failed to sustain its ISM Manufacturing PMI beat (55.5 vs 54.5), gaining only 0.053% on the release and closing lower on the session. CHF led majors at +0.641%, EUR +0.393%, while AUD was weakest at -0.351% after an early gain was rejected. The tape shows haven demand and EUR outperformance against a soft USD and commodity FX.",
   "themes": [
    {
-    "theme": "Iran diplomacy dominated risk, not domestic macro",
-    "evidence": "Iran Supreme Leader Has Granted Govt Authority For Talks (14:30 high) and breakthrough headline (18:45); Brent fell -7.411%, Gold rose +2.26%, AUD leg up had cause.",
-    "currencies": [
-     "AUD",
-     "CAD",
-     "USD",
-     "CHF"
-    ]
-   },
-   {
-    "theme": "US data beat was not enough to turn the dollar",
-    "evidence": "ISM Manufacturing PMI 55.5 vs 54.5 produced normal USD +0.053%; DXY -0.309%, USD strength -0.084%.",
-    "currencies": [
-     "USD",
-     "EUR"
-    ]
-   },
-   {
-    "theme": "Franc outperformance without own catalyst",
-    "evidence": "CHF strength +0.641%, closed at its best, no own releases; USD/CHF -59.5 pips, EUR/CHF -22.8.",
+    "theme": "US-Iran diplomacy drives cross-asset risk flows",
+    "evidence": "Brent/USD fell 7.41%, Gold/USD rose 2.26%; Iran Supreme Leader granted authority for talks",
     "currencies": [
      "CHF",
-     "USD",
-     "EUR"
+     "JPY",
+     "AUD",
+     "NZD",
+     "CAD"
+    ]
+   },
+   {
+    "theme": "CHF and EUR outperform, commodity FX lags",
+    "evidence": "CHF strength 0.641%, EUR 0.393%, AUD -0.351%, NZD -0.211%",
+    "currencies": [
+     "CHF",
+     "EUR",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "ISM beat fails to lift dollar",
+    "evidence": "ISM actual 55.5 vs forecast 54.5, USD own-currency impulse +0.053%, DXY -0.309%",
+    "currencies": [
+     "USD"
     ]
    }
   ],
   "currency_drivers": {
-   "USD": "ISM beat gave brief normal 0.053% lift, but broad flows left USD -0.084%.",
-   "EUR": "No own releases; strength of +0.393% came from broad USD softness and crosses.",
-   "JPY": "No clear catalyst; weakest alongside AUD, down -0.316% against majors.",
-   "GBP": "No own releases; modest +0.137%, held range with no major catalyst.",
-   "AUD": "Early +0.09% attempt rejected, gave back 91%; no own releases.",
-   "CAD": "No own releases; fell -0.209% despite brief ISM-related CAD support.",
-   "CHF": "No own release or clear catalyst; closed at its best at +0.641%.",
-   "NZD": "No clear catalyst; soft with AUD, -0.211%, no domestic news."
+   "USD": "ISM beat failed to generate durable dollar strength; closed lower as risk flows favored havens.",
+   "EUR": "No own catalyst; outperformed on soft dollar and haven demand.",
+   "JPY": "No own catalyst; weakened as risk appetite improved, funding currency sold.",
+   "GBP": "No own catalyst; modestly firmer with no domestic data.",
+   "AUD": "No own catalyst; early gain rejected, weakest into RBA risk.",
+   "CAD": "No own catalyst; weak with oil and commodity FX despite brief ISM dip.",
+   "CHF": "No own catalyst; strengthened as haven while US-Iran headlines whipsawed risk.",
+   "NZD": "No own catalyst; soft with commodity complex, no domestic drivers."
   },
   "leg_notes": {
-   "EUR/USD": "EUR/USD's early +79.5 pip rise had no clear catalyst, and the later -32.0 pip pullback was only partly pushed by ISM (-8.0, 25%), leaving a +53.2 pip close."
+   "EUR/USD": "EUR/USD's early 79.5-pip rally had no clear catalyst, and its later 32.0-pip pullback saw ISM contribute only 25% of the leg, leaving euro-driven strength dominant."
   },
   "polarity_reads": [
    {
     "event": "ISM Manufacturing PMI",
-    "read": "Normal polarity: the 55.5 vs 54.5 beat produced the expected USD-positive impulse (+0.053%); USD/SEK led at 2.53 sigma, while EUR/USD and USD/CAD stayed contained, showing no broad USD panic."
+    "read": "The 55.5 vs 54.5 beat produced only a 0.053% USD gain, with USD/SEK +0.086% leading and USD/CAD -4.4 pips; this indicates crowded short-dollar positioning was only partly unwound."
    }
   ],
   "scenarios": [
    {
-    "name": "RBA delivers hawkish 25bp",
-    "probability": 0.45,
-    "thesis": "RBA hikes to 4.85% as forecast and signals more, lifting AUD while USD stays soft into JOLTS.",
+    "name": "Dollar soft, risk-positive trading",
+    "probability": 0.4,
+    "thesis": "US-Iran diplomacy continues, ISM beat fails to revive dollar, and risk assets stay supported; CHF and EUR remain firm while commodity FX stabilize.",
     "triggers": [
-     "RBA Cash Rate 4.85% or higher",
-     "RBA statement flags further tightening",
-     "JOLTS below 7.11M"
+     "Further Iran talks progress",
+     "US JOLTS misses 7.15M forecast",
+     "RBA hikes without hawkish surprise"
     ],
-    "invalidation": "RBA holds at 4.60% or RBA presser sounds dovish.",
+    "invalidation": "Iran talks collapse or US data/headlines revive dollar strength.",
     "pair_paths": [
-     {
-      "instrument": "AUD/USD",
-      "direction": "up",
-      "magnitude_pips": 36.7,
-      "rationale": "AUD upside from current weak base; range is 36.7, RBA repricing."
-     },
      {
       "instrument": "EUR/USD",
       "direction": "up",
-      "magnitude_pips": 87.0,
-      "rationale": "USD softness lets EUR/USD extend its 79.5-pip push; measured range is 87.0."
-     }
-    ]
-   },
-   {
-    "name": "Dovish RBA or risk-off Iran",
-    "probability": 0.35,
-    "thesis": "RBA disappoints by holding or sounding cautious, and Iran talks stall, strengthening CHF/JPY and hurting AUD.",
-    "triggers": [
-     "RBA holds at 4.60%",
-     "Iran breakthrough fails or new military headline",
-     "CHF CPI above 0.0%"
-    ],
-    "invalidation": "RBA hikes and Iran deal confirmed.",
-    "pair_paths": [
-     {
-      "instrument": "AUD/USD",
-      "direction": "down",
-      "magnitude_pips": 36.7,
-      "rationale": "AUD gives back recent bounce; measured range is 36.7."
+      "magnitude_pips": 40,
+      "rationale": "EUR strength 0.393% and USD softness support a grind higher."
      },
      {
       "instrument": "USD/CHF",
       "direction": "down",
-      "magnitude_pips": 74.0,
-      "rationale": "Safe-haven CHF demand extends; current range is 74.0."
+      "magnitude_pips": 30,
+      "rationale": "CHF haven demand persists, USD no catalyst."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 25,
+      "rationale": "RBA risk passes without hawkish surprise, AUD rebounds from weakest level."
      }
     ]
    },
    {
-    "name": "Iran deal/risk-on, USD catches bid on data",
-    "probability": 0.2,
-    "thesis": "Breakthrough headlines continue and JOLTS beats, causing oil to fall and USD to strengthen against low yielders.",
+    "name": "RBA hawkish hike lifts AUD",
+    "probability": 0.35,
+    "thesis": "RBA raises cash rate to 4.85% as forecast and signals further tightening, forcing short covering in beaten-down AUD.",
     "triggers": [
-     "Diplomatic sources reconfirm Iran deal",
-     "JOLTS above 7.11M",
-     "Brent further selloff"
+     "RBA cash rate 4.85%",
+     "Hawkish RBA statement",
+     "Press conference confirms more hikes"
     ],
-    "invalidation": "Iran talks collapse.",
+    "invalidation": "RBA holds at 4.60% or delivers dovish guidance.",
     "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 35,
+      "rationale": "AUD was weakest at -0.351%, room for hawkish repricing."
+     },
+     {
+      "instrument": "EUR/AUD",
+      "direction": "down",
+      "magnitude_pips": 50,
+      "rationale": "AUD recovery against EUR strength."
+     },
+     {
+      "instrument": "AUD/CHF",
+      "direction": "up",
+      "magnitude_pips": 40,
+      "rationale": "AUD gains but CHF haven support limits upside."
+     }
+    ]
+   },
+   {
+    "name": "Geopolitical risk-off resumes",
+    "probability": 0.25,
+    "thesis": "US-Iran diplomacy falters or US election uncertainty spikes, driving safe-haven demand and oil rebound; high-beta and commodity currencies fall.",
+    "triggers": [
+     "Iran negotiations break down",
+     "US election headlines spark risk aversion",
+     "Oil prices rebound sharply"
+    ],
+    "invalidation": "Diplomatic breakthrough holds and risk appetite remains firm.",
+    "pair_paths": [
+     {
+      "instrument": "USD/CHF",
+      "direction": "down",
+      "magnitude_pips": 50,
+      "rationale": "CHF safe-haven demand dominates; USD/CHF already fell 59.5 pips this window."
+     },
+     {
+      "instrument": "AUD/CHF",
+      "direction": "down",
+      "magnitude_pips": 60,
+      "rationale": "AUD risk sensitivity and CHF haven bid."
+     },
      {
       "instrument": "EUR/USD",
       "direction": "down",
-      "magnitude_pips": 87.0,
-      "rationale": "USD positive data/risk-on pushes EUR/USD to lower edge of 87.0 range."
-     },
-     {
-      "instrument": "USD/JPY",
-      "direction": "up",
-      "magnitude_pips": 73.2,
-      "rationale": "Yield support and risk-on lift USD/JPY within 73.2 range."
+      "magnitude_pips": 30,
+      "rationale": "USD may recover on flight-to-quality despite soft session."
      }
     ]
    }
   ],
   "risks": [
    {
-    "risk": "Iran headlines reverse sharply",
-    "why_it_matters": "The tape moved on Iran diplomacy: Supreme Leader talk authorization and breakthrough sourced headline drove Brent -7.411% and Gold +2.26%.",
-    "watch": "Qatari mediation, Strait of Hormuz statements."
-   },
-   {
-    "risk": "RBA surprise",
-    "why_it_matters": "Consensus sees Cash Rate to 4.85% from 4.60%; a hold/dovish tone would hit fragile AUD.",
+    "risk": "RBA cash rate decision and guidance",
+    "why_it_matters": "AUD is weakest, forecast 4.85% vs previous 4.60% can reprice the whole commodity complex.",
     "watch": "RBA Rate Statement and Press Conference at 04:30/05:30."
    },
    {
-    "risk": "US JOLTS/election risk",
-    "why_it_matters": "JOLTS forecast 7.11M vs 7.08M and US Congressional Elections are ahead; they can shift USD rates pricing.",
-    "watch": "JOLTS at 16:00 and election headline flow."
+    "risk": "US Congressional Elections",
+    "why_it_matters": "Unscheduled high-impact event can drive USD and risk sentiment abruptly.",
+    "watch": "Results and early exit polls after 16:16."
    },
    {
-    "risk": "CHF CPI",
-    "why_it_matters": "CHF is strongest with no catalyst; CPI 0.0% m/m could validate safe-haven or alter SNB expectations.",
-    "watch": "CHF CPI at 08:30."
+    "risk": "Iran diplomacy reversal",
+    "why_it_matters": "Headlines moved Brent -7.41% and gold +2.26%; reversal would unwind haven and oil FX trades.",
+    "watch": "Strait of Hormuz negotiation headlines and Iran/US statements."
+   },
+   {
+    "risk": "US JOLTS Job Openings",
+    "why_it_matters": "Forecast 7.15M vs prior 7.08M; miss would extend dollar softness.",
+    "watch": "Actual at 16:00."
    }
   ],
-  "calendar_ahead_note": "RBA cash rate (4.85% forecast vs 4.60%), RBA presser, CHF CPI, JOLTS 7.11M, US election, and BOC Macklem can all change the picture.",
+  "calendar_ahead_note": "RBA cash rate (forecast 4.85% vs previous 4.60%) and press conference can reprice AUD; CHF CPI, US JOLTS, US Congressional Elections, and BOC Macklem speech later will drive USD/CAD and risk.",
   "_model": "deepseek-v4-pro",
   "_usage": {
    "prompt_tokens": 17537,
-   "completion_tokens": 8694,
-   "total_tokens": 26231,
+   "completion_tokens": 8929,
+   "total_tokens": 26466,
    "prompt_tokens_details": {
-    "cached_tokens": 640
+    "cached_tokens": 9344
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 6920
+    "reasoning_tokens": 7102
    },
-   "prompt_cache_hit_tokens": 640,
-   "prompt_cache_miss_tokens": 16897
+   "prompt_cache_hit_tokens": 9344,
+   "prompt_cache_miss_tokens": 8193
   }
  }
 }
