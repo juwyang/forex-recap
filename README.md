@@ -239,6 +239,17 @@ arrives: every run ends with a `--catchup` pass that builds whatever closed
 window is missing from `reports/`. One trigger a day, whenever it lands, is
 enough to keep the archive whole; a manual dispatch repairs it immediately.
 
+**Cost.** Actions minutes on this repository are metered, and with a spending
+limit of $0 any metered usage at all disables Actions -- the jobs then fail in
+about five seconds with no steps run, which looks nothing like a billing
+problem until you check the billing page. Measured over 18 days the workflow
+burned 9.9 billed minutes a day, and two thirds of that was a `Build report`
+step that rebuilt an edition the local task had already published hours
+earlier, DeepSeek call and all, after which catchup found nothing and the
+commit step reported no change. That step is gone; the job now tests for the
+report file right after checkout and exits before `setup-python` when it is
+already there.
+
 Set the `DEEPSEEK_API_KEY` repository secret and enable Pages (source: GitHub
 Actions). Without the key the report still builds — every measurement is
 independent of the model — and the analysis section says it is unavailable.

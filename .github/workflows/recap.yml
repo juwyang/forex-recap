@@ -100,6 +100,17 @@ jobs:
           DATE="${IN_DATE:-$DATE}"
           echo "Resolved to the $EDITION edition of $DATE (local hour $NOW_H)."
 
+          # The local task is the primary and usually got here hours ago. The
+          # checkout already holds whatever it published, so a file test is
+          # enough to know there is nothing to do -- and bailing here skips
+          # setup-python, the pip install and the DeepSeek call, which is the
+          # difference between a job that bills three minutes and one that
+          # bills one.
+          REPORT="reports/$(echo "$DATE" | cut -c1-7)/$DATE-$EDITION.html"
+          if [ -f "$REPORT" ]; then
+            skip "$REPORT already published; nothing for this run to do."
+          fi
+
           echo "edition=$EDITION" >> "$GITHUB_OUTPUT"
           echo "date=$DATE"       >> "$GITHUB_OUTPUT"
           echo "built=true"       >> "$GITHUB_OUTPUT"
@@ -114,24 +125,18 @@ jobs:
         if: steps.decide.outputs.built == 'true'
         run: pip install -r requirements.txt
 
-      - name: Build report
+      - name: Build whatever is missing
         if: steps.decide.outputs.built == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: |
-          python -m forexrecap.run \
-            --date "${{ steps.decide.outputs.date }}" \
-            --edition "${{ steps.decide.outputs.edition }}" \
-            --out reports
-
-      - name: Fill in anything the scheduler dropped
-        if: steps.decide.outputs.built == 'true'
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        # GitHub's scheduler is best-effort and has dropped slots outright, so
-        # the archive is repaired from whichever trigger does fire rather than
-        # relying on each one arriving. Only windows that have already closed
-        # are built.
+        # --catchup and nothing else. There used to be an explicit
+        # "--date X --edition Y" build in front of this, which rebuilt the
+        # edition unconditionally -- three to four billed minutes and a
+        # DeepSeek call to regenerate a report the local task had already
+        # published hours earlier, after which catchup found nothing to do and
+        # the commit step reported no change. Catchup already covers today's
+        # edition, because today's edition is simply the most recent one that
+        # is due and missing.
         run: python -m forexrecap.run --catchup --out reports
 
       - name: Summarise
