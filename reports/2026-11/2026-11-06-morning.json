@@ -1,0 +1,1743 @@
+{
+ "meta": {
+  "date": "2026-11-06",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-11-05T18:00:00+00:00",
+  "end_utc": "2026-11-06T06:00:00+00:00",
+  "start_local": "2026-11-05T19:00:00+01:00",
+  "end_local": "2026-11-06T07:00:00+01:00",
+  "fwd_start_utc": "2026-11-06T06:00:00+00:00",
+  "fwd_end_utc": "2026-11-06T18:00:00+00:00",
+  "generated_utc": "2026-11-06T06:29:02.659665+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 69
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-11-05 19:00 CET",
+   "to_local": "2026-11-06 07:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.43,
+    "intraday_peak": 0.44,
+    "intraday_trough": 0.009,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Annual Budget Release",
+     "instrument": "Gold/USD",
+     "sigma": -2.29
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 2,
+    "strength_pct": 0.377,
+    "intraday_peak": 0.377,
+    "intraday_trough": 0.013,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 3,
+    "strength_pct": 0.172,
+    "intraday_peak": 0.172,
+    "intraday_trough": -0.13,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "EUR",
+    "rank": 4,
+    "strength_pct": 0.044,
+    "intraday_peak": 0.057,
+    "intraday_trough": -0.045,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "no-data",
+      "note": "no quotes around the release"
+     }
+    ],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "GBP",
+    "rank": 5,
+    "strength_pct": 0.001,
+    "intraday_peak": 0.019,
+    "intraday_trough": -0.104,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 6,
+    "strength_pct": -0.001,
+    "intraday_peak": 0.037,
+    "intraday_trough": -0.089,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.09%, recovered 69%",
+    "own_releases": [
+     {
+      "title": "Annual Budget Release",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.031%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Annual Budget Release",
+     "instrument": "USD/CAD",
+     "sigma": 0.87
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 7,
+    "strength_pct": -0.498,
+    "intraday_peak": 0.033,
+    "intraday_trough": -0.498,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Annual Budget Release",
+     "instrument": "AUD/USD",
+     "sigma": -0.71
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 8,
+    "strength_pct": -0.524,
+    "intraday_peak": 0.004,
+    "intraday_trough": -0.524,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Annual Budget Release",
+     "instrument": "NZD/USD",
+     "sigma": -0.69
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.386,
+    "from_EUR": 0.044,
+    "from_USD": -0.43,
+    "base_share": 0.09
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.429,
+    "from_GBP": 0.001,
+    "from_USD": -0.43,
+    "base_share": 0.0
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.928,
+    "from_AUD": -0.498,
+    "from_USD": -0.43,
+    "base_share": 0.54
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.954,
+    "from_NZD": -0.524,
+    "from_USD": -0.43,
+    "base_share": 0.55
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.053,
+    "from_USD": 0.43,
+    "from_JPY": -0.377,
+    "base_share": 0.53
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.258,
+    "from_USD": 0.43,
+    "from_CHF": -0.172,
+    "base_share": 0.71
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.431,
+    "from_USD": 0.43,
+    "from_CAD": 0.001,
+    "base_share": 1.0
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.043,
+    "from_EUR": 0.044,
+    "from_GBP": -0.001,
+    "base_share": 0.98
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.334,
+    "from_EUR": 0.044,
+    "from_JPY": -0.377,
+    "base_share": 0.1
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.128,
+    "from_EUR": 0.044,
+    "from_CHF": -0.172,
+    "base_share": 0.2
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.542,
+    "from_EUR": 0.044,
+    "from_AUD": 0.498,
+    "base_share": 0.08
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.045,
+    "from_EUR": 0.044,
+    "from_CAD": 0.001,
+    "base_share": 0.98
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.568,
+    "from_EUR": 0.044,
+    "from_NZD": 0.524,
+    "base_share": 0.08
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.376,
+    "from_GBP": 0.001,
+    "from_JPY": -0.377,
+    "base_share": 0.0
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.171,
+    "from_GBP": 0.001,
+    "from_CHF": -0.172,
+    "base_share": 0.01
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.499,
+    "from_GBP": 0.001,
+    "from_AUD": 0.498,
+    "base_share": 0.0
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.002,
+    "from_GBP": 0.001,
+    "from_CAD": 0.001,
+    "base_share": 0.49
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.525,
+    "from_GBP": 0.001,
+    "from_NZD": 0.524,
+    "base_share": 0.0
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.875,
+    "from_AUD": -0.498,
+    "from_JPY": -0.377,
+    "base_share": 0.57
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.67,
+    "from_AUD": -0.498,
+    "from_CHF": -0.172,
+    "base_share": 0.74
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.497,
+    "from_AUD": -0.498,
+    "from_CAD": 0.001,
+    "base_share": 1.0
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.026,
+    "from_AUD": -0.498,
+    "from_NZD": 0.524,
+    "base_share": 0.49
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.901,
+    "from_NZD": -0.524,
+    "from_JPY": -0.377,
+    "base_share": 0.58
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.696,
+    "from_NZD": -0.524,
+    "from_CHF": -0.172,
+    "base_share": 0.75
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.523,
+    "from_NZD": -0.524,
+    "from_CAD": 0.001,
+    "base_share": 1.0
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.378,
+    "from_CAD": -0.001,
+    "from_JPY": -0.377,
+    "base_share": 0.0
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.173,
+    "from_CAD": -0.001,
+    "from_CHF": -0.172,
+    "base_share": 0.01
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.205,
+    "from_CHF": 0.172,
+    "from_JPY": -0.377,
+    "base_share": 0.31
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.493
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.432
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.197
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.05
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.002
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.001
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.567
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.597
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11961,
+    "chg_pips": -43.4,
+    "chg_pct": -0.386,
+    "range_pips": 52.6,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.34249,
+    "chg_pips": -57.7,
+    "chg_pct": -0.428,
+    "range_pips": 61.1,
+    "close_in_range": 0.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.68868,
+    "chg_pips": -64.3,
+    "chg_pct": -0.925,
+    "range_pips": 67.5,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.55593,
+    "chg_pips": -53.5,
+    "chg_pct": -0.953,
+    "range_pips": 56.1,
+    "close_in_range": 0.04,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 157.782,
+    "chg_pips": 8.3,
+    "chg_pct": 0.053,
+    "range_pips": 74.7,
+    "close_in_range": 0.7,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.8164,
+    "chg_pips": 21.1,
+    "chg_pct": 0.259,
+    "range_pips": 37.0,
+    "close_in_range": 0.72,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.40442,
+    "chg_pips": 59.3,
+    "chg_pct": 0.424,
+    "range_pips": 66.6,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.91406,
+    "chg_pips": -11.6,
+    "chg_pct": -0.127,
+    "range_pips": 31.3,
+    "close_in_range": 0.08,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 193.255,
+    "chg_pips": -40.0,
+    "chg_pct": -0.207,
+    "range_pips": 82.3,
+    "close_in_range": 0.51,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23867,
+    "chg_pips": 3.2,
+    "chg_pct": 0.026,
+    "range_pips": 35.2,
+    "close_in_range": 0.46,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83396,
+    "chg_pips": 3.6,
+    "chg_pct": 0.043,
+    "range_pips": 12.1,
+    "close_in_range": 0.55,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.56223,
+    "chg_pips": -37.8,
+    "chg_pct": -0.668,
+    "range_pips": 55.6,
+    "close_in_range": 0.02,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.45386,
+    "chg_pips": -31.6,
+    "chg_pct": -0.691,
+    "range_pips": 41.0,
+    "close_in_range": 0.05,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.83845,
+    "chg_pips": 587.4,
+    "chg_pct": 0.601,
+    "range_pips": 650.8,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.32777,
+    "chg_pips": 410.5,
+    "chg_pct": 0.442,
+    "range_pips": 606.5,
+    "close_in_range": 1.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.52359,
+    "chg_pips": 658.6,
+    "chg_pct": 0.4,
+    "range_pips": 1299.5,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.7579,
+    "chg_pips": 181.1,
+    "chg_pct": 0.097,
+    "range_pips": 2549.2,
+    "close_in_range": 0.2,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.625,
+    "chg_pips": 37.0,
+    "chg_pct": 0.365,
+    "range_pips": 45.5,
+    "close_in_range": 0.9,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 23.764,
+    "chg_pips": 37.5,
+    "chg_pct": 1.603,
+    "range_pips": 320.0,
+    "close_in_range": 0.53,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -21.3,
+    "ret_pct": -0.19,
+    "minutes": 255,
+    "cause": "ECB President Lagarde Speaks",
+    "cause_ccy": "EUR",
+    "confidence": "low",
+    "note": "EUR ECB President Lagarde Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:15",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 14.7,
+    "ret_pct": 0.131,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's real wages rise for ninth month in September, bac…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "01:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -34.5,
+    "ret_pct": -0.307,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Democrats Plan To Pressure Trump With Canada Tariff Repea…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 15.3,
+    "ret_pct": 0.097,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "20:30",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -55.2,
+    "ret_pct": -0.35,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran sent nuclear proposal to the US via Qatar: Reuters, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "00:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 48.7,
+    "ret_pct": 0.31,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Average Cash Earnings y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -53.1,
+    "ret_pct": -0.394,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 24.0,
+    "ret_pct": 0.295,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "22:00",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -23.0,
+    "ret_pct": -0.281,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Will do a lot of things over the next couple of we…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "00:15",
+    "to": "05:00",
+    "dir": "up",
+    "pips": 24.7,
+    "ret_pct": 0.303,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -9.6,
+    "ret_pct": -0.117,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "down",
+    "pips": -26.8,
+    "ret_pct": -0.385,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "22:30",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 15.6,
+    "ret_pct": 0.225,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's real wages rise for ninth month in September, bac…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "01:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -54.7,
+    "ret_pct": -0.788,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Democrats Plan To Pressure Trump With Canada Tariff Repea…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 62.1,
+    "ret_pct": 0.444,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Annual Budget Release, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -53.3,
+    "ret_pct": -0.95,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 12.0,
+    "ret_pct": 0.131,
+    "minutes": 90,
+    "cause": "ECB President Lagarde Speaks",
+    "cause_ccy": "EUR",
+    "confidence": "low",
+    "note": "EUR ECB President Lagarde Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "20:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -26.0,
+    "ret_pct": -0.284,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran sent nuclear proposal to the US via Qatar: Reuters, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:15",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 18.7,
+    "ret_pct": 0.205,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -20.1,
+    "ret_pct": -0.219,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Democrats Plan To Pressure Trump With Canada Tariff Repea…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -51.5,
+    "ret_pct": -0.266,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "00:15",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 31.1,
+    "ret_pct": 0.161,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Average Cash Earnings y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "01:15",
+    "to": "04:45",
+    "dir": "down",
+    "pips": -19.4,
+    "ret_pct": -0.1,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Democrats Plan To Pressure Trump With Canada Tariff Repea… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 12.6,
+    "ret_pct": 0.065,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 9.8,
+    "ret_pct": 0.079,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "20:30",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -18.2,
+    "ret_pct": -0.147,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran sent nuclear proposal to the US via Qatar: Reuters, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:15",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 25.2,
+    "ret_pct": 0.204,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "01:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -16.6,
+    "ret_pct": -0.134,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Democrats Plan To Pressure Trump With Canada Tariff Repea…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 4.8,
+    "ret_pct": 0.058,
+    "minutes": 135,
+    "cause": "ECB President Lagarde Speaks",
+    "cause_ccy": "EUR",
+    "confidence": "low",
+    "note": "EUR ECB President Lagarde Speaks",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "21:15",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -4.6,
+    "ret_pct": -0.055,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Budget 2026: Masters of our destiny moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:30",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 6.8,
+    "ret_pct": 0.082,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "00:45",
+    "to": "04:45",
+    "dir": "down",
+    "pips": -8.6,
+    "ret_pct": -0.103,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's real wages rise for ninth month in September, bac… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 4.1,
+    "ret_pct": 0.049,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 10.0,
+    "ret_pct": 0.177,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "20:30",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -27.6,
+    "ret_pct": -0.486,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Iran sent nuclear proposal to the US via Qatar: Reuters, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:15",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 18.6,
+    "ret_pct": 0.329,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -43.6,
+    "ret_pct": -0.77,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Democrats Plan To Pressure Trump With Canada Tariff Repea…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 4.5,
+    "ret_pct": 0.098,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "20:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -38.3,
+    "ret_pct": -0.837,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Budget 2026: Masters of our destiny, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "up",
+    "pips": 288.2,
+    "ret_pct": 0.295,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada Budget 2026: Masters of our destiny pushed it along (+46.8 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada Budget 2026: Masters of our destiny",
+      "ccy": null,
+      "pips": 46.8,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "Annual Budget Release",
+      "ccy": "CAD",
+      "pips": 46.8,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "22:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -168.8,
+    "ret_pct": -0.172,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 452.5,
+    "ret_pct": 0.462,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 246.6,
+    "ret_pct": 0.266,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -412.2,
+    "ret_pct": -0.443,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Will do a lot of things over the next couple of we…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 592.4,
+    "ret_pct": 0.639,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's real wages rise for ninth month in September, bac…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 281.3,
+    "ret_pct": 0.171,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada Budget 2026: Masters of our destiny pushed it along (+61.4 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada Budget 2026: Masters of our destiny",
+      "ccy": null,
+      "pips": 61.4,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "Annual Budget Release",
+      "ccy": "CAD",
+      "pips": 61.4,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "22:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -802.1,
+    "ret_pct": -0.486,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Will do a lot of things over the next couple of we… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 1163.2,
+    "ret_pct": 0.709,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -166.8,
+    "ret_pct": -0.089,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada Budget 2026: Masters of our destiny pushed it along (-36.3 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada Budget 2026: Masters of our destiny",
+      "ccy": null,
+      "pips": -36.3,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "Annual Budget Release",
+      "ccy": "CAD",
+      "pips": -36.3,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:15",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 678.5,
+    "ret_pct": 0.363,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump Meets With National Security Team, Says Iran War De…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "00:45",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -649.2,
+    "ret_pct": -0.346,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan's real wages rise for ninth month in September, bac… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 421.5,
+    "ret_pct": 0.225,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "04:30",
+    "dir": "up",
+    "pips": 269.6,
+    "ret_pct": 2.43,
+    "minutes": 570,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "04:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -74.9,
+    "ret_pct": -0.659,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 115.4,
+    "ret_pct": 0.281,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "20:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -727.9,
+    "ret_pct": -1.769,
+    "minutes": 600,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada Budget 2026: Masters of our destiny, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "22:00",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "Annual Budget Release",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.031%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.031,
+    "top_movers": [
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.259,
+      "pips": -106.3,
+      "unit": "pips ($0.10)",
+      "sigma": -2.29
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.013,
+      "pips": 1.8,
+      "unit": "pips",
+      "sigma": 0.87
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.022,
+      "pips": 21.4,
+      "unit": "pips",
+      "sigma": 0.76
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.031,
+      "pips": 50.4,
+      "unit": "pips",
+      "sigma": 0.73
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.025,
+      "pips": -1.7,
+      "unit": "pips",
+      "sigma": -0.71
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.021,
+      "pips": -1.2,
+      "unit": "pips",
+      "sigma": -0.69
+     }
+    ]
+   },
+   {
+    "time": "19:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "no-data",
+    "polarity_note": "no quotes around the release",
+    "own_ccy_impulse_pct": null,
+    "top_movers": []
+   }
+  ],
+  "headline_count": 6,
+  "top_headlines": [
+   {
+    "time": "22:00",
+    "impact": "medium",
+    "title": "Canada Budget 2026: Masters of our destiny"
+   },
+   {
+    "time": "20:45",
+    "impact": "low",
+    "title": "Iran sent nuclear proposal to the US via Qatar: Reuters"
+   },
+   {
+    "time": "22:15",
+    "impact": "low",
+    "title": "Trump: Will do a lot of things over the next couple of weeks; Adding that Iran not doing anything without U.S. approval"
+   },
+   {
+    "time": "00:30",
+    "impact": "low",
+    "title": "Trump Meets With National Security Team, Says Iran War Decision Coming &quot;Soon&quot; - Axios"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan's real wages rise for ninth month in September, backing BOJ rate hike"
+   },
+   {
+    "time": "03:00",
+    "impact": "low",
+    "title": "Democrats Plan To Pressure Trump With Canada Tariff Repeal Agenda: WSJ"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Employment Change",
+    "forecast": "14.6K",
+    "previous": "-68.3K"
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Unemployment Rate",
+    "forecast": "6.5%",
+    "previous": "6.5%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Average Hourly Earnings m/m",
+    "forecast": "0.3%",
+    "previous": "0.1%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Non-Farm Employment Change",
+    "forecast": "65K",
+    "previous": "29K"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Unemployment Rate",
+    "forecast": "4.2%",
+    "previous": "4.2%"
+   },
+   {
+    "time": "16:00",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "Ivey PMI",
+    "forecast": "57.7",
+    "previous": "58.2"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Prelim UoM Consumer Sentiment",
+    "forecast": "48.1",
+    "previous": "46.3"
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Prelim UoM Inflation Expectations",
+    "forecast": null,
+    "previous": "4.7%"
+   },
+   {
+    "time": "17:00",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Gov Ueda Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Overnight tape was a broad dollar bid with no US catalyst: USD was strongest (+0.43%) and closed at its best while VIX rose 1.6%. JPY and CHF also closed at their best but lacked own releases; AUD and NZD were weakest (-0.498%, -0.524%) and held near lows. The only event reaction was a muted Canadian budget release; ECB Lagarde's appearance generated no quotes and no impulse. Gold fell sharply (-1.769% on one leg) while headline flow centered on Iran/Trump rather than data.",
+  "themes": [
+   {
+    "theme": "Broad USD strength / risk-off",
+    "evidence": "USD strength +0.43%, DXY +0.365, VIX +1.603, gold leg -1.769%",
+    "currencies": [
+     "USD",
+     "JPY",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Antipodean underperformance with no local catalyst",
+    "evidence": "AUD -0.498%, NZD -0.524%, both held range but closed near lows",
+    "currencies": [
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Geopolitical headlines without FX impulse",
+    "evidence": "Iran/Trump headlines hit at 20:45-00:30, but leg notes say too weak to own moves; no event polarity",
+    "currencies": [
+     "USD",
+     "CHF",
+     "JPY"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No US catalyst; broad dollar bid closed at best as VIX rose 1.6%.",
+   "EUR": "ECB Lagarde produced no quotes; EUR closed slightly stronger at best without clear driver.",
+   "JPY": "No Japanese catalyst; yen closed at best and second-strongest major with no clear driver.",
+   "GBP": "No UK catalyst; sterling clawed back from early selling to close flat at best.",
+   "AUD": "No Australia catalyst; Aussie held range but fell 0.498% to weakest alongside NZD.",
+   "CAD": "Annual budget release was muted inside noise floor; CAD sold then recovered 69%.",
+   "CHF": "No Swiss catalyst; franc closed at best after early dip, no clear driver.",
+   "NZD": "No New Zealand catalyst; kiwi held range but fell 0.524%, weakest major."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD's net -43.4 pips came in three legs—a Lagarde-related dip, a no-catalyst bounce, then a larger no-catalyst decline—with USD strength contributing -0.43% and EUR only 0.09 share."
+  },
+  "polarity_reads": [
+   {
+    "event": "Annual Budget Release",
+    "read": "Muted CAD basket (-0.031% inside noise floor) means the budget carried no fresh CAD impulse; gold's -2.29 sigma top move shows risk proxies were more sensitive than CAD."
+   },
+   {
+    "event": "ECB President Lagarde Speaks",
+    "read": "No quotes around the release; no measurable EUR impulse, so no positioning signal can be inferred."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Dollar strength extends",
+    "probability": 0.45,
+    "thesis": "Broad USD bid persists; VIX and DXY close at highs, commodity FX remain offered ahead of US jobs.",
+    "triggers": [
+     "US NFP beats 65K forecast",
+     "UoM inflation expectations stay high",
+     "Risk-off keeps VIX elevated"
+    ],
+    "invalidation": "EUR/USD rises above its 52.6-pip range high, showing dollar bid fading.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 43.4,
+      "rationale": "EUR contribution only 0.09 share; USD strength can retest full overnight decline."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 64.3,
+      "rationale": "AUD is weakest with no catalyst; can extend near its 67.5-pip range low."
+     }
+    ]
+   },
+   {
+    "name": "Corrective pullback in USD",
+    "probability": 0.35,
+    "thesis": "Some profit-taking after USD closed at best; safe-haven gains unwind without fresh catalyst; Ueda could set JPY tone.",
+    "triggers": [
+     "BOJ Ueda signals near-term hike",
+     "US average hourly earnings cools",
+     "VIX retreats from 23.764"
+    ],
+    "invalidation": "USD/JPY holds above 157.782 close; DXY makes new high.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 55.2,
+      "rationale": "Earlier down leg 55.2 pips shows yen can rally if risk settles."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 34.5,
+      "rationale": "Late EUR/USD down leg was 34.5 pips; a bounce can retrace it."
+     }
+    ]
+   },
+   {
+    "name": "Risk-on reversal lifts commodity FX",
+    "probability": 0.2,
+    "thesis": "Iran/Trump headlines fade, equities recover, and commodity currencies bounce from oversold troughs.",
+    "triggers": [
+     "Positive geopolitical headline",
+     "Canada employment surprises to upside",
+     "Commodities stabilize"
+    ],
+    "invalidation": "AUD/USD breaks below its 0.68868 close and makes new window low.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 54.7,
+      "rationale": "Late 54.7-pip down leg could reverse if catalyst fades."
+     },
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 53.5,
+      "rationale": "NZD/USD full window down 53.5 pips, possible retracement."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Geopolitical surprise from Iran/Trump",
+    "why_it_matters": "Headlines were no-impulse in the window, but VIX closed up 1.6% and Brent rose 2.43% on one leg; any escalation will hit risk FX.",
+    "watch": "US/Iran nuclear headlines, Trump statements"
+   },
+   {
+    "risk": "US jobs data miss/beat",
+    "why_it_matters": "USD closed at best with no local catalyst; NFP forecast 65K vs prior 29K; a big surprise can break or extend dollar bid.",
+    "watch": "Average Hourly Earnings m/m, NFP, Unemployment Rate at 14:30"
+   },
+   {
+    "risk": "BOJ Ueda hawkishness",
+    "why_it_matters": "JPY closed at best with no catalyst; Ueda at 17:00 can validate or unwind yen strength.",
+    "watch": "BOJ Gov Ueda Speaks"
+   }
+  ],
+  "calendar_ahead_note": "Coming window is US/Canada jobs at 14:30 and BOJ Ueda at 17:00; high-impact NFP and Canada employment plus UoM inflation expectations can reset USD/CAD/JPY paths.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 13688,
+   "completion_tokens": 6601,
+   "total_tokens": 20289,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4907
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 13048
+  }
+ }
+}
