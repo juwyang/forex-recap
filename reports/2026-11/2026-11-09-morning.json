@@ -1,0 +1,2753 @@
+{
+ "meta": {
+  "date": "2026-11-09",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "since Friday's 07:00",
+  "sessions": "Friday close -> weekend -> Asia reopen",
+  "weekend_bridged": true,
+  "hours": 72.0,
+  "start_utc": "2026-11-06T06:00:00+00:00",
+  "end_utc": "2026-11-09T06:00:00+00:00",
+  "start_local": "2026-11-06T07:00:00+01:00",
+  "end_local": "2026-11-09T07:00:00+01:00",
+  "fwd_start_utc": "2026-11-09T06:00:00+00:00",
+  "fwd_end_utc": "2026-11-09T18:00:00+00:00",
+  "generated_utc": "2026-11-09T06:19:56.819239+00:00",
+  "partial": false,
+  "coverage_min": 4320,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 0.333,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 87
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "since Friday's 07:00",
+   "sessions": "Friday close -> weekend -> Asia reopen",
+   "from_local": "2026-11-06 07:00 CET",
+   "to_local": "2026-11-09 07:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "NZD",
+    "rank": 1,
+    "strength_pct": 0.809,
+    "intraday_peak": 0.809,
+    "intraday_trough": -0.095,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Prelim UoM Consumer Sentiment +1 more",
+     "instrument": "AUD/NZD",
+     "sigma": -1.9
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 2,
+    "strength_pct": 0.152,
+    "intraday_peak": 0.328,
+    "intraday_trough": -0.122,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.12%, recovered 61%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Prelim UoM Consumer Sentiment +1 more",
+     "instrument": "AUD/NZD",
+     "sigma": -1.9
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 3,
+    "strength_pct": 0.135,
+    "intraday_peak": 0.436,
+    "intraday_trough": 0.016,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.44%, gave back 72%",
+    "own_releases": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "impact": "High",
+      "actual": "165K",
+      "forecast": "65K",
+      "polarity": "normal",
+      "note": "beat surprise -> USD stronger 0.157%"
+     },
+     {
+      "title": "Prelim UoM Consumer Sentiment +1 more",
+      "impact": "Medium",
+      "actual": "51.0",
+      "forecast": "48.1",
+      "polarity": "inverted",
+      "note": "beat surprise -> USD weaker 0.046%  (opposite to the textbook sign)"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "USD/CAD",
+     "sigma": 9.53
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 4,
+    "strength_pct": -0.148,
+    "intraday_peak": 0.075,
+    "intraday_trough": -0.151,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 99%",
+    "own_releases": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "JPY weaker by 0.044%, but no forecast to score the surprise against"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "BOJ Gov Ueda Speaks",
+     "instrument": "CHF/JPY",
+     "sigma": 2.37
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 5,
+    "strength_pct": -0.193,
+    "intraday_peak": 0.026,
+    "intraday_trough": -0.219,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "EUR/USD",
+     "sigma": -2.86
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 6,
+    "strength_pct": -0.199,
+    "intraday_peak": 0.011,
+    "intraday_trough": -0.279,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "EUR/GBP",
+     "sigma": -2.0
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 7,
+    "strength_pct": -0.275,
+    "intraday_peak": 0.049,
+    "intraday_trough": -0.374,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "BOJ Gov Ueda Speaks",
+     "instrument": "CHF/JPY",
+     "sigma": 2.37
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 8,
+    "strength_pct": -0.281,
+    "intraday_peak": 0.082,
+    "intraday_trough": -0.284,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.08%, gave back 99%",
+    "own_releases": [
+     {
+      "title": "Employment Change +1 more",
+      "impact": "High",
+      "actual": "-4.7K",
+      "forecast": "14.6K",
+      "polarity": "normal",
+      "note": "miss surprise -> CAD weaker 0.133%"
+     },
+     {
+      "title": "Ivey PMI",
+      "impact": "Medium",
+      "actual": "58.3",
+      "forecast": "57.7",
+      "polarity": "muted",
+      "note": "basket moved -0.007%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Non-Farm Employment Change +2 more",
+     "instrument": "USD/CAD",
+     "sigma": 9.53
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.328,
+    "from_EUR": -0.193,
+    "from_USD": -0.135,
+    "base_share": 0.59
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.334,
+    "from_GBP": -0.199,
+    "from_USD": -0.135,
+    "base_share": 0.6
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.016,
+    "from_AUD": 0.152,
+    "from_USD": -0.135,
+    "base_share": 0.53
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": 0.673,
+    "from_NZD": 0.809,
+    "from_USD": -0.135,
+    "base_share": 0.86
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.283,
+    "from_USD": 0.135,
+    "from_JPY": 0.148,
+    "base_share": 0.48
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.411,
+    "from_USD": 0.135,
+    "from_CHF": 0.275,
+    "base_share": 0.33
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.416,
+    "from_USD": 0.135,
+    "from_CAD": 0.281,
+    "base_share": 0.33
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.006,
+    "from_EUR": -0.193,
+    "from_GBP": 0.199,
+    "base_share": 0.49
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.045,
+    "from_EUR": -0.193,
+    "from_JPY": 0.148,
+    "base_share": 0.57
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.082,
+    "from_EUR": -0.193,
+    "from_CHF": 0.275,
+    "base_share": 0.41
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.345,
+    "from_EUR": -0.193,
+    "from_AUD": -0.152,
+    "base_share": 0.56
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.088,
+    "from_EUR": -0.193,
+    "from_CAD": 0.281,
+    "base_share": 0.41
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -1.002,
+    "from_EUR": -0.193,
+    "from_NZD": -0.809,
+    "base_share": 0.19
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.051,
+    "from_GBP": -0.199,
+    "from_JPY": 0.148,
+    "base_share": 0.57
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.076,
+    "from_GBP": -0.199,
+    "from_CHF": 0.275,
+    "base_share": 0.42
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.351,
+    "from_GBP": -0.199,
+    "from_AUD": -0.152,
+    "base_share": 0.57
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.082,
+    "from_GBP": -0.199,
+    "from_CAD": 0.281,
+    "base_share": 0.41
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -1.008,
+    "from_GBP": -0.199,
+    "from_NZD": -0.809,
+    "base_share": 0.2
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.299,
+    "from_AUD": 0.152,
+    "from_JPY": 0.148,
+    "base_share": 0.51
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.427,
+    "from_AUD": 0.152,
+    "from_CHF": 0.275,
+    "base_share": 0.36
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.432,
+    "from_AUD": 0.152,
+    "from_CAD": 0.281,
+    "base_share": 0.35
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.657,
+    "from_AUD": 0.152,
+    "from_NZD": -0.809,
+    "base_share": 0.16
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": 0.956,
+    "from_NZD": 0.809,
+    "from_JPY": 0.148,
+    "base_share": 0.85
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 1.084,
+    "from_NZD": 0.809,
+    "from_CHF": 0.275,
+    "base_share": 0.75
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": 1.089,
+    "from_NZD": 0.809,
+    "from_CAD": 0.281,
+    "base_share": 0.74
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.133,
+    "from_CAD": -0.281,
+    "from_JPY": 0.148,
+    "base_share": 0.66
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.005,
+    "from_CAD": -0.281,
+    "from_CHF": 0.275,
+    "base_share": 0.5
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.128,
+    "from_CHF": -0.275,
+    "from_JPY": 0.148,
+    "base_share": 0.65
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": 0.929
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.174
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.155
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.168
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.22
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.226
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.313
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.32
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11594,
+    "chg_pips": -36.7,
+    "chg_pct": -0.328,
+    "range_pips": 67.8,
+    "close_in_range": 0.42,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.33803,
+    "chg_pips": -44.6,
+    "chg_pct": -0.332,
+    "range_pips": 87.5,
+    "close_in_range": 0.46,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.6888,
+    "chg_pips": 1.2,
+    "chg_pct": 0.017,
+    "range_pips": 48.1,
+    "close_in_range": 0.7,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.5597,
+    "chg_pips": 37.7,
+    "chg_pct": 0.678,
+    "range_pips": 69.9,
+    "close_in_range": 1.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.23,
+    "chg_pips": 44.8,
+    "chg_pct": 0.284,
+    "range_pips": 88.1,
+    "close_in_range": 0.61,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.81976,
+    "chg_pips": 33.6,
+    "chg_pct": 0.412,
+    "range_pips": 59.7,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.41034,
+    "chg_pips": 59.2,
+    "chg_pct": 0.422,
+    "range_pips": 93.5,
+    "close_in_range": 0.64,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.9148,
+    "chg_pips": 7.4,
+    "chg_pct": 0.081,
+    "range_pips": 56.8,
+    "close_in_range": 0.8,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 193.008,
+    "chg_pips": -24.7,
+    "chg_pct": -0.128,
+    "range_pips": 84.2,
+    "close_in_range": 0.35,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23054,
+    "chg_pips": -81.3,
+    "chg_pct": -0.656,
+    "range_pips": 122.4,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83401,
+    "chg_pips": 0.5,
+    "chg_pct": 0.006,
+    "range_pips": 18.3,
+    "close_in_range": 0.36,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.56464,
+    "chg_pips": 24.1,
+    "chg_pct": 0.429,
+    "range_pips": 61.7,
+    "close_in_range": 0.67,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.4588,
+    "chg_pips": 49.4,
+    "chg_pct": 1.088,
+    "range_pips": 58.4,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.86882,
+    "chg_pips": 303.7,
+    "chg_pct": 0.309,
+    "range_pips": 942.1,
+    "close_in_range": 0.35,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.43936,
+    "chg_pips": 1115.9,
+    "chg_pct": 1.196,
+    "range_pips": 1590.6,
+    "close_in_range": 0.7,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.4846,
+    "chg_pips": -389.9,
+    "chg_pct": -0.236,
+    "range_pips": 1091.6,
+    "close_in_range": 0.07,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.58533,
+    "chg_pips": -1725.7,
+    "chg_pct": -0.92,
+    "range_pips": 2529.5,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 101.982,
+    "chg_pips": 35.7,
+    "chg_pct": 0.351,
+    "range_pips": 61.6,
+    "close_in_range": 0.61,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 22.589,
+    "chg_pips": -117.5,
+    "chg_pct": -4.944,
+    "range_pips": 255.0,
+    "close_in_range": 0.26,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "07:00",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -64.4,
+    "ret_pct": -0.575,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (-18.3 in 15 min, 28% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": -18.3,
+      "share_of_leg": 0.28
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": -18.3,
+      "share_of_leg": 0.28
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": -18.3,
+      "share_of_leg": 0.28
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "15:15",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 26.3,
+    "ret_pct": 0.236,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (+8.1 in 15 min, 31% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": 8.1,
+      "share_of_leg": 0.31
+     },
+     {
+      "title": "Ivey PMI",
+      "ccy": "CAD",
+      "pips": 6.1,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:15",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -22.3,
+    "ret_pct": -0.2,
+    "minutes": 3315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US warns China that it must immediately meet terms of…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 22.5,
+    "ret_pct": 0.202,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: I expect to hold talks with Xi and Putin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "07:00",
+    "to": "07:45",
+    "dir": "up",
+    "pips": 35.8,
+    "ret_pct": 0.227,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "07:45",
+    "to": "09:15",
+    "dir": "down",
+    "pips": -30.8,
+    "ret_pct": -0.195,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "09:15",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 62.9,
+    "ret_pct": 0.399,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Williams Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "14:30",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -32.9,
+    "ret_pct": -0.208,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Non-Farm Employment Change +2 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "16:15",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 37.2,
+    "ret_pct": 0.235,
+    "minutes": 345,
+    "cause": "BOJ Gov Ueda Speaks",
+    "cause_ccy": "JPY",
+    "confidence": "low",
+    "note": "JPY BOJ Gov Ueda Speaks -- +2.7 in the first 15 min, 7% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "22:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -27.9,
+    "ret_pct": -0.176,
+    "minutes": 3405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "07:00",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -77.8,
+    "ret_pct": -0.58,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (-19.7 in 15 min, 25% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": -19.7,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": -19.7,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": -19.7,
+      "share_of_leg": 0.25
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "15:15",
+    "to": "16:15",
+    "dir": "up",
+    "pips": 27.9,
+    "ret_pct": 0.209,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (+12.8 in 15 min, 46% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": 12.8,
+      "share_of_leg": 0.46
+     },
+     {
+      "title": "Ivey PMI",
+      "ccy": "CAD",
+      "pips": 8.3,
+      "share_of_leg": 0.3
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "16:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -28.1,
+    "ret_pct": -0.21,
+    "minutes": 3285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US warns China that it must immediately meet terms of…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 34.1,
+    "ret_pct": 0.256,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "07:00",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 55.8,
+    "ret_pct": 0.684,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (+13.8 in 15 min, 25% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": 13.8,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": 13.8,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": 13.8,
+      "share_of_leg": 0.25
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "15:15",
+    "to": "17:45",
+    "dir": "down",
+    "pips": -25.4,
+    "ret_pct": -0.309,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (-4.9 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": -4.9,
+      "share_of_leg": 0.19
+     },
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "ccy": "JPY",
+      "pips": -8.3,
+      "share_of_leg": 0.33
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "17:45",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 16.8,
+    "ret_pct": 0.205,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US warns China that it must immediately meet terms of…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "21:30",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -24.2,
+    "ret_pct": -0.295,
+    "minutes": 2970,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 13.2,
+    "ret_pct": 0.161,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "07:00",
+    "to": "08:15",
+    "dir": "down",
+    "pips": -12.3,
+    "ret_pct": -0.179,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "08:15",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 16.2,
+    "ret_pct": 0.236,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Qatar Emir - Trump Discuss De-escalation Efforts In Middl…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -25.7,
+    "ret_pct": -0.373,
+    "minutes": 3705,
+    "cause": "Non-Farm Employment Change +2 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Non-Farm Employment Change +2 more (actual 165K vs forecast 65K) -- -9.2 in the first 15 min, 36% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": -9.2,
+      "share_of_leg": 0.36
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": -9.2,
+      "share_of_leg": 0.36
+     },
+     {
+      "title": "Employment Change +1 more",
+      "ccy": "CAD",
+      "pips": -9.2,
+      "share_of_leg": 0.36
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "23:45",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 45.7,
+    "ret_pct": 0.667,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: I expect to hold talks with Xi and Putin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -13.2,
+    "ret_pct": -0.191,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China to extend suspension of 24% US tariffs for two mont… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "07:00",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 73.0,
+    "ret_pct": 0.52,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Employment Change +1 more pushed it along (+36.7 in 15 min, 50% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Employment Change +1 more",
+      "ccy": "CAD",
+      "pips": 36.7,
+      "share_of_leg": 0.5
+     },
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": 36.7,
+      "share_of_leg": 0.5
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": 36.7,
+      "share_of_leg": 0.5
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "15:15",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -27.3,
+    "ret_pct": -0.193,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Ivey PMI pushed it along (-4.8 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Ivey PMI",
+      "ccy": "CAD",
+      "pips": -4.8,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Prelim UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": -4.8,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "16:00",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 42.7,
+    "ret_pct": 0.303,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Ivey PMI moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "21:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -32.3,
+    "ret_pct": -0.228,
+    "minutes": 3450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "07:00",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -30.5,
+    "ret_pct": -0.549,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (-8.1 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": -8.1,
+      "share_of_leg": 0.27
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": -8.1,
+      "share_of_leg": 0.27
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": -8.1,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "15:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 68.5,
+    "ret_pct": 1.239,
+    "minutes": 3810,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (+13.9 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": 13.9,
+      "share_of_leg": 0.2
+     },
+     {
+      "title": "Rubio: Talks Not Productive, Iranian Demands Simply Unacceptable - Bloomberg",
+      "ccy": null,
+      "pips": 18.8,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "07:00",
+    "to": "08:15",
+    "dir": "down",
+    "pips": -8.9,
+    "ret_pct": -0.097,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "08:15",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 20.5,
+    "ret_pct": 0.225,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Qatar Emir - Trump Discuss De-escalation Efforts In Middl…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "16:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -29.8,
+    "ret_pct": -0.326,
+    "minutes": 3300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Gov Ueda Speaks pushed it along (-6.8 in 15 min, 23% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "ccy": "JPY",
+      "pips": -6.8,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:00",
+    "to": "04:00",
+    "dir": "up",
+    "pips": 38.5,
+    "ret_pct": 0.422,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -10.8,
+    "ret_pct": -0.118,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Leading Indicators, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "07:00",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -40.3,
+    "ret_pct": -0.208,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "08:30",
+    "to": "13:15",
+    "dir": "up",
+    "pips": 59.6,
+    "ret_pct": 0.309,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SECO Consumer Climate +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "13:15",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -74.3,
+    "ret_pct": -0.384,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Canada Labour Force Survey, October 2026 pushed it along (-13.8 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": -13.8,
+      "share_of_leg": 0.19
+     },
+     {
+      "title": "Employment Change +1 more",
+      "ccy": "CAD",
+      "pips": -13.8,
+      "share_of_leg": 0.19
+     },
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": -13.8,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "15:15",
+    "to": "17:30",
+    "dir": "up",
+    "pips": 41.5,
+    "ret_pct": 0.215,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Gov Ueda Speaks pushed it along (+22.6 in 15 min, 54% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "ccy": "JPY",
+      "pips": 22.6,
+      "share_of_leg": 0.54
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "17:30",
+    "to": "19:15",
+    "dir": "down",
+    "pips": -24.0,
+    "ret_pct": -0.124,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US warns China that it must immediately meet terms of…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:15",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 29.5,
+    "ret_pct": 0.153,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canada PM Carney: We Are Talking To China About Next Step… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "22:15",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -49.3,
+    "ret_pct": -0.255,
+    "minutes": 3195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 25.8,
+    "ret_pct": 0.134,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Leading Indicators, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "07:00",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 51.8,
+    "ret_pct": 0.419,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (+20.7 in 15 min, 40% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": 20.7,
+      "share_of_leg": 0.4
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "15:45",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -94.3,
+    "ret_pct": -0.759,
+    "minutes": 3315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Ivey PMI pushed it along (-16.5 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Ivey PMI",
+      "ccy": "CAD",
+      "pips": -16.5,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "Prelim UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": -16.5,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:00",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 38.6,
+    "ret_pct": 0.313,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -61.1,
+    "ret_pct": -0.494,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China to extend suspension of 24% US tariffs for two mont…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "07:00",
+    "to": "07:45",
+    "dir": "down",
+    "pips": -5.2,
+    "ret_pct": -0.062,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "07:45",
+    "to": "09:30",
+    "dir": "up",
+    "pips": 14.1,
+    "ret_pct": 0.169,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "09:30",
+    "to": "10:15",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.066,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "10:15",
+    "to": "11:15",
+    "dir": "up",
+    "pips": 4.1,
+    "ret_pct": 0.049,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Retail Sales m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "11:15",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -11.3,
+    "ret_pct": -0.135,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MPC Member Pill Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 10.7,
+    "ret_pct": 0.128,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Microsoft Winding Down Oracle Deal For AI Cloud Capacity pushed it along (+2.2 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Microsoft Winding Down Oracle Deal For AI Cloud Capacity",
+      "ccy": null,
+      "pips": 2.2,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "18:45",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -10.7,
+    "ret_pct": -0.128,
+    "minutes": 3165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Rubio: Talks Not Productive, Iranian Demands Simply Unaccep… pushed it along (-2.2 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Rubio: Talks Not Productive, Iranian Demands Simply Unacceptable - Bloomberg",
+      "ccy": null,
+      "pips": -2.2,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 3.1,
+    "ret_pct": 0.037,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: I expect to hold talks with Xi and Putin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "07:00",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 42.1,
+    "ret_pct": 0.75,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (+20.0 in 15 min, 48% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": 20.0,
+      "share_of_leg": 0.48
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "15:45",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -39.9,
+    "ret_pct": -0.706,
+    "minutes": 3315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BOJ Gov Ueda Speaks pushed it along (-6.2 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BOJ Gov Ueda Speaks",
+      "ccy": "JPY",
+      "pips": -6.2,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "23:00",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 50.6,
+    "ret_pct": 0.901,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -19.2,
+    "ret_pct": -0.339,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item China to extend suspension of 24% US tariffs for two mont… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "07:00",
+    "to": "09:30",
+    "dir": "down",
+    "pips": -4.6,
+    "ret_pct": -0.101,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "09:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 55.8,
+    "ret_pct": 1.231,
+    "minutes": 4155,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (+8.6 in 15 min, 15% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": 8.6,
+      "share_of_leg": 0.15
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "07:00",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 863.9,
+    "ret_pct": 0.878,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (+259.4 in 15 min, 30% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": 259.4,
+      "share_of_leg": 0.3
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": 259.4,
+      "share_of_leg": 0.3
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": 259.4,
+      "share_of_leg": 0.3
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "15:15",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -554.4,
+    "ret_pct": -0.559,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (-222.7 in 15 min, 40% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": -222.7,
+      "share_of_leg": 0.4
+     },
+     {
+      "title": "Ivey PMI",
+      "ccy": "CAD",
+      "pips": -120.6,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:15",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 299.2,
+    "ret_pct": 0.303,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item The US warns China that it must immediately meet terms of…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "21:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -304.3,
+    "ret_pct": -0.307,
+    "minutes": 3450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "07:00",
+    "to": "15:00",
+    "dir": "up",
+    "pips": 1475.4,
+    "ret_pct": 1.581,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "15:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -389.1,
+    "ret_pct": -0.411,
+    "minutes": 3825,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (-215.4 in 15 min, 55% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": -215.4,
+      "share_of_leg": 0.55
+     },
+     {
+      "title": "Ivey PMI",
+      "ccy": "CAD",
+      "pips": -86.1,
+      "share_of_leg": 0.22
+     },
+     {
+      "title": "Rubio: Talks Not Productive, Iranian Demands Simply Unacceptable - Bloomberg",
+      "ccy": null,
+      "pips": -370.5,
+      "share_of_leg": 0.95
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "07:00",
+    "to": "08:15",
+    "dir": "up",
+    "pips": 272.8,
+    "ret_pct": 0.165,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "08:15",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -632.5,
+    "ret_pct": -0.382,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Qatar Emir - Trump Discuss De-escalation Efforts In Middl…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "10:30",
+    "to": "15:15",
+    "dir": "up",
+    "pips": 897.2,
+    "ret_pct": 0.544,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but The US Employment Situation -- October 2026 pushed it along (+333.7 in 15 min, 37% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": 333.7,
+      "share_of_leg": 0.37
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": 333.7,
+      "share_of_leg": 0.37
+     },
+     {
+      "title": "Employment Change +1 more",
+      "ccy": "CAD",
+      "pips": 333.7,
+      "share_of_leg": 0.37
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "15:15",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -721.8,
+    "ret_pct": -0.435,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item An Iranian source to Al Arabiya: We are engaging positive…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "16:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 453.1,
+    "ret_pct": 0.274,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Microsoft Winding Down Oracle Deal For AI Cloud Capacity pushed it along (+79.0 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Microsoft Winding Down Oracle Deal For AI Cloud Capacity",
+      "ccy": null,
+      "pips": 79.0,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "21:45",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -534.0,
+    "ret_pct": -0.323,
+    "minutes": 2955,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:00",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 440.5,
+    "ret_pct": 0.267,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Rubio: Talks Not Productive, Iranian Demands Simply Unacc… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "00:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -589.5,
+    "ret_pct": -0.356,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: I expect to hold talks with Xi and Putin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "07:00",
+    "to": "08:15",
+    "dir": "up",
+    "pips": 176.8,
+    "ret_pct": 0.094,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "08:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -1988.6,
+    "ret_pct": -1.059,
+    "minutes": 4230,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (-484.0 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": -484.0,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "07:00",
+    "to": "10:45",
+    "dir": "down",
+    "pips": -297.8,
+    "ret_pct": -2.642,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK house prices fall in October as market remains subdued, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "10:45",
+    "to": "12:30",
+    "dir": "up",
+    "pips": 193.9,
+    "ret_pct": 1.767,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Volume of retail trade down by 0.7% in the euro area and …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "12:30",
+    "to": "16:45",
+    "dir": "down",
+    "pips": -179.1,
+    "ret_pct": -1.604,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but An Iranian source to Al Arabiya: We are engaging positively… pushed it along (-33.9 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators",
+      "ccy": null,
+      "pips": -33.9,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "16:45",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 161.3,
+    "ret_pct": 1.468,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but The US warns China that it must immediately meet terms of B… pushed it along (+26.9 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "The US warns China that it must immediately meet terms of Busan trade truce - FT",
+      "ccy": null,
+      "pips": 26.9,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "21:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -236.5,
+    "ret_pct": -2.121,
+    "minutes": 3465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Credit m/m moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "07:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 346.8,
+    "ret_pct": 0.858,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Qatar Emir - Trump Discuss De-escalation Efforts In Middl…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "10:00",
+    "to": "15:15",
+    "dir": "down",
+    "pips": -466.4,
+    "ret_pct": -1.144,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Non-Farm Employment Change +2 more pushed it along (-116.9 in 15 min, 25% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Non-Farm Employment Change +2 more",
+      "ccy": "USD",
+      "pips": -116.9,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "The US Employment Situation -- October 2026",
+      "ccy": null,
+      "pips": -116.9,
+      "share_of_leg": 0.25
+     },
+     {
+      "title": "Canada Labour Force Survey, October 2026",
+      "ccy": null,
+      "pips": -116.9,
+      "share_of_leg": 0.25
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "15:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 911.9,
+    "ret_pct": 2.262,
+    "minutes": 3810,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Prelim UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "Employment Change +1 more",
+    "actual": "-4.7K",
+    "forecast": "14.6K",
+    "previous": "-68.3K",
+    "polarity": "normal",
+    "polarity_note": "miss surprise -> CAD weaker 0.133%",
+    "own_ccy_impulse_pct": -0.133,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.216,
+      "pips": 30.4,
+      "unit": "pips",
+      "sigma": 9.53
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.135,
+      "pips": 222.2,
+      "unit": "pips",
+      "sigma": 3.64
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.1,
+      "pips": 98.8,
+      "unit": "pips",
+      "sigma": 2.96
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.06,
+      "pips": -6.7,
+      "unit": "pips",
+      "sigma": -2.86
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.226,
+      "pips": -91.9,
+      "unit": "pips ($0.10)",
+      "sigma": -2.69
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.028,
+      "pips": -2.3,
+      "unit": "pips",
+      "sigma": -2.0
+     }
+    ]
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Non-Farm Employment Change +2 more",
+    "actual": "165K",
+    "forecast": "65K",
+    "previous": "29K",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> USD stronger 0.157%",
+    "own_ccy_impulse_pct": 0.157,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.216,
+      "pips": 30.4,
+      "unit": "pips",
+      "sigma": 9.53
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.135,
+      "pips": 222.2,
+      "unit": "pips",
+      "sigma": 3.64
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.1,
+      "pips": 98.8,
+      "unit": "pips",
+      "sigma": 2.96
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.06,
+      "pips": -6.7,
+      "unit": "pips",
+      "sigma": -2.86
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.226,
+      "pips": -91.9,
+      "unit": "pips ($0.10)",
+      "sigma": -2.69
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.028,
+      "pips": -2.3,
+      "unit": "pips",
+      "sigma": -2.0
+     }
+    ]
+   },
+   {
+    "time": "17:00",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Gov Ueda Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "unscored",
+    "polarity_note": "JPY weaker by 0.044%, but no forecast to score the surprise against",
+    "own_ccy_impulse_pct": -0.044,
+    "top_movers": [
+     {
+      "instrument": "CHF/JPY",
+      "pct": 0.059,
+      "pips": 11.3,
+      "unit": "pips",
+      "sigma": 2.37
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": -0.094,
+      "pips": -174.5,
+      "unit": "pips",
+      "sigma": -1.98
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.064,
+      "pips": 4.4,
+      "unit": "pips",
+      "sigma": 1.75
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.065,
+      "pips": 8.1,
+      "unit": "pips",
+      "sigma": 1.61
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": 0.129,
+      "pips": 52.1,
+      "unit": "pips ($0.10)",
+      "sigma": 1.53
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.044,
+      "pips": -3.6,
+      "unit": "pips",
+      "sigma": -1.3
+     }
+    ]
+   },
+   {
+    "time": "16:00",
+    "ccy": "CAD",
+    "impact": "Medium",
+    "event": "Ivey PMI",
+    "actual": "58.3",
+    "forecast": "57.7",
+    "previous": "58.2",
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.007%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.007,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.048,
+      "pips": 6.7,
+      "unit": "pips",
+      "sigma": 2.09
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.077,
+      "pips": -9.6,
+      "unit": "pips",
+      "sigma": -1.9
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.047,
+      "pips": -9.0,
+      "unit": "pips",
+      "sigma": -1.89
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.067,
+      "pips": -4.6,
+      "unit": "pips",
+      "sigma": -1.82
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.077,
+      "pips": 142.7,
+      "unit": "pips",
+      "sigma": 1.62
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": -0.063,
+      "pips": -59.4,
+      "unit": "pips",
+      "sigma": -1.27
+     }
+    ]
+   },
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Prelim UoM Consumer Sentiment +1 more",
+    "actual": "51.0",
+    "forecast": "48.1",
+    "previous": "46.3",
+    "polarity": "inverted",
+    "polarity_note": "beat surprise -> USD weaker 0.046%  (opposite to the textbook sign)",
+    "own_ccy_impulse_pct": -0.046,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.048,
+      "pips": 6.7,
+      "unit": "pips",
+      "sigma": 2.09
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.077,
+      "pips": -9.6,
+      "unit": "pips",
+      "sigma": -1.9
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.047,
+      "pips": -9.0,
+      "unit": "pips",
+      "sigma": -1.89
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.067,
+      "pips": -4.6,
+      "unit": "pips",
+      "sigma": -1.82
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.077,
+      "pips": 142.7,
+      "unit": "pips",
+      "sigma": 1.62
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": -0.063,
+      "pips": -59.4,
+      "unit": "pips",
+      "sigma": -1.27
+     }
+    ]
+   }
+  ],
+  "headline_count": 36,
+  "top_headlines": [
+   {
+    "time": "14:30",
+    "impact": "high",
+    "title": "The US Employment Situation -- October 2026"
+   },
+   {
+    "time": "14:30",
+    "impact": "high",
+    "title": "Canada Labour Force Survey, October 2026"
+   },
+   {
+    "time": "08:00",
+    "impact": "medium",
+    "title": "UK house prices fall in October as market remains subdued"
+   },
+   {
+    "time": "08:30",
+    "impact": "medium",
+    "title": "Qatar Emir - Trump Discuss De-escalation Efforts In Middle East"
+   },
+   {
+    "time": "15:30",
+    "impact": "medium",
+    "title": "An Iranian source to Al Arabiya: We are engaging positively with the latest proposal submitted by the mediators"
+   },
+   {
+    "time": "18:15",
+    "impact": "medium",
+    "title": "The US warns China that it must immediately meet terms of Busan trade truce - FT"
+   },
+   {
+    "time": "18:30",
+    "impact": "medium",
+    "title": "Microsoft Winding Down Oracle Deal For AI Cloud Capacity"
+   },
+   {
+    "time": "23:00",
+    "impact": "medium",
+    "title": "Rubio: Talks Not Productive, Iranian Demands Simply Unacceptable - Bloomberg"
+   },
+   {
+    "time": "08:00",
+    "impact": "low",
+    "title": "German production in September 2026: +0.7% compared to the previous month"
+   },
+   {
+    "time": "08:45",
+    "impact": "low",
+    "title": "BoE Gov. Bailey: I don't agree we have got endemic inflation"
+   },
+   {
+    "time": "09:00",
+    "impact": "low",
+    "title": "Swiss consumer sentiment lower than a year ago"
+   },
+   {
+    "time": "10:30",
+    "impact": "low",
+    "title": "Fed's Williams: US economy remarkably resilient"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "18:25",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Friday's NFP beat (165K vs 65K) initially lifted USD +0.157% and Canada's employment miss (-4.7K vs 14.6K) weakened CAD -0.133%, but the USD rally was rejected after the prelim UoM beat printed inverted and USD gave back 72% of its peak. NZD closed at its best (+0.809%) with no own catalyst, while AUD selling was rejected and CAD ended weakest. Geopolitical headlines around Iran produced short-lived two-way moves, but most legs lacked a clear single trigger. The tape flags fragile USD longs and a risk bid led by NZD.",
+  "themes": [
+   {
+    "theme": "Risk-sensitive FX lead, commodity bloc split: NZD up, CAD down",
+    "evidence": "NZD closed at best +0.809%; CAD weakest -0.281% after jobs miss; AUD recovered 61% of dip.",
+    "currencies": [
+     "NZD",
+     "AUD",
+     "CAD"
+    ]
+   },
+   {
+    "theme": "US data beat fades; UoM inversion signals fragile USD longs",
+    "evidence": "NFP beat 165K vs 65K produced +0.157% USD impulse, but prelim UoM 51.0 vs 48.1 printed inverted -0.046% and USD gave back 72% of peak.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "GBP",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Geopolitical headlines chop risk but lack ownership",
+    "evidence": "Iran source positive added +8.1 pips to EUR/USD up leg; later Rubio not productive moved opposite but too weak to own moves.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "GBP",
+     "NZD",
+     "CHF",
+     "JPY"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Strong NFP beat lifted USD initially, but UoM beat printed inverted and gains faded.",
+   "EUR": "No own catalyst; drifted lower across the board as USD firmed.",
+   "JPY": "BOJ Ueda spoke without forecast; JPY softened 0.044% and move was unscored.",
+   "GBP": "No own catalyst; weakened modestly in risk-choppy trade.",
+   "AUD": "No own release; early selling rejected, recovered 61% of dip.",
+   "CAD": "Employment miss of -4.7K vs 14.6K weakened CAD; Ivey beat was muted.",
+   "CHF": "No own catalyst; underperformed as risk recovery reduced haven demand.",
+   "NZD": "No own release; closed at its best, leading G10 on risk appetite."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD opened with a 64.4-pip down leg amplified by NFP, then bounced 26.3 pips on Iran optimism before fading to close -36.7 pips; the up/down alternation shows no durable trend."
+  },
+  "polarity_reads": [
+   {
+    "event": "Non-Farm Employment Change +2 more",
+    "read": "Textbook USD strength (+0.157%) on strong jobs data, but failure to hold gains suggests the market was already long USD."
+   },
+   {
+    "event": "Prelim UoM Consumer Sentiment +1 more",
+    "read": "Inverted beat (USD weaker 0.046%) despite stronger sentiment implies positioning was short USD or market saw less need for Fed support."
+   },
+   {
+    "event": "Employment Change +1 more",
+    "read": "CAD -0.133% on a clear labor miss indicates the market trusted the downside surprise and priced CAD weakness aggressively."
+   },
+   {
+    "event": "BOJ Gov Ueda Speaks",
+    "read": "Unscored because no forecast; JPY softened 0.044% but that tells little about positioning."
+   },
+   {
+    "event": "Ivey PMI",
+    "read": "Muted -0.007% basket move inside noise floor; CAD ignored the beat, suggesting no marginal information."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Risk recovery extends; NZD/AUD outperform, USD stays soft",
+    "probability": 0.4,
+    "thesis": "NZD closed at its best (+0.809%) and AUD selling was rejected; Iran-positive headline and China tariff suspension suggest risk appetite can continue while USD longs remain fragile after UoM inversion.",
+    "triggers": [
+     "China extends suspension of 24% US tariffs further",
+     "Iran mediation produces a concrete deal",
+     "Equities/commodities extend the bounce"
+    ],
+    "invalidation": "Rubio-style 'talks not productive' headlines dominate and DXY closes back above 101.982",
+    "pair_paths": [
+     {
+      "instrument": "NZD/USD",
+      "direction": "up",
+      "magnitude_pips": 69.9,
+      "rationale": "NZD closed at its best and has the strongest G10 momentum; 69.9-pip day range allows continuation."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 48.1,
+      "rationale": "AUD selling was rejected and recovered 61% of dip; risk recovery favors retest of 0.6888 close."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 67.8,
+      "rationale": "USD softness would allow EUR/USD to retrace the 36.7-pip decline within its 67.8-pip range."
+     }
+    ]
+   },
+   {
+    "name": "USD reasserts on rate differentials and Fed repricing",
+    "probability": 0.35,
+    "thesis": "The 165K vs 65K NFP beat was fundamentally strong even though the UoM inverted; once positioning clears, yield support can drive USD higher against EUR, GBP and JPY.",
+    "triggers": [
+     "Fed speakers reiterate resilient economy (Williams: US economy remarkably resilient)",
+     "US yields rise and USD/CAD extends above 1.41034",
+     "EUR/USD breaks below its 1.11594 close"
+    ],
+    "invalidation": "EUR/USD recovers above its 1.11594 close and NZD/USD holds above 0.5597",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 64.4,
+      "rationale": "The NFP-driven down leg was 64.4 pips; a clean USD bid would retest that move."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 77.8,
+      "rationale": "GBP had no own catalyst and its largest down leg was 77.8 pips; vulnerable to USD strength."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 62.9,
+      "rationale": "USD/JPY's largest up leg was 62.9 pips; higher US yields would push toward 158.23 close."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 73.0,
+      "rationale": "CAD labor miss is bearish CAD; USD/CAD up leg was 73.0 pips and close at 1.41034."
+     }
+    ]
+   },
+   {
+    "name": "Geopolitical headline-driven chop",
+    "probability": 0.25,
+    "thesis": "Iran and China headlines moved pairs both ways but no single trigger owned any leg; expect mean reversion within recent ranges as headlines remain two-sided.",
+    "triggers": [
+     "Rubio: Talks Not Productive, Iranian Demands Simply Unacceptable",
+     "US warns China on Busan trade truce",
+     "BOE Bailey speaks and adds to GBP noise"
+    ],
+    "invalidation": "A decisive break of EUR/USD 67.8-pip range or USD/JPY 88.1-pip range would signal a trend",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 67.8,
+      "rationale": "EUR/USD closed within its 67.8-pip range after alternating up/down legs, consistent with chop."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 88.1,
+      "rationale": "USD/JPY range 88.1 pips with no clear catalyst; geopolitical headline risk keeps it two-sided."
+     },
+     {
+      "instrument": "EUR/GBP",
+      "direction": "range",
+      "magnitude_pips": 18.3,
+      "rationale": "EUR/GBP closed +0.5 pip with 18.3-pip range; both EUR and GBP lacked independent drivers."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Inverted UoM reaction indicates crowded USD positioning; a reversal could be violent",
+    "why_it_matters": "The market sold USD on strong consumer sentiment, suggesting longs were extended; unwinds can move EUR/USD and USD/JPY quickly.",
+    "watch": "Next US consumer confidence/inflation and Fed speak."
+   },
+   {
+    "risk": "Iran deal headlines are two-sided and can reverse risk trades",
+    "why_it_matters": "A positive Iranian source moved risk pairs, but Rubio later said talks not productive; false signals can whipsaw NZD, AUD, and CHF.",
+    "watch": "Iran mediation updates and Rubio statements."
+   },
+   {
+    "risk": "China tariff news directly hits AUD/NZD",
+    "why_it_matters": "The headline 'China to extend suspension of 24% US tariffs' moved AUD/NZD opposite to its prior uptrend; a breakdown would hit the commodity bloc.",
+    "watch": "China trade policy and US-China talks."
+   }
+  ],
+  "calendar_ahead_note": "Only BOE Gov Bailey Speaks is on the calendar ahead; no high-tier US releases. Bailey can shift GBP, but the dominant drivers remain geopolitical headlines and any China trade updates.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 22425,
+   "completion_tokens": 9264,
+   "total_tokens": 31689,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6936
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 21785
+  }
+ }
+}
