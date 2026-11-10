@@ -1,0 +1,1980 @@
+{
+ "meta": {
+  "date": "2026-11-10",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-11-09T18:00:00+00:00",
+  "end_utc": "2026-11-10T18:00:00+00:00",
+  "start_local": "2026-11-09T19:00:00+01:00",
+  "end_local": "2026-11-10T19:00:00+01:00",
+  "fwd_start_utc": "2026-11-10T18:00:00+00:00",
+  "fwd_end_utc": "2026-11-11T18:00:00+00:00",
+  "generated_utc": "2026-11-10T18:05:10.605460+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 23
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-11-09 19:00 CET",
+   "to_local": "2026-11-10 19:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.49,
+    "intraday_peak": 0.534,
+    "intraday_trough": -0.183,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.18%, recovered 94%",
+    "own_releases": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "impact": "High",
+      "actual": "0.3%",
+      "forecast": "0.2%",
+      "polarity": "normal",
+      "note": "beat surprise -> USD stronger 0.218%"
+     },
+     {
+      "title": "FOMC Member Waller Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "unscored",
+      "note": "USD stronger by 0.175%, but no forecast to score the surprise against"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +1 more",
+     "instrument": "AUD/USD",
+     "sigma": -11.43
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 2,
+    "strength_pct": 0.073,
+    "intraday_peak": 0.073,
+    "intraday_trough": -0.108,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Waller Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 4.73
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 3,
+    "strength_pct": 0.072,
+    "intraday_peak": 0.172,
+    "intraday_trough": -0.009,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +1 more",
+     "instrument": "EUR/USD",
+     "sigma": -10.68
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 4,
+    "strength_pct": 0.012,
+    "intraday_peak": 0.099,
+    "intraday_trough": -0.135,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.14%, recovered 63%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Waller Speaks",
+     "instrument": "USD/JPY",
+     "sigma": 4.3
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 5,
+    "strength_pct": -0.007,
+    "intraday_peak": 0.17,
+    "intraday_trough": -0.024,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.17%, gave back 91%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Waller Speaks",
+     "instrument": "NZD/USD",
+     "sigma": -5.14
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 6,
+    "strength_pct": -0.119,
+    "intraday_peak": 0.193,
+    "intraday_trough": -0.146,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.19%, gave back 92%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "FOMC Member Waller Speaks",
+     "instrument": "USD/CHF",
+     "sigma": 5.26
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 7,
+    "strength_pct": -0.151,
+    "intraday_peak": 0.079,
+    "intraday_trough": -0.166,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.08%, gave back 94%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +1 more",
+     "instrument": "GBP/USD",
+     "sigma": -9.36
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 8,
+    "strength_pct": -0.369,
+    "intraday_peak": 0.066,
+    "intraday_trough": -0.38,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.07%, gave back 98%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Core CPI m/m +1 more",
+     "instrument": "AUD/USD",
+     "sigma": -11.43
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.418,
+    "from_EUR": 0.072,
+    "from_USD": -0.49,
+    "base_share": 0.13
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.641,
+    "from_GBP": -0.151,
+    "from_USD": -0.49,
+    "base_share": 0.24
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.859,
+    "from_AUD": -0.369,
+    "from_USD": -0.49,
+    "base_share": 0.43
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.496,
+    "from_NZD": -0.007,
+    "from_USD": -0.49,
+    "base_share": 0.01
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.477,
+    "from_USD": 0.49,
+    "from_JPY": -0.012,
+    "base_share": 0.98
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.609,
+    "from_USD": 0.49,
+    "from_CHF": 0.119,
+    "base_share": 0.8
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.417,
+    "from_USD": 0.49,
+    "from_CAD": -0.073,
+    "base_share": 0.87
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.223,
+    "from_EUR": 0.072,
+    "from_GBP": 0.151,
+    "base_share": 0.32
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": 0.059,
+    "from_EUR": 0.072,
+    "from_JPY": -0.012,
+    "base_share": 0.85
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": 0.191,
+    "from_EUR": 0.072,
+    "from_CHF": 0.119,
+    "base_share": 0.37
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.441,
+    "from_EUR": 0.072,
+    "from_AUD": 0.369,
+    "base_share": 0.16
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.001,
+    "from_EUR": 0.072,
+    "from_CAD": -0.073,
+    "base_share": 0.5
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.079,
+    "from_EUR": 0.072,
+    "from_NZD": 0.007,
+    "base_share": 0.91
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.164,
+    "from_GBP": -0.151,
+    "from_JPY": -0.012,
+    "base_share": 0.92
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.032,
+    "from_GBP": -0.151,
+    "from_CHF": 0.119,
+    "base_share": 0.56
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.218,
+    "from_GBP": -0.151,
+    "from_AUD": 0.369,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.224,
+    "from_GBP": -0.151,
+    "from_CAD": -0.073,
+    "base_share": 0.67
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": -0.144,
+    "from_GBP": -0.151,
+    "from_NZD": 0.007,
+    "base_share": 0.96
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.381,
+    "from_AUD": -0.369,
+    "from_JPY": -0.012,
+    "base_share": 0.97
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.25,
+    "from_AUD": -0.369,
+    "from_CHF": 0.119,
+    "base_share": 0.76
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.442,
+    "from_AUD": -0.369,
+    "from_CAD": -0.073,
+    "base_share": 0.83
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.362,
+    "from_AUD": -0.369,
+    "from_NZD": 0.007,
+    "base_share": 0.98
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.019,
+    "from_NZD": -0.007,
+    "from_JPY": -0.012,
+    "base_share": 0.36
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.113,
+    "from_NZD": -0.007,
+    "from_CHF": 0.119,
+    "base_share": 0.05
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.08,
+    "from_NZD": -0.007,
+    "from_CAD": -0.073,
+    "base_share": 0.09
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.061,
+    "from_CAD": 0.073,
+    "from_JPY": -0.012,
+    "base_share": 0.85
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.192,
+    "from_CAD": 0.073,
+    "from_CHF": 0.119,
+    "base_share": 0.38
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.132,
+    "from_CHF": -0.119,
+    "from_JPY": -0.012,
+    "base_share": 0.91
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.561
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.084
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": 0.082
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.014
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.008
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.136
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.172
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.421
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.11562,
+    "chg_pips": -46.8,
+    "chg_pct": -0.418,
+    "range_pips": 105.5,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.33332,
+    "chg_pips": -85.8,
+    "chg_pct": -0.639,
+    "range_pips": 146.8,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.68545,
+    "chg_pips": -59.2,
+    "chg_pct": -0.856,
+    "range_pips": 86.9,
+    "close_in_range": 0.12,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.55926,
+    "chg_pips": -27.9,
+    "chg_pct": -0.496,
+    "range_pips": 63.0,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.814,
+    "chg_pips": 75.8,
+    "chg_pct": 0.48,
+    "range_pips": 117.6,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.82607,
+    "chg_pips": 50.3,
+    "chg_pct": 0.613,
+    "range_pips": 93.7,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.41871,
+    "chg_pips": 58.0,
+    "chg_pct": 0.411,
+    "range_pips": 104.7,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92157,
+    "chg_pips": 17.6,
+    "chg_pct": 0.191,
+    "range_pips": 34.7,
+    "close_in_range": 0.89,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 192.243,
+    "chg_pips": -25.4,
+    "chg_pct": -0.132,
+    "range_pips": 120.9,
+    "close_in_range": 0.19,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.22555,
+    "chg_pips": -44.4,
+    "chg_pct": -0.361,
+    "range_pips": 70.2,
+    "close_in_range": 0.34,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83671,
+    "chg_pips": 18.8,
+    "chg_pct": 0.225,
+    "range_pips": 28.1,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.56621,
+    "chg_pips": -14.3,
+    "chg_pct": -0.252,
+    "range_pips": 25.7,
+    "close_in_range": 0.39,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46197,
+    "chg_pips": 5.3,
+    "chg_pct": 0.115,
+    "range_pips": 24.0,
+    "close_in_range": 0.75,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.89163,
+    "chg_pips": 681.2,
+    "chg_pct": 0.693,
+    "range_pips": 1429.9,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.51773,
+    "chg_pips": 1084.7,
+    "chg_pct": 1.153,
+    "range_pips": 1554.8,
+    "close_in_range": 0.9,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.56085,
+    "chg_pips": 1440.2,
+    "chg_pct": 0.877,
+    "range_pips": 2623.6,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.66369,
+    "chg_pips": 570.4,
+    "chg_pct": 0.307,
+    "range_pips": 2953.9,
+    "close_in_range": 0.79,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 102.185,
+    "chg_pips": 49.7,
+    "chg_pct": 0.489,
+    "range_pips": 92.6,
+    "close_in_range": 0.9,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 20.613,
+    "chg_pips": 19.9,
+    "chg_pct": 0.975,
+    "range_pips": 140.6,
+    "close_in_range": 0.71,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "09:45",
+    "dir": "up",
+    "pips": 47.6,
+    "ret_pct": 0.425,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "09:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -94.0,
+    "ret_pct": -0.836,
+    "minutes": 540,
+    "cause": "FOMC Member Waller Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD FOMC Member Waller Speaks -- -19.0 in the first 15 min, 20% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": -19.0,
+      "share_of_leg": 0.2
+     },
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": -23.0,
+      "share_of_leg": 0.24
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": -23.0,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "down",
+    "pips": -32.8,
+    "ret_pct": -0.208,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Arrangements being made to discuss return of IAEA inspector… pushed it along (-17.7 in 15 min, 54% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Arrangements being made to discuss return of IAEA inspectors to Iran, without clarifying the scope of their duties: Al Arabiya",
+      "ccy": null,
+      "pips": -17.7,
+      "share_of_leg": 0.54
+     }
+    ]
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "20:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 108.7,
+    "ret_pct": 0.689,
+    "minutes": 1320,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +1 more pushed it along (+29.8 in 15 min, 27% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 29.8,
+      "share_of_leg": 0.27
+     },
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": 18.5,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 29.8,
+      "share_of_leg": 0.27
+     }
+    ]
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "08:30",
+    "dir": "up",
+    "pips": 36.9,
+    "ret_pct": 0.275,
+    "minutes": 810,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "08:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -123.6,
+    "ret_pct": -0.918,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +1 more pushed it along (-23.3 in 15 min, 19% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": -23.3,
+      "share_of_leg": 0.19
+     },
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": -20.9,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": -23.3,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "08:15",
+    "dir": "down",
+    "pips": -28.5,
+    "ret_pct": -0.347,
+    "minutes": 795,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "08:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 81.7,
+    "ret_pct": 0.999,
+    "minutes": 630,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +1 more pushed it along (+19.8 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 19.8,
+      "share_of_leg": 0.24
+     },
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": 19.5,
+      "share_of_leg": 0.24
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 19.8,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 16.5,
+    "ret_pct": 0.239,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "21:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -75.1,
+    "ret_pct": -1.084,
+    "minutes": 1305,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Waller Speaks pushed it along (-13.4 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Waller Speaks",
+      "ccy": "USD",
+      "pips": -13.4,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": -13.4,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": -27.5,
+      "share_of_leg": 0.37
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "08:30",
+    "dir": "down",
+    "pips": -24.3,
+    "ret_pct": -0.172,
+    "minutes": 810,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "08:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 79.9,
+    "ret_pct": 0.566,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +1 more pushed it along (+25.9 in 15 min, 32% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 25.9,
+      "share_of_leg": 0.32
+     },
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": 18.1,
+      "share_of_leg": 0.23
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 25.9,
+      "share_of_leg": 0.32
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "09:45",
+    "dir": "up",
+    "pips": 23.7,
+    "ret_pct": 0.422,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "09:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -53.3,
+    "ret_pct": -0.944,
+    "minutes": 540,
+    "cause": "FOMC Member Waller Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD FOMC Member Waller Speaks -- -12.5 in the first 15 min, 23% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": -12.5,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 5.4,
+    "ret_pct": 0.059,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: Current policy rate likely around or slight…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "06:30",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -13.0,
+    "ret_pct": -0.141,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "08:00",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 27.9,
+    "ret_pct": 0.304,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Waller Speaks pushed it along (+6.4 in 15 min, 23% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Waller Speaks",
+      "ccy": "USD",
+      "pips": 6.4,
+      "share_of_leg": 0.23
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "10:30",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -16.5,
+    "ret_pct": -0.179,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Waller: We need to raise rates to put downward pres…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 17.5,
+    "ret_pct": 0.19,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Core CPI m/m +1 more pushed it along (+3.6 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 3.6,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "08:15",
+    "dir": "up",
+    "pips": 56.6,
+    "ret_pct": 0.294,
+    "minutes": 795,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: Current policy rate likely around or slight…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "08:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -88.7,
+    "ret_pct": -0.459,
+    "minutes": 630,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Waller Speaks pushed it along (-23.0 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Waller Speaks",
+      "ccy": "USD",
+      "pips": -23.0,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -55.4,
+    "ret_pct": -0.451,
+    "minutes": 1170,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: Current policy rate likely around or slight…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "14:30",
+    "to": "16:00",
+    "dir": "up",
+    "pips": 28.9,
+    "ret_pct": 0.236,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item US Consumer Price Index - October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -13.2,
+    "ret_pct": -0.108,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Economic and monetary policy outlook, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "10:45",
+    "dir": "up",
+    "pips": 14.6,
+    "ret_pct": 0.175,
+    "minutes": 945,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "10:45",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -12.4,
+    "ret_pct": -0.148,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item 30-y Bond Auction, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 17.4,
+    "ret_pct": 0.208,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Logan: Economic and monetary policy outlook pushed it along (+5.0 in 15 min, 29% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Logan: Economic and monetary policy outlook",
+      "ccy": null,
+      "pips": 5.0,
+      "share_of_leg": 0.29
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -13.9,
+    "ret_pct": -0.245,
+    "minutes": 840,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: Current policy rate likely around or slight…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "09:00",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 16.1,
+    "ret_pct": 0.284,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but FOMC Member Waller Speaks pushed it along (+2.5 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "FOMC Member Waller Speaks",
+      "ccy": "USD",
+      "pips": 2.5,
+      "share_of_leg": 0.16
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "10:30",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -22.9,
+    "ret_pct": -0.403,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - October 2026 pushed it along (-8.8 in 15 min, 38% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": -8.8,
+      "share_of_leg": 0.38
+     },
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": -8.8,
+      "share_of_leg": 0.38
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "14:45",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 16.9,
+    "ret_pct": 0.299,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SNB's Martin: Swiss economy to grow moderately over the n… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -7.8,
+    "ret_pct": -0.138,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Logan: Economic and monetary policy outlook moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -12.5,
+    "ret_pct": -0.271,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 19.6,
+    "ret_pct": 0.426,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item AU: Consumer sentiment sinks to new low, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "02:15",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -11.6,
+    "ret_pct": -0.251,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Auction Result of 30-Year JGBs on November 10th, 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "08:00",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 13.8,
+    "ret_pct": 0.299,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Waller Backs December Rate Hike, Says Open To 50 Bp…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "10:30",
+    "to": "14:15",
+    "dir": "down",
+    "pips": -7.5,
+    "ret_pct": -0.162,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Waller: We need to raise rates to put downward pres…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 3.7,
+    "ret_pct": 0.08,
+    "minutes": 270,
+    "cause": "US Consumer Price Index - October 2026",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "US Consumer Price Index - October 2026 -- +5.1 in the first 15 min, 138% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 5.1,
+      "share_of_leg": 1.38
+     },
+     {
+      "title": "Logan: Economic and monetary policy outlook",
+      "ccy": null,
+      "pips": 0.8,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -624.4,
+    "ret_pct": -0.636,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "09:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1301.5,
+    "ret_pct": 1.333,
+    "minutes": 540,
+    "cause": "FOMC Member Waller Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD FOMC Member Waller Speaks -- +224.8 in the first 15 min, 17% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": 224.8,
+      "share_of_leg": 0.17
+     },
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 252.8,
+      "share_of_leg": 0.19
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 252.8,
+      "share_of_leg": 0.19
+     }
+    ]
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -314.1,
+    "ret_pct": -0.334,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1394.3,
+    "ret_pct": 1.487,
+    "minutes": 1185,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but US Consumer Price Index - October 2026 pushed it along (+328.9 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 328.9,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "09:30",
+    "dir": "down",
+    "pips": -717.1,
+    "ret_pct": -0.437,
+    "minutes": 870,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "09:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 2180.0,
+    "ret_pct": 1.334,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Fed's Waller Backs December Rate Hike, Says Open To 50 Bps … pushed it along (+338.6 in 15 min, 16% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": 338.6,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 573.6,
+      "share_of_leg": 0.26
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 573.6,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -1681.0,
+    "ret_pct": -0.904,
+    "minutes": 885,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "09:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 2291.9,
+    "ret_pct": 1.243,
+    "minutes": 540,
+    "cause": "FOMC Member Waller Speaks",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD FOMC Member Waller Speaks -- +362.5 in the first 15 min, 16% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+      "ccy": null,
+      "pips": 362.5,
+      "share_of_leg": 0.16
+     },
+     {
+      "title": "Core CPI m/m +1 more",
+      "ccy": "USD",
+      "pips": 890.1,
+      "share_of_leg": 0.39
+     },
+     {
+      "title": "US Consumer Price Index - October 2026",
+      "ccy": null,
+      "pips": 890.1,
+      "share_of_leg": 0.39
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "down",
+    "pips": -225.2,
+    "ret_pct": -2.129,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Barkin: Current policy rate likely around or slight…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:30",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 151.4,
+    "ret_pct": 1.462,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "21:30",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -357.5,
+    "ret_pct": -3.403,
+    "minutes": 780,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: All have agreed that Iran cannot have a Nuclear We…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "10:30",
+    "to": "12:00",
+    "dir": "up",
+    "pips": 168.3,
+    "ret_pct": 1.659,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Waller: We need to raise rates to put downward pres…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "12:00",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -186.9,
+    "ret_pct": -1.812,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NFIB Small Business Index moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 259.5,
+    "ret_pct": 2.562,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Core CPI m/m +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 413.4,
+    "ret_pct": 1.008,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Arrangements being made to discuss return of IAEA inspect…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "21:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -1267.6,
+    "ret_pct": -3.059,
+    "minutes": 1290,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Waller Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core CPI m/m +1 more",
+    "actual": "0.3%",
+    "forecast": "0.2%",
+    "previous": "0.3%",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> USD stronger 0.218%",
+    "own_ccy_impulse_pct": 0.218,
+    "top_movers": [
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.395,
+      "pips": -27.3,
+      "unit": "pips",
+      "sigma": -11.43
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.248,
+      "pips": -27.8,
+      "unit": "pips",
+      "sigma": -10.68
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": 0.363,
+      "pips": 356.1,
+      "unit": "pips",
+      "sigma": 10.5
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.393,
+      "pips": 644.3,
+      "unit": "pips",
+      "sigma": 10.0
+     },
+     {
+      "instrument": "USD/MXN",
+      "pct": 0.429,
+      "pips": 795.8,
+      "unit": "pips",
+      "sigma": 9.56
+     },
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.21,
+      "pips": -28.2,
+      "unit": "pips",
+      "sigma": -9.36
+     }
+    ]
+   },
+   {
+    "time": "10:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "FOMC Member Waller Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "unscored",
+    "polarity_note": "USD stronger by 0.175%, but no forecast to score the surprise against",
+    "own_ccy_impulse_pct": 0.175,
+    "top_movers": [
+     {
+      "instrument": "GBP/USD",
+      "pct": -0.126,
+      "pips": -17.0,
+      "unit": "pips",
+      "sigma": -5.63
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.147,
+      "pips": 12.0,
+      "unit": "pips",
+      "sigma": 5.26
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.168,
+      "pips": -9.5,
+      "unit": "pips",
+      "sigma": -5.14
+     },
+     {
+      "instrument": "EUR/USD",
+      "pct": -0.116,
+      "pips": -13.1,
+      "unit": "pips",
+      "sigma": -5.01
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.087,
+      "pips": 12.3,
+      "unit": "pips",
+      "sigma": 4.73
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.084,
+      "pips": 13.3,
+      "unit": "pips",
+      "sigma": 4.3
+     }
+    ]
+   }
+  ],
+  "headline_count": 27,
+  "top_headlines": [
+   {
+    "time": "20:30",
+    "impact": "high",
+    "title": "Arrangements being made to discuss return of IAEA inspectors to Iran, without clarifying the scope of their duties: Al Arabiya"
+   },
+   {
+    "time": "10:00",
+    "impact": "high",
+    "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move"
+   },
+   {
+    "time": "14:30",
+    "impact": "high",
+    "title": "US Consumer Price Index - October 2026"
+   },
+   {
+    "time": "16:45",
+    "impact": "medium",
+    "title": "Logan: Economic and monetary policy outlook"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "Fed's Barkin: Current policy rate likely around or slightly below neutral"
+   },
+   {
+    "time": "21:15",
+    "impact": "low",
+    "title": "Trump: Abu Dhabi talks this week on Ukraine present chance of a possible breakthrough"
+   },
+   {
+    "time": "22:30",
+    "impact": "low",
+    "title": "Trump: All have agreed that Iran cannot have a Nuclear Weapon -- That is non-negotiable!"
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "Trump: Iran military action doesn't seem necessary right now"
+   },
+   {
+    "time": "00:30",
+    "impact": "low",
+    "title": "AU: Consumer sentiment sinks to new low"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "BOJ: Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan: Principal Figures of Financial Institutions (Preliminary Figures for October 2026)"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan Balance of Payments (Preliminary)"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "10:45",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The full session was a USD repricing: Core CPI at 0.3% vs 0.2% forecast lifted USD 0.218%, and Fed's Waller added 0.175% by backing a December hike. Early USD selling tied to Iran/IAEA headlines faded; DXY closed +0.489% and USD strength printed +0.49%. High-beta currencies were hit hardest with AUD -0.369% and GBP -0.151%, while USD/JPY closed at 158.814, near the top of its 117.6-pip range. VIX rose 0.975%, confirming a risk-off lean into the close.",
+  "themes": [
+   {
+    "theme": "USD repricing on US data and Fed speak",
+    "evidence": "Core CPI 0.3% vs 0.2% forecast gave USD +0.218%; Waller added +0.175%; DXY +0.489%.",
+    "currencies": [
+     "USD"
+    ]
+   },
+   {
+    "theme": "High-beta FX attempt rejected",
+    "evidence": "AUD led +0.07% gave back 98% to -0.369%; NZD led +0.17% gave back 91% to -0.007%; GBP led +0.08% gave back 94% to -0.151%.",
+    "currencies": [
+     "AUD",
+     "NZD",
+     "GBP"
+    ]
+   },
+   {
+    "theme": "Geopolitical softness couldn't stick",
+    "evidence": "IAEA Iran headline pushed USD/JPY -17.7 pips in 15 min, but USD trough -0.18% recovered 94%.",
+    "currencies": [
+     "USD",
+     "JPY"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "USD strengthened on Core CPI beat and hawkish Waller, recovering 94% from early weakness.",
+   "EUR": "EUR had no own releases; held range and closed +0.072%.",
+   "JPY": "JPY had no own catalyst; selling rejected, ended +0.012%.",
+   "GBP": "GBP had no own catalyst; led +0.08% gave back 94% to -0.151%.",
+   "AUD": "AUD had no own catalyst; led +0.07% gave back 98% to -0.369%.",
+   "CAD": "CAD had no own releases; closed at its best +0.073%.",
+   "CHF": "CHF had no own catalyst; led +0.19% gave back 92% to -0.119%.",
+   "NZD": "NZD had no own catalyst; led +0.17% gave back 91% to -0.007%."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD's early 47.6-pip up leg was reversed by the 94.0-pip USD-driven down leg on CPI/Waller, closing down 46.8 pips near session lows."
+  },
+  "polarity_reads": [
+   {
+    "event": "Core CPI m/m +1 more",
+    "read": "Normal beat surprise (0.3% vs 0.2%) strengthened USD 0.218%; positioning was short dollars, especially against AUD, EUR, GBP."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "USD momentum extends",
+    "probability": 0.45,
+    "thesis": "Hot CPI and hawkish Fed keep USD bid; high-beta remains offered into any Lagarde pushback.",
+    "triggers": [
+     "EUR/USD holds below 1.11562",
+     "USD/JPY holds above 158.814"
+    ],
+    "invalidation": "EUR/USD reclaims and holds above 1.11562.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "USD strength persists; EUR had no own catalyst."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 35,
+      "rationale": "GBP attempt rejected -0.151% and risks further unwind."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 25,
+      "rationale": "AUD weakest -0.369%, high-beta remains pressured."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 20,
+      "rationale": "Hawkish Fed and risk-off support USD/JPY near top of range."
+     }
+    ]
+   },
+   {
+    "name": "Consolidation",
+    "probability": 0.35,
+    "thesis": "Market digests one-way USD move; Lagarde unlikely to chase yields, leaving ranges near closes.",
+    "triggers": [
+     "DXY holds 102.185 area",
+     "VIX stabilizes below 20.613"
+    ],
+    "invalidation": "Break of EUR/USD above 1.11562 or USD/JPY below 158.814.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 15,
+      "rationale": "Close near lows but no new catalyst."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "range",
+      "magnitude_pips": 20,
+      "rationale": "GBP already gave back most of early strength."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 15,
+      "rationale": "Closed at top; needs fresh fuel to extend."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "range",
+      "magnitude_pips": 15,
+      "rationale": "AUD may pause after -0.369% decline."
+     }
+    ]
+   },
+   {
+    "name": "Risk reversal / profit-taking",
+    "probability": 0.2,
+    "thesis": "Dollar overbought after +0.49% strength; Lagarde pushes back or risk appetite returns triggers short-covering in high-beta.",
+    "triggers": [
+     "ECB's Lagarde sounds less dovish",
+     "VIX turns lower"
+    ],
+    "invalidation": "USD/JPY holds above 158.814 and AUD/USD makes fresh lows.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 40,
+      "rationale": "EUR held range, may squeeze if USD long unwinds."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 45,
+      "rationale": "GBP attempt rejected but short-covering rebound possible."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 35,
+      "rationale": "AUD deeply sold, prone to snap-back."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 25,
+      "rationale": "Profit-taking after close near top of 117.6 pip range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "ECB President Lagarde Speaks",
+    "why_it_matters": "Only scheduled medium-impact event; can reprice EUR crosses and risk sentiment.",
+    "watch": "EUR/USD reaction around 10:45 and EUR/GBP close 0.83671."
+   },
+   {
+    "risk": "Geopolitical Iran/IAEA headlines re-emerge",
+    "why_it_matters": "Earlier IAEA headline briefly pushed USD/JPY -17.7 pips; could trigger volatility.",
+    "watch": "USD/JPY and Brent/USD."
+   },
+   {
+    "risk": "VIX is already elevated",
+    "why_it_matters": "VIX +0.975% signals fragile risk appetite, amplifying USD strength.",
+    "watch": "VIX hold above 20.613."
+   }
+  ],
+  "calendar_ahead_note": "Only ECB President Lagarde Speaks at 10:45; a hawkish or dovish surprise would reset EUR crosses and possibly the broad USD bid.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 15841,
+   "completion_tokens": 7905,
+   "total_tokens": 23746,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6011
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 15201
+  }
+ }
+}
