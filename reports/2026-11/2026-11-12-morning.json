@@ -1,0 +1,1862 @@
+{
+ "meta": {
+  "date": "2026-11-12",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-11-11T18:00:00+00:00",
+  "end_utc": "2026-11-12T06:00:00+00:00",
+  "start_local": "2026-11-11T19:00:00+01:00",
+  "end_local": "2026-11-12T07:00:00+01:00",
+  "fwd_start_utc": "2026-11-12T06:00:00+00:00",
+  "fwd_end_utc": "2026-11-12T18:00:00+00:00",
+  "generated_utc": "2026-11-12T06:27:25.523811+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 32
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-11-11 19:00 CET",
+   "to_local": "2026-11-12 07:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "CHF",
+    "rank": 1,
+    "strength_pct": 0.164,
+    "intraday_peak": 0.164,
+    "intraday_trough": 0.02,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "JPY",
+    "rank": 2,
+    "strength_pct": 0.156,
+    "intraday_peak": 0.156,
+    "intraday_trough": -0.02,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "USD",
+    "rank": 3,
+    "strength_pct": 0.049,
+    "intraday_peak": 0.06,
+    "intraday_trough": -0.074,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CAD",
+    "rank": 4,
+    "strength_pct": -0.012,
+    "intraday_peak": 0.014,
+    "intraday_trough": -0.04,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "EUR",
+    "rank": 5,
+    "strength_pct": -0.05,
+    "intraday_peak": 0.006,
+    "intraday_trough": -0.134,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "GBP",
+    "rank": 6,
+    "strength_pct": -0.057,
+    "intraday_peak": 0.008,
+    "intraday_trough": -0.103,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.122,
+    "intraday_peak": 0.029,
+    "intraday_trough": -0.122,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "AUD",
+    "rank": 8,
+    "strength_pct": -0.128,
+    "intraday_peak": 0.004,
+    "intraday_trough": -0.174,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.099,
+    "from_EUR": -0.05,
+    "from_USD": -0.049,
+    "base_share": 0.5
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.106,
+    "from_GBP": -0.057,
+    "from_USD": -0.049,
+    "base_share": 0.54
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.178,
+    "from_AUD": -0.128,
+    "from_USD": -0.049,
+    "base_share": 0.72
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.171,
+    "from_NZD": -0.122,
+    "from_USD": -0.049,
+    "base_share": 0.71
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.106,
+    "from_USD": 0.049,
+    "from_JPY": -0.156,
+    "base_share": 0.24
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.115,
+    "from_USD": 0.049,
+    "from_CHF": -0.164,
+    "base_share": 0.23
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.062,
+    "from_USD": 0.049,
+    "from_CAD": 0.012,
+    "base_share": 0.8
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": 0.007,
+    "from_EUR": -0.05,
+    "from_GBP": 0.057,
+    "base_share": 0.47
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.206,
+    "from_EUR": -0.05,
+    "from_JPY": -0.156,
+    "base_share": 0.24
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.214,
+    "from_EUR": -0.05,
+    "from_CHF": -0.164,
+    "base_share": 0.23
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.079,
+    "from_EUR": -0.05,
+    "from_AUD": 0.128,
+    "base_share": 0.28
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.037,
+    "from_EUR": -0.05,
+    "from_CAD": 0.012,
+    "base_share": 0.8
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.072,
+    "from_EUR": -0.05,
+    "from_NZD": 0.122,
+    "base_share": 0.29
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.213,
+    "from_GBP": -0.057,
+    "from_JPY": -0.156,
+    "base_share": 0.27
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.221,
+    "from_GBP": -0.057,
+    "from_CHF": -0.164,
+    "base_share": 0.26
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.071,
+    "from_GBP": -0.057,
+    "from_AUD": 0.128,
+    "base_share": 0.31
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.045,
+    "from_GBP": -0.057,
+    "from_CAD": 0.012,
+    "base_share": 0.82
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.065,
+    "from_GBP": -0.057,
+    "from_NZD": 0.122,
+    "base_share": 0.32
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.284,
+    "from_AUD": -0.128,
+    "from_JPY": -0.156,
+    "base_share": 0.45
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.293,
+    "from_AUD": -0.128,
+    "from_CHF": -0.164,
+    "base_share": 0.44
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.116,
+    "from_AUD": -0.128,
+    "from_CAD": 0.012,
+    "base_share": 0.91
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.006,
+    "from_AUD": -0.128,
+    "from_NZD": 0.122,
+    "base_share": 0.51
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.278,
+    "from_NZD": -0.122,
+    "from_JPY": -0.156,
+    "base_share": 0.44
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.286,
+    "from_NZD": -0.122,
+    "from_CHF": -0.164,
+    "base_share": 0.43
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.11,
+    "from_NZD": -0.122,
+    "from_CAD": 0.012,
+    "base_share": 0.91
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.168,
+    "from_CAD": -0.012,
+    "from_JPY": -0.156,
+    "base_share": 0.07
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.177,
+    "from_CAD": -0.012,
+    "from_CHF": -0.164,
+    "base_share": 0.07
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": 0.008,
+    "from_CHF": 0.164,
+    "from_JPY": -0.156,
+    "base_share": 0.51
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.188
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.178
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.057
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.014
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.057
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.065
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.139
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.147
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.10819,
+    "chg_pips": -10.8,
+    "chg_pct": -0.097,
+    "range_pips": 33.5,
+    "close_in_range": 0.47,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.32612,
+    "chg_pips": -13.9,
+    "chg_pct": -0.105,
+    "range_pips": 32.1,
+    "close_in_range": 0.35,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.68367,
+    "chg_pips": -12.2,
+    "chg_pct": -0.178,
+    "range_pips": 21.2,
+    "close_in_range": 0.23,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.5554,
+    "chg_pips": -9.5,
+    "chg_pct": -0.171,
+    "range_pips": 19.0,
+    "close_in_range": 0.18,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 159.684,
+    "chg_pips": -17.3,
+    "chg_pct": -0.108,
+    "range_pips": 41.9,
+    "close_in_range": 0.49,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83253,
+    "chg_pips": -9.6,
+    "chg_pct": -0.115,
+    "range_pips": 19.1,
+    "close_in_range": 0.43,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42573,
+    "chg_pips": 9.7,
+    "chg_pct": 0.068,
+    "range_pips": 27.3,
+    "close_in_range": 0.72,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92259,
+    "chg_pips": -19.7,
+    "chg_pct": -0.213,
+    "range_pips": 21.6,
+    "close_in_range": 0.08,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 191.796,
+    "chg_pips": 1.4,
+    "chg_pct": 0.007,
+    "range_pips": 35.1,
+    "close_in_range": 0.59,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.23082,
+    "chg_pips": -1.0,
+    "chg_pct": -0.008,
+    "range_pips": 39.4,
+    "close_in_range": 0.71,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83564,
+    "chg_pips": 0.6,
+    "chg_pct": 0.007,
+    "range_pips": 12.6,
+    "close_in_range": 0.82,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.56917,
+    "chg_pips": -16.7,
+    "chg_pct": -0.293,
+    "range_pips": 20.1,
+    "close_in_range": 0.16,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46238,
+    "chg_pips": -13.3,
+    "chg_pct": -0.287,
+    "range_pips": 15.4,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 9.9778,
+    "chg_pips": -4.0,
+    "chg_pct": -0.004,
+    "range_pips": 501.6,
+    "close_in_range": 0.73,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.56685,
+    "chg_pips": 169.7,
+    "chg_pct": 0.178,
+    "range_pips": 349.5,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.60909,
+    "chg_pips": 161.8,
+    "chg_pct": 0.098,
+    "range_pips": 389.3,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.6241,
+    "chg_pips": 113.4,
+    "chg_pct": 0.061,
+    "range_pips": 566.0,
+    "close_in_range": 0.83,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 102.865,
+    "chg_pips": 7.1,
+    "chg_pct": 0.069,
+    "range_pips": 24.7,
+    "close_in_range": 0.53,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 18.79808,
+    "chg_pips": 70.9,
+    "chg_pct": 3.92,
+    "range_pips": 97.2,
+    "close_in_range": 0.93,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -5.7,
+    "ret_pct": -0.051,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "23:15",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 11.6,
+    "ret_pct": 0.105,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "00:00",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -26.9,
+    "ret_pct": -0.242,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Monthly Report on the Corporate Goods Price Index …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 10.6,
+    "ret_pct": 0.096,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "00:00",
+    "dir": "down",
+    "pips": -27.0,
+    "ret_pct": -0.169,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "00:00",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 15.8,
+    "ret_pct": 0.099,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Monthly Report on the Corporate Goods Price Index …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "00:45",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -23.8,
+    "ret_pct": -0.149,
+    "minutes": 75,
+    "cause": "Japan top currency diplomat Mimura: FX fluctuations are too rapid",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "Japan top currency diplomat Mimura: FX fluctuations are too rapid -- -14.5 in the first 15 min, 61% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:00",
+    "to": "03:45",
+    "dir": "up",
+    "pips": 30.3,
+    "ret_pct": 0.19,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -12.4,
+    "ret_pct": -0.078,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -23.6,
+    "ret_pct": -0.178,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 7.7,
+    "ret_pct": 0.058,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "00:00",
+    "dir": "down",
+    "pips": -14.0,
+    "ret_pct": -0.168,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "00:00",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 14.8,
+    "ret_pct": 0.178,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Monthly Report on the Corporate Goods Price Index …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -8.1,
+    "ret_pct": -0.097,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -13.9,
+    "ret_pct": -0.203,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Japan top currency diplomat Mimura: FX fluctuations are too… pushed it along (-3.3 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Japan top currency diplomat Mimura: FX fluctuations are too rapid",
+      "ccy": null,
+      "pips": -3.3,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "01:30",
+    "to": "02:30",
+    "dir": "up",
+    "pips": 12.4,
+    "ret_pct": 0.181,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "02:30",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -11.3,
+    "ret_pct": -0.165,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "03:30",
+    "to": "04:45",
+    "dir": "up",
+    "pips": 10.1,
+    "ret_pct": 0.148,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -10.3,
+    "ret_pct": -0.15,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 5.8,
+    "ret_pct": 0.041,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -9.1,
+    "ret_pct": -0.064,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: September 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:15",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 20.1,
+    "ret_pct": 0.141,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Japan: Monthly Report on the Corporate Goods Price Index (P… pushed it along (+3.4 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Japan: Monthly Report on the Corporate Goods Price Index (Preliminary Figures for October 2026)",
+      "ccy": null,
+      "pips": 3.4,
+      "share_of_leg": 0.17
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.039,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "up",
+    "pips": 1.0,
+    "ret_pct": 0.018,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "20:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -12.5,
+    "ret_pct": -0.225,
+    "minutes": 630,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -13.6,
+    "ret_pct": -0.147,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:15",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 5.5,
+    "ret_pct": 0.06,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Monthly Report on the Corporate Goods Price Index …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -8.7,
+    "ret_pct": -0.094,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 8.9,
+    "ret_pct": 0.046,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "21:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -32.5,
+    "ret_pct": -0.169,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:30",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 29.8,
+    "ret_pct": 0.156,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "00:30",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -18.7,
+    "ret_pct": -0.097,
+    "minutes": 90,
+    "cause": "Japan top currency diplomat Mimura: FX fluctuations are too rapid",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "Japan top currency diplomat Mimura: FX fluctuations are too rapid -- -14.7 in the first 15 min, 79% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:00",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 20.7,
+    "ret_pct": 0.108,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:00",
+    "to": "05:00",
+    "dir": "down",
+    "pips": -25.8,
+    "ret_pct": -0.134,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "05:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 13.7,
+    "ret_pct": 0.071,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -17.7,
+    "ret_pct": -0.144,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:15",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 20.6,
+    "ret_pct": 0.168,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "01:15",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -15.0,
+    "ret_pct": -0.122,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:00",
+    "to": "04:45",
+    "dir": "up",
+    "pips": 25.1,
+    "ret_pct": 0.204,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -10.4,
+    "ret_pct": -0.084,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -7.6,
+    "ret_pct": -0.091,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:15",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 11.9,
+    "ret_pct": 0.143,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:45",
+    "to": "04:30",
+    "dir": "down",
+    "pips": -6.0,
+    "ret_pct": -0.072,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "04:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 3.9,
+    "ret_pct": 0.047,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "00:00",
+    "dir": "down",
+    "pips": -17.5,
+    "ret_pct": -0.307,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:00",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 6.5,
+    "ret_pct": 0.114,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Monthly Report on the Corporate Goods Price Index …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:45",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -6.5,
+    "ret_pct": -0.114,
+    "minutes": 45,
+    "cause": "Japan top currency diplomat Mimura: FX fluctuations are too rapid",
+    "cause_ccy": null,
+    "confidence": "medium",
+    "note": "Japan top currency diplomat Mimura: FX fluctuations are too rapid -- -3.6 in the first 15 min, 55% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:30",
+    "to": "04:30",
+    "dir": "up",
+    "pips": 14.6,
+    "ret_pct": 0.257,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "04:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -12.8,
+    "ret_pct": -0.224,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "01:15",
+    "dir": "down",
+    "pips": -10.5,
+    "ret_pct": -0.226,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Japan top currency diplomat Mimura: FX fluctuations are too… pushed it along (-4.2 in 15 min, 40% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Japan top currency diplomat Mimura: FX fluctuations are too rapid",
+      "ccy": null,
+      "pips": -4.2,
+      "share_of_leg": 0.4
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:15",
+    "to": "04:15",
+    "dir": "up",
+    "pips": 8.2,
+    "ret_pct": 0.177,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "04:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -9.9,
+    "ret_pct": -0.214,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -262.2,
+    "ret_pct": -0.263,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 259.2,
+    "ret_pct": 0.26,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 78.8,
+    "ret_pct": 0.083,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "22:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -133.5,
+    "ret_pct": -0.14,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 244.5,
+    "ret_pct": 0.256,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -76.4,
+    "ret_pct": -0.046,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "21:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 134.5,
+    "ret_pct": 0.081,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "22:15",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -182.5,
+    "ret_pct": -0.11,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:45",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 244.4,
+    "ret_pct": 0.147,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "01:30",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -202.0,
+    "ret_pct": -0.122,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "02:30",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 214.5,
+    "ret_pct": 0.129,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "03:30",
+    "to": "05:30",
+    "dir": "down",
+    "pips": -108.5,
+    "ret_pct": -0.065,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "05:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 138.4,
+    "ret_pct": 0.083,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "up",
+    "pips": 173.2,
+    "ret_pct": 0.093,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "20:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -460.4,
+    "ret_pct": -0.247,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:00",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 376.4,
+    "ret_pct": 0.203,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "01:30",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -247.0,
+    "ret_pct": -0.133,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "03:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 275.0,
+    "ret_pct": 0.148,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "up",
+    "pips": 7.4,
+    "ret_pct": 0.07,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -184.7,
+    "ret_pct": -1.755,
+    "minutes": 660,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "down",
+    "pips": -87.2,
+    "ret_pct": -0.218,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: It's appropriate to proactively tighten mon…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "22:15",
+    "to": "23:45",
+    "dir": "up",
+    "pips": 99.0,
+    "ret_pct": 0.249,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ international travel: September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "23:45",
+    "to": "01:00",
+    "dir": "down",
+    "pips": -216.5,
+    "ret_pct": -0.542,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan: Monthly Report on the Corporate Goods Price Index …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "01:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 260.8,
+    "ret_pct": 0.657,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan top currency diplomat Mimura: FX fluctuations are t… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "02:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -190.5,
+    "ret_pct": -0.477,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Asada: Economic Activity, Prices, and Monetary Policy…, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [],
+  "headline_count": 6,
+  "top_headlines": [
+   {
+    "time": "01:00",
+    "impact": "high",
+    "title": "Japan top currency diplomat Mimura: FX fluctuations are too rapid"
+   },
+   {
+    "time": "00:45",
+    "impact": "medium",
+    "title": "Japan: Monthly Report on the Corporate Goods Price Index (Preliminary Figures for October 2026)"
+   },
+   {
+    "time": "02:30",
+    "impact": "medium",
+    "title": "BOJ Asada: Economic Activity, Prices, and Monetary Policy in Japan"
+   },
+   {
+    "time": "19:45",
+    "impact": "low",
+    "title": "BoE's Greene: It's appropriate to proactively tighten monetary policy"
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "NZ international travel: September 2026"
+   },
+   {
+    "time": "01:00",
+    "impact": "low",
+    "title": "UK Residential Market Survey October 2026"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "GDP m/m",
+    "forecast": "0.0%",
+    "previous": "0.1%"
+   },
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Prelim GDP q/q",
+    "forecast": "0.7%",
+    "previous": "0.5%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Unemployment Claims",
+    "forecast": "194K",
+    "previous": "189K"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Overnight tape was risk-off: CHF (+0.164%) and JPY (+0.156%) led, while AUD (-0.128%) and NZD (-0.122%) lagged. The main catalyst was Japan top FX diplomat Mimura's comment that FX fluctuations are too rapid, triggering immediate yen buying in USD/JPY and crosses. No first-tier US or euro-area data hit; most legs had no clear catalyst, pointing to flow. VIX rose 3.92% and Brent fell 1.755%, reinforcing the defensive tone.",
+  "themes": [
+   {
+    "theme": "Haven/safety bid",
+    "evidence": "CHF +0.164%, JPY +0.156%, USD +0.049%; VIX +3.92%; Brent -1.755%",
+    "currencies": [
+     "CHF",
+     "JPY",
+     "USD"
+    ]
+   },
+   {
+    "theme": "High-beta/commodity FX under pressure",
+    "evidence": "AUD -0.128%, NZD -0.122%; USD/CAD +9.7 pips",
+    "currencies": [
+     "AUD",
+     "NZD",
+     "CAD"
+    ]
+   },
+   {
+    "theme": "Japan jawboning drives yen",
+    "evidence": "Mimura comment caused USD/JPY leg -23.8 pips in 75 min and CHF/JPY leg -18.7 pips",
+    "currencies": [
+     "JPY"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "No first-tier US data; mild safe-haven bid lifted DXY.",
+   "EUR": "No clear catalyst; drifted lower all session.",
+   "JPY": "Mimura FX comments triggered yen demand; no local data catalyst.",
+   "GBP": "No clear catalyst; soft despite low-impact BoE hawkish remarks.",
+   "AUD": "No domestic catalyst; weakest on commodity/risk-off pressure.",
+   "CAD": "No catalyst; slight softness in quiet range.",
+   "CHF": "No clear catalyst; closed at its best, likely flow-driven safety bid.",
+   "NZD": "No clear catalyst; weak with AUD and soft risk tone."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD chopped in a 33.5-pip range, netting -10.8 pips with no leg catalyst; the 26.9-pip down leg from 00:00-04:00 was only partly retraced."
+  },
+  "polarity_reads": [
+   {
+    "event": "Japan top currency diplomat Mimura: FX fluctuations are too rapid",
+    "read": "Yen strengthened immediately, implying short-yen positioning was vulnerable to official comments."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Risk-off continuation",
+    "probability": 0.45,
+    "thesis": "Haven bid persists; CHF/JPY stay bid while commodity FX remain soft ahead of US claims.",
+    "triggers": [
+     "VIX holds above 18.8",
+     "Brent stays weak",
+     "No dovish BOJ pushback"
+    ],
+    "invalidation": "DXY fails to hold gains and VIX fades quickly.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 41.9,
+      "rationale": "JPY strength with Mimura follow-through; overnight range was 41.9 pips."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 21.2,
+      "rationale": "AUD weak with risk-off; overnight range was 21.2 pips."
+     }
+    ]
+   },
+   {
+    "name": "USD stabilization/rebound",
+    "probability": 0.35,
+    "thesis": "Strong GBP GDP and lower US claims reduce haven demand, lifting USD against majors.",
+    "triggers": [
+     "GBP GDP q/q beats 0.7%",
+     "US claims below 194K",
+     "VIX dips back under 18"
+    ],
+    "invalidation": "US claims spike or equities sell off.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 33.5,
+      "rationale": "USD bid returns; overnight range was 33.5 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 41.9,
+      "rationale": "Yen retreats as haven bid unwinds; overnight range was 41.9 pips."
+     }
+    ]
+   },
+   {
+    "name": "Range trade into London/NY",
+    "probability": 0.2,
+    "thesis": "No fresh catalyst; pairs consolidate inside overnight ranges before US claims.",
+    "triggers": [
+     "GBP GDP in line",
+     "No BOJ/Japan comments",
+     "VIX steady"
+    ],
+    "invalidation": "Any unscheduled central bank headline.",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 33.5,
+      "rationale": "Holds within 1.108 handle with no fresh driver; overnight range was 33.5 pips."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 41.9,
+      "rationale": "Two-way flow after Mimura; overnight range was 41.9 pips."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Japan verbal intervention escalates",
+    "why_it_matters": "Could force sharper short-yen unwind and extend CHF/JPY strength.",
+    "watch": "USD/JPY and CHF/JPY break of overnight lows."
+   },
+   {
+    "risk": "GBP GDP surprise",
+    "why_it_matters": "Sets GBP tone into London; miss would add to GBP weakness.",
+    "watch": "GBP/USD at 1.3261; EUR/GBP at 0.8356."
+   },
+   {
+    "risk": "US jobless claims surprise",
+    "why_it_matters": "Directly shifts USD and risk sentiment; VIX already elevated.",
+    "watch": "DXY and VIX around 102.86 and 18.80."
+   }
+  ],
+  "calendar_ahead_note": "08:00 GBP GDP m/m (0.0% f/c) and prelim GDP q/q (0.7% f/c) set GBP tone; 14:30 USD jobless claims (194K f/c) can reset USD and risk. Watch for further Japan jawboning outside calendar.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 15078,
+   "completion_tokens": 7047,
+   "total_tokens": 22125,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5535
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 14438
+  }
+ }
+}
