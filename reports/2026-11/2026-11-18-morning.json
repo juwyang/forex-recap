@@ -1,0 +1,1648 @@
+{
+ "meta": {
+  "date": "2026-11-18",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-11-17T18:00:00+00:00",
+  "end_utc": "2026-11-18T06:00:00+00:00",
+  "start_local": "2026-11-17T19:00:00+01:00",
+  "end_local": "2026-11-18T07:00:00+01:00",
+  "fwd_start_utc": "2026-11-18T06:00:00+00:00",
+  "fwd_end_utc": "2026-11-18T18:00:00+00:00",
+  "generated_utc": "2026-11-18T06:29:13.562547+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 41
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-11-17 19:00 CET",
+   "to_local": "2026-11-18 07:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.211,
+    "intraday_peak": 0.211,
+    "intraday_trough": -0.003,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Wage Price Index q/q",
+     "instrument": "Gold/USD",
+     "sigma": -3.13
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 2,
+    "strength_pct": 0.195,
+    "intraday_peak": 0.201,
+    "intraday_trough": -0.052,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Wage Price Index q/q",
+     "instrument": "USD/JPY",
+     "sigma": 1.32
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 3,
+    "strength_pct": -0.025,
+    "intraday_peak": 0.031,
+    "intraday_trough": -0.033,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Wage Price Index q/q",
+     "instrument": "USD/CAD",
+     "sigma": 1.2
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 4,
+    "strength_pct": -0.039,
+    "intraday_peak": 0.008,
+    "intraday_trough": -0.039,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "NZD",
+    "rank": 5,
+    "strength_pct": -0.04,
+    "intraday_peak": 0.102,
+    "intraday_trough": -0.114,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.10%, gave back 65%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 6,
+    "strength_pct": -0.083,
+    "intraday_peak": -0.014,
+    "intraday_trough": -0.201,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.20%, recovered 63%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Wage Price Index q/q",
+     "instrument": "EUR/CHF",
+     "sigma": 0.91
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 7,
+    "strength_pct": -0.093,
+    "intraday_peak": 0.141,
+    "intraday_trough": -0.136,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.14%, gave back 84%",
+    "own_releases": [
+     {
+      "title": "Wage Price Index q/q",
+      "impact": "Medium",
+      "actual": "1.1%",
+      "forecast": "1.0%",
+      "polarity": "muted",
+      "note": "basket moved 0.022%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Wage Price Index q/q",
+     "instrument": "AUD/USD",
+     "sigma": -1.05
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 8,
+    "strength_pct": -0.126,
+    "intraday_peak": 0.005,
+    "intraday_trough": -0.126,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Wage Price Index q/q",
+     "instrument": "EUR/CHF",
+     "sigma": 0.91
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.337,
+    "from_EUR": -0.126,
+    "from_USD": -0.211,
+    "base_share": 0.37
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.25,
+    "from_GBP": -0.039,
+    "from_USD": -0.211,
+    "base_share": 0.16
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.303,
+    "from_AUD": -0.093,
+    "from_USD": -0.211,
+    "base_share": 0.31
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.25,
+    "from_NZD": -0.04,
+    "from_USD": -0.211,
+    "base_share": 0.16
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.016,
+    "from_USD": 0.211,
+    "from_JPY": -0.195,
+    "base_share": 0.52
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.294,
+    "from_USD": 0.211,
+    "from_CHF": 0.083,
+    "base_share": 0.72
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.235,
+    "from_USD": 0.211,
+    "from_CAD": 0.025,
+    "base_share": 0.9
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.087,
+    "from_EUR": -0.126,
+    "from_GBP": 0.039,
+    "base_share": 0.76
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.321,
+    "from_EUR": -0.126,
+    "from_JPY": -0.195,
+    "base_share": 0.39
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.043,
+    "from_EUR": -0.126,
+    "from_CHF": 0.083,
+    "base_share": 0.6
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.034,
+    "from_EUR": -0.126,
+    "from_AUD": 0.093,
+    "base_share": 0.58
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.102,
+    "from_EUR": -0.126,
+    "from_CAD": 0.025,
+    "base_share": 0.84
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.086,
+    "from_EUR": -0.126,
+    "from_NZD": 0.04,
+    "base_share": 0.76
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.234,
+    "from_GBP": -0.039,
+    "from_JPY": -0.195,
+    "base_share": 0.17
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.044,
+    "from_GBP": -0.039,
+    "from_CHF": 0.083,
+    "base_share": 0.32
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.053,
+    "from_GBP": -0.039,
+    "from_AUD": 0.093,
+    "base_share": 0.3
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.015,
+    "from_GBP": -0.039,
+    "from_CAD": 0.025,
+    "base_share": 0.62
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.0,
+    "from_GBP": -0.039,
+    "from_NZD": 0.04,
+    "base_share": 0.5
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.287,
+    "from_AUD": -0.093,
+    "from_JPY": -0.195,
+    "base_share": 0.32
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.009,
+    "from_AUD": -0.093,
+    "from_CHF": 0.083,
+    "base_share": 0.53
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.068,
+    "from_AUD": -0.093,
+    "from_CAD": 0.025,
+    "base_share": 0.79
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.053,
+    "from_AUD": -0.093,
+    "from_NZD": 0.04,
+    "base_share": 0.7
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.234,
+    "from_NZD": -0.04,
+    "from_JPY": -0.195,
+    "base_share": 0.17
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.044,
+    "from_NZD": -0.04,
+    "from_CHF": 0.083,
+    "base_share": 0.32
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.015,
+    "from_NZD": -0.04,
+    "from_CAD": 0.025,
+    "base_share": 0.62
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.219,
+    "from_CAD": -0.025,
+    "from_JPY": -0.195,
+    "base_share": 0.11
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.059,
+    "from_CAD": -0.025,
+    "from_CHF": 0.083,
+    "base_share": 0.23
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.278,
+    "from_CHF": -0.083,
+    "from_JPY": -0.195,
+    "base_share": 0.3
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.241
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.223
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.028
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.045
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.045
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.095
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.106
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.144
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.09826,
+    "chg_pips": -37.0,
+    "chg_pct": -0.336,
+    "range_pips": 43.3,
+    "close_in_range": 0.06,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.31923,
+    "chg_pips": -33.0,
+    "chg_pct": -0.25,
+    "range_pips": 37.4,
+    "close_in_range": 0.06,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.67201,
+    "chg_pips": -20.4,
+    "chg_pct": -0.303,
+    "range_pips": 25.8,
+    "close_in_range": 0.11,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.54907,
+    "chg_pips": -13.8,
+    "chg_pct": -0.251,
+    "range_pips": 18.3,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 159.269,
+    "chg_pips": 2.7,
+    "chg_pct": 0.017,
+    "range_pips": 50.8,
+    "close_in_range": 0.25,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.84105,
+    "chg_pips": 24.7,
+    "chg_pct": 0.295,
+    "range_pips": 35.5,
+    "close_in_range": 0.77,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.43149,
+    "chg_pips": 33.6,
+    "chg_pct": 0.235,
+    "range_pips": 38.9,
+    "close_in_range": 0.97,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.9237,
+    "chg_pips": -4.0,
+    "chg_pct": -0.043,
+    "range_pips": 25.4,
+    "close_in_range": 0.3,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.358,
+    "chg_pips": -52.6,
+    "chg_pct": -0.277,
+    "range_pips": 58.0,
+    "close_in_range": 0.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.2238,
+    "chg_pips": -6.5,
+    "chg_pct": -0.053,
+    "range_pips": 34.5,
+    "close_in_range": 0.24,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83247,
+    "chg_pips": -7.3,
+    "chg_pct": -0.088,
+    "range_pips": 14.0,
+    "close_in_range": 0.36,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.56518,
+    "chg_pips": -0.5,
+    "chg_pct": -0.009,
+    "range_pips": 29.1,
+    "close_in_range": 0.26,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46178,
+    "chg_pips": 2.1,
+    "chg_pct": 0.045,
+    "range_pips": 25.7,
+    "close_in_range": 0.41,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.14012,
+    "chg_pips": 425.8,
+    "chg_pct": 0.422,
+    "range_pips": 494.6,
+    "close_in_range": 0.96,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.64078,
+    "chg_pips": 407.5,
+    "chg_pct": 0.424,
+    "range_pips": 610.4,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 16.97202,
+    "chg_pips": 525.3,
+    "chg_pct": 0.31,
+    "range_pips": 719.1,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 18.44913,
+    "chg_pips": 397.6,
+    "chg_pct": 0.216,
+    "range_pips": 504.7,
+    "close_in_range": 0.93,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 103.571,
+    "chg_pips": 28.0,
+    "chg_pct": 0.271,
+    "range_pips": 32.9,
+    "close_in_range": 0.94,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 21.98127,
+    "chg_pips": -8.3,
+    "chg_pct": -0.375,
+    "range_pips": 185.0,
+    "close_in_range": 0.39,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -35.3,
+    "ret_pct": -0.32,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "01:30",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 9.4,
+    "ret_pct": 0.086,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "02:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -12.0,
+    "ret_pct": -0.109,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 38.3,
+    "ret_pct": 0.241,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ business price indexes: September 2026 quarter, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "02:00",
+    "to": "05:45",
+    "dir": "down",
+    "pips": -45.1,
+    "ret_pct": -0.283,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "05:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 11.0,
+    "ret_pct": 0.069,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -33.5,
+    "ret_pct": -0.253,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Wage Price Index, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 29.7,
+    "ret_pct": 0.354,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "01:30",
+    "to": "02:45",
+    "dir": "down",
+    "pips": -15.1,
+    "ret_pct": -0.179,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.107,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "down",
+    "pips": -9.8,
+    "ret_pct": -0.145,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Williams Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "21:00",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 9.7,
+    "ret_pct": 0.144,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "00:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -20.7,
+    "ret_pct": -0.307,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 34.1,
+    "ret_pct": 0.239,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Wage Price Index, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -14.8,
+    "ret_pct": -0.269,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Williams Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "23:45",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 11.6,
+    "ret_pct": 0.211,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Trade Balance Total (Seasonally Adjusted) moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -10.8,
+    "ret_pct": -0.196,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 5.4,
+    "ret_pct": 0.058,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "22:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -15.8,
+    "ret_pct": -0.171,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ business price indexes: September 2026 quarter, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:00",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 19.6,
+    "ret_pct": 0.212,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "00:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -15.0,
+    "ret_pct": -0.162,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -42.1,
+    "ret_pct": -0.222,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:30",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 33.4,
+    "ret_pct": 0.176,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but BoJ Governor Ueda: Crucial to ensure inflation stays near 2% pushed it along (+11.5 in 15 min, 34% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "BoJ Governor Ueda: Crucial to ensure inflation stays near 2%",
+      "ccy": null,
+      "pips": 11.5,
+      "share_of_leg": 0.34
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -39.7,
+    "ret_pct": -0.209,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 16.5,
+    "ret_pct": 0.135,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "22:15",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -13.8,
+    "ret_pct": -0.113,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item PPI Input q/q +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:15",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 14.9,
+    "ret_pct": 0.122,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:15",
+    "to": "02:30",
+    "dir": "down",
+    "pips": -29.4,
+    "ret_pct": -0.24,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:30",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.074,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "03:15",
+    "to": "04:45",
+    "dir": "down",
+    "pips": -9.0,
+    "ret_pct": -0.074,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 5.1,
+    "ret_pct": 0.042,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "down",
+    "pips": -11.4,
+    "ret_pct": -0.137,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 3.8,
+    "ret_pct": 0.046,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 19.8,
+    "ret_pct": 0.35,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "00:30",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -21.3,
+    "ret_pct": -0.375,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item MI Leading Index m/m, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -6.0,
+    "ret_pct": -0.13,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 19.7,
+    "ret_pct": 0.427,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Wage Price Index, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -12.0,
+    "ret_pct": -0.259,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoJ Governor Ueda: Crucial to ensure inflation stays near…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "22:30",
+    "dir": "up",
+    "pips": 256.7,
+    "ret_pct": 0.254,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "22:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -204.2,
+    "ret_pct": -0.202,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ business price indexes: September 2026 quarter, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 390.7,
+    "ret_pct": 0.387,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Wage Price Index, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 502.2,
+    "ret_pct": 0.524,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Williams Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 141.4,
+    "ret_pct": 0.084,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "21:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -293.2,
+    "ret_pct": -0.173,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 652.6,
+    "ret_pct": 0.386,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Wage Price Index, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "21:00",
+    "dir": "up",
+    "pips": 190.4,
+    "ret_pct": 0.103,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Williams: The economy is strong and getting stronge…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "21:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -295.7,
+    "ret_pct": -0.16,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 449.8,
+    "ret_pct": 0.244,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Wage Price Index, Australia, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "down",
+    "pips": -87.6,
+    "ret_pct": -0.847,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Williams Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:45",
+    "to": "23:15",
+    "dir": "up",
+    "pips": 69.1,
+    "ret_pct": 0.673,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -93.7,
+    "ret_pct": -0.907,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Wage Price Index q/q pushed it along (-14.1 in 15 min, 15% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Wage Price Index q/q",
+      "ccy": "AUD",
+      "pips": -14.1,
+      "share_of_leg": 0.15
+     }
+    ]
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -723.2,
+    "ret_pct": -1.874,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Wage Price Index, Australia, September 2026 pushed it along (-133.6 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Wage Price Index, Australia, September 2026",
+      "ccy": null,
+      "pips": -133.6,
+      "share_of_leg": 0.18
+     },
+     {
+      "title": "Wage Price Index q/q",
+      "ccy": "AUD",
+      "pips": -133.6,
+      "share_of_leg": 0.18
+     }
+    ]
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "01:30",
+    "ccy": "AUD",
+    "impact": "Medium",
+    "event": "Wage Price Index q/q",
+    "actual": "1.1%",
+    "forecast": "1.0%",
+    "previous": "0.8%",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.022%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.022,
+    "top_movers": [
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.229,
+      "pips": -87.7,
+      "unit": "pips ($0.10)",
+      "sigma": -3.13
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.03,
+      "pips": 50.2,
+      "unit": "pips",
+      "sigma": 1.5
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": 0.023,
+      "pips": 3.7,
+      "unit": "pips",
+      "sigma": 1.32
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.013,
+      "pips": 1.9,
+      "unit": "pips",
+      "sigma": 1.2
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.022,
+      "pips": -1.5,
+      "unit": "pips",
+      "sigma": -1.05
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": 0.015,
+      "pips": 1.4,
+      "unit": "pips",
+      "sigma": 0.91
+     }
+    ]
+   }
+  ],
+  "headline_count": 6,
+  "top_headlines": [
+   {
+    "time": "01:30",
+    "impact": "medium",
+    "title": "Wage Price Index, Australia, September 2026"
+   },
+   {
+    "time": "02:00",
+    "impact": "medium",
+    "title": "BoJ Governor Ueda: Crucial to ensure inflation stays near 2%"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "Fed's Williams: The economy is strong and getting stronger, inflation is not moving in right direction."
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "NZ business price indexes: September 2026 quarter"
+   },
+   {
+    "time": "22:45",
+    "impact": "low",
+    "title": "API: Crude: +5.3M, Cushing: -1.7M, Gasoline: +5.1M, Distillates: +0.4M"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan Trade Balance Total (Seasonally Adjusted)"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "CPI y/y",
+    "forecast": "3.6%",
+    "previous": "3.5%"
+   },
+   {
+    "time": "08:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "10:00",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB Financial Stability Review",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "15:25",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "16:00",
+    "ccy": "GBP",
+    "impact": "High",
+    "event": "BOE Gov Bailey Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The overnight tape was a broad dollar bid: USD strength closed at its peak (+0.211%) and DXY rose 0.271%, with EUR/USD -37 pips and USD/CHF +24.7 pips. No US release explained the move; Fed's Williams remarks were too weak to own it. AUD's above-forecast Wage Price Index was muted and AUD's early rally was rejected. JPY was second-strongest, with USD/JPY little changed but a 50.8-pip two-way range after BoJ Ueda comments.",
+  "themes": [
+   {
+    "theme": "Broad dollar bid with no clear US catalyst",
+    "evidence": "USD strength +0.211%, DXY +0.271%, EUR/USD -37 pips, USD/CHF +24.7 pips, USD/CAD +33.6 pips; Fed's Williams comments too weak to own the move.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "CHF",
+     "CAD",
+     "GBP",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Yen strength after BoJ Ueda",
+    "evidence": "JPY strength +0.195%, closed at its best; CHF/JPY -52.6 pips, USD/JPY net +2.7 pips but 50.8-pip range.",
+    "currencies": [
+     "JPY",
+     "CHF"
+    ]
+   },
+   {
+    "theme": "Commodity FX attempts rejected",
+    "evidence": "AUD led +0.14% then gave back 84% to close -0.093%; NZD led +0.10% then gave back 65% to close -0.04%; Gold/USD -1.874%.",
+    "currencies": [
+     "AUD",
+     "NZD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Strongest major, closed at its peak with no own releases; DXY rose 0.271%.",
+   "EUR": "Weakest major, no euro-area catalyst; fell 0.126% as broad dollar bid dominated.",
+   "JPY": "No own releases; second-strongest, closed at its best after BoJ Ueda inflation remarks.",
+   "GBP": "No own releases; held its range, closing -0.039% with no clear catalyst.",
+   "AUD": "Stronger wage data drew no bid; attempt rejected, closed -0.093%.",
+   "CAD": "No own releases; held its range near -0.025%, no domestic catalyst.",
+   "CHF": "No own releases; sold to -0.20% then recovered 63%, still closed -0.083%.",
+   "NZD": "No own releases; upside attempt rejected, closing -0.04% after giving back 65%."
+  },
+  "leg_notes": {
+   "EUR/USD": "Three legs: a 35.3-pip drop into 01:30, a 9.4-pip bounce to 02:45, then a 12.0-pip decline to 06:45; close 1.09826 near the lows."
+  },
+  "polarity_reads": [
+   {
+    "event": "Wage Price Index q/q",
+    "read": "Actual 1.1% beat 1.0%, but basket moved only 0.022% inside the noise floor; AUD/USD edged -1.5 pips, signaling no fresh RBA repricing or AUD bid."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "USD strength persists",
+    "probability": 0.45,
+    "thesis": "No US data or Fedspeak is due; DXY closed at its best and commodity FX attempts were rejected, so the broad dollar bid carries into the European morning.",
+    "triggers": [
+     "DXY holds above 103.571 close",
+     "No risk-positive surprise from UK CPI"
+    ],
+    "invalidation": "DXY breaks back below 103.4",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 43.3,
+      "rationale": "EUR weakest driver, USD strongest; overnight range 43.3 pips, close near bottom at 0.06."
+     },
+     {
+      "instrument": "USD/CHF",
+      "direction": "up",
+      "magnitude_pips": 35.5,
+      "rationale": "USD strength plus CHF selling rejected; overnight range 35.5 pips."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "up",
+      "magnitude_pips": 38.9,
+      "rationale": "USD strength drove the pair; overnight range 38.9 pips."
+     }
+    ]
+   },
+   {
+    "name": "GBP CPI surprise jolts sterling",
+    "probability": 0.35,
+    "thesis": "High-impact UK CPI at 08:00 with forecast 3.6% and Bailey speeches can force a re-rating of GBP, unwinding its held range.",
+    "triggers": [
+     "GBP CPI y/y prints above 3.6%",
+     "Bailey sounds hawkish at 08:30 or 16:00"
+    ],
+    "invalidation": "CPI prints in line or soft and Bailey repeats cautious tone",
+    "pair_paths": [
+     {
+      "instrument": "GBP/USD",
+      "direction": "up",
+      "magnitude_pips": 37.4,
+      "rationale": "GBP/USD overnight range 37.4 pips; a CPI beat can reverse the 33-pip drop from 1.31923."
+     },
+     {
+      "instrument": "EUR/GBP",
+      "direction": "down",
+      "magnitude_pips": 14.0,
+      "rationale": "EUR/GBP overnight range 14.0 pips; GBP bid should pressure the cross."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 50.8,
+      "rationale": "If GBP strength sparks risk-friendly dollar pullback, USD/JPY can retrace its 50.8-pip range."
+     }
+    ]
+   },
+   {
+    "name": "Profit-taking and risk reversal",
+    "probability": 0.2,
+    "thesis": "After USD closed at its best and Gold fell 1.874%, thin Asia-to-Europe handoff could trigger profit-taking and a bounce in sold commodity FX.",
+    "triggers": [
+     "DXY fails to hold 103.571",
+     "Gold stabilizes after -1.874% drop"
+    ],
+    "invalidation": "DXY makes a new high above 103.571",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 43.3,
+      "rationale": "EUR/USD closed near the low of its 43.3-pip range; mean reversion risk."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 25.8,
+      "rationale": "AUD attempt rejected and closed -0.093%; short covering can retrace its 25.8-pip range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 50.8,
+      "rationale": "Risk reversal and JPY strength can push USD/JPY through its 50.8-pip range."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "GBP CPI y/y surprises high or low",
+    "why_it_matters": "First high-impact release of the window; forecast 3.6% vs prior 3.5% can invert GBP's held range.",
+    "watch": "GBP/USD 37.4-pip overnight range, EUR/GBP 14.0-pip range."
+   },
+   {
+    "risk": "BOE Governor Bailey speeches at 08:30 and 16:00",
+    "why_it_matters": "Comments can blunt or amplify the CPI reaction and drive GBP crosses.",
+    "watch": "GBP/USD close 1.31923, EUR/GBP close 0.83247."
+   },
+   {
+    "risk": "ECB Financial Stability Review and Lagarde at 10:00/15:25",
+    "why_it_matters": "With EUR the weakest major, a dovish tilt can extend EUR/USD losses.",
+    "watch": "EUR/USD close 1.09826, range 43.3 pips."
+   },
+   {
+    "risk": "Thin Asia-to-Europe liquidity",
+    "why_it_matters": "Moves can overshoot after a one-way dollar close, especially in commodity FX.",
+    "watch": "USD/JPY 50.8-pip range, USD/ZAR +525.3 pips, USD/MXN +397.6 pips."
+   }
+  ],
+  "calendar_ahead_note": "GBP CPI y/y at 08:00 (forecast 3.6%, prior 3.5%) is the main event; BOE Bailey at 08:30 and 16:00 can shape GBP, while ECB Lagarde at 15:25 can drive EUR. No US releases are due, so the broad USD bias may persist unless a data surprise or central bank comment changes the tone.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 12824,
+   "completion_tokens": 8176,
+   "total_tokens": 21000,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6069
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 12184
+  }
+ }
+}
