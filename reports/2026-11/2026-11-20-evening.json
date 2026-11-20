@@ -1,0 +1,2514 @@
+{
+ "meta": {
+  "date": "2026-11-20",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-11-19T18:00:00+00:00",
+  "end_utc": "2026-11-20T18:00:00+00:00",
+  "start_local": "2026-11-19T19:00:00+01:00",
+  "end_local": "2026-11-20T19:00:00+01:00",
+  "fwd_start_utc": "2026-11-20T18:00:00+00:00",
+  "fwd_end_utc": "2026-11-23T18:00:00+00:00",
+  "generated_utc": "2026-11-20T23:56:50.422614+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 73
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-11-19 19:00 CET",
+   "to_local": "2026-11-20 19:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "JPY",
+    "rank": 1,
+    "strength_pct": 0.658,
+    "intraday_peak": 0.675,
+    "intraday_trough": 0.079,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "ECB President Lagarde Speaks",
+     "instrument": "CHF/JPY",
+     "sigma": -2.13
+    }
+   },
+   {
+    "ccy": "CHF",
+    "rank": 2,
+    "strength_pct": 0.469,
+    "intraday_peak": 0.528,
+    "intraday_trough": 0.008,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "NZD/CHF",
+     "sigma": -3.13
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 3,
+    "strength_pct": -0.013,
+    "intraday_peak": 0.102,
+    "intraday_trough": -0.211,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.21%, recovered 63%",
+    "own_releases": [
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "impact": "Medium",
+      "actual": "51.5",
+      "forecast": "51.7",
+      "polarity": "muted",
+      "note": "basket moved 0.000%, inside the noise floor"
+     },
+     {
+      "title": "President Trump Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved 0.013%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "USD/ZAR",
+     "sigma": 2.89
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 4,
+    "strength_pct": -0.035,
+    "intraday_peak": 0.021,
+    "intraday_trough": -0.1,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Retail Sales m/m",
+      "impact": "Medium",
+      "actual": "0.7%",
+      "forecast": "0.0%",
+      "polarity": "normal",
+      "note": "beat surprise -> GBP stronger 0.066%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Retail Sales m/m",
+     "instrument": "EUR/GBP",
+     "sigma": -0.98
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 5,
+    "strength_pct": -0.061,
+    "intraday_peak": 0.027,
+    "intraday_trough": -0.218,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.22%, recovered 64%",
+    "own_releases": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "polarity": "muted",
+      "note": "basket moved -0.022%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Retail Sales m/m",
+     "instrument": "EUR/GBP",
+     "sigma": -0.98
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 6,
+    "strength_pct": -0.07,
+    "intraday_peak": 0.0,
+    "intraday_trough": -0.13,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "USD/CAD",
+     "sigma": 2.51
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.357,
+    "intraday_peak": 0.039,
+    "intraday_trough": -0.394,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "NZD/CHF",
+     "sigma": -3.13
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 8,
+    "strength_pct": -0.592,
+    "intraday_peak": 0.01,
+    "intraday_trough": -0.593,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "President Trump Speaks",
+     "instrument": "AUD/USD",
+     "sigma": -2.69
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.048,
+    "from_EUR": -0.061,
+    "from_USD": 0.013,
+    "base_share": 0.82
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.022,
+    "from_GBP": -0.035,
+    "from_USD": 0.013,
+    "base_share": 0.73
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.578,
+    "from_AUD": -0.592,
+    "from_USD": 0.013,
+    "base_share": 0.98
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.344,
+    "from_NZD": -0.357,
+    "from_USD": 0.013,
+    "base_share": 0.96
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": -0.672,
+    "from_USD": -0.013,
+    "from_JPY": -0.658,
+    "base_share": 0.02
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": -0.482,
+    "from_USD": -0.013,
+    "from_CHF": -0.469,
+    "base_share": 0.03
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.057,
+    "from_USD": -0.013,
+    "from_CAD": 0.07,
+    "base_share": 0.16
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.026,
+    "from_EUR": -0.061,
+    "from_GBP": 0.035,
+    "base_share": 0.63
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.719,
+    "from_EUR": -0.061,
+    "from_JPY": -0.658,
+    "base_share": 0.08
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.53,
+    "from_EUR": -0.061,
+    "from_CHF": -0.469,
+    "base_share": 0.11
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.531,
+    "from_EUR": -0.061,
+    "from_AUD": 0.592,
+    "base_share": 0.09
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": 0.009,
+    "from_EUR": -0.061,
+    "from_CAD": 0.07,
+    "base_share": 0.47
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.296,
+    "from_EUR": -0.061,
+    "from_NZD": 0.357,
+    "base_share": 0.15
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.694,
+    "from_GBP": -0.035,
+    "from_JPY": -0.658,
+    "base_share": 0.05
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.504,
+    "from_GBP": -0.035,
+    "from_CHF": -0.469,
+    "base_share": 0.07
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.556,
+    "from_GBP": -0.035,
+    "from_AUD": 0.592,
+    "base_share": 0.06
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": 0.035,
+    "from_GBP": -0.035,
+    "from_CAD": 0.07,
+    "base_share": 0.33
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.322,
+    "from_GBP": -0.035,
+    "from_NZD": 0.357,
+    "base_share": 0.09
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -1.25,
+    "from_AUD": -0.592,
+    "from_JPY": -0.658,
+    "base_share": 0.47
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -1.061,
+    "from_AUD": -0.592,
+    "from_CHF": -0.469,
+    "base_share": 0.56
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.522,
+    "from_AUD": -0.592,
+    "from_CAD": 0.07,
+    "base_share": 0.89
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.235,
+    "from_AUD": -0.592,
+    "from_NZD": 0.357,
+    "base_share": 0.62
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -1.015,
+    "from_NZD": -0.357,
+    "from_JPY": -0.658,
+    "base_share": 0.35
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.826,
+    "from_NZD": -0.357,
+    "from_CHF": -0.469,
+    "base_share": 0.43
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.287,
+    "from_NZD": -0.357,
+    "from_CAD": 0.07,
+    "base_share": 0.84
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": -0.728,
+    "from_CAD": -0.07,
+    "from_JPY": -0.658,
+    "base_share": 0.1
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": -0.539,
+    "from_CAD": -0.07,
+    "from_CHF": -0.469,
+    "base_share": 0.13
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.189,
+    "from_CHF": 0.469,
+    "from_JPY": -0.658,
+    "base_share": 0.42
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.756
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.538
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": -0.014
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.039
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.069
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": -0.079
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.406
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.673
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.09729,
+    "chg_pips": -5.4,
+    "chg_pct": -0.049,
+    "range_pips": 42.6,
+    "close_in_range": 0.37,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.31,
+    "chg_pips": -3.0,
+    "chg_pct": -0.023,
+    "range_pips": 50.5,
+    "close_in_range": 0.43,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.66316,
+    "chg_pips": -38.5,
+    "chg_pct": -0.577,
+    "range_pips": 54.7,
+    "close_in_range": 0.08,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.54799,
+    "chg_pips": -19.0,
+    "chg_pct": -0.346,
+    "range_pips": 36.6,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 158.769,
+    "chg_pips": -106.9,
+    "chg_pct": -0.669,
+    "range_pips": 129.0,
+    "close_in_range": 0.17,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83973,
+    "chg_pips": -40.6,
+    "chg_pct": -0.481,
+    "range_pips": 67.3,
+    "close_in_range": 0.31,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.43313,
+    "chg_pips": 7.2,
+    "chg_pct": 0.05,
+    "range_pips": 51.6,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.92145,
+    "chg_pips": -48.8,
+    "chg_pct": -0.527,
+    "range_pips": 56.1,
+    "close_in_range": 0.1,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 189.085,
+    "chg_pips": -35.6,
+    "chg_pct": -0.188,
+    "range_pips": 90.8,
+    "close_in_range": 0.6,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.21008,
+    "chg_pips": -28.4,
+    "chg_pct": -0.234,
+    "range_pips": 55.6,
+    "close_in_range": 0.11,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83761,
+    "chg_pips": -2.1,
+    "chg_pct": -0.025,
+    "range_pips": 24.2,
+    "close_in_range": 0.65,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.55688,
+    "chg_pips": -59.4,
+    "chg_pct": -1.055,
+    "range_pips": 72.7,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.46016,
+    "chg_pips": -38.2,
+    "chg_pct": -0.823,
+    "range_pips": 44.8,
+    "close_in_range": 0.13,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.21258,
+    "chg_pips": 307.9,
+    "chg_pct": 0.302,
+    "range_pips": 602.0,
+    "close_in_range": 0.79,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.76075,
+    "chg_pips": 7.7,
+    "chg_pct": 0.008,
+    "range_pips": 578.9,
+    "close_in_range": 0.42,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 17.5295,
+    "chg_pips": 629.1,
+    "chg_pct": 0.36,
+    "range_pips": 1531.3,
+    "close_in_range": 0.81,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 19.03274,
+    "chg_pips": 228.4,
+    "chg_pct": 0.12,
+    "range_pips": 1892.3,
+    "close_in_range": 0.39,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 103.715,
+    "chg_pips": -7.1,
+    "chg_pct": -0.068,
+    "range_pips": 41.5,
+    "close_in_range": 0.53,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 25.539,
+    "chg_pips": 215.2,
+    "chg_pct": 9.202,
+    "range_pips": 309.8,
+    "close_in_range": 0.77,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -15.7,
+    "ret_pct": -0.143,
+    "minutes": 480,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "03:00",
+    "to": "07:30",
+    "dir": "up",
+    "pips": 25.3,
+    "ret_pct": 0.231,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ credit card summary moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "07:30",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -29.9,
+    "ret_pct": -0.272,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "12:45",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 36.4,
+    "ret_pct": 0.332,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "14:45",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -13.2,
+    "ret_pct": -0.12,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "15:45",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 14.2,
+    "ret_pct": 0.129,
+    "minutes": 45,
+    "cause": "Revised UoM Consumer Sentiment +1 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Revised UoM Consumer Sentiment +1 more (actual 51.5 vs forecast 51.7) -- +5.0 in the first 15 min, 35% of the leg",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -22.3,
+    "ret_pct": -0.203,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Missile hits southern Iran's Qeshm Island, no information…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -97.4,
+    "ret_pct": -0.61,
+    "minutes": 1425,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "19:45",
+    "dir": "up",
+    "pips": 10.0,
+    "ret_pct": 0.076,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump to Axios: I'm &quot;not rushing into a decision&quo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:45",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -25.6,
+    "ret_pct": -0.195,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BoE's Greene: Need to 'anchor' expectations at 2% target, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:00",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 40.2,
+    "ret_pct": 0.307,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ credit card summary moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "08:00",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -21.4,
+    "ret_pct": -0.163,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Public Sector Net Borrowing +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "09:45",
+    "to": "10:30",
+    "dir": "up",
+    "pips": 14.2,
+    "ret_pct": 0.108,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "10:30",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -19.3,
+    "ret_pct": -0.147,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Pereira: Energy-driven inflation pressures remain s…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "12:45",
+    "to": "14:00",
+    "dir": "up",
+    "pips": 26.0,
+    "ret_pct": 0.199,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "14:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -21.1,
+    "ret_pct": -0.161,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 6.5,
+    "ret_pct": 0.077,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump to Axios: I'm &quot;not rushing into a decision&quo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "22:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -45.5,
+    "ret_pct": -0.539,
+    "minutes": 1230,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -16.6,
+    "ret_pct": -0.249,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "04:00",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 32.5,
+    "ret_pct": 0.489,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "08:00",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -24.5,
+    "ret_pct": -0.367,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Retail sales, Great Britain: October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "12:45",
+    "to": "14:45",
+    "dir": "up",
+    "pips": 15.1,
+    "ret_pct": 0.227,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "14:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -39.4,
+    "ret_pct": -0.591,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 15.4,
+    "ret_pct": 0.107,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:15",
+    "to": "07:30",
+    "dir": "down",
+    "pips": -34.6,
+    "ret_pct": -0.241,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Philly Fed's Paulson: Think we have more tightening to do…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "07:30",
+    "to": "09:30",
+    "dir": "up",
+    "pips": 15.0,
+    "ret_pct": 0.105,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Retail sales, Great Britain: October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "09:30",
+    "to": "10:30",
+    "dir": "down",
+    "pips": -16.8,
+    "ret_pct": -0.117,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "10:30",
+    "to": "13:00",
+    "dir": "up",
+    "pips": 17.0,
+    "ret_pct": 0.119,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Pereira: Energy-driven inflation pressures remain s…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:00",
+    "to": "14:30",
+    "dir": "down",
+    "pips": -26.6,
+    "ret_pct": -0.186,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Waller Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 27.8,
+    "ret_pct": 0.194,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (+5.8 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": 5.8,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "00:15",
+    "dir": "down",
+    "pips": -17.2,
+    "ret_pct": -0.313,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "00:15",
+    "to": "07:30",
+    "dir": "up",
+    "pips": 32.8,
+    "ret_pct": 0.599,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Paulson Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "07:30",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -21.1,
+    "ret_pct": -0.383,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Pereira: Energy-driven inflation pressures remain s…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "12:45",
+    "to": "14:30",
+    "dir": "up",
+    "pips": 14.6,
+    "ret_pct": 0.266,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Buba President Nagel Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "14:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -23.3,
+    "ret_pct": -0.423,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-4.7 in 15 min, 20% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -4.7,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "20:30",
+    "dir": "up",
+    "pips": 2.5,
+    "ret_pct": 0.027,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump to Axios: I'm &quot;not rushing into a decision&quo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "20:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -49.5,
+    "ret_pct": -0.534,
+    "minutes": 1335,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -30.9,
+    "ret_pct": -0.163,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:45",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 23.7,
+    "ret_pct": 0.125,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item National Core CPI y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "01:00",
+    "to": "03:00",
+    "dir": "down",
+    "pips": -46.6,
+    "ret_pct": -0.246,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item GfK Consumer Confidence, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:00",
+    "to": "07:45",
+    "dir": "up",
+    "pips": 27.9,
+    "ret_pct": 0.148,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ credit card summary moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "07:45",
+    "to": "12:30",
+    "dir": "down",
+    "pips": -52.7,
+    "ret_pct": -0.279,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but ECB President Lagarde Speaks pushed it along (-13.9 in 15 min, 26% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "ccy": "EUR",
+      "pips": -13.9,
+      "share_of_leg": 0.26
+     }
+    ]
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "12:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 50.8,
+    "ret_pct": 0.269,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "21:45",
+    "dir": "up",
+    "pips": 15.6,
+    "ret_pct": 0.129,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump to Axios: I'm &quot;not rushing into a decision&quo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "21:45",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -24.9,
+    "ret_pct": -0.205,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barkin Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "23:15",
+    "to": "00:30",
+    "dir": "up",
+    "pips": 24.4,
+    "ret_pct": 0.201,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "00:30",
+    "to": "10:45",
+    "dir": "down",
+    "pips": -42.0,
+    "ret_pct": -0.346,
+    "minutes": 615,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Philly Fed's Paulson: Think we have more tightening to do…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "10:45",
+    "to": "11:30",
+    "dir": "up",
+    "pips": 24.6,
+    "ret_pct": 0.203,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Pereira: Energy-driven inflation pressures remain s… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "11:30",
+    "to": "14:00",
+    "dir": "down",
+    "pips": -17.2,
+    "ret_pct": -0.142,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK-EU Summit Deal Reached, EU Official Says, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "14:00",
+    "to": "15:45",
+    "dir": "up",
+    "pips": 23.3,
+    "ret_pct": 0.192,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -32.3,
+    "ret_pct": -0.266,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -7.1,
+    "ret_pct": -0.085,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump to Axios: I'm &quot;not rushing into a decision&quo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:45",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 9.8,
+    "ret_pct": 0.117,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item GfK Consumer Confidence, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:30",
+    "to": "12:15",
+    "dir": "down",
+    "pips": -24.2,
+    "ret_pct": -0.289,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "12:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 15.8,
+    "ret_pct": 0.189,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -20.4,
+    "ret_pct": -0.363,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "04:00",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 24.5,
+    "ret_pct": 0.437,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "08:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -57.6,
+    "ret_pct": -1.024,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Revised UoM Consumer Sentiment +1 more pushed it along (-14.0 in 15 min, 24% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Revised UoM Consumer Sentiment +1 more",
+      "ccy": "USD",
+      "pips": -14.0,
+      "share_of_leg": 0.24
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -14.8,
+    "ret_pct": -0.319,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:45",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 20.3,
+    "ret_pct": 0.439,
+    "minutes": 495,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Credit Card Spending y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "08:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -38.1,
+    "ret_pct": -0.821,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-6.7 in 15 min, 18% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -6.7,
+      "share_of_leg": 0.18
+     }
+    ]
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 154.8,
+    "ret_pct": 0.152,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "02:45",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -334.5,
+    "ret_pct": -0.328,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ credit card summary, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "08:00",
+    "to": "12:45",
+    "dir": "up",
+    "pips": 559.3,
+    "ret_pct": 0.55,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "12:45",
+    "to": "16:00",
+    "dir": "down",
+    "pips": -252.5,
+    "ret_pct": -0.247,
+    "minutes": 195,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "16:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 156.9,
+    "ret_pct": 0.154,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Revised UoM Consumer Sentiment +1 more moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -159.3,
+    "ret_pct": -0.163,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump to Axios: I'm &quot;not rushing into a decision&quo…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:00",
+    "to": "02:45",
+    "dir": "up",
+    "pips": 268.8,
+    "ret_pct": 0.276,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Paulson Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "02:45",
+    "to": "08:00",
+    "dir": "down",
+    "pips": -411.5,
+    "ret_pct": -0.421,
+    "minutes": 315,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item NZ credit card summary, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "08:00",
+    "to": "11:00",
+    "dir": "up",
+    "pips": 510.6,
+    "ret_pct": 0.524,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "11:00",
+    "to": "14:45",
+    "dir": "down",
+    "pips": -466.1,
+    "ret_pct": -0.476,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK-EU Summit Deal Reached, EU Official Says, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "14:45",
+    "to": "15:30",
+    "dir": "up",
+    "pips": 204.3,
+    "ret_pct": 0.21,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "15:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -26.3,
+    "ret_pct": -0.027,
+    "minutes": 195,
+    "cause": "Revised UoM Consumer Sentiment +1 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Revised UoM Consumer Sentiment +1 more (actual 51.5 vs forecast 51.7) -- -13.9 in the first 15 min, 53% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -27.4,
+      "share_of_leg": 1.04
+     }
+    ]
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 723.4,
+    "ret_pct": 0.414,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "06:30",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -1405.5,
+    "ret_pct": -0.801,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "11:30",
+    "to": "13:00",
+    "dir": "up",
+    "pips": 641.9,
+    "ret_pct": 0.369,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK-EU Summit Deal Reached, EU Official Says, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "13:00",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -670.4,
+    "ret_pct": -0.384,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1170.7,
+    "ret_pct": 0.672,
+    "minutes": 180,
+    "cause": "Revised UoM Consumer Sentiment +1 more",
+    "cause_ccy": "USD",
+    "confidence": "medium",
+    "note": "USD Revised UoM Consumer Sentiment +1 more (actual 51.5 vs forecast 51.7) -- +197.8 in the first 15 min, 17% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": 234.0,
+      "share_of_leg": 0.2
+     }
+    ]
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "up",
+    "pips": 783.8,
+    "ret_pct": 0.412,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "20:45",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -534.0,
+    "ret_pct": -0.279,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Fed's Goolsbee: Multiple months of borderline disturbing …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:30",
+    "to": "06:30",
+    "dir": "up",
+    "pips": 808.7,
+    "ret_pct": 0.424,
+    "minutes": 420,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump tells skeptical Europeans: &quot;Putin wants to end…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "06:30",
+    "to": "15:45",
+    "dir": "down",
+    "pips": -1832.2,
+    "ret_pct": -0.957,
+    "minutes": 555,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "15:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 709.9,
+    "ret_pct": 0.374,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (+157.8 in 15 min, 22% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": 157.8,
+      "share_of_leg": 0.22
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "down",
+    "pips": -65.2,
+    "ret_pct": -0.638,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:15",
+    "to": "23:15",
+    "dir": "up",
+    "pips": 94.4,
+    "ret_pct": 0.929,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item FOMC Member Barr Speaks moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "23:15",
+    "to": "11:00",
+    "dir": "down",
+    "pips": -293.7,
+    "ret_pct": -2.864,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but ECB President Lagarde Speaks pushed it along (-62.2 in 15 min, 21% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "ECB President Lagarde Speaks",
+      "ccy": "EUR",
+      "pips": -62.2,
+      "share_of_leg": 0.21
+     }
+    ]
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "11:00",
+    "to": "13:45",
+    "dir": "up",
+    "pips": 163.5,
+    "ret_pct": 1.642,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item UK-EU Summit Deal Reached, EU Official Says, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "13:45",
+    "to": "16:15",
+    "dir": "down",
+    "pips": -133.0,
+    "ret_pct": -1.314,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Canadian Retail Trade, September 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "16:15",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 135.5,
+    "ret_pct": 1.356,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item President Trump Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "06:00",
+    "dir": "down",
+    "pips": -1548.6,
+    "ret_pct": -4.214,
+    "minutes": 660,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Panetta: Must fight inflation without hurting growt…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "06:00",
+    "to": "11:30",
+    "dir": "up",
+    "pips": 736.7,
+    "ret_pct": 2.093,
+    "minutes": 330,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB President Lagarde Speaks, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "11:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -642.0,
+    "ret_pct": -1.786,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but President Trump Speaks pushed it along (-107.1 in 15 min, 17% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "President Trump Speaks",
+      "ccy": "USD",
+      "pips": -107.1,
+      "share_of_leg": 0.17
+     }
+    ]
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "16:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Revised UoM Consumer Sentiment +1 more",
+    "actual": "51.5",
+    "forecast": "51.7",
+    "previous": "51.0",
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.000%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.0,
+    "top_movers": [
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.063,
+      "pips": -4.2,
+      "unit": "pips",
+      "sigma": -1.87
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": 0.23,
+      "pips": 23.1,
+      "unit": "pips ($0.01)",
+      "sigma": 1.59
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": -0.031,
+      "pips": -3.8,
+      "unit": "pips",
+      "sigma": -1.19
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": -0.046,
+      "pips": -2.6,
+      "unit": "pips",
+      "sigma": -1.06
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.029,
+      "pips": -1.6,
+      "unit": "pips",
+      "sigma": -1.03
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.025,
+      "pips": -4.7,
+      "unit": "pips",
+      "sigma": -1.0
+     }
+    ]
+   },
+   {
+    "time": "18:00",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "President Trump Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved 0.013%, inside the noise floor",
+    "own_ccy_impulse_pct": 0.013,
+    "top_movers": [
+     {
+      "instrument": "NZD/CHF",
+      "pct": -0.1,
+      "pips": -4.6,
+      "unit": "pips",
+      "sigma": -3.13
+     },
+     {
+      "instrument": "USD/ZAR",
+      "pct": 0.137,
+      "pips": 239.2,
+      "unit": "pips",
+      "sigma": 2.89
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": -0.09,
+      "pips": -6.0,
+      "unit": "pips",
+      "sigma": -2.69
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.075,
+      "pips": -4.1,
+      "unit": "pips",
+      "sigma": -2.65
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": -0.115,
+      "pips": -6.4,
+      "unit": "pips",
+      "sigma": -2.62
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.039,
+      "pips": 5.6,
+      "unit": "pips",
+      "sigma": 2.51
+     }
+    ]
+   },
+   {
+    "time": "08:00",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Retail Sales m/m",
+    "actual": "0.7%",
+    "forecast": "0.0%",
+    "previous": "-0.4%",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> GBP stronger 0.066%",
+    "own_ccy_impulse_pct": 0.066,
+    "top_movers": [
+     {
+      "instrument": "USD/CAD",
+      "pct": 0.037,
+      "pips": 5.3,
+      "unit": "pips",
+      "sigma": 2.37
+     },
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.223,
+      "pips": -79.3,
+      "unit": "pips ($0.10)",
+      "sigma": -1.36
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.014,
+      "pips": -1.2,
+      "unit": "pips",
+      "sigma": -0.98
+     },
+     {
+      "instrument": "NZD/USD",
+      "pct": -0.027,
+      "pips": -1.5,
+      "unit": "pips",
+      "sigma": -0.97
+     },
+     {
+      "instrument": "Brent/USD",
+      "pct": 0.134,
+      "pips": 13.7,
+      "unit": "pips ($0.01)",
+      "sigma": 0.92
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": 0.019,
+      "pips": 1.6,
+      "unit": "pips",
+      "sigma": 0.69
+     }
+    ]
+   },
+   {
+    "time": "09:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "actual": null,
+    "forecast": null,
+    "previous": null,
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.022%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.022,
+    "top_movers": [
+     {
+      "instrument": "USD/NOK",
+      "pct": 0.077,
+      "pips": 75.4,
+      "unit": "pips",
+      "sigma": 2.14
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": -0.053,
+      "pips": -10.0,
+      "unit": "pips",
+      "sigma": -2.13
+     },
+     {
+      "instrument": "USD/JPY",
+      "pct": -0.042,
+      "pips": -6.7,
+      "unit": "pips",
+      "sigma": -1.74
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.034,
+      "pips": 1.9,
+      "unit": "pips",
+      "sigma": 0.77
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.022,
+      "pips": 1.5,
+      "unit": "pips",
+      "sigma": 0.67
+     },
+     {
+      "instrument": "NZD/CHF",
+      "pct": 0.019,
+      "pips": 0.9,
+      "unit": "pips",
+      "sigma": 0.61
+     }
+    ]
+   }
+  ],
+  "headline_count": 30,
+  "top_headlines": [
+   {
+    "time": "14:30",
+    "impact": "medium",
+    "title": "Canadian Retail Trade, September 2026"
+   },
+   {
+    "time": "19:00",
+    "impact": "low",
+    "title": "ECB's Panetta: Must fight inflation without hurting growth too much"
+   },
+   {
+    "time": "19:15",
+    "impact": "low",
+    "title": "Trump to Axios: I'm &quot;not rushing into a decision&quot; on Iran"
+   },
+   {
+    "time": "20:00",
+    "impact": "low",
+    "title": "BoE's Greene: Need to 'anchor' expectations at 2% target"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "Trump on North Korea's Kim Jong Un: The relationship is there, but we didn't meet during Asia trip because there was too many meetings - NBC News"
+   },
+   {
+    "time": "20:15",
+    "impact": "low",
+    "title": "Fed's Barr: AI could boost access to financial services"
+   },
+   {
+    "time": "21:30",
+    "impact": "low",
+    "title": "Fed's Goolsbee: Multiple months of borderline disturbing inflation"
+   },
+   {
+    "time": "00:30",
+    "impact": "low",
+    "title": "Paulson: Monetary Policy Communication: Do We Understand Each Other?"
+   },
+   {
+    "time": "01:00",
+    "impact": "low",
+    "title": "Philly Fed's Paulson: Think we have more tightening to do; moving deliberately 'leaves us in a better place' to absorb new information"
+   },
+   {
+    "time": "02:45",
+    "impact": "low",
+    "title": "Trump tells skeptical Europeans: &quot;Putin wants to end the war&quot;"
+   },
+   {
+    "time": "03:00",
+    "impact": "low",
+    "title": "NZ credit card summary"
+   },
+   {
+    "time": "03:00",
+    "impact": "low",
+    "title": "US Has Floated NATO Membership For Ukraine In Recent Meetings - WSJ"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "09:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "French Flash Manufacturing PMI",
+    "forecast": "49.8",
+    "previous": "49.3"
+   },
+   {
+    "time": "09:15",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "French Flash Services PMI",
+    "forecast": "47.4",
+    "previous": "48.4"
+   },
+   {
+    "time": "09:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Flash Manufacturing PMI",
+    "forecast": "54.1",
+    "previous": "54.2"
+   },
+   {
+    "time": "09:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Flash Services PMI",
+    "forecast": "52.4",
+    "previous": "51.7"
+   },
+   {
+    "time": "10:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Flash Manufacturing PMI",
+    "forecast": "53.0",
+    "previous": "52.8"
+   },
+   {
+    "time": "10:30",
+    "ccy": "GBP",
+    "impact": "Medium",
+    "event": "Flash Services PMI",
+    "forecast": "53.0",
+    "previous": "53.1"
+   },
+   {
+    "time": "15:45",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Flash Manufacturing PMI",
+    "forecast": "54.5",
+    "previous": "56.0"
+   },
+   {
+    "time": "15:45",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Flash Services PMI",
+    "forecast": "55.6",
+    "previous": "57.9"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Risk-off dominated the full trading day: JPY strengthened 0.658% and CHF 0.469% while AUD fell 0.592% and NZD 0.357%, with VIX up 9.2% and DXY only -0.068%. Event reactions were mostly muted—US UoM basket 0.000%, Trump 0.013%, Lagarde -0.022%—and most zigzag legs had no clear catalyst. GBP retail sales was the one normal reaction, giving GBP a 0.066% boost that faded. The tape shows safe-haven demand and high-beta selling without a single dominant fundamental trigger.",
+  "themes": [
+   {
+    "theme": "Risk-off safe-haven bid",
+    "evidence": "VIX +9.2%; JPY +0.658%, CHF +0.469% vs AUD -0.592%, NZD -0.357%.",
+    "currencies": [
+     "JPY",
+     "CHF",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Muted event reactions left price action flow-driven",
+    "evidence": "Revised UoM basket 0.000%, Trump 0.013%, Lagarde -0.022%; most legs had no clear catalyst.",
+    "currencies": [
+     "USD",
+     "EUR",
+     "GBP"
+    ]
+   },
+   {
+    "theme": "USD selling rejected",
+    "evidence": "USD strength -0.013% after trough -0.211%; DXY -0.068%.",
+    "currencies": [
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Only muted UoM and Trump events; sold to -0.21% then recovered 63%, closing flat.",
+   "EUR": "Lagarde was muted; EUR sold to -0.22% and recovered 64% without a clear catalyst.",
+   "JPY": "No own releases; safe-haven bid took it to +0.658%, closed at its best.",
+   "GBP": "Retail sales beat gave a normal +0.066% boost that faded; closed -0.035%.",
+   "AUD": "No own releases; fell 0.592% to bottom of range with no clear catalyst.",
+   "CAD": "No own releases; slipped 0.07% with no clear catalyst.",
+   "CHF": "No own releases; gained 0.469% on safe-haven demand and held range.",
+   "NZD": "No own releases; fell 0.357% on risk-off, held range."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD chopped through seven alternating legs inside its 42.6-pip range, closing at 1.09729 (-5.4 pips); only the UoM leg (15:45-16:30) had a medium-confidence USD catalyst, and the final down leg had no clear cause."
+  },
+  "polarity_reads": [
+   {
+    "event": "Revised UoM Consumer Sentiment +1 more",
+    "read": "Muted move with basket 0.000% shows USD not positioned for a data surprise; selling into the event was quickly faded. AUD/USD was the most sensitive mover at -0.063% (-4.2 pips), but the aggregate was noise."
+   },
+   {
+    "event": "President Trump Speaks",
+    "read": "Basket was muted (0.013%), but high-beta and commodity FX showed significant sensitivity—NZD/CHF -0.1% sigma -3.13, USD/ZAR +0.137%, AUD/USD -0.09%. This implies the market treats Trump headlines as a risk-off/EM-negative impulse, not a clean USD event."
+   },
+   {
+    "event": "Retail Sales m/m",
+    "read": "Normal polarity with GBP +0.066% on a beat shows no crowded short GBP; the move was modest and faded, suggesting GBP upside is not chasing data."
+   },
+   {
+    "event": "ECB President Lagarde Speaks",
+    "read": "Muted -0.022% and no sustained EUR impulse; EUR was not positioned for hawkish or dovish surprise, leaving EUR cross-driven."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Risk-off persist (safe-haven extension)",
+    "probability": 0.45,
+    "thesis": "Risk-off tone continues with VIX elevated and no catalyst to reverse; JPY and CHF stay bid while high-beta AUD/NZD under pressure.",
+    "triggers": [
+     "French/German PMIs disappoint",
+     "Geopolitical headlines escalate (Iran/Trump)",
+     "Equity futures extend lower"
+    ],
+    "invalidation": "A strong US services PMI or positive geopolitical news reverses the safe-haven bid.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 60,
+      "rationale": "Safe-haven JPY bid persists; USD/JPY already fell 106.9 pips, next leg can test lower."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 30,
+      "rationale": "EUR catalyst-free selling; 42.6-pip range allows 30 pips downside."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 25,
+      "rationale": "AUD weakest with no catalyst; 54.7-pip range gives room to extend lower."
+     }
+    ]
+   },
+   {
+    "name": "Risk stabilizes / mean reversion",
+    "probability": 0.35,
+    "thesis": "Risk-off eases and high-beta currencies bounce off lows as PMIs show stable growth, taking profit on JPY/CHF longs.",
+    "triggers": [
+     "French/German PMIs not as weak as feared",
+     "US equity futures recover",
+     "Oil prices stabilize"
+    ],
+    "invalidation": "A fresh geopolitical shock or sharply weak PMIs reassert safe-haven demand.",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 35,
+      "rationale": "AUD bounces from 0.66316 low inside its 54.7-pip range."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 50,
+      "rationale": "Profit-taking on JPY longs unwinds some of the 106.9-pip drop."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 20,
+      "rationale": "EUR/USD stays within its 42.6-pip range with no fresh catalyst."
+     }
+    ]
+   },
+   {
+    "name": "USD-led data beat",
+    "probability": 0.2,
+    "thesis": "Strong US flash PMIs lift USD and unwind safe-haven trades; EUR/GBP lag.",
+    "triggers": [
+     "US flash services PMI > 55.6",
+     "US manufacturing > 54.5",
+     "VIX drops back below 25.5"
+    ],
+    "invalidation": "PMIs miss or geopolitical headlines worsen.",
+    "pair_paths": [
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 80,
+      "rationale": "USD strength unwinds safe-haven JPY bid, retracing part of the 129.0-pip range."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 40,
+      "rationale": "EUR softness meets USD bid; 42.6-pip range supports a 40-pip push lower."
+     },
+     {
+      "instrument": "GBP/USD",
+      "direction": "down",
+      "magnitude_pips": 35,
+      "rationale": "GBP fades after retail sales boost; 50.5-pip range allows 35 pips downside."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "Flash PMIs drive sharp repricing",
+    "why_it_matters": "PMIs are the first hard data of the session and can break the no-catalyst drift.",
+    "watch": "French/German/UK/US flash PMIs at 09:15-15:45."
+   },
+   {
+    "risk": "Geopolitical headline risk (Iran/Trump)",
+    "why_it_matters": "VIX already up 9.2%; Trump headlines moved NZD/CHF -3.13 sigma.",
+    "watch": "Iran/Trump news flow and oil."
+   },
+   {
+    "risk": "USD squeeze after muted data",
+    "why_it_matters": "USD selling was rejected and DXY -0.068% only, leaving two-way risk.",
+    "watch": "DXY 103.715 and USD/JPY 158.769."
+   }
+  ],
+  "calendar_ahead_note": "Next session's flash PMIs from France, Germany, UK, and US can change the picture: weak EZ PMIs would extend EUR selling, strong US services PMI could lift USD/JPY, and any PMI surprise may dominate given today's muted reactions.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 20167,
+   "completion_tokens": 7240,
+   "total_tokens": 27407,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5145
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 19527
+  }
+ }
+}
