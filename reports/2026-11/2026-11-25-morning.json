@@ -1,0 +1,1878 @@
+{
+ "meta": {
+  "date": "2026-11-25",
+  "edition": "morning",
+  "edition_title": "Overnight Recap",
+  "window_label": "overnight",
+  "sessions": "NY afternoon -> Asia",
+  "weekend_bridged": false,
+  "hours": 12.0,
+  "start_utc": "2026-11-24T18:00:00+00:00",
+  "end_utc": "2026-11-25T06:00:00+00:00",
+  "start_local": "2026-11-24T19:00:00+01:00",
+  "end_local": "2026-11-25T07:00:00+01:00",
+  "fwd_start_utc": "2026-11-25T06:00:00+00:00",
+  "fwd_end_utc": "2026-11-25T18:00:00+00:00",
+  "generated_utc": "2026-11-25T06:45:16.552657+00:00",
+  "partial": false,
+  "coverage_min": 720,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 27
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "morning",
+   "covers": "overnight",
+   "sessions": "NY afternoon -> Asia",
+   "from_local": "2026-11-24 19:00 CET",
+   "to_local": "2026-11-25 07:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "USD",
+    "rank": 1,
+    "strength_pct": 0.259,
+    "intraday_peak": 0.259,
+    "intraday_trough": -0.005,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Trimmed Mean CPI m/m +2 more",
+     "instrument": "AUD/USD",
+     "sigma": 7.25
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 2,
+    "strength_pct": 0.241,
+    "intraday_peak": 0.256,
+    "intraday_trough": 0.015,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Trimmed Mean CPI m/m +2 more",
+     "instrument": "USD/CAD",
+     "sigma": -2.89
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 3,
+    "strength_pct": 0.134,
+    "intraday_peak": 0.161,
+    "intraday_trough": -0.03,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 4,
+    "strength_pct": 0.133,
+    "intraday_peak": 0.142,
+    "intraday_trough": -0.049,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Trimmed Mean CPI m/m +2 more",
+     "instrument": "AUD/CHF",
+     "sigma": 6.62
+    }
+   },
+   {
+    "ccy": "GBP",
+    "rank": 5,
+    "strength_pct": -0.021,
+    "intraday_peak": -0.011,
+    "intraday_trough": -0.059,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "EUR",
+    "rank": 6,
+    "strength_pct": -0.035,
+    "intraday_peak": -0.019,
+    "intraday_trough": -0.091,
+    "shape": "closed at its best",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "NZD",
+    "rank": 7,
+    "strength_pct": -0.165,
+    "intraday_peak": 0.032,
+    "intraday_trough": -0.217,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Trimmed Mean CPI m/m +2 more",
+     "instrument": "AUD/NZD",
+     "sigma": 6.46
+    }
+   },
+   {
+    "ccy": "AUD",
+    "rank": 8,
+    "strength_pct": -0.545,
+    "intraday_peak": 0.105,
+    "intraday_trough": -0.564,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.10%, gave back 97%",
+    "own_releases": [
+     {
+      "title": "Trimmed Mean CPI m/m +2 more",
+      "impact": "High",
+      "actual": "0.5%",
+      "forecast": "0.3%",
+      "polarity": "normal",
+      "note": "beat surprise -> AUD stronger 0.185%"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Trimmed Mean CPI m/m +2 more",
+     "instrument": "AUD/USD",
+     "sigma": 7.25
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.294,
+    "from_EUR": -0.035,
+    "from_USD": -0.259,
+    "base_share": 0.12
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.28,
+    "from_GBP": -0.021,
+    "from_USD": -0.259,
+    "base_share": 0.08
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": -0.804,
+    "from_AUD": -0.545,
+    "from_USD": -0.259,
+    "base_share": 0.68
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.424,
+    "from_NZD": -0.165,
+    "from_USD": -0.259,
+    "base_share": 0.39
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.125,
+    "from_USD": 0.259,
+    "from_JPY": -0.134,
+    "base_share": 0.66
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.126,
+    "from_USD": 0.259,
+    "from_CHF": -0.133,
+    "base_share": 0.66
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.018,
+    "from_USD": 0.259,
+    "from_CAD": -0.241,
+    "base_share": 0.52
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.014,
+    "from_EUR": -0.035,
+    "from_GBP": 0.021,
+    "base_share": 0.62
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.17,
+    "from_EUR": -0.035,
+    "from_JPY": -0.134,
+    "base_share": 0.21
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.168,
+    "from_EUR": -0.035,
+    "from_CHF": -0.133,
+    "base_share": 0.21
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": 0.51,
+    "from_EUR": -0.035,
+    "from_AUD": 0.545,
+    "base_share": 0.06
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.276,
+    "from_EUR": -0.035,
+    "from_CAD": -0.241,
+    "base_share": 0.13
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": 0.129,
+    "from_EUR": -0.035,
+    "from_NZD": 0.165,
+    "base_share": 0.18
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": -0.156,
+    "from_GBP": -0.021,
+    "from_JPY": -0.134,
+    "base_share": 0.14
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": -0.154,
+    "from_GBP": -0.021,
+    "from_CHF": -0.133,
+    "base_share": 0.14
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": 0.524,
+    "from_GBP": -0.021,
+    "from_AUD": 0.545,
+    "base_share": 0.04
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.262,
+    "from_GBP": -0.021,
+    "from_CAD": -0.241,
+    "base_share": 0.08
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.143,
+    "from_GBP": -0.021,
+    "from_NZD": 0.165,
+    "base_share": 0.11
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": -0.68,
+    "from_AUD": -0.545,
+    "from_JPY": -0.134,
+    "base_share": 0.8
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": -0.678,
+    "from_AUD": -0.545,
+    "from_CHF": -0.133,
+    "base_share": 0.8
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": -0.786,
+    "from_AUD": -0.545,
+    "from_CAD": -0.241,
+    "base_share": 0.69
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": -0.381,
+    "from_AUD": -0.545,
+    "from_NZD": 0.165,
+    "base_share": 0.77
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.299,
+    "from_NZD": -0.165,
+    "from_JPY": -0.134,
+    "base_share": 0.55
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": -0.297,
+    "from_NZD": -0.165,
+    "from_CHF": -0.133,
+    "base_share": 0.55
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.405,
+    "from_NZD": -0.165,
+    "from_CAD": -0.241,
+    "base_share": 0.41
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.106,
+    "from_CAD": 0.241,
+    "from_JPY": -0.134,
+    "base_share": 0.64
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.108,
+    "from_CAD": 0.241,
+    "from_CHF": -0.133,
+    "base_share": 0.64
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.002,
+    "from_CHF": 0.133,
+    "from_JPY": -0.134,
+    "base_share": 0.5
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.297
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.276
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": 0.154
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": 0.152
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": -0.024
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.04
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.188
+   },
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": -0.621
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.09408,
+    "chg_pips": -32.5,
+    "chg_pct": -0.296,
+    "range_pips": 34.3,
+    "close_in_range": 0.01,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.30849,
+    "chg_pips": -36.7,
+    "chg_pct": -0.28,
+    "range_pips": 40.0,
+    "close_in_range": 0.03,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.65896,
+    "chg_pips": -53.3,
+    "chg_pct": -0.802,
+    "range_pips": 77.1,
+    "close_in_range": 0.03,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.54641,
+    "chg_pips": -23.3,
+    "chg_pct": -0.425,
+    "range_pips": 28.2,
+    "close_in_range": 0.05,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 159.41,
+    "chg_pips": 19.9,
+    "chg_pct": 0.125,
+    "range_pips": 39.0,
+    "close_in_range": 0.78,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83641,
+    "chg_pips": 10.6,
+    "chg_pct": 0.127,
+    "range_pips": 17.5,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42788,
+    "chg_pips": 1.7,
+    "chg_pct": 0.012,
+    "range_pips": 18.8,
+    "close_in_range": 1.0,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.91511,
+    "chg_pips": -15.3,
+    "chg_pct": -0.167,
+    "range_pips": 16.0,
+    "close_in_range": 0.02,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.579,
+    "chg_pips": -0.2,
+    "chg_pct": -0.001,
+    "range_pips": 61.3,
+    "close_in_range": 0.73,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.20589,
+    "chg_pips": -46.1,
+    "chg_pct": -0.381,
+    "range_pips": 118.8,
+    "close_in_range": 0.05,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83613,
+    "chg_pips": -1.1,
+    "chg_pct": -0.013,
+    "range_pips": 6.9,
+    "close_in_range": 0.62,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.55116,
+    "chg_pips": -37.5,
+    "chg_pct": -0.676,
+    "range_pips": 62.4,
+    "close_in_range": 0.04,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.45702,
+    "chg_pips": -13.6,
+    "chg_pct": -0.297,
+    "range_pips": 17.1,
+    "close_in_range": 0.09,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.27332,
+    "chg_pips": 447.7,
+    "chg_pct": 0.438,
+    "range_pips": 555.3,
+    "close_in_range": 0.98,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.83117,
+    "chg_pips": 423.8,
+    "chg_pct": 0.433,
+    "range_pips": 536.9,
+    "close_in_range": 0.94,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 17.61097,
+    "chg_pips": 834.9,
+    "chg_pct": 0.476,
+    "range_pips": 1130.6,
+    "close_in_range": 1.0,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 19.48971,
+    "chg_pips": 969.8,
+    "chg_pct": 0.5,
+    "range_pips": 1132.1,
+    "close_in_range": 0.95,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 103.9324,
+    "chg_pips": 23.6,
+    "chg_pct": 0.228,
+    "range_pips": 26.4,
+    "close_in_range": 0.98,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 24.70436,
+    "chg_pips": 36.5,
+    "chg_pct": 1.501,
+    "range_pips": 120.0,
+    "close_in_range": 0.7,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -29.9,
+    "ret_pct": -0.273,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "21:15",
+    "dir": "down",
+    "pips": -5.5,
+    "ret_pct": -0.035,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "21:15",
+    "to": "00:00",
+    "dir": "up",
+    "pips": 10.3,
+    "ret_pct": 0.065,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "00:00",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -16.9,
+    "ret_pct": -0.106,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SPPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:45",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 28.7,
+    "ret_pct": 0.18,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -35.2,
+    "ret_pct": -0.268,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "22:45",
+    "dir": "up",
+    "pips": 2.9,
+    "ret_pct": 0.035,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "22:45",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -4.6,
+    "ret_pct": -0.055,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:30",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 12.0,
+    "ret_pct": 0.144,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:15",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -8.0,
+    "ret_pct": -0.096,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "03:15",
+    "to": "04:45",
+    "dir": "up",
+    "pips": 10.6,
+    "ret_pct": 0.127,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "04:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -1.7,
+    "ret_pct": -0.02,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "01:00",
+    "dir": "down",
+    "pips": -11.9,
+    "ret_pct": -0.179,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "01:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 21.3,
+    "ret_pct": 0.321,
+    "minutes": 45,
+    "cause": "Trimmed Mean CPI m/m +3 more",
+    "cause_ccy": "AUD",
+    "confidence": "high",
+    "note": "AUD Trimmed Mean CPI m/m +3 more (actual 0.5% vs forecast 0.3%) -- +12.6 in the first 15 min, 59% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Consumer Price Index, Australia, October 2026",
+      "ccy": null,
+      "pips": 12.6,
+      "share_of_leg": 0.59
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -64.9,
+    "ret_pct": -0.975,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "20:00",
+    "dir": "down",
+    "pips": -8.3,
+    "ret_pct": -0.058,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "20:00",
+    "to": "22:15",
+    "dir": "up",
+    "pips": 6.7,
+    "ret_pct": 0.047,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "22:15",
+    "to": "23:45",
+    "dir": "down",
+    "pips": -8.4,
+    "ret_pct": -0.059,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "23:45",
+    "to": "00:45",
+    "dir": "up",
+    "pips": 9.0,
+    "ret_pct": 0.063,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "00:45",
+    "to": "03:15",
+    "dir": "down",
+    "pips": -10.4,
+    "ret_pct": -0.073,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trimmed Mean CPI m/m +3 more pushed it along (-3.6 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trimmed Mean CPI m/m +3 more",
+      "ccy": "AUD",
+      "pips": -3.6,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 16.0,
+    "ret_pct": 0.112,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -25.4,
+    "ret_pct": -0.463,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "21:15",
+    "dir": "down",
+    "pips": -5.2,
+    "ret_pct": -0.057,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "21:15",
+    "to": "22:30",
+    "dir": "up",
+    "pips": 3.7,
+    "ret_pct": 0.04,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "22:30",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -4.5,
+    "ret_pct": -0.049,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API: Crude +0.126M, Cushing -0.666M, Gasoline -0.047M, Di… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:30",
+    "to": "02:15",
+    "dir": "up",
+    "pips": 5.2,
+    "ret_pct": 0.057,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trimmed Mean CPI m/m +3 more pushed it along (+2.6 in 15 min, 50% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trimmed Mean CPI m/m +3 more",
+      "ccy": "AUD",
+      "pips": 2.6,
+      "share_of_leg": 0.5
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "02:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -11.8,
+    "ret_pct": -0.129,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -41.7,
+    "ret_pct": -0.219,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API: Crude +0.126M, Cushing -0.666M, Gasoline -0.047M, Di…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:00",
+    "to": "01:15",
+    "dir": "up",
+    "pips": 37.9,
+    "ret_pct": 0.199,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item SPPI y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "01:15",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -17.6,
+    "ret_pct": -0.092,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "02:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 18.8,
+    "ret_pct": 0.099,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "03:15",
+    "to": "04:00",
+    "dir": "down",
+    "pips": -23.3,
+    "ret_pct": -0.122,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "04:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 20.3,
+    "ret_pct": 0.107,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item BOJ Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 38.8,
+    "ret_pct": 0.321,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Consumer Price Index, Australia, October 2026 pushed it along (+21.6 in 15 min, 56% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Consumer Price Index, Australia, October 2026",
+      "ccy": null,
+      "pips": 21.6,
+      "share_of_leg": 0.56
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -84.3,
+    "ret_pct": -0.694,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "20:45",
+    "dir": "down",
+    "pips": -2.4,
+    "ret_pct": -0.029,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "20:45",
+    "to": "22:00",
+    "dir": "up",
+    "pips": 2.9,
+    "ret_pct": 0.035,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "22:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -3.6,
+    "ret_pct": -0.043,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API: Crude +0.126M, Cushing -0.666M, Gasoline -0.047M, Di… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "23:30",
+    "to": "04:15",
+    "dir": "up",
+    "pips": 3.7,
+    "ret_pct": 0.044,
+    "minutes": 285,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trimmed Mean CPI m/m +3 more pushed it along (+1.1 in 15 min, 30% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trimmed Mean CPI m/m +3 more",
+      "ccy": "AUD",
+      "pips": 1.1,
+      "share_of_leg": 0.3
+     }
+    ]
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "04:15",
+    "to": "05:15",
+    "dir": "down",
+    "pips": -2.8,
+    "ret_pct": -0.033,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "05:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 1.9,
+    "ret_pct": 0.023,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "01:00",
+    "dir": "down",
+    "pips": -9.4,
+    "ret_pct": -0.169,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API: Crude +0.126M, Cushing -0.666M, Gasoline -0.047M, Di… moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 20.9,
+    "ret_pct": 0.377,
+    "minutes": 45,
+    "cause": "Trimmed Mean CPI m/m +3 more",
+    "cause_ccy": "AUD",
+    "confidence": "high",
+    "note": "AUD Trimmed Mean CPI m/m +3 more (actual 0.5% vs forecast 0.3%) -- +11.8 in the first 15 min, 56% of the leg",
+    "in_leg_drivers": [
+     {
+      "title": "Consumer Price Index, Australia, October 2026",
+      "ccy": null,
+      "pips": 11.8,
+      "share_of_leg": 0.56
+     }
+    ]
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "01:45",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -50.3,
+    "ret_pct": -0.904,
+    "minutes": 300,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -14.1,
+    "ret_pct": -0.308,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API: Crude +0.126M, Cushing -0.666M, Gasoline -0.047M, Di…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:30",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 8.8,
+    "ret_pct": 0.193,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "00:15",
+    "to": "01:00",
+    "dir": "down",
+    "pips": -4.5,
+    "ret_pct": -0.098,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Monthly Report on the Services Producer Price Index…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "01:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 4.8,
+    "ret_pct": 0.105,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "No single trigger started this leg, but Trimmed Mean CPI m/m +3 more pushed it along (+1.7 in 15 min, 35% of the move).",
+    "in_leg_drivers": [
+     {
+      "title": "Trimmed Mean CPI m/m +3 more",
+      "ccy": "AUD",
+      "pips": 1.7,
+      "share_of_leg": 0.35
+     }
+    ]
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "02:00",
+    "to": "03:45",
+    "dir": "down",
+    "pips": -11.0,
+    "ret_pct": -0.24,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "03:45",
+    "to": "05:15",
+    "dir": "up",
+    "pips": 7.1,
+    "ret_pct": 0.155,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "05:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -6.1,
+    "ret_pct": -0.133,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 482.7,
+    "ret_pct": 0.472,
+    "minutes": 705,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -54.0,
+    "ret_pct": -0.055,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "23:30",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 501.1,
+    "ret_pct": 0.512,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "up",
+    "pips": 221.0,
+    "ret_pct": 0.126,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "21:30",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -505.9,
+    "ret_pct": -0.288,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "23:15",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 1110.7,
+    "ret_pct": 0.635,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "21:15",
+    "dir": "up",
+    "pips": 344.3,
+    "ret_pct": 0.177,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "21:15",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -315.3,
+    "ret_pct": -0.162,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "up",
+    "pips": 843.1,
+    "ret_pct": 0.434,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "20:15",
+    "dir": "up",
+    "pips": 79.5,
+    "ret_pct": 0.802,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "20:15",
+    "to": "21:30",
+    "dir": "down",
+    "pips": -70.0,
+    "ret_pct": -0.701,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "21:30",
+    "to": "23:00",
+    "dir": "up",
+    "pips": 47.2,
+    "ret_pct": 0.475,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "23:00",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -113.0,
+    "ret_pct": -1.133,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Consumer Price Index, Australia, October 2026 moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "21:30",
+    "dir": "down",
+    "pips": -139.5,
+    "ret_pct": -0.392,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "21:30",
+    "to": "00:15",
+    "dir": "up",
+    "pips": 177.8,
+    "ret_pct": 0.501,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item API Weekly Statistical Bulletin, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "00:15",
+    "to": "02:00",
+    "dir": "down",
+    "pips": -264.3,
+    "ret_pct": -0.741,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Monthly Report on the Services Producer Price Index…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "02:00",
+    "to": "03:15",
+    "dir": "up",
+    "pips": 253.3,
+    "ret_pct": 0.716,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "03:15",
+    "to": "06:45",
+    "dir": "down",
+    "pips": -422.5,
+    "ret_pct": -1.185,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Indicators for Core CPI, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "01:30",
+    "ccy": "AUD",
+    "impact": "High",
+    "event": "Trimmed Mean CPI m/m +2 more",
+    "actual": "0.5%",
+    "forecast": "0.3%",
+    "previous": "0.3%",
+    "polarity": "normal",
+    "polarity_note": "beat surprise -> AUD stronger 0.185%",
+    "own_ccy_impulse_pct": 0.185,
+    "top_movers": [
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.288,
+      "pips": 19.1,
+      "unit": "pips",
+      "sigma": 7.25
+     },
+     {
+      "instrument": "AUD/CHF",
+      "pct": 0.278,
+      "pips": 15.4,
+      "unit": "pips",
+      "sigma": 6.62
+     },
+     {
+      "instrument": "AUD/NZD",
+      "pct": 0.232,
+      "pips": 28.1,
+      "unit": "pips",
+      "sigma": 6.46
+     },
+     {
+      "instrument": "USD/NOK",
+      "pct": -0.064,
+      "pips": -63.2,
+      "unit": "pips",
+      "sigma": -3.09
+     },
+     {
+      "instrument": "USD/CAD",
+      "pct": -0.034,
+      "pips": -4.9,
+      "unit": "pips",
+      "sigma": -2.89
+     },
+     {
+      "instrument": "USD/SEK",
+      "pct": -0.052,
+      "pips": -53.3,
+      "unit": "pips",
+      "sigma": -2.49
+     }
+    ]
+   }
+  ],
+  "headline_count": 5,
+  "top_headlines": [
+   {
+    "time": "01:30",
+    "impact": "high",
+    "title": "Consumer Price Index, Australia, October 2026"
+   },
+   {
+    "time": "22:30",
+    "impact": "low",
+    "title": "API: Crude +0.126M, Cushing -0.666M, Gasoline -0.047M, Distillates +1.647M"
+   },
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Japan Monthly Report on the Services Producer Price Index (Preliminary Figures for October 2026)"
+   },
+   {
+    "time": "01:30",
+    "impact": "low",
+    "title": "Construction Work Done, Australia, Preliminary, September 2026"
+   },
+   {
+    "time": "06:00",
+    "impact": "low",
+    "title": "Japan Indicators for Core CPI"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Core PCE Price Index m/m",
+    "forecast": "0.3%",
+    "previous": "0.3%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "High",
+    "event": "Prelim GDP q/q",
+    "forecast": "3.5%",
+    "previous": "3.4%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "USD",
+    "impact": "Medium",
+    "event": "Prelim GDP Price Index q/q",
+    "forecast": "2.3%",
+    "previous": "2.3%"
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "Overnight tape was dominated by a broad USD bid and risk-off: DXY +0.228, VIX +1.501, with AUD the weakest major (-0.545) and CAD the strongest non-USD (+0.241). Australian CPI beat (0.5% vs 0.3% forecast) briefly lifted AUD +0.185% before the move was fully retraced. No other catalyst was assigned to most moves; many legs were flow-driven. USD/JPY closed +0.125%, USD/CHF +0.127%, while commodity and EM FX fell sharply.",
+  "themes": [
+   {
+    "theme": "Broad USD bid and risk-off",
+    "evidence": "DXY +0.228, VIX +1.501, USD strength +0.259; AUD -0.545 and NZD -0.165 weakest majors.",
+    "currencies": [
+     "USD",
+     "JPY",
+     "CHF",
+     "AUD",
+     "NZD"
+    ]
+   },
+   {
+    "theme": "Australian CPI spike faded",
+    "evidence": "AUD CPI actual 0.5% vs forecast 0.3% produced +0.185% initial impulse, then gave back 97% of its gain; AUD closed -0.545.",
+    "currencies": [
+     "AUD"
+    ]
+   },
+   {
+    "theme": "EM and commodity FX under pressure",
+    "evidence": "USD/SEK +0.438%, USD/NOK +0.433%, USD/ZAR +0.476%, USD/MXN +0.500%; Brent and gold legs closed lower.",
+    "currencies": [
+     "USD",
+     "SEK",
+     "NOK",
+     "ZAR",
+     "MXN"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "Broad USD strength with no own release; closed at best, +0.259 and DXY +0.228.",
+   "EUR": "No own release; closed at best but -0.035, no clear catalyst.",
+   "JPY": "No own release; held its range at +0.134; safe-haven bid with USD.",
+   "GBP": "No own release; closed at best but -0.021, no clear catalyst.",
+   "AUD": "AUD CPI beat gave +0.185%, but attempt rejected; closed -0.545, weakest major.",
+   "CAD": "No own catalyst; closed at best at +0.241, second strongest.",
+   "CHF": "No own release; closed at best at +0.133, no clear catalyst.",
+   "NZD": "No own release; held range at -0.165, weak with commodity bloc."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD had one down leg of -29.9 pips over the window; no catalyst could be assigned, and the AUD CPI item moved price the other way."
+  },
+  "polarity_reads": [
+   {
+    "event": "Trimmed Mean CPI m/m +2 more",
+    "read": "Normal polarity; the upside surprise produced a +0.185% AUD impulse, so no inverted positioning. The later full retracement suggests rally supply."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "USD bid extends into US data",
+    "probability": 0.45,
+    "thesis": "Broad USD strength persists; DXY closed at its best and USD is the strongest major. Risk-off keeps AUD/NZD heavy.",
+    "triggers": [
+     "US core PCE m/m prints at or above 0.3% forecast",
+     "Prelim GDP q/q prints at or above 3.5% forecast"
+    ],
+    "invalidation": "US core PCE m/m prints below 0.3% forecast",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 32.5,
+      "rationale": "Repeat of overnight -32.5 pip move with USD +0.259 strength; US data reinforces bid."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "down",
+      "magnitude_pips": 53.3,
+      "rationale": "AUD weakest at -0.545, risk-off extends; mirrors overnight -53.3 pip decline."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "up",
+      "magnitude_pips": 19.9,
+      "rationale": "USD bid with JPY held range; repeats overnight +19.9 pips."
+     }
+    ]
+   },
+   {
+    "name": "Oversold commodity FX rebound",
+    "probability": 0.35,
+    "thesis": "AUD/NZD and EUR/USD stabilize as USD rally pauses; positioning unwind lifts beaten-down commodity crosses.",
+    "triggers": [
+     "US core PCE m/m prints at forecast 0.3%",
+     "AUD/USD holds above 0.65896 (overnight close)"
+    ],
+    "invalidation": "US core PCE m/m surprises above 0.3%",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 21.3,
+      "rationale": "AUD/USD bounce equivalent to its CPI reaction leg +21.3 pips; short-covering."
+     },
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 34.3,
+      "rationale": "EUR/USD mean-reverts within its 34.3-pip overnight range."
+     },
+     {
+      "instrument": "USD/CAD",
+      "direction": "down",
+      "magnitude_pips": 18.8,
+      "rationale": "CAD stays second strongest +0.241; USD/CAD fades within 18.8-pip range."
+     }
+    ]
+   },
+   {
+    "name": "US data shock weakens USD",
+    "probability": 0.2,
+    "thesis": "Core PCE or GDP disappoints, forcing USD long unwind; risk sentiment stabilizes.",
+    "triggers": [
+     "US core PCE m/m prints below 0.3% forecast",
+     "Prelim GDP q/q prints below 3.5% forecast"
+    ],
+    "invalidation": "USD/JPY holds above 159.41 and DXY stays above 103.9324",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "up",
+      "magnitude_pips": 34.3,
+      "rationale": "EUR/USD reverses within its 34.3-pip range as USD weakens."
+     },
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 77.1,
+      "rationale": "AUD/USD recovers its 77.1-pip overnight range on USD unwind; commodity FX rebound."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "down",
+      "magnitude_pips": 39.0,
+      "rationale": "USD/JPY drops by its 39.0-pip overnight range as safe-haven JPY strengthens."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "US data surprise",
+    "why_it_matters": "With USD +0.259 and closed at best, a softer core PCE or GDP could force a sharp unwind.",
+    "watch": "14:30 CET Core PCE m/m (0.3% forecast) and Prelim GDP q/q (3.5% forecast)."
+   },
+   {
+    "risk": "AUD rejection continues",
+    "why_it_matters": "AUD CPI beat gave only +0.185% and then gave back 97%; AUD closed -0.545, so rallies are vulnerable.",
+    "watch": "AUD/USD holding below 0.65896 close."
+   },
+   {
+    "risk": "Thin overnight liquidity exaggerates moves",
+    "why_it_matters": "Most legs had no catalyst and several closed at extremes; moves may exaggerate.",
+    "watch": "VIX +1.501 and DXY +0.228."
+   }
+  ],
+  "calendar_ahead_note": "14:30 CET US Core PCE m/m (forecast 0.3%, prev 0.3%) and Prelim GDP q/q (forecast 3.5%, prev 3.4%) can extend the USD bid or force an unwind.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 14871,
+   "completion_tokens": 8766,
+   "total_tokens": 23637,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6854
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 14231
+  }
+ }
+}
