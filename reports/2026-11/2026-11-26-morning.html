@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>FX Overnight Recap 2026-11-26</title>
+<style>
+:root{
+  --bg:#fbfbfa; --panel:#fff; --fg:#1c1c1a; --dim:#6b6b66; --line:#e3e2de;
+  --flat:#eceae6; --up:#12783f; --down:#c0392b; --accent:#2b5cd9;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#131315; --panel:#1a1a1d; --fg:#e9e8e4; --dim:#96958f; --line:#2c2c30;
+  --flat:#262629; --up:#3ec27a; --down:#f0705f; --accent:#7aa2ff;
+}}
+:root[data-theme=dark]{
+  --bg:#131315; --panel:#1a1a1d; --fg:#e9e8e4; --dim:#96958f; --line:#2c2c30;
+  --flat:#262629; --up:#3ec27a; --down:#f0705f; --accent:#7aa2ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:17px;margin:44px 0 12px;letter-spacing:-.01em;
+  padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-size:14px;margin:22px 0 8px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.07em}
+p{margin:0 0 10px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.sub{color:var(--dim);font-size:13.5px;margin-bottom:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.dim{color:var(--dim)}
+.nowrap{white-space:nowrap}
+.up{color:var(--up)} .down{color:var(--down)}
+td.dir{text-align:center;font-size:11px;width:20px}
+.lede{font-size:16.5px;line-height:1.6;margin-bottom:18px}
+.empty,.warn{color:var(--dim);font-size:13.5px;background:var(--flat);
+  padding:10px 13px;border-radius:7px;border:1px solid var(--line)}
+
+/* header strip */
+.strip{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}
+.kv{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:8px 12px;min-width:96px}
+.kv .k{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em}
+.kv .v{font-family:var(--mono);font-size:15px;font-weight:600;margin-top:2px}
+
+/* market map */
+.mm-scroll{overflow-x:auto;padding-bottom:6px}
+.mm{display:flex;gap:5px;min-width:760px}
+.mm-col{flex:1 1 0;display:flex;flex-direction:column;gap:2px;min-width:96px}
+.mm-cell{height:32px;border-radius:4px;padding:0 8px;display:flex;
+  align-items:center;justify-content:space-between;font-size:11.5px}
+.mm-pair{font-weight:600;letter-spacing:-.01em}
+.mm-val{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.mm-head{height:38px;border-radius:4px;background:var(--panel);
+  border:1px solid var(--line);display:flex;align-items:center;
+  justify-content:space-between;padding:0 8px;margin:3px 0}
+.mm-head b{font-size:14px;letter-spacing:.02em}
+.mm-head span{font-family:var(--mono);font-size:11px;color:var(--dim)}
+
+/* tables */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw table{min-width:430px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-weight:600;font-size:10.5px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.07em;padding:0 9px 7px;
+  border-bottom:1px solid var(--line)}
+th.num{text-align:right}
+td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+
+.drivers{list-style:none;margin:0 0 4px;padding:0}
+.drivers li{display:flex;gap:10px;align-items:baseline;padding:7px 0;
+  border-bottom:1px solid var(--line);font-size:13.5px}
+.drivers li:last-child{border-bottom:none}
+.dr-ccy{font-weight:700;width:38px;flex:none}
+.dr-str{font-family:var(--mono);font-size:12px;width:56px;flex:none;text-align:right}
+.dr-txt{flex:1}
+.dr-note{display:block;font-style:normal;font-family:var(--mono);
+  font-size:11.5px;color:var(--dim);margin-top:2px}
+
+/* the dollar grid: six buckets across, one currency per row */
+table.grid{font-size:12.5px;min-width:900px}
+table.grid th.gcol{vertical-align:top;padding:0 6px 7px;text-align:center;
+  border-bottom:1px solid var(--line)}
+table.grid th.gcol.day{background:var(--flat)}
+.gt{display:block;font-family:var(--mono);font-size:10.5px;color:var(--fg);
+  font-weight:700;letter-spacing:0;text-transform:none;margin-bottom:3px}
+.gev{display:block;font-size:9px;font-weight:600;line-height:1.35;
+  padding:1px 4px;border-radius:3px;margin-bottom:1px;text-transform:none;
+  letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+table.grid th.grow{text-align:left;font-size:12.5px;color:var(--fg);
+  text-transform:none;letter-spacing:0;padding:6px 9px;white-space:nowrap;
+  border-bottom:1px solid var(--line)}
+table.grid th.grow b{font-size:13px}
+.gq{display:block;font-family:var(--mono);font-size:9.5px;color:var(--dim);
+  font-weight:400;margin-top:1px}
+table.grid td{padding:6px 7px;line-height:1.3}
+table.grid td em{display:block;font-style:normal;font-family:var(--mono);
+  font-size:10px;opacity:.65;margin-top:1px}
+table.grid td.day{background:var(--flat);font-weight:700}
+table.grid tbody tr:hover td{background:var(--flat)}
+table.grid tr.gsep th{font-size:9.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.08em;padding-top:12px;font-weight:600}
+table.grid tr.gsep th b{font-weight:600}
+
+table.crosses{font-size:13px;min-width:760px}
+table.crosses td.mono{font-size:12.5px}
+
+/* badges */
+.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-right:6px;
+  vertical-align:1px}
+.pol-normal{background:rgba(18,120,63,.15);color:var(--up)}
+.pol-inverted{background:rgba(192,57,43,.16);color:var(--down)}
+.pol-muted{background:var(--flat);color:var(--dim)}
+.imp{display:inline-block;font-size:9.5px;font-weight:700;padding:2px 5px;
+  border-radius:3px;text-transform:uppercase;letter-spacing:.04em}
+.imp-high{background:rgba(192,57,43,.16);color:var(--down)}
+.imp-medium{background:rgba(214,138,26,.18);color:#c07d10}
+.imp-low{background:var(--flat);color:var(--dim)}
+.chip{display:inline-block;background:var(--flat);color:var(--dim);font-size:10px;
+  font-weight:700;padding:1px 5px;border-radius:3px;margin-left:5px}
+
+/* reactions */
+.react{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;margin-bottom:11px}
+.react-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.react-head .t{color:var(--dim);font-size:13px}
+.react-head .ccy{font-weight:700;font-size:13px}
+.react-head .rtitle{flex:1 1 240px;font-weight:600}
+.members{color:var(--dim);font-size:12px;margin-top:4px}
+.react-nums{font-family:var(--mono);font-size:12.5px;color:var(--dim);margin-top:7px}
+.react-note{font-size:13.5px;margin-top:5px}
+.mv-head{font-size:10.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.06em;margin:11px 0 5px}
+.movers{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.movers li{display:flex;gap:7px;align-items:baseline;background:var(--flat);
+  border-radius:6px;padding:4px 9px;font-size:12.5px}
+.mv-name{font-weight:600}
+.mv-sig{font-family:var(--mono);font-weight:700}
+.mv-pips{font-family:var(--mono);color:var(--dim);font-size:11.5px}
+
+/* analysis */
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:11px}
+.theme{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.theme-h{font-weight:650;margin-bottom:5px}
+.theme-b{font-size:13.5px;color:var(--dim)}
+.reads{margin:0;padding-left:19px} .reads li{margin-bottom:7px;font-size:13.5px}
+.scenarios{display:flex;flex-direction:column;gap:13px}
+.scen{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 17px}
+.scen-h{display:flex;align-items:baseline;gap:10px;margin-bottom:7px}
+.scen-p{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--accent)}
+.scen-h b{font-size:15.5px}
+.trig{margin:6px 0;padding-left:19px;font-size:13px;color:var(--dim)}
+.scen-inval{font-size:13px;color:var(--dim);margin:8px 0 4px}
+.paths{margin-top:9px}
+.risks{list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:11px}
+.risks li{background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--down);border-radius:9px;padding:12px 14px;font-size:13.5px}
+.risks li div{color:var(--dim);margin-top:4px}
+.watch{font-size:12.5px;font-family:var(--mono)}
+.heads{list-style:none;margin:0;padding:0}
+.heads li{display:flex;gap:9px;align-items:baseline;padding:6px 0;
+  border-bottom:1px solid var(--line);font-size:13.5px}
+.heads .t{color:var(--dim);font-size:12.5px}
+footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);
+  color:var(--dim);font-size:12.5px}
+@media(max-width:640px){.wrap{padding:20px 13px 60px}h1{font-size:21px}}
+</style></head><body>
+<div class="wrap">
+<h1>FX Overnight Recap &mdash; 2026-11-26</h1>
+<div class="sub">Wed 25 Nov 19:00 &rarr; Thu 26 Nov 07:00 CET &middot; NY afternoon -&gt; Asia</div>
+<div class="strip"><div class="kv"><div class="k">window</div><div class="v ">12h</div></div><div class="kv"><div class="k">strongest</div><div class="v ">AUD +0.47%</div></div><div class="kv"><div class="k">weakest</div><div class="v ">CHF -0.21%</div></div><div class="kv"><div class="k">releases</div><div class="v ">3 timed</div></div><div class="kv"><div class="k">headlines</div><div class="v ">5</div></div><div class="kv"><div class="k">instruments</div><div class="v ">38</div></div></div>
+
+<h2>Where the money went</h2>
+<p class="lede">Overnight G10 trade was driven by flow, not news: all eight currencies had no own releases and no leg found a clear catalyst. AUD led with +0.41% currency strength while CHF lagged at -0.187%; USD closed at its best and DXY rose +0.199% as VIX dropped -5.341%. EUR/USD fell -22.8 pips to 1.09607 and USD/CHF rose +21.8 pips to 0.83198, both drift moves. The calendar ahead is empty, so the tape is left to technicals and risk appetite.</p>
+<div class="themes">
+<div class="theme"><div class="theme-h">No fundamental catalyst drove the window<span class="chip">USD</span><span class="chip">EUR</span><span class="chip">JPY</span><span class="chip">GBP</span><span class="chip">AUD</span><span class="chip">CAD</span><span class="chip">CHF</span><span class="chip">NZD</span></div><div class="theme-b">All currency own_releases are empty and leg notes repeatedly say &#x27;too weak to own the move&#x27; or &#x27;Nothing on the wire&#x27;.</div></div>
+<div class="theme"><div class="theme-h">High-beta commodity FX outperformed the G10 funding complex<span class="chip">AUD</span><span class="chip">CHF</span><span class="chip">JPY</span><span class="chip">USD</span><span class="chip">NZD</span></div><div class="theme-b">AUD strength +0.41% against CHF -0.187%; AUD/USD +0.332% and AUD/CHF +0.601% while USD/JPY +0.159%.</div></div>
+</div>
+
+<h2>Currency market map</h2>
+<p class="sub">Every major against every other over the window. Columns ordered
+strongest to weakest by mean move against the other seven. Reciprocal cells are
+exact inverses, so USD/AUD is not simply the negative of AUD/USD.</p>
+<div class="mm-scroll"><div class="mm">
+<div class="mm-col">
+<div class="mm-pad" style="height:0px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 26%);color:#fff"><span class="mm-pair">AUD/CHF</span><span class="mm-val">+0.60%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 28%);color:#fff"><span class="mm-pair">AUD/EUR</span><span class="mm-val">+0.54%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 29%);color:#fff"><span class="mm-pair">AUD/JPY</span><span class="mm-val">+0.49%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 30%);color:#fff"><span class="mm-pair">AUD/CAD</span><span class="mm-val">+0.48%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 31%);color:#fff"><span class="mm-pair">AUD/GBP</span><span class="mm-val">+0.43%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 32%);color:#fff"><span class="mm-pair">AUD/NZD</span><span class="mm-val">+0.41%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 34%);color:#fff"><span class="mm-pair">AUD/USD</span><span class="mm-val">+0.33%</span></div>
+<div class="mm-head"><b>AUD</b><span>+0.47%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:34px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 36%);color:#fff"><span class="mm-pair">USD/CHF</span><span class="mm-val">+0.26%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 38%);color:#fff"><span class="mm-pair">USD/EUR</span><span class="mm-val">+0.21%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">USD/JPY</span><span class="mm-val">+0.16%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">USD/CAD</span><span class="mm-val">+0.15%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">USD/GBP</span><span class="mm-val">+0.10%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">USD/NZD</span><span class="mm-val">+0.07%</span></div>
+<div class="mm-head"><b>USD</b><span>+0.09%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 34%);color:#fff"><span class="mm-pair">USD/AUD</span><span class="mm-val">-0.33%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:68px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 38%);color:#fff"><span class="mm-pair">NZD/CHF</span><span class="mm-val">+0.19%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">NZD/EUR</span><span class="mm-val">+0.13%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">NZD/JPY</span><span class="mm-val">+0.08%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">NZD/CAD</span><span class="mm-val">+0.07%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">NZD/GBP</span><span class="mm-val">+0.02%</span></div>
+<div class="mm-head"><b>NZD</b><span>+0.00%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">NZD/USD</span><span class="mm-val">-0.07%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 32%);color:#fff"><span class="mm-pair">NZD/AUD</span><span class="mm-val">-0.41%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:102px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 39%);color:#fff"><span class="mm-pair">GBP/CHF</span><span class="mm-val">+0.16%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">GBP/EUR</span><span class="mm-val">+0.11%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">GBP/JPY</span><span class="mm-val">+0.06%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 43%);color:#fff"><span class="mm-pair">GBP/CAD</span><span class="mm-val">+0.04%</span></div>
+<div class="mm-head"><b>GBP</b><span>-0.02%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">GBP/NZD</span><span class="mm-val">-0.02%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">GBP/USD</span><span class="mm-val">-0.10%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 31%);color:#fff"><span class="mm-pair">GBP/AUD</span><span class="mm-val">-0.43%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:136px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 40%);color:#fff"><span class="mm-pair">CAD/CHF</span><span class="mm-val">+0.12%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">CAD/EUR</span><span class="mm-val">+0.07%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">CAD/JPY</span><span class="mm-val">+0.02%</span></div>
+<div class="mm-head"><b>CAD</b><span>-0.07%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 43%);color:#fff"><span class="mm-pair">CAD/GBP</span><span class="mm-val">-0.04%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">CAD/NZD</span><span class="mm-val">-0.07%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">CAD/USD</span><span class="mm-val">-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 30%);color:#fff"><span class="mm-pair">CAD/AUD</span><span class="mm-val">-0.47%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:170px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 41%);color:#fff"><span class="mm-pair">JPY/CHF</span><span class="mm-val">+0.10%</span></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">JPY/EUR</span><span class="mm-val">+0.05%</span></div>
+<div class="mm-head"><b>JPY</b><span>-0.09%</span></div>
+<div class="mm-cell" style="background:var(--flat);color:var(--fg)"><span class="mm-pair">JPY/CAD</span><span class="mm-val">-0.02%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">JPY/GBP</span><span class="mm-val">-0.06%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">JPY/NZD</span><span class="mm-val">-0.08%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">JPY/USD</span><span class="mm-val">-0.16%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 29%);color:#fff"><span class="mm-pair">JPY/AUD</span><span class="mm-val">-0.49%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:204px"></div>
+<div class="mm-cell" style="background:hsl(145 58% 42%);color:#fff"><span class="mm-pair">EUR/CHF</span><span class="mm-val">+0.05%</span></div>
+<div class="mm-head"><b>EUR</b><span>-0.15%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">EUR/JPY</span><span class="mm-val">-0.05%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">EUR/CAD</span><span class="mm-val">-0.07%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">EUR/GBP</span><span class="mm-val">-0.11%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">EUR/NZD</span><span class="mm-val">-0.13%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 38%);color:#fff"><span class="mm-pair">EUR/USD</span><span class="mm-val">-0.21%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 28%);color:#fff"><span class="mm-pair">EUR/AUD</span><span class="mm-val">-0.54%</span></div>
+</div>
+<div class="mm-col">
+<div class="mm-pad" style="height:238px"></div>
+<div class="mm-head"><b>CHF</b><span>-0.21%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 42%);color:#fff"><span class="mm-pair">CHF/EUR</span><span class="mm-val">-0.05%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 41%);color:#fff"><span class="mm-pair">CHF/JPY</span><span class="mm-val">-0.10%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 40%);color:#fff"><span class="mm-pair">CHF/CAD</span><span class="mm-val">-0.12%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 39%);color:#fff"><span class="mm-pair">CHF/GBP</span><span class="mm-val">-0.16%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 38%);color:#fff"><span class="mm-pair">CHF/NZD</span><span class="mm-val">-0.19%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 36%);color:#fff"><span class="mm-pair">CHF/USD</span><span class="mm-val">-0.26%</span></div>
+<div class="mm-cell" style="background:hsl(2 58% 26%);color:#fff"><span class="mm-pair">CHF/AUD</span><span class="mm-val">-0.60%</span></div>
+</div>
+</div></div>
+
+<h2>Event reaction functions and polarity</h2>
+<p class="sub">Each release is measured from the last complete bar before it.
+Polarity asks whether the currency moved the way its surprise implies &mdash;
+an <b>inverted</b> read is the one worth acting on.</p>
+<p class="empty">No medium- or high-impact release landed in this window.</p>
+
+<h2>The session against the dollar</h2>
+<p class="sub">Every row faces the same way &mdash; <b>currency vs USD</b> &mdash; so any cross is the difference of two rows: EUR/CHF is the EUR row minus the CHF row. Rows marked with a quote in grey are inverted from the pair the market quotes, so a positive JPY reading is USD/JPY falling. Pips keep the traded pair&rsquo;s own tick. Buckets are 2 hours and chain exactly into the day column.</p><div class="tw"><table class="grid"><thead><tr><th></th><th class="gcol"><span class="gt">19:00&ndash;21:00</span></th><th class="gcol"><span class="gt">21:00&ndash;23:00</span></th><th class="gcol"><span class="gt">23:00&ndash;01:00</span></th><th class="gcol"><span class="gt">01:00&ndash;03:00</span><span class="gev imp-medium" title="01:30 Private New Capital Expenditure and Expected Expenditure, Australia, September 2026">· Private New Capital E…</span></th><th class="gcol"><span class="gt">03:00&ndash;05:00</span></th><th class="gcol"><span class="gt">05:00&ndash;07:00</span></th><th class="gcol day"><span class="gt">day</span></th></tr></thead><tbody><tr><th class="grow"><b>AUD</b>/USD<span class="gq"></span></th><td class="num up">+0.12%<em>+8</em></td><td class="num up">+0.01%<em>+0</em></td><td class="num down">-0.02%<em>-1</em></td><td class="num up">+0.07%<em>+4</em></td><td class="num up">+0.14%<em>+9</em></td><td class="num up">+0.01%<em>+1</em></td><td class="num day up">+0.33%<em>+22</em></td></tr><tr><th class="grow"><b>MXN</b>/USD<span class="gq">USD/MXN</span></th><td class="num up">+0.22%<em>+426</em></td><td class="num up">+0.04%<em>+84</em></td><td class="num down">-0.03%<em>-67</em></td><td class="num down">-0.13%<em>-259</em></td><td class="num up">+0.19%<em>+379</em></td><td class="num down">-0.04%<em>-71</em></td><td class="num day up">+0.25%<em>+492</em></td></tr><tr><th class="grow"><b>ZAR</b>/USD<span class="gq">USD/ZAR</span></th><td class="num up">+0.13%<em>+228</em></td><td class="num up">+0.05%<em>+94</em></td><td class="num down">-0.02%<em>-28</em></td><td class="num down">-0.01%<em>-26</em></td><td class="num up">+0.11%<em>+185</em></td><td class="num down">-0.08%<em>-147</em></td><td class="num day up">+0.17%<em>+306</em></td></tr><tr><th class="grow"><b>NOK</b>/USD<span class="gq">USD/NOK</span></th><td class="num up">+0.04%<em>+34</em></td><td class="num up">+0.03%<em>+27</em></td><td class="num down">-0.02%<em>-24</em></td><td class="num down">-0.09%<em>-84</em></td><td class="num up">+0.01%<em>+14</em></td><td class="num up">+0.03%<em>+33</em></td><td class="num day down">-0.00%<em>-0</em></td></tr><tr><th class="grow"><b>NZD</b>/USD<span class="gq"></span></th><td class="num up">+0.04%<em>+2</em></td><td class="num down">-0.04%<em>-2</em></td><td class="num down">-0.03%<em>-2</em></td><td class="num up">+0.00%<em>+0</em></td><td class="num down">-0.04%<em>-2</em></td><td class="num down">-0.01%<em>-1</em></td><td class="num day down">-0.07%<em>-4</em></td></tr><tr><th class="grow"><b>GBP</b>/USD<span class="gq"></span></th><td class="num up">+0.05%<em>+7</em></td><td class="num down">-0.05%<em>-7</em></td><td class="num down">-0.04%<em>-5</em></td><td class="num down">-0.01%<em>-2</em></td><td class="num down">-0.07%<em>-9</em></td><td class="num up">+0.01%<em>+2</em></td><td class="num day down">-0.10%<em>-13</em></td></tr><tr><th class="grow"><b>CAD</b>/USD<span class="gq">USD/CAD</span></th><td class="num down">-0.02%<em>-3</em></td><td class="num down">-0.07%<em>-11</em></td><td class="num down">-0.01%<em>-1</em></td><td class="num down">-0.03%<em>-4</em></td><td class="num down">-0.00%<em>-1</em></td><td class="num down">-0.01%<em>-2</em></td><td class="num day down">-0.15%<em>-22</em></td></tr><tr><th class="grow"><b>JPY</b>/USD<span class="gq">USD/JPY</span></th><td class="num down">-0.18%<em>-29</em></td><td class="num up">+0.02%<em>+3</em></td><td class="num down">-0.02%<em>-3</em></td><td class="num up">+0.07%<em>+11</em></td><td class="num down">-0.04%<em>-7</em></td><td class="num down">-0.00%<em>-0</em></td><td class="num day down">-0.16%<em>-25</em></td></tr><tr><th class="grow"><b>SEK</b>/USD<span class="gq">USD/SEK</span></th><td class="num down">-0.04%<em>-40</em></td><td class="num down">-0.00%<em>-4</em></td><td class="num down">-0.03%<em>-30</em></td><td class="num down">-0.07%<em>-70</em></td><td class="num down">-0.02%<em>-18</em></td><td class="num down">-0.00%<em>-4</em></td><td class="num day down">-0.16%<em>-166</em></td></tr><tr><th class="grow"><b>EUR</b>/USD<span class="gq"></span></th><td class="num down">-0.04%<em>-4</em></td><td class="num down">-0.04%<em>-4</em></td><td class="num down">-0.04%<em>-5</em></td><td class="num down">-0.04%<em>-4</em></td><td class="num down">-0.05%<em>-5</em></td><td class="num up">+0.00%<em>+0</em></td><td class="num day down">-0.21%<em>-23</em></td></tr><tr><th class="grow"><b>CHF</b>/USD<span class="gq">USD/CHF</span></th><td class="num down">-0.12%<em>-10</em></td><td class="num down">-0.01%<em>-0</em></td><td class="num down">-0.04%<em>-3</em></td><td class="num down">-0.03%<em>-3</em></td><td class="num down">-0.04%<em>-3</em></td><td class="num down">-0.02%<em>-2</em></td><td class="num day down">-0.26%<em>-22</em></td></tr><tr class="gsep"><th class="grow">not currencies</th><td colspan="7"></td></tr><tr><th class="grow"><b>NDX/USD</b><span class="gq">points</span></th><td class="num up">+1.27%<em>+326</em></td><td class="num down">-0.08%<em>-21</em></td><td class="num up">+0.48%<em>+124</em></td><td class="num up">+0.52%<em>+135</em></td><td class="num up">+0.28%<em>+73</em></td><td class="num down">-0.03%<em>-7</em></td><td class="num day up">+2.45%<em>+630</em></td></tr><tr><th class="grow"><b>Gold/USD</b><span class="gq">pips ($0.10)</span></th><td class="num up">+0.91%<em>+319</em></td><td class="num up">+1.20%<em>+424</em></td><td class="num down">-0.34%<em>-122</em></td><td class="num down">-0.18%<em>-63</em></td><td class="num up">+0.14%<em>+49</em></td><td class="num up">+0.14%<em>+49</em></td><td class="num day up">+1.87%<em>+657</em></td></tr><tr><th class="grow"><b>SPX/USD</b><span class="gq">points</span></th><td class="num up">+0.66%<em>+47</em></td><td class="num up">+0.04%<em>+3</em></td><td class="num up">+0.42%<em>+30</em></td><td class="num up">+0.21%<em>+15</em></td><td class="num up">+0.10%<em>+8</em></td><td class="num up">+0.00%<em>+0</em></td><td class="num day up">+1.45%<em>+103</em></td></tr><tr><th class="grow"><b>Brent/USD</b><span class="gq">pips ($0.01)</span></th><td class="num up">+0.25%<em>+26</em></td><td class="num up">+0.27%<em>+27</em></td><td class="num up">+0.06%<em>+6</em></td><td class="num down">-0.25%<em>-25</em></td><td class="num up">+0.35%<em>+36</em></td><td class="num up">+0.07%<em>+7</em></td><td class="num day up">+0.76%<em>+77</em></td></tr></tbody></table></div>
+
+<h3>Why each currency moved</h3>
+<ul class="drivers"><li><span class="dr-ccy">AUD</span><span class="dr-str up">+0.41%</span><span class="dr-txt">No clear catalyst; strongest major on flow, not on the Australian data. </span></li><li><span class="dr-ccy">USD</span><span class="dr-str up">+0.08%</span><span class="dr-txt">No clear catalyst; dollar drift higher with DXY closing near highs. <span class="badge pol-normal">closed at its best</span></span></li><li><span class="dr-ccy">NZD</span><span class="dr-str up">+0.00%</span><span class="dr-txt">No clear catalyst; attempted gain faded and it closed nearly flat. <span class="badge pol-inverted">attempt rejected</span><em class="dr-note">led +0.08%, gave back 95%</em></span></li><li><span class="dr-ccy">GBP</span><span class="dr-str down">-0.02%</span><span class="dr-txt">No clear catalyst; early gain was rejected and the currency drifted lower. <span class="badge pol-inverted">attempt rejected</span><em class="dr-note">led +0.08%, gave back 86%</em></span></li><li><span class="dr-ccy">CAD</span><span class="dr-str down">-0.07%</span><span class="dr-txt">No clear catalyst; soft tone across the range with no domestic triggers. </span></li><li><span class="dr-ccy">JPY</span><span class="dr-str down">-0.08%</span><span class="dr-txt">No clear catalyst; sold off then recovered despite BOJ comments failing to drive. <span class="badge pol-inverted">selling rejected</span><em class="dr-note">sold to -0.18%, recovered 72%</em></span></li><li><span class="dr-ccy">EUR</span><span class="dr-str down">-0.13%</span><span class="dr-txt">No clear catalyst; weakest alongside CHF on steady selling pressure. </span></li><li><span class="dr-ccy">CHF</span><span class="dr-str down">-0.19%</span><span class="dr-txt">No clear catalyst; weakest major with no Swiss news to explain the drop. </span></li></ul>
+
+<h2>Crosses &mdash; the day in one line each</h2>
+<p class="sub">Open to close over the window, sorted by size of move. Close-in-range says where in the day&rsquo;s span it finished: near 0 is on the low, near 100 on the high.</p><div class="tw"><table class="crosses"><thead><tr><th>cross</th><th class="num">open</th><th class="num">high</th><th class="num">low</th><th class="num">close</th><th class="num">chg</th><th class="num">pips</th><th class="num">range</th><th class="num">close in range</th></tr></thead><tbody><tr><td class="nowrap"><b>AUD/CHF</b></td><td class="num mono">0.54923</td><td class="num mono">0.55306</td><td class="num mono">0.54916</td><td class="num mono">0.55253</td><td class="num up">+0.60%</td><td class="num up">+33</td><td class="num dim">39</td><td class="num dim">86%</td></tr><tr><td class="nowrap"><b>EUR/AUD</b></td><td class="num mono">1.65926</td><td class="num mono">1.65942</td><td class="num mono">1.64848</td><td class="num mono">1.65029</td><td class="num down">-0.54%</td><td class="num down">-90</td><td class="num dim">109</td><td class="num dim">17%</td></tr><tr><td class="nowrap"><b>AUD/JPY</b></td><td class="num mono">105.19</td><td class="num mono">105.80</td><td class="num mono">105.18</td><td class="num mono">105.70</td><td class="num up">+0.49%</td><td class="num up">+52</td><td class="num dim">62</td><td class="num dim">84%</td></tr><tr><td class="nowrap"><b>AUD/CAD</b></td><td class="num mono">0.93994</td><td class="num mono">0.94517</td><td class="num mono">0.93985</td><td class="num mono">0.94441</td><td class="num up">+0.48%</td><td class="num up">+45</td><td class="num dim">53</td><td class="num dim">86%</td></tr><tr><td class="nowrap"><b>GBP/AUD</b></td><td class="num mono">1.98124</td><td class="num mono">1.98136</td><td class="num mono">1.97057</td><td class="num mono">1.97270</td><td class="num down">-0.43%</td><td class="num down">-85</td><td class="num dim">108</td><td class="num dim">20%</td></tr><tr><td class="nowrap"><b>AUD/NZD</b></td><td class="num mono">1.20651</td><td class="num mono">1.21198</td><td class="num mono">1.20619</td><td class="num mono">1.21144</td><td class="num up">+0.41%</td><td class="num up">+49</td><td class="num dim">58</td><td class="num dim">91%</td></tr><tr><td class="nowrap"><b>NZD/CHF</b></td><td class="num mono">0.45520</td><td class="num mono">0.45656</td><td class="num mono">0.45466</td><td class="num mono">0.45606</td><td class="num up">+0.19%</td><td class="num up">+9</td><td class="num dim">19</td><td class="num dim">74%</td></tr><tr><td class="nowrap"><b>GBP/CHF</b></td><td class="num mono">1.08826</td><td class="num mono">1.09087</td><td class="num mono">1.08810</td><td class="num mono">1.09005</td><td class="num up">+0.16%</td><td class="num up">+18</td><td class="num dim">28</td><td class="num dim">70%</td></tr><tr><td class="nowrap"><b>EUR/NZD</b></td><td class="num mono">2.00197</td><td class="num mono">2.00230</td><td class="num mono">1.99756</td><td class="num mono">1.99936</td><td class="num down">-0.13%</td><td class="num down">-26</td><td class="num dim">47</td><td class="num dim">38%</td></tr><tr><td class="nowrap"><b>CAD/CHF</b></td><td class="num mono">0.58431</td><td class="num mono">0.58526</td><td class="num mono">0.58377</td><td class="num mono">0.58503</td><td class="num up">+0.12%</td><td class="num up">+7</td><td class="num dim">15</td><td class="num dim">85%</td></tr><tr><td class="nowrap"><b>EUR/GBP</b></td><td class="num mono">0.83747</td><td class="num mono">0.83752</td><td class="num mono">0.83630</td><td class="num mono">0.83654</td><td class="num down">-0.11%</td><td class="num down">-9</td><td class="num dim">12</td><td class="num dim">20%</td></tr><tr><td class="nowrap"><b>CHF/JPY</b></td><td class="num mono">191.49</td><td class="num mono">191.76</td><td class="num mono">191.19</td><td class="num mono">191.29</td><td class="num down">-0.10%</td><td class="num down">-20</td><td class="num dim">57</td><td class="num dim">17%</td></tr><tr><td class="nowrap"><b>NZD/JPY</b></td><td class="num mono">87.177</td><td class="num mono">87.409</td><td class="num mono">87.145</td><td class="num mono">87.248</td><td class="num up">+0.08%</td><td class="num up">+7</td><td class="num dim">26</td><td class="num dim">39%</td></tr><tr><td class="nowrap"><b>EUR/CAD</b></td><td class="num mono">1.55971</td><td class="num mono">1.56044</td><td class="num mono">1.55806</td><td class="num mono">1.55865</td><td class="num down">-0.07%</td><td class="num down">-11</td><td class="num dim">24</td><td class="num dim">25%</td></tr><tr><td class="nowrap"><b>NZD/CAD</b></td><td class="num mono">0.77900</td><td class="num mono">0.78040</td><td class="num mono">0.77838</td><td class="num mono">0.77952</td><td class="num up">+0.07%</td><td class="num up">+5</td><td class="num dim">20</td><td class="num dim">56%</td></tr><tr><td class="nowrap"><b>GBP/JPY</b></td><td class="num mono">208.41</td><td class="num mono">209.00</td><td class="num mono">208.41</td><td class="num mono">208.53</td><td class="num up">+0.06%</td><td class="num up">+13</td><td class="num dim">59</td><td class="num dim">21%</td></tr><tr><td class="nowrap"><b>EUR/CHF</b></td><td class="num mono">0.91142</td><td class="num mono">0.91247</td><td class="num mono">0.91103</td><td class="num mono">0.91191</td><td class="num up">+0.05%</td><td class="num up">+5</td><td class="num dim">14</td><td class="num dim">61%</td></tr><tr><td class="nowrap"><b>EUR/JPY</b></td><td class="num mono">174.54</td><td class="num mono">174.87</td><td class="num mono">174.37</td><td class="num mono">174.45</td><td class="num down">-0.05%</td><td class="num down">-9</td><td class="num dim">51</td><td class="num dim">17%</td></tr><tr><td class="nowrap"><b>GBP/CAD</b></td><td class="num mono">1.86237</td><td class="num mono">1.86512</td><td class="num mono">1.86211</td><td class="num mono">1.86314</td><td class="num up">+0.04%</td><td class="num up">+8</td><td class="num dim">30</td><td class="num dim">34%</td></tr><tr><td class="nowrap"><b>GBP/NZD</b></td><td class="num mono">2.39046</td><td class="num mono">2.39123</td><td class="num mono">2.38774</td><td class="num mono">2.38993</td><td class="num down">-0.02%</td><td class="num down">-5</td><td class="num dim">35</td><td class="num dim">63%</td></tr><tr><td class="nowrap"><b>CAD/JPY</b></td><td class="num mono">111.90</td><td class="num mono">112.13</td><td class="num mono">111.84</td><td class="num mono">111.92</td><td class="num up">+0.02%</td><td class="num up">+2</td><td class="num dim">30</td><td class="num dim">27%</td></tr></tbody></table></div>
+
+<h2>Scenarios for the window ahead</h2>
+<div class="scenarios">
+<div class="scen"><div class="scen-h"><span class="scen-p">45%</span><b>Drift / range holds</b></div><p>With no event catalyst and an empty calendar, overnight ranges are likely to persist; flow-driven oscillations continue without directional follow-through.</p><ul class="trig"><li>VIX stays near 24.53</li><li>DXY holds above 103.74</li></ul><div class="scen-inval"><b>Invalidated if:</b> A headline breaks the range and VIX jumps.</div><div class="tw"><table class="paths"><thead><tr><th>instrument</th><th></th><th class="num">expected</th><th>why</th></tr></thead><tbody><tr><td class="nowrap">EUR/USD</td><td class="dir range">▬</td><td class="num range">+35.1</td><td>EUR/USD already sits at the bottom of its 35.1-pip overnight range with no catalyst to extend it.</td></tr><tr><td class="nowrap">USD/JPY</td><td class="dir range">▬</td><td class="num range">+34.9</td><td>USD/JPY chopped within a 34.9-pip range, with all legs driven by flow.</td></tr><tr><td class="nowrap">AUD/USD</td><td class="dir range">▬</td><td class="num range">+30.2</td><td>AUD strength is unexplained; with no fresh data, a 30.2-pip range is likely.</td></tr></tbody></table></div></div>
+<div class="scen"><div class="scen-h"><span class="scen-p">35%</span><b>Risk-on continuation</b></div><p>The VIX decline and AUD leadership extend, supporting commodity FX against CHF and JPY, while USD softens modestly.</p><ul class="trig"><li>VIX remains below 24.53</li><li>AUD/USD holds above 0.66411</li></ul><div class="scen-inval"><b>Invalidated if:</b> A risk-negative headline sends VIX back toward the overnight highs.</div><div class="tw"><table class="paths"><thead><tr><th>instrument</th><th></th><th class="num">expected</th><th>why</th></tr></thead><tbody><tr><td class="nowrap">AUD/USD</td><td class="dir up">▲</td><td class="num up">+22.0</td><td>AUD strength plus +22.0-pip overnight gain extends if risk appetite holds.</td></tr><tr><td class="nowrap">USD/CHF</td><td class="dir down">▼</td><td class="num down">+21.8</td><td>CHF demand on improved risk mood could unwind the +21.8-pip USD/CHF rise.</td></tr><tr><td class="nowrap">USD/JPY</td><td class="dir down">▼</td><td class="num down">+25.2</td><td>If risk-on persists, yen funding demand eases and USD/JPY retraces its +25.2-pip gain.</td></tr></tbody></table></div></div>
+<div class="scen"><div class="scen-h"><span class="scen-p">20%</span><b>Risk-off reversal</b></div><p>Crowded risk trades unwind after an unexplained rally; CHF/JPY and USD/JPY retrace as VIX lifts.</p><ul class="trig"><li>Equity futures turn lower</li><li>VIX rises above 24.53</li></ul><div class="scen-inval"><b>Invalidated if:</b> VIX stays near 24.53 and AUD holds gains.</div><div class="tw"><table class="paths"><thead><tr><th>instrument</th><th></th><th class="num">expected</th><th>why</th></tr></thead><tbody><tr><td class="nowrap">USD/JPY</td><td class="dir down">▼</td><td class="num down">+25.2</td><td>Safe-haven yen demand reasserts and erases the USD/JPY +25.2-pip overnight gain.</td></tr><tr><td class="nowrap">AUD/USD</td><td class="dir down">▼</td><td class="num down">+22.0</td><td>High-beta AUD reverses its +22.0-pip gain if risk sentiment sours.</td></tr><tr><td class="nowrap">USD/CHF</td><td class="dir down">▼</td><td class="num down">+21.8</td><td>CHF strengthens as funding currency and USD/CHF gives back +21.8 pips.</td></tr></tbody></table></div></div>
+</div>
+
+<h2>Risks</h2>
+<ul class="risks"><li><b>AUD strength is unexplained by fundamentals</b><div>AUD led with +0.41% strength but had no own release that could explain it; a reversal could be sharp in AUD/USD and AUD/NZD.</div><div class="watch">watch: AUD/USD close 0.66411, AUD/NZD close 1.21144</div></li><li><b>BOJ commentary failed to move JPY</b><div>USD/JPY and CHF/JPY chopped around with no clear directional driver, leaving shorts vulnerable if BOJ repricing returns.</div><div class="watch">watch: USD/JPY 159.162, CHF/JPY 191.293</div></li><li><b>Commodity markets whipsawed without clear catalysts</b><div>Oil and gold had large uncaused swings and risk indicators improved, but instability can flip risk sentiment.</div><div class="watch">watch: VIX close 24.52998, Brent leg swings</div></li></ul>
+
+<h2>Calendar ahead &mdash; Thu 07:00 to Thu 19:00 CET</h2>
+<p class="empty">Nothing above low impact scheduled in the next window.</p>
+
+
+<footer>Prices and headlines: ForexFactory Market Data Service (mds-api.forexfactory.com), 15-minute bars; reactions measured on 5-minute bars. Calendar with actuals: ForexFactory week page (safari17_0 profile). Analysis: deepseek-v4-pro.<br>Generated 2026-11-26 06:05 UTC.</footer>
+</div></body></html>
