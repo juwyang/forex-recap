@@ -1,0 +1,1879 @@
+{
+ "meta": {
+  "date": "2026-11-27",
+  "edition": "evening",
+  "edition_title": "Daily Recap",
+  "window_label": "full trading day",
+  "sessions": "Asia -> London -> NY morning",
+  "weekend_bridged": false,
+  "hours": 24.0,
+  "start_utc": "2026-11-26T18:00:00+00:00",
+  "end_utc": "2026-11-27T18:00:00+00:00",
+  "start_local": "2026-11-26T19:00:00+01:00",
+  "end_local": "2026-11-27T19:00:00+01:00",
+  "fwd_start_utc": "2026-11-27T18:00:00+00:00",
+  "fwd_end_utc": "2026-11-30T18:00:00+00:00",
+  "generated_utc": "2026-11-27T18:05:12.357444+00:00",
+  "partial": false,
+  "coverage_min": 1440,
+  "instruments_loaded": 38,
+  "instruments_failed": [],
+  "fx_coverage": 1.0,
+  "m5_loaded": 38,
+  "m5_failed": [],
+  "reaction_interval": "M5",
+  "missing_map_cells": [],
+  "source": "ForexFactory MDS (bars, news) + FF calendar week page (actuals)",
+  "calendar": {
+   "degraded": false,
+   "profile": "safari17_0",
+   "with_actual": 56
+  }
+ },
+ "facts": {
+  "window": {
+   "edition": "evening",
+   "covers": "full trading day",
+   "sessions": "Asia -> London -> NY morning",
+   "from_local": "2026-11-26 19:00 CET",
+   "to_local": "2026-11-27 19:00 CET"
+  },
+  "currency_drivers": [
+   {
+    "ccy": "AUD",
+    "rank": 1,
+    "strength_pct": 0.33,
+    "intraday_peak": 0.624,
+    "intraday_trough": 0.012,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "AUD/USD",
+     "sigma": 0.61
+    }
+   },
+   {
+    "ccy": "USD",
+    "rank": 2,
+    "strength_pct": 0.087,
+    "intraday_peak": 0.119,
+    "intraday_trough": -0.178,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.18%, recovered 89%",
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "Gold/USD",
+     "sigma": -0.63
+    }
+   },
+   {
+    "ccy": "CAD",
+    "rank": 3,
+    "strength_pct": 0.066,
+    "intraday_peak": 0.096,
+    "intraday_trough": -0.12,
+    "shape": "selling rejected",
+    "shape_note": "sold to -0.12%, recovered 86%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "GBP",
+    "rank": 4,
+    "strength_pct": 0.025,
+    "intraday_peak": 0.095,
+    "intraday_trough": -0.077,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "EUR/GBP",
+     "sigma": -0.59
+    }
+   },
+   {
+    "ccy": "JPY",
+    "rank": 5,
+    "strength_pct": -0.054,
+    "intraday_peak": 0.066,
+    "intraday_trough": -0.216,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [
+     {
+      "title": "Tokyo Core CPI y/y",
+      "impact": "Medium",
+      "actual": "2.9%",
+      "forecast": "3.0%",
+      "polarity": "muted",
+      "note": "basket moved -0.013%, inside the noise floor"
+     }
+    ],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "CHF/JPY",
+     "sigma": 0.57
+    }
+   },
+   {
+    "ccy": "NZD",
+    "rank": 6,
+    "strength_pct": -0.081,
+    "intraday_peak": 0.383,
+    "intraday_trough": -0.112,
+    "shape": "attempt rejected",
+    "shape_note": "led +0.38%, gave back 94%",
+    "own_releases": [],
+    "most_sensitive_to": null
+   },
+   {
+    "ccy": "CHF",
+    "rank": 7,
+    "strength_pct": -0.152,
+    "intraday_peak": 0.057,
+    "intraday_trough": -0.338,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "CHF/JPY",
+     "sigma": 0.57
+    }
+   },
+   {
+    "ccy": "EUR",
+    "rank": 8,
+    "strength_pct": -0.221,
+    "intraday_peak": 0.005,
+    "intraday_trough": -0.221,
+    "shape": "held its range",
+    "shape_note": null,
+    "own_releases": [],
+    "most_sensitive_to": {
+     "event": "Tokyo Core CPI y/y",
+     "instrument": "EUR/GBP",
+     "sigma": -0.59
+    }
+   }
+  ],
+  "pair_decomposition": [
+   {
+    "pair": "EUR/USD",
+    "move_pct": -0.308,
+    "from_EUR": -0.221,
+    "from_USD": -0.087,
+    "base_share": 0.72
+   },
+   {
+    "pair": "GBP/USD",
+    "move_pct": -0.063,
+    "from_GBP": 0.025,
+    "from_USD": -0.087,
+    "base_share": 0.22
+   },
+   {
+    "pair": "AUD/USD",
+    "move_pct": 0.242,
+    "from_AUD": 0.33,
+    "from_USD": -0.087,
+    "base_share": 0.79
+   },
+   {
+    "pair": "NZD/USD",
+    "move_pct": -0.168,
+    "from_NZD": -0.081,
+    "from_USD": -0.087,
+    "base_share": 0.48
+   },
+   {
+    "pair": "USD/JPY",
+    "move_pct": 0.141,
+    "from_USD": 0.087,
+    "from_JPY": 0.054,
+    "base_share": 0.62
+   },
+   {
+    "pair": "USD/CHF",
+    "move_pct": 0.239,
+    "from_USD": 0.087,
+    "from_CHF": 0.152,
+    "base_share": 0.37
+   },
+   {
+    "pair": "USD/CAD",
+    "move_pct": 0.022,
+    "from_USD": 0.087,
+    "from_CAD": -0.066,
+    "base_share": 0.57
+   },
+   {
+    "pair": "EUR/GBP",
+    "move_pct": -0.245,
+    "from_EUR": -0.221,
+    "from_GBP": -0.025,
+    "base_share": 0.9
+   },
+   {
+    "pair": "EUR/JPY",
+    "move_pct": -0.167,
+    "from_EUR": -0.221,
+    "from_JPY": 0.054,
+    "base_share": 0.8
+   },
+   {
+    "pair": "EUR/CHF",
+    "move_pct": -0.069,
+    "from_EUR": -0.221,
+    "from_CHF": 0.152,
+    "base_share": 0.59
+   },
+   {
+    "pair": "EUR/AUD",
+    "move_pct": -0.55,
+    "from_EUR": -0.221,
+    "from_AUD": -0.33,
+    "base_share": 0.4
+   },
+   {
+    "pair": "EUR/CAD",
+    "move_pct": -0.286,
+    "from_EUR": -0.221,
+    "from_CAD": -0.066,
+    "base_share": 0.77
+   },
+   {
+    "pair": "EUR/NZD",
+    "move_pct": -0.14,
+    "from_EUR": -0.221,
+    "from_NZD": 0.081,
+    "base_share": 0.73
+   },
+   {
+    "pair": "GBP/JPY",
+    "move_pct": 0.079,
+    "from_GBP": 0.025,
+    "from_JPY": 0.054,
+    "base_share": 0.31
+   },
+   {
+    "pair": "GBP/CHF",
+    "move_pct": 0.176,
+    "from_GBP": 0.025,
+    "from_CHF": 0.152,
+    "base_share": 0.14
+   },
+   {
+    "pair": "GBP/AUD",
+    "move_pct": -0.305,
+    "from_GBP": 0.025,
+    "from_AUD": -0.33,
+    "base_share": 0.07
+   },
+   {
+    "pair": "GBP/CAD",
+    "move_pct": -0.041,
+    "from_GBP": 0.025,
+    "from_CAD": -0.066,
+    "base_share": 0.27
+   },
+   {
+    "pair": "GBP/NZD",
+    "move_pct": 0.106,
+    "from_GBP": 0.025,
+    "from_NZD": 0.081,
+    "base_share": 0.23
+   },
+   {
+    "pair": "AUD/JPY",
+    "move_pct": 0.384,
+    "from_AUD": 0.33,
+    "from_JPY": 0.054,
+    "base_share": 0.86
+   },
+   {
+    "pair": "AUD/CHF",
+    "move_pct": 0.481,
+    "from_AUD": 0.33,
+    "from_CHF": 0.152,
+    "base_share": 0.68
+   },
+   {
+    "pair": "AUD/CAD",
+    "move_pct": 0.264,
+    "from_AUD": 0.33,
+    "from_CAD": -0.066,
+    "base_share": 0.83
+   },
+   {
+    "pair": "AUD/NZD",
+    "move_pct": 0.411,
+    "from_AUD": 0.33,
+    "from_NZD": 0.081,
+    "base_share": 0.8
+   },
+   {
+    "pair": "NZD/JPY",
+    "move_pct": -0.027,
+    "from_NZD": -0.081,
+    "from_JPY": 0.054,
+    "base_share": 0.6
+   },
+   {
+    "pair": "NZD/CHF",
+    "move_pct": 0.071,
+    "from_NZD": -0.081,
+    "from_CHF": 0.152,
+    "base_share": 0.35
+   },
+   {
+    "pair": "NZD/CAD",
+    "move_pct": -0.147,
+    "from_NZD": -0.081,
+    "from_CAD": -0.066,
+    "base_share": 0.55
+   },
+   {
+    "pair": "CAD/JPY",
+    "move_pct": 0.12,
+    "from_CAD": 0.066,
+    "from_JPY": 0.054,
+    "base_share": 0.55
+   },
+   {
+    "pair": "CAD/CHF",
+    "move_pct": 0.217,
+    "from_CAD": 0.066,
+    "from_CHF": 0.152,
+    "base_share": 0.3
+   },
+   {
+    "pair": "CHF/JPY",
+    "move_pct": -0.098,
+    "from_CHF": -0.152,
+    "from_JPY": 0.054,
+    "base_share": 0.74
+   }
+  ],
+  "currency_strength_pct": [
+   {
+    "ccy": "AUD",
+    "mean_vs_majors_pct": 0.377
+   },
+   {
+    "ccy": "USD",
+    "mean_vs_majors_pct": 0.1
+   },
+   {
+    "ccy": "CAD",
+    "mean_vs_majors_pct": 0.075
+   },
+   {
+    "ccy": "GBP",
+    "mean_vs_majors_pct": 0.028
+   },
+   {
+    "ccy": "JPY",
+    "mean_vs_majors_pct": -0.062
+   },
+   {
+    "ccy": "NZD",
+    "mean_vs_majors_pct": -0.092
+   },
+   {
+    "ccy": "CHF",
+    "mean_vs_majors_pct": -0.173
+   },
+   {
+    "ccy": "EUR",
+    "mean_vs_majors_pct": -0.252
+   }
+  ],
+  "majors": [
+   {
+    "instrument": "EUR/USD",
+    "close": 1.09371,
+    "chg_pips": -33.7,
+    "chg_pct": -0.307,
+    "range_pips": 52.1,
+    "close_in_range": 0.07,
+    "unit": "pips"
+   },
+   {
+    "instrument": "GBP/USD",
+    "close": 1.30991,
+    "chg_pips": -8.3,
+    "chg_pct": -0.063,
+    "range_pips": 41.5,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/USD",
+    "close": 0.66471,
+    "chg_pips": 16.0,
+    "chg_pct": 0.241,
+    "range_pips": 53.7,
+    "close_in_range": 0.36,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/USD",
+    "close": 0.54635,
+    "chg_pips": -9.3,
+    "chg_pct": -0.17,
+    "range_pips": 49.1,
+    "close_in_range": 0.16,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/JPY",
+    "close": 159.52,
+    "chg_pips": 22.8,
+    "chg_pct": 0.143,
+    "range_pips": 45.2,
+    "close_in_range": 0.84,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CHF",
+    "close": 0.83616,
+    "chg_pips": 20.0,
+    "chg_pct": 0.24,
+    "range_pips": 41.2,
+    "close_in_range": 0.71,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/CAD",
+    "close": 1.42456,
+    "chg_pips": 2.3,
+    "chg_pct": 0.016,
+    "range_pips": 38.7,
+    "close_in_range": 0.59,
+    "unit": "pips"
+   }
+  ],
+  "crosses": [
+   {
+    "instrument": "EUR/CHF",
+    "close": 0.91451,
+    "chg_pips": -6.4,
+    "chg_pct": -0.07,
+    "range_pips": 33.8,
+    "close_in_range": 0.22,
+    "unit": "pips"
+   },
+   {
+    "instrument": "CHF/JPY",
+    "close": 190.765,
+    "chg_pips": -18.6,
+    "chg_pct": -0.097,
+    "range_pips": 63.4,
+    "close_in_range": 0.35,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/NZD",
+    "close": 1.21655,
+    "chg_pips": 49.9,
+    "chg_pct": 0.412,
+    "range_pips": 83.6,
+    "close_in_range": 0.86,
+    "unit": "pips"
+   },
+   {
+    "instrument": "EUR/GBP",
+    "close": 0.83492,
+    "chg_pips": -20.5,
+    "chg_pct": -0.245,
+    "range_pips": 26.4,
+    "close_in_range": 0.14,
+    "unit": "pips"
+   },
+   {
+    "instrument": "AUD/CHF",
+    "close": 0.55579,
+    "chg_pips": 26.7,
+    "chg_pct": 0.483,
+    "range_pips": 62.1,
+    "close_in_range": 0.56,
+    "unit": "pips"
+   },
+   {
+    "instrument": "NZD/CHF",
+    "close": 0.45683,
+    "chg_pips": 3.3,
+    "chg_pct": 0.072,
+    "range_pips": 33.8,
+    "close_in_range": 0.39,
+    "unit": "pips"
+   }
+  ],
+  "beyond_majors": [
+   {
+    "instrument": "USD/SEK",
+    "close": 10.25871,
+    "chg_pips": 499.9,
+    "chg_pct": 0.49,
+    "range_pips": 949.5,
+    "close_in_range": 0.85,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/NOK",
+    "close": 9.8027,
+    "chg_pips": 464.7,
+    "chg_pct": 0.476,
+    "range_pips": 1156.7,
+    "close_in_range": 0.92,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/ZAR",
+    "close": 17.36275,
+    "chg_pips": -1748.4,
+    "chg_pct": -0.997,
+    "range_pips": 2237.2,
+    "close_in_range": 0.2,
+    "unit": "pips"
+   },
+   {
+    "instrument": "USD/MXN",
+    "close": 19.63797,
+    "chg_pips": -766.4,
+    "chg_pct": -0.389,
+    "range_pips": 2732.0,
+    "close_in_range": 0.61,
+    "unit": "pips"
+   }
+  ],
+  "risk_context": [
+   {
+    "instrument": "DXY/USD",
+    "close": 103.951,
+    "chg_pips": 25.6,
+    "chg_pct": 0.247,
+    "range_pips": 41.6,
+    "close_in_range": 0.93,
+    "unit": "points"
+   },
+   {
+    "instrument": "VIX/USD",
+    "close": 22.764,
+    "chg_pips": -166.3,
+    "chg_pct": -6.809,
+    "range_pips": 232.6,
+    "close_in_range": 0.02,
+    "unit": "points"
+   }
+  ],
+  "legs": [
+   {
+    "instrument": "EUR/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -6.8,
+    "ret_pct": -0.062,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Doesn't know if Putin will come to G20, adding tha…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "01:45",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 19.8,
+    "ret_pct": 0.181,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/USD",
+    "from": "03:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -45.3,
+    "ret_pct": -0.412,
+    "minutes": 915,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spanish Flash CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -8.7,
+    "ret_pct": -0.055,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "23:30",
+    "to": "01:00",
+    "dir": "up",
+    "pips": 14.8,
+    "ret_pct": 0.093,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "01:00",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -18.5,
+    "ret_pct": -0.116,
+    "minutes": 150,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "03:30",
+    "to": "11:15",
+    "dir": "up",
+    "pips": 39.0,
+    "ret_pct": 0.245,
+    "minutes": 465,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Household consumption of goods is stable in Octobe…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "11:15",
+    "to": "12:45",
+    "dir": "down",
+    "pips": -17.4,
+    "ret_pct": -0.109,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Considers 52% Capital Gains Tax On New Condo Flips …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/JPY",
+    "from": "12:45",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 13.2,
+    "ret_pct": 0.083,
+    "minutes": 360,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Dolenc: Two Hikes To Date Aren't Enough To Tame Inf…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -10.6,
+    "ret_pct": -0.081,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Doesn't know if Putin will come to G20, adding tha…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "01:45",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 31.5,
+    "ret_pct": 0.241,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "03:30",
+    "to": "05:30",
+    "dir": "down",
+    "pips": -12.0,
+    "ret_pct": -0.091,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "05:30",
+    "to": "13:00",
+    "dir": "up",
+    "pips": 18.7,
+    "ret_pct": 0.143,
+    "minutes": 450,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spanish Flash CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "GBP/USD",
+    "from": "13:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -35.0,
+    "ret_pct": -0.266,
+    "minutes": 345,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Dolenc: Two Hikes To Date Aren't Enough To Tame Inf…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -6.6,
+    "ret_pct": -0.079,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "23:00",
+    "to": "02:00",
+    "dir": "up",
+    "pips": 12.6,
+    "ret_pct": 0.151,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "02:00",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -14.8,
+    "ret_pct": -0.177,
+    "minutes": 90,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "03:30",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 29.7,
+    "ret_pct": 0.356,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Household consumption of goods is stable in Octobe…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "10:00",
+    "to": "13:30",
+    "dir": "down",
+    "pips": -22.3,
+    "ret_pct": -0.267,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Considers 52% Capital Gains Tax On New Condo Flips …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "13:30",
+    "to": "16:30",
+    "dir": "up",
+    "pips": 23.0,
+    "ret_pct": 0.276,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Nagel: We Expect Inflation Durably Above 3% In 2027, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CHF",
+    "from": "16:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -2.9,
+    "ret_pct": -0.035,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "19:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 46.3,
+    "ret_pct": 0.698,
+    "minutes": 900,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/USD",
+    "from": "10:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -30.4,
+    "ret_pct": -0.455,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Nagel: We Expect Inflation Durably Above 3% In 2027, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 8.7,
+    "ret_pct": 0.061,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "01:45",
+    "to": "03:30",
+    "dir": "down",
+    "pips": -25.1,
+    "ret_pct": -0.176,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "03:30",
+    "to": "05:30",
+    "dir": "up",
+    "pips": 18.8,
+    "ret_pct": 0.132,
+    "minutes": 120,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "05:30",
+    "to": "06:15",
+    "dir": "down",
+    "pips": -14.4,
+    "ret_pct": -0.101,
+    "minutes": 45,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "06:15",
+    "to": "09:45",
+    "dir": "up",
+    "pips": 12.3,
+    "ret_pct": 0.086,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Household consumption of goods is stable in Octobe…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "09:45",
+    "to": "13:15",
+    "dir": "down",
+    "pips": -9.7,
+    "ret_pct": -0.068,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Unemployment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "13:15",
+    "to": "14:15",
+    "dir": "up",
+    "pips": 23.3,
+    "ret_pct": 0.164,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Nagel: We Expect Inflation Durably Above 3% In 2027, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/CAD",
+    "from": "14:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -12.6,
+    "ret_pct": -0.088,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Current Account, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "19:00",
+    "to": "01:15",
+    "dir": "down",
+    "pips": -7.0,
+    "ret_pct": -0.128,
+    "minutes": 375,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Doesn't know if Putin will come to G20, adding tha…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "01:15",
+    "to": "03:30",
+    "dir": "up",
+    "pips": 39.5,
+    "ret_pct": 0.723,
+    "minutes": 135,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/USD",
+    "from": "03:30",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -40.0,
+    "ret_pct": -0.727,
+    "minutes": 915,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Unemployment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "19:00",
+    "to": "23:00",
+    "dir": "down",
+    "pips": -8.6,
+    "ret_pct": -0.094,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "23:00",
+    "to": "09:45",
+    "dir": "up",
+    "pips": 25.9,
+    "ret_pct": 0.283,
+    "minutes": 645,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/CHF",
+    "from": "09:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -23.7,
+    "ret_pct": -0.258,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Unemployment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "19:00",
+    "to": "23:15",
+    "dir": "down",
+    "pips": -21.3,
+    "ret_pct": -0.112,
+    "minutes": 255,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "23:15",
+    "to": "08:00",
+    "dir": "up",
+    "pips": 40.4,
+    "ret_pct": 0.212,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "08:00",
+    "to": "09:45",
+    "dir": "down",
+    "pips": -46.9,
+    "ret_pct": -0.245,
+    "minutes": 105,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Household consumption of goods is stable in Octobe…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "09:45",
+    "to": "13:30",
+    "dir": "up",
+    "pips": 49.0,
+    "ret_pct": 0.257,
+    "minutes": 225,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Unemployment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "13:30",
+    "to": "16:30",
+    "dir": "down",
+    "pips": -41.9,
+    "ret_pct": -0.219,
+    "minutes": 180,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item ECB's Nagel: We Expect Inflation Durably Above 3% In 2027, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "16:30",
+    "to": "17:45",
+    "dir": "up",
+    "pips": 20.7,
+    "ret_pct": 0.109,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "CHF/JPY",
+    "from": "17:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -16.1,
+    "ret_pct": -0.084,
+    "minutes": 60,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "19:00",
+    "to": "01:30",
+    "dir": "up",
+    "pips": 14.6,
+    "ret_pct": 0.12,
+    "minutes": 390,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "01:30",
+    "to": "02:45",
+    "dir": "down",
+    "pips": -32.2,
+    "ret_pct": -0.265,
+    "minutes": 75,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "02:45",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 72.7,
+    "ret_pct": 0.601,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Household consumption of goods is stable in Octobe…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/NZD",
+    "from": "10:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -9.0,
+    "ret_pct": -0.074,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Considers 52% Capital Gains Tax On New Condo Flips …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "up",
+    "pips": 1.6,
+    "ret_pct": 0.019,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Trump: Doesn't know if Putin will come to G20, adding tha…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "EUR/GBP",
+    "from": "01:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -21.5,
+    "ret_pct": -0.257,
+    "minutes": 1020,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Spanish Flash CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "19:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 52.3,
+    "ret_pct": 0.945,
+    "minutes": 900,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "AUD/CHF",
+    "from": "10:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -26.8,
+    "ret_pct": -0.48,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Considers 52% Capital Gains Tax On New Condo Flips …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "19:00",
+    "to": "23:30",
+    "dir": "down",
+    "pips": -6.6,
+    "ret_pct": -0.145,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "23:30",
+    "to": "03:00",
+    "dir": "up",
+    "pips": 30.6,
+    "ret_pct": 0.671,
+    "minutes": 210,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "03:00",
+    "to": "05:45",
+    "dir": "down",
+    "pips": -14.1,
+    "ret_pct": -0.307,
+    "minutes": 165,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "05:45",
+    "to": "09:45",
+    "dir": "up",
+    "pips": 13.4,
+    "ret_pct": 0.293,
+    "minutes": 240,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item French Household consumption of goods is stable in Octobe…, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "NZD/CHF",
+    "from": "09:45",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -18.8,
+    "ret_pct": -0.41,
+    "minutes": 540,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Considers 52% Capital Gains Tax On New Condo Flips …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "19:00",
+    "to": "06:30",
+    "dir": "down",
+    "pips": -313.3,
+    "ret_pct": -0.307,
+    "minutes": 690,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y moved price the other way.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/SEK",
+    "from": "06:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 787.6,
+    "ret_pct": 0.774,
+    "minutes": 735,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item German Unemployment Change, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "19:00",
+    "to": "09:00",
+    "dir": "down",
+    "pips": -566.6,
+    "ret_pct": -0.581,
+    "minutes": 840,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/NOK",
+    "from": "09:00",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1011.1,
+    "ret_pct": 1.042,
+    "minutes": 585,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Japan Considers 52% Capital Gains Tax On New Condo Flips …, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "19:00",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -2115.8,
+    "ret_pct": -1.206,
+    "minutes": 990,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/ZAR",
+    "from": "11:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 365.9,
+    "ret_pct": 0.211,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Prelim Wholesale Inventories m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "19:00",
+    "to": "11:30",
+    "dir": "down",
+    "pips": -2482.7,
+    "ret_pct": -1.259,
+    "minutes": 990,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "USD/MXN",
+    "from": "11:30",
+    "to": "18:45",
+    "dir": "up",
+    "pips": 1630.1,
+    "ret_pct": 0.837,
+    "minutes": 435,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Prelim Wholesale Inventories m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "19:00",
+    "to": "01:45",
+    "dir": "down",
+    "pips": -59.6,
+    "ret_pct": -0.581,
+    "minutes": 405,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "01:45",
+    "to": "06:15",
+    "dir": "up",
+    "pips": 179.0,
+    "ret_pct": 1.755,
+    "minutes": 270,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nothing on the wire; flow or a technical level, not news.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Brent/USD",
+    "from": "06:15",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -272.6,
+    "ret_pct": -2.627,
+    "minutes": 750,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Prelim Wholesale Inventories m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "19:00",
+    "to": "10:00",
+    "dir": "up",
+    "pips": 1147.8,
+    "ret_pct": 3.219,
+    "minutes": 900,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Tokyo Core CPI y/y, too weak to own the move.",
+    "in_leg_drivers": []
+   },
+   {
+    "instrument": "Gold/USD",
+    "from": "10:00",
+    "to": "18:45",
+    "dir": "down",
+    "pips": -322.9,
+    "ret_pct": -0.877,
+    "minutes": 525,
+    "cause": null,
+    "cause_ccy": null,
+    "confidence": "none",
+    "note": "Nearest item Prelim Wholesale Inventories m/m +1 more, too weak to own the move.",
+    "in_leg_drivers": []
+   }
+  ],
+  "event_reactions": [
+   {
+    "time": "00:30",
+    "ccy": "JPY",
+    "impact": "Medium",
+    "event": "Tokyo Core CPI y/y",
+    "actual": "2.9%",
+    "forecast": "3.0%",
+    "previous": "2.6%",
+    "polarity": "muted",
+    "polarity_note": "basket moved -0.013%, inside the noise floor",
+    "own_ccy_impulse_pct": -0.013,
+    "top_movers": [
+     {
+      "instrument": "Gold/USD",
+      "pct": -0.062,
+      "pips": -22.0,
+      "unit": "pips ($0.10)",
+      "sigma": -0.63
+     },
+     {
+      "instrument": "AUD/USD",
+      "pct": 0.017,
+      "pips": 1.1,
+      "unit": "pips",
+      "sigma": 0.61
+     },
+     {
+      "instrument": "EUR/GBP",
+      "pct": -0.006,
+      "pips": -0.5,
+      "unit": "pips",
+      "sigma": -0.59
+     },
+     {
+      "instrument": "CHF/JPY",
+      "pct": 0.012,
+      "pips": 2.3,
+      "unit": "pips",
+      "sigma": 0.57
+     },
+     {
+      "instrument": "EUR/CHF",
+      "pct": -0.009,
+      "pips": -0.8,
+      "unit": "pips",
+      "sigma": -0.46
+     },
+     {
+      "instrument": "USD/CHF",
+      "pct": -0.011,
+      "pips": -0.9,
+      "unit": "pips",
+      "sigma": -0.43
+     }
+    ]
+   }
+  ],
+  "headline_count": 12,
+  "top_headlines": [
+   {
+    "time": "00:45",
+    "impact": "low",
+    "title": "Trump: Doesn't know if Putin will come to G20, adding that if he wanted to come, he can"
+   },
+   {
+    "time": "08:45",
+    "impact": "low",
+    "title": "French Household consumption of goods is stable in October 2026 (after -0.9%)"
+   },
+   {
+    "time": "08:45",
+    "impact": "low",
+    "title": "In November 2026, French consumer prices are expected to increase by 2.9% year-on-year"
+   },
+   {
+    "time": "08:45",
+    "impact": "low",
+    "title": "In the third quarter of 2026, salaried employment was stable over the quarter and down year-on-year (-0.3%)."
+   },
+   {
+    "time": "08:45",
+    "impact": "low",
+    "title": "In the third quarter of 2026, French GDP declined (-0.2% after 0.0%)"
+   },
+   {
+    "time": "11:30",
+    "impact": "low",
+    "title": "Japan Considers 52% Capital Gains Tax On New Condo Flips - Yomiuri"
+   },
+   {
+    "time": "13:00",
+    "impact": "low",
+    "title": "PBOC vows to defuse risks and keep Yuan stable"
+   },
+   {
+    "time": "13:15",
+    "impact": "low",
+    "title": "ECB's Dolenc: Two Hikes To Date Aren't Enough To Tame Inflation"
+   },
+   {
+    "time": "14:00",
+    "impact": "low",
+    "title": "ECB's Nagel: We Expect Inflation Durably Above 3% In 2027"
+   },
+   {
+    "time": "14:30",
+    "impact": "low",
+    "title": "Canada's balance of international payments, third quarter 2026"
+   },
+   {
+    "time": "14:30",
+    "impact": "low",
+    "title": "US Advance Economic Indicators Report - October 2026"
+   },
+   {
+    "time": "14:45",
+    "impact": "low",
+    "title": "German Budget Passes With Eur210 Bln In New Borrowing"
+   }
+  ],
+  "calendar_ahead": [
+   {
+    "time": "11:15",
+    "ccy": "All",
+    "impact": "Medium",
+    "event": "OPEC-JMMC Meetings",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "12:15",
+    "ccy": "All",
+    "impact": "Medium",
+    "event": "OPEC Meetings",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "02:05",
+    "ccy": "JPY",
+    "impact": "High",
+    "event": "BOJ Gov Ueda Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "08:29",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "German Prelim CPI m/m",
+    "forecast": "-0.3%",
+    "previous": "-0.2%"
+   },
+   {
+    "time": "14:30",
+    "ccy": "CAD",
+    "impact": "High",
+    "event": "GDP m/m",
+    "forecast": "-0.1%",
+    "previous": "0.0%"
+   },
+   {
+    "time": "15:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   },
+   {
+    "time": "17:30",
+    "ccy": "EUR",
+    "impact": "Medium",
+    "event": "ECB President Lagarde Speaks",
+    "forecast": null,
+    "previous": null
+   }
+  ]
+ },
+ "analysis": {
+  "session_summary": "The window was risk-on but dollar-firm: VIX fell 6.809% while DXY rose 0.247%, and AUD led with +0.377% against majors while EUR lagged at -0.252%. Tokyo Core CPI printed 2.9% vs 3.0% forecast but produced only a muted -0.013% yen impulse, giving JPY no catalyst. Most major pairs lacked clear news drivers, with zigzags attributed to flow or technical levels. EUR/USD closed -0.308% near its lows, with EUR weakness contributing 72% of the move.",
+  "themes": [
+   {
+    "theme": "AUD outperformance with no clear catalyst",
+    "evidence": "AUD strength +0.377% vs majors, held range; no own releases; most sensitive to Tokyo CPI.",
+    "currencies": [
+     "AUD"
+    ]
+   },
+   {
+    "theme": "EUR weakness dominates G10",
+    "evidence": "EUR strength -0.252% vs majors, no own releases; EUR/USD base share 72% of -0.308% move.",
+    "currencies": [
+     "EUR"
+    ]
+   },
+   {
+    "theme": "Risk-on but USD index firm",
+    "evidence": "VIX -6.809% while DXY +0.247%; USD strength +0.087% vs majors after selling rejected.",
+    "currencies": [
+     "USD"
+    ]
+   }
+  ],
+  "currency_drivers": {
+   "USD": "DXY +0.247%; USD strength +0.087% after selling rejected; no own releases.",
+   "EUR": "EUR -0.252% vs majors, held range; no own releases or catalyst.",
+   "JPY": "Tokyo CPI surprise was muted, own impulse -0.013% inside noise floor; no clear driver.",
+   "GBP": "GBP +0.028% vs majors, held range; no own catalyst, most sensitive to Tokyo CPI.",
+   "AUD": "AUD led at +0.377% vs majors, held range; no own catalyst, most sensitive to Tokyo CPI.",
+   "CAD": "CAD +0.075% vs majors, selling rejected; no own releases, most sensitive none.",
+   "CHF": "CHF -0.173% vs majors, held range; no own releases, most sensitive to Tokyo CPI.",
+   "NZD": "NZD -0.092% vs majors, attempt rejected after +0.383% peak; no own catalyst."
+  },
+  "leg_notes": {
+   "EUR/USD": "EUR/USD printed a three-leg pattern—early dip, bounce, then dominant selloff—all without clear catalysts, closing near lows with EUR weakness accounting for 72% of the -0.308% move."
+  },
+  "polarity_reads": [
+   {
+    "event": "Tokyo Core CPI y/y",
+    "read": "Tokyo Core CPI printed 2.9% vs 3.0% forecast; measured own-currency impulse -0.013% was inside the noise floor, so the muted reaction implies no fresh hawkish pricing, leaving JPY unresponsive to domestic data."
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Range extension with no fresh catalyst",
+    "probability": 0.45,
+    "thesis": "Given most legs had no clear catalyst and volumes thin, EUR/USD and USD/JPY stay within today's ranges.",
+    "triggers": [
+     "No new high-impact data surprises",
+     "BOJ Ueda sticks to script",
+     "German CPI in line"
+    ],
+    "invalidation": "Clear break of today's observed range",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "range",
+      "magnitude_pips": 52.1,
+      "rationale": "EUR/USD range today was 52.1 pips and closed near lows with no clear catalyst."
+     },
+     {
+      "instrument": "USD/JPY",
+      "direction": "range",
+      "magnitude_pips": 45.2,
+      "rationale": "USD/JPY range today was 45.2 pips; Tokyo CPI reaction was muted."
+     }
+    ]
+   },
+   {
+    "name": "Risk-on continuation / AUD strength extends",
+    "probability": 0.35,
+    "thesis": "Improved risk tone (VIX -6.809%) supports carry and commodity FX; AUD outperformance persists.",
+    "triggers": [
+     "Equity futures hold gains",
+     "OPEC meeting produces no supply shock",
+     "PBOC stability comments support CNH"
+    ],
+    "invalidation": "AUD/USD fails to hold above today's low",
+    "pair_paths": [
+     {
+      "instrument": "AUD/USD",
+      "direction": "up",
+      "magnitude_pips": 46.3,
+      "rationale": "AUD/USD printed a 46.3-pip up leg before fading; if risk holds, it can retest."
+     }
+    ]
+   },
+   {
+    "name": "USD catch-up / hawkish ECB pushback fade",
+    "probability": 0.2,
+    "thesis": "DXY firmed while EUR was weakest; if ECB speakers sound dovish, EUR/USD extends lower.",
+    "triggers": [
+     "Lagarde emphasizes downside risks",
+     "German CPI misses forecast",
+     "US advance indicators support dollar"
+    ],
+    "invalidation": "EUR strength recovers meaningfully",
+    "pair_paths": [
+     {
+      "instrument": "EUR/USD",
+      "direction": "down",
+      "magnitude_pips": 45.3,
+      "rationale": "EUR/USD had a 45.3-pip dominant down leg and closed near lows; EUR weakness was 72% of move."
+     }
+    ]
+   }
+  ],
+  "risks": [
+   {
+    "risk": "BOJ Ueda speaks",
+    "why_it_matters": "High-impact JPY event ahead; can reset yen pricing if he signals policy shift.",
+    "watch": "USD/JPY, CHF/JPY reaction to Ueda"
+   },
+   {
+    "risk": "German CPI and ECB speakers",
+    "why_it_matters": "EUR is weakest; a downside CPI surprise or Lagarde dovishness could accelerate EUR/USD losses.",
+    "watch": "EUR/USD, EUR/GBP"
+   },
+   {
+    "risk": "Canada GDP",
+    "why_it_matters": "CAD has no clear driver; GDP miss could fuel USD/CAD upside.",
+    "watch": "USD/CAD, CAD/JPY"
+   }
+  ],
+  "calendar_ahead_note": "BOJ Ueda, German CPI, Canada GDP, and ECB Lagarde dominate; OPEC meetings can also shift risk tone.",
+  "_model": "deepseek-v4-pro",
+  "_usage": {
+   "prompt_tokens": 15100,
+   "completion_tokens": 6711,
+   "total_tokens": 21811,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5234
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 14460
+  }
+ }
+}
